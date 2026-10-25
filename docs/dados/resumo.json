@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-25T16:59:11+00:00",
+ "gerado_em": "2026-10-25T17:04:18+00:00",
  "fonte": "resultados.tse.jus.br — arquivo de urna (BU)",
  "uf": "zz",
  "turno1": {
@@ -1514,32 +1514,187 @@
    "codigo": "29386",
    "nome": "BERLIM",
    "secoes_previstas": 42,
-   "secoes_apuradas_t2": 0,
-   "secoes_comparaveis": 0,
+   "secoes_apuradas_t2": 6,
+   "secoes_comparaveis": 6,
    "t1": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0,
-    "validos": 0
+    "13": 1436,
+    "22": 333,
+    "brancos": 24,
+    "nulos": 34,
+    "outros": 152,
+    "comparecimento": 1979,
+    "aptos": 4647,
+    "total": 1979,
+    "validos": 1921
    },
    "t2": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
+    "13": 1771,
+    "22": 406,
+    "brancos": 20,
+    "nulos": 27,
     "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0,
-    "validos": 0
+    "comparecimento": 2224,
+    "aptos": 4646,
+    "total": 2224,
+    "validos": 2177
    },
-   "metricas": null,
-   "secoes": [],
+   "metricas": {
+    "candidatos": {
+     "13": {
+      "t1": 1436,
+      "t2": 1771,
+      "delta": 335,
+      "pct": 23.328690807799443,
+      "share_t1": 74.75273295158772,
+      "share_t2": 81.35048231511254
+     },
+     "22": {
+      "t1": 333,
+      "t2": 406,
+      "delta": 73,
+      "pct": 21.92192192192192,
+      "share_t1": 17.334721499219157,
+      "share_t2": 18.64951768488746
+     }
+    },
+    "diferenca_crescimento": 262,
+    "margem_t1": 1103,
+    "margem_t2": 1365,
+    "variacao_margem": 262,
+    "total_t1": 1979,
+    "total_t2": 2224,
+    "delta_total": 245,
+    "pct_total": 12.379989893885801,
+    "validos_t1": 1921,
+    "validos_t2": 2177,
+    "delta_validos": 256,
+    "aptos_t2": 4646,
+    "comparecimento_t2": 2224,
+    "brancos_nulos_t1": 58,
+    "brancos_nulos_t2": 47
+   },
+   "secoes": [
+    {
+     "zona": "0001",
+     "secao": "1723",
+     "t1": {
+      "13": 249,
+      "22": 64,
+      "brancos": 5,
+      "nulos": 9,
+      "comparecimento": 358,
+      "aptos": 760
+     },
+     "t2": {
+      "13": 291,
+      "22": 75,
+      "brancos": 5,
+      "nulos": 5,
+      "comparecimento": 376,
+      "aptos": 760
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1724",
+     "t1": {
+      "13": 201,
+      "22": 70,
+      "brancos": 5,
+      "nulos": 3,
+      "comparecimento": 312,
+      "aptos": 794
+     },
+     "t2": {
+      "13": 268,
+      "22": 81,
+      "brancos": 5,
+      "nulos": 6,
+      "comparecimento": 360,
+      "aptos": 794
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1725",
+     "t1": {
+      "13": 226,
+      "22": 56,
+      "brancos": 6,
+      "nulos": 7,
+      "comparecimento": 315,
+      "aptos": 793
+     },
+     "t2": {
+      "13": 254,
+      "22": 67,
+      "brancos": 7,
+      "nulos": 5,
+      "comparecimento": 333,
+      "aptos": 793
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "3057",
+     "t1": {
+      "13": 327,
+      "22": 54,
+      "brancos": 1,
+      "nulos": 6,
+      "comparecimento": 408,
+      "aptos": 752
+     },
+     "t2": {
+      "13": 394,
+      "22": 54,
+      "brancos": 1,
+      "nulos": 7,
+      "comparecimento": 456,
+      "aptos": 751
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "3247",
+     "t1": {
+      "13": 247,
+      "22": 53,
+      "brancos": 4,
+      "nulos": 6,
+      "comparecimento": 339,
+      "aptos": 786
+     },
+     "t2": {
+      "13": 325,
+      "22": 70,
+      "brancos": 0,
+      "nulos": 3,
+      "comparecimento": 398,
+      "aptos": 786
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "3908",
+     "t1": {
+      "13": 186,
+      "22": 36,
+      "brancos": 3,
+      "nulos": 3,
+      "comparecimento": 247,
+      "aptos": 762
+     },
+     "t2": {
+      "13": 239,
+      "22": 59,
+      "brancos": 2,
+      "nulos": 1,
+      "comparecimento": 301,
+      "aptos": 762
+     }
+    }
+   ],
    "lat": 52.5174,
    "lon": 13.3951,
    "pais": "Alemanha",
@@ -1814,32 +1969,107 @@
    "codigo": "29432",
    "nome": "BRUXELAS",
    "secoes_previstas": 27,
-   "secoes_apuradas_t2": 0,
-   "secoes_comparaveis": 0,
+   "secoes_apuradas_t2": 2,
+   "secoes_comparaveis": 2,
    "t1": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0,
-    "validos": 0
+    "13": 388,
+    "22": 310,
+    "brancos": 14,
+    "nulos": 8,
+    "outros": 118,
+    "comparecimento": 838,
+    "aptos": 1442,
+    "total": 838,
+    "validos": 816
    },
    "t2": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
+    "13": 490,
+    "22": 369,
+    "brancos": 9,
+    "nulos": 23,
     "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0,
-    "validos": 0
+    "comparecimento": 891,
+    "aptos": 1442,
+    "total": 891,
+    "validos": 859
    },
-   "metricas": null,
-   "secoes": [],
+   "metricas": {
+    "candidatos": {
+     "13": {
+      "t1": 388,
+      "t2": 490,
+      "delta": 102,
+      "pct": 26.288659793814432,
+      "share_t1": 47.549019607843135,
+      "share_t2": 57.0430733410943
+     },
+     "22": {
+      "t1": 310,
+      "t2": 369,
+      "delta": 59,
+      "pct": 19.032258064516128,
+      "share_t1": 37.990196078431374,
+      "share_t2": 42.9569266589057
+     }
+    },
+    "diferenca_crescimento": 43,
+    "margem_t1": 78,
+    "margem_t2": 121,
+    "variacao_margem": 43,
+    "total_t1": 838,
+    "total_t2": 891,
+    "delta_total": 53,
+    "pct_total": 6.324582338902148,
+    "validos_t1": 816,
+    "validos_t2": 859,
+    "delta_validos": 43,
+    "aptos_t2": 1442,
+    "comparecimento_t2": 891,
+    "brancos_nulos_t1": 22,
+    "brancos_nulos_t2": 32
+   },
+   "secoes": [
+    {
+     "zona": "0001",
+     "secao": "1946",
+     "t1": {
+      "13": 216,
+      "22": 159,
+      "brancos": 6,
+      "nulos": 4,
+      "comparecimento": 444,
+      "aptos": 654
+     },
+     "t2": {
+      "13": 252,
+      "22": 187,
+      "brancos": 3,
+      "nulos": 10,
+      "comparecimento": 452,
+      "aptos": 654
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1947",
+     "t1": {
+      "13": 172,
+      "22": 151,
+      "brancos": 8,
+      "nulos": 4,
+      "comparecimento": 394,
+      "aptos": 788
+     },
+     "t2": {
+      "13": 238,
+      "22": 182,
+      "brancos": 6,
+      "nulos": 13,
+      "comparecimento": 439,
+      "aptos": 788
+     }
+    }
+   ],
    "lat": 50.8467,
    "lon": 4.3525,
    "pais": "Bélgica",
@@ -1884,32 +2114,107 @@
    "codigo": "29459",
    "nome": "BUDAPESTE",
    "secoes_previstas": 3,
-   "secoes_apuradas_t2": 0,
-   "secoes_comparaveis": 0,
+   "secoes_apuradas_t2": 2,
+   "secoes_comparaveis": 2,
    "t1": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0,
-    "validos": 0
+    "13": 331,
+    "22": 93,
+    "brancos": 5,
+    "nulos": 1,
+    "outros": 41,
+    "comparecimento": 471,
+    "aptos": 810,
+    "total": 471,
+    "validos": 465
    },
    "t2": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
+    "13": 355,
+    "22": 117,
+    "brancos": 5,
+    "nulos": 5,
     "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0,
-    "validos": 0
+    "comparecimento": 482,
+    "aptos": 809,
+    "total": 482,
+    "validos": 472
    },
-   "metricas": null,
-   "secoes": [],
+   "metricas": {
+    "candidatos": {
+     "13": {
+      "t1": 331,
+      "t2": 355,
+      "delta": 24,
+      "pct": 7.2507552870090635,
+      "share_t1": 71.18279569892474,
+      "share_t2": 75.21186440677967
+     },
+     "22": {
+      "t1": 93,
+      "t2": 117,
+      "delta": 24,
+      "pct": 25.806451612903224,
+      "share_t1": 20.0,
+      "share_t2": 24.78813559322034
+     }
+    },
+    "diferenca_crescimento": 0,
+    "margem_t1": 238,
+    "margem_t2": 238,
+    "variacao_margem": 0,
+    "total_t1": 471,
+    "total_t2": 482,
+    "delta_total": 11,
+    "pct_total": 2.335456475583864,
+    "validos_t1": 465,
+    "validos_t2": 472,
+    "delta_validos": 7,
+    "aptos_t2": 809,
+    "comparecimento_t2": 482,
+    "brancos_nulos_t1": 6,
+    "brancos_nulos_t2": 10
+   },
+   "secoes": [
+    {
+     "zona": "0001",
+     "secao": "1695",
+     "t1": {
+      "13": 222,
+      "22": 48,
+      "brancos": 3,
+      "nulos": 1,
+      "comparecimento": 296,
+      "aptos": 540
+     },
+     "t2": {
+      "13": 240,
+      "22": 57,
+      "brancos": 2,
+      "nulos": 4,
+      "comparecimento": 303,
+      "aptos": 538
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1696",
+     "t1": {
+      "13": 109,
+      "22": 45,
+      "brancos": 2,
+      "nulos": 0,
+      "comparecimento": 175,
+      "aptos": 270
+     },
+     "t2": {
+      "13": 115,
+      "22": 60,
+      "brancos": 3,
+      "nulos": 1,
+      "comparecimento": 179,
+      "aptos": 271
+     }
+    }
+   ],
    "lat": 47.4979,
    "lon": 19.0402,
    "pais": "Hungria",
@@ -13974,32 +14279,447 @@
    "codigo": "30864",
    "nome": "ZURIQUE",
    "secoes_previstas": 38,
-   "secoes_apuradas_t2": 0,
-   "secoes_comparaveis": 0,
+   "secoes_apuradas_t2": 19,
+   "secoes_comparaveis": 19,
    "t1": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0,
-    "validos": 0
+    "13": 2896,
+    "22": 2299,
+    "brancos": 124,
+    "nulos": 87,
+    "outros": 595,
+    "comparecimento": 6001,
+    "aptos": 15099,
+    "total": 6001,
+    "validos": 5790
    },
    "t2": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
+    "13": 4048,
+    "22": 2835,
+    "brancos": 96,
+    "nulos": 107,
     "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0,
-    "validos": 0
+    "comparecimento": 7086,
+    "aptos": 15103,
+    "total": 7086,
+    "validos": 6883
    },
-   "metricas": null,
-   "secoes": [],
+   "metricas": {
+    "candidatos": {
+     "13": {
+      "t1": 2896,
+      "t2": 4048,
+      "delta": 1152,
+      "pct": 39.77900552486188,
+      "share_t1": 50.01727115716753,
+      "share_t2": 58.811564724684004
+     },
+     "22": {
+      "t1": 2299,
+      "t2": 2835,
+      "delta": 536,
+      "pct": 23.314484558503697,
+      "share_t1": 39.70639032815198,
+      "share_t2": 41.188435275315996
+     }
+    },
+    "diferenca_crescimento": 616,
+    "margem_t1": 597,
+    "margem_t2": 1213,
+    "variacao_margem": 616,
+    "total_t1": 6001,
+    "total_t2": 7086,
+    "delta_total": 1085,
+    "pct_total": 18.080319946675555,
+    "validos_t1": 5790,
+    "validos_t2": 6883,
+    "delta_validos": 1093,
+    "aptos_t2": 15103,
+    "comparecimento_t2": 7086,
+    "brancos_nulos_t1": 211,
+    "brancos_nulos_t2": 203
+   },
+   "secoes": [
+    {
+     "zona": "0001",
+     "secao": "0281",
+     "t1": {
+      "13": 128,
+      "22": 133,
+      "brancos": 8,
+      "nulos": 2,
+      "comparecimento": 311,
+      "aptos": 794
+     },
+     "t2": {
+      "13": 201,
+      "22": 163,
+      "brancos": 4,
+      "nulos": 4,
+      "comparecimento": 372,
+      "aptos": 795
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0283",
+     "t1": {
+      "13": 165,
+      "22": 139,
+      "brancos": 6,
+      "nulos": 4,
+      "comparecimento": 345,
+      "aptos": 792
+     },
+     "t2": {
+      "13": 231,
+      "22": 166,
+      "brancos": 4,
+      "nulos": 6,
+      "comparecimento": 407,
+      "aptos": 793
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0327",
+     "t1": {
+      "13": 107,
+      "22": 110,
+      "brancos": 2,
+      "nulos": 5,
+      "comparecimento": 248,
+      "aptos": 795
+     },
+     "t2": {
+      "13": 147,
+      "22": 136,
+      "brancos": 3,
+      "nulos": 2,
+      "comparecimento": 288,
+      "aptos": 795
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0328",
+     "t1": {
+      "13": 134,
+      "22": 130,
+      "brancos": 1,
+      "nulos": 2,
+      "comparecimento": 302,
+      "aptos": 796
+     },
+     "t2": {
+      "13": 202,
+      "22": 161,
+      "brancos": 1,
+      "nulos": 6,
+      "comparecimento": 370,
+      "aptos": 796
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0329",
+     "t1": {
+      "13": 152,
+      "22": 94,
+      "brancos": 9,
+      "nulos": 5,
+      "comparecimento": 279,
+      "aptos": 793
+     },
+     "t2": {
+      "13": 205,
+      "22": 109,
+      "brancos": 7,
+      "nulos": 2,
+      "comparecimento": 323,
+      "aptos": 793
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0330",
+     "t1": {
+      "13": 139,
+      "22": 121,
+      "brancos": 6,
+      "nulos": 3,
+      "comparecimento": 306,
+      "aptos": 796
+     },
+     "t2": {
+      "13": 198,
+      "22": 150,
+      "brancos": 6,
+      "nulos": 10,
+      "comparecimento": 364,
+      "aptos": 796
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0331",
+     "t1": {
+      "13": 124,
+      "22": 94,
+      "brancos": 1,
+      "nulos": 5,
+      "comparecimento": 255,
+      "aptos": 796
+     },
+     "t2": {
+      "13": 195,
+      "22": 124,
+      "brancos": 2,
+      "nulos": 8,
+      "comparecimento": 329,
+      "aptos": 796
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0336",
+     "t1": {
+      "13": 174,
+      "22": 95,
+      "brancos": 7,
+      "nulos": 2,
+      "comparecimento": 304,
+      "aptos": 793
+     },
+     "t2": {
+      "13": 234,
+      "22": 111,
+      "brancos": 3,
+      "nulos": 3,
+      "comparecimento": 351,
+      "aptos": 794
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0337",
+     "t1": {
+      "13": 153,
+      "22": 89,
+      "brancos": 2,
+      "nulos": 1,
+      "comparecimento": 272,
+      "aptos": 795
+     },
+     "t2": {
+      "13": 227,
+      "22": 118,
+      "brancos": 4,
+      "nulos": 2,
+      "comparecimento": 351,
+      "aptos": 794
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0338",
+     "t1": {
+      "13": 122,
+      "22": 100,
+      "brancos": 9,
+      "nulos": 3,
+      "comparecimento": 266,
+      "aptos": 796
+     },
+     "t2": {
+      "13": 185,
+      "22": 135,
+      "brancos": 7,
+      "nulos": 8,
+      "comparecimento": 335,
+      "aptos": 796
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0339",
+     "t1": {
+      "13": 152,
+      "22": 109,
+      "brancos": 3,
+      "nulos": 1,
+      "comparecimento": 295,
+      "aptos": 795
+     },
+     "t2": {
+      "13": 223,
+      "22": 128,
+      "brancos": 5,
+      "nulos": 5,
+      "comparecimento": 361,
+      "aptos": 795
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0340",
+     "t1": {
+      "13": 142,
+      "22": 122,
+      "brancos": 8,
+      "nulos": 5,
+      "comparecimento": 310,
+      "aptos": 796
+     },
+     "t2": {
+      "13": 186,
+      "22": 163,
+      "brancos": 5,
+      "nulos": 5,
+      "comparecimento": 359,
+      "aptos": 796
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0341",
+     "t1": {
+      "13": 189,
+      "22": 146,
+      "brancos": 13,
+      "nulos": 7,
+      "comparecimento": 381,
+      "aptos": 796
+     },
+     "t2": {
+      "13": 250,
+      "22": 183,
+      "brancos": 10,
+      "nulos": 3,
+      "comparecimento": 446,
+      "aptos": 796
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0342",
+     "t1": {
+      "13": 167,
+      "22": 143,
+      "brancos": 10,
+      "nulos": 8,
+      "comparecimento": 355,
+      "aptos": 795
+     },
+     "t2": {
+      "13": 226,
+      "22": 158,
+      "brancos": 8,
+      "nulos": 9,
+      "comparecimento": 401,
+      "aptos": 795
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0343",
+     "t1": {
+      "13": 174,
+      "22": 134,
+      "brancos": 5,
+      "nulos": 4,
+      "comparecimento": 348,
+      "aptos": 794
+     },
+     "t2": {
+      "13": 216,
+      "22": 162,
+      "brancos": 8,
+      "nulos": 8,
+      "comparecimento": 394,
+      "aptos": 795
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0344",
+     "t1": {
+      "13": 141,
+      "22": 137,
+      "brancos": 12,
+      "nulos": 7,
+      "comparecimento": 340,
+      "aptos": 793
+     },
+     "t2": {
+      "13": 203,
+      "22": 166,
+      "brancos": 2,
+      "nulos": 8,
+      "comparecimento": 379,
+      "aptos": 793
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0345",
+     "t1": {
+      "13": 163,
+      "22": 155,
+      "brancos": 5,
+      "nulos": 11,
+      "comparecimento": 382,
+      "aptos": 797
+     },
+     "t2": {
+      "13": 229,
+      "22": 194,
+      "brancos": 8,
+      "nulos": 7,
+      "comparecimento": 438,
+      "aptos": 797
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0346",
+     "t1": {
+      "13": 174,
+      "22": 133,
+      "brancos": 12,
+      "nulos": 4,
+      "comparecimento": 356,
+      "aptos": 794
+     },
+     "t2": {
+      "13": 241,
+      "22": 158,
+      "brancos": 8,
+      "nulos": 8,
+      "comparecimento": 415,
+      "aptos": 795
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0347",
+     "t1": {
+      "13": 196,
+      "22": 115,
+      "brancos": 5,
+      "nulos": 8,
+      "comparecimento": 346,
+      "aptos": 793
+     },
+     "t2": {
+      "13": 249,
+      "22": 150,
+      "brancos": 1,
+      "nulos": 3,
+      "comparecimento": 403,
+      "aptos": 793
+     }
+    }
+   ],
    "lat": 47.3744,
    "lon": 8.541,
    "pais": "Suíça",
@@ -14009,63 +14729,63 @@
  "falhas": [],
  "agregado": {
   "t1": {
-   "13": 29819,
-   "22": 36015,
-   "brancos": 2111,
-   "nulos": 1604,
-   "outros": 8375,
-   "comparecimento": 77924,
-   "aptos": 194342,
-   "total": 77924,
-   "validos": 74209
+   "13": 34870,
+   "22": 39050,
+   "brancos": 2278,
+   "nulos": 1734,
+   "outros": 9281,
+   "comparecimento": 87213,
+   "aptos": 216340,
+   "total": 87213,
+   "validos": 83201
   },
   "t2": {
-   "13": 37106,
-   "22": 42692,
-   "brancos": 1691,
-   "nulos": 1628,
+   "13": 43770,
+   "22": 46419,
+   "brancos": 1821,
+   "nulos": 1790,
    "outros": 0,
-   "comparecimento": 83117,
-   "aptos": 194357,
-   "total": 83117,
-   "validos": 79798
+   "comparecimento": 93800,
+   "aptos": 216357,
+   "total": 93800,
+   "validos": 90189
   },
   "metricas": {
    "candidatos": {
     "13": {
-     "t1": 29819,
-     "t2": 37106,
-     "delta": 7287,
-     "pct": 24.43743921660686,
-     "share_t1": 40.18245765338436,
-     "share_t2": 46.499912278503224
+     "t1": 34870,
+     "t2": 43770,
+     "delta": 8900,
+     "pct": 25.5233725265271,
+     "share_t1": 41.91055395968799,
+     "share_t2": 48.53141735688388
     },
     "22": {
-     "t1": 36015,
-     "t2": 42692,
-     "delta": 6677,
-     "pct": 18.539497431625712,
-     "share_t1": 48.53184923661551,
-     "share_t2": 53.500087721496776
+     "t1": 39050,
+     "t2": 46419,
+     "delta": 7369,
+     "pct": 18.87067861715749,
+     "share_t1": 46.93453203687456,
+     "share_t2": 51.46858264311612
     }
    },
-   "diferenca_crescimento": 610,
-   "margem_t1": -6196,
-   "margem_t2": -5586,
-   "variacao_margem": 610,
-   "total_t1": 77924,
-   "total_t2": 83117,
-   "delta_total": 5193,
-   "pct_total": 6.664185616754787,
-   "validos_t1": 74209,
-   "validos_t2": 79798,
-   "delta_validos": 5589,
-   "aptos_t2": 194357,
-   "comparecimento_t2": 83117,
-   "brancos_nulos_t1": 3715,
-   "brancos_nulos_t2": 3319
+   "diferenca_crescimento": 1531,
+   "margem_t1": -4180,
+   "margem_t2": -2649,
+   "variacao_margem": 1531,
+   "total_t1": 87213,
+   "total_t2": 93800,
+   "delta_total": 6587,
+   "pct_total": 7.552773095754073,
+   "validos_t1": 83201,
+   "validos_t2": 90189,
+   "delta_validos": 6988,
+   "aptos_t2": 216357,
+   "comparecimento_t2": 93800,
+   "brancos_nulos_t1": 4012,
+   "brancos_nulos_t2": 3611
   },
-  "secoes_apuradas_t2": 283,
+  "secoes_apuradas_t2": 312,
   "secoes_previstas": 2715
  }
 }
