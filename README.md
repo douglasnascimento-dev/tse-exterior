@@ -169,11 +169,27 @@ dias diferentes.
 - **2022**: o TSE publica o "Histórico de Totalização" nos dados abertos, com o
   minuto a minuto dos dois turnos. `curvas_2022.py` extrai.
 - **1º turno de 2026**: o TSE ainda não publicou esse histórico nos dados
-  abertos (404), mas o mesmo conteúdo existe no arquivo
-  `HISTORICO_EXECUTIVO_PRESIDENTE_BR.json` — 384 instantes da apuração, de
-  1,23% a 100% das urnas, com os votos de cada candidato em cada um. O arquivo
-  está em `dados-fonte/` e `curva_1t_2026.py` o converte. O ponto final confere
-  com o oficial: Lula 45,16%, Flávio 47,03%.
+  abertos (404), mas o mesmo conteúdo está na **marcha da apuração**:
+
+  ```
+  .../2026/apuracao/<turno>/marcha-apuracao/HISTORICO_EXECUTIVO_PRESIDENTE_BR.JSON
+  ```
+
+  São os instantes da totalização, com os votos de cada candidato em cada um —
+  384 no 1º turno, de 1,23% a 100% das urnas. O ponto final confere com o
+  oficial: Lula 45,16%, Flávio 47,03%. `curva_1t_2026.py` converte.
+
+- **2º turno de 2026**: a mesma marcha, no caminho `2-turno/`, é publicada
+  **enquanto a apuração corre**. `brasil.py` a recolhe a cada leitura, e o
+  painel a usa como a curva "de hoje" — assim a comparação com as passadas é
+  fonte contra fonte, com a mesma definição de percentual apurado. Se ela
+  faltar, o painel cai nas leituras próprias do `brasil_historico.jsonl`.
+
+  > O diretório chama-se `marcha-apuracao`. Não dava para adivinhar: achei
+  > deixando um vigia carregando a página de apuração a cada 3 minutos e
+  > comparando os endpoints acessados com os já conhecidos. Apareceu às 17h09,
+  > nove minutos depois de as urnas fecharem — antes disso o gráfico não tinha
+  > o que buscar.
 
   > Antes disso tentei reconstruí-la pelo campo `ha` do config de arquivo de
   > urna, que parece ser a hora de recebimento de cada seção. **Não é**: para

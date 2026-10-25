@@ -6,8 +6,8 @@ HISTORICO_EXECUTIVO_PRESIDENTE_BR.json, que traz 384 instantes da apuração,
 de 1,23% a 100% das urnas, com os votos de cada candidato em cada um.
 
 Uso:
-    python3 coletor/curva_1t_2026.py caminho/HISTORICO_EXECUTIVO_PRESIDENTE_BR.json
-    python3 coletor/curva_1t_2026.py https://.../HISTORICO_...json
+    python3 coletor/curva_1t_2026.py            # busca a URL padrão
+    python3 coletor/curva_1t_2026.py <arquivo ou URL>
 
 Antes eu tentava reconstruir essa curva pela hora de recebimento dos boletins
 (campo `ha` do config de arquivo de urna). Não funciona: aquele campo carimba
@@ -16,6 +16,7 @@ dentro de 3 minutos. A curva saía na ordem "UF por UF", que não é a ordem da
 apuração, e conferir só o total final não detectava, porque soma não depende
 de ordem.
 """
+import gzip
 import json
 import os
 import sys
@@ -24,6 +25,11 @@ import urllib.request
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SAIDA = os.path.join(RAIZ, "docs", "dados", "curva_1t_2026.json")
 LULA, FLAVIO = "13", "22"
+
+# A "marcha da apuração": a série de instantes da totalização, publicada
+# enquanto a apuração corre. O diretório chama-se marcha-apuracao.
+PADRAO = ("https://s.glbimg.com/jo/el/2026/apuracao/1-turno/marcha-apuracao/"
+          "HISTORICO_EXECUTIVO_PRESIDENTE_BR.JSON")
 
 
 def num(s):
@@ -38,7 +44,10 @@ def carrega(origem):
     if origem.startswith("http"):
         req = urllib.request.Request(origem, headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(req, timeout=60) as r:
-            return json.load(r)
+            bruto = r.read()
+        if bruto[:2] == b"\x1f\x8b":          # o CDN devolve gzip
+            bruto = gzip.decompress(bruto)
+        return json.loads(bruto.decode("utf-8"))
     return json.load(open(origem, encoding="utf-8"))
 
 
@@ -86,7 +95,4 @@ def main(origem):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print(__doc__)
-        sys.exit(2)
-    sys.exit(main(sys.argv[1]))
+    sys.exit(main(sys.argv[1] if len(sys.argv) > 1 else PADRAO))

@@ -21,6 +21,12 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SAIDA = os.path.join(RAIZ, "docs", "dados")
 BASE = "https://resultados.tse.jus.br/oficial"
 
+# A "marcha da apuração": série oficial de instantes da totalização, a mesma
+# que alimenta os gráficos de acompanhamento. Mesma origem dos números do TSE,
+# só que já acumulada em forma de série.
+MARCHA = ("https://s.glbimg.com/jo/el/2026/apuracao/2-turno/marcha-apuracao/"
+          "HISTORICO_EXECUTIVO_PRESIDENTE_BR.JSON")
+
 UFS = ["ac", "al", "am", "ap", "ba", "ce", "df", "es", "go", "ma", "mg", "ms",
        "mt", "pa", "pb", "pe", "pi", "pr", "rj", "rn", "ro", "rr", "rs", "sc",
        "se", "sp", "to", "zz"]
@@ -109,8 +115,49 @@ def coleta(cfg, ciclo="ele2026"):
     }
 
 
+def baixa_marcha():
+    """Guarda a série de instantes da apuração, se estiver disponível."""
+    try:
+        d = bu._get(MARCHA)
+    except Exception as exc:
+        print(f"  marcha indisponível: {exc}", file=sys.stderr)
+        return
+    mapas = d.get("MAPAS") or []
+    if not mapas:
+        return
+    pontos = []
+    for m in mapas:
+        votos = {c["n"]: int(str(c.get("vap", "0")).replace(".", "") or 0)
+                 for c in m.get("CANDIDATOS", [])}
+        pv = {c["n"]: float(str(c.get("pvap", "0")).replace(",", ".") or 0)
+              for c in m.get("CANDIDATOS", [])}
+        dois = votos.get("13", 0) + votos.get("22", 0)
+        if not dois:
+            continue
+        pontos.append({
+            "pct": float(str(m.get("PC_URNAS_APUR", "0")).replace(".", "")
+                         .replace(",", ".")),
+            "hora": m.get("HR_MAPA", ""), "quando": m.get("DT_TOTALIZACAO", ""),
+            "validos": sum(votos.values()),
+            "p13": pv.get("13"), "p22": pv.get("22"),
+            "d13": round(100 * votos.get("13", 0) / dois, 3),
+            "d22": round(100 * votos.get("22", 0) / dois, 3),
+        })
+    pontos.sort(key=lambda x: x["pct"])
+    with open(os.path.join(SAIDA, "marcha_2t_2026.json"), "w",
+              encoding="utf-8") as f:
+        json.dump({"eleicao": "2º turno de 2026", "instantes": len(pontos),
+                   "pontos": pontos}, f, ensure_ascii=False,
+                  separators=(",", ":"))
+    if pontos:
+        u = pontos[-1]
+        print(f"  marcha: {len(pontos)} instantes · {u['hora']} · "
+              f"{u['pct']}% apurado", flush=True)
+
+
 def grava(saida):
     os.makedirs(SAIDA, exist_ok=True)
+    baixa_marcha()
     with open(os.path.join(SAIDA, "brasil.json"), "w", encoding="utf-8") as f:
         json.dump(saida, f, ensure_ascii=False, indent=1)
 

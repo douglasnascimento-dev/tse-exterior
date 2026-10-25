@@ -66,7 +66,7 @@ function mostraTip(e, html) {
 }
 const escondeTip = () => tip.style.opacity = 0;
 
-let DADOS = null, HIST = [], B22 = null, C22 = null, C1T = null;
+let DADOS = null, HIST = [], B22 = null, C22 = null, C1T = null, MARCHA = null;
 
 function share(bloco, n) {
   return bloco && bloco.validos ? 100 * (bloco.votos[n] || 0) / bloco.validos : null;
@@ -263,8 +263,14 @@ function nivel1T(d, cores) {
 function curvaComparada(d, cores, passada, cfg) {
   const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
   const [a, b] = nums;
-  const vivo = HIST.filter(h => h.p13 != null && h.pct > 0)
-    .map(h => ({ x: h.pct, ya: h[`p${a}`], yb: h[`p${b}`] }));
+  // prefere a marcha oficial: mesma origem das curvas passadas, então a
+  // comparação fica fonte contra fonte. Cai nas leituras próprias se faltar.
+  const vivo = (MARCHA && MARCHA.pontos && MARCHA.pontos.length)
+    ? MARCHA.pontos.filter(p => p.pct > 0)
+        .map(p => ({ x: p.pct, ya: p[cfg.chave + "13"], yb: p[cfg.chave + "22"] }))
+        .filter(p => p.ya != null)
+    : HIST.filter(h => h.p13 != null && h.pct > 0)
+        .map(h => ({ x: h.pct, ya: h[`p${a}`], yb: h[`p${b}`] }));
   const ref = (passada || []).map(p => ({
     x: p.pct, ya: p[cfg.chave + "13"], yb: p[cfg.chave + "22"] }))
     .filter(p => p.ya != null && p.x > 0);
@@ -469,8 +475,10 @@ function carrega() {
       .catch(() => null),
     fetch("dados/curva_1t_2026.json").then(r => r.ok ? r.json() : null)
       .catch(() => null),
-  ]).then(([d, hist, b22, c22, c1t]) => {
-    DADOS = d; B22 = b22; C22 = c22; C1T = c1t;
+    fetch("dados/marcha_2t_2026.json", { cache: "no-store" })
+      .then(r => r.ok ? r.json() : null).catch(() => null),
+  ]).then(([d, hist, b22, c22, c1t, marcha]) => {
+    DADOS = d; B22 = b22; C22 = c22; C1T = c1t; MARCHA = marcha;
     HIST = hist.split("\n").filter(l => l.trim())
       .map(l => { try { return JSON.parse(l); } catch { return null; } })
       .filter(Boolean)
