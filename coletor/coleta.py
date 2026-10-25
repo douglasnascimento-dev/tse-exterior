@@ -143,18 +143,37 @@ def main(caminho=None):
     if os.path.exists(arq_coords):
         coords = json.load(open(arq_coords, encoding="utf-8"))
 
-    cidades = []
+    cidades, falhas = [], []
     with ThreadPoolExecutor(max_workers=PARALELO) as pool:
         for i, cd in enumerate(alvo, 1):
             print(f"[{i}/{len(alvo)}] {nomes.get(cd, cd)}", flush=True)
-            try:
-                c = coleta_cidade(cfg, cd, nomes, cache, secoes.get(cd, []), pool)
-            except Exception as e:                  # uma cidade não derruba o resto
-                print(f"  erro em {cd}: {e}", file=sys.stderr)
-                continue
+            c = None
+            for tentativa in (1, 2):                # uma segunda chance antes de desistir
+                try:
+                    c = coleta_cidade(cfg, cd, nomes, cache, secoes.get(cd, []), pool)
+                    break
+                except Exception as e:
+                    erro = f"{type(e).__name__}: {e}"
+                    if tentativa == 2:
+                        print(f"  FALHA em {nomes.get(cd, cd)}: {erro}",
+                              file=sys.stderr)
+                        falhas.append({"codigo": cd, "nome": nomes.get(cd, cd),
+                                       "erro": erro})
+            if c is None:
+                # mantém a cidade no resultado: tirá-la encolheria o denominador
+                # de seções sem ninguém perceber.
+                c = {"codigo": cd, "nome": nomes.get(cd, cd),
+                     "secoes_previstas": len(secoes.get(cd, [])),
+                     "secoes_apuradas_t2": 0, "secoes_comparaveis": 0,
+                     "t1": zeros(nums) | {"brancos": 0, "nulos": 0, "outros": 0,
+                                          "comparecimento": 0, "aptos": 0, "total": 0},
+                     "t2": zeros(nums) | {"brancos": 0, "nulos": 0, "outros": 0,
+                                          "comparecimento": 0, "aptos": 0, "total": 0},
+                     "metricas": None, "secoes": [], "falhou": True}
             p = coords.get(cd) or {}
             if p.get("lat") is not None:
                 c["lat"], c["lon"] = p["lat"], p["lon"]
+            c["pais"] = p.get("pais", "—")
             cidades.append(c)
 
     # agregado de todas as cidades coletadas
@@ -174,6 +193,7 @@ def main(caminho=None):
         "turno1": cfg["turno1"], "turno2": cfg["turno2"],
         "candidatos": cfg["candidatos"],
         "cidades": cidades,
+        "falhas": falhas,
         "agregado": {
             "t1": ag1, "t2": ag2,
             "metricas": metricas(ag1, ag2, nums) if ag2["total"] else None,
@@ -186,18 +206,36 @@ def main(caminho=None):
     with open(os.path.join(SAIDA, "resumo.json"), "w", encoding="utf-8") as f:
         json.dump(saida, f, ensure_ascii=False, indent=1)
 
-    # histórico enxuto, uma linha por execução
+    # histórico: uma linha por execução, com o share de cada turno nas mesmas
+    # seções — é o que o gráfico de evolução consome.
     linha = {"gerado_em": saida["gerado_em"],
-             "secoes": saida["agregado"]["secoes_apuradas_t2"]}
+             "secoes": saida["agregado"]["secoes_apuradas_t2"],
+             "secoes_previstas": saida["agregado"]["secoes_previstas"],
+             "falhas": len(falhas)}
     if saida["agregado"]["metricas"]:
         m = saida["agregado"]["metricas"]
-        linha.update(total_t2=m["total_t2"], margem_t2=m["margem_t2"],
-                     **{f"c{k}": v["t2"] for k, v in m["candidatos"].items()})
-    with open(os.path.join(SAIDA, "historico.jsonl"), "a",
-              encoding="utf-8") as f:
-        f.write(json.dumps(linha, ensure_ascii=False) + "\n")
+        linha.update(total_t1=m["total_t1"], total_t2=m["total_t2"],
+                     margem_t2=m["margem_t2"])
+        for k, v in m["candidatos"].items():
+            linha[f"v{k}_t2"] = v["t2"]
+            linha[f"p{k}_t2"] = round(v["share_t2"], 3) if v["share_t2"] is not None else None
+            linha[f"p{k}_t1"] = round(v["share_t1"], 3) if v["share_t1"] is not None else None
+    arq_hist = os.path.join(SAIDA, "historico.jsonl")
+    anterior = None
+    if os.path.exists(arq_hist):
+        linhas = [l for l in open(arq_hist, encoding="utf-8") if l.strip()]
+        if linhas:
+            anterior = json.loads(linhas[-1])
+    igual = anterior and all(anterior.get(k) == v
+                             for k, v in linha.items() if k != "gerado_em")
+    if not igual:
+        with open(arq_hist, "a", encoding="utf-8") as f:
+            f.write(json.dumps(linha, ensure_ascii=False) + "\n")
 
     a = saida["agregado"]
+    if falhas:
+        print(f"\nATENÇÃO: {len(falhas)} cidade(s) não coletada(s): "
+              + ", ".join(f["nome"] for f in falhas), file=sys.stderr)
     print(f"\nok: {len(cidades)} cidade(s), "
           f"{a['secoes_apuradas_t2']}/{a['secoes_previstas']} seções no 2º turno")
     if a["metricas"]:

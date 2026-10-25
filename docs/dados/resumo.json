@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-25T15:26:52+00:00",
+ "gerado_em": "2026-10-25T16:00:00+00:00",
  "fonte": "resultados.tse.jus.br — arquivo de urna (BU)",
  "uf": "zz",
  "turno1": {
@@ -44,7 +44,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 5.3204,
-   "lon": -4.0161
+   "lon": -4.0161,
+   "pais": "Costa do Marfim"
   },
   {
    "codigo": "29262",
@@ -205,7 +206,8 @@
     }
    ],
    "lat": 24.4538,
-   "lon": 54.3774
+   "lon": 54.3774,
+   "pais": "Emirados Árabes Unidos"
   },
   {
    "codigo": "99198",
@@ -236,7 +238,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 9.0643,
-   "lon": 7.4893
+   "lon": 7.4893,
+   "pais": "Nigéria"
   },
   {
    "codigo": "29270",
@@ -267,7 +270,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 5.5571,
-   "lon": -0.2012
+   "lon": -0.2012,
+   "pais": "Gana"
   },
   {
    "codigo": "99325",
@@ -298,7 +302,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 9.0,
-   "lon": 38.75
+   "lon": 38.75,
+   "pais": "Etiópia"
   },
   {
    "codigo": "30457",
@@ -329,7 +334,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 52.3731,
-   "lon": 4.8925
+   "lon": 4.8925,
+   "pais": "Países Baixos"
   },
   {
    "codigo": "29289",
@@ -430,7 +436,8 @@
     }
    ],
    "lat": 31.9516,
-   "lon": 35.924
+   "lon": 35.924,
+   "pais": "Jordânia"
   },
   {
    "codigo": "29297",
@@ -461,7 +468,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 39.9208,
-   "lon": 32.854
+   "lon": 32.854,
+   "pais": "Turquia"
   },
   {
    "codigo": "29300",
@@ -492,7 +500,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 36.7729,
-   "lon": 3.0588
+   "lon": 3.0588,
+   "pais": "Argélia"
   },
   {
    "codigo": "29319",
@@ -523,7 +532,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -30.6171,
-   "lon": -56.9373
+   "lon": -56.9373,
+   "pais": "Uruguai"
   },
   {
    "codigo": "29327",
@@ -554,7 +564,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -25.28,
-   "lon": -57.6344
+   "lon": -57.6344,
+   "pais": "Paraguai"
   },
   {
    "codigo": "39241",
@@ -585,7 +596,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 51.116,
-   "lon": 71.4677
+   "lon": 71.4677,
+   "pais": "Cazaquistão"
   },
   {
    "codigo": "29335",
@@ -686,7 +698,8 @@
     }
    ],
    "lat": 37.9756,
-   "lon": 23.7348
+   "lon": 23.7348,
+   "pais": "Grécia"
   },
   {
    "codigo": "39080",
@@ -717,7 +730,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 33.7545,
-   "lon": -84.3898
+   "lon": -84.3898,
+   "pais": "Estados Unidos da América"
   },
   {
    "codigo": "99171",
@@ -748,7 +762,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 33.3062,
-   "lon": 44.3872
+   "lon": 44.3872,
+   "pais": "Iraque"
   },
   {
    "codigo": "39128",
@@ -779,7 +794,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 40.3756,
-   "lon": 49.8328
+   "lon": 49.8328,
+   "pais": "Azerbaijão"
   },
   {
    "codigo": "99350",
@@ -810,7 +826,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 12.6133,
-   "lon": -7.985
+   "lon": -7.985,
+   "pais": "Mali"
   },
   {
    "codigo": "29343",
@@ -891,7 +908,8 @@
     }
    ],
    "lat": 13.7525,
-   "lon": 100.4935
+   "lon": 100.4935,
+   "pais": "Tailândia"
   },
   {
    "codigo": "29351",
@@ -922,7 +940,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 41.3826,
-   "lon": 2.1771
+   "lon": 2.1771,
+   "pais": "Espanha"
   },
   {
    "codigo": "99473",
@@ -953,38 +972,170 @@
    "metricas": null,
    "secoes": [],
    "lat": 26.2235,
-   "lon": 50.5822
+   "lon": 50.5822,
+   "pais": "Bahrein"
   },
   {
    "codigo": "29360",
    "nome": "BEIRUTE",
    "secoes_previstas": 24,
-   "secoes_apuradas_t2": 0,
-   "secoes_comparaveis": 0,
+   "secoes_apuradas_t2": 5,
+   "secoes_comparaveis": 5,
    "t1": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "13": 1054,
+    "22": 145,
+    "brancos": 53,
+    "nulos": 34,
+    "outros": 72,
+    "comparecimento": 1358,
+    "aptos": 3240,
+    "total": 1358
    },
    "t2": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
+    "13": 1205,
+    "22": 175,
+    "brancos": 38,
+    "nulos": 38,
     "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "comparecimento": 1456,
+    "aptos": 3240,
+    "total": 1456
    },
-   "metricas": null,
-   "secoes": [],
+   "metricas": {
+    "candidatos": {
+     "13": {
+      "t1": 1054,
+      "t2": 1205,
+      "delta": 151,
+      "pct": 14.326375711574952,
+      "share_t1": 77.6141384388807,
+      "share_t2": 82.76098901098901
+     },
+     "22": {
+      "t1": 145,
+      "t2": 175,
+      "delta": 30,
+      "pct": 20.689655172413794,
+      "share_t1": 10.677466863033873,
+      "share_t2": 12.01923076923077
+     }
+    },
+    "diferenca_crescimento": 121,
+    "margem_t1": 909,
+    "margem_t2": 1030,
+    "variacao_margem": 121,
+    "total_t1": 1358,
+    "total_t2": 1456,
+    "delta_total": 98,
+    "pct_total": 7.216494845360825,
+    "brancos_nulos_t1": 87,
+    "brancos_nulos_t2": 76
+   },
+   "secoes": [
+    {
+     "zona": "0001",
+     "secao": "1056",
+     "t1": {
+      "13": 208,
+      "22": 21,
+      "brancos": 7,
+      "nulos": 9,
+      "comparecimento": 256,
+      "aptos": 477
+     },
+     "t2": {
+      "13": 225,
+      "22": 26,
+      "brancos": 6,
+      "nulos": 9,
+      "comparecimento": 266,
+      "aptos": 477
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1366",
+     "t1": {
+      "13": 259,
+      "22": 45,
+      "brancos": 21,
+      "nulos": 6,
+      "comparecimento": 347,
+      "aptos": 786
+     },
+     "t2": {
+      "13": 295,
+      "22": 52,
+      "brancos": 13,
+      "nulos": 9,
+      "comparecimento": 369,
+      "aptos": 786
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1591",
+     "t1": {
+      "13": 270,
+      "22": 36,
+      "brancos": 12,
+      "nulos": 11,
+      "comparecimento": 346,
+      "aptos": 784
+     },
+     "t2": {
+      "13": 302,
+      "22": 47,
+      "brancos": 11,
+      "nulos": 8,
+      "comparecimento": 368,
+      "aptos": 784
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "2938",
+     "t1": {
+      "13": 220,
+      "22": 30,
+      "brancos": 8,
+      "nulos": 4,
+      "comparecimento": 274,
+      "aptos": 793
+     },
+     "t2": {
+      "13": 250,
+      "22": 30,
+      "brancos": 4,
+      "nulos": 9,
+      "comparecimento": 293,
+      "aptos": 793
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "3540",
+     "t1": {
+      "13": 97,
+      "22": 13,
+      "brancos": 5,
+      "nulos": 4,
+      "comparecimento": 135,
+      "aptos": 400
+     },
+     "t2": {
+      "13": 133,
+      "22": 20,
+      "brancos": 4,
+      "nulos": 3,
+      "comparecimento": 160,
+      "aptos": 400
+     }
+    }
+   ],
    "lat": 33.8892,
-   "lon": 35.5026
+   "lon": 35.5026,
+   "pais": "Líbano"
   },
   {
    "codigo": "29378",
@@ -1015,7 +1166,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 44.8153,
-   "lon": 20.4457
+   "lon": 20.4457,
+   "pais": "Sérvia"
   },
   {
    "codigo": "38881",
@@ -1046,7 +1198,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 17.2502,
-   "lon": -88.77
+   "lon": -88.77,
+   "pais": "Belize"
   },
   {
    "codigo": "29386",
@@ -1077,7 +1230,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 52.5174,
-   "lon": 13.3951
+   "lon": 13.3951,
+   "pais": "Alemanha"
   },
   {
    "codigo": "29394",
@@ -1108,7 +1262,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 11.8613,
-   "lon": -15.5831
+   "lon": -15.5831,
+   "pais": "Guiné-Bissau"
   },
   {
    "codigo": "29408",
@@ -1139,7 +1294,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 4.6534,
-   "lon": -74.0836
+   "lon": -74.0836,
+   "pais": "Colômbia"
   },
   {
    "codigo": "29416",
@@ -1170,7 +1326,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 42.3588,
-   "lon": -71.0578
+   "lon": -71.0578,
+   "pais": "Estados Unidos da América"
   },
   {
    "codigo": "39209",
@@ -1201,7 +1358,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 48.1435,
-   "lon": 17.1083
+   "lon": 17.1083,
+   "pais": "Eslováquia"
   },
   {
    "codigo": "39187",
@@ -1232,7 +1390,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -4.2694,
-   "lon": 15.2712
+   "lon": 15.2712,
+   "pais": "República do Congo"
   },
   {
    "codigo": "29424",
@@ -1263,7 +1422,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 13.0978,
-   "lon": -59.6184
+   "lon": -59.6184,
+   "pais": "Barbados"
   },
   {
    "codigo": "29432",
@@ -1294,7 +1454,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 50.8467,
-   "lon": 4.3525
+   "lon": 4.3525,
+   "pais": "Bélgica"
   },
   {
    "codigo": "29440",
@@ -1325,7 +1486,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 44.4361,
-   "lon": 26.1027
+   "lon": 26.1027,
+   "pais": "Roménia"
   },
   {
    "codigo": "29459",
@@ -1356,7 +1518,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 47.4979,
-   "lon": 19.0402
+   "lon": 19.0402,
+   "pais": "Hungria"
   },
   {
    "codigo": "29467",
@@ -1387,7 +1550,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -34.6096,
-   "lon": -58.3888
+   "lon": -58.3888,
+   "pais": "Argentina"
   },
   {
    "codigo": "29475",
@@ -1418,7 +1582,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 4.9372,
-   "lon": -52.3259
+   "lon": -52.3259,
+   "pais": "Guiana Francesa"
   },
   {
    "codigo": "29483",
@@ -1499,7 +1664,8 @@
     }
    ],
    "lat": 30.0444,
-   "lon": 31.2357
+   "lon": 31.2357,
+   "pais": "Egito"
   },
   {
    "codigo": "29491",
@@ -1760,7 +1926,8 @@
     }
    ],
    "lat": -35.2976,
-   "lon": 149.1013
+   "lon": 149.1013,
+   "pais": "Austrália"
   },
   {
    "codigo": "30651",
@@ -1841,7 +2008,8 @@
     }
    ],
    "lat": 23.1288,
-   "lon": 113.259
+   "lon": 113.259,
+   "pais": "China"
   },
   {
    "codigo": "29505",
@@ -1872,7 +2040,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 10.5061,
-   "lon": -66.9146
+   "lon": -66.9146,
+   "pais": "Venezuela"
   },
   {
    "codigo": "99384",
@@ -1903,7 +2072,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 14.0096,
-   "lon": -60.9902
+   "lon": -60.9902,
+   "pais": "Santa Lúcia"
   },
   {
    "codigo": "29513",
@@ -1934,7 +2104,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 41.8756,
-   "lon": -87.6244
+   "lon": -87.6244,
+   "pais": "Estados Unidos da América"
   },
   {
    "codigo": "29521",
@@ -1965,7 +2136,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -33.6938,
-   "lon": -53.4561
+   "lon": -53.4561,
+   "pais": "Uruguai"
   },
   {
    "codigo": "29530",
@@ -2046,7 +2218,8 @@
     }
    ],
    "lat": -33.9288,
-   "lon": 18.4172
+   "lon": 18.4172,
+   "pais": "África do Sul"
   },
   {
    "codigo": "29556",
@@ -2077,7 +2250,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -25.5169,
-   "lon": -54.6169
+   "lon": -54.6169,
+   "pais": "Paraguai"
   },
   {
    "codigo": "29564",
@@ -2108,7 +2282,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 8.3224,
-   "lon": -62.6897
+   "lon": -62.6897,
+   "pais": "Venezuela"
   },
   {
    "codigo": "99210",
@@ -2139,7 +2314,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -11.0185,
-   "lon": -68.7538
+   "lon": -68.7538,
+   "pais": "Bolívia"
   },
   {
    "codigo": "29572",
@@ -2170,7 +2346,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -17.4012,
-   "lon": -66.1676
+   "lon": -66.1676,
+   "pais": "Bolívia"
   },
   {
    "codigo": "30929",
@@ -2201,7 +2378,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 6.9389,
-   "lon": 79.8542
+   "lon": 79.8542,
+   "pais": "Seri-Lanca"
   },
   {
    "codigo": "38903",
@@ -2232,7 +2410,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 9.5171,
-   "lon": -13.6998
+   "lon": -13.6998,
+   "pais": "Guiné"
   },
   {
    "codigo": "29580",
@@ -2263,7 +2442,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -23.1775,
-   "lon": -57.1675
+   "lon": -57.1675,
+   "pais": "Paraguai"
   },
   {
    "codigo": "29599",
@@ -2294,7 +2474,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 55.6867,
-   "lon": 12.5701
+   "lon": 12.5701,
+   "pais": "Dinamarca"
   },
   {
    "codigo": "38920",
@@ -2325,7 +2506,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 6.3677,
-   "lon": 2.4253
+   "lon": 2.4253,
+   "pais": "Benim"
   },
   {
    "codigo": "29602",
@@ -2356,7 +2538,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -31.4167,
-   "lon": -64.1834
+   "lon": -64.1834,
+   "pais": "Argentina"
   },
   {
    "codigo": "29610",
@@ -2387,7 +2570,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 14.6934,
-   "lon": -17.4479
+   "lon": -17.4479,
+   "pais": "Senegal"
   },
   {
    "codigo": "29629",
@@ -2418,7 +2602,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 23.7644,
-   "lon": 90.389
+   "lon": 90.389,
+   "pais": "Bangladeche"
   },
   {
    "codigo": "29637",
@@ -2499,7 +2684,8 @@
     }
    ],
    "lat": 33.5131,
-   "lon": 36.3096
+   "lon": 36.3096,
+   "pais": "Síria"
   },
   {
    "codigo": "38962",
@@ -2530,7 +2716,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -6.8161,
-   "lon": 39.2804
+   "lon": 39.2804,
+   "pais": "Tanzânia"
   },
   {
    "codigo": "29653",
@@ -2611,7 +2798,8 @@
     }
    ],
    "lat": 25.3109,
-   "lon": 51.5082
+   "lon": 51.5082,
+   "pais": "Catar"
   },
   {
    "codigo": "29661",
@@ -2642,7 +2830,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 53.3494,
-   "lon": -6.2606
+   "lon": -6.2606,
+   "pais": "Irlanda"
   },
   {
    "codigo": "29645",
@@ -2673,7 +2862,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -8.5537,
-   "lon": 125.5784
+   "lon": 125.5784,
+   "pais": "Timor-Leste"
   },
   {
    "codigo": "99503",
@@ -2704,7 +2894,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 55.9533,
-   "lon": -3.1884
+   "lon": -3.1884,
+   "pais": "Reino Unido"
   },
   {
    "codigo": "29670",
@@ -2735,7 +2926,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -27.3376,
-   "lon": -55.8669
+   "lon": -55.8669,
+   "pais": "Paraguai"
   },
   {
    "codigo": "29688",
@@ -2766,7 +2958,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 59.3251,
-   "lon": 18.0711
+   "lon": 18.0711,
+   "pais": "Suécia"
   },
   {
    "codigo": "30961",
@@ -2797,7 +2990,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 37.0163,
-   "lon": -7.9352
+   "lon": -7.9352,
+   "pais": "Portugal"
   },
   {
    "codigo": "29696",
@@ -2828,7 +3022,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 50.1106,
-   "lon": 8.6821
+   "lon": 8.6821,
+   "pais": "Alemanha"
   },
   {
    "codigo": "30669",
@@ -2859,7 +3054,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -24.6581,
-   "lon": 25.9088
+   "lon": 25.9088,
+   "pais": "Botsuana"
   },
   {
    "codigo": "29700",
@@ -2890,7 +3086,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 46.2018,
-   "lon": 6.1466
+   "lon": 6.1466,
+   "pais": "Suíça"
   },
   {
    "codigo": "29718",
@@ -2921,7 +3118,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 6.8033,
-   "lon": -58.1455
+   "lon": -58.1455,
+   "pais": "Guiana"
   },
   {
    "codigo": "98000",
@@ -2952,7 +3150,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 14.6416,
-   "lon": -90.5133
+   "lon": -90.5133,
+   "pais": "Guatemala"
   },
   {
    "codigo": "29742",
@@ -3373,7 +3572,8 @@
     }
    ],
    "lat": 34.711,
-   "lon": 137.7259
+   "lon": 137.7259,
+   "pais": "Japão"
   },
   {
    "codigo": "29750",
@@ -3404,7 +3604,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 21.0283,
-   "lon": 105.854
+   "lon": 105.854,
+   "pais": "Vietname"
   },
   {
    "codigo": "29769",
@@ -3435,7 +3636,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -17.8567,
-   "lon": 31.0602
+   "lon": 31.0602,
+   "pais": "Zimbabué"
   },
   {
    "codigo": "30902",
@@ -3466,7 +3668,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 41.7662,
-   "lon": -72.6733
+   "lon": -72.6733,
+   "pais": "Estados Unidos da América"
   },
   {
    "codigo": "29777",
@@ -3497,7 +3700,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 23.1353,
-   "lon": -82.359
+   "lon": -82.359,
+   "pais": "Cuba"
   },
   {
    "codigo": "29785",
@@ -3598,7 +3802,8 @@
     }
    ],
    "lat": 60.1666,
-   "lon": 24.9435
+   "lon": 24.9435,
+   "pais": "Finlândia"
   },
   {
    "codigo": "29793",
@@ -3679,7 +3884,8 @@
     }
    ],
    "lat": 22.3492,
-   "lon": 114.1858
+   "lon": 114.1858,
+   "pais": "China (Hong Kong)"
   },
   {
    "codigo": "29807",
@@ -3710,7 +3916,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 29.7589,
-   "lon": -95.3677
+   "lon": -95.3677,
+   "pais": "Estados Unidos da América"
   },
   {
    "codigo": "29815",
@@ -3741,7 +3948,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 3.869,
-   "lon": 11.5213
+   "lon": 11.5213,
+   "pais": "Camarões"
   },
   {
    "codigo": "38989",
@@ -3772,7 +3980,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 40.1777,
-   "lon": 44.5126
+   "lon": 44.5126,
+   "pais": "Arménia"
   },
   {
    "codigo": "29823",
@@ -3803,7 +4012,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -3.7494,
-   "lon": -73.2444
+   "lon": -73.2444,
+   "pais": "Peru"
   },
   {
    "codigo": "29831",
@@ -3834,7 +4044,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 33.6938,
-   "lon": 73.0652
+   "lon": 73.0652,
+   "pais": "Paquistão"
   },
   {
    "codigo": "39306",
@@ -3915,7 +4126,8 @@
     }
    ],
    "lat": 41.0064,
-   "lon": 28.9759
+   "lon": 28.9759,
+   "pais": "Turquia"
   },
   {
    "codigo": "29840",
@@ -3996,7 +4208,8 @@
     }
    ],
    "lat": -6.1754,
-   "lon": 106.8272
+   "lon": 106.8272,
+   "pais": "Indonésia"
   },
   {
    "codigo": "29173",
@@ -4027,7 +4240,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 27.7083,
-   "lon": 85.3206
+   "lon": 85.3206,
+   "pais": "Nepal"
   },
   {
    "codigo": "29858",
@@ -4058,7 +4272,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 50.45,
-   "lon": 30.5241
+   "lon": 30.5241,
+   "pais": "Ucrânia"
   },
   {
    "codigo": "99430",
@@ -4089,7 +4304,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 17.9712,
-   "lon": -76.7928
+   "lon": -76.7928,
+   "pais": "Jamaica"
   },
   {
    "codigo": "29874",
@@ -4120,7 +4336,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -4.3197,
-   "lon": 15.3424
+   "lon": 15.3424,
+   "pais": "República Democrática do Congo"
   },
   {
    "codigo": "29882",
@@ -4201,7 +4418,8 @@
     }
    ],
    "lat": 29.2734,
-   "lon": 47.4979
+   "lon": 47.4979,
+   "pais": "Kuwait"
   },
   {
    "codigo": "29890",
@@ -4282,7 +4500,8 @@
     }
    ],
    "lat": 3.1517,
-   "lon": 101.6942
+   "lon": 101.6942,
+   "pais": "Malásia"
   },
   {
    "codigo": "29904",
@@ -4313,7 +4532,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -16.4955,
-   "lon": -68.1336
+   "lon": -68.1336,
+   "pais": "Bolívia"
   },
   {
    "codigo": "29912",
@@ -4344,7 +4564,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 6.4551,
-   "lon": 3.3942
+   "lon": 3.3942,
+   "pais": "Nigéria"
   },
   {
    "codigo": "29939",
@@ -4375,7 +4596,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 0.4087,
-   "lon": 9.4419
+   "lon": 9.4419,
+   "pais": "Gabão"
   },
   {
    "codigo": "99341",
@@ -4406,7 +4628,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -13.9875,
-   "lon": 33.7681
+   "lon": 33.7681,
+   "pais": "Malawi"
   },
   {
    "codigo": "29947",
@@ -4437,7 +4660,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -12.046,
-   "lon": -77.0306
+   "lon": -77.0306,
+   "pais": "Peru"
   },
   {
    "codigo": "29955",
@@ -4468,7 +4692,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 38.7078,
-   "lon": -9.1366
+   "lon": -9.1366,
+   "pais": "Portugal"
   },
   {
    "codigo": "39160",
@@ -4499,7 +4724,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 46.05,
-   "lon": 14.5069
+   "lon": 14.5069,
+   "pais": "Eslovénia"
   },
   {
    "codigo": "29963",
@@ -4530,7 +4756,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 6.1304,
-   "lon": 1.2158
+   "lon": 1.2158,
+   "pais": "Togo"
   },
   {
    "codigo": "29971",
@@ -4561,7 +4788,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 51.5074,
-   "lon": -0.1278
+   "lon": -0.1278,
+   "pais": "Reino Unido"
   },
   {
    "codigo": "29980",
@@ -4592,7 +4820,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 34.0537,
-   "lon": -118.2428
+   "lon": -118.2428,
+   "pais": "Estados Unidos da América"
   },
   {
    "codigo": "29998",
@@ -4623,7 +4852,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -8.8273,
-   "lon": 13.244
+   "lon": 13.244,
+   "pais": "Angola"
   },
   {
    "codigo": "99287",
@@ -4654,7 +4884,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -15.4163,
-   "lon": 28.2818
+   "lon": 28.2818,
+   "pais": "Zâmbia"
   },
   {
    "codigo": "30066",
@@ -4685,7 +4916,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 40.4168,
-   "lon": -3.7035
+   "lon": -3.7035,
+   "pais": "Espanha"
   },
   {
    "codigo": "39263",
@@ -4716,7 +4948,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 3.7419,
-   "lon": 8.7741
+   "lon": 8.7741,
+   "pais": "Guiné Equatorial"
   },
   {
    "codigo": "30082",
@@ -4797,7 +5030,8 @@
     }
    ],
    "lat": 14.5904,
-   "lon": 120.9804
+   "lon": 120.9804,
+   "pais": "Filipinas"
   },
   {
    "codigo": "30074",
@@ -4828,7 +5062,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 12.1547,
-   "lon": -86.2737
+   "lon": -86.2737,
+   "pais": "Nicarágua"
   },
   {
    "codigo": "30090",
@@ -4909,7 +5144,8 @@
     }
    ],
    "lat": -25.9662,
-   "lon": 32.5675
+   "lon": 32.5675,
+   "pais": "Moçambique"
   },
   {
    "codigo": "99511",
@@ -4940,7 +5176,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 43.2964,
-   "lon": 5.3778
+   "lon": 5.3778,
+   "pais": "França"
   },
   {
    "codigo": "39102",
@@ -4971,7 +5208,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 23.6124,
-   "lon": 58.5938
+   "lon": 58.5938,
+   "pais": "Omã"
   },
   {
    "codigo": "39004",
@@ -5002,7 +5240,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -34.597,
-   "lon": -68.7305
+   "lon": -68.7305,
+   "pais": "Argentina"
   },
   {
    "codigo": "30104",
@@ -5033,7 +5272,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 19.3208,
-   "lon": -99.1515
+   "lon": -99.1515,
+   "pais": "México"
   },
   {
    "codigo": "30112",
@@ -5064,7 +5304,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 25.7742,
-   "lon": -80.1936
+   "lon": -80.1936,
+   "pais": "Estados Unidos da América"
   },
   {
    "codigo": "30120",
@@ -5095,7 +5336,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 45.4642,
-   "lon": 9.1896
+   "lon": 9.1896,
+   "pais": "Itália"
   },
   {
    "codigo": "30147",
@@ -5126,7 +5368,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -34.9059,
-   "lon": -56.1913
+   "lon": -56.1913,
+   "pais": "Uruguai"
   },
   {
    "codigo": "30155",
@@ -5157,7 +5400,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 45.5032,
-   "lon": -73.5698
+   "lon": -73.5698,
+   "pais": "Canadá"
   },
   {
    "codigo": "30163",
@@ -5188,7 +5432,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 55.7505,
-   "lon": 37.6175
+   "lon": 37.6175,
+   "pais": "Rússia"
   },
   {
    "codigo": "30171",
@@ -5219,7 +5464,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 19.055,
-   "lon": 72.8692
+   "lon": 72.8692,
+   "pais": "Índia"
   },
   {
    "codigo": "30180",
@@ -5250,7 +5496,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 48.1371,
-   "lon": 11.5754
+   "lon": 11.5754,
+   "pais": "Alemanha"
   },
   {
    "codigo": "30198",
@@ -6471,7 +6718,8 @@
     }
    ],
    "lat": 35.1851,
-   "lon": 136.8998
+   "lon": 136.8998,
+   "pais": "Japão"
   },
   {
    "codigo": "30201",
@@ -6552,7 +6800,8 @@
     }
    ],
    "lat": -1.3024,
-   "lon": 36.8289
+   "lon": 36.8289,
+   "pais": "Quénia"
   },
   {
    "codigo": "99180",
@@ -6583,7 +6832,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 25.0782,
-   "lon": -77.3383
+   "lon": -77.3383,
+   "pais": "Bahamas"
   },
   {
    "codigo": "39322",
@@ -6664,7 +6914,8 @@
     }
    ],
    "lat": 35.1747,
-   "lon": 33.3639
+   "lon": 33.3639,
+   "pais": "Chipre"
   },
   {
    "codigo": "30210",
@@ -6745,7 +6996,8 @@
     }
    ],
    "lat": 28.6139,
-   "lon": 77.209
+   "lon": 77.209,
+   "pais": "Índia"
   },
   {
    "codigo": "30228",
@@ -6776,7 +7028,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 40.7127,
-   "lon": -74.006
+   "lon": -74.006,
+   "pais": "Estados Unidos da América"
   },
   {
    "codigo": "99490",
@@ -6807,7 +7060,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 28.5421,
-   "lon": -81.379
+   "lon": -81.379,
+   "pais": "Estados Unidos da América"
   },
   {
    "codigo": "30244",
@@ -6838,7 +7092,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 59.9133,
-   "lon": 10.739
+   "lon": 10.739,
+   "pais": "Noruega"
   },
   {
    "codigo": "30252",
@@ -6869,7 +7124,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 45.4209,
-   "lon": -75.6901
+   "lon": -75.6901,
+   "pais": "Canadá"
   },
   {
    "codigo": "30260",
@@ -6900,7 +7156,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 8.9714,
-   "lon": -79.5342
+   "lon": -79.5342,
+   "pais": "Panamá"
   },
   {
    "codigo": "30279",
@@ -6931,7 +7188,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 5.8242,
-   "lon": -55.1663
+   "lon": -55.1663,
+   "pais": "Suriname"
   },
   {
    "codigo": "30287",
@@ -6962,7 +7220,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 48.8589,
-   "lon": 2.32
+   "lon": 2.32,
+   "pais": "França"
   },
   {
    "codigo": "30295",
@@ -6993,7 +7252,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -29.7137,
-   "lon": -57.0861
+   "lon": -57.0861,
+   "pais": "Argentina"
   },
   {
    "codigo": "30309",
@@ -7024,7 +7284,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -22.5498,
-   "lon": -55.7384
+   "lon": -55.7384,
+   "pais": "Paraguai"
   },
   {
    "codigo": "30317",
@@ -7105,7 +7366,8 @@
     }
    ],
    "lat": 39.9057,
-   "lon": 116.3913
+   "lon": 116.3913,
+   "pais": "China"
   },
   {
    "codigo": "30325",
@@ -7136,7 +7398,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 10.6573,
-   "lon": -61.518
+   "lon": -61.518,
+   "pais": "Trinidad e Tobago"
   },
   {
    "codigo": "30341",
@@ -7167,7 +7430,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 41.1502,
-   "lon": -8.6103
+   "lon": -8.6103,
+   "pais": "Portugal"
   },
   {
    "codigo": "30333",
@@ -7198,7 +7462,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 18.5473,
-   "lon": -72.3396
+   "lon": -72.3396,
+   "pais": "Haiti"
   },
   {
    "codigo": "30350",
@@ -7229,7 +7494,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 50.0875,
-   "lon": 14.4213
+   "lon": 14.4213,
+   "pais": "Chéquia"
   },
   {
    "codigo": "30368",
@@ -7260,38 +7526,90 @@
    "metricas": null,
    "secoes": [],
    "lat": 14.9163,
-   "lon": -23.5095
+   "lon": -23.5095,
+   "pais": "Cabo Verde"
   },
   {
    "codigo": "30376",
    "nome": "PRETÓRIA",
    "secoes_previstas": 4,
-   "secoes_apuradas_t2": 0,
-   "secoes_comparaveis": 0,
+   "secoes_apuradas_t2": 1,
+   "secoes_comparaveis": 1,
    "t1": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "13": 62,
+    "22": 172,
+    "brancos": 3,
+    "nulos": 3,
+    "outros": 25,
+    "comparecimento": 265,
+    "aptos": 657,
+    "total": 265
    },
    "t2": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
+    "13": 79,
+    "22": 195,
+    "brancos": 4,
+    "nulos": 6,
     "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "comparecimento": 284,
+    "aptos": 657,
+    "total": 284
    },
-   "metricas": null,
-   "secoes": [],
+   "metricas": {
+    "candidatos": {
+     "13": {
+      "t1": 62,
+      "t2": 79,
+      "delta": 17,
+      "pct": 27.419354838709676,
+      "share_t1": 23.39622641509434,
+      "share_t2": 27.816901408450704
+     },
+     "22": {
+      "t1": 172,
+      "t2": 195,
+      "delta": 23,
+      "pct": 13.372093023255815,
+      "share_t1": 64.90566037735849,
+      "share_t2": 68.66197183098592
+     }
+    },
+    "diferenca_crescimento": -6,
+    "margem_t1": -110,
+    "margem_t2": -116,
+    "variacao_margem": -6,
+    "total_t1": 265,
+    "total_t2": 284,
+    "delta_total": 19,
+    "pct_total": 7.169811320754717,
+    "brancos_nulos_t1": 6,
+    "brancos_nulos_t2": 10
+   },
+   "secoes": [
+    {
+     "zona": "0001",
+     "secao": "0376",
+     "t1": {
+      "13": 62,
+      "22": 172,
+      "brancos": 3,
+      "nulos": 3,
+      "comparecimento": 265,
+      "aptos": 657
+     },
+     "t2": {
+      "13": 79,
+      "22": 195,
+      "brancos": 4,
+      "nulos": 6,
+      "comparecimento": 284,
+      "aptos": 657
+     }
+    }
+   ],
    "lat": -25.7459,
-   "lon": 28.1879
+   "lon": 28.1879,
+   "pais": "África do Sul"
   },
   {
    "codigo": "99155",
@@ -7322,7 +7640,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -25.6336,
-   "lon": -54.5829
+   "lon": -54.5829,
+   "pais": "Argentina"
   },
   {
    "codigo": "99236",
@@ -7353,7 +7672,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -19.0044,
-   "lon": -57.7157
+   "lon": -57.7157,
+   "pais": "Bolívia"
   },
   {
    "codigo": "99295",
@@ -7384,7 +7704,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 39.0197,
-   "lon": 125.7526
+   "lon": 125.7526,
+   "pais": "Coreia do Norte"
   },
   {
    "codigo": "30392",
@@ -7415,7 +7736,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -0.2202,
-   "lon": -78.5123
+   "lon": -78.5123,
+   "pais": "Equador"
   },
   {
    "codigo": "30406",
@@ -7446,7 +7768,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 34.0218,
-   "lon": -6.8409
+   "lon": -6.8409,
+   "pais": "Marrocos"
   },
   {
    "codigo": "30414",
@@ -7477,7 +7800,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 31.9031,
-   "lon": 35.1952
+   "lon": 35.1952,
+   "pais": "Palestina"
   },
   {
    "codigo": "30422",
@@ -7558,7 +7882,8 @@
     }
    ],
    "lat": 24.6389,
-   "lon": 46.716
+   "lon": 46.716,
+   "pais": "Arábia Saudita"
   },
   {
    "codigo": "30430",
@@ -7589,7 +7914,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -32.5887,
-   "lon": -53.3781
+   "lon": -53.3781,
+   "pais": "Uruguai"
   },
   {
    "codigo": "99244",
@@ -7620,7 +7946,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -30.9001,
-   "lon": -55.5408
+   "lon": -55.5408,
+   "pais": "Uruguai"
   },
   {
    "codigo": "30449",
@@ -7651,7 +7978,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 41.8933,
-   "lon": 12.4829
+   "lon": 12.4829,
+   "pais": "Itália"
   },
   {
    "codigo": "99147",
@@ -7682,7 +8010,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 17.1185,
-   "lon": -61.8449
+   "lon": -61.8449,
+   "pais": "Antígua e Barbuda"
   },
   {
    "codigo": "30465",
@@ -7713,7 +8042,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -24.0617,
-   "lon": -54.3056
+   "lon": -54.3056,
+   "pais": "Paraguai"
   },
   {
    "codigo": "30473",
@@ -7744,7 +8074,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -17.7834,
-   "lon": -63.1821
+   "lon": -63.1821,
+   "pais": "Bolívia"
   },
   {
    "codigo": "99279",
@@ -7775,7 +8106,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 4.5959,
-   "lon": -61.1106
+   "lon": -61.1106,
+   "pais": "Venezuela"
   },
   {
    "codigo": "30481",
@@ -7806,7 +8138,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -33.4377,
-   "lon": -70.6511
+   "lon": -70.6511,
+   "pais": "Chile"
   },
   {
    "codigo": "30988",
@@ -7837,7 +8170,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 43.8571,
-   "lon": 18.4126
+   "lon": 18.4126,
+   "pais": "Bósnia e Herzegovina"
   },
   {
    "codigo": "30538",
@@ -7918,7 +8252,8 @@
     }
    ],
    "lat": 37.5667,
-   "lon": 126.9783
+   "lon": 126.9783,
+   "pais": "Coreia do Sul"
   },
   {
    "codigo": "29548",
@@ -8019,7 +8354,8 @@
     }
    ],
    "lat": 1.3571,
-   "lon": 103.8195
+   "lon": 103.8195,
+   "pais": "Singapura"
   },
   {
    "codigo": "99333",
@@ -8050,7 +8386,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 3.8909,
-   "lon": -51.8014
+   "lon": -51.8014,
+   "pais": "Guiana Francesa"
   },
   {
    "codigo": "30562",
@@ -8491,7 +8828,8 @@
     }
    ],
    "lat": -33.8698,
-   "lon": 151.2083
+   "lon": 151.2083,
+   "pais": "Austrália"
   },
   {
    "codigo": "30490",
@@ -8522,7 +8860,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 18.4714,
-   "lon": -69.8918
+   "lon": -69.8918,
+   "pais": "República Dominicana"
   },
   {
    "codigo": "30503",
@@ -8553,7 +8892,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 37.7879,
-   "lon": -122.4075
+   "lon": -122.4075,
+   "pais": "Estados Unidos da América"
   },
   {
    "codigo": "30511",
@@ -8584,7 +8924,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 9.9327,
-   "lon": -84.0797
+   "lon": -84.0797,
+   "pais": "Costa Rica"
   },
   {
    "codigo": "30520",
@@ -8615,7 +8956,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 13.6976,
-   "lon": -89.1912
+   "lon": -89.1912,
+   "pais": "El Salvador"
   },
   {
    "codigo": "39225",
@@ -8646,7 +8988,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 0.3389,
-   "lon": 6.7313
+   "lon": 6.7313,
+   "pais": "São Tomé e Príncipe"
   },
   {
    "codigo": "30546",
@@ -8677,7 +9020,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 42.6977,
-   "lon": 23.3217
+   "lon": 23.3217,
+   "pais": "Bulgária"
   },
   {
    "codigo": "30570",
@@ -8758,7 +9102,8 @@
     }
    ],
    "lat": 25.0375,
-   "lon": 121.5637
+   "lon": 121.5637,
+   "pais": "Taiwan"
   },
   {
    "codigo": "99317",
@@ -8839,7 +9184,8 @@
     }
    ],
    "lat": 59.4372,
-   "lon": 24.7573
+   "lon": 24.7573,
+   "pais": "Estónia"
   },
   {
    "codigo": "99104",
@@ -8870,7 +9216,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 41.6935,
-   "lon": 44.8014
+   "lon": 44.8014,
+   "pais": "Geórgia"
   },
   {
    "codigo": "30597",
@@ -8901,7 +9248,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 35.6893,
-   "lon": 51.3896
+   "lon": 51.3896,
+   "pais": "Irã"
   },
   {
    "codigo": "30600",
@@ -8932,38 +9280,170 @@
    "metricas": null,
    "secoes": [],
    "lat": 14.1058,
-   "lon": -87.2047
+   "lon": -87.2047,
+   "pais": "Honduras"
   },
   {
    "codigo": "30619",
    "nome": "TEL AVIV",
    "secoes_previstas": 9,
-   "secoes_apuradas_t2": 0,
-   "secoes_comparaveis": 0,
+   "secoes_apuradas_t2": 5,
+   "secoes_comparaveis": 5,
    "t1": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "13": 92,
+    "22": 523,
+    "brancos": 14,
+    "nulos": 12,
+    "outros": 89,
+    "comparecimento": 730,
+    "aptos": 3442,
+    "total": 730
    },
    "t2": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
+    "13": 166,
+    "22": 699,
+    "brancos": 18,
+    "nulos": 19,
     "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "comparecimento": 902,
+    "aptos": 3443,
+    "total": 902
    },
-   "metricas": null,
-   "secoes": [],
+   "metricas": {
+    "candidatos": {
+     "13": {
+      "t1": 92,
+      "t2": 166,
+      "delta": 74,
+      "pct": 80.43478260869566,
+      "share_t1": 12.602739726027398,
+      "share_t2": 18.403547671840354
+     },
+     "22": {
+      "t1": 523,
+      "t2": 699,
+      "delta": 176,
+      "pct": 33.652007648183556,
+      "share_t1": 71.64383561643835,
+      "share_t2": 77.49445676274945
+     }
+    },
+    "diferenca_crescimento": -102,
+    "margem_t1": -431,
+    "margem_t2": -533,
+    "variacao_margem": -102,
+    "total_t1": 730,
+    "total_t2": 902,
+    "delta_total": 172,
+    "pct_total": 23.561643835616437,
+    "brancos_nulos_t1": 26,
+    "brancos_nulos_t2": 37
+   },
+   "secoes": [
+    {
+     "zona": "0001",
+     "secao": "0676",
+     "t1": {
+      "13": 25,
+      "22": 136,
+      "brancos": 4,
+      "nulos": 0,
+      "comparecimento": 189,
+      "aptos": 763
+     },
+     "t2": {
+      "13": 35,
+      "22": 176,
+      "brancos": 10,
+      "nulos": 4,
+      "comparecimento": 225,
+      "aptos": 763
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0677",
+     "t1": {
+      "13": 20,
+      "22": 127,
+      "brancos": 4,
+      "nulos": 3,
+      "comparecimento": 181,
+      "aptos": 765
+     },
+     "t2": {
+      "13": 49,
+      "22": 174,
+      "brancos": 3,
+      "nulos": 6,
+      "comparecimento": 232,
+      "aptos": 765
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0680",
+     "t1": {
+      "13": 14,
+      "22": 83,
+      "brancos": 3,
+      "nulos": 2,
+      "comparecimento": 114,
+      "aptos": 765
+     },
+     "t2": {
+      "13": 23,
+      "22": 123,
+      "brancos": 3,
+      "nulos": 1,
+      "comparecimento": 150,
+      "aptos": 766
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0682",
+     "t1": {
+      "13": 16,
+      "22": 112,
+      "brancos": 2,
+      "nulos": 3,
+      "comparecimento": 146,
+      "aptos": 765
+     },
+     "t2": {
+      "13": 29,
+      "22": 142,
+      "brancos": 0,
+      "nulos": 4,
+      "comparecimento": 175,
+      "aptos": 765
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0683",
+     "t1": {
+      "13": 17,
+      "22": 65,
+      "brancos": 1,
+      "nulos": 4,
+      "comparecimento": 100,
+      "aptos": 384
+     },
+     "t2": {
+      "13": 30,
+      "22": 84,
+      "brancos": 2,
+      "nulos": 4,
+      "comparecimento": 120,
+      "aptos": 384
+     }
+    }
+   ],
    "lat": 32.0853,
-   "lon": 34.7818
+   "lon": 34.7818,
+   "pais": "Israel"
   },
   {
    "codigo": "99139",
@@ -8994,7 +9474,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 41.3281,
-   "lon": 19.8184
+   "lon": 19.8184,
+   "pais": "Albânia"
   },
   {
    "codigo": "30635",
@@ -9025,7 +9506,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 43.6535,
-   "lon": -79.3839
+   "lon": -79.3839,
+   "pais": "Canadá"
   },
   {
    "codigo": "30686",
@@ -9056,7 +9538,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 32.8967,
-   "lon": 13.1778
+   "lon": 13.1778,
+   "pais": "Líbia"
   },
   {
    "codigo": "30708",
@@ -9087,7 +9570,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 36.8002,
-   "lon": 10.1858
+   "lon": 10.1858,
+   "pais": "Tunísia"
   },
   {
    "codigo": "30627",
@@ -10008,7 +10492,8 @@
     }
    ],
    "lat": 35.6769,
-   "lon": 139.7639
+   "lon": 139.7639,
+   "pais": "Japão"
   },
   {
    "codigo": "39284",
@@ -10039,7 +10524,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 12.3682,
-   "lon": -1.5271
+   "lon": -1.5271,
+   "pais": "Burquina Faso"
   },
   {
    "codigo": "39063",
@@ -10070,7 +10556,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 49.2609,
-   "lon": -123.114
+   "lon": -123.114,
+   "pais": "Canadá"
   },
   {
    "codigo": "30740",
@@ -10101,7 +10588,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 52.232,
-   "lon": 21.0067
+   "lon": 21.0067,
+   "pais": "Polónia"
   },
   {
    "codigo": "30767",
@@ -10132,7 +10620,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 48.2084,
-   "lon": 16.3725
+   "lon": 16.3725,
+   "pais": "Áustria"
   },
   {
    "codigo": "30783",
@@ -10163,7 +10652,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 38.8951,
-   "lon": -77.0364
+   "lon": -77.0364,
+   "pais": "Estados Unidos da América"
   },
   {
    "codigo": "30805",
@@ -10324,7 +10814,8 @@
     }
    ],
    "lat": -41.2888,
-   "lon": 174.7772
+   "lon": 174.7772,
+   "pais": "Nova Zelândia"
   },
   {
    "codigo": "30821",
@@ -10355,7 +10846,8 @@
    "metricas": null,
    "secoes": [],
    "lat": -22.5336,
-   "lon": 17.0455
+   "lon": 17.0455,
+   "pais": "Namíbia"
   },
   {
    "codigo": "30848",
@@ -10436,7 +10928,8 @@
     }
    ],
    "lat": 31.2313,
-   "lon": 121.47
+   "lon": 121.47,
+   "pais": "China"
   },
   {
    "codigo": "99376",
@@ -10467,7 +10960,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 16.7967,
-   "lon": 96.161
+   "lon": 96.161,
+   "pais": "Birmânia"
   },
   {
    "codigo": "39020",
@@ -10498,7 +10992,8 @@
    "metricas": null,
    "secoes": [],
    "lat": 45.8131,
-   "lon": 15.9773
+   "lon": 15.9773,
+   "pais": "Croácia"
   },
   {
    "codigo": "30864",
@@ -10529,61 +11024,63 @@
    "metricas": null,
    "secoes": [],
    "lat": 47.3744,
-   "lon": 8.541
+   "lon": 8.541,
+   "pais": "Suíça"
   }
  ],
+ "falhas": [],
  "agregado": {
   "t1": {
-   "13": 13644,
-   "22": 29460,
-   "brancos": 1675,
-   "nulos": 1183,
-   "outros": 6245,
-   "comparecimento": 52207,
-   "aptos": 127805,
-   "total": 52207
+   "13": 14852,
+   "22": 30300,
+   "brancos": 1745,
+   "nulos": 1232,
+   "outros": 6431,
+   "comparecimento": 54560,
+   "aptos": 135144,
+   "total": 54560
   },
   "t2": {
-   "13": 17794,
-   "22": 34788,
-   "brancos": 1357,
-   "nulos": 1195,
+   "13": 19244,
+   "22": 35857,
+   "brancos": 1417,
+   "nulos": 1258,
    "outros": 0,
-   "comparecimento": 55134,
-   "aptos": 127817,
-   "total": 55134
+   "comparecimento": 57776,
+   "aptos": 135157,
+   "total": 57776
   },
   "metricas": {
    "candidatos": {
     "13": {
-     "t1": 13644,
-     "t2": 17794,
-     "delta": 4150,
-     "pct": 30.416300205218413,
-     "share_t1": 26.134426417913307,
-     "share_t2": 32.27409583922806
+     "t1": 14852,
+     "t2": 19244,
+     "delta": 4392,
+     "pct": 29.5717748451387,
+     "share_t1": 27.221407624633432,
+     "share_t2": 33.3079479368596
     },
     "22": {
-     "t1": 29460,
-     "t2": 34788,
-     "delta": 5328,
-     "pct": 18.08553971486762,
-     "share_t1": 56.42921447315494,
-     "share_t2": 63.09718141255849
+     "t1": 30300,
+     "t2": 35857,
+     "delta": 5557,
+     "pct": 18.339933993399338,
+     "share_t1": 55.53519061583578,
+     "share_t2": 62.06210191082803
     }
    },
-   "diferenca_crescimento": -1178,
-   "margem_t1": -15816,
-   "margem_t2": -16994,
-   "variacao_margem": -1178,
-   "total_t1": 52207,
-   "total_t2": 55134,
-   "delta_total": 2927,
-   "pct_total": 5.606527860248626,
-   "brancos_nulos_t1": 2858,
-   "brancos_nulos_t2": 2552
+   "diferenca_crescimento": -1165,
+   "margem_t1": -15448,
+   "margem_t2": -16613,
+   "variacao_margem": -1165,
+   "total_t1": 54560,
+   "total_t2": 57776,
+   "delta_total": 3216,
+   "pct_total": 5.894428152492669,
+   "brancos_nulos_t1": 2977,
+   "brancos_nulos_t2": 2675
   },
-  "secoes_apuradas_t2": 188,
+  "secoes_apuradas_t2": 199,
   "secoes_previstas": 2715
  }
 }

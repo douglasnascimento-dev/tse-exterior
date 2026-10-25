@@ -4,11 +4,16 @@ Dashboard que compara, **nas mesmas seções**, o 1º e o 2º turno da eleição
 presidencial de 2026 nas zonas eleitorais do exterior, lendo os **boletins de
 urna** publicados pelo TSE.
 
-Cobre as **186 cidades** do exterior. Mostra um mapa-múndi com uma bolha por
-cidade apurada (área = votos, cor = quem lidera), e, para cada cidade: votos
-de cada candidato nos dois turnos, crescimento individual (absoluto e
-percentual), diferença entre os crescimentos, margem entre os dois e sua
-variação, total de votos e seu crescimento — além do detalhamento por seção.
+Cobre as **186 cidades** do exterior, em 134 países. Traz:
+
+- **mapa-múndi** com uma bolha por cidade apurada (área = votos, cor = quem lidera);
+- **evolução da apuração** — a porcentagem de cada candidato ao longo do dia,
+  com o 1º turno nas mesmas seções como linha tracejada de referência;
+- **recorte por cidade, por país ou pelo exterior inteiro**;
+- para cada recorte: votos nos dois turnos, crescimento individual (absoluto e
+  percentual), diferença entre os crescimentos, margem e sua variação, total de
+  votos e seu crescimento;
+- **detalhamento por seção** ao abrir uma cidade.
 
 ## Como funciona
 
@@ -99,6 +104,11 @@ Terminada a apuração, desligue o cron para não gastar minutos de Actions.
 - Seções sem boletim publicado ficam de fora dos dois lados da comparação.
 - `coletor/bu.py` distingue `404` (seção ainda não apurada) de erro transitório,
   que é repetido com backoff — uma falha de rede não vira "seção sem votos".
+- Uma cidade que falhe mesmo após a segunda tentativa **permanece** no resultado,
+  marcada com `falhou`, e o dashboard mostra um aviso. Removê-la encolheria o
+  total de seções previstas sem ninguém notar.
+- O gráfico de evolução depende do histórico acumulado: com uma única leitura
+  ele não aparece. A cadência é a do cron (15 min), não minuto a minuto.
 
 ## Arquivos
 
@@ -115,7 +125,7 @@ Terminada a apuração, desligue o cron para não gastar minutos de Actions.
 | `docs/dados/resumo.json` | saída da coleta, lida pelo dashboard |
 | `docs/dados/coordenadas.json` | lat/lon das 186 cidades |
 | `docs/dados/mundo.json` | contornos dos países para o mapa |
-| `docs/dados/historico.jsonl` | uma linha por execução, para série temporal |
+| `docs/dados/historico.jsonl` | uma linha por execução — alimenta o gráfico de evolução |
 
 Dados: [resultados.tse.jus.br](https://resultados.tse.jus.br) e
 [dadosabertos.tse.jus.br](https://dadosabertos.tse.jus.br).

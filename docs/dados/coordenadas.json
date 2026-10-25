@@ -4,49 +4,56 @@
   "lat": 27.7083,
   "lon": 85.3206,
   "match": "Catmandu, काठमाडौं जिल्ला, बागमती प्रदेश, Nepal",
-  "nome": "KATMANDU"
+  "nome": "KATMANDU",
+  "pais": "Nepal"
  },
  "29254": {
   "fonte": "nominatim",
   "lat": 5.3204,
   "lon": -4.0161,
   "match": "Abidjã, Abidjan, Costa do Marfim",
-  "nome": "ABIDJÃ"
+  "nome": "ABIDJÃ",
+  "pais": "Costa do Marfim"
  },
  "29262": {
   "fonte": "nominatim",
   "lat": 24.4538,
   "lon": 54.3774,
   "match": "Abu Dhabi, أبوظبي, أبو ظبي, Emirados Árabes Unidos",
-  "nome": "ABU DHABI"
+  "nome": "ABU DHABI",
+  "pais": "Emirados Árabes Unidos"
  },
  "29270": {
   "fonte": "nominatim",
   "lat": 5.5571,
   "lon": -0.2012,
   "match": "Acra, Korle-Klottey Municipal District, Grande Acra, Gana",
-  "nome": "ACCRA"
+  "nome": "ACCRA",
+  "pais": "Gana"
  },
  "29289": {
   "fonte": "nominatim",
   "lat": 31.9516,
   "lon": 35.924,
   "match": "Amã, ناحية عمان, لواء قصبة عمان, Amã, 11110, Jordânia",
-  "nome": "AMÃ"
+  "nome": "AMÃ",
+  "pais": "Jordânia"
  },
  "29297": {
   "fonte": "nominatim",
   "lat": 39.9208,
   "lon": 32.854,
   "match": "Ancara, Çankaya, Ankara, İç Anadolu Bölgesi, 06420, Turquia",
-  "nome": "ANCARA"
+  "nome": "ANCARA",
+  "pais": "Turquia"
  },
  "29300": {
   "fonte": "nominatim",
   "lat": 36.7729,
   "lon": 3.0588,
   "match": "Argel, Daïra Sidi M'Hamed, Argel, 16000, Argélia",
-  "nome": "ARGEL"
+  "nome": "ARGEL",
+  "pais": "Argélia"
  },
  "29319": {
   "consulta": "Artigas, Uruguay",
@@ -54,112 +61,128 @@
   "lat": -30.6171,
   "lon": -56.9373,
   "match": "Artigas, Uruguai",
-  "nome": "ARTIGAS"
+  "nome": "ARTIGAS",
+  "pais": "Uruguai"
  },
  "29327": {
   "fonte": "nominatim",
   "lat": -25.28,
   "lon": -57.6344,
   "match": "Assunção, Distrito Capital, Región Oriental, 001013, Paraguai",
-  "nome": "ASSUNÇÃO"
+  "nome": "ASSUNÇÃO",
+  "pais": "Paraguai"
  },
  "29335": {
   "fonte": "nominatim",
   "lat": 37.9756,
   "lon": 23.7348,
   "match": "Atenas, Δήμος Αθηναίων, Περιφερειακή Ενότητα Κεντρικού Τομέα Αθηνών, Περιφέρεια Αττικής, Αποκεντρωμένη Διοίκηση Αττικής, 105 57, Grécia",
-  "nome": "ATENAS"
+  "nome": "ATENAS",
+  "pais": "Grécia"
  },
  "29343": {
   "fonte": "nominatim",
   "lat": 13.7525,
   "lon": 100.4935,
   "match": "Banguecoque, Tailândia",
-  "nome": "BANGKOK"
+  "nome": "BANGKOK",
+  "pais": "Tailândia"
  },
  "29351": {
   "fonte": "nominatim",
   "lat": 41.3826,
   "lon": 2.1771,
   "match": "Barcelona, Barcelonès, Barcelona, Catalunha, Espanha",
-  "nome": "BARCELONA"
+  "nome": "BARCELONA",
+  "pais": "Espanha"
  },
  "29360": {
   "fonte": "nominatim",
   "lat": 33.8892,
   "lon": 35.5026,
   "match": "Beirute, البسطة التحتا, باشورة, Beirute, Líbano",
-  "nome": "BEIRUTE"
+  "nome": "BEIRUTE",
+  "pais": "Líbano"
  },
  "29378": {
   "fonte": "nominatim",
   "lat": 44.8153,
   "lon": 20.4457,
   "match": "Belgrado, Cidade de Belgrado, Централна Србија, Sérvia",
-  "nome": "BELGRADO"
+  "nome": "BELGRADO",
+  "pais": "Sérvia"
  },
  "29386": {
   "fonte": "nominatim",
   "lat": 52.5174,
   "lon": 13.3951,
   "match": "Berlim, Alemanha",
-  "nome": "BERLIM"
+  "nome": "BERLIM",
+  "pais": "Alemanha"
  },
  "29394": {
   "fonte": "nominatim",
   "lat": 11.8613,
   "lon": -15.5831,
   "match": "Bissau, Bissau (setor autónomo), 1021, Guiné-Bissau",
-  "nome": "BISSAU"
+  "nome": "BISSAU",
+  "pais": "Guiné-Bissau"
  },
  "29408": {
   "fonte": "nominatim",
   "lat": 4.6534,
   "lon": -74.0836,
   "match": "Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, Colômbia",
-  "nome": "BOGOTÁ"
+  "nome": "BOGOTÁ",
+  "pais": "Colômbia"
  },
  "29416": {
   "fonte": "nominatim",
   "lat": 42.3588,
   "lon": -71.0578,
   "match": "Boston, Suffolk County, Massachusetts, Estados Unidos da América",
-  "nome": "BOSTON"
+  "nome": "BOSTON",
+  "pais": "Estados Unidos da América"
  },
  "29424": {
   "fonte": "nominatim",
   "lat": 13.0978,
   "lon": -59.6184,
   "match": "Bridgetown, Saint Michael, Barbados",
-  "nome": "BRIDGETOWN"
+  "nome": "BRIDGETOWN",
+  "pais": "Barbados"
  },
  "29432": {
   "fonte": "nominatim",
   "lat": 50.8467,
   "lon": 4.3525,
   "match": "Bruxelas, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, Bélgica",
-  "nome": "BRUXELAS"
+  "nome": "BRUXELAS",
+  "pais": "Bélgica"
  },
  "29440": {
   "fonte": "nominatim",
   "lat": 44.4361,
   "lon": 26.1027,
   "match": "Bucareste, Roménia",
-  "nome": "BUCARESTE"
+  "nome": "BUCARESTE",
+  "pais": "Roménia"
  },
  "29459": {
   "fonte": "nominatim",
   "lat": 47.4979,
   "lon": 19.0402,
   "match": "Budapeste, Budapest, Hungria",
-  "nome": "BUDAPESTE"
+  "nome": "BUDAPESTE",
+  "pais": "Hungria"
  },
  "29467": {
   "fonte": "nominatim",
   "lat": -34.6096,
   "lon": -58.3888,
   "match": "Buenos Aires, Comuna 1, Ciudad Autónoma de Buenos Aires, Argentina",
-  "nome": "BUENOS AIRES"
+  "nome": "BUENOS AIRES",
+  "pais": "Argentina"
  },
  "29475": {
   "consulta": "Cayenne, Guyane française",
@@ -167,35 +190,40 @@
   "lat": 4.9372,
   "lon": -52.3259,
   "match": "Caiena, Cayenne, Guiana Francesa, 97300, França",
-  "nome": "CAIENA"
+  "nome": "CAIENA",
+  "pais": "Guiana Francesa"
  },
  "29483": {
   "fonte": "nominatim",
   "lat": 30.0444,
   "lon": 31.2357,
   "match": "Cairo, Egito",
-  "nome": "CAIRO"
+  "nome": "CAIRO",
+  "pais": "Egito"
  },
  "29491": {
   "fonte": "nominatim",
   "lat": -35.2976,
   "lon": 149.1013,
   "match": "Camberra, District of Canberra Central, Território da Capital Australiana, 2600, Austrália",
-  "nome": "CAMBERRA"
+  "nome": "CAMBERRA",
+  "pais": "Austrália"
  },
  "29505": {
   "fonte": "nominatim",
   "lat": 10.5061,
   "lon": -66.9146,
   "match": "Caracas, Parroquia Catedral, Municipio Libertador, Distrito Metropolitano de Caracas, Distrito Capital, Venezuela",
-  "nome": "CARACAS"
+  "nome": "CARACAS",
+  "pais": "Venezuela"
  },
  "29513": {
   "fonte": "nominatim",
   "lat": 41.8756,
   "lon": -87.6244,
   "match": "Chicago, South Chicago Township, Cook County, Illinois, Estados Unidos da América",
-  "nome": "CHICAGO"
+  "nome": "CHICAGO",
+  "pais": "Estados Unidos da América"
  },
  "29521": {
   "consulta": "Chuy, Rocha, Uruguay",
@@ -203,42 +231,48 @@
   "lat": -33.6938,
   "lon": -53.4561,
   "match": "Chuy, Rocha, 27100, Uruguai",
-  "nome": "CHUY"
+  "nome": "CHUY",
+  "pais": "Uruguai"
  },
  "29530": {
   "fonte": "nominatim",
   "lat": -33.9288,
   "lon": 18.4172,
   "match": "Cidade do Cabo, City of Cape Town, Cabo Ocidental, 8001, África do Sul",
-  "nome": "CIDADE DO CABO"
+  "nome": "CIDADE DO CABO",
+  "pais": "África do Sul"
  },
  "29548": {
   "fonte": "nominatim",
   "lat": 1.3571,
   "lon": 103.8195,
   "match": "Singapura",
-  "nome": "SINGAPURA"
+  "nome": "SINGAPURA",
+  "pais": "Singapura"
  },
  "29556": {
   "fonte": "nominatim",
   "lat": -25.5169,
   "lon": -54.6169,
   "match": "Cidade do Leste, Alto Paraná, Región Oriental, Paraguai",
-  "nome": "CIUDAD DEL ESTE"
+  "nome": "CIUDAD DEL ESTE",
+  "pais": "Paraguai"
  },
  "29564": {
   "fonte": "nominatim",
   "lat": 8.3224,
   "lon": -62.6897,
   "match": "Cidade Guayana, Parroquia Cachamay, Municipio Caroní, Bolívar, Venezuela",
-  "nome": "CIUDAD GUAYANA"
+  "nome": "CIUDAD GUAYANA",
+  "pais": "Venezuela"
  },
  "29572": {
   "fonte": "nominatim",
   "lat": -17.4012,
   "lon": -66.1676,
   "match": "Cochabamba, Juan De La Rosa, Molle, Cochabamba, Cercado, Cochabamba, Bolívia",
-  "nome": "COCHABAMBA"
+  "nome": "COCHABAMBA",
+  "pais": "Bolívia"
  },
  "29580": {
   "consulta": "Concepción, Paraguay",
@@ -246,14 +280,16 @@
   "lat": -23.1775,
   "lon": -57.1675,
   "match": "Concepción, Región Oriental, Paraguai",
-  "nome": "CONCEPCIÓN"
+  "nome": "CONCEPCIÓN",
+  "pais": "Paraguai"
  },
  "29599": {
   "fonte": "nominatim",
   "lat": 55.6867,
   "lon": 12.5701,
   "match": "Copenhaga, Comuna de Copenhaga, Região da Capital, 1357, Dinamarca",
-  "nome": "COPENHAGUE"
+  "nome": "COPENHAGUE",
+  "pais": "Dinamarca"
  },
  "29602": {
   "consulta": "Córdoba, Argentina",
@@ -261,77 +297,88 @@
   "lat": -31.4167,
   "lon": -64.1834,
   "match": "Córdova, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Córdova, X5000, Argentina",
-  "nome": "CÓRDOBA"
+  "nome": "CÓRDOBA",
+  "pais": "Argentina"
  },
  "29610": {
   "fonte": "nominatim",
   "lat": 14.6934,
   "lon": -17.4479,
   "match": "Dacar, Dakar, Senegal",
-  "nome": "DACAR"
+  "nome": "DACAR",
+  "pais": "Senegal"
  },
  "29629": {
   "fonte": "nominatim",
   "lat": 23.7644,
   "lon": 90.389,
   "match": "Daca, ঢাকা মহানগর, ঢাকা জেলা, Daca, 1215, Bangladeche",
-  "nome": "DACCA"
+  "nome": "DACCA",
+  "pais": "Bangladeche"
  },
  "29637": {
   "fonte": "nominatim",
   "lat": 33.5131,
   "lon": 36.3096,
   "match": "Damasco, بلدية دمشق القديمة, ناحية دمشق, منطقة دمشق, محافظة دمشق, Síria",
-  "nome": "DAMASCO"
+  "nome": "DAMASCO",
+  "pais": "Síria"
  },
  "29645": {
   "fonte": "nominatim",
   "lat": -8.5537,
   "lon": 125.5784,
   "match": "Díli, Vera Cruz, Díli, Timor-Leste",
-  "nome": "DÍLI"
+  "nome": "DÍLI",
+  "pais": "Timor-Leste"
  },
  "29653": {
   "fonte": "nominatim",
   "lat": 25.3109,
   "lon": 51.5082,
   "match": "Doha, Catar",
-  "nome": "DOHA"
+  "nome": "DOHA",
+  "pais": "Catar"
  },
  "29661": {
   "fonte": "nominatim",
   "lat": 53.3494,
   "lon": -6.2606,
   "match": "Dublin, County Dublin, Leinster, Irlanda",
-  "nome": "DUBLIN"
+  "nome": "DUBLIN",
+  "pais": "Irlanda"
  },
  "29670": {
   "fonte": "nominatim",
   "lat": -27.3376,
   "lon": -55.8669,
   "match": "Encarnación, Itapúa, Región Oriental, 070101, Paraguai",
-  "nome": "ENCARNACIÓN"
+  "nome": "ENCARNACIÓN",
+  "pais": "Paraguai"
  },
  "29688": {
   "fonte": "nominatim",
   "lat": 59.3251,
   "lon": 18.0711,
   "match": "Estocolmo, Stockholms kommun, Stockholms län, 111 29, Suécia",
-  "nome": "ESTOCOLMO"
+  "nome": "ESTOCOLMO",
+  "pais": "Suécia"
  },
  "29696": {
   "fonte": "nominatim",
   "lat": 50.1106,
   "lon": 8.6821,
   "match": "Frankfurt sobre o Meno, Hesse, Alemanha",
-  "nome": "FRANKFURT"
+  "nome": "FRANKFURT",
+  "pais": "Alemanha"
  },
  "29700": {
   "fonte": "nominatim",
   "lat": 46.2018,
   "lon": 6.1466,
   "match": "Genebra, Suíça",
-  "nome": "GENEBRA"
+  "nome": "GENEBRA",
+  "pais": "Suíça"
  },
  "29718": {
   "consulta": "Georgetown, Guyana",
@@ -339,35 +386,40 @@
   "lat": 6.8033,
   "lon": -58.1455,
   "match": "City of Georgetown, Demerara-Mahaica, Guiana",
-  "nome": "GEORGETOWN"
+  "nome": "GEORGETOWN",
+  "pais": "Guiana"
  },
  "29742": {
   "fonte": "nominatim",
   "lat": 34.711,
   "lon": 137.7259,
   "match": "浜松市, Prefeitura de Shizuoka, Japão",
-  "nome": "HAMAMATSU"
+  "nome": "HAMAMATSU",
+  "pais": "Japão"
  },
  "29750": {
   "fonte": "nominatim",
   "lat": 21.0283,
   "lon": 105.854,
   "match": "Hanói, Vietname",
-  "nome": "HANÓI"
+  "nome": "HANÓI",
+  "pais": "Vietname"
  },
  "29769": {
   "fonte": "nominatim",
   "lat": -17.8567,
   "lon": 31.0602,
   "match": "Harare, Zimbabué",
-  "nome": "HARARE"
+  "nome": "HARARE",
+  "pais": "Zimbabué"
  },
  "29777": {
   "fonte": "nominatim",
   "lat": 23.1353,
   "lon": -82.359,
   "match": "Havana, La Habana, 10000, Cuba",
-  "nome": "HAVANA"
+  "nome": "HAVANA",
+  "pais": "Cuba"
  },
  "29785": {
   "consulta": "Helsinki, Finland",
@@ -375,84 +427,96 @@
   "lat": 60.1666,
   "lon": 24.9435,
   "match": "Helsínquia, Helsingin seutukunta, Uusimaa, Manner-Suomi, Finlândia",
-  "nome": "HELSINQUE"
+  "nome": "HELSINQUE",
+  "pais": "Finlândia"
  },
  "29793": {
   "fonte": "nominatim",
   "lat": 22.3492,
   "lon": 114.1858,
   "match": "Hong Kong, China",
-  "nome": "HONG KONG"
+  "nome": "HONG KONG",
+  "pais": "China (Hong Kong)"
  },
  "29807": {
   "fonte": "nominatim",
   "lat": 29.7589,
   "lon": -95.3677,
   "match": "Houston, Condado de Harris, Texas, Estados Unidos da América",
-  "nome": "HOUSTON"
+  "nome": "HOUSTON",
+  "pais": "Estados Unidos da América"
  },
  "29815": {
   "fonte": "nominatim",
   "lat": 3.869,
   "lon": 11.5213,
   "match": "Iaundé, Mfoundi, Centro, Camarões",
-  "nome": "IAUNDÊ"
+  "nome": "IAUNDÊ",
+  "pais": "Camarões"
  },
  "29823": {
   "fonte": "nominatim",
   "lat": -3.7494,
   "lon": -73.2444,
   "match": "Iquitos, Maynas, Loreto, 16002, Peru",
-  "nome": "IQUITOS"
+  "nome": "IQUITOS",
+  "pais": "Peru"
  },
  "29831": {
   "fonte": "nominatim",
   "lat": 33.6938,
   "lon": 73.0652,
   "match": "Islamabad, زون 1, وفاقی دارالحکومت اسلام آباد, 44000, Paquistão",
-  "nome": "ISLAMABADE"
+  "nome": "ISLAMABADE",
+  "pais": "Paquistão"
  },
  "29840": {
   "fonte": "nominatim",
   "lat": -6.1754,
   "lon": 106.8272,
   "match": "Jacarta, Indonésia",
-  "nome": "JACARTA"
+  "nome": "JACARTA",
+  "pais": "Indonésia"
  },
  "29858": {
   "fonte": "nominatim",
   "lat": 50.45,
   "lon": 30.5241,
   "match": "Kiev, Ucrânia",
-  "nome": "KIEV"
+  "nome": "KIEV",
+  "pais": "Ucrânia"
  },
  "29874": {
   "fonte": "nominatim",
   "lat": -4.3197,
   "lon": 15.3424,
   "match": "Kinshasa, República Democrática do Congo",
-  "nome": "KINSHASA"
+  "nome": "KINSHASA",
+  "pais": "República Democrática do Congo"
  },
  "29882": {
   "fonte": "nominatim",
   "lat": 29.2734,
   "lon": 47.4979,
   "match": "Kuwait",
-  "nome": "KUAITE"
+  "nome": "KUAITE",
+  "pais": "Kuwait"
  },
  "29890": {
   "fonte": "nominatim",
   "lat": 3.1517,
   "lon": 101.6942,
   "match": "Kuala Lumpur, Malásia",
-  "nome": "KUALA LUMPUR"
+  "nome": "KUALA LUMPUR",
+  "pais": "Malásia"
  },
  "29904": {
   "fonte": "nominatim",
   "lat": -16.4955,
   "lon": -68.1336,
   "match": "La Paz, Provincia Pedro Domingo Murillo, La Paz, Bolívia",
-  "nome": "LA PAZ"
+  "nome": "LA PAZ",
+  "pais": "Bolívia"
  },
  "29912": {
   "consulta": "Lagos, Nigeria",
@@ -460,56 +524,64 @@
   "lat": 6.4551,
   "lon": 3.3942,
   "match": "Lagos, Lagos Island, Lagos, 100242, Nigéria",
-  "nome": "LAGOS"
+  "nome": "LAGOS",
+  "pais": "Nigéria"
  },
  "29939": {
   "fonte": "nominatim",
   "lat": 0.4087,
   "lon": 9.4419,
   "match": "Libreville, Estuário, Gabão",
-  "nome": "LIBREVILLE"
+  "nome": "LIBREVILLE",
+  "pais": "Gabão"
  },
  "29947": {
   "fonte": "nominatim",
   "lat": -12.046,
   "lon": -77.0306,
   "match": "Lima, Lima Metropolitana, Lima, 15001, Peru",
-  "nome": "LIMA"
+  "nome": "LIMA",
+  "pais": "Peru"
  },
  "29955": {
   "fonte": "nominatim",
   "lat": 38.7078,
   "lon": -9.1366,
   "match": "Lisboa, Portugal",
-  "nome": "LISBOA"
+  "nome": "LISBOA",
+  "pais": "Portugal"
  },
  "29963": {
   "fonte": "nominatim",
   "lat": 6.1304,
   "lon": 1.2158,
   "match": "Lomé, Maritime (região), Togo",
-  "nome": "LOMÉ"
+  "nome": "LOMÉ",
+  "pais": "Togo"
  },
  "29971": {
   "fonte": "nominatim",
   "lat": 51.5074,
   "lon": -0.1278,
   "match": "Grande Londres, Inglaterra, Reino Unido",
-  "nome": "LONDRES"
+  "nome": "LONDRES",
+  "pais": "Reino Unido"
  },
  "29980": {
   "fonte": "nominatim",
   "lat": 34.0537,
   "lon": -118.2428,
   "match": "Los Angeles, Los Angeles County, Califórnia, Estados Unidos da América",
-  "nome": "LOS ANGELES"
+  "nome": "LOS ANGELES",
+  "pais": "Estados Unidos da América"
  },
  "29998": {
   "fonte": "nominatim",
   "lat": -8.8273,
   "lon": 13.244,
   "match": "Luanda, Município de Luanda, Luanda, Angola",
-  "nome": "LUANDA"
+  "nome": "LUANDA",
+  "pais": "Angola"
  },
  "30066": {
   "consulta": "Madrid, Spain",
@@ -517,28 +589,32 @@
   "lat": 40.4168,
   "lon": -3.7035,
   "match": "Madrid, Comunidade de Madrid, Espanha",
-  "nome": "MADRI"
+  "nome": "MADRI",
+  "pais": "Espanha"
  },
  "30074": {
   "fonte": "nominatim",
   "lat": 12.1547,
   "lon": -86.2737,
   "match": "Manágua, Managua, 10000 (código maestro), Nicarágua",
-  "nome": "MANÁGUA"
+  "nome": "MANÁGUA",
+  "pais": "Nicarágua"
  },
  "30082": {
   "fonte": "nominatim",
   "lat": 14.5904,
   "lon": 120.9804,
   "match": "Manila, Capital District, Metro Manila, Filipinas",
-  "nome": "MANILA"
+  "nome": "MANILA",
+  "pais": "Filipinas"
  },
  "30090": {
   "fonte": "nominatim",
   "lat": -25.9662,
   "lon": 32.5675,
   "match": "Cidade de Maputo, Zona Sul, Moçambique",
-  "nome": "MAPUTO"
+  "nome": "MAPUTO",
+  "pais": "Moçambique"
  },
  "30104": {
   "consulta": "Ciudad de México, Mexico",
@@ -546,98 +622,112 @@
   "lat": 19.3208,
   "lon": -99.1515,
   "match": "Cidade do México, México",
-  "nome": "MEXICO"
+  "nome": "MEXICO",
+  "pais": "México"
  },
  "30112": {
   "fonte": "nominatim",
   "lat": 25.7742,
   "lon": -80.1936,
   "match": "Miami, Condado de Miami-Dade, Flórida, Estados Unidos da América",
-  "nome": "MIAMI"
+  "nome": "MIAMI",
+  "pais": "Estados Unidos da América"
  },
  "30120": {
   "fonte": "nominatim",
   "lat": 45.4642,
   "lon": 9.1896,
   "match": "Milão, Rodano, Milão, Lombardia, Itália",
-  "nome": "MILÃO"
+  "nome": "MILÃO",
+  "pais": "Itália"
  },
  "30147": {
   "fonte": "nominatim",
   "lat": -34.9059,
   "lon": -56.1913,
   "match": "Montevidéu, Montevideo, Uruguai",
-  "nome": "MONTEVIDÉU"
+  "nome": "MONTEVIDÉU",
+  "pais": "Uruguai"
  },
  "30155": {
   "fonte": "nominatim",
   "lat": 45.5032,
   "lon": -73.5698,
   "match": "Montreal, Agglomération de Montréal, Montréal (région administrative), Quebec, Canadá",
-  "nome": "MONTREAL"
+  "nome": "MONTREAL",
+  "pais": "Canadá"
  },
  "30163": {
   "fonte": "nominatim",
   "lat": 55.7505,
   "lon": 37.6175,
   "match": "Moscou, Moscovo, Distrito Federal Central, Rússia",
-  "nome": "MOSCOU"
+  "nome": "MOSCOU",
+  "pais": "Rússia"
  },
  "30171": {
   "fonte": "nominatim",
   "lat": 19.055,
   "lon": 72.8692,
   "match": "Mumbai, Mumbai Suburban District, Maharashtra, 400051, Índia",
-  "nome": "MUMBAI"
+  "nome": "MUMBAI",
+  "pais": "Índia"
  },
  "30180": {
   "fonte": "nominatim",
   "lat": 48.1371,
   "lon": 11.5754,
   "match": "Munique, Baviera, Alemanha",
-  "nome": "MUNIQUE"
+  "nome": "MUNIQUE",
+  "pais": "Alemanha"
  },
  "30198": {
   "fonte": "nominatim",
   "lat": 35.1851,
   "lon": 136.8998,
   "match": "Nagoia, Prefeitura de Aichi, Japão",
-  "nome": "NAGÓIA"
+  "nome": "NAGÓIA",
+  "pais": "Japão"
  },
  "30201": {
   "fonte": "nominatim",
   "lat": -1.3024,
   "lon": 36.8289,
   "match": "Nairóbi, Nairobi, Quénia",
-  "nome": "NAIRÓBI"
+  "nome": "NAIRÓBI",
+  "pais": "Quénia"
  },
  "30210": {
   "fonte": "nominatim",
   "lat": 28.6139,
   "lon": 77.209,
   "match": "Nova Deli, New Delhi, Deli, Índia",
-  "nome": "NOVA DELHI"
+  "nome": "NOVA DELHI",
+  "pais": "Índia"
  },
  "30228": {
   "fonte": "nominatim",
   "lat": 40.7127,
   "lon": -74.006,
   "match": "Nova Iorque, Estados Unidos da América",
-  "nome": "NOVA YORK"
+  "nome": "NOVA YORK",
+  "pais": "Estados Unidos da América"
  },
  "30244": {
   "fonte": "nominatim",
   "lat": 59.9133,
   "lon": 10.739,
   "match": "Oslo, Noruega",
-  "nome": "OSLO"
+  "nome": "OSLO",
+  "pais": "Noruega"
  },
  "30252": {
   "fonte": "nominatim",
   "lat": 45.4209,
   "lon": -75.6901,
   "match": "Ottawa, Eastern Ontario, Ontário, Canadá",
-  "nome": "OTTAWA"
+  "nome": "OTTAWA",
+  "pais": "Canadá"
  },
  "30260": {
   "consulta": "Panama City, Panama",
@@ -645,70 +735,80 @@
   "lat": 8.9714,
   "lon": -79.5342,
   "match": "Panamá, Calidonia, Distrito de Panamá, Provincia de Panamá, 0843, Panamá",
-  "nome": "PANAMA"
+  "nome": "PANAMA",
+  "pais": "Panamá"
  },
  "30279": {
   "fonte": "nominatim",
   "lat": 5.8242,
   "lon": -55.1663,
   "match": "Centrum, Paramaribo, Suriname",
-  "nome": "PARAMARIBO"
+  "nome": "PARAMARIBO",
+  "pais": "Suriname"
  },
  "30287": {
   "fonte": "nominatim",
   "lat": 48.8589,
   "lon": 2.32,
   "match": "Paris, Ilha de França, França metropolitana, França",
-  "nome": "PARIS"
+  "nome": "PARIS",
+  "pais": "França"
  },
  "30295": {
   "fonte": "nominatim",
   "lat": -29.7137,
   "lon": -57.0861,
   "match": "Municipio de Paso de los Libres, Departamento Paso de los Libres, Corrientes, Argentina",
-  "nome": "PASO LOS LIBRES"
+  "nome": "PASO LOS LIBRES",
+  "pais": "Argentina"
  },
  "30309": {
   "fonte": "nominatim",
   "lat": -22.5498,
   "lon": -55.7384,
   "match": "Pedro Juan Caballero, Amambay, Región Oriental, Paraguai",
-  "nome": "PEDRO JUAN CABALLERO"
+  "nome": "PEDRO JUAN CABALLERO",
+  "pais": "Paraguai"
  },
  "30317": {
   "fonte": "nominatim",
   "lat": 39.9057,
   "lon": 116.3913,
   "match": "Pequim, China",
-  "nome": "PEQUIM"
+  "nome": "PEQUIM",
+  "pais": "China"
  },
  "30325": {
   "fonte": "nominatim",
   "lat": 10.6573,
   "lon": -61.518,
   "match": "Porto Espanha, Trinidad e Tobago",
-  "nome": "PORT OF SPAIN"
+  "nome": "PORT OF SPAIN",
+  "pais": "Trinidad e Tobago"
  },
  "30333": {
   "fonte": "nominatim",
   "lat": 18.5473,
   "lon": -72.3396,
   "match": "Porto Príncipe, Département de l'Ouest, Haiti",
-  "nome": "PORTO PRÍNCIPE"
+  "nome": "PORTO PRÍNCIPE",
+  "pais": "Haiti"
  },
  "30341": {
   "fonte": "nominatim",
   "lat": 41.1502,
   "lon": -8.6103,
   "match": "Porto, Portugal",
-  "nome": "PORTO"
+  "nome": "PORTO",
+  "pais": "Portugal"
  },
  "30350": {
   "fonte": "nominatim",
   "lat": 50.0875,
   "lon": 14.4213,
   "match": "Praga, Chéquia",
-  "nome": "PRAGA"
+  "nome": "PRAGA",
+  "pais": "Chéquia"
  },
  "30368": {
   "consulta": "Praia, Cabo Verde",
@@ -716,42 +816,48 @@
   "lat": 14.9163,
   "lon": -23.5095,
   "match": "Praia, Platô, Praia, 7600, Cabo Verde",
-  "nome": "PRAIA"
+  "nome": "PRAIA",
+  "pais": "Cabo Verde"
  },
  "30376": {
   "fonte": "nominatim",
   "lat": -25.7459,
   "lon": 28.1879,
   "match": "Pretória, City of Tshwane Metropolitan Municipality, Gautengue, 0142, África do Sul",
-  "nome": "PRETÓRIA"
+  "nome": "PRETÓRIA",
+  "pais": "África do Sul"
  },
  "30392": {
   "fonte": "nominatim",
   "lat": -0.2202,
   "lon": -78.5123,
   "match": "Quito, Distrito Metropolitano de Quito, Pichincha, 170130, Equador",
-  "nome": "QUITO"
+  "nome": "QUITO",
+  "pais": "Equador"
  },
  "30406": {
   "fonte": "nominatim",
   "lat": 34.0218,
   "lon": -6.8409,
   "match": "Rabat, باشوية الرباط, Préfecture de Rabat عمالة الرباط, Rabat-Salé-Kénitra ⵔⴱⴰⵟ-ⵙⵍⴰ-ⵇⵏⵉⵟⵔⴰ الرباط-سلا-القنيطرة, Marrocos",
-  "nome": "RABAT"
+  "nome": "RABAT",
+  "pais": "Marrocos"
  },
  "30414": {
   "fonte": "nominatim",
   "lat": 31.9031,
   "lon": 35.1952,
   "match": "Ramalá, Área A, Cisjordânia, الأراضي الفلسطينية",
-  "nome": "RAMALLAH"
+  "nome": "RAMALLAH",
+  "pais": "Palestina"
  },
  "30422": {
   "fonte": "nominatim",
   "lat": 24.6389,
   "lon": 46.716,
   "match": "Riade, محافظة الرياض, Riade, 12643, Arábia Saudita",
-  "nome": "RIADE"
+  "nome": "RIADE",
+  "pais": "Arábia Saudita"
  },
  "30430": {
   "consulta": "Rio Branco, Cerro Largo, Uruguay",
@@ -759,35 +865,40 @@
   "lat": -32.5887,
   "lon": -53.3781,
   "match": "Río Branco, Cerro Largo, 37100, Uruguai",
-  "nome": "RIO BRANCO"
+  "nome": "RIO BRANCO",
+  "pais": "Uruguai"
  },
  "30449": {
   "fonte": "nominatim",
   "lat": 41.8933,
   "lon": 12.4829,
   "match": "Roma, Roma Capitale, Lácio, Itália",
-  "nome": "ROMA"
+  "nome": "ROMA",
+  "pais": "Itália"
  },
  "30457": {
   "fonte": "nominatim",
   "lat": 52.3731,
   "lon": 4.8925,
   "match": "Amesterdão, Amsterdão, Noord-Holland, Países Baixos",
-  "nome": "AMSTERDÃ"
+  "nome": "AMSTERDÃ",
+  "pais": "Países Baixos"
  },
  "30465": {
   "fonte": "nominatim",
   "lat": -24.0617,
   "lon": -54.3056,
   "match": "Salto do Guairá, Canindeyú, Región Oriental, Paraguai",
-  "nome": "SALTO DEL GUAIRÁ"
+  "nome": "SALTO DEL GUAIRÁ",
+  "pais": "Paraguai"
  },
  "30473": {
   "fonte": "nominatim",
   "lat": -17.7834,
   "lon": -63.1821,
   "match": "Santa Cruz de la Sierra, Provincia Andrés Ibáñez, Santa Cruz, Bolívia",
-  "nome": "SANTA CRUZ DE LA SIERRA"
+  "nome": "SANTA CRUZ DE LA SIERRA",
+  "pais": "Bolívia"
  },
  "30481": {
   "consulta": "Santiago, Chile",
@@ -795,7 +906,8 @@
   "lat": -33.4377,
   "lon": -70.6511,
   "match": "Santiago, Provincia de Santiago, Região Metropolitana de Santiago, 8320000, Chile",
-  "nome": "SANTIAGO"
+  "nome": "SANTIAGO",
+  "pais": "Chile"
  },
  "30490": {
   "consulta": "Santo Domingo, Dominican Republic",
@@ -803,14 +915,16 @@
   "lat": 18.4714,
   "lon": -69.8918,
   "match": "São Domingos, Distrito Nacional, 03201, República Dominicana",
-  "nome": "SÃO DOMINGOS"
+  "nome": "SÃO DOMINGOS",
+  "pais": "República Dominicana"
  },
  "30503": {
   "fonte": "nominatim",
   "lat": 37.7879,
   "lon": -122.4075,
   "match": "São Francisco, Califórnia, Estados Unidos da América",
-  "nome": "SÃO FRANCISCO"
+  "nome": "SÃO FRANCISCO",
+  "pais": "Estados Unidos da América"
  },
  "30511": {
   "consulta": "San José, Costa Rica",
@@ -818,77 +932,88 @@
   "lat": 9.9327,
   "lon": -84.0797,
   "match": "San José, Costa Rica",
-  "nome": "SÃO JOSÉ"
+  "nome": "SÃO JOSÉ",
+  "pais": "Costa Rica"
  },
  "30520": {
   "fonte": "nominatim",
   "lat": 13.6976,
   "lon": -89.1912,
   "match": "São Salvador, San Salvador Centro, San Salvador, El Salvador",
-  "nome": "SÃO SALVADOR"
+  "nome": "SÃO SALVADOR",
+  "pais": "El Salvador"
  },
  "30538": {
   "fonte": "nominatim",
   "lat": 37.5667,
   "lon": 126.9783,
   "match": "Seul, Coreia do Sul",
-  "nome": "SEUL"
+  "nome": "SEUL",
+  "pais": "Coreia do Sul"
  },
  "30546": {
   "fonte": "nominatim",
   "lat": 42.6977,
   "lon": 23.3217,
   "match": "Sófia, Средец, Столична, София-град, Bulgária",
-  "nome": "SÓFIA"
+  "nome": "SÓFIA",
+  "pais": "Bulgária"
  },
  "30562": {
   "fonte": "nominatim",
   "lat": -33.8698,
   "lon": 151.2083,
   "match": "Sydney, Nova Gales do Sul, Austrália",
-  "nome": "SYDNEY"
+  "nome": "SYDNEY",
+  "pais": "Austrália"
  },
  "30570": {
   "fonte": "nominatim",
   "lat": 25.0375,
   "lon": 121.5637,
   "match": "Taipé, Taiwan",
-  "nome": "TAIPÉ"
+  "nome": "TAIPÉ",
+  "pais": "Taiwan"
  },
  "30597": {
   "fonte": "nominatim",
   "lat": 35.6893,
   "lon": 51.3896,
   "match": "Teerão, بخش مرکزی شهرستان تهران, شهرستان تهران, Teerão, Irã",
-  "nome": "TEERÃ"
+  "nome": "TEERÃ",
+  "pais": "Irã"
  },
  "30600": {
   "fonte": "nominatim",
   "lat": 14.1058,
   "lon": -87.2047,
   "match": "Tegucigalpa, Distrito Central, Francisco Morazán, Honduras",
-  "nome": "TEGUCIGALPA"
+  "nome": "TEGUCIGALPA",
+  "pais": "Honduras"
  },
  "30619": {
   "fonte": "nominatim",
   "lat": 32.0853,
   "lon": 34.7818,
   "match": "Tel Aviv, נפת תל אביב, Distrito de Tel-Aviv, Israel",
-  "nome": "TEL AVIV"
+  "nome": "TEL AVIV",
+  "pais": "Israel"
  },
  "30627": {
   "fonte": "nominatim",
   "lat": 35.6769,
   "lon": 139.7639,
   "match": "Tóquio, Japão",
-  "nome": "TÓQUIO"
+  "nome": "TÓQUIO",
+  "pais": "Japão"
  },
  "30635": {
   "fonte": "nominatim",
   "lat": 43.6535,
   "lon": -79.3839,
   "match": "Toronto, Ontário, Canadá",
-  "nome": "TORONTO"
+  "nome": "TORONTO",
+  "pais": "Canadá"
  },
  "30651": {
   "consulta": "Guangzhou, Guangdong, China",
@@ -896,14 +1021,16 @@
   "lat": 23.1288,
   "lon": 113.259,
   "match": "Cantão, Província de Cantão, China",
-  "nome": "CANTÃO"
+  "nome": "CANTÃO",
+  "pais": "China"
  },
  "30669": {
   "fonte": "nominatim",
   "lat": -24.6581,
   "lon": 25.9088,
   "match": "Gaborone, Botsuana",
-  "nome": "GABORONE"
+  "nome": "GABORONE",
+  "pais": "Botsuana"
  },
  "30686": {
   "consulta": "Tripoli, Libya",
@@ -911,70 +1038,80 @@
   "lat": 32.8967,
   "lon": 13.1778,
   "match": "Trípoli, Líbia",
-  "nome": "TRÍPOLI"
+  "nome": "TRÍPOLI",
+  "pais": "Líbia"
  },
  "30708": {
   "fonte": "nominatim",
   "lat": 36.8002,
   "lon": 10.1858,
   "match": "Tunes, Túnis (província), Tunísia",
-  "nome": "TUNIS"
+  "nome": "TUNIS",
+  "pais": "Tunísia"
  },
  "30740": {
   "fonte": "nominatim",
   "lat": 52.232,
   "lon": 21.0067,
   "match": "Varsóvia, Voivodia da Mazóvia, Polónia",
-  "nome": "VARSÓVIA"
+  "nome": "VARSÓVIA",
+  "pais": "Polónia"
  },
  "30767": {
   "fonte": "nominatim",
   "lat": 48.2084,
   "lon": 16.3725,
   "match": "Viena, Áustria",
-  "nome": "VIENA"
+  "nome": "VIENA",
+  "pais": "Áustria"
  },
  "30783": {
   "fonte": "nominatim",
   "lat": 38.8951,
   "lon": -77.0364,
   "match": "Washington, District of Columbia, Estados Unidos da América",
-  "nome": "WASHINGTON"
+  "nome": "WASHINGTON",
+  "pais": "Estados Unidos da América"
  },
  "30805": {
   "fonte": "nominatim",
   "lat": -41.2888,
   "lon": 174.7772,
   "match": "Wellington, Wellington City, Wellington, 6011, Nova Zelândia",
-  "nome": "WELLINGTON"
+  "nome": "WELLINGTON",
+  "pais": "Nova Zelândia"
  },
  "30821": {
   "fonte": "nominatim",
   "lat": -22.5336,
   "lon": 17.0455,
   "match": "Windhoek, Khomas, Namíbia",
-  "nome": "WINDHOEK"
+  "nome": "WINDHOEK",
+  "pais": "Namíbia"
  },
  "30848": {
   "fonte": "nominatim",
   "lat": 31.2313,
   "lon": 121.47,
   "match": "Xangai, China",
-  "nome": "XANGAI"
+  "nome": "XANGAI",
+  "pais": "China"
  },
  "30864": {
   "fonte": "nominatim",
   "lat": 47.3744,
   "lon": 8.541,
   "match": "Zurique, Bezirk Zürich, Zurique, Suíça",
-  "nome": "ZURIQUE"
+  "nome": "ZURIQUE",
+  "pais": "Suíça"
  },
  "30902": {
   "fonte": "nominatim",
   "lat": 41.7662,
   "lon": -72.6733,
   "match": "Hartford, Capitol Planning Region, Connecticut, Estados Unidos da América",
-  "nome": "HARTFORD"
+  "nome": "HARTFORD",
+  "pais": "Estados Unidos da América"
  },
  "30929": {
   "consulta": "Colombo, Sri Lanka",
@@ -982,7 +1119,8 @@
   "lat": 6.9389,
   "lon": 79.8542,
   "match": "Colombo, Colombo District, Western Province, Seri-Lanca",
-  "nome": "COLOMBO"
+  "nome": "COLOMBO",
+  "pais": "Seri-Lanca"
  },
  "30961": {
   "consulta": "Faro, Portugal",
@@ -990,154 +1128,176 @@
   "lat": 37.0163,
   "lon": -7.9352,
   "match": "Faro, Portugal",
-  "nome": "FARO"
+  "nome": "FARO",
+  "pais": "Portugal"
  },
  "30988": {
   "fonte": "nominatim",
   "lat": 43.8571,
   "lon": 18.4126,
   "match": "Sarajevo, Mjesna zajednica Trg oslobođenja-Centar, Općina Centar, Grad Sarajevo, Kanton Sarajevo, Federação da Bósnia e Herzegovina, 71000, Bósnia e Herzegovina",
-  "nome": "SARAJEVO"
+  "nome": "SARAJEVO",
+  "pais": "Bósnia e Herzegovina"
  },
  "38881": {
   "fonte": "nominatim",
   "lat": 17.2502,
   "lon": -88.77,
   "match": "Belmopan, Cayo, Belize",
-  "nome": "BELMOPAN"
+  "nome": "BELMOPAN",
+  "pais": "Belize"
  },
  "38903": {
   "fonte": "nominatim",
   "lat": 9.5171,
   "lon": -13.6998,
   "match": "Conacri, Guiné",
-  "nome": "CONACRI"
+  "nome": "CONACRI",
+  "pais": "Guiné"
  },
  "38920": {
   "fonte": "nominatim",
   "lat": 6.3677,
   "lon": 2.4253,
   "match": "Cotonou, Litoral, Benim",
-  "nome": "COTONOU"
+  "nome": "COTONOU",
+  "pais": "Benim"
  },
  "38962": {
   "fonte": "nominatim",
   "lat": -6.8161,
   "lon": 39.2804,
   "match": "Dar es Salaam, Coastal Zone, Tanzânia",
-  "nome": "DAR ES SALAAM"
+  "nome": "DAR ES SALAAM",
+  "pais": "Tanzânia"
  },
  "38989": {
   "fonte": "nominatim",
   "lat": 40.1777,
   "lon": 44.5126,
   "match": "Erevan, Arménia",
-  "nome": "IEREVAN"
+  "nome": "IEREVAN",
+  "pais": "Arménia"
  },
  "39004": {
   "fonte": "nominatim",
   "lat": -34.597,
   "lon": -68.7305,
   "match": "Mendoza, Argentina",
-  "nome": "MENDOZA"
+  "nome": "MENDOZA",
+  "pais": "Argentina"
  },
  "39020": {
   "fonte": "nominatim",
   "lat": 45.8131,
   "lon": 15.9773,
   "match": "Zagreb, Croácia",
-  "nome": "ZAGREB"
+  "nome": "ZAGREB",
+  "pais": "Croácia"
  },
  "39063": {
   "fonte": "nominatim",
   "lat": 49.2609,
   "lon": -123.114,
   "match": "Vancouver, Metro Vancouver Regional District, Colúmbia Britânica, Canadá",
-  "nome": "VANCOUVER"
+  "nome": "VANCOUVER",
+  "pais": "Canadá"
  },
  "39080": {
   "fonte": "nominatim",
   "lat": 33.7545,
   "lon": -84.3898,
   "match": "Atlanta, Fulton County, Geórgia, Estados Unidos da América",
-  "nome": "ATLANTA"
+  "nome": "ATLANTA",
+  "pais": "Estados Unidos da América"
  },
  "39102": {
   "fonte": "nominatim",
   "lat": 23.6124,
   "lon": 58.5938,
   "match": "Mascate, ولاية مسقط, Mascate, Omã",
-  "nome": "MASCATE"
+  "nome": "MASCATE",
+  "pais": "Omã"
  },
  "39128": {
   "fonte": "nominatim",
   "lat": 40.3756,
   "lon": 49.8328,
   "match": "Baku, Azerbaijão",
-  "nome": "BAKU"
+  "nome": "BAKU",
+  "pais": "Azerbaijão"
  },
  "39160": {
   "fonte": "nominatim",
   "lat": 46.05,
   "lon": 14.5069,
   "match": "Liubliana, Ljubljana, Upravna Enota Ljubljana, 1000, Eslovénia",
-  "nome": "LIUBLIANA"
+  "nome": "LIUBLIANA",
+  "pais": "Eslovénia"
  },
  "39187": {
   "fonte": "nominatim",
   "lat": -4.2694,
   "lon": 15.2712,
   "match": "Brazavile, Brazzaville (département), República do Congo",
-  "nome": "BRAZZAVILLE"
+  "nome": "BRAZZAVILLE",
+  "pais": "República do Congo"
  },
  "39209": {
   "fonte": "nominatim",
   "lat": 48.1435,
   "lon": 17.1083,
   "match": "Bratislava, Bratislavský kraj, Eslováquia",
-  "nome": "BRATISLAVA"
+  "nome": "BRATISLAVA",
+  "pais": "Eslováquia"
  },
  "39225": {
   "fonte": "nominatim",
   "lat": 0.3389,
   "lon": 6.7313,
   "match": "São Tomé, Água Grande, São Tomé e Príncipe",
-  "nome": "SÃO TOMÉ"
+  "nome": "SÃO TOMÉ",
+  "pais": "São Tomé e Príncipe"
  },
  "39241": {
   "fonte": "nominatim",
   "lat": 51.116,
   "lon": 71.4677,
   "match": "Astana, Cazaquistão",
-  "nome": "ASTANA"
+  "nome": "ASTANA",
+  "pais": "Cazaquistão"
  },
  "39263": {
   "fonte": "nominatim",
   "lat": 3.7419,
   "lon": 8.7741,
   "match": "Malabo, Distrito de Malabo, Bioko Norte, Região Insular, Guiné Equatorial",
-  "nome": "MALABO"
+  "nome": "MALABO",
+  "pais": "Guiné Equatorial"
  },
  "39284": {
   "fonte": "nominatim",
   "lat": 12.3682,
   "lon": -1.5271,
   "match": "Ouagadougou, Kadiogo, Região Centro, Burquina Faso",
-  "nome": "UAGADUGU"
+  "nome": "UAGADUGU",
+  "pais": "Burquina Faso"
  },
  "39306": {
   "fonte": "nominatim",
   "lat": 41.0064,
   "lon": 28.9759,
   "match": "Istambul, Fatih, İstanbul, Marmara Bölgesi, 34122, Turquia",
-  "nome": "ISTAMBUL"
+  "nome": "ISTAMBUL",
+  "pais": "Turquia"
  },
  "39322": {
   "fonte": "nominatim",
   "lat": 35.1747,
   "lon": 33.3639,
   "match": "Nicósia, Δήμος Λευκωσίας, Nicósia, Chipre, 1107, Chipre",
-  "nome": "NICOSIA"
+  "nome": "NICOSIA",
+  "pais": "Chipre"
  },
  "98000": {
   "consulta": "Guatemala City, Guatemala",
@@ -1145,21 +1305,24 @@
   "lat": 14.6416,
   "lon": -90.5133,
   "match": "Cidade da Guatemala, Zona 2, Departamento de Guatemala, Guatemala",
-  "nome": "GUATEMALA"
+  "nome": "GUATEMALA",
+  "pais": "Guatemala"
  },
  "99104": {
   "fonte": "nominatim",
   "lat": 41.6935,
   "lon": 44.8014,
   "match": "Tiblíssi, Geórgia",
-  "nome": "TBILISI"
+  "nome": "TBILISI",
+  "pais": "Geórgia"
  },
  "99139": {
   "fonte": "nominatim",
   "lat": 41.3281,
   "lon": 19.8184,
   "match": "Tirana, Bashkia Tiranë, Tirana (prefeitura), 1001-1028, Albânia",
-  "nome": "TIRANA"
+  "nome": "TIRANA",
+  "pais": "Albânia"
  },
  "99147": {
   "consulta": "St John's, Antigua and Barbuda",
@@ -1167,49 +1330,56 @@
   "lat": 17.1185,
   "lon": -61.8449,
   "match": "São João, Saint John, Antígua, Antígua e Barbuda",
-  "nome": "SAINT JOHNS"
+  "nome": "SAINT JOHNS",
+  "pais": "Antígua e Barbuda"
  },
  "99155": {
   "fonte": "nominatim",
   "lat": -25.6336,
   "lon": -54.5829,
   "match": "Puerto Iguazú, Porto Iguaçu, Departamento Iguazú, Misiones, Argentina",
-  "nome": "PUERTO IGUAZÚ"
+  "nome": "PUERTO IGUAZÚ",
+  "pais": "Argentina"
  },
  "99171": {
   "fonte": "nominatim",
   "lat": 33.3062,
   "lon": 44.3872,
   "match": "Bagdade, بلدية المنطقة الخضراء, قضاء الزوراء, Bagdá (província), Iraque",
-  "nome": "BAGDÁ"
+  "nome": "BAGDÁ",
+  "pais": "Iraque"
  },
  "99180": {
   "fonte": "nominatim",
   "lat": 25.0782,
   "lon": -77.3383,
   "match": "Nassau, New Providence, Bahamas",
-  "nome": "NASSAU"
+  "nome": "NASSAU",
+  "pais": "Bahamas"
  },
  "99198": {
   "fonte": "nominatim",
   "lat": 9.0643,
   "lon": 7.4893,
   "match": "Abuja, Municipal Area Council, Território da Capital Federal, 223140, Nigéria",
-  "nome": "ABUJA"
+  "nome": "ABUJA",
+  "pais": "Nigéria"
  },
  "99210": {
   "fonte": "nominatim",
   "lat": -11.0185,
   "lon": -68.7538,
   "match": "Cobija, Provincia Nicolás Suárez, Pando, Bolívia",
-  "nome": "COBIJA"
+  "nome": "COBIJA",
+  "pais": "Bolívia"
  },
  "99236": {
   "fonte": "nominatim",
   "lat": -19.0044,
   "lon": -57.7157,
   "match": "Puerto Quijarro, Germán Busch, Santa Cruz, Bolívia",
-  "nome": "PUERTO QUIJARRO"
+  "nome": "PUERTO QUIJARRO",
+  "pais": "Bolívia"
  },
  "99244": {
   "consulta": "Rivera, Uruguay",
@@ -1217,42 +1387,48 @@
   "lat": -30.9001,
   "lon": -55.5408,
   "match": "Rivera, 40000, Uruguai",
-  "nome": "RIVERA"
+  "nome": "RIVERA",
+  "pais": "Uruguai"
  },
  "99279": {
   "fonte": "nominatim",
   "lat": 4.5959,
   "lon": -61.1106,
   "match": "Santa Elena de Uairén, Parroquia Gran Sabana, Municipio Gran Sabana, Bolívar, Venezuela",
-  "nome": "SANTA ELENA DE UAIRÉN"
+  "nome": "SANTA ELENA DE UAIRÉN",
+  "pais": "Venezuela"
  },
  "99287": {
   "fonte": "nominatim",
   "lat": -15.4163,
   "lon": 28.2818,
   "match": "Lusaca, Lusaka District, Lusaca (província), 10101, Zâmbia",
-  "nome": "LUSACA"
+  "nome": "LUSACA",
+  "pais": "Zâmbia"
  },
  "99295": {
   "fonte": "nominatim",
   "lat": 39.0197,
   "lon": 125.7526,
   "match": "Pyongyang, Coreia do Norte",
-  "nome": "PYONGYANG"
+  "nome": "PYONGYANG",
+  "pais": "Coreia do Norte"
  },
  "99317": {
   "fonte": "nominatim",
   "lat": 59.4372,
   "lon": 24.7573,
   "match": "Tallinn, Harju maakond, Estónia",
-  "nome": "TALIN"
+  "nome": "TALIN",
+  "pais": "Estónia"
  },
  "99325": {
   "fonte": "nominatim",
   "lat": 9.0,
   "lon": 38.75,
   "match": "Adis Abeba, Etiópia",
-  "nome": "ADIS ABEBA"
+  "nome": "ADIS ABEBA",
+  "pais": "Etiópia"
  },
  "99333": {
   "consulta": "Saint-Georges, Guyane française",
@@ -1260,28 +1436,32 @@
   "lat": 3.8909,
   "lon": -51.8014,
   "match": "São Jorge, Saint-Georges, Guiana Francesa, 97313, França",
-  "nome": "ST GEORGES DE LOYAPOCK"
+  "nome": "ST GEORGES DE LOYAPOCK",
+  "pais": "Guiana Francesa"
  },
  "99341": {
   "fonte": "nominatim",
   "lat": -13.9875,
   "lon": 33.7681,
   "match": "Lilôngué, Lilongwe, Região Central, Malawi",
-  "nome": "LILONGUE"
+  "nome": "LILONGUE",
+  "pais": "Malawi"
  },
  "99350": {
   "fonte": "nominatim",
   "lat": 12.6133,
   "lon": -7.985,
   "match": "Bamako, Bamaco, Cercle de Kati, Koulikoro, Mali",
-  "nome": "BAMAKO"
+  "nome": "BAMAKO",
+  "pais": "Mali"
  },
  "99376": {
   "fonte": "nominatim",
   "lat": 16.7967,
   "lon": 96.161,
   "match": "Rangum, ရန်ကုန်တိုင်းဒေသကြီး, Birmânia",
-  "nome": "YANGON"
+  "nome": "YANGON",
+  "pais": "Birmânia"
  },
  "99384": {
   "consulta": "Castries, Saint Lucia",
@@ -1289,14 +1469,16 @@
   "lat": 14.0096,
   "lon": -60.9902,
   "match": "Castries, LC04 101, Santa Lúcia",
-  "nome": "CASTRIES"
+  "nome": "CASTRIES",
+  "pais": "Santa Lúcia"
  },
  "99430": {
   "fonte": "nominatim",
   "lat": 17.9712,
   "lon": -76.7928,
   "match": "Kingston, Surrey County, Jamaica",
-  "nome": "KINGSTON-JAMAICA"
+  "nome": "KINGSTON-JAMAICA",
+  "pais": "Jamaica"
  },
  "99473": {
   "consulta": "Manama, Bahrain",
@@ -1304,27 +1486,31 @@
   "lat": 26.2235,
   "lon": 50.5822,
   "match": "Manama, Capital, 308, Bahrein",
-  "nome": "BAREIN"
+  "nome": "BAREIN",
+  "pais": "Bahrein"
  },
  "99490": {
   "fonte": "nominatim",
   "lat": 28.5421,
   "lon": -81.379,
   "match": "Orlando, Condado de Orange, Flórida, Estados Unidos da América",
-  "nome": "ORLANDO"
+  "nome": "ORLANDO",
+  "pais": "Estados Unidos da América"
  },
  "99503": {
   "fonte": "nominatim",
   "lat": 55.9533,
   "lon": -3.1884,
   "match": "Edimburgo, Escócia, Reino Unido",
-  "nome": "EDIMBURGO"
+  "nome": "EDIMBURGO",
+  "pais": "Reino Unido"
  },
  "99511": {
   "fonte": "nominatim",
   "lat": 43.2964,
   "lon": 5.3778,
   "match": "Marselha, Marseille, Bouches-du-Rhône, Provença-Alpes-Costa Azul, França metropolitana, França",
-  "nome": "MARSELHA"
+  "nome": "MARSELHA",
+  "pais": "França"
  }
 }

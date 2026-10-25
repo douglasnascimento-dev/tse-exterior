@@ -9,7 +9,7 @@
     color-scheme: light;
     --surface-0:#f6f6f4; --surface-1:#fcfcfb; --border:#e2e1dc;
     --text-primary:#0b0b0b; --text-secondary:#52514e; --text-muted:#7a7873;
-    --series-1:#2a78d6; --series-2:#eb6834; --neutral:#9b9892;
+    --series-1:#e34948; --series-2:#2a78d6; --neutral:#9b9892;
     --mapa-terra:#eceae4; --mapa-borda:#dbd9d2;
     --grid:#e8e7e2;
   }
@@ -18,7 +18,7 @@
       color-scheme: dark;
       --surface-0:#111110; --surface-1:#1a1a19; --border:#33322e;
       --text-primary:#f0efec; --text-secondary:#c3c2b7; --text-muted:#8e8c84;
-      --series-1:#3987e5; --series-2:#d95926; --neutral:#6f6d67;
+      --series-1:#e66767; --series-2:#3987e5; --neutral:#6f6d67;
       --mapa-terra:#26251f; --mapa-borda:#3a3832;
       --grid:#2a2926;
     }
@@ -27,7 +27,7 @@
     color-scheme: dark;
     --surface-0:#111110; --surface-1:#1a1a19; --border:#33322e;
     --text-primary:#f0efec; --text-secondary:#c3c2b7; --text-muted:#8e8c84;
-    --series-1:#3987e5; --series-2:#d95926; --neutral:#6f6d67;
+    --series-1:#e66767; --series-2:#3987e5; --neutral:#6f6d67;
       --mapa-terra:#26251f; --mapa-borda:#3a3832;
     --grid:#2a2926;
   }
@@ -40,9 +40,22 @@
   .wrap { max-width:1060px; margin:0 auto; padding:28px 16px 64px; }
   header { display:flex; flex-wrap:wrap; gap:12px; align-items:flex-start;
            justify-content:space-between; margin-bottom:6px; }
-  h1 { font-size:21px; margin:0; letter-spacing:-.01em; }
+  h1 { font-size:14px; margin:0; letter-spacing:.02em; font-weight:600;
+       color:var(--text-secondary); text-transform:uppercase; }
+  .hero { margin:16px 0 4px; }
+  .hero .nome { font-size:34px; font-weight:650; letter-spacing:-.025em;
+                line-height:1.1; margin:0; }
+  .hero .ctx { color:var(--text-secondary); font-size:13.5px; margin:7px 0 0; }
+  .barra { height:6px; border-radius:99px; background:var(--grid);
+           margin-top:11px; overflow:hidden; max-width:420px; }
+  .barra i { display:block; height:100%; background:var(--text-muted); }
   .sub { color:var(--text-secondary); font-size:13px; margin:2px 0 0; }
   .toolbar { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  .seg { display:inline-flex; border:1px solid var(--border); border-radius:7px;
+         overflow:hidden; background:var(--surface-1); }
+  .seg button { border:0; border-radius:0; background:transparent; padding:6px 12px; }
+  .seg button[aria-pressed="true"] { background:var(--text-primary);
+                                     color:var(--surface-1); font-weight:600; }
   select, button {
     font:inherit; font-size:13px; padding:6px 10px; border-radius:7px;
     border:1px solid var(--border); background:var(--surface-1);
@@ -81,6 +94,9 @@
   th, td { text-align:right; padding:7px 8px; border-bottom:1px solid var(--border); }
   th:first-child, td:first-child { text-align:left; }
   thead th { color:var(--text-secondary); font-weight:500; font-size:12px; }
+  tbody td:first-child { font-size:14.5px; font-weight:600; letter-spacing:-.01em; }
+  tbody td .peq { display:block; font-size:11.5px; font-weight:400;
+                  color:var(--text-muted); letter-spacing:0; }
   tfoot td { font-weight:600; border-top:1px solid var(--border); border-bottom:0; }
   td.delta { color:var(--text-primary); font-weight:600; }
   .tip { position:fixed; pointer-events:none; z-index:9; opacity:0;
@@ -91,6 +107,9 @@
   footer { margin-top:26px; font-size:12px; color:var(--text-muted); }
   footer a { color:var(--text-secondary); }
   .empty { padding:26px 0; color:var(--text-secondary); font-size:14px; }
+  .aviso { border:1px solid var(--series-1); border-radius:9px; padding:10px 13px;
+    font-size:13px; color:var(--text-primary); background:var(--surface-1);
+    margin-top:14px; }
   .pais { fill:var(--mapa-terra); stroke:var(--mapa-borda); stroke-width:.5;
           vector-effect:non-scaling-stroke; }
   .cidade { stroke:var(--surface-1); stroke-width:2; cursor:pointer; }
@@ -105,15 +124,18 @@
 <body>
 <div class="wrap">
   <header>
-    <div>
-      <h1>Votação no exterior — 1º × 2º turno de 2026</h1>
-      <p class="sub" id="sub">carregando…</p>
-    </div>
+    <h1>Votação no exterior · 1º × 2º turno de 2026</h1>
     <div class="toolbar">
-      <select id="cidade" aria-label="Cidade"></select>
+      <select id="cidade" aria-label="Recorte"></select>
       <button id="tema" title="Alternar tema">◐</button>
     </div>
   </header>
+
+  <div class="hero">
+    <p class="nome" id="nome">carregando…</p>
+    <p class="ctx" id="sub"></p>
+    <div class="barra"><i id="prog" style="width:0"></i></div>
+  </div>
 
   <div id="status"></div>
   <div id="mapa"></div>
@@ -308,35 +330,171 @@ function desenhaMapa(d, cores) {
 }
 
 
-function tabelaCidades(d, cores) {
+function tabelaRanking(d, cores) {
   const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
-  const com = d.cidades.filter(c => c.metricas)
+  const base = MODO === "pais" ? porPais(d) : d.cidades;
+  const itens = base.filter(x => x.metricas)
     .sort((a, b) => b.metricas.total_t2 - a.metricas.total_t2);
-  if (!com.length) return "";
-  const linhas = com.map(c => {
-    const m = c.metricas, a = nums[0], b = nums[1];
-    return `<tr data-cidade="${c.codigo}" style="cursor:pointer">
-      <td>${c.nome}</td>
-      <td>${c.secoes_apuradas_t2}/${c.secoes_previstas}</td>
-      <td>${nf(m.candidatos[a].t2)}</td>
-      <td>${m.candidatos[a].share_t2.toFixed(1)}%</td>
-      <td>${nf(m.candidatos[b].t2)}</td>
-      <td>${m.candidatos[b].share_t2.toFixed(1)}%</td>
-      <td>${nf(m.total_t2)}</td>
-      <td class="delta">${sf(m.delta_total)}</td></tr>`;
+  if (!itens.length) return "";
+
+  const linhas = itens.map(x => {
+    const m = x.metricas, [a, b] = nums;
+    const lider = m.candidatos[a].t2 >= m.candidatos[b].t2 ? a : b;
+    const sub = MODO === "pais"
+      ? `${x.ncidades} cidade${x.ncidades > 1 ? "s" : ""}`
+      : (x.pais || "");
+    return `<tr data-cidade="${x.codigo}" style="cursor:pointer">
+      <td>${x.nome}<span class="peq">${sub}</span></td>
+      <td>${nf(x.secoes_apuradas_t2)}<span class="peq">de ${nf(x.secoes_previstas)}</span></td>
+      <td>${nf(m.candidatos[a].t2)}<span class="peq">${m.candidatos[a].share_t2.toFixed(1)}%</span></td>
+      <td>${nf(m.candidatos[b].t2)}<span class="peq">${m.candidatos[b].share_t2.toFixed(1)}%</span></td>
+      <td><span style="color:${cores[nums.indexOf(lider)]};font-weight:600">
+        ${sf(m.margem_t2)}</span><span class="peq">era ${sf(m.margem_t1)}</span></td>
+      <td>${nf(m.total_t2)}<span class="peq">${sf(m.delta_total)} vs 1T</span></td></tr>`;
   }).join("");
-  return `<div class="card"><h2>Cidades com apuração</h2>
-    <p class="note">${com.length} de ${d.cidades.length} cidades do exterior.
-      Clique numa linha para abrir os detalhes.</p>
+
+  const titulo = MODO === "pais" ? "Países com apuração" : "Cidades com apuração";
+  return `<div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center;
+                gap:12px;flex-wrap:wrap;margin-bottom:4px">
+      <h2 style="margin:0">${titulo}</h2>
+      <div class="seg" role="group" aria-label="Agrupar por">
+        <button data-modo="cidade" aria-pressed="${MODO !== "pais"}">Cidades</button>
+        <button data-modo="pais" aria-pressed="${MODO === "pais"}">Países</button>
+      </div>
+    </div>
+    <p class="note">${itens.length} ${MODO === "pais" ? "países" : "cidades"}
+      com pelo menos uma seção apurada. Clique numa linha para abrir.</p>
     <div class="scroll"><table><thead><tr>
-      <th>Cidade</th><th>Seções</th>
-      <th><span class="sw" style="background:${cores[0]}"></span>${d.candidatos[nums[0]]}</th><th>%</th>
-      <th><span class="sw" style="background:${cores[1]}"></span>${d.candidatos[nums[1]]}</th><th>%</th>
-      <th>Total 2T</th><th>Δ vs 1T</th>
+      <th>${MODO === "pais" ? "País" : "Cidade"}</th><th>Seções</th>
+      <th><span class="sw" style="background:${cores[0]}"></span>${d.candidatos[nums[0]]}</th>
+      <th><span class="sw" style="background:${cores[1]}"></span>${d.candidatos[nums[1]]}</th>
+      <th>Margem</th><th>Total 2T</th>
     </tr></thead><tbody>${linhas}</tbody></table></div></div>`;
 }
 
-let DADOS = null, CIDADE = null, MUNDO = null;
+
+/* ---- agrega um conjunto de cidades (para país ou para o total) ---- */
+function somaCidades(lista, nums) {
+  const vazio = () => {
+    const o = { brancos: 0, nulos: 0, outros: 0, comparecimento: 0, aptos: 0, total: 0 };
+    nums.forEach(n => o[n] = 0);
+    return o;
+  };
+  const t1 = vazio(), t2 = vazio();
+  let ap = 0, prev = 0;
+  lista.forEach(c => {
+    Object.keys(t1).forEach(k => { t1[k] += c.t1[k] || 0; t2[k] += c.t2[k] || 0; });
+    ap += c.secoes_apuradas_t2; prev += c.secoes_previstas;
+  });
+  return { t1, t2, secoes_apuradas_t2: ap, secoes_previstas: prev,
+           metricas: t2.total ? calcMetricas(t1, t2, nums) : null, secoes: [] };
+}
+
+function calcMetricas(t1, t2, nums) {
+  const pc = (p, t) => t ? 100 * p / t : null;
+  const um = n => ({
+    t1: t1[n], t2: t2[n], delta: t2[n] - t1[n],
+    pct: t1[n] ? 100 * (t2[n] - t1[n]) / t1[n] : null,
+    share_t1: pc(t1[n], t1.total), share_t2: pc(t2[n], t2.total),
+  });
+  const c = {}; nums.forEach(n => c[n] = um(n));
+  const [a, b] = nums;
+  const m1 = t1[a] - t1[b], m2 = t2[a] - t2[b];
+  return { candidatos: c, diferenca_crescimento: c[a].delta - c[b].delta,
+    margem_t1: m1, margem_t2: m2, variacao_margem: m2 - m1,
+    total_t1: t1.total, total_t2: t2.total, delta_total: t2.total - t1.total,
+    pct_total: t1.total ? 100 * (t2.total - t1.total) / t1.total : null,
+    brancos_nulos_t1: t1.brancos + t1.nulos, brancos_nulos_t2: t2.brancos + t2.nulos };
+}
+
+function porPais(d) {
+  const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
+  const grupos = {};
+  d.cidades.forEach(c => (grupos[c.pais || "—"] ||= []).push(c));
+  return Object.entries(grupos).map(([pais, cs]) => ({
+    codigo: "pais:" + pais, nome: pais, ncidades: cs.length,
+    ...somaCidades(cs, nums),
+  }));
+}
+
+/* ---- evolução ao longo da apuração: % de cada um, 2º turno x 1º turno ---- */
+function linhaTempo(hist, d, cores) {
+  const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
+  const pts = hist.filter(h => nums.every(n => h[`p${n}_t2`] != null));
+  if (pts.length < 2) {
+    return `<div class="card"><h2>Evolução da apuração</h2>
+      <p class="note">Com ${pts.length} leitura${pts.length === 1 ? "" : "s"} ainda
+      não dá para traçar a curva. O gráfico aparece a partir da segunda coleta
+      — o robô roda a cada 15 minutos.</p></div>`;
+  }
+  const W = 760, H = 300, m = { t: 16, r: 92, b: 34, l: 44 };
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const ts = pts.map(h => new Date(h.gerado_em).getTime());
+  const t0 = Math.min(...ts), t1 = Math.max(...ts);
+  const vals = pts.flatMap(h => nums.flatMap(n => [h[`p${n}_t2`], h[`p${n}_t1`]]))
+    .filter(v => v != null);
+  let lo = Math.min(...vals), hi = Math.max(...vals);
+  const folga = Math.max(2, (hi - lo) * 0.18);
+  lo = Math.max(0, lo - folga); hi = Math.min(100, hi + folga);
+  const X = t => m.l + (t1 === t0 ? iw : (t - t0) / (t1 - t0) * iw);
+  const Y = v => m.t + (hi - v) / (hi - lo) * ih;
+
+  let eixo = "";
+  for (let i = 0; i <= 4; i++) {
+    const v = lo + (hi - lo) * i / 4, y = Y(v);
+    eixo += `<line class="gl" x1="${m.l}" x2="${m.l + iw}" y1="${y}" y2="${y}"></line>
+      <text class="ax" x="${m.l - 8}" y="${y + 4}" text-anchor="end">${v.toFixed(0)}%</text>`;
+  }
+  const hora = t => new Date(t).toLocaleTimeString("pt-BR",
+    { hour: "2-digit", minute: "2-digit" });
+  [t0, t1].forEach((t, i) => {
+    eixo += `<text class="ax" x="${X(t)}" y="${m.t + ih + 20}"
+      text-anchor="${i ? "end" : "start"}">${hora(t)}</text>`;
+  });
+
+  let linhas = "";
+  nums.forEach((n, i) => {
+    [["_t2", 0], ["_t1", 1]].forEach(([suf, trac]) => {
+      const dd = pts.map((h, k) => `${X(ts[k]).toFixed(1)} ${Y(h[`p${n}${suf}`]).toFixed(1)}`);
+      linhas += `<path d="M${dd.join("L")}" fill="none" stroke="${cores[i]}"
+        stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+        ${trac ? 'stroke-dasharray="5 4" opacity=".62"' : ""}></path>`;
+    });
+    const ult = pts[pts.length - 1];
+    linhas += `<circle cx="${X(t1)}" cy="${Y(ult[`p${n}_t2`])}" r="4"
+        fill="${cores[i]}" stroke="var(--surface-1)" stroke-width="2"></circle>
+      <text class="lbl-strong" x="${m.l + iw + 10}" y="${Y(ult[`p${n}_t2`]) + 4}"
+        fill="${cores[i]}">${ult[`p${n}_t2`].toFixed(1)}%</text>`;
+  });
+
+  // faixas invisíveis para o tooltip, uma por leitura
+  const faixa = iw / Math.max(1, pts.length - 1);
+  const alvos = pts.map((h, k) => {
+    const corpo = nums.map(n =>
+      `${d.candidatos[n]}: <b>${h[`p${n}_t2`].toFixed(1)}%</b> `
+      + `<span style="opacity:.7">(1T ${h[`p${n}_t1`].toFixed(1)}%)</span>`).join("<br>");
+    return `<rect x="${(X(ts[k]) - faixa / 2).toFixed(1)}" y="${m.t}"
+      width="${faixa.toFixed(1)}" height="${ih}" fill="transparent"
+      data-tip="${encodeURIComponent(
+        `<b>${hora(ts[k])}</b> · ${nf(h.secoes)} seções<br>${corpo}`)}"></rect>`;
+  }).join("");
+
+  const leg = nums.map((n, i) =>
+    `<span><span class="sw" style="background:${cores[i]}"></span>${d.candidatos[n]}</span>`
+  ).join("") + `<span style="color:var(--text-muted)">— contínuo: 2º turno ·
+     tracejado: 1º turno nas mesmas seções</span>`;
+
+  return `<div class="card"><h2>Evolução da apuração</h2>
+    <p class="note">Como a porcentagem de cada um mudou conforme as seções
+      chegaram, comparada com o 1º turno nas mesmas seções.
+      ${pts.length} leituras.</p>
+    <div class="legend">${leg}</div>
+    <div class="scroll"><svg viewBox="0 0 ${W} ${H}" role="img">
+      ${eixo}${linhas}${alvos}</svg></div></div>`;
+}
+
+let DADOS = null, CIDADE = null, MUNDO = null, HIST = [], MODO = 'cidade';
 
 function desenha() {
   const d = DADOS, nums = Object.keys(d.candidatos).sort((a, b) => a - b);
@@ -345,18 +503,41 @@ function desenha() {
   const cores = [cor("--series-1"), cor("--series-2")];
   const nomes = nums.map(n => d.candidatos[n]);
 
-  const c = CIDADE === "__agg__"
-    ? { nome: "Todas as cidades coletadas", ...d.agregado,
-        secoes_previstas: d.agregado.secoes_previstas,
-        secoes_apuradas_t2: d.agregado.secoes_apuradas_t2, secoes: [] }
-    : d.cidades.find(x => x.codigo === CIDADE);
+  let c, contexto;
+  if (CIDADE === "__agg__") {
+    c = { nome: "Todo o exterior", ...somaCidades(d.cidades, nums) };
+    const paises = new Set(d.cidades.filter(x => x.secoes_apuradas_t2).map(x => x.pais));
+    contexto = `${d.cidades.filter(x => x.secoes_apuradas_t2).length} de `
+      + `${d.cidades.length} cidades · ${paises.size} países`;
+  } else if (CIDADE.startsWith("pais:")) {
+    const pais = CIDADE.slice(5);
+    const cs = d.cidades.filter(x => (x.pais || "—") === pais);
+    c = { nome: pais, ...somaCidades(cs, nums) };
+    contexto = `${cs.length} cidade${cs.length > 1 ? "s" : ""}: `
+      + cs.map(x => x.nome).join(" · ");
+  } else {
+    c = d.cidades.find(x => x.codigo === CIDADE);
+    contexto = c.pais || "";
+  }
 
-  $("#sub").textContent = `${c.nome} · ${c.secoes_apuradas_t2} de `
-    + `${c.secoes_previstas} seções com boletim de urna no 2º turno`;
+  $("#nome").textContent = c.nome;
+  $("#sub").innerHTML = `${contexto}<br>`
+    + `<strong>${nf(c.secoes_apuradas_t2)}</strong> de ${nf(c.secoes_previstas)} `
+    + `seções com boletim de urna no 2º turno`;
+  $("#prog").style.width =
+    (100 * c.secoes_apuradas_t2 / Math.max(1, c.secoes_previstas)).toFixed(1) + "%";
   $("#ger").textContent = " · gerado em "
     + new Date(d.gerado_em).toLocaleString("pt-BR");
 
-  $("#mapa").innerHTML = d.cidades.length > 1 ? desenhaMapa(d, cores) : "";
+  $("#mapa").innerHTML = (d.falhas && d.falhas.length
+      ? `<div class="aviso"><strong>${d.falhas.length} cidade${
+          d.falhas.length > 1 ? "s" : ""} não respondeu${
+          d.falhas.length > 1 ? "ram" : ""} nesta coleta:</strong> `
+        + d.falhas.map(f => f.nome).join(", ")
+        + `. As seções delas seguem no total previsto, mas sem votos — `
+        + `a próxima execução tenta de novo.</div>`
+      : "")
+    + (d.cidades.length > 1 ? desenhaMapa(d, cores) : "");
 
   if (!c.metricas) {
     $("#status").innerHTML = `<div class="card"><div class="empty">
@@ -430,7 +611,7 @@ function desenha() {
       <td>${nf(c.t1.comparecimento)}</td><td>${nf(c.t2.comparecimento)}</td>
     </tr></tfoot></table></div></div>` : "";
 
-  $("#conteudo").innerHTML = tiles + `
+  $("#conteudo").innerHTML = tiles + linhaTempo(HIST, d, cores) + `
     <div class="card"><h2>Votos por turno</h2>
       <p class="note">Mesmo eixo para os dois turnos; apenas seções comparáveis.</p>
       ${legenda}<div class="scroll">${barrasAgrupadas(grupos, series)}</div></div>
@@ -440,7 +621,8 @@ function desenha() {
         ${m.diferenca_crescimento > 0 ? nomes[0]
           : m.diferenca_crescimento < 0 ? nomes[1] : "ninguém"}.</p>
       <div class="scroll">${barrasCrescimento(cresc)}</div></div>`
-    + (CIDADE === "__agg__" ? tabelaCidades(d, cores) : tabela);
+    + (CIDADE.startsWith("pais:") || CIDADE === "__agg__"
+        ? tabelaRanking(d, cores) : tabela);
 
   ligaCliques();
 }
@@ -451,6 +633,9 @@ function ligaCliques() {
     el.addEventListener("mousemove", e =>
       mostraTip(e, decodeURIComponent(el.dataset.tip)));
     el.addEventListener("mouseleave", escondeTip);
+  });
+  document.querySelectorAll("[data-modo]").forEach(el => {
+    el.addEventListener("click", () => { MODO = el.dataset.modo; desenha(); });
   });
   document.querySelectorAll("[data-cidade]").forEach(el => {
     el.addEventListener("click", () => {
@@ -465,17 +650,34 @@ function ligaCliques() {
 
 Promise.all([
   fetch("dados/resumo.json", { cache: "no-store" })
-    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+    .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .catch(e => { e.semDados = true; throw e; }),
   fetch("dados/mundo.json").then(r => r.ok ? r.json() : null).catch(() => null),
+  fetch("dados/historico.jsonl", { cache: "no-store" })
+    .then(r => r.ok ? r.text() : "").catch(() => ""),
 ])
-  .then(([d, mundo]) => {
+  .then(([d, mundo, hist]) => {
     DADOS = d; MUNDO = mundo;
+    HIST = hist.split("\n").filter(l => l.trim())
+      .map(l => { try { return JSON.parse(l); } catch { return null; } })
+      .filter(Boolean)
+      .sort((a, b) => a.gerado_em.localeCompare(b.gerado_em));
+
     const sel = $("#cidade");
     const varias = d.cidades.length > 1;
-    if (varias) sel.add(new Option("— Todas as cidades —", "__agg__"));
-    d.cidades.slice().sort((a, b) => a.nome.localeCompare(b.nome, "pt"))
-      .forEach(c => sel.add(new Option(
-        c.nome + (c.secoes_apuradas_t2 ? "" : " (sem apuração)"), c.codigo)));
+    if (varias) {
+      sel.add(new Option("Todo o exterior", "__agg__"));
+      const gp = document.createElement("optgroup"); gp.label = "Países";
+      porPais(d).filter(p => p.secoes_apuradas_t2)
+        .sort((a, b) => a.nome.localeCompare(b.nome, "pt"))
+        .forEach(p => gp.appendChild(new Option(p.nome, p.codigo)));
+      if (gp.children.length) sel.add(gp);
+      const gc = document.createElement("optgroup"); gc.label = "Cidades";
+      d.cidades.slice().sort((a, b) => a.nome.localeCompare(b.nome, "pt"))
+        .forEach(c => gc.appendChild(new Option(
+          c.nome + (c.secoes_apuradas_t2 ? "" : " (sem apuração)"), c.codigo)));
+      sel.add(gc);
+    }
     sel.style.display = varias ? "" : "none";
     CIDADE = varias ? "__agg__" : d.cidades[0].codigo;
     sel.value = CIDADE;
@@ -483,10 +685,19 @@ Promise.all([
     desenha();
   })
   .catch(e => {
-    $("#sub").textContent = "não foi possível carregar dados/resumo.json";
-    $("#status").innerHTML = `<div class="card"><div class="empty">
-      Rode <code>python3 coletor/coleta.py</code> (ou aguarde o GitHub Actions)
-      para gerar <code>docs/dados/resumo.json</code>. (${e.message})</div></div>`;
+    // distingue "não achei os dados" de "quebrei ao desenhar" — misturar os
+    // dois já mascarou um erro de render aqui.
+    const semDados = e.semDados === true;
+    $("#nome").textContent = semDados ? "sem dados" : "erro ao desenhar";
+    $("#sub").textContent = semDados
+      ? "não foi possível carregar dados/resumo.json"
+      : "os dados chegaram, mas o painel falhou";
+    $("#status").innerHTML = `<div class="card"><div class="empty">` + (semDados
+      ? `Rode <code>python3 coletor/coleta.py</code> (ou aguarde o GitHub Actions)
+         para gerar <code>docs/dados/resumo.json</code>. (${e.message})`
+      : `<strong>${e.message}</strong><pre style="white-space:pre-wrap;
+         font-size:11.5px;overflow-x:auto">${(e.stack || "").slice(0, 900)}</pre>`)
+      + `</div></div>`;
   });
 </script>
 </body>
