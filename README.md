@@ -4,10 +4,11 @@ Dashboard que compara, **nas mesmas seções**, o 1º e o 2º turno da eleição
 presidencial de 2026 nas zonas eleitorais do exterior, lendo os **boletins de
 urna** publicados pelo TSE.
 
-Para cada cidade mostra: votos de cada candidato nos dois turnos, crescimento
-individual (absoluto e percentual), diferença entre os crescimentos, margem
-entre os dois e sua variação, total de votos e seu crescimento — além do
-detalhamento por seção.
+Cobre as **186 cidades** do exterior. Mostra um mapa-múndi com uma bolha por
+cidade apurada (área = votos, cor = quem lidera), e, para cada cidade: votos
+de cada candidato nos dois turnos, crescimento individual (absoluto e
+percentual), diferença entre os crescimentos, margem entre os dois e sua
+variação, total de votos e seu crescimento — além do detalhamento por seção.
 
 ## Como funciona
 
@@ -48,10 +49,10 @@ python3 -m http.server -d docs 8000   # abra http://localhost:8000
 
 ## Escolhendo as cidades
 
-Edite `config.json`:
+Por padrão coleta todas. Para restringir, edite `config.json`:
 
 ```json
-{ "uf": "zz", "cidades": ["30805"] }
+{ "uf": "zz", "cidades": ["30805", "30627"] }
 ```
 
 Para ver os códigos das 186 cidades do exterior:
@@ -63,8 +64,22 @@ PYTHONPATH=coletor python3 coletor/listar_cidades.py
 Algumas: `30805` Wellington · `30627` Lisboa · `30295` Miami ·
 `30279` Londres · `29971` Tóquio.
 
-> Monitorar o exterior inteiro são ~2.700 seções por turno. O cache do Actions
-> evita rebaixar o que já veio, mas a primeira execução é demorada.
+> O exterior inteiro são ~2.700 seções por turno. A coleta usa 8 downloads
+> simultâneos (`TSE_PARALELO` ajusta) e o cache do Actions evita rebaixar o que
+> já veio; uma execução completa leva ~4 min.
+
+### O mapa
+
+As coordenadas das 186 cidades estão em `docs/dados/coordenadas.json`,
+geocodificadas uma única vez via Nominatim/OSM e **versionadas** — a coleta
+periódica não refaz geocoding. 26 cidades precisaram de consulta explícita por
+país (Artigas caía na França, Madri na Índia, Chuy no Quirguistão); essas ficam
+em `coletor/coordenadas_manuais.json`, que tem precedência. Os contornos dos
+países (`docs/dados/mundo.json`, Natural Earth 110m) também são versionados,
+então o dashboard não depende de CDN.
+
+Postos muito próximos (Nagóia, Hamamatsu e Tóquio ficam a poucos pixels) são
+afastados por repulsão, com uma linha fina ligando cada bolha ao ponto real.
 
 ## Publicando
 
@@ -93,8 +108,13 @@ Terminada a apuração, desligue o cron para não gastar minutos de Actions.
 | `coletor/bu.py` | download e leitura dos boletins de urna |
 | `coletor/coleta.py` | agrega, calcula as métricas e grava o JSON |
 | `coletor/listar_cidades.py` | lista as cidades do exterior |
+| `coletor/geocodificar.py` | geocodifica as cidades (roda uma vez) |
+| `coletor/mapa_base.py` | gera os contornos dos países (roda uma vez) |
+| `coletor/coordenadas_manuais.json` | correções de geocoding |
 | `docs/index.html` | dashboard (HTML/SVG, sem dependências) |
 | `docs/dados/resumo.json` | saída da coleta, lida pelo dashboard |
+| `docs/dados/coordenadas.json` | lat/lon das 186 cidades |
+| `docs/dados/mundo.json` | contornos dos países para o mapa |
 | `docs/dados/historico.jsonl` | uma linha por execução, para série temporal |
 
 Dados: [resultados.tse.jus.br](https://resultados.tse.jus.br) e

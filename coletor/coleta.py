@@ -7,8 +7,13 @@ import datetime
 import json
 import os
 import sys
+from concurrent.futures import ThreadPoolExecutor
 
 import bu
+
+# Downloads simultâneos. Modesto de propósito: o volume todo são ~2.700 seções
+# por turno e o cache evita rebaixar o que já veio.
+PARALELO = int(os.environ.get("TSE_PARALELO", "8"))
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SAIDA = os.path.join(RAIZ, "docs", "dados")
@@ -18,13 +23,18 @@ def zeros(nums):
     return {str(n): 0 for n in nums}
 
 
-def agrega(pleito, uf, municipio, secoes, nums, cache):
+def agrega(pleito, uf, municipio, secoes, nums, cache, pool=None):
     """Soma os BUs disponíveis das seções pedidas."""
     tot = zeros(nums)
     tot.update(brancos=0, nulos=0, outros=0, comparecimento=0, aptos=0)
     por_secao = {}
-    for zona, secao in secoes:
-        bs = bu.baixa_bu(pleito, uf, municipio, zona, secao, cache=cache)
+
+    def pega(arg):
+        zona, secao = arg
+        return secao, bu.baixa_bu(pleito, uf, municipio, zona, secao, cache=cache)
+
+    mapa = pool.map(pega, secoes) if pool else map(pega, secoes)
+    for secao, bs in mapa:
         if bs is None:
             continue
         r = bu.le_bu(bs)
@@ -73,18 +83,17 @@ def metricas(t1, t2, nums):
     }
 
 
-def coleta_cidade(cfg, municipio, nomes, cache):
+def coleta_cidade(cfg, municipio, nomes, cache, prev2, pool=None):
     uf = cfg["uf"]
     p1, p2 = cfg["turno1"]["pleito"], cfg["turno2"]["pleito"]
     nums = sorted(cfg["candidatos"], key=int)
 
-    prev2 = bu.secoes_previstas(p2, uf, municipio)
     t2, sec2 = agrega(p2, uf, municipio, [(z, s) for z, s, _ in prev2],
-                      nums, cache)
+                      nums, cache, pool)
 
     # comparação apples-to-apples: só as seções que já saíram no 2º turno
     comparaveis = [(z, s) for z, s, _ in prev2 if s in sec2]
-    t1, sec1 = agrega(p1, uf, municipio, comparaveis, nums, cache)
+    t1, sec1 = agrega(p1, uf, municipio, comparaveis, nums, cache, pool)
 
     secoes = []
     for zona, secao in comparaveis:
@@ -103,14 +112,18 @@ def coleta_cidade(cfg, municipio, nomes, cache):
     }
 
 
-def nomes_cidades(pleito, uf):
+def catalogo(pleito, uf):
+    """Nome e seções previstas de cada cidade, num único download."""
     cfg = bu._get(f"{bu.BASE}/{pleito}/config/{uf}/{uf}-p{pleito:0>6}-cs.json")
-    out = {}
+    nomes, secoes = {}, {}
     for abr in cfg["abr"]:
-        if abr["cd"] == uf:
-            for mu in abr["mu"]:
-                out[mu["cd"]] = mu["nm"]
-    return out
+        if abr["cd"] != uf:
+            continue
+        for mu in abr["mu"]:
+            nomes[mu["cd"]] = mu["nm"]
+            secoes[mu["cd"]] = [(z["cd"], s["ns"], "da" in s)
+                                for z in mu["zon"] for s in z["sec"]]
+    return nomes, secoes
 
 
 def main(caminho=None):
@@ -119,15 +132,30 @@ def main(caminho=None):
     uf = cfg["uf"]
     nums = sorted(cfg["candidatos"], key=int)
     cache = os.path.join(RAIZ, ".cache")
-    nomes = nomes_cidades(cfg["turno2"]["pleito"], uf)
+    nomes, secoes = catalogo(cfg["turno2"]["pleito"], uf)
+
+    alvo = cfg["cidades"]
+    if alvo == "todas":
+        alvo = sorted(nomes, key=lambda c: nomes[c])
+
+    coords = {}
+    arq_coords = os.path.join(SAIDA, "coordenadas.json")
+    if os.path.exists(arq_coords):
+        coords = json.load(open(arq_coords, encoding="utf-8"))
 
     cidades = []
-    for cd in cfg["cidades"]:
-        print(f"coletando {nomes.get(cd, cd)} ({cd})...", flush=True)
-        try:
-            cidades.append(coleta_cidade(cfg, cd, nomes, cache))
-        except Exception as e:                      # uma cidade não derruba o resto
-            print(f"  erro em {cd}: {e}", file=sys.stderr)
+    with ThreadPoolExecutor(max_workers=PARALELO) as pool:
+        for i, cd in enumerate(alvo, 1):
+            print(f"[{i}/{len(alvo)}] {nomes.get(cd, cd)}", flush=True)
+            try:
+                c = coleta_cidade(cfg, cd, nomes, cache, secoes.get(cd, []), pool)
+            except Exception as e:                  # uma cidade não derruba o resto
+                print(f"  erro em {cd}: {e}", file=sys.stderr)
+                continue
+            p = coords.get(cd) or {}
+            if p.get("lat") is not None:
+                c["lat"], c["lon"] = p["lat"], p["lon"]
+            cidades.append(c)
 
     # agregado de todas as cidades coletadas
     ag1 = zeros(nums); ag1.update(brancos=0, nulos=0, outros=0,

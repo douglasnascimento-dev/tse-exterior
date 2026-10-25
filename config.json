@@ -1,8 +1,18 @@
 {
   "uf": "zz",
-  "cidades": ["30805"],
+  "cidades": "todas",
   "_comentario": "Códigos de município do TSE no exterior (uf 'zz'). Use coletor/listar_cidades.py para ver todos os 186 disponíveis.",
-  "turno1": { "pleito": 3220, "eleicao": 6257 },
-  "turno2": { "pleito": 3221, "eleicao": 6258 },
-  "candidatos": { "13": "Lula (PT)", "22": "Flávio Bolsonaro (PL)" }
+  "turno1": {
+    "pleito": 3220,
+    "eleicao": 6257
+  },
+  "turno2": {
+    "pleito": 3221,
+    "eleicao": 6258
+  },
+  "candidatos": {
+    "13": "Lula (PT)",
+    "22": "Flávio Bolsonaro (PL)"
+  },
+  "_cidades_ajuda": "\"todas\" = as 186 cidades do exterior. Ou uma lista de códigos, ex.: [\"30805\",\"30627\"]."
 }

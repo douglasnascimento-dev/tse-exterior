@@ -10,6 +10,7 @@
     --surface-0:#f6f6f4; --surface-1:#fcfcfb; --border:#e2e1dc;
     --text-primary:#0b0b0b; --text-secondary:#52514e; --text-muted:#7a7873;
     --series-1:#2a78d6; --series-2:#eb6834; --neutral:#9b9892;
+    --mapa-terra:#eceae4; --mapa-borda:#dbd9d2;
     --grid:#e8e7e2;
   }
   @media (prefers-color-scheme: dark) {
@@ -18,6 +19,7 @@
       --surface-0:#111110; --surface-1:#1a1a19; --border:#33322e;
       --text-primary:#f0efec; --text-secondary:#c3c2b7; --text-muted:#8e8c84;
       --series-1:#3987e5; --series-2:#d95926; --neutral:#6f6d67;
+      --mapa-terra:#26251f; --mapa-borda:#3a3832;
       --grid:#2a2926;
     }
   }
@@ -26,6 +28,7 @@
     --surface-0:#111110; --surface-1:#1a1a19; --border:#33322e;
     --text-primary:#f0efec; --text-secondary:#c3c2b7; --text-muted:#8e8c84;
     --series-1:#3987e5; --series-2:#d95926; --neutral:#6f6d67;
+      --mapa-terra:#26251f; --mapa-borda:#3a3832;
     --grid:#2a2926;
   }
   * { box-sizing:border-box; }
@@ -88,6 +91,14 @@
   footer { margin-top:26px; font-size:12px; color:var(--text-muted); }
   footer a { color:var(--text-secondary); }
   .empty { padding:26px 0; color:var(--text-secondary); font-size:14px; }
+  .pais { fill:var(--mapa-terra); stroke:var(--mapa-borda); stroke-width:.5;
+          vector-effect:non-scaling-stroke; }
+  .cidade { stroke:var(--surface-1); stroke-width:2; cursor:pointer; }
+  .cidade:hover { stroke:var(--text-primary); }
+  .tamanhos { display:flex; gap:18px; align-items:flex-end; font-size:11.5px;
+    color:var(--text-muted); margin:10px 0 0; }
+  .tamanhos i { display:inline-block; border-radius:50%;
+    background:var(--neutral); margin-right:5px; vertical-align:-2px; }
   @media (max-width:560px) { .tile .v { font-size:23px; } h1 { font-size:18px; } }
 </style>
 </head>
@@ -105,6 +116,7 @@
   </header>
 
   <div id="status"></div>
+  <div id="mapa"></div>
   <div id="conteudo"></div>
 
   <footer>
@@ -198,7 +210,133 @@ function barrasCrescimento(itens) {
   return `<svg viewBox="0 0 ${W} ${H}" role="img">${s}</svg>`;
 }
 
-let DADOS = null, CIDADE = null;
+
+/* ---- mapa-múndi: círculo por cidade, cor = quem lidera, área = votos ---- */
+const LAT_MAX = 78, LAT_MIN = -58, MAPA_W = 960;
+const MAPA_H = Math.round(MAPA_W * (LAT_MAX - LAT_MIN) / 360);
+const projX = lon => (lon + 180) / 360 * MAPA_W;
+const projY = lat => (LAT_MAX - lat) / (LAT_MAX - LAT_MIN) * MAPA_H;
+
+function caminhoPais(geom) {
+  const anel = pts => "M" + pts.map(p => `${projX(p[0]).toFixed(1)} ${projY(p[1]).toFixed(1)}`)
+    .join("L") + "Z";
+  const polis = geom.type === "Polygon" ? [geom.coordinates] : geom.coordinates;
+  // descarta anéis que cruzam a emenda da projeção (vazariam a tela)
+  return polis.flat().filter(r => {
+    const xs = r.map(p => p[0]);
+    return Math.max(...xs) - Math.min(...xs) < 180;
+  }).map(anel).join("");
+}
+
+function desenhaMapa(d, cores) {
+  if (!MUNDO) return "";
+  const comDados = d.cidades.filter(c => c.lat != null && c.metricas);
+  if (!comDados.length) return "";
+  const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
+  const vmax = Math.max(...comDados.map(c => c.metricas.total_t2));
+  const raio = v => Math.max(3.2, 23 * Math.sqrt(v / vmax));
+
+  const paises = MUNDO.features
+    .map(f => `<path class="pais" d="${caminhoPais(f.geometry)}"></path>`).join("");
+
+  // Postos muito próximos (Nagóia/Hamamatsu/Tóquio) se sobrepõem a ponto de
+  // esconder uns aos outros. Afasta o suficiente para todos ficarem clicáveis,
+  // e marca a posição real com um ponto e uma linha fina.
+  const pontos = comDados
+    .sort((a, b) => b.metricas.total_t2 - a.metricas.total_t2)
+    .map(c => ({ c, x0: projX(c.lon), y0: projY(c.lat),
+                 x: projX(c.lon), y: projY(c.lat), r: raio(c.metricas.total_t2) }));
+  for (let passo = 0; passo < 120; passo++) {
+    let moveu = false;
+    for (let i = 0; i < pontos.length; i++)
+      for (let j = i + 1; j < pontos.length; j++) {
+        const a = pontos[i], b = pontos[j];
+        const dx = b.x - a.x, dy = b.y - a.y;
+        const min = a.r + b.r + 1.5;
+        let dist = Math.hypot(dx, dy);
+        if (dist >= min) continue;
+        if (dist < 0.01) { b.x += 0.1; dist = 0.1; }
+        const empurra = (min - dist) / 2, ux = dx / dist, uy = dy / dist;
+        a.x -= ux * empurra; a.y -= uy * empurra;
+        b.x += ux * empurra; b.y += uy * empurra;
+        moveu = true;
+      }
+    if (!moveu) break;
+  }
+
+  const bolhas = pontos
+    .sort((a, b) => b.r - a.r)                       // menores desenhadas por cima
+    .map(({ c, x, y, r, x0, y0 }) => {
+      const m = c.metricas, a = nums[0], b = nums[1];
+      const lider = m.candidatos[a].t2 >= m.candidatos[b].t2 ? 0 : 1;
+      const nomeLider = d.candidatos[nums[lider]];
+      const share = m.candidatos[nums[lider]].share_t2;
+      const desloc = Math.hypot(x - x0, y - y0);
+      const guia = desloc > 3
+        ? `<line x1="${x0.toFixed(1)}" y1="${y0.toFixed(1)}" x2="${x.toFixed(1)}"
+             y2="${y.toFixed(1)}" stroke="var(--text-muted)" stroke-width=".6"></line>
+           <circle cx="${x0.toFixed(1)}" cy="${y0.toFixed(1)}" r="1.3"
+             fill="var(--text-muted)"></circle>` : "";
+      return guia + `<circle class="cidade" cx="${x.toFixed(1)}"
+        cy="${y.toFixed(1)}" r="${r.toFixed(1)}"
+        fill="${cores[lider]}" fill-opacity="0.82" data-cidade="${c.codigo}"
+        data-tip="${encodeURIComponent(
+          `<b>${c.nome}</b><br>${nf(m.total_t2)} votos · `
+          + `${c.secoes_apuradas_t2}/${c.secoes_previstas} seções<br>`
+          + `${nomeLider}: <b>${share.toFixed(1)}%</b><br>`
+          + `margem ${sf(m.margem_t2)} (era ${sf(m.margem_t1)})`)}"></circle>`;
+    }).join("");
+
+  const legCor = nums.map((n, i) =>
+    `<span><span class="sw" style="background:${cores[i]}"></span>lidera ${d.candidatos[n]}</span>`
+  ).join("");
+  const passos = [vmax, vmax / 4, vmax / 16].map(v =>
+    `<span><i style="width:${(raio(v) * 2).toFixed(0)}px;height:${(raio(v) * 2).toFixed(0)}px"></i>${nf(Math.round(v))}</span>`
+  ).join("");
+
+  return `<div class="card">
+    <h2>Onde a apuração já chegou</h2>
+    <p class="note">Uma bolha por cidade com boletim no 2º turno — área
+      proporcional aos votos, cor indica quem lidera ali. Clique
+      para abrir a cidade. Bolhas que se sobreporiam são afastadas, com uma
+      linha fina apontando o lugar exato.</p>
+    <div class="legend">${legCor}</div>
+    <div class="scroll"><svg viewBox="0 0 ${MAPA_W} ${MAPA_H}" role="img"
+      aria-label="Mapa-múndi das cidades apuradas">${paises}${bolhas}</svg></div>
+    <div class="tamanhos"><span>votos:</span>${passos}</div>
+  </div>`;
+}
+
+
+function tabelaCidades(d, cores) {
+  const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
+  const com = d.cidades.filter(c => c.metricas)
+    .sort((a, b) => b.metricas.total_t2 - a.metricas.total_t2);
+  if (!com.length) return "";
+  const linhas = com.map(c => {
+    const m = c.metricas, a = nums[0], b = nums[1];
+    return `<tr data-cidade="${c.codigo}" style="cursor:pointer">
+      <td>${c.nome}</td>
+      <td>${c.secoes_apuradas_t2}/${c.secoes_previstas}</td>
+      <td>${nf(m.candidatos[a].t2)}</td>
+      <td>${m.candidatos[a].share_t2.toFixed(1)}%</td>
+      <td>${nf(m.candidatos[b].t2)}</td>
+      <td>${m.candidatos[b].share_t2.toFixed(1)}%</td>
+      <td>${nf(m.total_t2)}</td>
+      <td class="delta">${sf(m.delta_total)}</td></tr>`;
+  }).join("");
+  return `<div class="card"><h2>Cidades com apuração</h2>
+    <p class="note">${com.length} de ${d.cidades.length} cidades do exterior.
+      Clique numa linha para abrir os detalhes.</p>
+    <div class="scroll"><table><thead><tr>
+      <th>Cidade</th><th>Seções</th>
+      <th><span class="sw" style="background:${cores[0]}"></span>${d.candidatos[nums[0]]}</th><th>%</th>
+      <th><span class="sw" style="background:${cores[1]}"></span>${d.candidatos[nums[1]]}</th><th>%</th>
+      <th>Total 2T</th><th>Δ vs 1T</th>
+    </tr></thead><tbody>${linhas}</tbody></table></div></div>`;
+}
+
+let DADOS = null, CIDADE = null, MUNDO = null;
 
 function desenha() {
   const d = DADOS, nums = Object.keys(d.candidatos).sort((a, b) => a - b);
@@ -218,11 +356,15 @@ function desenha() {
   $("#ger").textContent = " · gerado em "
     + new Date(d.gerado_em).toLocaleString("pt-BR");
 
+  $("#mapa").innerHTML = d.cidades.length > 1 ? desenhaMapa(d, cores) : "";
+
   if (!c.metricas) {
     $("#status").innerHTML = `<div class="card"><div class="empty">
-      Nenhuma seção desta cidade foi apurada no 2º turno ainda.
-      O painel se atualiza sozinho quando os boletins chegarem.</div></div>`;
+      Nenhuma seção ${CIDADE === "__agg__" ? "" : "desta cidade "}foi apurada
+      no 2º turno ainda. O painel se atualiza sozinho quando os boletins
+      chegarem.</div></div>`;
     $("#conteudo").innerHTML = "";
+    ligaCliques();
     return;
   }
   $("#status").innerHTML = "";
@@ -297,25 +439,45 @@ function desenha() {
         <strong>${sf(m.diferenca_crescimento)}</strong> votos a favor de
         ${m.diferenca_crescimento > 0 ? nomes[0]
           : m.diferenca_crescimento < 0 ? nomes[1] : "ninguém"}.</p>
-      <div class="scroll">${barrasCrescimento(cresc)}</div></div>` + tabela;
+      <div class="scroll">${barrasCrescimento(cresc)}</div></div>`
+    + (CIDADE === "__agg__" ? tabelaCidades(d, cores) : tabela);
 
+  ligaCliques();
+}
+
+function ligaCliques() {
   document.querySelectorAll("[data-tip]").forEach(el => {
-    el.style.cursor = "crosshair";
+    if (!el.classList.contains("cidade")) el.style.cursor = "crosshair";
     el.addEventListener("mousemove", e =>
       mostraTip(e, decodeURIComponent(el.dataset.tip)));
     el.addEventListener("mouseleave", escondeTip);
   });
+  document.querySelectorAll("[data-cidade]").forEach(el => {
+    el.addEventListener("click", () => {
+      CIDADE = el.dataset.cidade;
+      $("#cidade").value = CIDADE;
+      escondeTip();
+      desenha();
+      scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
 }
 
-fetch("dados/resumo.json", { cache: "no-store" })
-  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-  .then(d => {
-    DADOS = d;
+Promise.all([
+  fetch("dados/resumo.json", { cache: "no-store" })
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+  fetch("dados/mundo.json").then(r => r.ok ? r.json() : null).catch(() => null),
+])
+  .then(([d, mundo]) => {
+    DADOS = d; MUNDO = mundo;
     const sel = $("#cidade");
-    d.cidades.forEach(c => sel.add(new Option(c.nome, c.codigo)));
-    if (d.cidades.length > 1) sel.add(new Option("— Todas —", "__agg__"));
-    sel.style.display = d.cidades.length > 1 ? "" : "none";
-    CIDADE = d.cidades[0]?.codigo ?? "__agg__";
+    const varias = d.cidades.length > 1;
+    if (varias) sel.add(new Option("— Todas as cidades —", "__agg__"));
+    d.cidades.slice().sort((a, b) => a.nome.localeCompare(b.nome, "pt"))
+      .forEach(c => sel.add(new Option(
+        c.nome + (c.secoes_apuradas_t2 ? "" : " (sem apuração)"), c.codigo)));
+    sel.style.display = varias ? "" : "none";
+    CIDADE = varias ? "__agg__" : d.cidades[0].codigo;
     sel.value = CIDADE;
     sel.onchange = () => { CIDADE = sel.value; desenha(); };
     desenha();

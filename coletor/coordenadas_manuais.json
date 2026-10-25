@@ -1,0 +1,158 @@
+{
+ "29319": {
+  "consulta": "Artigas, Uruguay",
+  "lat": -30.6171,
+  "lon": -56.9373,
+  "match": "Artigas, Uruguai"
+ },
+ "29475": {
+  "consulta": "Cayenne, Guyane française",
+  "lat": 4.9372,
+  "lon": -52.3259,
+  "match": "Caiena, Cayenne, Guiana Francesa, 97300, França"
+ },
+ "29521": {
+  "consulta": "Chuy, Rocha, Uruguay",
+  "lat": -33.6938,
+  "lon": -53.4561,
+  "match": "Chuy, Rocha, 27100, Uruguai"
+ },
+ "29580": {
+  "consulta": "Concepción, Paraguay",
+  "lat": -23.1775,
+  "lon": -57.1675,
+  "match": "Concepción, Región Oriental, Paraguai"
+ },
+ "29602": {
+  "consulta": "Córdoba, Argentina",
+  "lat": -31.4167,
+  "lon": -64.1834,
+  "match": "Córdova, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Córdova, X5000, Argentina"
+ },
+ "29718": {
+  "consulta": "Georgetown, Guyana",
+  "lat": 6.8033,
+  "lon": -58.1455,
+  "match": "City of Georgetown, Demerara-Mahaica, Guiana"
+ },
+ "29785": {
+  "consulta": "Helsinki, Finland",
+  "lat": 60.1666,
+  "lon": 24.9435,
+  "match": "Helsínquia, Helsingin seutukunta, Uusimaa, Manner-Suomi, Finlândia"
+ },
+ "29912": {
+  "consulta": "Lagos, Nigeria",
+  "lat": 6.4551,
+  "lon": 3.3942,
+  "match": "Lagos, Lagos Island, Lagos, 100242, Nigéria"
+ },
+ "30066": {
+  "consulta": "Madrid, Spain",
+  "lat": 40.4168,
+  "lon": -3.7035,
+  "match": "Madrid, Comunidade de Madrid, Espanha"
+ },
+ "30104": {
+  "consulta": "Ciudad de México, Mexico",
+  "lat": 19.3208,
+  "lon": -99.1515,
+  "match": "Cidade do México, México"
+ },
+ "30260": {
+  "consulta": "Panama City, Panama",
+  "lat": 8.9714,
+  "lon": -79.5342,
+  "match": "Panamá, Calidonia, Distrito de Panamá, Provincia de Panamá, 0843, Panamá"
+ },
+ "30368": {
+  "consulta": "Praia, Cabo Verde",
+  "lat": 14.9163,
+  "lon": -23.5095,
+  "match": "Praia, Platô, Praia, 7600, Cabo Verde"
+ },
+ "30430": {
+  "consulta": "Rio Branco, Cerro Largo, Uruguay",
+  "lat": -32.5887,
+  "lon": -53.3781,
+  "match": "Río Branco, Cerro Largo, 37100, Uruguai"
+ },
+ "30481": {
+  "consulta": "Santiago, Chile",
+  "lat": -33.4377,
+  "lon": -70.6511,
+  "match": "Santiago, Provincia de Santiago, Região Metropolitana de Santiago, 8320000, Chile"
+ },
+ "30490": {
+  "consulta": "Santo Domingo, Dominican Republic",
+  "lat": 18.4714,
+  "lon": -69.8918,
+  "match": "São Domingos, Distrito Nacional, 03201, República Dominicana"
+ },
+ "30511": {
+  "consulta": "San José, Costa Rica",
+  "lat": 9.9327,
+  "lon": -84.0797,
+  "match": "San José, Costa Rica"
+ },
+ "30651": {
+  "consulta": "Guangzhou, Guangdong, China",
+  "lat": 23.1288,
+  "lon": 113.259,
+  "match": "Cantão, Província de Cantão, China"
+ },
+ "30686": {
+  "consulta": "Tripoli, Libya",
+  "lat": 32.8967,
+  "lon": 13.1778,
+  "match": "Trípoli, Líbia"
+ },
+ "30929": {
+  "consulta": "Colombo, Sri Lanka",
+  "lat": 6.9389,
+  "lon": 79.8542,
+  "match": "Colombo, Colombo District, Western Province, Seri-Lanca"
+ },
+ "30961": {
+  "consulta": "Faro, Portugal",
+  "lat": 37.0163,
+  "lon": -7.9352,
+  "match": "Faro, Portugal"
+ },
+ "98000": {
+  "consulta": "Guatemala City, Guatemala",
+  "lat": 14.6416,
+  "lon": -90.5133,
+  "match": "Cidade da Guatemala, Zona 2, Departamento de Guatemala, Guatemala"
+ },
+ "99147": {
+  "consulta": "St John's, Antigua and Barbuda",
+  "lat": 17.1185,
+  "lon": -61.8449,
+  "match": "São João, Saint John, Antígua, Antígua e Barbuda"
+ },
+ "99244": {
+  "consulta": "Rivera, Uruguay",
+  "lat": -30.9001,
+  "lon": -55.5408,
+  "match": "Rivera, 40000, Uruguai"
+ },
+ "99333": {
+  "consulta": "Saint-Georges, Guyane française",
+  "lat": 3.8909,
+  "lon": -51.8014,
+  "match": "São Jorge, Saint-Georges, Guiana Francesa, 97313, França"
+ },
+ "99384": {
+  "consulta": "Castries, Saint Lucia",
+  "lat": 14.0096,
+  "lon": -60.9902,
+  "match": "Castries, LC04 101, Santa Lúcia"
+ },
+ "99473": {
+  "consulta": "Manama, Bahrain",
+  "lat": 26.2235,
+  "lon": 50.5822,
+  "match": "Manama, Capital, 308, Bahrein"
+ }
+}
