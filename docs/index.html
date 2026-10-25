@@ -107,6 +107,25 @@
   footer { margin-top:26px; font-size:12px; color:var(--text-muted); }
   footer a { color:var(--text-secondary); }
   .empty { padding:26px 0; color:var(--text-secondary); font-size:14px; }
+  .confronto { display:flex; justify-content:space-between; align-items:flex-end;
+    gap:16px; flex-wrap:wrap; margin:2px 0 14px; }
+  .lado .pc { font-size:40px; font-weight:650; letter-spacing:-.03em; line-height:1;
+              font-variant-numeric:tabular-nums; }
+  .lado .qn { font-size:13px; color:var(--text-secondary); margin-top:5px; }
+  .lado .nm { font-size:13px; font-weight:600; margin-bottom:5px; }
+  .lado.dir { text-align:right; }
+  .pilha { display:flex; gap:2px; height:16px; margin:4px 0 9px; }
+  .pilha i { display:block; border-radius:3px; }
+  .antes { font-size:12.5px; color:var(--text-secondary); }
+  .dupla { display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+           margin-top:4px; }
+  .bloco { border:1px solid var(--border); border-radius:9px; padding:13px 15px; }
+  .bloco .rot { font-size:12px; color:var(--text-secondary); margin-bottom:9px; }
+  .bloco .par { display:flex; justify-content:space-between; gap:10px;
+                font-size:14px; padding:3px 0; font-variant-numeric:tabular-nums; }
+  .bloco .par b { font-weight:650; }
+  .bloco .concl { margin-top:10px; padding-top:9px; border-top:1px solid var(--border);
+                  font-size:13px; color:var(--text-secondary); }
   .aviso { border:1px solid var(--series-1); border-radius:9px; padding:10px 13px;
     font-size:13px; color:var(--text-primary); background:var(--surface-1);
     margin-top:14px; }
@@ -155,7 +174,8 @@ const $ = s => document.querySelector(s);
 const tip = $("#tip");
 const nf = n => (n ?? 0).toLocaleString("pt-BR");
 const sf = n => (n > 0 ? "+" : "") + nf(n);
-const pf = p => p == null ? "—" : (p > 0 ? "+" : "") + p.toFixed(2) + "%";
+const dec = (v, c = 1) => v.toFixed(c).replace(".", ",");
+const pf = p => p == null ? "—" : (p > 0 ? "+" : "") + dec(p, 2) + "%";
 
 $("#tema").onclick = () => {
   const cur = document.documentElement.getAttribute("data-theme");
@@ -305,7 +325,7 @@ function desenhaMapa(d, cores) {
         data-tip="${encodeURIComponent(
           `<b>${c.nome}</b><br>${nf(m.total_t2)} votos · `
           + `${c.secoes_apuradas_t2}/${c.secoes_previstas} seções<br>`
-          + `${nomeLider}: <b>${share.toFixed(1)}%</b><br>`
+          + `${nomeLider}: <b>${dec(share)}%</b><br>`
           + `margem ${sf(m.margem_t2)} (era ${sf(m.margem_t1)})`)}"></circle>`;
     }).join("");
 
@@ -346,8 +366,8 @@ function tabelaRanking(d, cores) {
     return `<tr data-cidade="${x.codigo}" style="cursor:pointer">
       <td>${x.nome}<span class="peq">${sub}</span></td>
       <td>${nf(x.secoes_apuradas_t2)}<span class="peq">de ${nf(x.secoes_previstas)}</span></td>
-      <td>${nf(m.candidatos[a].t2)}<span class="peq">${m.candidatos[a].share_t2.toFixed(1)}%</span></td>
-      <td>${nf(m.candidatos[b].t2)}<span class="peq">${m.candidatos[b].share_t2.toFixed(1)}%</span></td>
+      <td>${nf(m.candidatos[a].t2)}<span class="peq">${dec(m.candidatos[a].share_t2)}%</span></td>
+      <td>${nf(m.candidatos[b].t2)}<span class="peq">${dec(m.candidatos[b].share_t2)}%</span></td>
       <td><span style="color:${cores[nums.indexOf(lider)]};font-weight:600">
         ${sf(m.margem_t2)}</span><span class="peq">era ${sf(m.margem_t1)}</span></td>
       <td>${nf(m.total_t2)}<span class="peq">${sf(m.delta_total)} vs 1T</span></td></tr>`;
@@ -389,6 +409,73 @@ function somaCidades(lista, nums) {
   });
   return { t1, t2, secoes_apuradas_t2: ap, secoes_previstas: prev,
            metricas: t2.total ? calcMetricas(t1, t2, nums) : null, secoes: [] };
+}
+
+
+/* ---- porcentagem de um contra o outro, agora e no 1º turno ---- */
+
+/* ---- crescimento em votos e em percentual, lado a lado ---- */
+function blocosCrescimento(d, m, cores) {
+  const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
+  const [a, b] = nums;
+  const ca = m.candidatos[a], cb = m.candidatos[b];
+  const pp = n => (n > 0 ? "+" : "") + dec(n, 2) + " p.p.";
+
+  // em votos: quem ganhou mais votos em números absolutos
+  const dVotos = ca.delta - cb.delta;
+  const ganhouVotos = dVotos === 0 ? null : (dVotos > 0 ? a : b);
+  // em percentual: quem cresceu mais rápido em relação ao que já tinha
+  const dPct = (ca.pct ?? 0) - (cb.pct ?? 0);
+  const cresceuMais = dPct === 0 ? null : (dPct > 0 ? a : b);
+
+  const par = (n, txt) => `<div class="par"><span>
+      <span class="sw" style="background:${cores[nums.indexOf(n)]}"></span>
+      ${d.candidatos[n]}</span><b>${txt}</b></div>`;
+
+  return `<div class="dupla">
+    <div class="bloco">
+      <div class="rot">Em votos</div>
+      ${par(a, sf(ca.delta))}
+      ${par(b, sf(cb.delta))}
+      <div class="concl">${ganhouVotos === null ? "Empate."
+        : `<strong>${d.candidatos[ganhouVotos]}</strong> ganhou
+           <strong>${nf(Math.abs(dVotos))}</strong> votos a mais.`}</div>
+    </div>
+    <div class="bloco">
+      <div class="rot">Em percentual, sobre o que já tinha</div>
+      ${par(a, pf(ca.pct))}
+      ${par(b, pf(cb.pct))}
+      <div class="concl">${cresceuMais === null ? "Empate."
+        : `<strong>${d.candidatos[cresceuMais]}</strong> cresceu mais rápido:
+           <strong>${pp(Math.abs(dPct))}</strong> de diferença.`}</div>
+    </div>
+  </div>`;
+}
+
+function confronto(d, m, cores) {
+  const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
+  const [a, b] = nums;
+  const pa = m.candidatos[a].share_t2, pb = m.candidatos[b].share_t2;
+  const resto = Math.max(0, 100 - pa - pb);
+  const lado = (n, p, v, dir) => `<div class="lado ${dir}">
+      <div class="nm"><span class="sw" style="background:${cores[nums.indexOf(n)]}"></span>${d.candidatos[n]}</div>
+      <div class="pc" style="color:${cores[nums.indexOf(n)]}">${dec(p)}%</div>
+      <div class="qn">${nf(v)} votos</div></div>`;
+  return `<div class="card"><h2>Como está agora</h2>
+    <p class="note">Porcentagem sobre os votos das seções já apuradas no 2º turno.</p>
+    <div class="confronto">
+      ${lado(a, pa, m.candidatos[a].t2, "esq")}
+      ${lado(b, pb, m.candidatos[b].t2, "dir")}
+    </div>
+    <div class="pilha" role="img" aria-label="${d.candidatos[a]} ${dec(pa)}%, ${d.candidatos[b]} ${dec(pb)}%">
+      <i style="width:${pa}%;background:${cores[0]}"></i>
+      <i style="width:${pb}%;background:${cores[1]}"></i>
+      <i style="width:${resto}%;background:var(--neutral)"></i>
+    </div>
+    <p class="antes">No 1º turno, <strong>nas mesmas seções</strong>:
+      ${dec(m.candidatos[a].share_t1)}% × ${dec(m.candidatos[b].share_t1)}%
+      · brancos, nulos e demais candidatos somam ${dec(resto)}% agora.</p>
+  </div>`;
 }
 
 function calcMetricas(t1, t2, nums) {
@@ -465,15 +552,15 @@ function linhaTempo(hist, d, cores) {
     linhas += `<circle cx="${X(t1)}" cy="${Y(ult[`p${n}_t2`])}" r="4"
         fill="${cores[i]}" stroke="var(--surface-1)" stroke-width="2"></circle>
       <text class="lbl-strong" x="${m.l + iw + 10}" y="${Y(ult[`p${n}_t2`]) + 4}"
-        fill="${cores[i]}">${ult[`p${n}_t2`].toFixed(1)}%</text>`;
+        fill="${cores[i]}">${dec(ult[`p${n}_t2`])}%</text>`;
   });
 
   // faixas invisíveis para o tooltip, uma por leitura
   const faixa = iw / Math.max(1, pts.length - 1);
   const alvos = pts.map((h, k) => {
     const corpo = nums.map(n =>
-      `${d.candidatos[n]}: <b>${h[`p${n}_t2`].toFixed(1)}%</b> `
-      + `<span style="opacity:.7">(1T ${h[`p${n}_t1`].toFixed(1)}%)</span>`).join("<br>");
+      `${d.candidatos[n]}: <b>${dec(h[`p${n}_t2`])}%</b> `
+      + `<span style="opacity:.7">(1T ${dec(h[`p${n}_t1`])}%)</span>`).join("<br>");
     return `<rect x="${(X(ts[k]) - faixa / 2).toFixed(1)}" y="${m.t}"
       width="${faixa.toFixed(1)}" height="${ih}" fill="transparent"
       data-tip="${encodeURIComponent(
@@ -611,15 +698,15 @@ function desenha() {
       <td>${nf(c.t1.comparecimento)}</td><td>${nf(c.t2.comparecimento)}</td>
     </tr></tfoot></table></div></div>` : "";
 
-  $("#conteudo").innerHTML = tiles + linhaTempo(HIST, d, cores) + `
+  $("#conteudo").innerHTML = tiles + confronto(d, m, cores)
+    + linhaTempo(HIST, d, cores) + `
     <div class="card"><h2>Votos por turno</h2>
       <p class="note">Mesmo eixo para os dois turnos; apenas seções comparáveis.</p>
       ${legenda}<div class="scroll">${barrasAgrupadas(grupos, series)}</div></div>
     <div class="card"><h2>Crescimento de cada um</h2>
-      <p class="note">Diferença no crescimento:
-        <strong>${sf(m.diferenca_crescimento)}</strong> votos a favor de
-        ${m.diferenca_crescimento > 0 ? nomes[0]
-          : m.diferenca_crescimento < 0 ? nomes[1] : "ninguém"}.</p>
+      <p class="note">Quanto cada um ganhou do 1º para o 2º turno, nas mesmas
+        seções. Os dois jeitos de medir podem apontar para lados diferentes.</p>
+      ${blocosCrescimento(d, m, cores)}
       <div class="scroll">${barrasCrescimento(cresc)}</div></div>`
     + (CIDADE.startsWith("pais:") || CIDADE === "__agg__"
         ? tabelaRanking(d, cores) : tabela);
