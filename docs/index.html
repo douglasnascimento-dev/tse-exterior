@@ -167,7 +167,7 @@ function desenhaMapa(d, cores) {
     return `<b>${titulo}</b><br>`
       + `${d.candidatos[lider]} lidera com <b>${dec(m.candidatos[lider].share_t2)}%</b><br>`
       + `${nf(m.validos_t2)} votos válidos · `
-      + `${nf(g.secoes_apuradas_t2)}/${nf(g.secoes_previstas)} seções<br>`
+      + `${nf(g.secoes_apuradas_t2)}/${nf(g.secoes_previstas)} urnas<br>`
       + `<span style="opacity:.75">no 1º turno: `
       + `${dec(m.candidatos[a].share_t1)}% × ${dec(m.candidatos[b].share_t1)}%</span>`;
   };
@@ -299,7 +299,7 @@ function compara2022(d, cidades, m, cores) {
       Os dois lados cobrem as mesmas cidades.</p>
     ${linha("2022", " · resultado final · Lula × Jair Bolsonaro",
             p22a, p22b, "Lula", "Jair Bolsonaro")}
-    ${linha("2026", ` · parcial, ${dec(100 * m.secoes_ap / m.secoes_prev)}% das seções · Lula × Flávio Bolsonaro`,
+    ${linha("2026", ` · parcial, ${dec(100 * m.secoes_ap / m.secoes_prev)}% das urnas · Lula × Flávio Bolsonaro`,
             p26a, p26b, d.candidatos[a].split(" ")[0], d.candidatos[b].split(" ")[0])}
     <p class="antes" style="margin-top:12px"><strong>Lula
       ${sw >= 0 ? "subiu" : "caiu"} ${dec(Math.abs(sw), 2)} pontos percentuais</strong>
@@ -388,7 +388,7 @@ function tabelaRanking(d, cores) {
     <p class="note">${itens.length} ${MODO === "pais" ? "países" : "cidades"}
       com pelo menos uma seção apurada. Clique numa linha para abrir.</p>
     <div class="scroll"><table><thead><tr>
-      <th>${MODO === "pais" ? "País" : "Cidade"}</th><th>Seções</th>
+      <th>${MODO === "pais" ? "País" : "Cidade"}</th><th>Urnas</th>
       <th><span class="sw" style="background:${cores[0]}"></span>${d.candidatos[nums[0]]}</th>
       <th><span class="sw" style="background:${cores[1]}"></span>${d.candidatos[nums[1]]}</th>
       <th>Margem</th><th>Total 2T</th>
@@ -484,7 +484,7 @@ function linhaTempo(hist, d, cores) {
     return `<rect x="${(X(ts[k]) - faixa / 2).toFixed(1)}" y="${m.t}"
       width="${faixa.toFixed(1)}" height="${ih}" fill="transparent"
       data-tip="${encodeURIComponent(
-        `<b>${hora(ts[k])}</b> · ${nf(h.secoes)} seções<br>${corpo}`)}"></rect>`;
+        `<b>${hora(ts[k])}</b> · ${nf(h.secoes)} urnas<br>${corpo}`)}"></rect>`;
   }).join("");
 
   const leg = nums.map((n, i) =>
@@ -552,7 +552,9 @@ function desenha() {
   $("#nome").textContent = c.nome;
   $("#sub").innerHTML = `${contexto}<br>`
     + `<strong>${nf(c.secoes_apuradas_t2)}</strong> de ${nf(c.secoes_previstas)} `
-    + `seções com boletim de urna no 2º turno`;
+    + `urnas com boletim no 2º turno`
+    + `<span class="peq" style="display:inline"> · várias seções votam na mesma `
+    + `urna, por isso o número é menor que o de seções eleitorais</span>`;
   $("#prog").style.width =
     (100 * c.secoes_apuradas_t2 / Math.max(1, c.secoes_previstas)).toFixed(1) + "%";
   $("#ger").textContent = " · gerado em "
@@ -629,7 +631,7 @@ function desenha() {
 
   const tabela = linhas ? `<div class="card">
     <h2>Por seção</h2>
-    <p class="note">Só as seções com boletim nos dois turnos — comparação 1:1.</p>
+    <p class="note">Só as urnas com boletim nos dois turnos — comparação 1:1.</p>
     <div class="scroll"><table><thead>
       <tr><th rowspan="2">Seção</th>
           <th colspan="3"><span class="sw" style="background:${cores[0]}"></span>${nomes[0]}</th>

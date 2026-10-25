@@ -90,6 +90,17 @@ Algumas: `30805` Wellington · `30627` Lisboa · `30295` Miami ·
 > simultâneos (`TSE_PARALELO` ajusta) e o cache do Actions evita rebaixar o que
 > já veio; uma execução completa leva ~4 min.
 
+### Quantas urnas, não quantas seções
+
+O config de arquivo de urna lista **seções eleitorais**, mas várias delas votam
+na mesma urna e não geram boletim próprio: no 1º turno eram 2.715 seções
+listadas para 1.310 boletins. O denominador do progresso vem do campo `s.ts`
+do arquivo unificado do TSE (`zz<municipio>-c0001-e<eleicao>-u.json`), que é o
+número de urnas e já vem preenchido antes da apuração começar.
+
+Usar o número de seções subestimava o progresso pela metade — Wellington
+aparecia como 5 de 9 quando já estava completa, com 5 de 5 urnas.
+
 ### Porcentagens
 
 São calculadas sobre **votos válidos** (total menos brancos e nulos), que é a

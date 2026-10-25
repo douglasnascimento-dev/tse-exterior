@@ -16,6 +16,7 @@ import bu
 PARALELO = int(os.environ.get("TSE_PARALELO", "8"))
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+URNAS = {}          # município -> boletins esperados, preenchido em main()
 SAIDA = os.path.join(RAIZ, "docs", "dados")
 
 
@@ -114,13 +115,37 @@ def coleta_cidade(cfg, municipio, nomes, cache, prev2, pool=None):
     return {
         "codigo": municipio,
         "nome": nomes.get(municipio, municipio),
-        "secoes_previstas": len(prev2),
+        "secoes_previstas": URNAS.get(municipio, len(prev2)),
+        "secoes_listadas": len(prev2),
         "secoes_apuradas_t2": len(sec2),
         "secoes_comparaveis": len([s for s in secoes if s["t1"] and s["t2"]]),
         "t1": t1, "t2": t2,
         "metricas": metricas(t1, t2, nums) if t2["total"] else None,
         "secoes": secoes,
     }
+
+
+def urnas_previstas(ciclo, eleicao, uf, municipios, cargo=1, pool=None):
+    """Quantos boletins cada cidade deve gerar, segundo o próprio TSE.
+
+    O config de arquivo de urna lista seções eleitorais, mas várias delas são
+    agregadas numa mesma urna e não geram boletim próprio: no 1º turno eram
+    2.715 seções listadas para 1.310 boletins. O campo 's.ts' do arquivo
+    unificado traz o número de urnas, e já vem preenchido antes da apuração.
+    """
+    base = "https://resultados.tse.jus.br/oficial"
+
+    def pega(cd):
+        url = (f"{base}/{ciclo}/{eleicao}/dados/{uf}/"
+               f"{uf}{cd}-c{cargo:04d}-e{eleicao:06d}-u.json")
+        try:
+            d = bu._get(url)
+            return cd, int(str(d.get("s", {}).get("ts", 0)).replace(".", "") or 0)
+        except Exception:
+            return cd, None
+
+    it = pool.map(pega, municipios) if pool else map(pega, municipios)
+    return {cd: n for cd, n in it if n}
 
 
 def catalogo(pleito, uf):
@@ -156,6 +181,11 @@ def main(caminho=None):
 
     cidades, falhas = [], []
     with ThreadPoolExecutor(max_workers=PARALELO) as pool:
+        global URNAS
+        URNAS = urnas_previstas("ele2026", cfg["turno2"]["eleicao"], uf,
+                                alvo, pool=pool)
+        print(f"boletins esperados: {sum(URNAS.values())} "
+              f"(em {len(URNAS)} cidades)", flush=True)
         for i, cd in enumerate(alvo, 1):
             print(f"[{i}/{len(alvo)}] {nomes.get(cd, cd)}", flush=True)
             c = None
@@ -174,7 +204,8 @@ def main(caminho=None):
                 # mantém a cidade no resultado: tirá-la encolheria o denominador
                 # de seções sem ninguém perceber.
                 c = {"codigo": cd, "nome": nomes.get(cd, cd),
-                     "secoes_previstas": len(secoes.get(cd, [])),
+                     "secoes_previstas": URNAS.get(cd, len(secoes.get(cd, []))),
+                     "secoes_listadas": len(secoes.get(cd, [])),
                      "secoes_apuradas_t2": 0, "secoes_comparaveis": 0,
                      "t1": zeros(nums) | {"brancos": 0, "nulos": 0, "outros": 0,
                                           "comparecimento": 0, "aptos": 0,

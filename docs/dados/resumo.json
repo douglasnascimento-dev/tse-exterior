@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-25T17:13:21+00:00",
+ "gerado_em": "2026-10-25T17:18:07+00:00",
  "fonte": "resultados.tse.jus.br — arquivo de urna (BU)",
  "uf": "zz",
  "turno1": {
@@ -19,6 +19,7 @@
    "codigo": "29254",
    "nome": "ABIDJÃ",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -53,7 +54,8 @@
   {
    "codigo": "29262",
    "nome": "ABU DHABI",
-   "secoes_previstas": 9,
+   "secoes_previstas": 5,
+   "secoes_listadas": 9,
    "secoes_apuradas_t2": 5,
    "secoes_comparaveis": 5,
    "t1": {
@@ -224,6 +226,7 @@
    "codigo": "99198",
    "nome": "ABUJA",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -259,6 +262,7 @@
    "codigo": "29270",
    "nome": "ACCRA",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -294,6 +298,7 @@
    "codigo": "99325",
    "nome": "ADIS ABEBA",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -328,7 +333,8 @@
   {
    "codigo": "30457",
    "nome": "AMSTERDÃ",
-   "secoes_previstas": 33,
+   "secoes_previstas": 17,
+   "secoes_listadas": 33,
    "secoes_apuradas_t2": 17,
    "secoes_comparaveis": 17,
    "t1": {
@@ -738,7 +744,8 @@
   {
    "codigo": "29289",
    "nome": "AMÃ",
-   "secoes_previstas": 4,
+   "secoes_previstas": 2,
+   "secoes_listadas": 4,
    "secoes_apuradas_t2": 2,
    "secoes_comparaveis": 2,
    "t1": {
@@ -849,6 +856,7 @@
    "codigo": "29297",
    "nome": "ANCARA",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -884,6 +892,7 @@
    "codigo": "29300",
    "nome": "ARGEL",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -918,7 +927,8 @@
   {
    "codigo": "29319",
    "nome": "ARTIGAS",
-   "secoes_previstas": 2,
+   "secoes_previstas": 1,
+   "secoes_listadas": 2,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -953,7 +963,8 @@
   {
    "codigo": "29327",
    "nome": "ASSUNÇÃO",
-   "secoes_previstas": 8,
+   "secoes_previstas": 4,
+   "secoes_listadas": 8,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -989,6 +1000,7 @@
    "codigo": "39241",
    "nome": "ASTANA",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -1023,7 +1035,8 @@
   {
    "codigo": "29335",
    "nome": "ATENAS",
-   "secoes_previstas": 4,
+   "secoes_previstas": 2,
+   "secoes_listadas": 4,
    "secoes_apuradas_t2": 2,
    "secoes_comparaveis": 2,
    "t1": {
@@ -1133,7 +1146,8 @@
   {
    "codigo": "39080",
    "nome": "ATLANTA",
-   "secoes_previstas": 43,
+   "secoes_previstas": 22,
+   "secoes_listadas": 43,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -1169,6 +1183,7 @@
    "codigo": "99171",
    "nome": "BAGDÁ",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -1204,6 +1219,7 @@
    "codigo": "39128",
    "nome": "BAKU",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -1239,6 +1255,7 @@
    "codigo": "99350",
    "nome": "BAMAKO",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -1273,7 +1290,8 @@
   {
    "codigo": "29343",
    "nome": "BANGKOK",
-   "secoes_previstas": 3,
+   "secoes_previstas": 1,
+   "secoes_listadas": 3,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -1363,7 +1381,8 @@
   {
    "codigo": "29351",
    "nome": "BARCELONA",
-   "secoes_previstas": 45,
+   "secoes_previstas": 22,
+   "secoes_listadas": 45,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -1399,6 +1418,7 @@
    "codigo": "99473",
    "nome": "BAREIN",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -1433,7 +1453,8 @@
   {
    "codigo": "29360",
    "nome": "BEIRUTE",
-   "secoes_previstas": 24,
+   "secoes_previstas": 13,
+   "secoes_listadas": 24,
    "secoes_apuradas_t2": 13,
    "secoes_comparaveis": 13,
    "t1": {
@@ -1763,7 +1784,8 @@
   {
    "codigo": "29378",
    "nome": "BELGRADO",
-   "secoes_previstas": 2,
+   "secoes_previstas": 1,
+   "secoes_listadas": 2,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -1854,6 +1876,7 @@
    "codigo": "38881",
    "nome": "BELMOPAN",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -1888,7 +1911,8 @@
   {
    "codigo": "29386",
    "nome": "BERLIM",
-   "secoes_previstas": 42,
+   "secoes_previstas": 20,
+   "secoes_listadas": 42,
    "secoes_apuradas_t2": 6,
    "secoes_comparaveis": 6,
    "t1": {
@@ -2079,6 +2103,7 @@
    "codigo": "29394",
    "nome": "BISSAU",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -2113,7 +2138,8 @@
   {
    "codigo": "29408",
    "nome": "BOGOTÁ",
-   "secoes_previstas": 9,
+   "secoes_previstas": 2,
+   "secoes_listadas": 9,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -2148,7 +2174,8 @@
   {
    "codigo": "29416",
    "nome": "BOSTON",
-   "secoes_previstas": 137,
+   "secoes_previstas": 69,
+   "secoes_listadas": 137,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -2184,6 +2211,7 @@
    "codigo": "39209",
    "nome": "BRATISLAVA",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -2274,6 +2302,7 @@
    "codigo": "39187",
    "nome": "BRAZZAVILLE",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -2309,6 +2338,7 @@
    "codigo": "29424",
    "nome": "BRIDGETOWN",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -2343,7 +2373,8 @@
   {
    "codigo": "29432",
    "nome": "BRUXELAS",
-   "secoes_previstas": 27,
+   "secoes_previstas": 14,
+   "secoes_listadas": 27,
    "secoes_apuradas_t2": 13,
    "secoes_comparaveis": 13,
    "t1": {
@@ -2674,6 +2705,7 @@
    "codigo": "29440",
    "nome": "BUCARESTE",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -2708,7 +2740,8 @@
   {
    "codigo": "29459",
    "nome": "BUDAPESTE",
-   "secoes_previstas": 3,
+   "secoes_previstas": 2,
+   "secoes_listadas": 3,
    "secoes_apuradas_t2": 2,
    "secoes_comparaveis": 2,
    "t1": {
@@ -2818,7 +2851,8 @@
   {
    "codigo": "29467",
    "nome": "BUENOS AIRES",
-   "secoes_previstas": 30,
+   "secoes_previstas": 15,
+   "secoes_listadas": 30,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -2853,7 +2887,8 @@
   {
    "codigo": "29475",
    "nome": "CAIENA",
-   "secoes_previstas": 12,
+   "secoes_previstas": 5,
+   "secoes_listadas": 12,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -2889,6 +2924,7 @@
    "codigo": "29483",
    "nome": "CAIRO",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -2978,7 +3014,8 @@
   {
    "codigo": "29491",
    "nome": "CAMBERRA",
-   "secoes_previstas": 19,
+   "secoes_previstas": 10,
+   "secoes_listadas": 19,
    "secoes_apuradas_t2": 10,
    "secoes_comparaveis": 10,
    "t1": {
@@ -3248,7 +3285,8 @@
   {
    "codigo": "30651",
    "nome": "CANTÃO",
-   "secoes_previstas": 2,
+   "secoes_previstas": 1,
+   "secoes_listadas": 2,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -3338,7 +3376,8 @@
   {
    "codigo": "29505",
    "nome": "CARACAS",
-   "secoes_previstas": 5,
+   "secoes_previstas": 3,
+   "secoes_listadas": 5,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -3374,6 +3413,7 @@
    "codigo": "99384",
    "nome": "CASTRIES",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -3408,7 +3448,8 @@
   {
    "codigo": "29513",
    "nome": "CHICAGO",
-   "secoes_previstas": 42,
+   "secoes_previstas": 18,
+   "secoes_listadas": 42,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -3444,6 +3485,7 @@
    "codigo": "29521",
    "nome": "CHUY",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -3479,6 +3521,7 @@
    "codigo": "29530",
    "nome": "CIDADE DO CABO",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -3568,7 +3611,8 @@
   {
    "codigo": "29556",
    "nome": "CIUDAD DEL ESTE",
-   "secoes_previstas": 14,
+   "secoes_previstas": 7,
+   "secoes_listadas": 14,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -3604,6 +3648,7 @@
    "codigo": "29564",
    "nome": "CIUDAD GUAYANA",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -3639,6 +3684,7 @@
    "codigo": "99210",
    "nome": "COBIJA",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -3673,7 +3719,8 @@
   {
    "codigo": "29572",
    "nome": "COCHABAMBA",
-   "secoes_previstas": 2,
+   "secoes_previstas": 1,
+   "secoes_listadas": 2,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -3709,6 +3756,7 @@
    "codigo": "30929",
    "nome": "COLOMBO",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -3744,6 +3792,7 @@
    "codigo": "38903",
    "nome": "CONACRI",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -3779,6 +3828,7 @@
    "codigo": "29580",
    "nome": "CONCEPCIÓN",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -3813,7 +3863,8 @@
   {
    "codigo": "29599",
    "nome": "COPENHAGUE",
-   "secoes_previstas": 12,
+   "secoes_previstas": 4,
+   "secoes_listadas": 12,
    "secoes_apuradas_t2": 4,
    "secoes_comparaveis": 4,
    "t1": {
@@ -3964,6 +4015,7 @@
    "codigo": "38920",
    "nome": "COTONOU",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -3998,7 +4050,8 @@
   {
    "codigo": "29602",
    "nome": "CÓRDOBA",
-   "secoes_previstas": 4,
+   "secoes_previstas": 2,
+   "secoes_listadas": 4,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -4033,7 +4086,8 @@
   {
    "codigo": "29610",
    "nome": "DACAR",
-   "secoes_previstas": 2,
+   "secoes_previstas": 1,
+   "secoes_listadas": 2,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -4069,6 +4123,7 @@
    "codigo": "29629",
    "nome": "DACCA",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -4103,7 +4158,8 @@
   {
    "codigo": "29637",
    "nome": "DAMASCO",
-   "secoes_previstas": 2,
+   "secoes_previstas": 1,
+   "secoes_listadas": 2,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -4194,6 +4250,7 @@
    "codigo": "38962",
    "nome": "DAR ES SALAAM",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -4228,7 +4285,8 @@
   {
    "codigo": "29653",
    "nome": "DOHA",
-   "secoes_previstas": 2,
+   "secoes_previstas": 1,
+   "secoes_listadas": 2,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -4318,7 +4376,8 @@
   {
    "codigo": "29661",
    "nome": "DUBLIN",
-   "secoes_previstas": 51,
+   "secoes_previstas": 28,
+   "secoes_listadas": 51,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -4354,6 +4413,7 @@
    "codigo": "29645",
    "nome": "DÍLI",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -4388,7 +4448,8 @@
   {
    "codigo": "99503",
    "nome": "EDIMBURGO",
-   "secoes_previstas": 14,
+   "secoes_previstas": 6,
+   "secoes_listadas": 14,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -4424,6 +4485,7 @@
    "codigo": "29670",
    "nome": "ENCARNACIÓN",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -4458,7 +4520,8 @@
   {
    "codigo": "29688",
    "nome": "ESTOCOLMO",
-   "secoes_previstas": 14,
+   "secoes_previstas": 7,
+   "secoes_listadas": 14,
    "secoes_apuradas_t2": 7,
    "secoes_comparaveis": 7,
    "t1": {
@@ -4668,7 +4731,8 @@
   {
    "codigo": "30961",
    "nome": "FARO",
-   "secoes_previstas": 21,
+   "secoes_previstas": 11,
+   "secoes_listadas": 21,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -4703,65 +4767,66 @@
   {
    "codigo": "29696",
    "nome": "FRANKFURT",
-   "secoes_previstas": 42,
-   "secoes_apuradas_t2": 8,
-   "secoes_comparaveis": 8,
+   "secoes_previstas": 21,
+   "secoes_listadas": 42,
+   "secoes_apuradas_t2": 21,
+   "secoes_comparaveis": 21,
    "t1": {
-    "13": 1743,
-    "22": 492,
-    "brancos": 24,
-    "nulos": 17,
-    "outros": 203,
-    "comparecimento": 2479,
-    "aptos": 5557,
-    "total": 2479,
-    "validos": 2438
+    "13": 3657,
+    "22": 1320,
+    "brancos": 64,
+    "nulos": 55,
+    "outros": 523,
+    "comparecimento": 5619,
+    "aptos": 12961,
+    "total": 5619,
+    "validos": 5500
    },
    "t2": {
-    "13": 2147,
-    "22": 601,
-    "brancos": 12,
-    "nulos": 26,
+    "13": 4572,
+    "22": 1593,
+    "brancos": 52,
+    "nulos": 88,
     "outros": 0,
-    "comparecimento": 2786,
-    "aptos": 5550,
-    "total": 2786,
-    "validos": 2748
+    "comparecimento": 6305,
+    "aptos": 12955,
+    "total": 6305,
+    "validos": 6165
    },
    "metricas": {
     "candidatos": {
      "13": {
-      "t1": 1743,
-      "t2": 2147,
-      "delta": 404,
-      "pct": 23.178427997705107,
-      "share_t1": 71.49302707136998,
-      "share_t2": 78.12954876273653
+      "t1": 3657,
+      "t2": 4572,
+      "delta": 915,
+      "pct": 25.020508613617718,
+      "share_t1": 66.49090909090908,
+      "share_t2": 74.16058394160584
      },
      "22": {
-      "t1": 492,
-      "t2": 601,
-      "delta": 109,
-      "pct": 22.15447154471545,
-      "share_t1": 20.180475799835932,
-      "share_t2": 21.870451237263463
+      "t1": 1320,
+      "t2": 1593,
+      "delta": 273,
+      "pct": 20.681818181818183,
+      "share_t1": 24.0,
+      "share_t2": 25.83941605839416
      }
     },
-    "diferenca_crescimento": 295,
-    "margem_t1": 1251,
-    "margem_t2": 1546,
-    "variacao_margem": 295,
-    "total_t1": 2479,
-    "total_t2": 2786,
-    "delta_total": 307,
-    "pct_total": 12.384025816861637,
-    "validos_t1": 2438,
-    "validos_t2": 2748,
-    "delta_validos": 310,
-    "aptos_t2": 5550,
-    "comparecimento_t2": 2786,
-    "brancos_nulos_t1": 41,
-    "brancos_nulos_t2": 38
+    "diferenca_crescimento": 642,
+    "margem_t1": 2337,
+    "margem_t2": 2979,
+    "variacao_margem": 642,
+    "total_t1": 5619,
+    "total_t2": 6305,
+    "delta_total": 686,
+    "pct_total": 12.208578038796938,
+    "validos_t1": 5500,
+    "validos_t2": 6165,
+    "delta_validos": 665,
+    "aptos_t2": 12955,
+    "comparecimento_t2": 6305,
+    "brancos_nulos_t1": 119,
+    "brancos_nulos_t2": 140
    },
    "secoes": [
     {
@@ -4802,6 +4867,266 @@
       "nulos": 6,
       "comparecimento": 423,
       "aptos": 705
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1592",
+     "t1": {
+      "13": 175,
+      "22": 52,
+      "brancos": 7,
+      "nulos": 2,
+      "comparecimento": 267,
+      "aptos": 566
+     },
+     "t2": {
+      "13": 226,
+      "22": 63,
+      "brancos": 4,
+      "nulos": 9,
+      "comparecimento": 302,
+      "aptos": 567
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1593",
+     "t1": {
+      "13": 186,
+      "22": 65,
+      "brancos": 1,
+      "nulos": 4,
+      "comparecimento": 285,
+      "aptos": 625
+     },
+     "t2": {
+      "13": 224,
+      "22": 76,
+      "brancos": 5,
+      "nulos": 7,
+      "comparecimento": 312,
+      "aptos": 625
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1594",
+     "t1": {
+      "13": 140,
+      "22": 45,
+      "brancos": 6,
+      "nulos": 2,
+      "comparecimento": 215,
+      "aptos": 568
+     },
+     "t2": {
+      "13": 191,
+      "22": 58,
+      "brancos": 4,
+      "nulos": 4,
+      "comparecimento": 257,
+      "aptos": 568
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1595",
+     "t1": {
+      "13": 140,
+      "22": 66,
+      "brancos": 4,
+      "nulos": 2,
+      "comparecimento": 235,
+      "aptos": 568
+     },
+     "t2": {
+      "13": 164,
+      "22": 85,
+      "brancos": 3,
+      "nulos": 4,
+      "comparecimento": 256,
+      "aptos": 567
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1596",
+     "t1": {
+      "13": 143,
+      "22": 71,
+      "brancos": 2,
+      "nulos": 5,
+      "comparecimento": 250,
+      "aptos": 566
+     },
+     "t2": {
+      "13": 174,
+      "22": 83,
+      "brancos": 2,
+      "nulos": 9,
+      "comparecimento": 268,
+      "aptos": 566
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1597",
+     "t1": {
+      "13": 143,
+      "22": 72,
+      "brancos": 6,
+      "nulos": 3,
+      "comparecimento": 249,
+      "aptos": 566
+     },
+     "t2": {
+      "13": 176,
+      "22": 96,
+      "brancos": 3,
+      "nulos": 4,
+      "comparecimento": 279,
+      "aptos": 566
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1598",
+     "t1": {
+      "13": 160,
+      "22": 81,
+      "brancos": 3,
+      "nulos": 2,
+      "comparecimento": 269,
+      "aptos": 568
+     },
+     "t2": {
+      "13": 194,
+      "22": 88,
+      "brancos": 3,
+      "nulos": 1,
+      "comparecimento": 286,
+      "aptos": 568
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1599",
+     "t1": {
+      "13": 128,
+      "22": 87,
+      "brancos": 4,
+      "nulos": 3,
+      "comparecimento": 255,
+      "aptos": 566
+     },
+     "t2": {
+      "13": 167,
+      "22": 101,
+      "brancos": 5,
+      "nulos": 5,
+      "comparecimento": 278,
+      "aptos": 567
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1600",
+     "t1": {
+      "13": 128,
+      "22": 73,
+      "brancos": 1,
+      "nulos": 6,
+      "comparecimento": 231,
+      "aptos": 568
+     },
+     "t2": {
+      "13": 166,
+      "22": 91,
+      "brancos": 3,
+      "nulos": 3,
+      "comparecimento": 263,
+      "aptos": 568
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1601",
+     "t1": {
+      "13": 159,
+      "22": 69,
+      "brancos": 3,
+      "nulos": 2,
+      "comparecimento": 265,
+      "aptos": 678
+     },
+     "t2": {
+      "13": 213,
+      "22": 85,
+      "brancos": 3,
+      "nulos": 4,
+      "comparecimento": 305,
+      "aptos": 678
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1602",
+     "t1": {
+      "13": 184,
+      "22": 71,
+      "brancos": 2,
+      "nulos": 2,
+      "comparecimento": 280,
+      "aptos": 676
+     },
+     "t2": {
+      "13": 232,
+      "22": 82,
+      "brancos": 3,
+      "nulos": 4,
+      "comparecimento": 321,
+      "aptos": 676
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1603",
+     "t1": {
+      "13": 114,
+      "22": 36,
+      "brancos": 1,
+      "nulos": 2,
+      "comparecimento": 167,
+      "aptos": 405
+     },
+     "t2": {
+      "13": 143,
+      "22": 39,
+      "brancos": 2,
+      "nulos": 4,
+      "comparecimento": 188,
+      "aptos": 405
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1604",
+     "t1": {
+      "13": 114,
+      "22": 40,
+      "brancos": 0,
+      "nulos": 3,
+      "comparecimento": 172,
+      "aptos": 484
+     },
+     "t2": {
+      "13": 155,
+      "22": 45,
+      "brancos": 0,
+      "nulos": 4,
+      "comparecimento": 204,
+      "aptos": 484
      }
     },
     {
@@ -4934,6 +5259,7 @@
    "codigo": "30669",
    "nome": "GABORONE",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -4968,7 +5294,8 @@
   {
    "codigo": "29700",
    "nome": "GENEBRA",
-   "secoes_previstas": 30,
+   "secoes_previstas": 15,
+   "secoes_listadas": 30,
    "secoes_apuradas_t2": 15,
    "secoes_comparaveis": 15,
    "t1": {
@@ -5339,6 +5666,7 @@
    "codigo": "29718",
    "nome": "GEORGETOWN",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -5374,6 +5702,7 @@
    "codigo": "98000",
    "nome": "GUATEMALA",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -5408,7 +5737,8 @@
   {
    "codigo": "29742",
    "nome": "HAMAMATSU",
-   "secoes_previstas": 36,
+   "secoes_previstas": 18,
+   "secoes_listadas": 36,
    "secoes_apuradas_t2": 18,
    "secoes_comparaveis": 18,
    "t1": {
@@ -5839,6 +6169,7 @@
    "codigo": "29750",
    "nome": "HANÓI",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -5874,6 +6205,7 @@
    "codigo": "29769",
    "nome": "HARARE",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -5908,7 +6240,8 @@
   {
    "codigo": "30902",
    "nome": "HARTFORD",
-   "secoes_previstas": 23,
+   "secoes_previstas": 12,
+   "secoes_listadas": 23,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -5944,6 +6277,7 @@
    "codigo": "29777",
    "nome": "HAVANA",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -5978,7 +6312,8 @@
   {
    "codigo": "29785",
    "nome": "HELSINQUE",
-   "secoes_previstas": 4,
+   "secoes_previstas": 2,
+   "secoes_listadas": 4,
    "secoes_apuradas_t2": 2,
    "secoes_comparaveis": 2,
    "t1": {
@@ -6088,7 +6423,8 @@
   {
    "codigo": "29793",
    "nome": "HONG KONG",
-   "secoes_previstas": 3,
+   "secoes_previstas": 1,
+   "secoes_listadas": 3,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -6178,7 +6514,8 @@
   {
    "codigo": "29807",
    "nome": "HOUSTON",
-   "secoes_previstas": 48,
+   "secoes_previstas": 23,
+   "secoes_listadas": 48,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -6214,6 +6551,7 @@
    "codigo": "29815",
    "nome": "IAUNDÊ",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -6249,6 +6587,7 @@
    "codigo": "38989",
    "nome": "IEREVAN",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -6284,6 +6623,7 @@
    "codigo": "29823",
    "nome": "IQUITOS",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -6319,6 +6659,7 @@
    "codigo": "29831",
    "nome": "ISLAMABADE",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -6354,6 +6695,7 @@
    "codigo": "39306",
    "nome": "ISTAMBUL",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -6443,7 +6785,8 @@
   {
    "codigo": "29840",
    "nome": "JACARTA",
-   "secoes_previstas": 8,
+   "secoes_previstas": 1,
+   "secoes_listadas": 8,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -6534,6 +6877,7 @@
    "codigo": "29173",
    "nome": "KATMANDU",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -6569,6 +6913,7 @@
    "codigo": "29858",
    "nome": "KIEV",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -6603,7 +6948,8 @@
   {
    "codigo": "99430",
    "nome": "KINGSTON-JAMAICA",
-   "secoes_previstas": 2,
+   "secoes_previstas": 1,
+   "secoes_listadas": 2,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -6639,6 +6985,7 @@
    "codigo": "29874",
    "nome": "KINSHASA",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -6674,6 +7021,7 @@
    "codigo": "29882",
    "nome": "KUAITE",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -6763,7 +7111,8 @@
   {
    "codigo": "29890",
    "nome": "KUALA LUMPUR",
-   "secoes_previstas": 2,
+   "secoes_previstas": 1,
+   "secoes_listadas": 2,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -6853,7 +7202,8 @@
   {
    "codigo": "29904",
    "nome": "LA PAZ",
-   "secoes_previstas": 2,
+   "secoes_previstas": 1,
+   "secoes_listadas": 2,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -6889,6 +7239,7 @@
    "codigo": "29912",
    "nome": "LAGOS",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -6924,6 +7275,7 @@
    "codigo": "29939",
    "nome": "LIBREVILLE",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -6959,6 +7311,7 @@
    "codigo": "99341",
    "nome": "LILONGUE",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -6993,7 +7346,8 @@
   {
    "codigo": "29947",
    "nome": "LIMA",
-   "secoes_previstas": 14,
+   "secoes_previstas": 3,
+   "secoes_listadas": 14,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -7028,7 +7382,8 @@
   {
    "codigo": "29955",
    "nome": "LISBOA",
-   "secoes_previstas": 209,
+   "secoes_previstas": 103,
+   "secoes_listadas": 209,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -7064,6 +7419,7 @@
    "codigo": "39160",
    "nome": "LIUBLIANA",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -7154,6 +7510,7 @@
    "codigo": "29963",
    "nome": "LOMÉ",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -7188,7 +7545,8 @@
   {
    "codigo": "29971",
    "nome": "LONDRES",
-   "secoes_previstas": 95,
+   "secoes_previstas": 48,
+   "secoes_listadas": 95,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -7223,7 +7581,8 @@
   {
    "codigo": "29980",
    "nome": "LOS ANGELES",
-   "secoes_previstas": 57,
+   "secoes_previstas": 25,
+   "secoes_listadas": 57,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -7258,7 +7617,8 @@
   {
    "codigo": "29998",
    "nome": "LUANDA",
-   "secoes_previstas": 2,
+   "secoes_previstas": 1,
+   "secoes_listadas": 2,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -7349,6 +7709,7 @@
    "codigo": "99287",
    "nome": "LUSACA",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -7383,7 +7744,8 @@
   {
    "codigo": "30066",
    "nome": "MADRI",
-   "secoes_previstas": 59,
+   "secoes_previstas": 30,
+   "secoes_listadas": 59,
    "secoes_apuradas_t2": 30,
    "secoes_comparaveis": 30,
    "t1": {
@@ -8054,6 +8416,7 @@
    "codigo": "39263",
    "nome": "MALABO",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -8088,7 +8451,8 @@
   {
    "codigo": "30082",
    "nome": "MANILA",
-   "secoes_previstas": 3,
+   "secoes_previstas": 1,
+   "secoes_listadas": 3,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -8179,6 +8543,7 @@
    "codigo": "30074",
    "nome": "MANÁGUA",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -8213,7 +8578,8 @@
   {
    "codigo": "30090",
    "nome": "MAPUTO",
-   "secoes_previstas": 2,
+   "secoes_previstas": 1,
+   "secoes_listadas": 2,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -8303,7 +8669,8 @@
   {
    "codigo": "99511",
    "nome": "MARSELHA",
-   "secoes_previstas": 7,
+   "secoes_previstas": 4,
+   "secoes_listadas": 7,
    "secoes_apuradas_t2": 4,
    "secoes_comparaveis": 4,
    "t1": {
@@ -8454,6 +8821,7 @@
    "codigo": "39102",
    "nome": "MASCATE",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -8489,6 +8857,7 @@
    "codigo": "39004",
    "nome": "MENDOZA",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -8523,7 +8892,8 @@
   {
    "codigo": "30104",
    "nome": "MEXICO",
-   "secoes_previstas": 18,
+   "secoes_previstas": 6,
+   "secoes_listadas": 18,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -8558,7 +8928,8 @@
   {
    "codigo": "30112",
    "nome": "MIAMI",
-   "secoes_previstas": 102,
+   "secoes_previstas": 51,
+   "secoes_listadas": 102,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -8593,7 +8964,8 @@
   {
    "codigo": "30120",
    "nome": "MILÃO",
-   "secoes_previstas": 81,
+   "secoes_previstas": 37,
+   "secoes_listadas": 81,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -8628,7 +9000,8 @@
   {
    "codigo": "30147",
    "nome": "MONTEVIDÉU",
-   "secoes_previstas": 7,
+   "secoes_previstas": 4,
+   "secoes_listadas": 7,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -8663,7 +9036,8 @@
   {
    "codigo": "30155",
    "nome": "MONTREAL",
-   "secoes_previstas": 31,
+   "secoes_previstas": 15,
+   "secoes_listadas": 31,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -8699,6 +9073,7 @@
    "codigo": "30163",
    "nome": "MOSCOU",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -8734,6 +9109,7 @@
    "codigo": "30171",
    "nome": "MUMBAI",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -8768,7 +9144,8 @@
   {
    "codigo": "30180",
    "nome": "MUNIQUE",
-   "secoes_previstas": 56,
+   "secoes_previstas": 21,
+   "secoes_listadas": 56,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -8803,7 +9180,8 @@
   {
    "codigo": "30198",
    "nome": "NAGÓIA",
-   "secoes_previstas": 119,
+   "secoes_previstas": 58,
+   "secoes_listadas": 119,
    "secoes_apuradas_t2": 58,
    "secoes_comparaveis": 58,
    "t1": {
@@ -10033,7 +10411,8 @@
   {
    "codigo": "30201",
    "nome": "NAIRÓBI",
-   "secoes_previstas": 4,
+   "secoes_previstas": 1,
+   "secoes_listadas": 4,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -10124,6 +10503,7 @@
    "codigo": "99180",
    "nome": "NASSAU",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -10159,6 +10539,7 @@
    "codigo": "39322",
    "nome": "NICOSIA",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -10248,7 +10629,8 @@
   {
    "codigo": "30210",
    "nome": "NOVA DELHI",
-   "secoes_previstas": 4,
+   "secoes_previstas": 1,
+   "secoes_listadas": 4,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -10338,7 +10720,8 @@
   {
    "codigo": "30228",
    "nome": "NOVA YORK",
-   "secoes_previstas": 107,
+   "secoes_previstas": 53,
+   "secoes_listadas": 107,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -10373,7 +10756,8 @@
   {
    "codigo": "99490",
    "nome": "ORLANDO",
-   "secoes_previstas": 68,
+   "secoes_previstas": 34,
+   "secoes_listadas": 68,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -10408,7 +10792,8 @@
   {
    "codigo": "30244",
    "nome": "OSLO",
-   "secoes_previstas": 13,
+   "secoes_previstas": 3,
+   "secoes_listadas": 13,
    "secoes_apuradas_t2": 3,
    "secoes_comparaveis": 3,
    "t1": {
@@ -10538,7 +10923,8 @@
   {
    "codigo": "30252",
    "nome": "OTTAWA",
-   "secoes_previstas": 7,
+   "secoes_previstas": 4,
+   "secoes_listadas": 7,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -10573,7 +10959,8 @@
   {
    "codigo": "30260",
    "nome": "PANAMA",
-   "secoes_previstas": 4,
+   "secoes_previstas": 2,
+   "secoes_listadas": 4,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -10608,7 +10995,8 @@
   {
    "codigo": "30279",
    "nome": "PARAMARIBO",
-   "secoes_previstas": 6,
+   "secoes_previstas": 3,
+   "secoes_listadas": 6,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -10643,7 +11031,8 @@
   {
    "codigo": "30287",
    "nome": "PARIS",
-   "secoes_previstas": 68,
+   "secoes_previstas": 34,
+   "secoes_listadas": 68,
    "secoes_apuradas_t2": 5,
    "secoes_comparaveis": 5,
    "t1": {
@@ -10814,6 +11203,7 @@
    "codigo": "30295",
    "nome": "PASO LOS LIBRES",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -10848,7 +11238,8 @@
   {
    "codigo": "30309",
    "nome": "PEDRO JUAN CABALLERO",
-   "secoes_previstas": 2,
+   "secoes_previstas": 1,
+   "secoes_listadas": 2,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -10884,6 +11275,7 @@
    "codigo": "30317",
    "nome": "PEQUIM",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -10974,6 +11366,7 @@
    "codigo": "30325",
    "nome": "PORT OF SPAIN",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -11008,7 +11401,8 @@
   {
    "codigo": "30341",
    "nome": "PORTO",
-   "secoes_previstas": 120,
+   "secoes_previstas": 62,
+   "secoes_listadas": 120,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -11044,6 +11438,7 @@
    "codigo": "30333",
    "nome": "PORTO PRÍNCIPE",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -11078,7 +11473,8 @@
   {
    "codigo": "30350",
    "nome": "PRAGA",
-   "secoes_previstas": 2,
+   "secoes_previstas": 1,
+   "secoes_listadas": 2,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -11169,6 +11565,7 @@
    "codigo": "30368",
    "nome": "PRAIA",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -11203,7 +11600,8 @@
   {
    "codigo": "30376",
    "nome": "PRETÓRIA",
-   "secoes_previstas": 4,
+   "secoes_previstas": 1,
+   "secoes_listadas": 4,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -11294,6 +11692,7 @@
    "codigo": "99155",
    "nome": "PUERTO IGUAZÚ",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -11329,6 +11728,7 @@
    "codigo": "99236",
    "nome": "PUERTO QUIJARRO",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -11364,6 +11764,7 @@
    "codigo": "99295",
    "nome": "PYONGYANG",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -11398,7 +11799,8 @@
   {
    "codigo": "30392",
    "nome": "QUITO",
-   "secoes_previstas": 11,
+   "secoes_previstas": 2,
+   "secoes_listadas": 11,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -11434,6 +11836,7 @@
    "codigo": "30406",
    "nome": "RABAT",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -11468,7 +11871,8 @@
   {
    "codigo": "30414",
    "nome": "RAMALLAH",
-   "secoes_previstas": 6,
+   "secoes_previstas": 3,
+   "secoes_listadas": 6,
    "secoes_apuradas_t2": 3,
    "secoes_comparaveis": 3,
    "t1": {
@@ -11599,6 +12003,7 @@
    "codigo": "30422",
    "nome": "RIADE",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -11688,7 +12093,8 @@
   {
    "codigo": "30430",
    "nome": "RIO BRANCO",
-   "secoes_previstas": 2,
+   "secoes_previstas": 1,
+   "secoes_listadas": 2,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -11724,6 +12130,7 @@
    "codigo": "99244",
    "nome": "RIVERA",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -11758,7 +12165,8 @@
   {
    "codigo": "30449",
    "nome": "ROMA",
-   "secoes_previstas": 57,
+   "secoes_previstas": 22,
+   "secoes_listadas": 57,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -11794,6 +12202,7 @@
    "codigo": "99147",
    "nome": "SAINT JOHNS",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -11828,7 +12237,8 @@
   {
    "codigo": "30465",
    "nome": "SALTO DEL GUAIRÁ",
-   "secoes_previstas": 3,
+   "secoes_previstas": 2,
+   "secoes_listadas": 3,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -11863,7 +12273,8 @@
   {
    "codigo": "30473",
    "nome": "SANTA CRUZ DE LA SIERRA",
-   "secoes_previstas": 10,
+   "secoes_previstas": 5,
+   "secoes_listadas": 10,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -11899,6 +12310,7 @@
    "codigo": "99279",
    "nome": "SANTA ELENA DE UAIRÉN",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -11933,7 +12345,8 @@
   {
    "codigo": "30481",
    "nome": "SANTIAGO",
-   "secoes_previstas": 10,
+   "secoes_previstas": 5,
+   "secoes_listadas": 10,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -11969,6 +12382,7 @@
    "codigo": "30988",
    "nome": "SARAJEVO",
    "secoes_previstas": 2,
+   "secoes_listadas": 2,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -12003,7 +12417,8 @@
   {
    "codigo": "30538",
    "nome": "SEUL",
-   "secoes_previstas": 2,
+   "secoes_previstas": 1,
+   "secoes_listadas": 2,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -12093,7 +12508,8 @@
   {
    "codigo": "29548",
    "nome": "SINGAPURA",
-   "secoes_previstas": 4,
+   "secoes_previstas": 2,
+   "secoes_listadas": 4,
    "secoes_apuradas_t2": 2,
    "secoes_comparaveis": 2,
    "t1": {
@@ -12204,6 +12620,7 @@
    "codigo": "99333",
    "nome": "ST GEORGES DE LOYAPOCK",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -12238,7 +12655,8 @@
   {
    "codigo": "30562",
    "nome": "SYDNEY",
-   "secoes_previstas": 37,
+   "secoes_previstas": 19,
+   "secoes_listadas": 37,
    "secoes_apuradas_t2": 19,
    "secoes_comparaveis": 19,
    "t1": {
@@ -12688,7 +13106,8 @@
   {
    "codigo": "30490",
    "nome": "SÃO DOMINGOS",
-   "secoes_previstas": 2,
+   "secoes_previstas": 1,
+   "secoes_listadas": 2,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -12723,7 +13142,8 @@
   {
    "codigo": "30503",
    "nome": "SÃO FRANCISCO",
-   "secoes_previstas": 41,
+   "secoes_previstas": 20,
+   "secoes_listadas": 41,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -12758,7 +13178,8 @@
   {
    "codigo": "30511",
    "nome": "SÃO JOSÉ",
-   "secoes_previstas": 2,
+   "secoes_previstas": 1,
+   "secoes_listadas": 2,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -12794,6 +13215,7 @@
    "codigo": "30520",
    "nome": "SÃO SALVADOR",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -12829,6 +13251,7 @@
    "codigo": "39225",
    "nome": "SÃO TOMÉ",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -12864,6 +13287,7 @@
    "codigo": "30546",
    "nome": "SÓFIA",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -12898,7 +13322,8 @@
   {
    "codigo": "30570",
    "nome": "TAIPÉ",
-   "secoes_previstas": 2,
+   "secoes_previstas": 1,
+   "secoes_listadas": 2,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -12989,6 +13414,7 @@
    "codigo": "99317",
    "nome": "TALIN",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -13079,6 +13505,7 @@
    "codigo": "99104",
    "nome": "TBILISI",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -13114,6 +13541,7 @@
    "codigo": "30597",
    "nome": "TEERÃ",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -13149,6 +13577,7 @@
    "codigo": "30600",
    "nome": "TEGUCIGALPA",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -13183,7 +13612,8 @@
   {
    "codigo": "30619",
    "nome": "TEL AVIV",
-   "secoes_previstas": 9,
+   "secoes_previstas": 5,
+   "secoes_listadas": 9,
    "secoes_apuradas_t2": 5,
    "secoes_comparaveis": 5,
    "t1": {
@@ -13354,6 +13784,7 @@
    "codigo": "99139",
    "nome": "TIRANA",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -13388,7 +13819,8 @@
   {
    "codigo": "30635",
    "nome": "TORONTO",
-   "secoes_previstas": 55,
+   "secoes_previstas": 28,
+   "secoes_listadas": 55,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -13424,6 +13856,7 @@
    "codigo": "30686",
    "nome": "TRÍPOLI",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -13459,6 +13892,7 @@
    "codigo": "30708",
    "nome": "TUNIS",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -13493,7 +13927,8 @@
   {
    "codigo": "30627",
    "nome": "TÓQUIO",
-   "secoes_previstas": 95,
+   "secoes_previstas": 43,
+   "secoes_listadas": 95,
    "secoes_apuradas_t2": 43,
    "secoes_comparaveis": 43,
    "t1": {
@@ -14424,6 +14859,7 @@
    "codigo": "39284",
    "nome": "UAGADUGU",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -14458,7 +14894,8 @@
   {
    "codigo": "39063",
    "nome": "VANCOUVER",
-   "secoes_previstas": 35,
+   "secoes_previstas": 16,
+   "secoes_listadas": 35,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -14493,7 +14930,8 @@
   {
    "codigo": "30740",
    "nome": "VARSÓVIA",
-   "secoes_previstas": 2,
+   "secoes_previstas": 1,
+   "secoes_listadas": 2,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -14583,7 +15021,8 @@
   {
    "codigo": "30767",
    "nome": "VIENA",
-   "secoes_previstas": 9,
+   "secoes_previstas": 5,
+   "secoes_listadas": 9,
    "secoes_apuradas_t2": 5,
    "secoes_comparaveis": 5,
    "t1": {
@@ -14753,7 +15192,8 @@
   {
    "codigo": "30783",
    "nome": "WASHINGTON",
-   "secoes_previstas": 66,
+   "secoes_previstas": 31,
+   "secoes_listadas": 66,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -14788,7 +15228,8 @@
   {
    "codigo": "30805",
    "nome": "WELLINGTON",
-   "secoes_previstas": 9,
+   "secoes_previstas": 5,
+   "secoes_listadas": 9,
    "secoes_apuradas_t2": 5,
    "secoes_comparaveis": 5,
    "t1": {
@@ -14959,6 +15400,7 @@
    "codigo": "30821",
    "nome": "WINDHOEK",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -14993,7 +15435,8 @@
   {
    "codigo": "30848",
    "nome": "XANGAI",
-   "secoes_previstas": 4,
+   "secoes_previstas": 1,
+   "secoes_listadas": 4,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -15084,6 +15527,7 @@
    "codigo": "99376",
    "nome": "YANGON",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 0,
    "secoes_comparaveis": 0,
    "t1": {
@@ -15119,6 +15563,7 @@
    "codigo": "39020",
    "nome": "ZAGREB",
    "secoes_previstas": 1,
+   "secoes_listadas": 1,
    "secoes_apuradas_t2": 1,
    "secoes_comparaveis": 1,
    "t1": {
@@ -15208,7 +15653,8 @@
   {
    "codigo": "30864",
    "nome": "ZURIQUE",
-   "secoes_previstas": 38,
+   "secoes_previstas": 19,
+   "secoes_listadas": 38,
    "secoes_apuradas_t2": 19,
    "secoes_comparaveis": 19,
    "t1": {
@@ -15659,63 +16105,63 @@
  "falhas": [],
  "agregado": {
   "t1": {
-   "13": 43729,
-   "22": 43852,
-   "brancos": 2508,
-   "nulos": 1929,
-   "outros": 10725,
-   "comparecimento": 102743,
-   "aptos": 248853,
-   "total": 102743,
-   "validos": 98306
+   "13": 45643,
+   "22": 44680,
+   "brancos": 2548,
+   "nulos": 1967,
+   "outros": 11045,
+   "comparecimento": 105883,
+   "aptos": 256257,
+   "total": 105883,
+   "validos": 101368
   },
   "t2": {
-   "13": 54741,
-   "22": 51996,
-   "brancos": 2007,
-   "nulos": 1967,
+   "13": 57166,
+   "22": 52988,
+   "brancos": 2047,
+   "nulos": 2029,
    "outros": 0,
-   "comparecimento": 110711,
-   "aptos": 248883,
-   "total": 110711,
-   "validos": 106737
+   "comparecimento": 114230,
+   "aptos": 256288,
+   "total": 114230,
+   "validos": 110154
   },
   "metricas": {
    "candidatos": {
     "13": {
-     "t1": 43729,
-     "t2": 54741,
-     "delta": 11012,
-     "pct": 25.18237325344737,
-     "share_t1": 44.48253412813053,
-     "share_t2": 51.285870878889234
+     "t1": 45643,
+     "t2": 57166,
+     "delta": 11523,
+     "pct": 25.24593037267489,
+     "share_t1": 45.02703022650146,
+     "share_t2": 51.89643589883254
     },
     "22": {
-     "t1": 43852,
-     "t2": 51996,
-     "delta": 8144,
-     "pct": 18.57155887986865,
-     "share_t1": 44.60765365287978,
-     "share_t2": 48.714129121110766
+     "t1": 44680,
+     "t2": 52988,
+     "delta": 8308,
+     "pct": 18.594449418084153,
+     "share_t1": 44.07702628048299,
+     "share_t2": 48.10356410116746
     }
    },
-   "diferenca_crescimento": 2868,
-   "margem_t1": -123,
-   "margem_t2": 2745,
-   "variacao_margem": 2868,
-   "total_t1": 102743,
-   "total_t2": 110711,
-   "delta_total": 7968,
-   "pct_total": 7.7552728653046925,
-   "validos_t1": 98306,
-   "validos_t2": 106737,
-   "delta_validos": 8431,
-   "aptos_t2": 248883,
-   "comparecimento_t2": 110711,
-   "brancos_nulos_t1": 4437,
-   "brancos_nulos_t2": 3974
+   "diferenca_crescimento": 3215,
+   "margem_t1": 963,
+   "margem_t2": 4178,
+   "variacao_margem": 3215,
+   "total_t1": 105883,
+   "total_t2": 114230,
+   "delta_total": 8347,
+   "pct_total": 7.883229602485763,
+   "validos_t1": 101368,
+   "validos_t2": 110154,
+   "delta_validos": 8786,
+   "aptos_t2": 256288,
+   "comparecimento_t2": 114230,
+   "brancos_nulos_t1": 4515,
+   "brancos_nulos_t2": 4076
   },
-  "secoes_apuradas_t2": 355,
-  "secoes_previstas": 2715
+  "secoes_apuradas_t2": 368,
+  "secoes_previstas": 1351
  }
 }
