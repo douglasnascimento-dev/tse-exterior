@@ -5,7 +5,9 @@
   "lon": 85.3206,
   "match": "Catmandu, काठमाडौं जिल्ला, बागमती प्रदेश, Nepal",
   "nome": "KATMANDU",
-  "pais": "Nepal"
+  "pais": "Nepal",
+  "pais_mapa": "Nepal",
+  "pais_mapa_fonte": "poligono"
  },
  "29254": {
   "fonte": "nominatim",
@@ -13,7 +15,9 @@
   "lon": -4.0161,
   "match": "Abidjã, Abidjan, Costa do Marfim",
   "nome": "ABIDJÃ",
-  "pais": "Costa do Marfim"
+  "pais": "Costa do Marfim",
+  "pais_mapa": "Côte d'Ivoire",
+  "pais_mapa_fonte": "poligono"
  },
  "29262": {
   "fonte": "nominatim",
@@ -21,7 +25,9 @@
   "lon": 54.3774,
   "match": "Abu Dhabi, أبوظبي, أبو ظبي, Emirados Árabes Unidos",
   "nome": "ABU DHABI",
-  "pais": "Emirados Árabes Unidos"
+  "pais": "Emirados Árabes Unidos",
+  "pais_mapa": "United Arab Emirates",
+  "pais_mapa_fonte": "poligono"
  },
  "29270": {
   "fonte": "nominatim",
@@ -29,7 +35,9 @@
   "lon": -0.2012,
   "match": "Acra, Korle-Klottey Municipal District, Grande Acra, Gana",
   "nome": "ACCRA",
-  "pais": "Gana"
+  "pais": "Gana",
+  "pais_mapa": "Ghana",
+  "pais_mapa_fonte": "poligono"
  },
  "29289": {
   "fonte": "nominatim",
@@ -37,7 +45,9 @@
   "lon": 35.924,
   "match": "Amã, ناحية عمان, لواء قصبة عمان, Amã, 11110, Jordânia",
   "nome": "AMÃ",
-  "pais": "Jordânia"
+  "pais": "Jordânia",
+  "pais_mapa": "Jordan",
+  "pais_mapa_fonte": "poligono"
  },
  "29297": {
   "fonte": "nominatim",
@@ -45,7 +55,9 @@
   "lon": 32.854,
   "match": "Ancara, Çankaya, Ankara, İç Anadolu Bölgesi, 06420, Turquia",
   "nome": "ANCARA",
-  "pais": "Turquia"
+  "pais": "Turquia",
+  "pais_mapa": "Turkey",
+  "pais_mapa_fonte": "poligono"
  },
  "29300": {
   "fonte": "nominatim",
@@ -53,7 +65,9 @@
   "lon": 3.0588,
   "match": "Argel, Daïra Sidi M'Hamed, Argel, 16000, Argélia",
   "nome": "ARGEL",
-  "pais": "Argélia"
+  "pais": "Argélia",
+  "pais_mapa": "Algeria",
+  "pais_mapa_fonte": "proximidade"
  },
  "29319": {
   "consulta": "Artigas, Uruguay",
@@ -62,7 +76,9 @@
   "lon": -56.9373,
   "match": "Artigas, Uruguai",
   "nome": "ARTIGAS",
-  "pais": "Uruguai"
+  "pais": "Uruguai",
+  "pais_mapa": "Uruguay",
+  "pais_mapa_fonte": "poligono"
  },
  "29327": {
   "fonte": "nominatim",
@@ -70,7 +86,9 @@
   "lon": -57.6344,
   "match": "Assunção, Distrito Capital, Región Oriental, 001013, Paraguai",
   "nome": "ASSUNÇÃO",
-  "pais": "Paraguai"
+  "pais": "Paraguai",
+  "pais_mapa": "Paraguay",
+  "pais_mapa_fonte": "poligono"
  },
  "29335": {
   "fonte": "nominatim",
@@ -78,7 +96,9 @@
   "lon": 23.7348,
   "match": "Atenas, Δήμος Αθηναίων, Περιφερειακή Ενότητα Κεντρικού Τομέα Αθηνών, Περιφέρεια Αττικής, Αποκεντρωμένη Διοίκηση Αττικής, 105 57, Grécia",
   "nome": "ATENAS",
-  "pais": "Grécia"
+  "pais": "Grécia",
+  "pais_mapa": "Greece",
+  "pais_mapa_fonte": "poligono"
  },
  "29343": {
   "fonte": "nominatim",
@@ -86,7 +106,9 @@
   "lon": 100.4935,
   "match": "Banguecoque, Tailândia",
   "nome": "BANGKOK",
-  "pais": "Tailândia"
+  "pais": "Tailândia",
+  "pais_mapa": "Thailand",
+  "pais_mapa_fonte": "poligono"
  },
  "29351": {
   "fonte": "nominatim",
@@ -94,7 +116,9 @@
   "lon": 2.1771,
   "match": "Barcelona, Barcelonès, Barcelona, Catalunha, Espanha",
   "nome": "BARCELONA",
-  "pais": "Espanha"
+  "pais": "Espanha",
+  "pais_mapa": "Spain",
+  "pais_mapa_fonte": "poligono"
  },
  "29360": {
   "fonte": "nominatim",
@@ -102,7 +126,9 @@
   "lon": 35.5026,
   "match": "Beirute, البسطة التحتا, باشورة, Beirute, Líbano",
   "nome": "BEIRUTE",
-  "pais": "Líbano"
+  "pais": "Líbano",
+  "pais_mapa": "Lebanon",
+  "pais_mapa_fonte": "poligono"
  },
  "29378": {
   "fonte": "nominatim",
@@ -110,7 +136,9 @@
   "lon": 20.4457,
   "match": "Belgrado, Cidade de Belgrado, Централна Србија, Sérvia",
   "nome": "BELGRADO",
-  "pais": "Sérvia"
+  "pais": "Sérvia",
+  "pais_mapa": "Serbia",
+  "pais_mapa_fonte": "poligono"
  },
  "29386": {
   "fonte": "nominatim",
@@ -118,7 +146,9 @@
   "lon": 13.3951,
   "match": "Berlim, Alemanha",
   "nome": "BERLIM",
-  "pais": "Alemanha"
+  "pais": "Alemanha",
+  "pais_mapa": "Germany",
+  "pais_mapa_fonte": "poligono"
  },
  "29394": {
   "fonte": "nominatim",
@@ -126,7 +156,9 @@
   "lon": -15.5831,
   "match": "Bissau, Bissau (setor autónomo), 1021, Guiné-Bissau",
   "nome": "BISSAU",
-  "pais": "Guiné-Bissau"
+  "pais": "Guiné-Bissau",
+  "pais_mapa": "Guinea-Bissau",
+  "pais_mapa_fonte": "poligono"
  },
  "29408": {
   "fonte": "nominatim",
@@ -134,7 +166,9 @@
   "lon": -74.0836,
   "match": "Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, Colômbia",
   "nome": "BOGOTÁ",
-  "pais": "Colômbia"
+  "pais": "Colômbia",
+  "pais_mapa": "Colombia",
+  "pais_mapa_fonte": "poligono"
  },
  "29416": {
   "fonte": "nominatim",
@@ -142,7 +176,9 @@
   "lon": -71.0578,
   "match": "Boston, Suffolk County, Massachusetts, Estados Unidos da América",
   "nome": "BOSTON",
-  "pais": "Estados Unidos da América"
+  "pais": "Estados Unidos da América",
+  "pais_mapa": "United States of America",
+  "pais_mapa_fonte": "poligono"
  },
  "29424": {
   "fonte": "nominatim",
@@ -150,7 +186,9 @@
   "lon": -59.6184,
   "match": "Bridgetown, Saint Michael, Barbados",
   "nome": "BRIDGETOWN",
-  "pais": "Barbados"
+  "pais": "Barbados",
+  "pais_mapa": null,
+  "pais_mapa_fonte": "manual"
  },
  "29432": {
   "fonte": "nominatim",
@@ -158,7 +196,9 @@
   "lon": 4.3525,
   "match": "Bruxelas, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, Bélgica",
   "nome": "BRUXELAS",
-  "pais": "Bélgica"
+  "pais": "Bélgica",
+  "pais_mapa": "Belgium",
+  "pais_mapa_fonte": "poligono"
  },
  "29440": {
   "fonte": "nominatim",
@@ -166,7 +206,9 @@
   "lon": 26.1027,
   "match": "Bucareste, Roménia",
   "nome": "BUCARESTE",
-  "pais": "Roménia"
+  "pais": "Roménia",
+  "pais_mapa": "Romania",
+  "pais_mapa_fonte": "poligono"
  },
  "29459": {
   "fonte": "nominatim",
@@ -174,7 +216,9 @@
   "lon": 19.0402,
   "match": "Budapeste, Budapest, Hungria",
   "nome": "BUDAPESTE",
-  "pais": "Hungria"
+  "pais": "Hungria",
+  "pais_mapa": "Hungary",
+  "pais_mapa_fonte": "poligono"
  },
  "29467": {
   "fonte": "nominatim",
@@ -182,7 +226,9 @@
   "lon": -58.3888,
   "match": "Buenos Aires, Comuna 1, Ciudad Autónoma de Buenos Aires, Argentina",
   "nome": "BUENOS AIRES",
-  "pais": "Argentina"
+  "pais": "Argentina",
+  "pais_mapa": "Argentina",
+  "pais_mapa_fonte": "poligono"
  },
  "29475": {
   "consulta": "Cayenne, Guyane française",
@@ -191,7 +237,9 @@
   "lon": -52.3259,
   "match": "Caiena, Cayenne, Guiana Francesa, 97300, França",
   "nome": "CAIENA",
-  "pais": "Guiana Francesa"
+  "pais": "Guiana Francesa",
+  "pais_mapa": "France",
+  "pais_mapa_fonte": "poligono"
  },
  "29483": {
   "fonte": "nominatim",
@@ -199,7 +247,9 @@
   "lon": 31.2357,
   "match": "Cairo, Egito",
   "nome": "CAIRO",
-  "pais": "Egito"
+  "pais": "Egito",
+  "pais_mapa": "Egypt",
+  "pais_mapa_fonte": "poligono"
  },
  "29491": {
   "fonte": "nominatim",
@@ -207,7 +257,9 @@
   "lon": 149.1013,
   "match": "Camberra, District of Canberra Central, Território da Capital Australiana, 2600, Austrália",
   "nome": "CAMBERRA",
-  "pais": "Austrália"
+  "pais": "Austrália",
+  "pais_mapa": "Australia",
+  "pais_mapa_fonte": "poligono"
  },
  "29505": {
   "fonte": "nominatim",
@@ -215,7 +267,9 @@
   "lon": -66.9146,
   "match": "Caracas, Parroquia Catedral, Municipio Libertador, Distrito Metropolitano de Caracas, Distrito Capital, Venezuela",
   "nome": "CARACAS",
-  "pais": "Venezuela"
+  "pais": "Venezuela",
+  "pais_mapa": "Venezuela",
+  "pais_mapa_fonte": "poligono"
  },
  "29513": {
   "fonte": "nominatim",
@@ -223,7 +277,9 @@
   "lon": -87.6244,
   "match": "Chicago, South Chicago Township, Cook County, Illinois, Estados Unidos da América",
   "nome": "CHICAGO",
-  "pais": "Estados Unidos da América"
+  "pais": "Estados Unidos da América",
+  "pais_mapa": "United States of America",
+  "pais_mapa_fonte": "poligono"
  },
  "29521": {
   "consulta": "Chuy, Rocha, Uruguay",
@@ -232,7 +288,9 @@
   "lon": -53.4561,
   "match": "Chuy, Rocha, 27100, Uruguai",
   "nome": "CHUY",
-  "pais": "Uruguai"
+  "pais": "Uruguai",
+  "pais_mapa": "Uruguay",
+  "pais_mapa_fonte": "poligono"
  },
  "29530": {
   "fonte": "nominatim",
@@ -240,7 +298,9 @@
   "lon": 18.4172,
   "match": "Cidade do Cabo, City of Cape Town, Cabo Ocidental, 8001, África do Sul",
   "nome": "CIDADE DO CABO",
-  "pais": "África do Sul"
+  "pais": "África do Sul",
+  "pais_mapa": "South Africa",
+  "pais_mapa_fonte": "poligono"
  },
  "29548": {
   "fonte": "nominatim",
@@ -248,7 +308,9 @@
   "lon": 103.8195,
   "match": "Singapura",
   "nome": "SINGAPURA",
-  "pais": "Singapura"
+  "pais": "Singapura",
+  "pais_mapa": null,
+  "pais_mapa_fonte": "manual"
  },
  "29556": {
   "fonte": "nominatim",
@@ -256,7 +318,9 @@
   "lon": -54.6169,
   "match": "Cidade do Leste, Alto Paraná, Región Oriental, Paraguai",
   "nome": "CIUDAD DEL ESTE",
-  "pais": "Paraguai"
+  "pais": "Paraguai",
+  "pais_mapa": "Paraguay",
+  "pais_mapa_fonte": "poligono"
  },
  "29564": {
   "fonte": "nominatim",
@@ -264,7 +328,9 @@
   "lon": -62.6897,
   "match": "Cidade Guayana, Parroquia Cachamay, Municipio Caroní, Bolívar, Venezuela",
   "nome": "CIUDAD GUAYANA",
-  "pais": "Venezuela"
+  "pais": "Venezuela",
+  "pais_mapa": "Venezuela",
+  "pais_mapa_fonte": "poligono"
  },
  "29572": {
   "fonte": "nominatim",
@@ -272,7 +338,9 @@
   "lon": -66.1676,
   "match": "Cochabamba, Juan De La Rosa, Molle, Cochabamba, Cercado, Cochabamba, Bolívia",
   "nome": "COCHABAMBA",
-  "pais": "Bolívia"
+  "pais": "Bolívia",
+  "pais_mapa": "Bolivia",
+  "pais_mapa_fonte": "poligono"
  },
  "29580": {
   "consulta": "Concepción, Paraguay",
@@ -281,7 +349,9 @@
   "lon": -57.1675,
   "match": "Concepción, Región Oriental, Paraguai",
   "nome": "CONCEPCIÓN",
-  "pais": "Paraguai"
+  "pais": "Paraguai",
+  "pais_mapa": "Paraguay",
+  "pais_mapa_fonte": "poligono"
  },
  "29599": {
   "fonte": "nominatim",
@@ -289,7 +359,9 @@
   "lon": 12.5701,
   "match": "Copenhaga, Comuna de Copenhaga, Região da Capital, 1357, Dinamarca",
   "nome": "COPENHAGUE",
-  "pais": "Dinamarca"
+  "pais": "Dinamarca",
+  "pais_mapa": "Denmark",
+  "pais_mapa_fonte": "poligono"
  },
  "29602": {
   "consulta": "Córdoba, Argentina",
@@ -298,7 +370,9 @@
   "lon": -64.1834,
   "match": "Córdova, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Córdova, X5000, Argentina",
   "nome": "CÓRDOBA",
-  "pais": "Argentina"
+  "pais": "Argentina",
+  "pais_mapa": "Argentina",
+  "pais_mapa_fonte": "poligono"
  },
  "29610": {
   "fonte": "nominatim",
@@ -306,7 +380,9 @@
   "lon": -17.4479,
   "match": "Dacar, Dakar, Senegal",
   "nome": "DACAR",
-  "pais": "Senegal"
+  "pais": "Senegal",
+  "pais_mapa": "Senegal",
+  "pais_mapa_fonte": "poligono"
  },
  "29629": {
   "fonte": "nominatim",
@@ -314,7 +390,9 @@
   "lon": 90.389,
   "match": "Daca, ঢাকা মহানগর, ঢাকা জেলা, Daca, 1215, Bangladeche",
   "nome": "DACCA",
-  "pais": "Bangladeche"
+  "pais": "Bangladeche",
+  "pais_mapa": "Bangladesh",
+  "pais_mapa_fonte": "poligono"
  },
  "29637": {
   "fonte": "nominatim",
@@ -322,7 +400,9 @@
   "lon": 36.3096,
   "match": "Damasco, بلدية دمشق القديمة, ناحية دمشق, منطقة دمشق, محافظة دمشق, Síria",
   "nome": "DAMASCO",
-  "pais": "Síria"
+  "pais": "Síria",
+  "pais_mapa": "Syria",
+  "pais_mapa_fonte": "poligono"
  },
  "29645": {
   "fonte": "nominatim",
@@ -330,7 +410,9 @@
   "lon": 125.5784,
   "match": "Díli, Vera Cruz, Díli, Timor-Leste",
   "nome": "DÍLI",
-  "pais": "Timor-Leste"
+  "pais": "Timor-Leste",
+  "pais_mapa": "Timor-Leste",
+  "pais_mapa_fonte": "poligono"
  },
  "29653": {
   "fonte": "nominatim",
@@ -338,7 +420,9 @@
   "lon": 51.5082,
   "match": "Doha, Catar",
   "nome": "DOHA",
-  "pais": "Catar"
+  "pais": "Catar",
+  "pais_mapa": "Qatar",
+  "pais_mapa_fonte": "poligono"
  },
  "29661": {
   "fonte": "nominatim",
@@ -346,7 +430,9 @@
   "lon": -6.2606,
   "match": "Dublin, County Dublin, Leinster, Irlanda",
   "nome": "DUBLIN",
-  "pais": "Irlanda"
+  "pais": "Irlanda",
+  "pais_mapa": "Ireland",
+  "pais_mapa_fonte": "poligono"
  },
  "29670": {
   "fonte": "nominatim",
@@ -354,7 +440,9 @@
   "lon": -55.8669,
   "match": "Encarnación, Itapúa, Región Oriental, 070101, Paraguai",
   "nome": "ENCARNACIÓN",
-  "pais": "Paraguai"
+  "pais": "Paraguai",
+  "pais_mapa": "Paraguay",
+  "pais_mapa_fonte": "poligono"
  },
  "29688": {
   "fonte": "nominatim",
@@ -362,7 +450,9 @@
   "lon": 18.0711,
   "match": "Estocolmo, Stockholms kommun, Stockholms län, 111 29, Suécia",
   "nome": "ESTOCOLMO",
-  "pais": "Suécia"
+  "pais": "Suécia",
+  "pais_mapa": "Sweden",
+  "pais_mapa_fonte": "poligono"
  },
  "29696": {
   "fonte": "nominatim",
@@ -370,7 +460,9 @@
   "lon": 8.6821,
   "match": "Frankfurt sobre o Meno, Hesse, Alemanha",
   "nome": "FRANKFURT",
-  "pais": "Alemanha"
+  "pais": "Alemanha",
+  "pais_mapa": "Germany",
+  "pais_mapa_fonte": "poligono"
  },
  "29700": {
   "fonte": "nominatim",
@@ -378,7 +470,9 @@
   "lon": 6.1466,
   "match": "Genebra, Suíça",
   "nome": "GENEBRA",
-  "pais": "Suíça"
+  "pais": "Suíça",
+  "pais_mapa": "France",
+  "pais_mapa_fonte": "poligono"
  },
  "29718": {
   "consulta": "Georgetown, Guyana",
@@ -387,7 +481,9 @@
   "lon": -58.1455,
   "match": "City of Georgetown, Demerara-Mahaica, Guiana",
   "nome": "GEORGETOWN",
-  "pais": "Guiana"
+  "pais": "Guiana",
+  "pais_mapa": "Guyana",
+  "pais_mapa_fonte": "poligono"
  },
  "29742": {
   "fonte": "nominatim",
@@ -395,7 +491,9 @@
   "lon": 137.7259,
   "match": "浜松市, Prefeitura de Shizuoka, Japão",
   "nome": "HAMAMATSU",
-  "pais": "Japão"
+  "pais": "Japão",
+  "pais_mapa": "Japan",
+  "pais_mapa_fonte": "poligono"
  },
  "29750": {
   "fonte": "nominatim",
@@ -403,7 +501,9 @@
   "lon": 105.854,
   "match": "Hanói, Vietname",
   "nome": "HANÓI",
-  "pais": "Vietname"
+  "pais": "Vietname",
+  "pais_mapa": "Vietnam",
+  "pais_mapa_fonte": "poligono"
  },
  "29769": {
   "fonte": "nominatim",
@@ -411,7 +511,9 @@
   "lon": 31.0602,
   "match": "Harare, Zimbabué",
   "nome": "HARARE",
-  "pais": "Zimbabué"
+  "pais": "Zimbabué",
+  "pais_mapa": "Zimbabwe",
+  "pais_mapa_fonte": "poligono"
  },
  "29777": {
   "fonte": "nominatim",
@@ -419,7 +521,9 @@
   "lon": -82.359,
   "match": "Havana, La Habana, 10000, Cuba",
   "nome": "HAVANA",
-  "pais": "Cuba"
+  "pais": "Cuba",
+  "pais_mapa": "Cuba",
+  "pais_mapa_fonte": "poligono"
  },
  "29785": {
   "consulta": "Helsinki, Finland",
@@ -428,7 +532,9 @@
   "lon": 24.9435,
   "match": "Helsínquia, Helsingin seutukunta, Uusimaa, Manner-Suomi, Finlândia",
   "nome": "HELSINQUE",
-  "pais": "Finlândia"
+  "pais": "Finlândia",
+  "pais_mapa": "Finland",
+  "pais_mapa_fonte": "poligono"
  },
  "29793": {
   "fonte": "nominatim",
@@ -436,7 +542,9 @@
   "lon": 114.1858,
   "match": "Hong Kong, China",
   "nome": "HONG KONG",
-  "pais": "China (Hong Kong)"
+  "pais": "China (Hong Kong)",
+  "pais_mapa": "China",
+  "pais_mapa_fonte": "poligono"
  },
  "29807": {
   "fonte": "nominatim",
@@ -444,7 +552,9 @@
   "lon": -95.3677,
   "match": "Houston, Condado de Harris, Texas, Estados Unidos da América",
   "nome": "HOUSTON",
-  "pais": "Estados Unidos da América"
+  "pais": "Estados Unidos da América",
+  "pais_mapa": "United States of America",
+  "pais_mapa_fonte": "poligono"
  },
  "29815": {
   "fonte": "nominatim",
@@ -452,7 +562,9 @@
   "lon": 11.5213,
   "match": "Iaundé, Mfoundi, Centro, Camarões",
   "nome": "IAUNDÊ",
-  "pais": "Camarões"
+  "pais": "Camarões",
+  "pais_mapa": "Cameroon",
+  "pais_mapa_fonte": "poligono"
  },
  "29823": {
   "fonte": "nominatim",
@@ -460,7 +572,9 @@
   "lon": -73.2444,
   "match": "Iquitos, Maynas, Loreto, 16002, Peru",
   "nome": "IQUITOS",
-  "pais": "Peru"
+  "pais": "Peru",
+  "pais_mapa": "Peru",
+  "pais_mapa_fonte": "poligono"
  },
  "29831": {
   "fonte": "nominatim",
@@ -468,7 +582,9 @@
   "lon": 73.0652,
   "match": "Islamabad, زون 1, وفاقی دارالحکومت اسلام آباد, 44000, Paquistão",
   "nome": "ISLAMABADE",
-  "pais": "Paquistão"
+  "pais": "Paquistão",
+  "pais_mapa": "Pakistan",
+  "pais_mapa_fonte": "poligono"
  },
  "29840": {
   "fonte": "nominatim",
@@ -476,7 +592,9 @@
   "lon": 106.8272,
   "match": "Jacarta, Indonésia",
   "nome": "JACARTA",
-  "pais": "Indonésia"
+  "pais": "Indonésia",
+  "pais_mapa": "Indonesia",
+  "pais_mapa_fonte": "poligono"
  },
  "29858": {
   "fonte": "nominatim",
@@ -484,7 +602,9 @@
   "lon": 30.5241,
   "match": "Kiev, Ucrânia",
   "nome": "KIEV",
-  "pais": "Ucrânia"
+  "pais": "Ucrânia",
+  "pais_mapa": "Ukraine",
+  "pais_mapa_fonte": "poligono"
  },
  "29874": {
   "fonte": "nominatim",
@@ -492,7 +612,9 @@
   "lon": 15.3424,
   "match": "Kinshasa, República Democrática do Congo",
   "nome": "KINSHASA",
-  "pais": "República Democrática do Congo"
+  "pais": "República Democrática do Congo",
+  "pais_mapa": "Dem. Rep. Congo",
+  "pais_mapa_fonte": "poligono"
  },
  "29882": {
   "fonte": "nominatim",
@@ -500,7 +622,9 @@
   "lon": 47.4979,
   "match": "Kuwait",
   "nome": "KUAITE",
-  "pais": "Kuwait"
+  "pais": "Kuwait",
+  "pais_mapa": "Kuwait",
+  "pais_mapa_fonte": "poligono"
  },
  "29890": {
   "fonte": "nominatim",
@@ -508,7 +632,9 @@
   "lon": 101.6942,
   "match": "Kuala Lumpur, Malásia",
   "nome": "KUALA LUMPUR",
-  "pais": "Malásia"
+  "pais": "Malásia",
+  "pais_mapa": "Malaysia",
+  "pais_mapa_fonte": "poligono"
  },
  "29904": {
   "fonte": "nominatim",
@@ -516,7 +642,9 @@
   "lon": -68.1336,
   "match": "La Paz, Provincia Pedro Domingo Murillo, La Paz, Bolívia",
   "nome": "LA PAZ",
-  "pais": "Bolívia"
+  "pais": "Bolívia",
+  "pais_mapa": "Fiji",
+  "pais_mapa_fonte": "poligono"
  },
  "29912": {
   "consulta": "Lagos, Nigeria",
@@ -525,7 +653,9 @@
   "lon": 3.3942,
   "match": "Lagos, Lagos Island, Lagos, 100242, Nigéria",
   "nome": "LAGOS",
-  "pais": "Nigéria"
+  "pais": "Nigéria",
+  "pais_mapa": "Nigeria",
+  "pais_mapa_fonte": "poligono"
  },
  "29939": {
   "fonte": "nominatim",
@@ -533,7 +663,9 @@
   "lon": 9.4419,
   "match": "Libreville, Estuário, Gabão",
   "nome": "LIBREVILLE",
-  "pais": "Gabão"
+  "pais": "Gabão",
+  "pais_mapa": "Gabon",
+  "pais_mapa_fonte": "poligono"
  },
  "29947": {
   "fonte": "nominatim",
@@ -541,7 +673,9 @@
   "lon": -77.0306,
   "match": "Lima, Lima Metropolitana, Lima, 15001, Peru",
   "nome": "LIMA",
-  "pais": "Peru"
+  "pais": "Peru",
+  "pais_mapa": "Peru",
+  "pais_mapa_fonte": "poligono"
  },
  "29955": {
   "fonte": "nominatim",
@@ -549,7 +683,9 @@
   "lon": -9.1366,
   "match": "Lisboa, Portugal",
   "nome": "LISBOA",
-  "pais": "Portugal"
+  "pais": "Portugal",
+  "pais_mapa": "Portugal",
+  "pais_mapa_fonte": "poligono"
  },
  "29963": {
   "fonte": "nominatim",
@@ -557,7 +693,9 @@
   "lon": 1.2158,
   "match": "Lomé, Maritime (região), Togo",
   "nome": "LOMÉ",
-  "pais": "Togo"
+  "pais": "Togo",
+  "pais_mapa": "Togo",
+  "pais_mapa_fonte": "poligono"
  },
  "29971": {
   "fonte": "nominatim",
@@ -565,7 +703,9 @@
   "lon": -0.1278,
   "match": "Grande Londres, Inglaterra, Reino Unido",
   "nome": "LONDRES",
-  "pais": "Reino Unido"
+  "pais": "Reino Unido",
+  "pais_mapa": "United Kingdom",
+  "pais_mapa_fonte": "poligono"
  },
  "29980": {
   "fonte": "nominatim",
@@ -573,7 +713,9 @@
   "lon": -118.2428,
   "match": "Los Angeles, Los Angeles County, Califórnia, Estados Unidos da América",
   "nome": "LOS ANGELES",
-  "pais": "Estados Unidos da América"
+  "pais": "Estados Unidos da América",
+  "pais_mapa": "United States of America",
+  "pais_mapa_fonte": "poligono"
  },
  "29998": {
   "fonte": "nominatim",
@@ -581,7 +723,9 @@
   "lon": 13.244,
   "match": "Luanda, Município de Luanda, Luanda, Angola",
   "nome": "LUANDA",
-  "pais": "Angola"
+  "pais": "Angola",
+  "pais_mapa": "Angola",
+  "pais_mapa_fonte": "poligono"
  },
  "30066": {
   "consulta": "Madrid, Spain",
@@ -590,7 +734,9 @@
   "lon": -3.7035,
   "match": "Madrid, Comunidade de Madrid, Espanha",
   "nome": "MADRI",
-  "pais": "Espanha"
+  "pais": "Espanha",
+  "pais_mapa": "Spain",
+  "pais_mapa_fonte": "poligono"
  },
  "30074": {
   "fonte": "nominatim",
@@ -598,7 +744,9 @@
   "lon": -86.2737,
   "match": "Manágua, Managua, 10000 (código maestro), Nicarágua",
   "nome": "MANÁGUA",
-  "pais": "Nicarágua"
+  "pais": "Nicarágua",
+  "pais_mapa": "Nicaragua",
+  "pais_mapa_fonte": "poligono"
  },
  "30082": {
   "fonte": "nominatim",
@@ -606,7 +754,9 @@
   "lon": 120.9804,
   "match": "Manila, Capital District, Metro Manila, Filipinas",
   "nome": "MANILA",
-  "pais": "Filipinas"
+  "pais": "Filipinas",
+  "pais_mapa": "Philippines",
+  "pais_mapa_fonte": "poligono"
  },
  "30090": {
   "fonte": "nominatim",
@@ -614,7 +764,9 @@
   "lon": 32.5675,
   "match": "Cidade de Maputo, Zona Sul, Moçambique",
   "nome": "MAPUTO",
-  "pais": "Moçambique"
+  "pais": "Moçambique",
+  "pais_mapa": "Mozambique",
+  "pais_mapa_fonte": "poligono"
  },
  "30104": {
   "consulta": "Ciudad de México, Mexico",
@@ -623,7 +775,9 @@
   "lon": -99.1515,
   "match": "Cidade do México, México",
   "nome": "MEXICO",
-  "pais": "México"
+  "pais": "México",
+  "pais_mapa": "Mexico",
+  "pais_mapa_fonte": "poligono"
  },
  "30112": {
   "fonte": "nominatim",
@@ -631,7 +785,9 @@
   "lon": -80.1936,
   "match": "Miami, Condado de Miami-Dade, Flórida, Estados Unidos da América",
   "nome": "MIAMI",
-  "pais": "Estados Unidos da América"
+  "pais": "Estados Unidos da América",
+  "pais_mapa": "United States of America",
+  "pais_mapa_fonte": "poligono"
  },
  "30120": {
   "fonte": "nominatim",
@@ -639,7 +795,9 @@
   "lon": 9.1896,
   "match": "Milão, Rodano, Milão, Lombardia, Itália",
   "nome": "MILÃO",
-  "pais": "Itália"
+  "pais": "Itália",
+  "pais_mapa": "Italy",
+  "pais_mapa_fonte": "poligono"
  },
  "30147": {
   "fonte": "nominatim",
@@ -647,7 +805,9 @@
   "lon": -56.1913,
   "match": "Montevidéu, Montevideo, Uruguai",
   "nome": "MONTEVIDÉU",
-  "pais": "Uruguai"
+  "pais": "Uruguai",
+  "pais_mapa": "Uruguay",
+  "pais_mapa_fonte": "proximidade"
  },
  "30155": {
   "fonte": "nominatim",
@@ -655,7 +815,9 @@
   "lon": -73.5698,
   "match": "Montreal, Agglomération de Montréal, Montréal (région administrative), Quebec, Canadá",
   "nome": "MONTREAL",
-  "pais": "Canadá"
+  "pais": "Canadá",
+  "pais_mapa": "Canada",
+  "pais_mapa_fonte": "poligono"
  },
  "30163": {
   "fonte": "nominatim",
@@ -663,7 +825,9 @@
   "lon": 37.6175,
   "match": "Moscou, Moscovo, Distrito Federal Central, Rússia",
   "nome": "MOSCOU",
-  "pais": "Rússia"
+  "pais": "Rússia",
+  "pais_mapa": "Russia",
+  "pais_mapa_fonte": "poligono"
  },
  "30171": {
   "fonte": "nominatim",
@@ -671,7 +835,9 @@
   "lon": 72.8692,
   "match": "Mumbai, Mumbai Suburban District, Maharashtra, 400051, Índia",
   "nome": "MUMBAI",
-  "pais": "Índia"
+  "pais": "Índia",
+  "pais_mapa": "India",
+  "pais_mapa_fonte": "poligono"
  },
  "30180": {
   "fonte": "nominatim",
@@ -679,7 +845,9 @@
   "lon": 11.5754,
   "match": "Munique, Baviera, Alemanha",
   "nome": "MUNIQUE",
-  "pais": "Alemanha"
+  "pais": "Alemanha",
+  "pais_mapa": "Germany",
+  "pais_mapa_fonte": "poligono"
  },
  "30198": {
   "fonte": "nominatim",
@@ -687,7 +855,9 @@
   "lon": 136.8998,
   "match": "Nagoia, Prefeitura de Aichi, Japão",
   "nome": "NAGÓIA",
-  "pais": "Japão"
+  "pais": "Japão",
+  "pais_mapa": "Japan",
+  "pais_mapa_fonte": "poligono"
  },
  "30201": {
   "fonte": "nominatim",
@@ -695,7 +865,9 @@
   "lon": 36.8289,
   "match": "Nairóbi, Nairobi, Quénia",
   "nome": "NAIRÓBI",
-  "pais": "Quénia"
+  "pais": "Quénia",
+  "pais_mapa": "Kenya",
+  "pais_mapa_fonte": "poligono"
  },
  "30210": {
   "fonte": "nominatim",
@@ -703,7 +875,9 @@
   "lon": 77.209,
   "match": "Nova Deli, New Delhi, Deli, Índia",
   "nome": "NOVA DELHI",
-  "pais": "Índia"
+  "pais": "Índia",
+  "pais_mapa": "India",
+  "pais_mapa_fonte": "poligono"
  },
  "30228": {
   "fonte": "nominatim",
@@ -711,7 +885,9 @@
   "lon": -74.006,
   "match": "Nova Iorque, Estados Unidos da América",
   "nome": "NOVA YORK",
-  "pais": "Estados Unidos da América"
+  "pais": "Estados Unidos da América",
+  "pais_mapa": "United States of America",
+  "pais_mapa_fonte": "poligono"
  },
  "30244": {
   "fonte": "nominatim",
@@ -719,7 +895,9 @@
   "lon": 10.739,
   "match": "Oslo, Noruega",
   "nome": "OSLO",
-  "pais": "Noruega"
+  "pais": "Noruega",
+  "pais_mapa": "Norway",
+  "pais_mapa_fonte": "poligono"
  },
  "30252": {
   "fonte": "nominatim",
@@ -727,7 +905,9 @@
   "lon": -75.6901,
   "match": "Ottawa, Eastern Ontario, Ontário, Canadá",
   "nome": "OTTAWA",
-  "pais": "Canadá"
+  "pais": "Canadá",
+  "pais_mapa": "Canada",
+  "pais_mapa_fonte": "poligono"
  },
  "30260": {
   "consulta": "Panama City, Panama",
@@ -736,7 +916,9 @@
   "lon": -79.5342,
   "match": "Panamá, Calidonia, Distrito de Panamá, Provincia de Panamá, 0843, Panamá",
   "nome": "PANAMA",
-  "pais": "Panamá"
+  "pais": "Panamá",
+  "pais_mapa": "Panama",
+  "pais_mapa_fonte": "poligono"
  },
  "30279": {
   "fonte": "nominatim",
@@ -744,7 +926,9 @@
   "lon": -55.1663,
   "match": "Centrum, Paramaribo, Suriname",
   "nome": "PARAMARIBO",
-  "pais": "Suriname"
+  "pais": "Suriname",
+  "pais_mapa": "Suriname",
+  "pais_mapa_fonte": "poligono"
  },
  "30287": {
   "fonte": "nominatim",
@@ -752,7 +936,9 @@
   "lon": 2.32,
   "match": "Paris, Ilha de França, França metropolitana, França",
   "nome": "PARIS",
-  "pais": "França"
+  "pais": "França",
+  "pais_mapa": "France",
+  "pais_mapa_fonte": "poligono"
  },
  "30295": {
   "fonte": "nominatim",
@@ -760,7 +946,9 @@
   "lon": -57.0861,
   "match": "Municipio de Paso de los Libres, Departamento Paso de los Libres, Corrientes, Argentina",
   "nome": "PASO LOS LIBRES",
-  "pais": "Argentina"
+  "pais": "Argentina",
+  "pais_mapa": "Brazil",
+  "pais_mapa_fonte": "poligono"
  },
  "30309": {
   "fonte": "nominatim",
@@ -768,7 +956,9 @@
   "lon": -55.7384,
   "match": "Pedro Juan Caballero, Amambay, Región Oriental, Paraguai",
   "nome": "PEDRO JUAN CABALLERO",
-  "pais": "Paraguai"
+  "pais": "Paraguai",
+  "pais_mapa": "Paraguay",
+  "pais_mapa_fonte": "poligono"
  },
  "30317": {
   "fonte": "nominatim",
@@ -776,7 +966,9 @@
   "lon": 116.3913,
   "match": "Pequim, China",
   "nome": "PEQUIM",
-  "pais": "China"
+  "pais": "China",
+  "pais_mapa": "China",
+  "pais_mapa_fonte": "poligono"
  },
  "30325": {
   "fonte": "nominatim",
@@ -784,7 +976,9 @@
   "lon": -61.518,
   "match": "Porto Espanha, Trinidad e Tobago",
   "nome": "PORT OF SPAIN",
-  "pais": "Trinidad e Tobago"
+  "pais": "Trinidad e Tobago",
+  "pais_mapa": "Trinidad and Tobago",
+  "pais_mapa_fonte": "poligono"
  },
  "30333": {
   "fonte": "nominatim",
@@ -792,7 +986,9 @@
   "lon": -72.3396,
   "match": "Porto Príncipe, Département de l'Ouest, Haiti",
   "nome": "PORTO PRÍNCIPE",
-  "pais": "Haiti"
+  "pais": "Haiti",
+  "pais_mapa": "Haiti",
+  "pais_mapa_fonte": "poligono"
  },
  "30341": {
   "fonte": "nominatim",
@@ -800,7 +996,9 @@
   "lon": -8.6103,
   "match": "Porto, Portugal",
   "nome": "PORTO",
-  "pais": "Portugal"
+  "pais": "Portugal",
+  "pais_mapa": "Portugal",
+  "pais_mapa_fonte": "poligono"
  },
  "30350": {
   "fonte": "nominatim",
@@ -808,7 +1006,9 @@
   "lon": 14.4213,
   "match": "Praga, Chéquia",
   "nome": "PRAGA",
-  "pais": "Chéquia"
+  "pais": "Chéquia",
+  "pais_mapa": "Czechia",
+  "pais_mapa_fonte": "poligono"
  },
  "30368": {
   "consulta": "Praia, Cabo Verde",
@@ -817,7 +1017,9 @@
   "lon": -23.5095,
   "match": "Praia, Platô, Praia, 7600, Cabo Verde",
   "nome": "PRAIA",
-  "pais": "Cabo Verde"
+  "pais": "Cabo Verde",
+  "pais_mapa": null,
+  "pais_mapa_fonte": "manual"
  },
  "30376": {
   "fonte": "nominatim",
@@ -825,7 +1027,9 @@
   "lon": 28.1879,
   "match": "Pretória, City of Tshwane Metropolitan Municipality, Gautengue, 0142, África do Sul",
   "nome": "PRETÓRIA",
-  "pais": "África do Sul"
+  "pais": "África do Sul",
+  "pais_mapa": "South Africa",
+  "pais_mapa_fonte": "poligono"
  },
  "30392": {
   "fonte": "nominatim",
@@ -833,7 +1037,9 @@
   "lon": -78.5123,
   "match": "Quito, Distrito Metropolitano de Quito, Pichincha, 170130, Equador",
   "nome": "QUITO",
-  "pais": "Equador"
+  "pais": "Equador",
+  "pais_mapa": "Ecuador",
+  "pais_mapa_fonte": "poligono"
  },
  "30406": {
   "fonte": "nominatim",
@@ -841,7 +1047,9 @@
   "lon": -6.8409,
   "match": "Rabat, باشوية الرباط, Préfecture de Rabat عمالة الرباط, Rabat-Salé-Kénitra ⵔⴱⴰⵟ-ⵙⵍⴰ-ⵇⵏⵉⵟⵔⴰ الرباط-سلا-القنيطرة, Marrocos",
   "nome": "RABAT",
-  "pais": "Marrocos"
+  "pais": "Marrocos",
+  "pais_mapa": "Morocco",
+  "pais_mapa_fonte": "poligono"
  },
  "30414": {
   "fonte": "nominatim",
@@ -849,7 +1057,9 @@
   "lon": 35.1952,
   "match": "Ramalá, Área A, Cisjordânia, الأراضي الفلسطينية",
   "nome": "RAMALLAH",
-  "pais": "Palestina"
+  "pais": "Palestina",
+  "pais_mapa": "Palestine",
+  "pais_mapa_fonte": "poligono"
  },
  "30422": {
   "fonte": "nominatim",
@@ -857,7 +1067,9 @@
   "lon": 46.716,
   "match": "Riade, محافظة الرياض, Riade, 12643, Arábia Saudita",
   "nome": "RIADE",
-  "pais": "Arábia Saudita"
+  "pais": "Arábia Saudita",
+  "pais_mapa": "Saudi Arabia",
+  "pais_mapa_fonte": "poligono"
  },
  "30430": {
   "consulta": "Rio Branco, Cerro Largo, Uruguay",
@@ -866,7 +1078,9 @@
   "lon": -53.3781,
   "match": "Río Branco, Cerro Largo, 37100, Uruguai",
   "nome": "RIO BRANCO",
-  "pais": "Uruguai"
+  "pais": "Uruguai",
+  "pais_mapa": "Uruguay",
+  "pais_mapa_fonte": "poligono"
  },
  "30449": {
   "fonte": "nominatim",
@@ -874,7 +1088,9 @@
   "lon": 12.4829,
   "match": "Roma, Roma Capitale, Lácio, Itália",
   "nome": "ROMA",
-  "pais": "Itália"
+  "pais": "Itália",
+  "pais_mapa": "Italy",
+  "pais_mapa_fonte": "poligono"
  },
  "30457": {
   "fonte": "nominatim",
@@ -882,7 +1098,9 @@
   "lon": 4.8925,
   "match": "Amesterdão, Amsterdão, Noord-Holland, Países Baixos",
   "nome": "AMSTERDÃ",
-  "pais": "Países Baixos"
+  "pais": "Países Baixos",
+  "pais_mapa": "Netherlands",
+  "pais_mapa_fonte": "poligono"
  },
  "30465": {
   "fonte": "nominatim",
@@ -890,7 +1108,9 @@
   "lon": -54.3056,
   "match": "Salto do Guairá, Canindeyú, Región Oriental, Paraguai",
   "nome": "SALTO DEL GUAIRÁ",
-  "pais": "Paraguai"
+  "pais": "Paraguai",
+  "pais_mapa": "Paraguay",
+  "pais_mapa_fonte": "poligono"
  },
  "30473": {
   "fonte": "nominatim",
@@ -898,7 +1118,9 @@
   "lon": -63.1821,
   "match": "Santa Cruz de la Sierra, Provincia Andrés Ibáñez, Santa Cruz, Bolívia",
   "nome": "SANTA CRUZ DE LA SIERRA",
-  "pais": "Bolívia"
+  "pais": "Bolívia",
+  "pais_mapa": "Bolivia",
+  "pais_mapa_fonte": "poligono"
  },
  "30481": {
   "consulta": "Santiago, Chile",
@@ -907,7 +1129,9 @@
   "lon": -70.6511,
   "match": "Santiago, Provincia de Santiago, Região Metropolitana de Santiago, 8320000, Chile",
   "nome": "SANTIAGO",
-  "pais": "Chile"
+  "pais": "Chile",
+  "pais_mapa": "Chile",
+  "pais_mapa_fonte": "poligono"
  },
  "30490": {
   "consulta": "Santo Domingo, Dominican Republic",
@@ -916,7 +1140,9 @@
   "lon": -69.8918,
   "match": "São Domingos, Distrito Nacional, 03201, República Dominicana",
   "nome": "SÃO DOMINGOS",
-  "pais": "República Dominicana"
+  "pais": "República Dominicana",
+  "pais_mapa": "Dominican Rep.",
+  "pais_mapa_fonte": "poligono"
  },
  "30503": {
   "fonte": "nominatim",
@@ -924,7 +1150,9 @@
   "lon": -122.4075,
   "match": "São Francisco, Califórnia, Estados Unidos da América",
   "nome": "SÃO FRANCISCO",
-  "pais": "Estados Unidos da América"
+  "pais": "Estados Unidos da América",
+  "pais_mapa": "United States of America",
+  "pais_mapa_fonte": "poligono"
  },
  "30511": {
   "consulta": "San José, Costa Rica",
@@ -933,7 +1161,9 @@
   "lon": -84.0797,
   "match": "San José, Costa Rica",
   "nome": "SÃO JOSÉ",
-  "pais": "Costa Rica"
+  "pais": "Costa Rica",
+  "pais_mapa": "Costa Rica",
+  "pais_mapa_fonte": "poligono"
  },
  "30520": {
   "fonte": "nominatim",
@@ -941,7 +1171,9 @@
   "lon": -89.1912,
   "match": "São Salvador, San Salvador Centro, San Salvador, El Salvador",
   "nome": "SÃO SALVADOR",
-  "pais": "El Salvador"
+  "pais": "El Salvador",
+  "pais_mapa": "El Salvador",
+  "pais_mapa_fonte": "poligono"
  },
  "30538": {
   "fonte": "nominatim",
@@ -949,7 +1181,9 @@
   "lon": 126.9783,
   "match": "Seul, Coreia do Sul",
   "nome": "SEUL",
-  "pais": "Coreia do Sul"
+  "pais": "Coreia do Sul",
+  "pais_mapa": "South Korea",
+  "pais_mapa_fonte": "poligono"
  },
  "30546": {
   "fonte": "nominatim",
@@ -957,7 +1191,9 @@
   "lon": 23.3217,
   "match": "Sófia, Средец, Столична, София-град, Bulgária",
   "nome": "SÓFIA",
-  "pais": "Bulgária"
+  "pais": "Bulgária",
+  "pais_mapa": "Bulgaria",
+  "pais_mapa_fonte": "poligono"
  },
  "30562": {
   "fonte": "nominatim",
@@ -965,7 +1201,9 @@
   "lon": 151.2083,
   "match": "Sydney, Nova Gales do Sul, Austrália",
   "nome": "SYDNEY",
-  "pais": "Austrália"
+  "pais": "Austrália",
+  "pais_mapa": "Australia",
+  "pais_mapa_fonte": "poligono"
  },
  "30570": {
   "fonte": "nominatim",
@@ -973,7 +1211,9 @@
   "lon": 121.5637,
   "match": "Taipé, Taiwan",
   "nome": "TAIPÉ",
-  "pais": "Taiwan"
+  "pais": "Taiwan",
+  "pais_mapa": "Taiwan",
+  "pais_mapa_fonte": "poligono"
  },
  "30597": {
   "fonte": "nominatim",
@@ -981,7 +1221,9 @@
   "lon": 51.3896,
   "match": "Teerão, بخش مرکزی شهرستان تهران, شهرستان تهران, Teerão, Irã",
   "nome": "TEERÃ",
-  "pais": "Irã"
+  "pais": "Irã",
+  "pais_mapa": "Iran",
+  "pais_mapa_fonte": "poligono"
  },
  "30600": {
   "fonte": "nominatim",
@@ -989,7 +1231,9 @@
   "lon": -87.2047,
   "match": "Tegucigalpa, Distrito Central, Francisco Morazán, Honduras",
   "nome": "TEGUCIGALPA",
-  "pais": "Honduras"
+  "pais": "Honduras",
+  "pais_mapa": "Honduras",
+  "pais_mapa_fonte": "poligono"
  },
  "30619": {
   "fonte": "nominatim",
@@ -997,7 +1241,9 @@
   "lon": 34.7818,
   "match": "Tel Aviv, נפת תל אביב, Distrito de Tel-Aviv, Israel",
   "nome": "TEL AVIV",
-  "pais": "Israel"
+  "pais": "Israel",
+  "pais_mapa": "Israel",
+  "pais_mapa_fonte": "poligono"
  },
  "30627": {
   "fonte": "nominatim",
@@ -1005,7 +1251,9 @@
   "lon": 139.7639,
   "match": "Tóquio, Japão",
   "nome": "TÓQUIO",
-  "pais": "Japão"
+  "pais": "Japão",
+  "pais_mapa": "Japan",
+  "pais_mapa_fonte": "poligono"
  },
  "30635": {
   "fonte": "nominatim",
@@ -1013,7 +1261,9 @@
   "lon": -79.3839,
   "match": "Toronto, Ontário, Canadá",
   "nome": "TORONTO",
-  "pais": "Canadá"
+  "pais": "Canadá",
+  "pais_mapa": "Canada",
+  "pais_mapa_fonte": "poligono"
  },
  "30651": {
   "consulta": "Guangzhou, Guangdong, China",
@@ -1022,7 +1272,9 @@
   "lon": 113.259,
   "match": "Cantão, Província de Cantão, China",
   "nome": "CANTÃO",
-  "pais": "China"
+  "pais": "China",
+  "pais_mapa": "China",
+  "pais_mapa_fonte": "poligono"
  },
  "30669": {
   "fonte": "nominatim",
@@ -1030,7 +1282,9 @@
   "lon": 25.9088,
   "match": "Gaborone, Botsuana",
   "nome": "GABORONE",
-  "pais": "Botsuana"
+  "pais": "Botsuana",
+  "pais_mapa": "Botswana",
+  "pais_mapa_fonte": "poligono"
  },
  "30686": {
   "consulta": "Tripoli, Libya",
@@ -1039,7 +1293,9 @@
   "lon": 13.1778,
   "match": "Trípoli, Líbia",
   "nome": "TRÍPOLI",
-  "pais": "Líbia"
+  "pais": "Líbia",
+  "pais_mapa": "Libya",
+  "pais_mapa_fonte": "proximidade"
  },
  "30708": {
   "fonte": "nominatim",
@@ -1047,7 +1303,9 @@
   "lon": 10.1858,
   "match": "Tunes, Túnis (província), Tunísia",
   "nome": "TUNIS",
-  "pais": "Tunísia"
+  "pais": "Tunísia",
+  "pais_mapa": "Tunisia",
+  "pais_mapa_fonte": "proximidade"
  },
  "30740": {
   "fonte": "nominatim",
@@ -1055,7 +1313,9 @@
   "lon": 21.0067,
   "match": "Varsóvia, Voivodia da Mazóvia, Polónia",
   "nome": "VARSÓVIA",
-  "pais": "Polónia"
+  "pais": "Polónia",
+  "pais_mapa": "Poland",
+  "pais_mapa_fonte": "poligono"
  },
  "30767": {
   "fonte": "nominatim",
@@ -1063,7 +1323,9 @@
   "lon": 16.3725,
   "match": "Viena, Áustria",
   "nome": "VIENA",
-  "pais": "Áustria"
+  "pais": "Áustria",
+  "pais_mapa": "Austria",
+  "pais_mapa_fonte": "poligono"
  },
  "30783": {
   "fonte": "nominatim",
@@ -1071,7 +1333,9 @@
   "lon": -77.0364,
   "match": "Washington, District of Columbia, Estados Unidos da América",
   "nome": "WASHINGTON",
-  "pais": "Estados Unidos da América"
+  "pais": "Estados Unidos da América",
+  "pais_mapa": "United States of America",
+  "pais_mapa_fonte": "poligono"
  },
  "30805": {
   "fonte": "nominatim",
@@ -1079,7 +1343,9 @@
   "lon": 174.7772,
   "match": "Wellington, Wellington City, Wellington, 6011, Nova Zelândia",
   "nome": "WELLINGTON",
-  "pais": "Nova Zelândia"
+  "pais": "Nova Zelândia",
+  "pais_mapa": "New Zealand",
+  "pais_mapa_fonte": "poligono"
  },
  "30821": {
   "fonte": "nominatim",
@@ -1087,7 +1353,9 @@
   "lon": 17.0455,
   "match": "Windhoek, Khomas, Namíbia",
   "nome": "WINDHOEK",
-  "pais": "Namíbia"
+  "pais": "Namíbia",
+  "pais_mapa": "Namibia",
+  "pais_mapa_fonte": "poligono"
  },
  "30848": {
   "fonte": "nominatim",
@@ -1095,7 +1363,9 @@
   "lon": 121.47,
   "match": "Xangai, China",
   "nome": "XANGAI",
-  "pais": "China"
+  "pais": "China",
+  "pais_mapa": "China",
+  "pais_mapa_fonte": "poligono"
  },
  "30864": {
   "fonte": "nominatim",
@@ -1103,7 +1373,9 @@
   "lon": 8.541,
   "match": "Zurique, Bezirk Zürich, Zurique, Suíça",
   "nome": "ZURIQUE",
-  "pais": "Suíça"
+  "pais": "Suíça",
+  "pais_mapa": "Switzerland",
+  "pais_mapa_fonte": "poligono"
  },
  "30902": {
   "fonte": "nominatim",
@@ -1111,7 +1383,9 @@
   "lon": -72.6733,
   "match": "Hartford, Capitol Planning Region, Connecticut, Estados Unidos da América",
   "nome": "HARTFORD",
-  "pais": "Estados Unidos da América"
+  "pais": "Estados Unidos da América",
+  "pais_mapa": "United States of America",
+  "pais_mapa_fonte": "poligono"
  },
  "30929": {
   "consulta": "Colombo, Sri Lanka",
@@ -1120,7 +1394,9 @@
   "lon": 79.8542,
   "match": "Colombo, Colombo District, Western Province, Seri-Lanca",
   "nome": "COLOMBO",
-  "pais": "Seri-Lanca"
+  "pais": "Seri-Lanca",
+  "pais_mapa": "Sri Lanka",
+  "pais_mapa_fonte": "poligono"
  },
  "30961": {
   "consulta": "Faro, Portugal",
@@ -1129,7 +1405,9 @@
   "lon": -7.9352,
   "match": "Faro, Portugal",
   "nome": "FARO",
-  "pais": "Portugal"
+  "pais": "Portugal",
+  "pais_mapa": "Portugal",
+  "pais_mapa_fonte": "poligono"
  },
  "30988": {
   "fonte": "nominatim",
@@ -1137,7 +1415,9 @@
   "lon": 18.4126,
   "match": "Sarajevo, Mjesna zajednica Trg oslobođenja-Centar, Općina Centar, Grad Sarajevo, Kanton Sarajevo, Federação da Bósnia e Herzegovina, 71000, Bósnia e Herzegovina",
   "nome": "SARAJEVO",
-  "pais": "Bósnia e Herzegovina"
+  "pais": "Bósnia e Herzegovina",
+  "pais_mapa": "Bosnia and Herz.",
+  "pais_mapa_fonte": "poligono"
  },
  "38881": {
   "fonte": "nominatim",
@@ -1145,7 +1425,9 @@
   "lon": -88.77,
   "match": "Belmopan, Cayo, Belize",
   "nome": "BELMOPAN",
-  "pais": "Belize"
+  "pais": "Belize",
+  "pais_mapa": "Belize",
+  "pais_mapa_fonte": "poligono"
  },
  "38903": {
   "fonte": "nominatim",
@@ -1153,7 +1435,9 @@
   "lon": -13.6998,
   "match": "Conacri, Guiné",
   "nome": "CONACRI",
-  "pais": "Guiné"
+  "pais": "Guiné",
+  "pais_mapa": "Guinea",
+  "pais_mapa_fonte": "poligono"
  },
  "38920": {
   "fonte": "nominatim",
@@ -1161,7 +1445,9 @@
   "lon": 2.4253,
   "match": "Cotonou, Litoral, Benim",
   "nome": "COTONOU",
-  "pais": "Benim"
+  "pais": "Benim",
+  "pais_mapa": "Benin",
+  "pais_mapa_fonte": "poligono"
  },
  "38962": {
   "fonte": "nominatim",
@@ -1169,7 +1455,9 @@
   "lon": 39.2804,
   "match": "Dar es Salaam, Coastal Zone, Tanzânia",
   "nome": "DAR ES SALAAM",
-  "pais": "Tanzânia"
+  "pais": "Tanzânia",
+  "pais_mapa": "Tanzania",
+  "pais_mapa_fonte": "poligono"
  },
  "38989": {
   "fonte": "nominatim",
@@ -1177,7 +1465,9 @@
   "lon": 44.5126,
   "match": "Erevan, Arménia",
   "nome": "IEREVAN",
-  "pais": "Arménia"
+  "pais": "Arménia",
+  "pais_mapa": "Armenia",
+  "pais_mapa_fonte": "poligono"
  },
  "39004": {
   "fonte": "nominatim",
@@ -1185,7 +1475,9 @@
   "lon": -68.7305,
   "match": "Mendoza, Argentina",
   "nome": "MENDOZA",
-  "pais": "Argentina"
+  "pais": "Argentina",
+  "pais_mapa": "Argentina",
+  "pais_mapa_fonte": "poligono"
  },
  "39020": {
   "fonte": "nominatim",
@@ -1193,7 +1485,9 @@
   "lon": 15.9773,
   "match": "Zagreb, Croácia",
   "nome": "ZAGREB",
-  "pais": "Croácia"
+  "pais": "Croácia",
+  "pais_mapa": "Croatia",
+  "pais_mapa_fonte": "poligono"
  },
  "39063": {
   "fonte": "nominatim",
@@ -1201,7 +1495,9 @@
   "lon": -123.114,
   "match": "Vancouver, Metro Vancouver Regional District, Colúmbia Britânica, Canadá",
   "nome": "VANCOUVER",
-  "pais": "Canadá"
+  "pais": "Canadá",
+  "pais_mapa": "Canada",
+  "pais_mapa_fonte": "poligono"
  },
  "39080": {
   "fonte": "nominatim",
@@ -1209,7 +1505,9 @@
   "lon": -84.3898,
   "match": "Atlanta, Fulton County, Geórgia, Estados Unidos da América",
   "nome": "ATLANTA",
-  "pais": "Estados Unidos da América"
+  "pais": "Estados Unidos da América",
+  "pais_mapa": "United States of America",
+  "pais_mapa_fonte": "poligono"
  },
  "39102": {
   "fonte": "nominatim",
@@ -1217,7 +1515,9 @@
   "lon": 58.5938,
   "match": "Mascate, ولاية مسقط, Mascate, Omã",
   "nome": "MASCATE",
-  "pais": "Omã"
+  "pais": "Omã",
+  "pais_mapa": "Oman",
+  "pais_mapa_fonte": "proximidade"
  },
  "39128": {
   "fonte": "nominatim",
@@ -1225,7 +1525,9 @@
   "lon": 49.8328,
   "match": "Baku, Azerbaijão",
   "nome": "BAKU",
-  "pais": "Azerbaijão"
+  "pais": "Azerbaijão",
+  "pais_mapa": "Azerbaijan",
+  "pais_mapa_fonte": "poligono"
  },
  "39160": {
   "fonte": "nominatim",
@@ -1233,7 +1535,9 @@
   "lon": 14.5069,
   "match": "Liubliana, Ljubljana, Upravna Enota Ljubljana, 1000, Eslovénia",
   "nome": "LIUBLIANA",
-  "pais": "Eslovénia"
+  "pais": "Eslovénia",
+  "pais_mapa": "Slovenia",
+  "pais_mapa_fonte": "poligono"
  },
  "39187": {
   "fonte": "nominatim",
@@ -1241,7 +1545,9 @@
   "lon": 15.2712,
   "match": "Brazavile, Brazzaville (département), República do Congo",
   "nome": "BRAZZAVILLE",
-  "pais": "República do Congo"
+  "pais": "República do Congo",
+  "pais_mapa": "Dem. Rep. Congo",
+  "pais_mapa_fonte": "poligono"
  },
  "39209": {
   "fonte": "nominatim",
@@ -1249,7 +1555,9 @@
   "lon": 17.1083,
   "match": "Bratislava, Bratislavský kraj, Eslováquia",
   "nome": "BRATISLAVA",
-  "pais": "Eslováquia"
+  "pais": "Eslováquia",
+  "pais_mapa": "Slovakia",
+  "pais_mapa_fonte": "poligono"
  },
  "39225": {
   "fonte": "nominatim",
@@ -1257,7 +1565,9 @@
   "lon": 6.7313,
   "match": "São Tomé, Água Grande, São Tomé e Príncipe",
   "nome": "SÃO TOMÉ",
-  "pais": "São Tomé e Príncipe"
+  "pais": "São Tomé e Príncipe",
+  "pais_mapa": null,
+  "pais_mapa_fonte": "manual"
  },
  "39241": {
   "fonte": "nominatim",
@@ -1265,7 +1575,9 @@
   "lon": 71.4677,
   "match": "Astana, Cazaquistão",
   "nome": "ASTANA",
-  "pais": "Cazaquistão"
+  "pais": "Cazaquistão",
+  "pais_mapa": "Kazakhstan",
+  "pais_mapa_fonte": "poligono"
  },
  "39263": {
   "fonte": "nominatim",
@@ -1273,7 +1585,9 @@
   "lon": 8.7741,
   "match": "Malabo, Distrito de Malabo, Bioko Norte, Região Insular, Guiné Equatorial",
   "nome": "MALABO",
-  "pais": "Guiné Equatorial"
+  "pais": "Guiné Equatorial",
+  "pais_mapa": "Eq. Guinea",
+  "pais_mapa_fonte": "manual"
  },
  "39284": {
   "fonte": "nominatim",
@@ -1281,7 +1595,9 @@
   "lon": -1.5271,
   "match": "Ouagadougou, Kadiogo, Região Centro, Burquina Faso",
   "nome": "UAGADUGU",
-  "pais": "Burquina Faso"
+  "pais": "Burquina Faso",
+  "pais_mapa": "Burkina Faso",
+  "pais_mapa_fonte": "poligono"
  },
  "39306": {
   "fonte": "nominatim",
@@ -1289,7 +1605,9 @@
   "lon": 28.9759,
   "match": "Istambul, Fatih, İstanbul, Marmara Bölgesi, 34122, Turquia",
   "nome": "ISTAMBUL",
-  "pais": "Turquia"
+  "pais": "Turquia",
+  "pais_mapa": "Turkey",
+  "pais_mapa_fonte": "proximidade"
  },
  "39322": {
   "fonte": "nominatim",
@@ -1297,7 +1615,9 @@
   "lon": 33.3639,
   "match": "Nicósia, Δήμος Λευκωσίας, Nicósia, Chipre, 1107, Chipre",
   "nome": "NICOSIA",
-  "pais": "Chipre"
+  "pais": "Chipre",
+  "pais_mapa": "N. Cyprus",
+  "pais_mapa_fonte": "poligono"
  },
  "98000": {
   "consulta": "Guatemala City, Guatemala",
@@ -1306,7 +1626,9 @@
   "lon": -90.5133,
   "match": "Cidade da Guatemala, Zona 2, Departamento de Guatemala, Guatemala",
   "nome": "GUATEMALA",
-  "pais": "Guatemala"
+  "pais": "Guatemala",
+  "pais_mapa": "Guatemala",
+  "pais_mapa_fonte": "poligono"
  },
  "99104": {
   "fonte": "nominatim",
@@ -1314,7 +1636,9 @@
   "lon": 44.8014,
   "match": "Tiblíssi, Geórgia",
   "nome": "TBILISI",
-  "pais": "Geórgia"
+  "pais": "Geórgia",
+  "pais_mapa": "Georgia",
+  "pais_mapa_fonte": "poligono"
  },
  "99139": {
   "fonte": "nominatim",
@@ -1322,7 +1646,9 @@
   "lon": 19.8184,
   "match": "Tirana, Bashkia Tiranë, Tirana (prefeitura), 1001-1028, Albânia",
   "nome": "TIRANA",
-  "pais": "Albânia"
+  "pais": "Albânia",
+  "pais_mapa": "Albania",
+  "pais_mapa_fonte": "poligono"
  },
  "99147": {
   "consulta": "St John's, Antigua and Barbuda",
@@ -1331,7 +1657,9 @@
   "lon": -61.8449,
   "match": "São João, Saint John, Antígua, Antígua e Barbuda",
   "nome": "SAINT JOHNS",
-  "pais": "Antígua e Barbuda"
+  "pais": "Antígua e Barbuda",
+  "pais_mapa": null,
+  "pais_mapa_fonte": "manual"
  },
  "99155": {
   "fonte": "nominatim",
@@ -1339,7 +1667,9 @@
   "lon": -54.5829,
   "match": "Puerto Iguazú, Porto Iguaçu, Departamento Iguazú, Misiones, Argentina",
   "nome": "PUERTO IGUAZÚ",
-  "pais": "Argentina"
+  "pais": "Argentina",
+  "pais_mapa": "Brazil",
+  "pais_mapa_fonte": "poligono"
  },
  "99171": {
   "fonte": "nominatim",
@@ -1347,7 +1677,9 @@
   "lon": 44.3872,
   "match": "Bagdade, بلدية المنطقة الخضراء, قضاء الزوراء, Bagdá (província), Iraque",
   "nome": "BAGDÁ",
-  "pais": "Iraque"
+  "pais": "Iraque",
+  "pais_mapa": "Iraq",
+  "pais_mapa_fonte": "poligono"
  },
  "99180": {
   "fonte": "nominatim",
@@ -1355,7 +1687,9 @@
   "lon": -77.3383,
   "match": "Nassau, New Providence, Bahamas",
   "nome": "NASSAU",
-  "pais": "Bahamas"
+  "pais": "Bahamas",
+  "pais_mapa": "Bahamas",
+  "pais_mapa_fonte": "proximidade"
  },
  "99198": {
   "fonte": "nominatim",
@@ -1363,7 +1697,9 @@
   "lon": 7.4893,
   "match": "Abuja, Municipal Area Council, Território da Capital Federal, 223140, Nigéria",
   "nome": "ABUJA",
-  "pais": "Nigéria"
+  "pais": "Nigéria",
+  "pais_mapa": "Nigeria",
+  "pais_mapa_fonte": "poligono"
  },
  "99210": {
   "fonte": "nominatim",
@@ -1371,7 +1707,9 @@
   "lon": -68.7538,
   "match": "Cobija, Provincia Nicolás Suárez, Pando, Bolívia",
   "nome": "COBIJA",
-  "pais": "Bolívia"
+  "pais": "Bolívia",
+  "pais_mapa": "Brazil",
+  "pais_mapa_fonte": "poligono"
  },
  "99236": {
   "fonte": "nominatim",
@@ -1379,7 +1717,9 @@
   "lon": -57.7157,
   "match": "Puerto Quijarro, Germán Busch, Santa Cruz, Bolívia",
   "nome": "PUERTO QUIJARRO",
-  "pais": "Bolívia"
+  "pais": "Bolívia",
+  "pais_mapa": "Bolivia",
+  "pais_mapa_fonte": "poligono"
  },
  "99244": {
   "consulta": "Rivera, Uruguay",
@@ -1388,7 +1728,9 @@
   "lon": -55.5408,
   "match": "Rivera, 40000, Uruguai",
   "nome": "RIVERA",
-  "pais": "Uruguai"
+  "pais": "Uruguai",
+  "pais_mapa": "Uruguay",
+  "pais_mapa_fonte": "poligono"
  },
  "99279": {
   "fonte": "nominatim",
@@ -1396,7 +1738,9 @@
   "lon": -61.1106,
   "match": "Santa Elena de Uairén, Parroquia Gran Sabana, Municipio Gran Sabana, Bolívar, Venezuela",
   "nome": "SANTA ELENA DE UAIRÉN",
-  "pais": "Venezuela"
+  "pais": "Venezuela",
+  "pais_mapa": "Venezuela",
+  "pais_mapa_fonte": "poligono"
  },
  "99287": {
   "fonte": "nominatim",
@@ -1404,7 +1748,9 @@
   "lon": 28.2818,
   "match": "Lusaca, Lusaka District, Lusaca (província), 10101, Zâmbia",
   "nome": "LUSACA",
-  "pais": "Zâmbia"
+  "pais": "Zâmbia",
+  "pais_mapa": "Zambia",
+  "pais_mapa_fonte": "poligono"
  },
  "99295": {
   "fonte": "nominatim",
@@ -1412,7 +1758,9 @@
   "lon": 125.7526,
   "match": "Pyongyang, Coreia do Norte",
   "nome": "PYONGYANG",
-  "pais": "Coreia do Norte"
+  "pais": "Coreia do Norte",
+  "pais_mapa": "North Korea",
+  "pais_mapa_fonte": "poligono"
  },
  "99317": {
   "fonte": "nominatim",
@@ -1420,7 +1768,9 @@
   "lon": 24.7573,
   "match": "Tallinn, Harju maakond, Estónia",
   "nome": "TALIN",
-  "pais": "Estónia"
+  "pais": "Estónia",
+  "pais_mapa": "Estonia",
+  "pais_mapa_fonte": "poligono"
  },
  "99325": {
   "fonte": "nominatim",
@@ -1428,7 +1778,9 @@
   "lon": 38.75,
   "match": "Adis Abeba, Etiópia",
   "nome": "ADIS ABEBA",
-  "pais": "Etiópia"
+  "pais": "Etiópia",
+  "pais_mapa": "Ethiopia",
+  "pais_mapa_fonte": "poligono"
  },
  "99333": {
   "consulta": "Saint-Georges, Guyane française",
@@ -1437,7 +1789,9 @@
   "lon": -51.8014,
   "match": "São Jorge, Saint-Georges, Guiana Francesa, 97313, França",
   "nome": "ST GEORGES DE LOYAPOCK",
-  "pais": "Guiana Francesa"
+  "pais": "Guiana Francesa",
+  "pais_mapa": "France",
+  "pais_mapa_fonte": "manual"
  },
  "99341": {
   "fonte": "nominatim",
@@ -1445,7 +1799,9 @@
   "lon": 33.7681,
   "match": "Lilôngué, Lilongwe, Região Central, Malawi",
   "nome": "LILONGUE",
-  "pais": "Malawi"
+  "pais": "Malawi",
+  "pais_mapa": "Malawi",
+  "pais_mapa_fonte": "poligono"
  },
  "99350": {
   "fonte": "nominatim",
@@ -1453,7 +1809,9 @@
   "lon": -7.985,
   "match": "Bamako, Bamaco, Cercle de Kati, Koulikoro, Mali",
   "nome": "BAMAKO",
-  "pais": "Mali"
+  "pais": "Mali",
+  "pais_mapa": "Mali",
+  "pais_mapa_fonte": "poligono"
  },
  "99376": {
   "fonte": "nominatim",
@@ -1461,7 +1819,9 @@
   "lon": 96.161,
   "match": "Rangum, ရန်ကုန်တိုင်းဒေသကြီး, Birmânia",
   "nome": "YANGON",
-  "pais": "Birmânia"
+  "pais": "Birmânia",
+  "pais_mapa": "Myanmar",
+  "pais_mapa_fonte": "poligono"
  },
  "99384": {
   "consulta": "Castries, Saint Lucia",
@@ -1470,7 +1830,9 @@
   "lon": -60.9902,
   "match": "Castries, LC04 101, Santa Lúcia",
   "nome": "CASTRIES",
-  "pais": "Santa Lúcia"
+  "pais": "Santa Lúcia",
+  "pais_mapa": null,
+  "pais_mapa_fonte": "manual"
  },
  "99430": {
   "fonte": "nominatim",
@@ -1478,7 +1840,9 @@
   "lon": -76.7928,
   "match": "Kingston, Surrey County, Jamaica",
   "nome": "KINGSTON-JAMAICA",
-  "pais": "Jamaica"
+  "pais": "Jamaica",
+  "pais_mapa": "Jamaica",
+  "pais_mapa_fonte": "poligono"
  },
  "99473": {
   "consulta": "Manama, Bahrain",
@@ -1487,7 +1851,9 @@
   "lon": 50.5822,
   "match": "Manama, Capital, 308, Bahrein",
   "nome": "BAREIN",
-  "pais": "Bahrein"
+  "pais": "Bahrein",
+  "pais_mapa": null,
+  "pais_mapa_fonte": "manual"
  },
  "99490": {
   "fonte": "nominatim",
@@ -1495,7 +1861,9 @@
   "lon": -81.379,
   "match": "Orlando, Condado de Orange, Flórida, Estados Unidos da América",
   "nome": "ORLANDO",
-  "pais": "Estados Unidos da América"
+  "pais": "Estados Unidos da América",
+  "pais_mapa": "United States of America",
+  "pais_mapa_fonte": "poligono"
  },
  "99503": {
   "fonte": "nominatim",
@@ -1503,7 +1871,9 @@
   "lon": -3.1884,
   "match": "Edimburgo, Escócia, Reino Unido",
   "nome": "EDIMBURGO",
-  "pais": "Reino Unido"
+  "pais": "Reino Unido",
+  "pais_mapa": "United Kingdom",
+  "pais_mapa_fonte": "poligono"
  },
  "99511": {
   "fonte": "nominatim",
@@ -1511,6 +1881,8 @@
   "lon": 5.3778,
   "match": "Marselha, Marseille, Bouches-du-Rhône, Provença-Alpes-Costa Azul, França metropolitana, França",
   "nome": "MARSELHA",
-  "pais": "França"
+  "pais": "França",
+  "pais_mapa": "France",
+  "pais_mapa_fonte": "poligono"
  }
 }

@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-25T16:37:15+00:00",
+ "gerado_em": "2026-10-25T16:48:16+00:00",
  "fonte": "resultados.tse.jus.br — arquivo de urna (BU)",
  "uf": "zz",
  "turno1": {
@@ -29,7 +29,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -39,13 +40,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 5.3204,
    "lon": -4.0161,
-   "pais": "Costa do Marfim"
+   "pais": "Costa do Marfim",
+   "pais_mapa": "Côte d'Ivoire"
   },
   {
    "codigo": "29262",
@@ -61,7 +64,8 @@
     "outros": 184,
     "comparecimento": 1396,
     "aptos": 2988,
-    "total": 1396
+    "total": 1396,
+    "validos": 1355
    },
    "t2": {
     "13": 643,
@@ -71,7 +75,8 @@
     "outros": 0,
     "comparecimento": 1465,
     "aptos": 2988,
-    "total": 1465
+    "total": 1465,
+    "validos": 1415
    },
    "metricas": {
     "candidatos": {
@@ -80,16 +85,16 @@
       "t2": 643,
       "delta": 131,
       "pct": 25.5859375,
-      "share_t1": 36.67621776504298,
-      "share_t2": 43.89078498293515
+      "share_t1": 37.7859778597786,
+      "share_t2": 45.44169611307421
      },
      "22": {
       "t1": 659,
       "t2": 772,
       "delta": 113,
       "pct": 17.147192716236724,
-      "share_t1": 47.20630372492837,
-      "share_t2": 52.696245733788395
+      "share_t1": 48.63468634686347,
+      "share_t2": 54.55830388692579
      }
     },
     "diferenca_crescimento": 18,
@@ -100,6 +105,11 @@
     "total_t2": 1465,
     "delta_total": 69,
     "pct_total": 4.9426934097421205,
+    "validos_t1": 1355,
+    "validos_t2": 1415,
+    "delta_validos": 60,
+    "aptos_t2": 2988,
+    "comparecimento_t2": 1465,
     "brancos_nulos_t1": 41,
     "brancos_nulos_t2": 50
    },
@@ -207,7 +217,8 @@
    ],
    "lat": 24.4538,
    "lon": 54.3774,
-   "pais": "Emirados Árabes Unidos"
+   "pais": "Emirados Árabes Unidos",
+   "pais_mapa": "United Arab Emirates"
   },
   {
    "codigo": "99198",
@@ -223,7 +234,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -233,13 +245,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 9.0643,
    "lon": 7.4893,
-   "pais": "Nigéria"
+   "pais": "Nigéria",
+   "pais_mapa": "Nigeria"
   },
   {
    "codigo": "29270",
@@ -255,7 +269,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -265,13 +280,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 5.5571,
    "lon": -0.2012,
-   "pais": "Gana"
+   "pais": "Gana",
+   "pais_mapa": "Ghana"
   },
   {
    "codigo": "99325",
@@ -287,7 +304,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -297,13 +315,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 9.0,
    "lon": 38.75,
-   "pais": "Etiópia"
+   "pais": "Etiópia",
+   "pais_mapa": "Ethiopia"
   },
   {
    "codigo": "30457",
@@ -319,7 +339,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -329,13 +350,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 52.3731,
    "lon": 4.8925,
-   "pais": "Países Baixos"
+   "pais": "Países Baixos",
+   "pais_mapa": "Netherlands"
   },
   {
    "codigo": "29289",
@@ -351,7 +374,8 @@
     "outros": 53,
     "comparecimento": 833,
     "aptos": 1489,
-    "total": 833
+    "total": 833,
+    "validos": 787
    },
    "t2": {
     "13": 725,
@@ -361,7 +385,8 @@
     "outros": 0,
     "comparecimento": 826,
     "aptos": 1489,
-    "total": 826
+    "total": 826,
+    "validos": 801
    },
    "metricas": {
     "candidatos": {
@@ -370,16 +395,16 @@
       "t2": 725,
       "delta": 50,
       "pct": 7.407407407407407,
-      "share_t1": 81.03241296518607,
-      "share_t2": 87.772397094431
+      "share_t1": 85.7687420584498,
+      "share_t2": 90.51186017478152
      },
      "22": {
       "t1": 59,
       "t2": 76,
       "delta": 17,
       "pct": 28.8135593220339,
-      "share_t1": 7.082833133253302,
-      "share_t2": 9.200968523002421
+      "share_t1": 7.496823379923761,
+      "share_t2": 9.488139825218477
      }
     },
     "diferenca_crescimento": 33,
@@ -390,6 +415,11 @@
     "total_t2": 826,
     "delta_total": -7,
     "pct_total": -0.8403361344537815,
+    "validos_t1": 787,
+    "validos_t2": 801,
+    "delta_validos": 14,
+    "aptos_t2": 1489,
+    "comparecimento_t2": 826,
     "brancos_nulos_t1": 46,
     "brancos_nulos_t2": 25
    },
@@ -437,7 +467,8 @@
    ],
    "lat": 31.9516,
    "lon": 35.924,
-   "pais": "Jordânia"
+   "pais": "Jordânia",
+   "pais_mapa": "Jordan"
   },
   {
    "codigo": "29297",
@@ -453,7 +484,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -463,13 +495,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 39.9208,
    "lon": 32.854,
-   "pais": "Turquia"
+   "pais": "Turquia",
+   "pais_mapa": "Turkey"
   },
   {
    "codigo": "29300",
@@ -485,7 +519,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -495,13 +530,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 36.7729,
    "lon": 3.0588,
-   "pais": "Argélia"
+   "pais": "Argélia",
+   "pais_mapa": "Algeria"
   },
   {
    "codigo": "29319",
@@ -517,7 +554,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -527,13 +565,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -30.6171,
    "lon": -56.9373,
-   "pais": "Uruguai"
+   "pais": "Uruguai",
+   "pais_mapa": "Uruguay"
   },
   {
    "codigo": "29327",
@@ -549,7 +589,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -559,13 +600,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -25.28,
    "lon": -57.6344,
-   "pais": "Paraguai"
+   "pais": "Paraguai",
+   "pais_mapa": "Paraguay"
   },
   {
    "codigo": "39241",
@@ -581,7 +624,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -591,13 +635,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 51.116,
    "lon": 71.4677,
-   "pais": "Cazaquistão"
+   "pais": "Cazaquistão",
+   "pais_mapa": "Kazakhstan"
   },
   {
    "codigo": "29335",
@@ -613,7 +659,8 @@
     "outros": 68,
     "comparecimento": 508,
     "aptos": 1211,
-    "total": 508
+    "total": 508,
+    "validos": 494
    },
    "t2": {
     "13": 255,
@@ -623,7 +670,8 @@
     "outros": 0,
     "comparecimento": 581,
     "aptos": 1211,
-    "total": 581
+    "total": 581,
+    "validos": 566
    },
    "metricas": {
     "candidatos": {
@@ -632,16 +680,16 @@
       "t2": 255,
       "delta": 59,
       "pct": 30.102040816326532,
-      "share_t1": 38.58267716535433,
-      "share_t2": 43.88984509466437
+      "share_t1": 39.67611336032389,
+      "share_t2": 45.053003533568905
      },
      "22": {
       "t1": 230,
       "t2": 311,
       "delta": 81,
       "pct": 35.21739130434783,
-      "share_t1": 45.275590551181104,
-      "share_t2": 53.52839931153184
+      "share_t1": 46.558704453441294,
+      "share_t2": 54.946996466431095
      }
     },
     "diferenca_crescimento": -22,
@@ -652,6 +700,11 @@
     "total_t2": 581,
     "delta_total": 73,
     "pct_total": 14.37007874015748,
+    "validos_t1": 494,
+    "validos_t2": 566,
+    "delta_validos": 72,
+    "aptos_t2": 1211,
+    "comparecimento_t2": 581,
     "brancos_nulos_t1": 14,
     "brancos_nulos_t2": 15
    },
@@ -699,7 +752,8 @@
    ],
    "lat": 37.9756,
    "lon": 23.7348,
-   "pais": "Grécia"
+   "pais": "Grécia",
+   "pais_mapa": "Greece"
   },
   {
    "codigo": "39080",
@@ -715,7 +769,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -725,13 +780,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 33.7545,
    "lon": -84.3898,
-   "pais": "Estados Unidos da América"
+   "pais": "Estados Unidos da América",
+   "pais_mapa": "United States of America"
   },
   {
    "codigo": "99171",
@@ -747,7 +804,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -757,13 +815,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 33.3062,
    "lon": 44.3872,
-   "pais": "Iraque"
+   "pais": "Iraque",
+   "pais_mapa": "Iraq"
   },
   {
    "codigo": "39128",
@@ -779,7 +839,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -789,13 +850,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 40.3756,
    "lon": 49.8328,
-   "pais": "Azerbaijão"
+   "pais": "Azerbaijão",
+   "pais_mapa": "Azerbaijan"
   },
   {
    "codigo": "99350",
@@ -811,7 +874,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -821,13 +885,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 12.6133,
    "lon": -7.985,
-   "pais": "Mali"
+   "pais": "Mali",
+   "pais_mapa": "Mali"
   },
   {
    "codigo": "29343",
@@ -843,7 +909,8 @@
     "outros": 8,
     "comparecimento": 102,
     "aptos": 310,
-    "total": 102
+    "total": 102,
+    "validos": 99
    },
    "t2": {
     "13": 56,
@@ -853,7 +920,8 @@
     "outros": 0,
     "comparecimento": 118,
     "aptos": 310,
-    "total": 118
+    "total": 118,
+    "validos": 116
    },
    "metricas": {
     "candidatos": {
@@ -862,16 +930,16 @@
       "t2": 56,
       "delta": 16,
       "pct": 40.0,
-      "share_t1": 39.21568627450981,
-      "share_t2": 47.45762711864407
+      "share_t1": 40.4040404040404,
+      "share_t2": 48.275862068965516
      },
      "22": {
       "t1": 51,
       "t2": 60,
       "delta": 9,
       "pct": 17.647058823529413,
-      "share_t1": 50.0,
-      "share_t2": 50.847457627118644
+      "share_t1": 51.515151515151516,
+      "share_t2": 51.724137931034484
      }
     },
     "diferenca_crescimento": 7,
@@ -882,6 +950,11 @@
     "total_t2": 118,
     "delta_total": 16,
     "pct_total": 15.686274509803921,
+    "validos_t1": 99,
+    "validos_t2": 116,
+    "delta_validos": 17,
+    "aptos_t2": 310,
+    "comparecimento_t2": 118,
     "brancos_nulos_t1": 3,
     "brancos_nulos_t2": 2
    },
@@ -909,7 +982,8 @@
    ],
    "lat": 13.7525,
    "lon": 100.4935,
-   "pais": "Tailândia"
+   "pais": "Tailândia",
+   "pais_mapa": "Thailand"
   },
   {
    "codigo": "29351",
@@ -925,7 +999,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -935,13 +1010,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 41.3826,
    "lon": 2.1771,
-   "pais": "Espanha"
+   "pais": "Espanha",
+   "pais_mapa": "Spain"
   },
   {
    "codigo": "99473",
@@ -957,7 +1034,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -967,13 +1045,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 26.2235,
    "lon": 50.5822,
-   "pais": "Bahrein"
+   "pais": "Bahrein",
+   "pais_mapa": null
   },
   {
    "codigo": "29360",
@@ -989,7 +1069,8 @@
     "outros": 225,
     "comparecimento": 4097,
     "aptos": 8919,
-    "total": 4097
+    "total": 4097,
+    "validos": 3901
    },
    "t2": {
     "13": 2736,
@@ -999,7 +1080,8 @@
     "outros": 0,
     "comparecimento": 4160,
     "aptos": 8919,
-    "total": 4160
+    "total": 4160,
+    "validos": 4012
    },
    "metricas": {
     "candidatos": {
@@ -1008,16 +1090,16 @@
       "t2": 2736,
       "delta": 198,
       "pct": 7.801418439716312,
-      "share_t1": 61.94776665853063,
-      "share_t2": 65.76923076923077
+      "share_t1": 65.06024096385542,
+      "share_t2": 68.19541375872383
      },
      "22": {
       "t1": 1138,
       "t2": 1276,
       "delta": 138,
       "pct": 12.126537785588752,
-      "share_t1": 27.776421772028314,
-      "share_t2": 30.673076923076923
+      "share_t1": 29.17200717764676,
+      "share_t2": 31.804586241276173
      }
     },
     "diferenca_crescimento": 60,
@@ -1028,6 +1110,11 @@
     "total_t2": 4160,
     "delta_total": 63,
     "pct_total": 1.5377105198926044,
+    "validos_t1": 3901,
+    "validos_t2": 4012,
+    "delta_validos": 111,
+    "aptos_t2": 8919,
+    "comparecimento_t2": 4160,
     "brancos_nulos_t1": 196,
     "brancos_nulos_t2": 148
    },
@@ -1295,7 +1382,8 @@
    ],
    "lat": 33.8892,
    "lon": 35.5026,
-   "pais": "Líbano"
+   "pais": "Líbano",
+   "pais_mapa": "Lebanon"
   },
   {
    "codigo": "29378",
@@ -1311,7 +1399,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -1321,13 +1410,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 44.8153,
    "lon": 20.4457,
-   "pais": "Sérvia"
+   "pais": "Sérvia",
+   "pais_mapa": "Serbia"
   },
   {
    "codigo": "38881",
@@ -1343,7 +1434,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -1353,13 +1445,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 17.2502,
    "lon": -88.77,
-   "pais": "Belize"
+   "pais": "Belize",
+   "pais_mapa": "Belize"
   },
   {
    "codigo": "29386",
@@ -1375,7 +1469,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -1385,13 +1480,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 52.5174,
    "lon": 13.3951,
-   "pais": "Alemanha"
+   "pais": "Alemanha",
+   "pais_mapa": "Germany"
   },
   {
    "codigo": "29394",
@@ -1407,7 +1504,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -1417,13 +1515,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 11.8613,
    "lon": -15.5831,
-   "pais": "Guiné-Bissau"
+   "pais": "Guiné-Bissau",
+   "pais_mapa": "Guinea-Bissau"
   },
   {
    "codigo": "29408",
@@ -1439,7 +1539,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -1449,13 +1550,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 4.6534,
    "lon": -74.0836,
-   "pais": "Colômbia"
+   "pais": "Colômbia",
+   "pais_mapa": "Colombia"
   },
   {
    "codigo": "29416",
@@ -1471,7 +1574,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -1481,45 +1585,105 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 42.3588,
    "lon": -71.0578,
-   "pais": "Estados Unidos da América"
+   "pais": "Estados Unidos da América",
+   "pais_mapa": "United States of America"
   },
   {
    "codigo": "39209",
    "nome": "BRATISLAVA",
    "secoes_previstas": 1,
-   "secoes_apuradas_t2": 0,
-   "secoes_comparaveis": 0,
+   "secoes_apuradas_t2": 1,
+   "secoes_comparaveis": 1,
    "t1": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "13": 35,
+    "22": 13,
+    "brancos": 2,
+    "nulos": 1,
+    "outros": 10,
+    "comparecimento": 61,
+    "aptos": 129,
+    "total": 61,
+    "validos": 58
    },
    "t2": {
-    "13": 0,
-    "22": 0,
+    "13": 47,
+    "22": 14,
     "brancos": 0,
-    "nulos": 0,
+    "nulos": 4,
     "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "comparecimento": 65,
+    "aptos": 131,
+    "total": 65,
+    "validos": 61
    },
-   "metricas": null,
-   "secoes": [],
+   "metricas": {
+    "candidatos": {
+     "13": {
+      "t1": 35,
+      "t2": 47,
+      "delta": 12,
+      "pct": 34.285714285714285,
+      "share_t1": 60.3448275862069,
+      "share_t2": 77.04918032786885
+     },
+     "22": {
+      "t1": 13,
+      "t2": 14,
+      "delta": 1,
+      "pct": 7.6923076923076925,
+      "share_t1": 22.413793103448278,
+      "share_t2": 22.950819672131146
+     }
+    },
+    "diferenca_crescimento": 11,
+    "margem_t1": 22,
+    "margem_t2": 33,
+    "variacao_margem": 11,
+    "total_t1": 61,
+    "total_t2": 65,
+    "delta_total": 4,
+    "pct_total": 6.557377049180328,
+    "validos_t1": 58,
+    "validos_t2": 61,
+    "delta_validos": 3,
+    "aptos_t2": 131,
+    "comparecimento_t2": 65,
+    "brancos_nulos_t1": 3,
+    "brancos_nulos_t2": 4
+   },
+   "secoes": [
+    {
+     "zona": "0001",
+     "secao": "1069",
+     "t1": {
+      "13": 35,
+      "22": 13,
+      "brancos": 2,
+      "nulos": 1,
+      "comparecimento": 61,
+      "aptos": 129
+     },
+     "t2": {
+      "13": 47,
+      "22": 14,
+      "brancos": 0,
+      "nulos": 4,
+      "comparecimento": 65,
+      "aptos": 131
+     }
+    }
+   ],
    "lat": 48.1435,
    "lon": 17.1083,
-   "pais": "Eslováquia"
+   "pais": "Eslováquia",
+   "pais_mapa": "Slovakia"
   },
   {
    "codigo": "39187",
@@ -1535,7 +1699,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -1545,13 +1710,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -4.2694,
    "lon": 15.2712,
-   "pais": "República do Congo"
+   "pais": "República do Congo",
+   "pais_mapa": "Dem. Rep. Congo"
   },
   {
    "codigo": "29424",
@@ -1567,7 +1734,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -1577,13 +1745,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 13.0978,
    "lon": -59.6184,
-   "pais": "Barbados"
+   "pais": "Barbados",
+   "pais_mapa": null
   },
   {
    "codigo": "29432",
@@ -1599,7 +1769,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -1609,13 +1780,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 50.8467,
    "lon": 4.3525,
-   "pais": "Bélgica"
+   "pais": "Bélgica",
+   "pais_mapa": "Belgium"
   },
   {
    "codigo": "29440",
@@ -1631,7 +1804,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -1641,13 +1815,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 44.4361,
    "lon": 26.1027,
-   "pais": "Roménia"
+   "pais": "Roménia",
+   "pais_mapa": "Romania"
   },
   {
    "codigo": "29459",
@@ -1663,7 +1839,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -1673,13 +1850,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 47.4979,
    "lon": 19.0402,
-   "pais": "Hungria"
+   "pais": "Hungria",
+   "pais_mapa": "Hungary"
   },
   {
    "codigo": "29467",
@@ -1695,7 +1874,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -1705,13 +1885,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -34.6096,
    "lon": -58.3888,
-   "pais": "Argentina"
+   "pais": "Argentina",
+   "pais_mapa": "Argentina"
   },
   {
    "codigo": "29475",
@@ -1727,7 +1909,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -1737,13 +1920,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 4.9372,
    "lon": -52.3259,
-   "pais": "Guiana Francesa"
+   "pais": "Guiana Francesa",
+   "pais_mapa": "France"
   },
   {
    "codigo": "29483",
@@ -1759,7 +1944,8 @@
     "outros": 6,
     "comparecimento": 69,
     "aptos": 203,
-    "total": 69
+    "total": 69,
+    "validos": 64
    },
    "t2": {
     "13": 60,
@@ -1769,7 +1955,8 @@
     "outros": 0,
     "comparecimento": 79,
     "aptos": 203,
-    "total": 79
+    "total": 79,
+    "validos": 76
    },
    "metricas": {
     "candidatos": {
@@ -1778,16 +1965,16 @@
       "t2": 60,
       "delta": 14,
       "pct": 30.434782608695652,
-      "share_t1": 66.66666666666667,
-      "share_t2": 75.9493670886076
+      "share_t1": 71.875,
+      "share_t2": 78.94736842105263
      },
      "22": {
       "t1": 12,
       "t2": 16,
       "delta": 4,
       "pct": 33.333333333333336,
-      "share_t1": 17.391304347826086,
-      "share_t2": 20.253164556962027
+      "share_t1": 18.75,
+      "share_t2": 21.05263157894737
      }
     },
     "diferenca_crescimento": 10,
@@ -1798,6 +1985,11 @@
     "total_t2": 79,
     "delta_total": 10,
     "pct_total": 14.492753623188406,
+    "validos_t1": 64,
+    "validos_t2": 76,
+    "delta_validos": 12,
+    "aptos_t2": 203,
+    "comparecimento_t2": 79,
     "brancos_nulos_t1": 5,
     "brancos_nulos_t2": 3
    },
@@ -1825,7 +2017,8 @@
    ],
    "lat": 30.0444,
    "lon": 31.2357,
-   "pais": "Egito"
+   "pais": "Egito",
+   "pais_mapa": "Egypt"
   },
   {
    "codigo": "29491",
@@ -1841,7 +2034,8 @@
     "outros": 311,
     "comparecimento": 2705,
     "aptos": 6243,
-    "total": 2705
+    "total": 2705,
+    "validos": 2594
    },
    "t2": {
     "13": 1856,
@@ -1851,7 +2045,8 @@
     "outros": 0,
     "comparecimento": 2965,
     "aptos": 6246,
-    "total": 2965
+    "total": 2965,
+    "validos": 2853
    },
    "metricas": {
     "candidatos": {
@@ -1860,16 +2055,16 @@
       "t2": 1856,
       "delta": 378,
       "pct": 25.57510148849797,
-      "share_t1": 54.63955637707948,
-      "share_t2": 62.596964586846546
+      "share_t1": 56.97764070932922,
+      "share_t2": 65.05432877672625
      },
      "22": {
       "t1": 805,
       "t2": 997,
       "delta": 192,
       "pct": 23.850931677018632,
-      "share_t1": 29.75970425138632,
-      "share_t2": 33.6256323777403
+      "share_t1": 31.033153430994602,
+      "share_t2": 34.94567122327375
      }
     },
     "diferenca_crescimento": 186,
@@ -1880,6 +2075,11 @@
     "total_t2": 2965,
     "delta_total": 260,
     "pct_total": 9.611829944547136,
+    "validos_t1": 2594,
+    "validos_t2": 2853,
+    "delta_validos": 259,
+    "aptos_t2": 6246,
+    "comparecimento_t2": 2965,
     "brancos_nulos_t1": 111,
     "brancos_nulos_t2": 112
    },
@@ -2087,7 +2287,8 @@
    ],
    "lat": -35.2976,
    "lon": 149.1013,
-   "pais": "Austrália"
+   "pais": "Austrália",
+   "pais_mapa": "Australia"
   },
   {
    "codigo": "30651",
@@ -2103,7 +2304,8 @@
     "outros": 9,
     "comparecimento": 99,
     "aptos": 419,
-    "total": 99
+    "total": 99,
+    "validos": 92
    },
    "t2": {
     "13": 67,
@@ -2113,7 +2315,8 @@
     "outros": 0,
     "comparecimento": 119,
     "aptos": 419,
-    "total": 119
+    "total": 119,
+    "validos": 113
    },
    "metricas": {
     "candidatos": {
@@ -2122,16 +2325,16 @@
       "t2": 67,
       "delta": 19,
       "pct": 39.583333333333336,
-      "share_t1": 48.484848484848484,
-      "share_t2": 56.30252100840336
+      "share_t1": 52.17391304347826,
+      "share_t2": 59.29203539823009
      },
      "22": {
       "t1": 35,
       "t2": 46,
       "delta": 11,
       "pct": 31.428571428571427,
-      "share_t1": 35.35353535353536,
-      "share_t2": 38.65546218487395
+      "share_t1": 38.04347826086956,
+      "share_t2": 40.70796460176991
      }
     },
     "diferenca_crescimento": 8,
@@ -2142,6 +2345,11 @@
     "total_t2": 119,
     "delta_total": 20,
     "pct_total": 20.2020202020202,
+    "validos_t1": 92,
+    "validos_t2": 113,
+    "delta_validos": 21,
+    "aptos_t2": 419,
+    "comparecimento_t2": 119,
     "brancos_nulos_t1": 7,
     "brancos_nulos_t2": 6
    },
@@ -2169,7 +2377,8 @@
    ],
    "lat": 23.1288,
    "lon": 113.259,
-   "pais": "China"
+   "pais": "China",
+   "pais_mapa": "China"
   },
   {
    "codigo": "29505",
@@ -2185,7 +2394,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -2195,13 +2405,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 10.5061,
    "lon": -66.9146,
-   "pais": "Venezuela"
+   "pais": "Venezuela",
+   "pais_mapa": "Venezuela"
   },
   {
    "codigo": "99384",
@@ -2217,7 +2429,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -2227,13 +2440,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 14.0096,
    "lon": -60.9902,
-   "pais": "Santa Lúcia"
+   "pais": "Santa Lúcia",
+   "pais_mapa": null
   },
   {
    "codigo": "29513",
@@ -2249,7 +2464,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -2259,13 +2475,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 41.8756,
    "lon": -87.6244,
-   "pais": "Estados Unidos da América"
+   "pais": "Estados Unidos da América",
+   "pais_mapa": "United States of America"
   },
   {
    "codigo": "29521",
@@ -2281,7 +2499,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -2291,13 +2510,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -33.6938,
    "lon": -53.4561,
-   "pais": "Uruguai"
+   "pais": "Uruguai",
+   "pais_mapa": "Uruguay"
   },
   {
    "codigo": "29530",
@@ -2313,7 +2534,8 @@
     "outros": 12,
     "comparecimento": 170,
     "aptos": 355,
-    "total": 170
+    "total": 170,
+    "validos": 160
    },
    "t2": {
     "13": 107,
@@ -2323,7 +2545,8 @@
     "outros": 0,
     "comparecimento": 176,
     "aptos": 355,
-    "total": 176
+    "total": 176,
+    "validos": 168
    },
    "metricas": {
     "candidatos": {
@@ -2332,16 +2555,16 @@
       "t2": 107,
       "delta": 17,
       "pct": 18.88888888888889,
-      "share_t1": 52.94117647058823,
-      "share_t2": 60.79545454545455
+      "share_t1": 56.25,
+      "share_t2": 63.69047619047619
      },
      "22": {
       "t1": 58,
       "t2": 61,
       "delta": 3,
       "pct": 5.172413793103448,
-      "share_t1": 34.11764705882353,
-      "share_t2": 34.65909090909091
+      "share_t1": 36.25,
+      "share_t2": 36.30952380952381
      }
     },
     "diferenca_crescimento": 14,
@@ -2352,6 +2575,11 @@
     "total_t2": 176,
     "delta_total": 6,
     "pct_total": 3.5294117647058822,
+    "validos_t1": 160,
+    "validos_t2": 168,
+    "delta_validos": 8,
+    "aptos_t2": 355,
+    "comparecimento_t2": 176,
     "brancos_nulos_t1": 10,
     "brancos_nulos_t2": 8
    },
@@ -2379,7 +2607,8 @@
    ],
    "lat": -33.9288,
    "lon": 18.4172,
-   "pais": "África do Sul"
+   "pais": "África do Sul",
+   "pais_mapa": "South Africa"
   },
   {
    "codigo": "29556",
@@ -2395,7 +2624,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -2405,13 +2635,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -25.5169,
    "lon": -54.6169,
-   "pais": "Paraguai"
+   "pais": "Paraguai",
+   "pais_mapa": "Paraguay"
   },
   {
    "codigo": "29564",
@@ -2427,7 +2659,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -2437,13 +2670,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 8.3224,
    "lon": -62.6897,
-   "pais": "Venezuela"
+   "pais": "Venezuela",
+   "pais_mapa": "Venezuela"
   },
   {
    "codigo": "99210",
@@ -2459,7 +2694,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -2469,13 +2705,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -11.0185,
    "lon": -68.7538,
-   "pais": "Bolívia"
+   "pais": "Bolívia",
+   "pais_mapa": "Brazil"
   },
   {
    "codigo": "29572",
@@ -2491,7 +2729,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -2501,13 +2740,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -17.4012,
    "lon": -66.1676,
-   "pais": "Bolívia"
+   "pais": "Bolívia",
+   "pais_mapa": "Bolivia"
   },
   {
    "codigo": "30929",
@@ -2523,7 +2764,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -2533,13 +2775,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 6.9389,
    "lon": 79.8542,
-   "pais": "Seri-Lanca"
+   "pais": "Seri-Lanca",
+   "pais_mapa": "Sri Lanka"
   },
   {
    "codigo": "38903",
@@ -2555,7 +2799,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -2565,13 +2810,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 9.5171,
    "lon": -13.6998,
-   "pais": "Guiné"
+   "pais": "Guiné",
+   "pais_mapa": "Guinea"
   },
   {
    "codigo": "29580",
@@ -2587,7 +2834,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -2597,45 +2845,165 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -23.1775,
    "lon": -57.1675,
-   "pais": "Paraguai"
+   "pais": "Paraguai",
+   "pais_mapa": "Paraguay"
   },
   {
    "codigo": "29599",
    "nome": "COPENHAGUE",
    "secoes_previstas": 12,
-   "secoes_apuradas_t2": 0,
-   "secoes_comparaveis": 0,
+   "secoes_apuradas_t2": 4,
+   "secoes_comparaveis": 4,
    "t1": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "13": 1166,
+    "22": 195,
+    "brancos": 23,
+    "nulos": 22,
+    "outros": 116,
+    "comparecimento": 1522,
+    "aptos": 2856,
+    "total": 1522,
+    "validos": 1477
    },
    "t2": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
+    "13": 1383,
+    "22": 243,
+    "brancos": 24,
+    "nulos": 27,
     "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "comparecimento": 1677,
+    "aptos": 2855,
+    "total": 1677,
+    "validos": 1626
    },
-   "metricas": null,
-   "secoes": [],
+   "metricas": {
+    "candidatos": {
+     "13": {
+      "t1": 1166,
+      "t2": 1383,
+      "delta": 217,
+      "pct": 18.610634648370496,
+      "share_t1": 78.94380501015573,
+      "share_t2": 85.05535055350553
+     },
+     "22": {
+      "t1": 195,
+      "t2": 243,
+      "delta": 48,
+      "pct": 24.615384615384617,
+      "share_t1": 13.202437373053487,
+      "share_t2": 14.944649446494465
+     }
+    },
+    "diferenca_crescimento": 169,
+    "margem_t1": 971,
+    "margem_t2": 1140,
+    "variacao_margem": 169,
+    "total_t1": 1522,
+    "total_t2": 1677,
+    "delta_total": 155,
+    "pct_total": 10.183968462549277,
+    "validos_t1": 1477,
+    "validos_t2": 1626,
+    "delta_validos": 149,
+    "aptos_t2": 2855,
+    "comparecimento_t2": 1677,
+    "brancos_nulos_t1": 45,
+    "brancos_nulos_t2": 51
+   },
+   "secoes": [
+    {
+     "zona": "0001",
+     "secao": "1411",
+     "t1": {
+      "13": 245,
+      "22": 20,
+      "brancos": 2,
+      "nulos": 5,
+      "comparecimento": 291,
+      "aptos": 590
+     },
+     "t2": {
+      "13": 283,
+      "22": 27,
+      "brancos": 4,
+      "nulos": 4,
+      "comparecimento": 318,
+      "aptos": 591
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1697",
+     "t1": {
+      "13": 234,
+      "22": 46,
+      "brancos": 9,
+      "nulos": 6,
+      "comparecimento": 314,
+      "aptos": 674
+     },
+     "t2": {
+      "13": 303,
+      "22": 55,
+      "brancos": 7,
+      "nulos": 4,
+      "comparecimento": 369,
+      "aptos": 675
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1698",
+     "t1": {
+      "13": 356,
+      "22": 64,
+      "brancos": 5,
+      "nulos": 5,
+      "comparecimento": 468,
+      "aptos": 795
+     },
+     "t2": {
+      "13": 398,
+      "22": 78,
+      "brancos": 8,
+      "nulos": 11,
+      "comparecimento": 495,
+      "aptos": 793
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1699",
+     "t1": {
+      "13": 331,
+      "22": 65,
+      "brancos": 7,
+      "nulos": 6,
+      "comparecimento": 449,
+      "aptos": 797
+     },
+     "t2": {
+      "13": 399,
+      "22": 83,
+      "brancos": 5,
+      "nulos": 8,
+      "comparecimento": 495,
+      "aptos": 796
+     }
+    }
+   ],
    "lat": 55.6867,
    "lon": 12.5701,
-   "pais": "Dinamarca"
+   "pais": "Dinamarca",
+   "pais_mapa": "Denmark"
   },
   {
    "codigo": "38920",
@@ -2651,7 +3019,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -2661,13 +3030,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 6.3677,
    "lon": 2.4253,
-   "pais": "Benim"
+   "pais": "Benim",
+   "pais_mapa": "Benin"
   },
   {
    "codigo": "29602",
@@ -2683,7 +3054,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -2693,13 +3065,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -31.4167,
    "lon": -64.1834,
-   "pais": "Argentina"
+   "pais": "Argentina",
+   "pais_mapa": "Argentina"
   },
   {
    "codigo": "29610",
@@ -2715,7 +3089,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -2725,13 +3100,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 14.6934,
    "lon": -17.4479,
-   "pais": "Senegal"
+   "pais": "Senegal",
+   "pais_mapa": "Senegal"
   },
   {
    "codigo": "29629",
@@ -2747,7 +3124,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -2757,13 +3135,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 23.7644,
    "lon": 90.389,
-   "pais": "Bangladeche"
+   "pais": "Bangladeche",
+   "pais_mapa": "Bangladesh"
   },
   {
    "codigo": "29637",
@@ -2779,7 +3159,8 @@
     "outros": 4,
     "comparecimento": 118,
     "aptos": 775,
-    "total": 118
+    "total": 118,
+    "validos": 108
    },
    "t2": {
     "13": 106,
@@ -2789,7 +3170,8 @@
     "outros": 0,
     "comparecimento": 119,
     "aptos": 775,
-    "total": 119
+    "total": 119,
+    "validos": 117
    },
    "metricas": {
     "candidatos": {
@@ -2798,16 +3180,16 @@
       "t2": 106,
       "delta": 9,
       "pct": 9.278350515463918,
-      "share_t1": 82.20338983050847,
-      "share_t2": 89.07563025210084
+      "share_t1": 89.81481481481481,
+      "share_t2": 90.5982905982906
      },
      "22": {
       "t1": 7,
       "t2": 11,
       "delta": 4,
       "pct": 57.142857142857146,
-      "share_t1": 5.932203389830509,
-      "share_t2": 9.243697478991596
+      "share_t1": 6.481481481481482,
+      "share_t2": 9.401709401709402
      }
     },
     "diferenca_crescimento": 5,
@@ -2818,6 +3200,11 @@
     "total_t2": 119,
     "delta_total": 1,
     "pct_total": 0.847457627118644,
+    "validos_t1": 108,
+    "validos_t2": 117,
+    "delta_validos": 9,
+    "aptos_t2": 775,
+    "comparecimento_t2": 119,
     "brancos_nulos_t1": 10,
     "brancos_nulos_t2": 2
    },
@@ -2845,7 +3232,8 @@
    ],
    "lat": 33.5131,
    "lon": 36.3096,
-   "pais": "Síria"
+   "pais": "Síria",
+   "pais_mapa": "Syria"
   },
   {
    "codigo": "38962",
@@ -2861,7 +3249,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -2871,13 +3260,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -6.8161,
    "lon": 39.2804,
-   "pais": "Tanzânia"
+   "pais": "Tanzânia",
+   "pais_mapa": "Tanzania"
   },
   {
    "codigo": "29653",
@@ -2893,7 +3284,8 @@
     "outros": 37,
     "comparecimento": 364,
     "aptos": 758,
-    "total": 364
+    "total": 364,
+    "validos": 357
    },
    "t2": {
     "13": 159,
@@ -2903,7 +3295,8 @@
     "outros": 0,
     "comparecimento": 363,
     "aptos": 759,
-    "total": 363
+    "total": 363,
+    "validos": 354
    },
    "metricas": {
     "candidatos": {
@@ -2912,16 +3305,16 @@
       "t2": 159,
       "delta": 12,
       "pct": 8.16326530612245,
-      "share_t1": 40.38461538461539,
-      "share_t2": 43.80165289256198
+      "share_t1": 41.1764705882353,
+      "share_t2": 44.91525423728814
      },
      "22": {
       "t1": 173,
       "t2": 195,
       "delta": 22,
       "pct": 12.716763005780347,
-      "share_t1": 47.527472527472526,
-      "share_t2": 53.71900826446281
+      "share_t1": 48.4593837535014,
+      "share_t2": 55.08474576271186
      }
     },
     "diferenca_crescimento": -10,
@@ -2932,6 +3325,11 @@
     "total_t2": 363,
     "delta_total": -1,
     "pct_total": -0.27472527472527475,
+    "validos_t1": 357,
+    "validos_t2": 354,
+    "delta_validos": -3,
+    "aptos_t2": 759,
+    "comparecimento_t2": 363,
     "brancos_nulos_t1": 7,
     "brancos_nulos_t2": 9
    },
@@ -2959,7 +3357,8 @@
    ],
    "lat": 25.3109,
    "lon": 51.5082,
-   "pais": "Catar"
+   "pais": "Catar",
+   "pais_mapa": "Qatar"
   },
   {
    "codigo": "29661",
@@ -2975,7 +3374,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -2985,13 +3385,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 53.3494,
    "lon": -6.2606,
-   "pais": "Irlanda"
+   "pais": "Irlanda",
+   "pais_mapa": "Ireland"
   },
   {
    "codigo": "29645",
@@ -3007,7 +3409,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -3017,13 +3420,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -8.5537,
    "lon": 125.5784,
-   "pais": "Timor-Leste"
+   "pais": "Timor-Leste",
+   "pais_mapa": "Timor-Leste"
   },
   {
    "codigo": "99503",
@@ -3039,7 +3444,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -3049,13 +3455,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 55.9533,
    "lon": -3.1884,
-   "pais": "Reino Unido"
+   "pais": "Reino Unido",
+   "pais_mapa": "United Kingdom"
   },
   {
    "codigo": "29670",
@@ -3071,7 +3479,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -3081,13 +3490,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -27.3376,
    "lon": -55.8669,
-   "pais": "Paraguai"
+   "pais": "Paraguai",
+   "pais_mapa": "Paraguay"
   },
   {
    "codigo": "29688",
@@ -3103,7 +3514,8 @@
     "outros": 214,
     "comparecimento": 2019,
     "aptos": 3757,
-    "total": 2019
+    "total": 2019,
+    "validos": 1968
    },
    "t2": {
     "13": 1615,
@@ -3113,7 +3525,8 @@
     "outros": 0,
     "comparecimento": 2117,
     "aptos": 3757,
-    "total": 2117
+    "total": 2117,
+    "validos": 2071
    },
    "metricas": {
     "candidatos": {
@@ -3122,16 +3535,16 @@
       "t2": 1615,
       "delta": 255,
       "pct": 18.75,
-      "share_t1": 67.36007924715206,
-      "share_t2": 76.28719886632027
+      "share_t1": 69.10569105691057,
+      "share_t2": 77.98165137614679
      },
      "22": {
       "t1": 394,
       "t2": 456,
       "delta": 62,
       "pct": 15.736040609137056,
-      "share_t1": 19.51461119366023,
-      "share_t2": 21.53991497401984
+      "share_t1": 20.020325203252032,
+      "share_t2": 22.01834862385321
      }
     },
     "diferenca_crescimento": 193,
@@ -3142,6 +3555,11 @@
     "total_t2": 2117,
     "delta_total": 98,
     "pct_total": 4.853888063397721,
+    "validos_t1": 1968,
+    "validos_t2": 2071,
+    "delta_validos": 103,
+    "aptos_t2": 3757,
+    "comparecimento_t2": 2117,
     "brancos_nulos_t1": 51,
     "brancos_nulos_t2": 46
    },
@@ -3249,7 +3667,8 @@
    ],
    "lat": 59.3251,
    "lon": 18.0711,
-   "pais": "Suécia"
+   "pais": "Suécia",
+   "pais_mapa": "Sweden"
   },
   {
    "codigo": "30961",
@@ -3265,7 +3684,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -3275,45 +3695,245 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 37.0163,
    "lon": -7.9352,
-   "pais": "Portugal"
+   "pais": "Portugal",
+   "pais_mapa": "Portugal"
   },
   {
    "codigo": "29696",
    "nome": "FRANKFURT",
    "secoes_previstas": 42,
-   "secoes_apuradas_t2": 0,
-   "secoes_comparaveis": 0,
+   "secoes_apuradas_t2": 8,
+   "secoes_comparaveis": 8,
    "t1": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "13": 1743,
+    "22": 492,
+    "brancos": 24,
+    "nulos": 17,
+    "outros": 203,
+    "comparecimento": 2479,
+    "aptos": 5557,
+    "total": 2479,
+    "validos": 2438
    },
    "t2": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
+    "13": 2147,
+    "22": 601,
+    "brancos": 12,
+    "nulos": 26,
     "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "comparecimento": 2786,
+    "aptos": 5550,
+    "total": 2786,
+    "validos": 2748
    },
-   "metricas": null,
-   "secoes": [],
+   "metricas": {
+    "candidatos": {
+     "13": {
+      "t1": 1743,
+      "t2": 2147,
+      "delta": 404,
+      "pct": 23.178427997705107,
+      "share_t1": 71.49302707136998,
+      "share_t2": 78.12954876273653
+     },
+     "22": {
+      "t1": 492,
+      "t2": 601,
+      "delta": 109,
+      "pct": 22.15447154471545,
+      "share_t1": 20.180475799835932,
+      "share_t2": 21.870451237263463
+     }
+    },
+    "diferenca_crescimento": 295,
+    "margem_t1": 1251,
+    "margem_t2": 1546,
+    "variacao_margem": 295,
+    "total_t1": 2479,
+    "total_t2": 2786,
+    "delta_total": 307,
+    "pct_total": 12.384025816861637,
+    "validos_t1": 2438,
+    "validos_t2": 2748,
+    "delta_validos": 310,
+    "aptos_t2": 5550,
+    "comparecimento_t2": 2786,
+    "brancos_nulos_t1": 41,
+    "brancos_nulos_t2": 38
+   },
+   "secoes": [
+    {
+     "zona": "0001",
+     "secao": "0945",
+     "t1": {
+      "13": 194,
+      "22": 51,
+      "brancos": 3,
+      "nulos": 2,
+      "comparecimento": 274,
+      "aptos": 548
+     },
+     "t2": {
+      "13": 240,
+      "22": 68,
+      "brancos": 3,
+      "nulos": 4,
+      "comparecimento": 315,
+      "aptos": 548
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0946",
+     "t1": {
+      "13": 256,
+      "22": 73,
+      "brancos": 3,
+      "nulos": 2,
+      "comparecimento": 366,
+      "aptos": 707
+     },
+     "t2": {
+      "13": 329,
+      "22": 85,
+      "brancos": 3,
+      "nulos": 6,
+      "comparecimento": 423,
+      "aptos": 705
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1612",
+     "t1": {
+      "13": 183,
+      "22": 68,
+      "brancos": 3,
+      "nulos": 1,
+      "comparecimento": 276,
+      "aptos": 714
+     },
+     "t2": {
+      "13": 214,
+      "22": 76,
+      "brancos": 1,
+      "nulos": 1,
+      "comparecimento": 292,
+      "aptos": 713
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1613",
+     "t1": {
+      "13": 216,
+      "22": 60,
+      "brancos": 7,
+      "nulos": 3,
+      "comparecimento": 313,
+      "aptos": 711
+     },
+     "t2": {
+      "13": 258,
+      "22": 81,
+      "brancos": 1,
+      "nulos": 3,
+      "comparecimento": 343,
+      "aptos": 709
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1619",
+     "t1": {
+      "13": 253,
+      "22": 56,
+      "brancos": 1,
+      "nulos": 3,
+      "comparecimento": 343,
+      "aptos": 698
+     },
+     "t2": {
+      "13": 296,
+      "22": 70,
+      "brancos": 2,
+      "nulos": 6,
+      "comparecimento": 374,
+      "aptos": 698
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1620",
+     "t1": {
+      "13": 232,
+      "22": 52,
+      "brancos": 4,
+      "nulos": 1,
+      "comparecimento": 309,
+      "aptos": 735
+     },
+     "t2": {
+      "13": 283,
+      "22": 69,
+      "brancos": 1,
+      "nulos": 1,
+      "comparecimento": 354,
+      "aptos": 732
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "2871",
+     "t1": {
+      "13": 168,
+      "22": 57,
+      "brancos": 2,
+      "nulos": 4,
+      "comparecimento": 251,
+      "aptos": 766
+     },
+     "t2": {
+      "13": 207,
+      "22": 69,
+      "brancos": 0,
+      "nulos": 3,
+      "comparecimento": 279,
+      "aptos": 767
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "3098",
+     "t1": {
+      "13": 241,
+      "22": 75,
+      "brancos": 1,
+      "nulos": 1,
+      "comparecimento": 347,
+      "aptos": 678
+     },
+     "t2": {
+      "13": 320,
+      "22": 83,
+      "brancos": 1,
+      "nulos": 2,
+      "comparecimento": 406,
+      "aptos": 678
+     }
+    }
+   ],
    "lat": 50.1106,
    "lon": 8.6821,
-   "pais": "Alemanha"
+   "pais": "Alemanha",
+   "pais_mapa": "Germany"
   },
   {
    "codigo": "30669",
@@ -3329,7 +3949,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -3339,13 +3960,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -24.6581,
    "lon": 25.9088,
-   "pais": "Botsuana"
+   "pais": "Botsuana",
+   "pais_mapa": "Botswana"
   },
   {
    "codigo": "29700",
@@ -3361,7 +3984,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -3371,13 +3995,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 46.2018,
    "lon": 6.1466,
-   "pais": "Suíça"
+   "pais": "Suíça",
+   "pais_mapa": "France"
   },
   {
    "codigo": "29718",
@@ -3393,7 +4019,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -3403,13 +4030,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 6.8033,
    "lon": -58.1455,
-   "pais": "Guiana"
+   "pais": "Guiana",
+   "pais_mapa": "Guyana"
   },
   {
    "codigo": "98000",
@@ -3425,7 +4054,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -3435,13 +4065,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 14.6416,
    "lon": -90.5133,
-   "pais": "Guatemala"
+   "pais": "Guatemala",
+   "pais_mapa": "Guatemala"
   },
   {
    "codigo": "29742",
@@ -3457,7 +4089,8 @@
     "outros": 903,
     "comparecimento": 6918,
     "aptos": 13729,
-    "total": 6918
+    "total": 6918,
+    "validos": 6485
    },
    "t2": {
     "13": 1226,
@@ -3467,7 +4100,8 @@
     "outros": 0,
     "comparecimento": 7108,
     "aptos": 13729,
-    "total": 7108
+    "total": 7108,
+    "validos": 6710
    },
    "metricas": {
     "candidatos": {
@@ -3476,16 +4110,16 @@
       "t2": 1226,
       "delta": 342,
       "pct": 38.68778280542986,
-      "share_t1": 12.7782596126048,
-      "share_t2": 17.248171074845246
+      "share_t1": 13.631457208943717,
+      "share_t2": 18.27123695976155
      },
      "22": {
       "t1": 4698,
       "t2": 5484,
       "delta": 786,
       "pct": 16.73052362707535,
-      "share_t1": 67.90980052038161,
-      "share_t2": 77.15250422059651
+      "share_t1": 72.44410177332306,
+      "share_t2": 81.72876304023845
      }
     },
     "diferenca_crescimento": -444,
@@ -3496,6 +4130,11 @@
     "total_t2": 7108,
     "delta_total": 190,
     "pct_total": 2.7464585140213935,
+    "validos_t1": 6485,
+    "validos_t2": 6710,
+    "delta_validos": 225,
+    "aptos_t2": 13729,
+    "comparecimento_t2": 7108,
     "brancos_nulos_t1": 433,
     "brancos_nulos_t2": 398
    },
@@ -3863,7 +4502,8 @@
    ],
    "lat": 34.711,
    "lon": 137.7259,
-   "pais": "Japão"
+   "pais": "Japão",
+   "pais_mapa": "Japan"
   },
   {
    "codigo": "29750",
@@ -3879,7 +4519,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -3889,13 +4530,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 21.0283,
    "lon": 105.854,
-   "pais": "Vietname"
+   "pais": "Vietname",
+   "pais_mapa": "Vietnam"
   },
   {
    "codigo": "29769",
@@ -3911,7 +4554,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -3921,13 +4565,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -17.8567,
    "lon": 31.0602,
-   "pais": "Zimbabué"
+   "pais": "Zimbabué",
+   "pais_mapa": "Zimbabwe"
   },
   {
    "codigo": "30902",
@@ -3943,7 +4589,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -3953,13 +4600,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 41.7662,
    "lon": -72.6733,
-   "pais": "Estados Unidos da América"
+   "pais": "Estados Unidos da América",
+   "pais_mapa": "United States of America"
   },
   {
    "codigo": "29777",
@@ -3975,7 +4624,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -3985,13 +4635,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 23.1353,
    "lon": -82.359,
-   "pais": "Cuba"
+   "pais": "Cuba",
+   "pais_mapa": "Cuba"
   },
   {
    "codigo": "29785",
@@ -4007,7 +4659,8 @@
     "outros": 63,
     "comparecimento": 718,
     "aptos": 1278,
-    "total": 718
+    "total": 718,
+    "validos": 693
    },
    "t2": {
     "13": 550,
@@ -4017,7 +4670,8 @@
     "outros": 0,
     "comparecimento": 756,
     "aptos": 1278,
-    "total": 756
+    "total": 756,
+    "validos": 735
    },
    "metricas": {
     "candidatos": {
@@ -4026,16 +4680,16 @@
       "t2": 550,
       "delta": 75,
       "pct": 15.789473684210526,
-      "share_t1": 66.15598885793872,
-      "share_t2": 72.75132275132275
+      "share_t1": 68.54256854256855,
+      "share_t2": 74.82993197278911
      },
      "22": {
       "t1": 155,
       "t2": 185,
       "delta": 30,
       "pct": 19.35483870967742,
-      "share_t1": 21.58774373259053,
-      "share_t2": 24.47089947089947
+      "share_t1": 22.366522366522368,
+      "share_t2": 25.170068027210885
      }
     },
     "diferenca_crescimento": 45,
@@ -4046,6 +4700,11 @@
     "total_t2": 756,
     "delta_total": 38,
     "pct_total": 5.2924791086350975,
+    "validos_t1": 693,
+    "validos_t2": 735,
+    "delta_validos": 42,
+    "aptos_t2": 1278,
+    "comparecimento_t2": 756,
     "brancos_nulos_t1": 25,
     "brancos_nulos_t2": 21
    },
@@ -4093,7 +4752,8 @@
    ],
    "lat": 60.1666,
    "lon": 24.9435,
-   "pais": "Finlândia"
+   "pais": "Finlândia",
+   "pais_mapa": "Finland"
   },
   {
    "codigo": "29793",
@@ -4109,7 +4769,8 @@
     "outros": 40,
     "comparecimento": 264,
     "aptos": 668,
-    "total": 264
+    "total": 264,
+    "validos": 244
    },
    "t2": {
     "13": 127,
@@ -4119,7 +4780,8 @@
     "outros": 0,
     "comparecimento": 278,
     "aptos": 668,
-    "total": 278
+    "total": 278,
+    "validos": 260
    },
    "metricas": {
     "candidatos": {
@@ -4128,16 +4790,16 @@
       "t2": 127,
       "delta": 28,
       "pct": 28.282828282828284,
-      "share_t1": 37.5,
-      "share_t2": 45.68345323741007
+      "share_t1": 40.57377049180328,
+      "share_t2": 48.84615384615385
      },
      "22": {
       "t1": 105,
       "t2": 133,
       "delta": 28,
       "pct": 26.666666666666668,
-      "share_t1": 39.77272727272727,
-      "share_t2": 47.84172661870504
+      "share_t1": 43.032786885245905,
+      "share_t2": 51.15384615384615
      }
     },
     "diferenca_crescimento": 0,
@@ -4148,6 +4810,11 @@
     "total_t2": 278,
     "delta_total": 14,
     "pct_total": 5.303030303030303,
+    "validos_t1": 244,
+    "validos_t2": 260,
+    "delta_validos": 16,
+    "aptos_t2": 668,
+    "comparecimento_t2": 278,
     "brancos_nulos_t1": 20,
     "brancos_nulos_t2": 18
    },
@@ -4175,7 +4842,8 @@
    ],
    "lat": 22.3492,
    "lon": 114.1858,
-   "pais": "China (Hong Kong)"
+   "pais": "China (Hong Kong)",
+   "pais_mapa": "China"
   },
   {
    "codigo": "29807",
@@ -4191,7 +4859,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -4201,13 +4870,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 29.7589,
    "lon": -95.3677,
-   "pais": "Estados Unidos da América"
+   "pais": "Estados Unidos da América",
+   "pais_mapa": "United States of America"
   },
   {
    "codigo": "29815",
@@ -4223,7 +4894,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -4233,13 +4905,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 3.869,
    "lon": 11.5213,
-   "pais": "Camarões"
+   "pais": "Camarões",
+   "pais_mapa": "Cameroon"
   },
   {
    "codigo": "38989",
@@ -4255,7 +4929,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -4265,13 +4940,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 40.1777,
    "lon": 44.5126,
-   "pais": "Arménia"
+   "pais": "Arménia",
+   "pais_mapa": "Armenia"
   },
   {
    "codigo": "29823",
@@ -4287,7 +4964,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -4297,13 +4975,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -3.7494,
    "lon": -73.2444,
-   "pais": "Peru"
+   "pais": "Peru",
+   "pais_mapa": "Peru"
   },
   {
    "codigo": "29831",
@@ -4319,7 +4999,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -4329,13 +5010,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 33.6938,
    "lon": 73.0652,
-   "pais": "Paquistão"
+   "pais": "Paquistão",
+   "pais_mapa": "Pakistan"
   },
   {
    "codigo": "39306",
@@ -4351,7 +5034,8 @@
     "outros": 7,
     "comparecimento": 129,
     "aptos": 327,
-    "total": 129
+    "total": 129,
+    "validos": 127
    },
    "t2": {
     "13": 98,
@@ -4361,7 +5045,8 @@
     "outros": 0,
     "comparecimento": 127,
     "aptos": 327,
-    "total": 127
+    "total": 127,
+    "validos": 127
    },
    "metricas": {
     "candidatos": {
@@ -4370,7 +5055,7 @@
       "t2": 98,
       "delta": 8,
       "pct": 8.88888888888889,
-      "share_t1": 69.76744186046511,
+      "share_t1": 70.86614173228347,
       "share_t2": 77.16535433070867
      },
      "22": {
@@ -4378,7 +5063,7 @@
       "t2": 29,
       "delta": -1,
       "pct": -3.3333333333333335,
-      "share_t1": 23.25581395348837,
+      "share_t1": 23.62204724409449,
       "share_t2": 22.834645669291337
      }
     },
@@ -4390,6 +5075,11 @@
     "total_t2": 127,
     "delta_total": -2,
     "pct_total": -1.550387596899225,
+    "validos_t1": 127,
+    "validos_t2": 127,
+    "delta_validos": 0,
+    "aptos_t2": 327,
+    "comparecimento_t2": 127,
     "brancos_nulos_t1": 2,
     "brancos_nulos_t2": 0
    },
@@ -4417,7 +5107,8 @@
    ],
    "lat": 41.0064,
    "lon": 28.9759,
-   "pais": "Turquia"
+   "pais": "Turquia",
+   "pais_mapa": "Turkey"
   },
   {
    "codigo": "29840",
@@ -4433,7 +5124,8 @@
     "outros": 4,
     "comparecimento": 31,
     "aptos": 172,
-    "total": 31
+    "total": 31,
+    "validos": 31
    },
    "t2": {
     "13": 15,
@@ -4443,7 +5135,8 @@
     "outros": 0,
     "comparecimento": 38,
     "aptos": 172,
-    "total": 38
+    "total": 38,
+    "validos": 38
    },
    "metricas": {
     "candidatos": {
@@ -4472,6 +5165,11 @@
     "total_t2": 38,
     "delta_total": 7,
     "pct_total": 22.580645161290324,
+    "validos_t1": 31,
+    "validos_t2": 38,
+    "delta_validos": 7,
+    "aptos_t2": 172,
+    "comparecimento_t2": 38,
     "brancos_nulos_t1": 0,
     "brancos_nulos_t2": 0
    },
@@ -4499,7 +5197,8 @@
    ],
    "lat": -6.1754,
    "lon": 106.8272,
-   "pais": "Indonésia"
+   "pais": "Indonésia",
+   "pais_mapa": "Indonesia"
   },
   {
    "codigo": "29173",
@@ -4515,7 +5214,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -4525,13 +5225,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 27.7083,
    "lon": 85.3206,
-   "pais": "Nepal"
+   "pais": "Nepal",
+   "pais_mapa": "Nepal"
   },
   {
    "codigo": "29858",
@@ -4547,7 +5249,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -4557,13 +5260,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 50.45,
    "lon": 30.5241,
-   "pais": "Ucrânia"
+   "pais": "Ucrânia",
+   "pais_mapa": "Ukraine"
   },
   {
    "codigo": "99430",
@@ -4579,7 +5284,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -4589,13 +5295,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 17.9712,
    "lon": -76.7928,
-   "pais": "Jamaica"
+   "pais": "Jamaica",
+   "pais_mapa": "Jamaica"
   },
   {
    "codigo": "29874",
@@ -4611,7 +5319,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -4621,13 +5330,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -4.3197,
    "lon": 15.3424,
-   "pais": "República Democrática do Congo"
+   "pais": "República Democrática do Congo",
+   "pais_mapa": "Dem. Rep. Congo"
   },
   {
    "codigo": "29882",
@@ -4643,7 +5354,8 @@
     "outros": 7,
     "comparecimento": 77,
     "aptos": 138,
-    "total": 77
+    "total": 77,
+    "validos": 73
    },
    "t2": {
     "13": 62,
@@ -4653,7 +5365,8 @@
     "outros": 0,
     "comparecimento": 84,
     "aptos": 138,
-    "total": 84
+    "total": 84,
+    "validos": 79
    },
    "metricas": {
     "candidatos": {
@@ -4662,16 +5375,16 @@
       "t2": 62,
       "delta": 8,
       "pct": 14.814814814814815,
-      "share_t1": 70.12987012987013,
-      "share_t2": 73.80952380952381
+      "share_t1": 73.97260273972603,
+      "share_t2": 78.48101265822785
      },
      "22": {
       "t1": 12,
       "t2": 17,
       "delta": 5,
       "pct": 41.666666666666664,
-      "share_t1": 15.584415584415584,
-      "share_t2": 20.238095238095237
+      "share_t1": 16.438356164383563,
+      "share_t2": 21.518987341772153
      }
     },
     "diferenca_crescimento": 3,
@@ -4682,6 +5395,11 @@
     "total_t2": 84,
     "delta_total": 7,
     "pct_total": 9.090909090909092,
+    "validos_t1": 73,
+    "validos_t2": 79,
+    "delta_validos": 6,
+    "aptos_t2": 138,
+    "comparecimento_t2": 84,
     "brancos_nulos_t1": 4,
     "brancos_nulos_t2": 5
    },
@@ -4709,7 +5427,8 @@
    ],
    "lat": 29.2734,
    "lon": 47.4979,
-   "pais": "Kuwait"
+   "pais": "Kuwait",
+   "pais_mapa": "Kuwait"
   },
   {
    "codigo": "29890",
@@ -4725,7 +5444,8 @@
     "outros": 11,
     "comparecimento": 83,
     "aptos": 170,
-    "total": 83
+    "total": 83,
+    "validos": 82
    },
    "t2": {
     "13": 41,
@@ -4735,7 +5455,8 @@
     "outros": 0,
     "comparecimento": 89,
     "aptos": 170,
-    "total": 89
+    "total": 89,
+    "validos": 85
    },
    "metricas": {
     "candidatos": {
@@ -4744,16 +5465,16 @@
       "t2": 41,
       "delta": -3,
       "pct": -6.818181818181818,
-      "share_t1": 53.01204819277108,
-      "share_t2": 46.06741573033708
+      "share_t1": 53.65853658536585,
+      "share_t2": 48.23529411764706
      },
      "22": {
       "t1": 27,
       "t2": 44,
       "delta": 17,
       "pct": 62.96296296296296,
-      "share_t1": 32.53012048192771,
-      "share_t2": 49.438202247191015
+      "share_t1": 32.926829268292686,
+      "share_t2": 51.76470588235294
      }
     },
     "diferenca_crescimento": -20,
@@ -4764,6 +5485,11 @@
     "total_t2": 89,
     "delta_total": 6,
     "pct_total": 7.228915662650603,
+    "validos_t1": 82,
+    "validos_t2": 85,
+    "delta_validos": 3,
+    "aptos_t2": 170,
+    "comparecimento_t2": 89,
     "brancos_nulos_t1": 1,
     "brancos_nulos_t2": 4
    },
@@ -4791,7 +5517,8 @@
    ],
    "lat": 3.1517,
    "lon": 101.6942,
-   "pais": "Malásia"
+   "pais": "Malásia",
+   "pais_mapa": "Malaysia"
   },
   {
    "codigo": "29904",
@@ -4807,7 +5534,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -4817,13 +5545,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -16.4955,
    "lon": -68.1336,
-   "pais": "Bolívia"
+   "pais": "Bolívia",
+   "pais_mapa": "Fiji"
   },
   {
    "codigo": "29912",
@@ -4839,7 +5569,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -4849,13 +5580,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 6.4551,
    "lon": 3.3942,
-   "pais": "Nigéria"
+   "pais": "Nigéria",
+   "pais_mapa": "Nigeria"
   },
   {
    "codigo": "29939",
@@ -4871,7 +5604,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -4881,13 +5615,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 0.4087,
    "lon": 9.4419,
-   "pais": "Gabão"
+   "pais": "Gabão",
+   "pais_mapa": "Gabon"
   },
   {
    "codigo": "99341",
@@ -4903,7 +5639,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -4913,13 +5650,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -13.9875,
    "lon": 33.7681,
-   "pais": "Malawi"
+   "pais": "Malawi",
+   "pais_mapa": "Malawi"
   },
   {
    "codigo": "29947",
@@ -4935,7 +5674,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -4945,13 +5685,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -12.046,
    "lon": -77.0306,
-   "pais": "Peru"
+   "pais": "Peru",
+   "pais_mapa": "Peru"
   },
   {
    "codigo": "29955",
@@ -4967,7 +5709,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -4977,13 +5720,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 38.7078,
    "lon": -9.1366,
-   "pais": "Portugal"
+   "pais": "Portugal",
+   "pais_mapa": "Portugal"
   },
   {
    "codigo": "39160",
@@ -4999,7 +5744,8 @@
     "outros": 12,
     "comparecimento": 103,
     "aptos": 162,
-    "total": 103
+    "total": 103,
+    "validos": 98
    },
    "t2": {
     "13": 67,
@@ -5009,7 +5755,8 @@
     "outros": 0,
     "comparecimento": 100,
     "aptos": 163,
-    "total": 100
+    "total": 100,
+    "validos": 95
    },
    "metricas": {
     "candidatos": {
@@ -5018,16 +5765,16 @@
       "t2": 67,
       "delta": 6,
       "pct": 9.836065573770492,
-      "share_t1": 59.22330097087379,
-      "share_t2": 67.0
+      "share_t1": 62.244897959183675,
+      "share_t2": 70.52631578947368
      },
      "22": {
       "t1": 25,
       "t2": 28,
       "delta": 3,
       "pct": 12.0,
-      "share_t1": 24.271844660194176,
-      "share_t2": 28.0
+      "share_t1": 25.510204081632654,
+      "share_t2": 29.473684210526315
      }
     },
     "diferenca_crescimento": 3,
@@ -5038,6 +5785,11 @@
     "total_t2": 100,
     "delta_total": -3,
     "pct_total": -2.912621359223301,
+    "validos_t1": 98,
+    "validos_t2": 95,
+    "delta_validos": -3,
+    "aptos_t2": 163,
+    "comparecimento_t2": 100,
     "brancos_nulos_t1": 5,
     "brancos_nulos_t2": 5
    },
@@ -5065,7 +5817,8 @@
    ],
    "lat": 46.05,
    "lon": 14.5069,
-   "pais": "Eslovénia"
+   "pais": "Eslovénia",
+   "pais_mapa": "Slovenia"
   },
   {
    "codigo": "29963",
@@ -5081,7 +5834,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -5091,13 +5845,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 6.1304,
    "lon": 1.2158,
-   "pais": "Togo"
+   "pais": "Togo",
+   "pais_mapa": "Togo"
   },
   {
    "codigo": "29971",
@@ -5113,7 +5869,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -5123,13 +5880,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 51.5074,
    "lon": -0.1278,
-   "pais": "Reino Unido"
+   "pais": "Reino Unido",
+   "pais_mapa": "United Kingdom"
   },
   {
    "codigo": "29980",
@@ -5145,7 +5904,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -5155,13 +5915,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 34.0537,
    "lon": -118.2428,
-   "pais": "Estados Unidos da América"
+   "pais": "Estados Unidos da América",
+   "pais_mapa": "United States of America"
   },
   {
    "codigo": "29998",
@@ -5177,7 +5939,8 @@
     "outros": 16,
     "comparecimento": 270,
     "aptos": 716,
-    "total": 270
+    "total": 270,
+    "validos": 264
    },
    "t2": {
     "13": 167,
@@ -5187,7 +5950,8 @@
     "outros": 0,
     "comparecimento": 289,
     "aptos": 716,
-    "total": 289
+    "total": 289,
+    "validos": 285
    },
    "metricas": {
     "candidatos": {
@@ -5196,16 +5960,16 @@
       "t2": 167,
       "delta": 20,
       "pct": 13.605442176870747,
-      "share_t1": 54.44444444444444,
-      "share_t2": 57.78546712802768
+      "share_t1": 55.68181818181818,
+      "share_t2": 58.59649122807018
      },
      "22": {
       "t1": 101,
       "t2": 118,
       "delta": 17,
       "pct": 16.831683168316832,
-      "share_t1": 37.407407407407405,
-      "share_t2": 40.83044982698962
+      "share_t1": 38.25757575757576,
+      "share_t2": 41.40350877192982
      }
     },
     "diferenca_crescimento": 3,
@@ -5216,6 +5980,11 @@
     "total_t2": 289,
     "delta_total": 19,
     "pct_total": 7.037037037037037,
+    "validos_t1": 264,
+    "validos_t2": 285,
+    "delta_validos": 21,
+    "aptos_t2": 716,
+    "comparecimento_t2": 289,
     "brancos_nulos_t1": 6,
     "brancos_nulos_t2": 4
    },
@@ -5243,7 +6012,8 @@
    ],
    "lat": -8.8273,
    "lon": 13.244,
-   "pais": "Angola"
+   "pais": "Angola",
+   "pais_mapa": "Angola"
   },
   {
    "codigo": "99287",
@@ -5259,7 +6029,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -5269,13 +6040,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -15.4163,
    "lon": 28.2818,
-   "pais": "Zâmbia"
+   "pais": "Zâmbia",
+   "pais_mapa": "Zambia"
   },
   {
    "codigo": "30066",
@@ -5291,7 +6064,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -5301,13 +6075,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 40.4168,
    "lon": -3.7035,
-   "pais": "Espanha"
+   "pais": "Espanha",
+   "pais_mapa": "Spain"
   },
   {
    "codigo": "39263",
@@ -5323,7 +6099,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -5333,13 +6110,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 3.7419,
    "lon": 8.7741,
-   "pais": "Guiné Equatorial"
+   "pais": "Guiné Equatorial",
+   "pais_mapa": "Eq. Guinea"
   },
   {
    "codigo": "30082",
@@ -5355,7 +6134,8 @@
     "outros": 3,
     "comparecimento": 63,
     "aptos": 229,
-    "total": 63
+    "total": 63,
+    "validos": 62
    },
    "t2": {
     "13": 27,
@@ -5365,7 +6145,8 @@
     "outros": 0,
     "comparecimento": 66,
     "aptos": 229,
-    "total": 66
+    "total": 66,
+    "validos": 66
    },
    "metricas": {
     "candidatos": {
@@ -5374,7 +6155,7 @@
       "t2": 27,
       "delta": 1,
       "pct": 3.8461538461538463,
-      "share_t1": 41.26984126984127,
+      "share_t1": 41.935483870967744,
       "share_t2": 40.90909090909091
      },
      "22": {
@@ -5382,7 +6163,7 @@
       "t2": 39,
       "delta": 6,
       "pct": 18.181818181818183,
-      "share_t1": 52.38095238095238,
+      "share_t1": 53.225806451612904,
       "share_t2": 59.09090909090909
      }
     },
@@ -5394,6 +6175,11 @@
     "total_t2": 66,
     "delta_total": 3,
     "pct_total": 4.761904761904762,
+    "validos_t1": 62,
+    "validos_t2": 66,
+    "delta_validos": 4,
+    "aptos_t2": 229,
+    "comparecimento_t2": 66,
     "brancos_nulos_t1": 1,
     "brancos_nulos_t2": 0
    },
@@ -5421,7 +6207,8 @@
    ],
    "lat": 14.5904,
    "lon": 120.9804,
-   "pais": "Filipinas"
+   "pais": "Filipinas",
+   "pais_mapa": "Philippines"
   },
   {
    "codigo": "30074",
@@ -5437,7 +6224,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -5447,13 +6235,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 12.1547,
    "lon": -86.2737,
-   "pais": "Nicarágua"
+   "pais": "Nicarágua",
+   "pais_mapa": "Nicaragua"
   },
   {
    "codigo": "30090",
@@ -5469,7 +6259,8 @@
     "outros": 12,
     "comparecimento": 228,
     "aptos": 557,
-    "total": 228
+    "total": 228,
+    "validos": 214
    },
    "t2": {
     "13": 108,
@@ -5479,7 +6270,8 @@
     "outros": 0,
     "comparecimento": 233,
     "aptos": 556,
-    "total": 233
+    "total": 233,
+    "validos": 225
    },
    "metricas": {
     "candidatos": {
@@ -5488,16 +6280,16 @@
       "t2": 108,
       "delta": 19,
       "pct": 21.348314606741575,
-      "share_t1": 39.03508771929825,
-      "share_t2": 46.351931330472105
+      "share_t1": 41.58878504672897,
+      "share_t2": 48.0
      },
      "22": {
       "t1": 113,
       "t2": 117,
       "delta": 4,
       "pct": 3.5398230088495577,
-      "share_t1": 49.56140350877193,
-      "share_t2": 50.21459227467811
+      "share_t1": 52.80373831775701,
+      "share_t2": 52.0
      }
     },
     "diferenca_crescimento": 15,
@@ -5508,6 +6300,11 @@
     "total_t2": 233,
     "delta_total": 5,
     "pct_total": 2.192982456140351,
+    "validos_t1": 214,
+    "validos_t2": 225,
+    "delta_validos": 11,
+    "aptos_t2": 556,
+    "comparecimento_t2": 233,
     "brancos_nulos_t1": 14,
     "brancos_nulos_t2": 8
    },
@@ -5535,39 +6332,158 @@
    ],
    "lat": -25.9662,
    "lon": 32.5675,
-   "pais": "Moçambique"
+   "pais": "Moçambique",
+   "pais_mapa": "Mozambique"
   },
   {
    "codigo": "99511",
    "nome": "MARSELHA",
    "secoes_previstas": 7,
-   "secoes_apuradas_t2": 0,
-   "secoes_comparaveis": 0,
+   "secoes_apuradas_t2": 4,
+   "secoes_comparaveis": 4,
    "t1": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "13": 715,
+    "22": 104,
+    "brancos": 4,
+    "nulos": 3,
+    "outros": 49,
+    "comparecimento": 875,
+    "aptos": 2660,
+    "total": 875,
+    "validos": 868
    },
    "t2": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
+    "13": 929,
+    "22": 112,
+    "brancos": 1,
+    "nulos": 7,
     "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "comparecimento": 1049,
+    "aptos": 2660,
+    "total": 1049,
+    "validos": 1041
    },
-   "metricas": null,
-   "secoes": [],
+   "metricas": {
+    "candidatos": {
+     "13": {
+      "t1": 715,
+      "t2": 929,
+      "delta": 214,
+      "pct": 29.93006993006993,
+      "share_t1": 82.37327188940093,
+      "share_t2": 89.24111431316042
+     },
+     "22": {
+      "t1": 104,
+      "t2": 112,
+      "delta": 8,
+      "pct": 7.6923076923076925,
+      "share_t1": 11.981566820276498,
+      "share_t2": 10.758885686839577
+     }
+    },
+    "diferenca_crescimento": 206,
+    "margem_t1": 611,
+    "margem_t2": 817,
+    "variacao_margem": 206,
+    "total_t1": 875,
+    "total_t2": 1049,
+    "delta_total": 174,
+    "pct_total": 19.885714285714286,
+    "validos_t1": 868,
+    "validos_t2": 1041,
+    "delta_validos": 173,
+    "aptos_t2": 2660,
+    "comparecimento_t2": 1049,
+    "brancos_nulos_t1": 7,
+    "brancos_nulos_t2": 8
+   },
+   "secoes": [
+    {
+     "zona": "0001",
+     "secao": "3419",
+     "t1": {
+      "13": 187,
+      "22": 29,
+      "brancos": 2,
+      "nulos": 1,
+      "comparecimento": 230,
+      "aptos": 797
+     },
+     "t2": {
+      "13": 255,
+      "22": 31,
+      "brancos": 0,
+      "nulos": 3,
+      "comparecimento": 289,
+      "aptos": 797
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "3528",
+     "t1": {
+      "13": 192,
+      "22": 31,
+      "brancos": 2,
+      "nulos": 2,
+      "comparecimento": 238,
+      "aptos": 790
+     },
+     "t2": {
+      "13": 240,
+      "22": 32,
+      "brancos": 1,
+      "nulos": 2,
+      "comparecimento": 275,
+      "aptos": 789
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "3636",
+     "t1": {
+      "13": 187,
+      "22": 27,
+      "brancos": 0,
+      "nulos": 0,
+      "comparecimento": 229,
+      "aptos": 679
+     },
+     "t2": {
+      "13": 250,
+      "22": 27,
+      "brancos": 0,
+      "nulos": 2,
+      "comparecimento": 279,
+      "aptos": 680
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "3747",
+     "t1": {
+      "13": 149,
+      "22": 17,
+      "brancos": 0,
+      "nulos": 0,
+      "comparecimento": 178,
+      "aptos": 394
+     },
+     "t2": {
+      "13": 184,
+      "22": 22,
+      "brancos": 0,
+      "nulos": 0,
+      "comparecimento": 206,
+      "aptos": 394
+     }
+    }
+   ],
    "lat": 43.2964,
    "lon": 5.3778,
-   "pais": "França"
+   "pais": "França",
+   "pais_mapa": "France"
   },
   {
    "codigo": "39102",
@@ -5583,7 +6499,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -5593,13 +6510,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 23.6124,
    "lon": 58.5938,
-   "pais": "Omã"
+   "pais": "Omã",
+   "pais_mapa": "Oman"
   },
   {
    "codigo": "39004",
@@ -5615,7 +6534,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -5625,13 +6545,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -34.597,
    "lon": -68.7305,
-   "pais": "Argentina"
+   "pais": "Argentina",
+   "pais_mapa": "Argentina"
   },
   {
    "codigo": "30104",
@@ -5647,7 +6569,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -5657,13 +6580,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 19.3208,
    "lon": -99.1515,
-   "pais": "México"
+   "pais": "México",
+   "pais_mapa": "Mexico"
   },
   {
    "codigo": "30112",
@@ -5679,7 +6604,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -5689,13 +6615,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 25.7742,
    "lon": -80.1936,
-   "pais": "Estados Unidos da América"
+   "pais": "Estados Unidos da América",
+   "pais_mapa": "United States of America"
   },
   {
    "codigo": "30120",
@@ -5711,7 +6639,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -5721,13 +6650,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 45.4642,
    "lon": 9.1896,
-   "pais": "Itália"
+   "pais": "Itália",
+   "pais_mapa": "Italy"
   },
   {
    "codigo": "30147",
@@ -5743,7 +6674,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -5753,13 +6685,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -34.9059,
    "lon": -56.1913,
-   "pais": "Uruguai"
+   "pais": "Uruguai",
+   "pais_mapa": "Uruguay"
   },
   {
    "codigo": "30155",
@@ -5775,7 +6709,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -5785,13 +6720,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 45.5032,
    "lon": -73.5698,
-   "pais": "Canadá"
+   "pais": "Canadá",
+   "pais_mapa": "Canada"
   },
   {
    "codigo": "30163",
@@ -5807,7 +6744,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -5817,13 +6755,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 55.7505,
    "lon": 37.6175,
-   "pais": "Rússia"
+   "pais": "Rússia",
+   "pais_mapa": "Russia"
   },
   {
    "codigo": "30171",
@@ -5839,7 +6779,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -5849,13 +6790,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 19.055,
    "lon": 72.8692,
-   "pais": "Índia"
+   "pais": "Índia",
+   "pais_mapa": "India"
   },
   {
    "codigo": "30180",
@@ -5871,7 +6814,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -5881,13 +6825,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 48.1371,
    "lon": 11.5754,
-   "pais": "Alemanha"
+   "pais": "Alemanha",
+   "pais_mapa": "Germany"
   },
   {
    "codigo": "30198",
@@ -5903,7 +6849,8 @@
     "outros": 1923,
     "comparecimento": 16317,
     "aptos": 44536,
-    "total": 16317
+    "total": 16317,
+    "validos": 15425
    },
    "t2": {
     "13": 2877,
@@ -5913,7 +6860,8 @@
     "outros": 0,
     "comparecimento": 16950,
     "aptos": 44540,
-    "total": 16950
+    "total": 16950,
+    "validos": 16161
    },
    "metricas": {
     "candidatos": {
@@ -5922,16 +6870,16 @@
       "t2": 2877,
       "delta": 855,
       "pct": 42.28486646884273,
-      "share_t1": 12.391983820555248,
-      "share_t2": 16.97345132743363
+      "share_t1": 13.108589951377633,
+      "share_t2": 17.802116205680342
      },
      "22": {
       "t1": 11480,
       "t2": 13284,
       "delta": 1804,
       "pct": 15.714285714285714,
-      "share_t1": 70.35607035607036,
-      "share_t2": 78.3716814159292
+      "share_t1": 74.42463533225283,
+      "share_t2": 82.19788379431967
      }
     },
     "diferenca_crescimento": -949,
@@ -5942,6 +6890,11 @@
     "total_t2": 16950,
     "delta_total": 633,
     "pct_total": 3.879389593675308,
+    "validos_t1": 15425,
+    "validos_t2": 16161,
+    "delta_validos": 736,
+    "aptos_t2": 44540,
+    "comparecimento_t2": 16950,
     "brancos_nulos_t1": 892,
     "brancos_nulos_t2": 789
    },
@@ -7109,7 +8062,8 @@
    ],
    "lat": 35.1851,
    "lon": 136.8998,
-   "pais": "Japão"
+   "pais": "Japão",
+   "pais_mapa": "Japan"
   },
   {
    "codigo": "30201",
@@ -7125,7 +8079,8 @@
     "outros": 3,
     "comparecimento": 47,
     "aptos": 112,
-    "total": 47
+    "total": 47,
+    "validos": 46
    },
    "t2": {
     "13": 29,
@@ -7135,7 +8090,8 @@
     "outros": 0,
     "comparecimento": 45,
     "aptos": 110,
-    "total": 45
+    "total": 45,
+    "validos": 45
    },
    "metricas": {
     "candidatos": {
@@ -7144,7 +8100,7 @@
       "t2": 29,
       "delta": 3,
       "pct": 11.538461538461538,
-      "share_t1": 55.319148936170215,
+      "share_t1": 56.52173913043478,
       "share_t2": 64.44444444444444
      },
      "22": {
@@ -7152,7 +8108,7 @@
       "t2": 16,
       "delta": -1,
       "pct": -5.882352941176471,
-      "share_t1": 36.170212765957444,
+      "share_t1": 36.95652173913044,
       "share_t2": 35.55555555555556
      }
     },
@@ -7164,6 +8120,11 @@
     "total_t2": 45,
     "delta_total": -2,
     "pct_total": -4.25531914893617,
+    "validos_t1": 46,
+    "validos_t2": 45,
+    "delta_validos": -1,
+    "aptos_t2": 110,
+    "comparecimento_t2": 45,
     "brancos_nulos_t1": 1,
     "brancos_nulos_t2": 0
    },
@@ -7191,7 +8152,8 @@
    ],
    "lat": -1.3024,
    "lon": 36.8289,
-   "pais": "Quénia"
+   "pais": "Quénia",
+   "pais_mapa": "Kenya"
   },
   {
    "codigo": "99180",
@@ -7207,7 +8169,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -7217,13 +8180,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 25.0782,
    "lon": -77.3383,
-   "pais": "Bahamas"
+   "pais": "Bahamas",
+   "pais_mapa": "Bahamas"
   },
   {
    "codigo": "39322",
@@ -7239,7 +8204,8 @@
     "outros": 14,
     "comparecimento": 58,
     "aptos": 137,
-    "total": 58
+    "total": 58,
+    "validos": 58
    },
    "t2": {
     "13": 29,
@@ -7249,7 +8215,8 @@
     "outros": 0,
     "comparecimento": 58,
     "aptos": 137,
-    "total": 58
+    "total": 58,
+    "validos": 54
    },
    "metricas": {
     "candidatos": {
@@ -7259,7 +8226,7 @@
       "delta": 5,
       "pct": 20.833333333333332,
       "share_t1": 41.37931034482759,
-      "share_t2": 50.0
+      "share_t2": 53.7037037037037
      },
      "22": {
       "t1": 20,
@@ -7267,7 +8234,7 @@
       "delta": 5,
       "pct": 25.0,
       "share_t1": 34.48275862068966,
-      "share_t2": 43.10344827586207
+      "share_t2": 46.2962962962963
      }
     },
     "diferenca_crescimento": 0,
@@ -7278,6 +8245,11 @@
     "total_t2": 58,
     "delta_total": 0,
     "pct_total": 0.0,
+    "validos_t1": 58,
+    "validos_t2": 54,
+    "delta_validos": -4,
+    "aptos_t2": 137,
+    "comparecimento_t2": 58,
     "brancos_nulos_t1": 0,
     "brancos_nulos_t2": 4
    },
@@ -7305,7 +8277,8 @@
    ],
    "lat": 35.1747,
    "lon": 33.3639,
-   "pais": "Chipre"
+   "pais": "Chipre",
+   "pais_mapa": "N. Cyprus"
   },
   {
    "codigo": "30210",
@@ -7321,7 +8294,8 @@
     "outros": 0,
     "comparecimento": 50,
     "aptos": 141,
-    "total": 50
+    "total": 50,
+    "validos": 50
    },
    "t2": {
     "13": 25,
@@ -7331,7 +8305,8 @@
     "outros": 0,
     "comparecimento": 48,
     "aptos": 141,
-    "total": 48
+    "total": 48,
+    "validos": 48
    },
    "metricas": {
     "candidatos": {
@@ -7360,6 +8335,11 @@
     "total_t2": 48,
     "delta_total": -2,
     "pct_total": -4.0,
+    "validos_t1": 50,
+    "validos_t2": 48,
+    "delta_validos": -2,
+    "aptos_t2": 141,
+    "comparecimento_t2": 48,
     "brancos_nulos_t1": 0,
     "brancos_nulos_t2": 0
    },
@@ -7387,7 +8367,8 @@
    ],
    "lat": 28.6139,
    "lon": 77.209,
-   "pais": "Índia"
+   "pais": "Índia",
+   "pais_mapa": "India"
   },
   {
    "codigo": "30228",
@@ -7403,7 +8384,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -7413,13 +8395,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 40.7127,
    "lon": -74.006,
-   "pais": "Estados Unidos da América"
+   "pais": "Estados Unidos da América",
+   "pais_mapa": "United States of America"
   },
   {
    "codigo": "99490",
@@ -7435,7 +8419,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -7445,45 +8430,145 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 28.5421,
    "lon": -81.379,
-   "pais": "Estados Unidos da América"
+   "pais": "Estados Unidos da América",
+   "pais_mapa": "United States of America"
   },
   {
    "codigo": "30244",
    "nome": "OSLO",
    "secoes_previstas": 13,
-   "secoes_apuradas_t2": 0,
-   "secoes_comparaveis": 0,
+   "secoes_apuradas_t2": 3,
+   "secoes_comparaveis": 3,
    "t1": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "13": 592,
+    "22": 198,
+    "brancos": 9,
+    "nulos": 16,
+    "outros": 94,
+    "comparecimento": 909,
+    "aptos": 2185,
+    "total": 909,
+    "validos": 884
    },
    "t2": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
+    "13": 820,
+    "22": 248,
+    "brancos": 9,
+    "nulos": 20,
     "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "comparecimento": 1097,
+    "aptos": 2190,
+    "total": 1097,
+    "validos": 1068
    },
-   "metricas": null,
-   "secoes": [],
+   "metricas": {
+    "candidatos": {
+     "13": {
+      "t1": 592,
+      "t2": 820,
+      "delta": 228,
+      "pct": 38.513513513513516,
+      "share_t1": 66.96832579185521,
+      "share_t2": 76.77902621722846
+     },
+     "22": {
+      "t1": 198,
+      "t2": 248,
+      "delta": 50,
+      "pct": 25.252525252525253,
+      "share_t1": 22.398190045248867,
+      "share_t2": 23.220973782771537
+     }
+    },
+    "diferenca_crescimento": 178,
+    "margem_t1": 394,
+    "margem_t2": 572,
+    "variacao_margem": 178,
+    "total_t1": 909,
+    "total_t2": 1097,
+    "delta_total": 188,
+    "pct_total": 20.68206820682068,
+    "validos_t1": 884,
+    "validos_t2": 1068,
+    "delta_validos": 184,
+    "aptos_t2": 2190,
+    "comparecimento_t2": 1097,
+    "brancos_nulos_t1": 25,
+    "brancos_nulos_t2": 29
+   },
+   "secoes": [
+    {
+     "zona": "0001",
+     "secao": "0477",
+     "t1": {
+      "13": 206,
+      "22": 70,
+      "brancos": 2,
+      "nulos": 4,
+      "comparecimento": 315,
+      "aptos": 760
+     },
+     "t2": {
+      "13": 266,
+      "22": 94,
+      "brancos": 2,
+      "nulos": 3,
+      "comparecimento": 365,
+      "aptos": 761
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0478",
+     "t1": {
+      "13": 154,
+      "22": 49,
+      "brancos": 0,
+      "nulos": 4,
+      "comparecimento": 228,
+      "aptos": 637
+     },
+     "t2": {
+      "13": 222,
+      "22": 56,
+      "brancos": 2,
+      "nulos": 6,
+      "comparecimento": 286,
+      "aptos": 640
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0479",
+     "t1": {
+      "13": 232,
+      "22": 79,
+      "brancos": 7,
+      "nulos": 8,
+      "comparecimento": 366,
+      "aptos": 788
+     },
+     "t2": {
+      "13": 332,
+      "22": 98,
+      "brancos": 5,
+      "nulos": 11,
+      "comparecimento": 446,
+      "aptos": 789
+     }
+    }
+   ],
    "lat": 59.9133,
    "lon": 10.739,
-   "pais": "Noruega"
+   "pais": "Noruega",
+   "pais_mapa": "Norway"
   },
   {
    "codigo": "30252",
@@ -7499,7 +8584,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -7509,13 +8595,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 45.4209,
    "lon": -75.6901,
-   "pais": "Canadá"
+   "pais": "Canadá",
+   "pais_mapa": "Canada"
   },
   {
    "codigo": "30260",
@@ -7531,7 +8619,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -7541,13 +8630,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 8.9714,
    "lon": -79.5342,
-   "pais": "Panamá"
+   "pais": "Panamá",
+   "pais_mapa": "Panama"
   },
   {
    "codigo": "30279",
@@ -7563,7 +8654,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -7573,13 +8665,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 5.8242,
    "lon": -55.1663,
-   "pais": "Suriname"
+   "pais": "Suriname",
+   "pais_mapa": "Suriname"
   },
   {
    "codigo": "30287",
@@ -7595,7 +8689,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -7605,13 +8700,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 48.8589,
    "lon": 2.32,
-   "pais": "França"
+   "pais": "França",
+   "pais_mapa": "France"
   },
   {
    "codigo": "30295",
@@ -7627,7 +8724,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -7637,13 +8735,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -29.7137,
    "lon": -57.0861,
-   "pais": "Argentina"
+   "pais": "Argentina",
+   "pais_mapa": "Brazil"
   },
   {
    "codigo": "30309",
@@ -7659,7 +8759,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -7669,13 +8770,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -22.5498,
    "lon": -55.7384,
-   "pais": "Paraguai"
+   "pais": "Paraguai",
+   "pais_mapa": "Paraguay"
   },
   {
    "codigo": "30317",
@@ -7691,7 +8794,8 @@
     "outros": 8,
     "comparecimento": 136,
     "aptos": 342,
-    "total": 136
+    "total": 136,
+    "validos": 134
    },
    "t2": {
     "13": 126,
@@ -7701,7 +8805,8 @@
     "outros": 0,
     "comparecimento": 149,
     "aptos": 344,
-    "total": 149
+    "total": 149,
+    "validos": 148
    },
    "metricas": {
     "candidatos": {
@@ -7710,16 +8815,16 @@
       "t2": 126,
       "delta": 22,
       "pct": 21.153846153846153,
-      "share_t1": 76.47058823529412,
-      "share_t2": 84.56375838926175
+      "share_t1": 77.61194029850746,
+      "share_t2": 85.13513513513513
      },
      "22": {
       "t1": 22,
       "t2": 22,
       "delta": 0,
       "pct": 0.0,
-      "share_t1": 16.176470588235293,
-      "share_t2": 14.765100671140939
+      "share_t1": 16.417910447761194,
+      "share_t2": 14.864864864864865
      }
     },
     "diferenca_crescimento": 22,
@@ -7730,6 +8835,11 @@
     "total_t2": 149,
     "delta_total": 13,
     "pct_total": 9.558823529411764,
+    "validos_t1": 134,
+    "validos_t2": 148,
+    "delta_validos": 14,
+    "aptos_t2": 344,
+    "comparecimento_t2": 149,
     "brancos_nulos_t1": 2,
     "brancos_nulos_t2": 1
    },
@@ -7757,7 +8867,8 @@
    ],
    "lat": 39.9057,
    "lon": 116.3913,
-   "pais": "China"
+   "pais": "China",
+   "pais_mapa": "China"
   },
   {
    "codigo": "30325",
@@ -7773,7 +8884,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -7783,13 +8895,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 10.6573,
    "lon": -61.518,
-   "pais": "Trinidad e Tobago"
+   "pais": "Trinidad e Tobago",
+   "pais_mapa": "Trinidad and Tobago"
   },
   {
    "codigo": "30341",
@@ -7805,7 +8919,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -7815,13 +8930,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 41.1502,
    "lon": -8.6103,
-   "pais": "Portugal"
+   "pais": "Portugal",
+   "pais_mapa": "Portugal"
   },
   {
    "codigo": "30333",
@@ -7837,7 +8954,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -7847,13 +8965,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 18.5473,
    "lon": -72.3396,
-   "pais": "Haiti"
+   "pais": "Haiti",
+   "pais_mapa": "Haiti"
   },
   {
    "codigo": "30350",
@@ -7869,7 +8989,8 @@
     "outros": 48,
     "comparecimento": 411,
     "aptos": 690,
-    "total": 411
+    "total": 411,
+    "validos": 397
    },
    "t2": {
     "13": 304,
@@ -7879,7 +9000,8 @@
     "outros": 0,
     "comparecimento": 406,
     "aptos": 690,
-    "total": 406
+    "total": 406,
+    "validos": 390
    },
    "metricas": {
     "candidatos": {
@@ -7888,16 +9010,16 @@
       "t2": 304,
       "delta": 25,
       "pct": 8.960573476702509,
-      "share_t1": 67.88321167883211,
-      "share_t2": 74.8768472906404
+      "share_t1": 70.27707808564232,
+      "share_t2": 77.94871794871794
      },
      "22": {
       "t1": 70,
       "t2": 86,
       "delta": 16,
       "pct": 22.857142857142858,
-      "share_t1": 17.0316301703163,
-      "share_t2": 21.182266009852217
+      "share_t1": 17.632241813602015,
+      "share_t2": 22.05128205128205
      }
     },
     "diferenca_crescimento": 9,
@@ -7908,6 +9030,11 @@
     "total_t2": 406,
     "delta_total": -5,
     "pct_total": -1.2165450121654502,
+    "validos_t1": 397,
+    "validos_t2": 390,
+    "delta_validos": -7,
+    "aptos_t2": 690,
+    "comparecimento_t2": 406,
     "brancos_nulos_t1": 14,
     "brancos_nulos_t2": 16
    },
@@ -7935,7 +9062,8 @@
    ],
    "lat": 50.0875,
    "lon": 14.4213,
-   "pais": "Chéquia"
+   "pais": "Chéquia",
+   "pais_mapa": "Czechia"
   },
   {
    "codigo": "30368",
@@ -7951,7 +9079,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -7961,13 +9090,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 14.9163,
    "lon": -23.5095,
-   "pais": "Cabo Verde"
+   "pais": "Cabo Verde",
+   "pais_mapa": null
   },
   {
    "codigo": "30376",
@@ -7983,7 +9114,8 @@
     "outros": 25,
     "comparecimento": 265,
     "aptos": 657,
-    "total": 265
+    "total": 265,
+    "validos": 259
    },
    "t2": {
     "13": 79,
@@ -7993,7 +9125,8 @@
     "outros": 0,
     "comparecimento": 284,
     "aptos": 657,
-    "total": 284
+    "total": 284,
+    "validos": 274
    },
    "metricas": {
     "candidatos": {
@@ -8002,16 +9135,16 @@
       "t2": 79,
       "delta": 17,
       "pct": 27.419354838709676,
-      "share_t1": 23.39622641509434,
-      "share_t2": 27.816901408450704
+      "share_t1": 23.93822393822394,
+      "share_t2": 28.83211678832117
      },
      "22": {
       "t1": 172,
       "t2": 195,
       "delta": 23,
       "pct": 13.372093023255815,
-      "share_t1": 64.90566037735849,
-      "share_t2": 68.66197183098592
+      "share_t1": 66.40926640926641,
+      "share_t2": 71.16788321167883
      }
     },
     "diferenca_crescimento": -6,
@@ -8022,6 +9155,11 @@
     "total_t2": 284,
     "delta_total": 19,
     "pct_total": 7.169811320754717,
+    "validos_t1": 259,
+    "validos_t2": 274,
+    "delta_validos": 15,
+    "aptos_t2": 657,
+    "comparecimento_t2": 284,
     "brancos_nulos_t1": 6,
     "brancos_nulos_t2": 10
    },
@@ -8049,7 +9187,8 @@
    ],
    "lat": -25.7459,
    "lon": 28.1879,
-   "pais": "África do Sul"
+   "pais": "África do Sul",
+   "pais_mapa": "South Africa"
   },
   {
    "codigo": "99155",
@@ -8065,7 +9204,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -8075,13 +9215,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -25.6336,
    "lon": -54.5829,
-   "pais": "Argentina"
+   "pais": "Argentina",
+   "pais_mapa": "Brazil"
   },
   {
    "codigo": "99236",
@@ -8097,7 +9239,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -8107,13 +9250,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -19.0044,
    "lon": -57.7157,
-   "pais": "Bolívia"
+   "pais": "Bolívia",
+   "pais_mapa": "Bolivia"
   },
   {
    "codigo": "99295",
@@ -8129,7 +9274,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -8139,13 +9285,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 39.0197,
    "lon": 125.7526,
-   "pais": "Coreia do Norte"
+   "pais": "Coreia do Norte",
+   "pais_mapa": "North Korea"
   },
   {
    "codigo": "30392",
@@ -8161,7 +9309,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -8171,13 +9320,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -0.2202,
    "lon": -78.5123,
-   "pais": "Equador"
+   "pais": "Equador",
+   "pais_mapa": "Ecuador"
   },
   {
    "codigo": "30406",
@@ -8193,7 +9344,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -8203,13 +9355,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 34.0218,
    "lon": -6.8409,
-   "pais": "Marrocos"
+   "pais": "Marrocos",
+   "pais_mapa": "Morocco"
   },
   {
    "codigo": "30414",
@@ -8225,7 +9379,8 @@
     "outros": 34,
     "comparecimento": 1202,
     "aptos": 2135,
-    "total": 1202
+    "total": 1202,
+    "validos": 1158
    },
    "t2": {
     "13": 1000,
@@ -8235,7 +9390,8 @@
     "outros": 0,
     "comparecimento": 1069,
     "aptos": 2135,
-    "total": 1069
+    "total": 1069,
+    "validos": 1046
    },
    "metricas": {
     "candidatos": {
@@ -8244,16 +9400,16 @@
       "t2": 1000,
       "delta": -78,
       "pct": -7.2356215213358075,
-      "share_t1": 89.6838602329451,
-      "share_t2": 93.54536950420955
+      "share_t1": 93.09153713298791,
+      "share_t2": 95.60229445506693
      },
      "22": {
       "t1": 46,
       "t2": 46,
       "delta": 0,
       "pct": 0.0,
-      "share_t1": 3.826955074875208,
-      "share_t2": 4.303086997193639
+      "share_t1": 3.9723661485319517,
+      "share_t2": 4.397705544933078
      }
     },
     "diferenca_crescimento": -78,
@@ -8264,6 +9420,11 @@
     "total_t2": 1069,
     "delta_total": -133,
     "pct_total": -11.064891846921798,
+    "validos_t1": 1158,
+    "validos_t2": 1046,
+    "delta_validos": -112,
+    "aptos_t2": 2135,
+    "comparecimento_t2": 1069,
     "brancos_nulos_t1": 44,
     "brancos_nulos_t2": 23
    },
@@ -8331,7 +9492,8 @@
    ],
    "lat": 31.9031,
    "lon": 35.1952,
-   "pais": "Palestina"
+   "pais": "Palestina",
+   "pais_mapa": "Palestine"
   },
   {
    "codigo": "30422",
@@ -8347,7 +9509,8 @@
     "outros": 10,
     "comparecimento": 84,
     "aptos": 311,
-    "total": 84
+    "total": 84,
+    "validos": 84
    },
    "t2": {
     "13": 49,
@@ -8357,7 +9520,8 @@
     "outros": 0,
     "comparecimento": 84,
     "aptos": 311,
-    "total": 84
+    "total": 84,
+    "validos": 80
    },
    "metricas": {
     "candidatos": {
@@ -8367,7 +9531,7 @@
       "delta": -3,
       "pct": -5.769230769230769,
       "share_t1": 61.904761904761905,
-      "share_t2": 58.333333333333336
+      "share_t2": 61.25
      },
      "22": {
       "t1": 22,
@@ -8375,7 +9539,7 @@
       "delta": 9,
       "pct": 40.90909090909091,
       "share_t1": 26.19047619047619,
-      "share_t2": 36.904761904761905
+      "share_t2": 38.75
      }
     },
     "diferenca_crescimento": -12,
@@ -8386,6 +9550,11 @@
     "total_t2": 84,
     "delta_total": 0,
     "pct_total": 0.0,
+    "validos_t1": 84,
+    "validos_t2": 80,
+    "delta_validos": -4,
+    "aptos_t2": 311,
+    "comparecimento_t2": 84,
     "brancos_nulos_t1": 0,
     "brancos_nulos_t2": 4
    },
@@ -8413,7 +9582,8 @@
    ],
    "lat": 24.6389,
    "lon": 46.716,
-   "pais": "Arábia Saudita"
+   "pais": "Arábia Saudita",
+   "pais_mapa": "Saudi Arabia"
   },
   {
    "codigo": "30430",
@@ -8429,7 +9599,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -8439,13 +9610,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -32.5887,
    "lon": -53.3781,
-   "pais": "Uruguai"
+   "pais": "Uruguai",
+   "pais_mapa": "Uruguay"
   },
   {
    "codigo": "99244",
@@ -8461,7 +9634,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -8471,13 +9645,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -30.9001,
    "lon": -55.5408,
-   "pais": "Uruguai"
+   "pais": "Uruguai",
+   "pais_mapa": "Uruguay"
   },
   {
    "codigo": "30449",
@@ -8493,7 +9669,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -8503,13 +9680,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 41.8933,
    "lon": 12.4829,
-   "pais": "Itália"
+   "pais": "Itália",
+   "pais_mapa": "Italy"
   },
   {
    "codigo": "99147",
@@ -8525,7 +9704,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -8535,13 +9715,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 17.1185,
    "lon": -61.8449,
-   "pais": "Antígua e Barbuda"
+   "pais": "Antígua e Barbuda",
+   "pais_mapa": null
   },
   {
    "codigo": "30465",
@@ -8557,7 +9739,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -8567,13 +9750,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -24.0617,
    "lon": -54.3056,
-   "pais": "Paraguai"
+   "pais": "Paraguai",
+   "pais_mapa": "Paraguay"
   },
   {
    "codigo": "30473",
@@ -8589,7 +9774,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -8599,13 +9785,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -17.7834,
    "lon": -63.1821,
-   "pais": "Bolívia"
+   "pais": "Bolívia",
+   "pais_mapa": "Bolivia"
   },
   {
    "codigo": "99279",
@@ -8621,7 +9809,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -8631,13 +9820,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 4.5959,
    "lon": -61.1106,
-   "pais": "Venezuela"
+   "pais": "Venezuela",
+   "pais_mapa": "Venezuela"
   },
   {
    "codigo": "30481",
@@ -8653,7 +9844,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -8663,13 +9855,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -33.4377,
    "lon": -70.6511,
-   "pais": "Chile"
+   "pais": "Chile",
+   "pais_mapa": "Chile"
   },
   {
    "codigo": "30988",
@@ -8685,7 +9879,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -8695,13 +9890,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 43.8571,
    "lon": 18.4126,
-   "pais": "Bósnia e Herzegovina"
+   "pais": "Bósnia e Herzegovina",
+   "pais_mapa": "Bosnia and Herz."
   },
   {
    "codigo": "30538",
@@ -8717,7 +9914,8 @@
     "outros": 21,
     "comparecimento": 226,
     "aptos": 485,
-    "total": 226
+    "total": 226,
+    "validos": 216
    },
    "t2": {
     "13": 148,
@@ -8727,7 +9925,8 @@
     "outros": 0,
     "comparecimento": 238,
     "aptos": 485,
-    "total": 238
+    "total": 238,
+    "validos": 230
    },
    "metricas": {
     "candidatos": {
@@ -8736,16 +9935,16 @@
       "t2": 148,
       "delta": 25,
       "pct": 20.32520325203252,
-      "share_t1": 54.424778761061944,
-      "share_t2": 62.18487394957983
+      "share_t1": 56.94444444444444,
+      "share_t2": 64.34782608695652
      },
      "22": {
       "t1": 72,
       "t2": 82,
       "delta": 10,
       "pct": 13.88888888888889,
-      "share_t1": 31.858407079646017,
-      "share_t2": 34.45378151260504
+      "share_t1": 33.333333333333336,
+      "share_t2": 35.65217391304348
      }
     },
     "diferenca_crescimento": 15,
@@ -8756,6 +9955,11 @@
     "total_t2": 238,
     "delta_total": 12,
     "pct_total": 5.3097345132743365,
+    "validos_t1": 216,
+    "validos_t2": 230,
+    "delta_validos": 14,
+    "aptos_t2": 485,
+    "comparecimento_t2": 238,
     "brancos_nulos_t1": 10,
     "brancos_nulos_t2": 8
    },
@@ -8783,7 +9987,8 @@
    ],
    "lat": 37.5667,
    "lon": 126.9783,
-   "pais": "Coreia do Sul"
+   "pais": "Coreia do Sul",
+   "pais_mapa": "South Korea"
   },
   {
    "codigo": "29548",
@@ -8799,7 +10004,8 @@
     "outros": 66,
     "comparecimento": 364,
     "aptos": 864,
-    "total": 364
+    "total": 364,
+    "validos": 348
    },
    "t2": {
     "13": 213,
@@ -8809,7 +10015,8 @@
     "outros": 0,
     "comparecimento": 354,
     "aptos": 864,
-    "total": 354
+    "total": 354,
+    "validos": 334
    },
    "metricas": {
     "candidatos": {
@@ -8818,16 +10025,16 @@
       "t2": 213,
       "delta": 23,
       "pct": 12.105263157894736,
-      "share_t1": 52.1978021978022,
-      "share_t2": 60.16949152542373
+      "share_t1": 54.59770114942529,
+      "share_t2": 63.77245508982036
      },
      "22": {
       "t1": 92,
       "t2": 121,
       "delta": 29,
       "pct": 31.52173913043478,
-      "share_t1": 25.274725274725274,
-      "share_t2": 34.18079096045198
+      "share_t1": 26.436781609195403,
+      "share_t2": 36.22754491017964
      }
     },
     "diferenca_crescimento": -6,
@@ -8838,6 +10045,11 @@
     "total_t2": 354,
     "delta_total": -10,
     "pct_total": -2.7472527472527473,
+    "validos_t1": 348,
+    "validos_t2": 334,
+    "delta_validos": -14,
+    "aptos_t2": 864,
+    "comparecimento_t2": 354,
     "brancos_nulos_t1": 16,
     "brancos_nulos_t2": 20
    },
@@ -8885,7 +10097,8 @@
    ],
    "lat": 1.3571,
    "lon": 103.8195,
-   "pais": "Singapura"
+   "pais": "Singapura",
+   "pais_mapa": null
   },
   {
    "codigo": "99333",
@@ -8901,7 +10114,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -8911,13 +10125,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 3.8909,
    "lon": -51.8014,
-   "pais": "Guiana Francesa"
+   "pais": "Guiana Francesa",
+   "pais_mapa": "France"
   },
   {
    "codigo": "30562",
@@ -8933,7 +10149,8 @@
     "outros": 678,
     "comparecimento": 5694,
     "aptos": 14031,
-    "total": 5694
+    "total": 5694,
+    "validos": 5536
    },
    "t2": {
     "13": 4161,
@@ -8943,7 +10160,8 @@
     "outros": 0,
     "comparecimento": 6830,
     "aptos": 14034,
-    "total": 6830
+    "total": 6830,
+    "validos": 6629
    },
    "metricas": {
     "candidatos": {
@@ -8952,16 +10170,16 @@
       "t2": 4161,
       "delta": 1077,
       "pct": 34.92217898832685,
-      "share_t1": 54.1622760800843,
-      "share_t2": 60.92240117130307
+      "share_t1": 55.70809248554913,
+      "share_t2": 62.769648514104695
      },
      "22": {
       "t1": 1774,
       "t2": 2468,
       "delta": 694,
       "pct": 39.120631341600905,
-      "share_t1": 31.1556023884791,
-      "share_t2": 36.134699853587115
+      "share_t1": 32.04479768786127,
+      "share_t2": 37.230351485895305
      }
     },
     "diferenca_crescimento": 383,
@@ -8972,6 +10190,11 @@
     "total_t2": 6830,
     "delta_total": 1136,
     "pct_total": 19.950825430277487,
+    "validos_t1": 5536,
+    "validos_t2": 6629,
+    "delta_validos": 1093,
+    "aptos_t2": 14034,
+    "comparecimento_t2": 6830,
     "brancos_nulos_t1": 158,
     "brancos_nulos_t2": 201
    },
@@ -9359,7 +10582,8 @@
    ],
    "lat": -33.8698,
    "lon": 151.2083,
-   "pais": "Austrália"
+   "pais": "Austrália",
+   "pais_mapa": "Australia"
   },
   {
    "codigo": "30490",
@@ -9375,7 +10599,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -9385,13 +10610,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 18.4714,
    "lon": -69.8918,
-   "pais": "República Dominicana"
+   "pais": "República Dominicana",
+   "pais_mapa": "Dominican Rep."
   },
   {
    "codigo": "30503",
@@ -9407,7 +10634,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -9417,13 +10645,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 37.7879,
    "lon": -122.4075,
-   "pais": "Estados Unidos da América"
+   "pais": "Estados Unidos da América",
+   "pais_mapa": "United States of America"
   },
   {
    "codigo": "30511",
@@ -9439,7 +10669,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -9449,13 +10680,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 9.9327,
    "lon": -84.0797,
-   "pais": "Costa Rica"
+   "pais": "Costa Rica",
+   "pais_mapa": "Costa Rica"
   },
   {
    "codigo": "30520",
@@ -9471,7 +10704,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -9481,13 +10715,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 13.6976,
    "lon": -89.1912,
-   "pais": "El Salvador"
+   "pais": "El Salvador",
+   "pais_mapa": "El Salvador"
   },
   {
    "codigo": "39225",
@@ -9503,7 +10739,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -9513,13 +10750,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 0.3389,
    "lon": 6.7313,
-   "pais": "São Tomé e Príncipe"
+   "pais": "São Tomé e Príncipe",
+   "pais_mapa": null
   },
   {
    "codigo": "30546",
@@ -9535,7 +10774,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -9545,13 +10785,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 42.6977,
    "lon": 23.3217,
-   "pais": "Bulgária"
+   "pais": "Bulgária",
+   "pais_mapa": "Bulgaria"
   },
   {
    "codigo": "30570",
@@ -9567,7 +10809,8 @@
     "outros": 35,
     "comparecimento": 231,
     "aptos": 622,
-    "total": 231
+    "total": 231,
+    "validos": 219
    },
    "t2": {
     "13": 94,
@@ -9577,7 +10820,8 @@
     "outros": 0,
     "comparecimento": 239,
     "aptos": 622,
-    "total": 239
+    "total": 239,
+    "validos": 224
    },
    "metricas": {
     "candidatos": {
@@ -9586,16 +10830,16 @@
       "t2": 94,
       "delta": 17,
       "pct": 22.07792207792208,
-      "share_t1": 33.333333333333336,
-      "share_t2": 39.33054393305439
+      "share_t1": 35.15981735159817,
+      "share_t2": 41.964285714285715
      },
      "22": {
       "t1": 107,
       "t2": 130,
       "delta": 23,
       "pct": 21.49532710280374,
-      "share_t1": 46.32034632034632,
-      "share_t2": 54.39330543933055
+      "share_t1": 48.858447488584474,
+      "share_t2": 58.035714285714285
      }
     },
     "diferenca_crescimento": -6,
@@ -9606,6 +10850,11 @@
     "total_t2": 239,
     "delta_total": 8,
     "pct_total": 3.463203463203463,
+    "validos_t1": 219,
+    "validos_t2": 224,
+    "delta_validos": 5,
+    "aptos_t2": 622,
+    "comparecimento_t2": 239,
     "brancos_nulos_t1": 12,
     "brancos_nulos_t2": 15
    },
@@ -9633,7 +10882,8 @@
    ],
    "lat": 25.0375,
    "lon": 121.5637,
-   "pais": "Taiwan"
+   "pais": "Taiwan",
+   "pais_mapa": "Taiwan"
   },
   {
    "codigo": "99317",
@@ -9649,7 +10899,8 @@
     "outros": 29,
     "comparecimento": 197,
     "aptos": 320,
-    "total": 197
+    "total": 197,
+    "validos": 190
    },
    "t2": {
     "13": 160,
@@ -9659,7 +10910,8 @@
     "outros": 0,
     "comparecimento": 201,
     "aptos": 318,
-    "total": 201
+    "total": 201,
+    "validos": 193
    },
    "metricas": {
     "candidatos": {
@@ -9668,16 +10920,16 @@
       "t2": 160,
       "delta": 18,
       "pct": 12.67605633802817,
-      "share_t1": 72.08121827411168,
-      "share_t2": 79.60199004975124
+      "share_t1": 74.73684210526316,
+      "share_t2": 82.90155440414507
      },
      "22": {
       "t1": 19,
       "t2": 33,
       "delta": 14,
       "pct": 73.6842105263158,
-      "share_t1": 9.644670050761421,
-      "share_t2": 16.417910447761194
+      "share_t1": 10.0,
+      "share_t2": 17.098445595854923
      }
     },
     "diferenca_crescimento": 4,
@@ -9688,6 +10940,11 @@
     "total_t2": 201,
     "delta_total": 4,
     "pct_total": 2.030456852791878,
+    "validos_t1": 190,
+    "validos_t2": 193,
+    "delta_validos": 3,
+    "aptos_t2": 318,
+    "comparecimento_t2": 201,
     "brancos_nulos_t1": 7,
     "brancos_nulos_t2": 8
    },
@@ -9715,7 +10972,8 @@
    ],
    "lat": 59.4372,
    "lon": 24.7573,
-   "pais": "Estónia"
+   "pais": "Estónia",
+   "pais_mapa": "Estonia"
   },
   {
    "codigo": "99104",
@@ -9731,7 +10989,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -9741,13 +11000,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 41.6935,
    "lon": 44.8014,
-   "pais": "Geórgia"
+   "pais": "Geórgia",
+   "pais_mapa": "Georgia"
   },
   {
    "codigo": "30597",
@@ -9763,7 +11024,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -9773,13 +11035,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 35.6893,
    "lon": 51.3896,
-   "pais": "Irã"
+   "pais": "Irã",
+   "pais_mapa": "Iran"
   },
   {
    "codigo": "30600",
@@ -9795,7 +11059,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -9805,13 +11070,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 14.1058,
    "lon": -87.2047,
-   "pais": "Honduras"
+   "pais": "Honduras",
+   "pais_mapa": "Honduras"
   },
   {
    "codigo": "30619",
@@ -9827,7 +11094,8 @@
     "outros": 89,
     "comparecimento": 730,
     "aptos": 3442,
-    "total": 730
+    "total": 730,
+    "validos": 704
    },
    "t2": {
     "13": 166,
@@ -9837,7 +11105,8 @@
     "outros": 0,
     "comparecimento": 902,
     "aptos": 3443,
-    "total": 902
+    "total": 902,
+    "validos": 865
    },
    "metricas": {
     "candidatos": {
@@ -9846,16 +11115,16 @@
       "t2": 166,
       "delta": 74,
       "pct": 80.43478260869566,
-      "share_t1": 12.602739726027398,
-      "share_t2": 18.403547671840354
+      "share_t1": 13.068181818181818,
+      "share_t2": 19.190751445086704
      },
      "22": {
       "t1": 523,
       "t2": 699,
       "delta": 176,
       "pct": 33.652007648183556,
-      "share_t1": 71.64383561643835,
-      "share_t2": 77.49445676274945
+      "share_t1": 74.28977272727273,
+      "share_t2": 80.8092485549133
      }
     },
     "diferenca_crescimento": -102,
@@ -9866,6 +11135,11 @@
     "total_t2": 902,
     "delta_total": 172,
     "pct_total": 23.561643835616437,
+    "validos_t1": 704,
+    "validos_t2": 865,
+    "delta_validos": 161,
+    "aptos_t2": 3443,
+    "comparecimento_t2": 902,
     "brancos_nulos_t1": 26,
     "brancos_nulos_t2": 37
    },
@@ -9973,7 +11247,8 @@
    ],
    "lat": 32.0853,
    "lon": 34.7818,
-   "pais": "Israel"
+   "pais": "Israel",
+   "pais_mapa": "Israel"
   },
   {
    "codigo": "99139",
@@ -9989,7 +11264,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -9999,13 +11275,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 41.3281,
    "lon": 19.8184,
-   "pais": "Albânia"
+   "pais": "Albânia",
+   "pais_mapa": "Albania"
   },
   {
    "codigo": "30635",
@@ -10021,7 +11299,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -10031,13 +11310,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 43.6535,
    "lon": -79.3839,
-   "pais": "Canadá"
+   "pais": "Canadá",
+   "pais_mapa": "Canada"
   },
   {
    "codigo": "30686",
@@ -10053,7 +11334,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -10063,13 +11345,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 32.8967,
    "lon": 13.1778,
-   "pais": "Líbia"
+   "pais": "Líbia",
+   "pais_mapa": "Libya"
   },
   {
    "codigo": "30708",
@@ -10085,7 +11369,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -10095,13 +11380,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 36.8002,
    "lon": 10.1858,
-   "pais": "Tunísia"
+   "pais": "Tunísia",
+   "pais_mapa": "Tunisia"
   },
   {
    "codigo": "30627",
@@ -10117,7 +11404,8 @@
     "outros": 1657,
     "comparecimento": 13392,
     "aptos": 30028,
-    "total": 13392
+    "total": 13392,
+    "validos": 12408
    },
    "t2": {
     "13": 2995,
@@ -10127,7 +11415,8 @@
     "outros": 0,
     "comparecimento": 13558,
     "aptos": 30030,
-    "total": 13558
+    "total": 13558,
+    "validos": 12765
    },
    "metricas": {
     "candidatos": {
@@ -10136,16 +11425,16 @@
       "t2": 2995,
       "delta": 667,
       "pct": 28.651202749140893,
-      "share_t1": 17.38351254480287,
-      "share_t2": 22.090278802183214
+      "share_t1": 18.762088974854933,
+      "share_t2": 23.46259302781042
      },
      "22": {
       "t1": 8423,
       "t2": 9770,
       "delta": 1347,
       "pct": 15.991926866912026,
-      "share_t1": 62.8957586618877,
-      "share_t2": 72.06077592565275
+      "share_t1": 67.88362346872985,
+      "share_t2": 76.53740697218959
      }
     },
     "diferenca_crescimento": -680,
@@ -10156,6 +11445,11 @@
     "total_t2": 13558,
     "delta_total": 166,
     "pct_total": 1.2395459976105137,
+    "validos_t1": 12408,
+    "validos_t2": 12765,
+    "delta_validos": 357,
+    "aptos_t2": 30030,
+    "comparecimento_t2": 13558,
     "brancos_nulos_t1": 984,
     "brancos_nulos_t2": 793
    },
@@ -11023,7 +12317,8 @@
    ],
    "lat": 35.6769,
    "lon": 139.7639,
-   "pais": "Japão"
+   "pais": "Japão",
+   "pais_mapa": "Japan"
   },
   {
    "codigo": "39284",
@@ -11039,7 +12334,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -11049,13 +12345,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 12.3682,
    "lon": -1.5271,
-   "pais": "Burquina Faso"
+   "pais": "Burquina Faso",
+   "pais_mapa": "Burkina Faso"
   },
   {
    "codigo": "39063",
@@ -11071,7 +12369,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -11081,13 +12380,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 49.2609,
    "lon": -123.114,
-   "pais": "Canadá"
+   "pais": "Canadá",
+   "pais_mapa": "Canada"
   },
   {
    "codigo": "30740",
@@ -11103,7 +12404,8 @@
     "outros": 34,
     "comparecimento": 291,
     "aptos": 748,
-    "total": 291
+    "total": 291,
+    "validos": 282
    },
    "t2": {
     "13": 268,
@@ -11113,7 +12415,8 @@
     "outros": 0,
     "comparecimento": 363,
     "aptos": 750,
-    "total": 363
+    "total": 363,
+    "validos": 357
    },
    "metricas": {
     "candidatos": {
@@ -11122,16 +12425,16 @@
       "t2": 268,
       "delta": 85,
       "pct": 46.44808743169399,
-      "share_t1": 62.88659793814433,
-      "share_t2": 73.82920110192838
+      "share_t1": 64.8936170212766,
+      "share_t2": 75.07002801120449
      },
      "22": {
       "t1": 65,
       "t2": 89,
       "delta": 24,
       "pct": 36.92307692307692,
-      "share_t1": 22.33676975945017,
-      "share_t2": 24.517906336088153
+      "share_t1": 23.04964539007092,
+      "share_t2": 24.92997198879552
      }
     },
     "diferenca_crescimento": 61,
@@ -11142,6 +12445,11 @@
     "total_t2": 363,
     "delta_total": 72,
     "pct_total": 24.742268041237114,
+    "validos_t1": 282,
+    "validos_t2": 357,
+    "delta_validos": 75,
+    "aptos_t2": 750,
+    "comparecimento_t2": 363,
     "brancos_nulos_t1": 9,
     "brancos_nulos_t2": 6
    },
@@ -11169,39 +12477,178 @@
    ],
    "lat": 52.232,
    "lon": 21.0067,
-   "pais": "Polónia"
+   "pais": "Polónia",
+   "pais_mapa": "Poland"
   },
   {
    "codigo": "30767",
    "nome": "VIENA",
    "secoes_previstas": 9,
-   "secoes_apuradas_t2": 0,
-   "secoes_comparaveis": 0,
+   "secoes_apuradas_t2": 5,
+   "secoes_comparaveis": 5,
    "t1": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "13": 979,
+    "22": 311,
+    "brancos": 26,
+    "nulos": 25,
+    "outros": 181,
+    "comparecimento": 1522,
+    "aptos": 3134,
+    "total": 1522,
+    "validos": 1471
    },
    "t2": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
+    "13": 1178,
+    "22": 393,
+    "brancos": 21,
+    "nulos": 31,
     "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "comparecimento": 1623,
+    "aptos": 3135,
+    "total": 1623,
+    "validos": 1571
    },
-   "metricas": null,
-   "secoes": [],
+   "metricas": {
+    "candidatos": {
+     "13": {
+      "t1": 979,
+      "t2": 1178,
+      "delta": 199,
+      "pct": 20.326864147088866,
+      "share_t1": 66.55336505778382,
+      "share_t2": 74.98408656906429
+     },
+     "22": {
+      "t1": 311,
+      "t2": 393,
+      "delta": 82,
+      "pct": 26.366559485530548,
+      "share_t1": 21.14208021753909,
+      "share_t2": 25.01591343093571
+     }
+    },
+    "diferenca_crescimento": 117,
+    "margem_t1": 668,
+    "margem_t2": 785,
+    "variacao_margem": 117,
+    "total_t1": 1522,
+    "total_t2": 1623,
+    "delta_total": 101,
+    "pct_total": 6.636005256241787,
+    "validos_t1": 1471,
+    "validos_t2": 1571,
+    "delta_validos": 100,
+    "aptos_t2": 3135,
+    "comparecimento_t2": 1623,
+    "brancos_nulos_t1": 51,
+    "brancos_nulos_t2": 52
+   },
+   "secoes": [
+    {
+     "zona": "0001",
+     "secao": "0964",
+     "t1": {
+      "13": 221,
+      "22": 75,
+      "brancos": 3,
+      "nulos": 5,
+      "comparecimento": 337,
+      "aptos": 698
+     },
+     "t2": {
+      "13": 270,
+      "22": 87,
+      "brancos": 1,
+      "nulos": 5,
+      "comparecimento": 363,
+      "aptos": 697
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0965",
+     "t1": {
+      "13": 160,
+      "22": 56,
+      "brancos": 5,
+      "nulos": 3,
+      "comparecimento": 276,
+      "aptos": 699
+     },
+     "t2": {
+      "13": 214,
+      "22": 80,
+      "brancos": 3,
+      "nulos": 9,
+      "comparecimento": 306,
+      "aptos": 699
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0966",
+     "t1": {
+      "13": 217,
+      "22": 61,
+      "brancos": 7,
+      "nulos": 10,
+      "comparecimento": 335,
+      "aptos": 696
+     },
+     "t2": {
+      "13": 262,
+      "22": 79,
+      "brancos": 8,
+      "nulos": 7,
+      "comparecimento": 356,
+      "aptos": 696
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0967",
+     "t1": {
+      "13": 254,
+      "22": 87,
+      "brancos": 9,
+      "nulos": 5,
+      "comparecimento": 397,
+      "aptos": 694
+     },
+     "t2": {
+      "13": 291,
+      "22": 109,
+      "brancos": 6,
+      "nulos": 10,
+      "comparecimento": 416,
+      "aptos": 697
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1968",
+     "t1": {
+      "13": 127,
+      "22": 32,
+      "brancos": 2,
+      "nulos": 2,
+      "comparecimento": 177,
+      "aptos": 347
+     },
+     "t2": {
+      "13": 141,
+      "22": 38,
+      "brancos": 3,
+      "nulos": 0,
+      "comparecimento": 182,
+      "aptos": 346
+     }
+    }
+   ],
    "lat": 48.2084,
    "lon": 16.3725,
-   "pais": "Áustria"
+   "pais": "Áustria",
+   "pais_mapa": "Austria"
   },
   {
    "codigo": "30783",
@@ -11217,7 +12664,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -11227,13 +12675,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 38.8951,
    "lon": -77.0364,
-   "pais": "Estados Unidos da América"
+   "pais": "Estados Unidos da América",
+   "pais_mapa": "United States of America"
   },
   {
    "codigo": "30805",
@@ -11249,7 +12699,8 @@
     "outros": 34,
     "comparecimento": 339,
     "aptos": 3118,
-    "total": 339
+    "total": 339,
+    "validos": 332
    },
    "t2": {
     "13": 418,
@@ -11259,7 +12710,8 @@
     "outros": 0,
     "comparecimento": 526,
     "aptos": 3119,
-    "total": 526
+    "total": 526,
+    "validos": 519
    },
    "metricas": {
     "candidatos": {
@@ -11268,16 +12720,16 @@
       "t2": 418,
       "delta": 184,
       "pct": 78.63247863247864,
-      "share_t1": 69.02654867256638,
-      "share_t2": 79.46768060836501
+      "share_t1": 70.48192771084338,
+      "share_t2": 80.53949903660886
      },
      "22": {
       "t1": 64,
       "t2": 101,
       "delta": 37,
       "pct": 57.8125,
-      "share_t1": 18.87905604719764,
-      "share_t2": 19.20152091254753
+      "share_t1": 19.27710843373494,
+      "share_t2": 19.460500963391137
      }
     },
     "diferenca_crescimento": 147,
@@ -11288,6 +12740,11 @@
     "total_t2": 526,
     "delta_total": 187,
     "pct_total": 55.1622418879056,
+    "validos_t1": 332,
+    "validos_t2": 519,
+    "delta_validos": 187,
+    "aptos_t2": 3119,
+    "comparecimento_t2": 526,
     "brancos_nulos_t1": 7,
     "brancos_nulos_t2": 7
    },
@@ -11395,7 +12852,8 @@
    ],
    "lat": -41.2888,
    "lon": 174.7772,
-   "pais": "Nova Zelândia"
+   "pais": "Nova Zelândia",
+   "pais_mapa": "New Zealand"
   },
   {
    "codigo": "30821",
@@ -11411,7 +12869,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -11421,13 +12880,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": -22.5336,
    "lon": 17.0455,
-   "pais": "Namíbia"
+   "pais": "Namíbia",
+   "pais_mapa": "Namibia"
   },
   {
    "codigo": "30848",
@@ -11443,7 +12904,8 @@
     "outros": 25,
     "comparecimento": 197,
     "aptos": 739,
-    "total": 197
+    "total": 197,
+    "validos": 182
    },
    "t2": {
     "13": 182,
@@ -11453,7 +12915,8 @@
     "outros": 0,
     "comparecimento": 264,
     "aptos": 740,
-    "total": 264
+    "total": 264,
+    "validos": 248
    },
    "metricas": {
     "candidatos": {
@@ -11462,16 +12925,16 @@
       "t2": 182,
       "delta": 66,
       "pct": 56.89655172413793,
-      "share_t1": 58.88324873096447,
-      "share_t2": 68.93939393939394
+      "share_t1": 63.73626373626374,
+      "share_t2": 73.38709677419355
      },
      "22": {
       "t1": 41,
       "t2": 66,
       "delta": 25,
       "pct": 60.97560975609756,
-      "share_t1": 20.81218274111675,
-      "share_t2": 25.0
+      "share_t1": 22.52747252747253,
+      "share_t2": 26.612903225806452
      }
     },
     "diferenca_crescimento": 41,
@@ -11482,6 +12945,11 @@
     "total_t2": 264,
     "delta_total": 67,
     "pct_total": 34.01015228426396,
+    "validos_t1": 182,
+    "validos_t2": 248,
+    "delta_validos": 66,
+    "aptos_t2": 740,
+    "comparecimento_t2": 264,
     "brancos_nulos_t1": 15,
     "brancos_nulos_t2": 16
    },
@@ -11509,7 +12977,8 @@
    ],
    "lat": 31.2313,
    "lon": 121.47,
-   "pais": "China"
+   "pais": "China",
+   "pais_mapa": "China"
   },
   {
    "codigo": "99376",
@@ -11525,7 +12994,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -11535,13 +13005,15 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 16.7967,
    "lon": 96.161,
-   "pais": "Birmânia"
+   "pais": "Birmânia",
+   "pais_mapa": "Myanmar"
   },
   {
    "codigo": "39020",
@@ -11557,7 +13029,8 @@
     "outros": 2,
     "comparecimento": 52,
     "aptos": 136,
-    "total": 52
+    "total": 52,
+    "validos": 48
    },
    "t2": {
     "13": 31,
@@ -11567,7 +13040,8 @@
     "outros": 0,
     "comparecimento": 59,
     "aptos": 136,
-    "total": 59
+    "total": 59,
+    "validos": 57
    },
    "metricas": {
     "candidatos": {
@@ -11576,16 +13050,16 @@
       "t2": 31,
       "delta": 2,
       "pct": 6.896551724137931,
-      "share_t1": 55.76923076923077,
-      "share_t2": 52.54237288135593
+      "share_t1": 60.416666666666664,
+      "share_t2": 54.3859649122807
      },
      "22": {
       "t1": 17,
       "t2": 26,
       "delta": 9,
       "pct": 52.94117647058823,
-      "share_t1": 32.69230769230769,
-      "share_t2": 44.067796610169495
+      "share_t1": 35.416666666666664,
+      "share_t2": 45.6140350877193
      }
     },
     "diferenca_crescimento": -7,
@@ -11596,6 +13070,11 @@
     "total_t2": 59,
     "delta_total": 7,
     "pct_total": 13.461538461538462,
+    "validos_t1": 48,
+    "validos_t2": 57,
+    "delta_validos": 9,
+    "aptos_t2": 136,
+    "comparecimento_t2": 59,
     "brancos_nulos_t1": 4,
     "brancos_nulos_t2": 2
    },
@@ -11623,7 +13102,8 @@
    ],
    "lat": 45.8131,
    "lon": 15.9773,
-   "pais": "Croácia"
+   "pais": "Croácia",
+   "pais_mapa": "Croatia"
   },
   {
    "codigo": "30864",
@@ -11639,7 +13119,8 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "t2": {
     "13": 0,
@@ -11649,68 +13130,77 @@
     "outros": 0,
     "comparecimento": 0,
     "aptos": 0,
-    "total": 0
+    "total": 0,
+    "validos": 0
    },
    "metricas": null,
    "secoes": [],
    "lat": 47.3744,
    "lon": 8.541,
-   "pais": "Suíça"
+   "pais": "Suíça",
+   "pais_mapa": "Switzerland"
   }
  ],
  "falhas": [],
  "agregado": {
   "t1": {
-   "13": 19473,
-   "22": 32011,
-   "brancos": 1842,
-   "nulos": 1377,
-   "outros": 6944,
-   "comparecimento": 61647,
-   "aptos": 149167,
-   "total": 61647
+   "13": 24703,
+   "22": 33324,
+   "brancos": 1930,
+   "nulos": 1461,
+   "outros": 7597,
+   "comparecimento": 69015,
+   "aptos": 165688,
+   "total": 69015,
+   "validos": 65624
   },
   "t2": {
-   "13": 24227,
-   "22": 37807,
-   "brancos": 1499,
-   "nulos": 1350,
+   "13": 30731,
+   "22": 39418,
+   "brancos": 1566,
+   "nulos": 1465,
    "outros": 0,
-   "comparecimento": 64883,
-   "aptos": 149183,
-   "total": 64883
+   "comparecimento": 73180,
+   "aptos": 165704,
+   "total": 73180,
+   "validos": 70149
   },
   "metricas": {
    "candidatos": {
     "13": {
-     "t1": 19473,
-     "t2": 24227,
-     "delta": 4754,
-     "pct": 24.413290196682585,
-     "share_t1": 31.587911820526546,
-     "share_t2": 37.33951882619484
+     "t1": 24703,
+     "t2": 30731,
+     "delta": 6028,
+     "pct": 24.40189450674007,
+     "share_t1": 37.64324027794709,
+     "share_t2": 43.80817973171392
     },
     "22": {
-     "t1": 32011,
-     "t2": 37807,
-     "delta": 5796,
-     "pct": 18.106275967636126,
-     "share_t1": 51.92629000600191,
-     "share_t2": 58.26950048548927
+     "t1": 33324,
+     "t2": 39418,
+     "delta": 6094,
+     "pct": 18.28712039371024,
+     "share_t1": 50.78020236498842,
+     "share_t2": 56.19182026828608
     }
    },
-   "diferenca_crescimento": -1042,
-   "margem_t1": -12538,
-   "margem_t2": -13580,
-   "variacao_margem": -1042,
-   "total_t1": 61647,
-   "total_t2": 64883,
-   "delta_total": 3236,
-   "pct_total": 5.2492416500397425,
-   "brancos_nulos_t1": 3219,
-   "brancos_nulos_t2": 2849
+   "diferenca_crescimento": -66,
+   "margem_t1": -8621,
+   "margem_t2": -8687,
+   "variacao_margem": -66,
+   "total_t1": 69015,
+   "total_t2": 73180,
+   "delta_total": 4165,
+   "pct_total": 6.034919944939506,
+   "validos_t1": 65624,
+   "validos_t2": 70149,
+   "delta_validos": 4525,
+   "aptos_t2": 165704,
+   "comparecimento_t2": 73180,
+   "brancos_nulos_t1": 3391,
+   "brancos_nulos_t2": 3031
   },
-  "secoes_apuradas_t2": 220,
+  "secoes_apuradas_t2": 245,
   "secoes_previstas": 2715
  }
 }

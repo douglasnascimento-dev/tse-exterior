@@ -51,17 +51,23 @@ def agrega(pleito, uf, municipio, secoes, nums, cache, pool=None):
             tot[k] = tot.get(k, 0) + linha[k]
     tot["total"] = sum(tot[str(n)] for n in nums) + tot["brancos"] + \
         tot["nulos"] + tot["outros"]
+    # válidos = total menos brancos e nulos; votos em outros candidatos contam
+    tot["validos"] = tot["total"] - tot["brancos"] - tot["nulos"]
     return tot, por_secao
 
 
 def metricas(t1, t2, nums):
-    """Crescimento individual, diferença de crescimento e totais."""
+    """Crescimento individual, diferença de crescimento e totais.
+
+    As porcentagens são sobre os votos válidos (total menos brancos e nulos),
+    que é a base usada na apuração oficial.
+    """
     def cresc(nr):
         a, b = t1[str(nr)], t2[str(nr)]
         return {"t1": a, "t2": b, "delta": b - a,
                 "pct": (100.0 * (b - a) / a) if a else None,
-                "share_t1": (100.0 * a / t1["total"]) if t1["total"] else None,
-                "share_t2": (100.0 * b / t2["total"]) if t2["total"] else None}
+                "share_t1": (100.0 * a / t1["validos"]) if t1["validos"] else None,
+                "share_t2": (100.0 * b / t2["validos"]) if t2["validos"] else None}
 
     c = {str(n): cresc(n) for n in nums}
     a, b = nums[0], nums[1]
@@ -78,6 +84,11 @@ def metricas(t1, t2, nums):
         "delta_total": t2["total"] - t1["total"],
         "pct_total": (100.0 * (t2["total"] - t1["total"]) / t1["total"])
         if t1["total"] else None,
+        "validos_t1": t1["validos"],
+        "validos_t2": t2["validos"],
+        "delta_validos": t2["validos"] - t1["validos"],
+        "aptos_t2": t2["aptos"],
+        "comparecimento_t2": t2["comparecimento"],
         "brancos_nulos_t1": t1["brancos"] + t1["nulos"],
         "brancos_nulos_t2": t2["brancos"] + t2["nulos"],
     }
@@ -166,19 +177,22 @@ def main(caminho=None):
                      "secoes_previstas": len(secoes.get(cd, [])),
                      "secoes_apuradas_t2": 0, "secoes_comparaveis": 0,
                      "t1": zeros(nums) | {"brancos": 0, "nulos": 0, "outros": 0,
-                                          "comparecimento": 0, "aptos": 0, "total": 0},
+                                          "comparecimento": 0, "aptos": 0,
+                                          "total": 0, "validos": 0},
                      "t2": zeros(nums) | {"brancos": 0, "nulos": 0, "outros": 0,
-                                          "comparecimento": 0, "aptos": 0, "total": 0},
+                                          "comparecimento": 0, "aptos": 0,
+                                          "total": 0, "validos": 0},
                      "metricas": None, "secoes": [], "falhou": True}
             p = coords.get(cd) or {}
             if p.get("lat") is not None:
                 c["lat"], c["lon"] = p["lat"], p["lon"]
             c["pais"] = p.get("pais", "—")
+            c["pais_mapa"] = p.get("pais_mapa")
             cidades.append(c)
 
     # agregado de todas as cidades coletadas
     ag1 = zeros(nums); ag1.update(brancos=0, nulos=0, outros=0,
-                                  comparecimento=0, aptos=0, total=0)
+                                  comparecimento=0, aptos=0, total=0, validos=0)
     ag2 = dict(ag1)
     for c in cidades:
         for k in ag1:

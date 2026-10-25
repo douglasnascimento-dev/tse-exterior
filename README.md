@@ -6,7 +6,8 @@ urna** publicados pelo TSE.
 
 Cobre as **186 cidades** do exterior, em 134 países. Traz:
 
-- **mapa-múndi** com uma bolha por cidade apurada (área = votos, cor = quem lidera);
+- **mapa-múndi** com cada país pintado na cor de quem lidera ali (países
+  pequenos demais para o mapa 110m aparecem como ponto);
 - **evolução da apuração** — a porcentagem de cada candidato ao longo do dia,
   com o 1º turno nas mesmas seções como linha tracejada de referência;
 - **recorte por cidade, por país ou pelo exterior inteiro**;
@@ -73,7 +74,21 @@ Algumas: `30805` Wellington · `30627` Lisboa · `30295` Miami ·
 > simultâneos (`TSE_PARALELO` ajusta) e o cache do Actions evita rebaixar o que
 > já veio; uma execução completa leva ~4 min.
 
+### Porcentagens
+
+São calculadas sobre **votos válidos** (total menos brancos e nulos), que é a
+base da apuração oficial. No 2º turno os dois somam 100%; no 1º turno não, já
+que havia 14 candidatos e os votos dos demais também são válidos.
+
 ### O mapa
+
+Cada cidade é ligada ao polígono do país **por geometria** (ponto dentro do
+polígono), não por nome — os nomes vêm do Nominatim em português e o mapa usa
+inglês. Sete cidades litorâneas são resolvidas pelo contorno mais próximo
+(até 0,6°) e nove casos têm correção manual em `coletor/mapear_paises.py`:
+o mapa 110m não traz Singapura, Barein, Barbados, Cabo Verde, São Tomé,
+Antígua nem Santa Lúcia, e sem correção o vizinho seria pintado no lugar.
+Essas aparecem como ponto.
 
 As coordenadas das 186 cidades estão em `docs/dados/coordenadas.json`,
 geocodificadas uma única vez via Nominatim/OSM e **versionadas** — a coleta
@@ -120,6 +135,7 @@ Terminada a apuração, desligue o cron para não gastar minutos de Actions.
 | `coletor/listar_cidades.py` | lista as cidades do exterior |
 | `coletor/geocodificar.py` | geocodifica as cidades (roda uma vez) |
 | `coletor/mapa_base.py` | gera os contornos dos países (roda uma vez) |
+| `coletor/mapear_paises.py` | liga cada cidade ao polígono do seu país |
 | `coletor/coordenadas_manuais.json` | correções de geocoding |
 | `docs/index.html` | dashboard (HTML/SVG, sem dependências) |
 | `docs/dados/resumo.json` | saída da coleta, lida pelo dashboard |
