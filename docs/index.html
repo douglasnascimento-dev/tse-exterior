@@ -292,6 +292,22 @@ function blocosCrescimento(d, m, cores) {
 }
 
 /* ---- 2º turno de 2022 contra o de 2026, no recorte atual ---- */
+/* ---- 2022 do recorte atual: só as cidades já apuradas que existiam lá ---- */
+function base22De(cidades) {
+  if (!BASE22) return null;
+  const nums = Object.keys(DADOS.candidatos).sort((a, b) => a - b);
+  const [a, b] = nums;
+  const uteis = cidades.filter(c => c.metricas && BASE22[c.codigo]);
+  if (!uteis.length) return null;
+  let va = 0, vb = 0, validos = 0;
+  uteis.forEach(c => {
+    const x = BASE22[c.codigo];
+    va += x[a]; vb += x[b]; validos += x.validos;
+  });
+  if (!validos) return null;
+  return { n: uteis.length, pa: 100 * va / validos, pb: 100 * vb / validos };
+}
+
 function compara2022(d, cidades, m, cores) {
   if (!BASE22) return "";
   const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
@@ -371,7 +387,7 @@ function compara2022(d, cidades, m, cores) {
   </div>`;
 }
 
-function confronto(d, m, cores) {
+function confronto(d, m, cores, ref22) {
   const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
   const [a, b] = nums;
   const pa = m.candidatos[a].share_t2, pb = m.candidatos[b].share_t2;
@@ -389,11 +405,20 @@ function confronto(d, m, cores) {
     <div class="pilha" role="img" aria-label="${d.candidatos[a]} ${dec(pa)}%, ${d.candidatos[b]} ${dec(pb)}%">
       <i style="width:${pa}%;background:${cores[0]}"></i>
       <i style="width:${pb}%;background:${cores[1]}"></i>
-      <i style="width:${resto}%;background:var(--neutral)"></i>
+      ${resto > 0.05 ? `<i style="width:${resto}%;background:var(--neutral)"></i>` : ""}
+      ${ref22 ? `<span class="marca22" style="left:${ref22.pa}%"
+        title="divisão de 2022: ${dec(ref22.pa)}% × ${dec(ref22.pb)}%"></span>` : ""}
     </div>
-    <p class="antes">No 1º turno, <strong>nas mesmas seções</strong>:
+    ${ref22 ? `<p class="antes">A marca na barra é onde ficava a divisão em
+      2022 nessas mesmas cidades: ${dec(ref22.pa)}% × ${dec(ref22.pb)}%.
+      ${pa >= ref22.pa
+        ? `${d.candidatos[a]} está <strong>${dec(pa - ref22.pa, 2)} p.p. acima</strong>`
+        : `${d.candidatos[a]} está <strong>${dec(ref22.pa - pa, 2)} p.p. abaixo</strong>`}
+      daquele patamar.</p>` : ""}
+    <p class="antes">No 1º turno, <strong>nas mesmas urnas</strong>:
       ${dec(m.candidatos[a].share_t1)}% × ${dec(m.candidatos[b].share_t1)}%
-      · brancos, nulos e demais candidatos somam ${dec(resto)}% agora.</p>
+      — o resto ia para os outros 12 candidatos. Agora há
+      ${nf(m.brancos_nulos_t2)} brancos e nulos, fora da conta dos válidos.</p>
   </div>`;
 }
 
@@ -421,6 +446,9 @@ const CAMPOS = {
   a:       { rot: null,      val: (x, n) => x.metricas.candidatos[n[0]].share_t2 },
   b:       { rot: null,      val: (x, n) => x.metricas.candidatos[n[1]].share_t2 },
   margem:  { rot: "Margem",  val: x => x.metricas.margem_t2 },
+  sw22:    { rot: "vs 2022",  val: (x, n) => {
+                const r = swing22(x, n);
+                return r == null ? -Infinity : r; } },
   votos:   { rot: "Válidos", val: x => x.metricas.validos_t2 },
 };
 
@@ -432,6 +460,22 @@ function bandeira(x) {
   const emoji = [...iso.toUpperCase()]
     .map(ch => String.fromCodePoint(0x1F1E6 + ch.charCodeAt(0) - 65)).join("");
   return `<span class="bnd" title="${iso.toUpperCase()}">${emoji}</span>`;
+}
+
+function swing22(x, nums) {
+  /* Variação do primeiro candidato ante 2022, em p.p. Um país soma as suas
+     cidades; cidade sem histórico de 2022 fica sem valor. */
+  if (!BASE22 || !x.metricas) return null;
+  const [a, b] = nums;
+  const alvos = x.cs ? x.cs.filter(c => c.metricas) : [x];
+  let va = 0, validos = 0;
+  alvos.forEach(c => {
+    const y = BASE22[c.codigo];
+    if (!y) return;
+    va += y[a]; validos += y.validos;
+  });
+  if (!validos) return null;
+  return x.metricas.candidatos[a].share_t2 - 100 * va / validos;
 }
 
 function ordena(itens, nums) {
@@ -542,6 +586,9 @@ function tabelaRanking(d, cores, recorte) {
       <td class="num"><span style="color:${cores[li]};font-weight:650">
         ${sf(m.margem_t2)}</span>
         <span class="peq">era ${sf(m.margem_t1)}</span></td>
+      <td class="num">${(() => { const r = swing22(x, nums);
+        return r == null ? '<span class="peq">—</span>'
+          : `${(r > 0 ? "+" : "") + dec(r, 1)}<span class="peq">p.p.</span>`; })()}</td>
       <td class="num">${nf(m.validos_t2)}<span class="peq">${sf(m.delta_total)} vs 1T</span></td>
     </tr>`;
   }).join("");
@@ -567,6 +614,7 @@ function tabelaRanking(d, cores, recorte) {
       ${th("a", d.candidatos[nums[0]], `<span class="sw" style="background:${cores[0]}"></span>`)}
       ${th("b", d.candidatos[nums[1]], `<span class="sw" style="background:${cores[1]}"></span>`)}
       ${th("margem", "Margem", "", `positiva = ${d.candidatos[nums[0]]} à frente`)}
+      ${th("sw22", "vs 2022", "", `variação de ${d.candidatos[nums[0]]} ante o 2º turno de 2022`)}
       ${th("votos", "Válidos")}
     </tr></thead><tbody>${linhas}</tbody></table></div></div>`;
 }
@@ -695,7 +743,7 @@ function linhaRitmo(hist, d, cores) {
       dia.</p>` : ""}</div>`;
 }
 
-function linhaTempo(hist, d, cores) {
+function linhaTempo(hist, d, cores, ref22) {
   const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
   const pts = hist.filter(h => nums.every(n => h[`p${n}_t2`] != null));
   if (pts.length < 2) {
@@ -728,6 +776,20 @@ function linhaTempo(hist, d, cores) {
     eixo += `<text class="ax" x="${X(t)}" y="${m.t + ih + 20}"
       text-anchor="${i ? "end" : "start"}">${hora(t)}</text>`;
   });
+
+  // patamar de 2022 nas mesmas cidades: mostra se o resultado de hoje está
+  // acima ou abaixo do que aquele eleitorado deu há quatro anos
+  let ref = "";
+  if (ref22) {
+    [ref22.pa, ref22.pb].forEach((v, i) => {
+      if (v < lo || v > hi) return;
+      ref += `<line x1="${m.l}" x2="${m.l + iw}" y1="${Y(v)}" y2="${Y(v)}"
+          stroke="${cores[i]}" stroke-width="1.5" stroke-dasharray="2 5"
+          opacity=".75"></line>
+        <text class="ax" x="${m.l + 6}" y="${Y(v) - 5}"
+          fill="${cores[i]}">2022: ${dec(v)}%</text>`;
+    });
+  }
 
   let linhas = "";
   nums.forEach((n, i) => {
@@ -765,9 +827,10 @@ function linhaTempo(hist, d, cores) {
     <p class="note">Como a porcentagem de cada um mudou conforme as seções
       chegaram, comparada com o 1º turno nas mesmas seções.
       ${pts.length} leituras.</p>
-    <div class="legend">${leg}</div>
+    <div class="legend">${leg}${ref22 ? `<span style="color:var(--text-muted)">
+      ··· pontilhado: patamar de 2022 nessas cidades</span>` : ""}</div>
     <div class="scroll"><svg viewBox="0 0 ${W} ${H}" role="img">
-      ${eixo}${linhas}${alvos}</svg></div></div>`;
+      ${eixo}${ref}${linhas}${alvos}</svg></div></div>`;
 }
 
 let ORD = { campo: 'votos', desc: true };
@@ -921,8 +984,10 @@ function desenha() {
   // o histórico acumulado é do exterior inteiro; num recorte de país ou
   // cidade ele descreveria outro conjunto de dados e enganaria
   const evolucao = CIDADE === "__agg__"
-    ? linhaTempo(HIST, d, cores) + linhaRitmo(HIST, d, cores) : "";
-  $("#conteudo").innerHTML = tiles + confronto(d, m, cores)
+    ? linhaTempo(HIST, d, cores, base22De(doRecorte))
+      + linhaRitmo(HIST, d, cores) : "";
+  const ref22 = base22De(doRecorte);
+  $("#conteudo").innerHTML = tiles + confronto(d, m, cores, ref22)
     + compara2022(d, doRecorte, m, cores) + evolucao + `
     <div class="card"><h2>Votos por turno</h2>
       <p class="note">Mesmo eixo para os dois turnos; apenas seções comparáveis.</p>

@@ -19,6 +19,11 @@ Cobre as **186 cidades** do exterior, em 134 países. Traz:
   daquele ano como referência de patamar;
 - **detalhamento por seção** ao abrir uma cidade.
 
+O 2º turno de 2022 aparece também **dentro dos gráficos**: como linha
+pontilhada no gráfico de evolução, como marca sobre a barra de confronto (dá
+para ver de relance se o resultado está acima ou abaixo do patamar de 2022
+naquelas cidades) e como coluna ordenável na tabela.
+
 Clicar num país abre uma página só daquele recorte, com URL própria
 (`.../#mapa:Japan`) que pode ser compartilhada ou recarregada. Nesse recorte a
 tabela lista só as cidades daquele país e o gráfico de evolução some — o
@@ -187,8 +192,11 @@ leitura mais recente.
   inteira sai 3h deslocada — foi o que aconteceu na primeira reconstrução, e o
   gráfico mostrava a virada às 11h quando ela foi às 14h11.
 - `historico.jsonl` é normalizado (ordenado e sem repetições) a cada escrita, e
-  o painel também deduplica na leitura: o `merge=union` do git resolve o push
-  concorrente sem conflito, mas pode deixar as linhas fora de ordem.
+  o painel também deduplica na leitura.
+- **`merge=union` só vale para arquivo estritamente append-only.** Ele estava
+  ligado para `historico.jsonl`, que passou a ser reescrito — e ressuscitou as
+  linhas de uma reconstrução antiga, com fuso errado, que eu já havia
+  corrigido. Hoje só `brasil_historico.jsonl` usa união.
 - O trecho inicial da série é **reconstruído** por `reconstruir_historico.py`,
   que remonta o estado da apuração a partir da hora em que o TSE recebeu cada
   boletim (campo `hr` do `aux.json`, horário de Brasília — a hora gravada

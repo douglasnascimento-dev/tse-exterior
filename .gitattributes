@@ -1,1 +1,5 @@
-docs/dados/*.jsonl merge=union
+# brasil_historico.jsonl só recebe linhas novas no fim: união resolve o push
+# concorrente sem conflito. historico.jsonl NÃO entra aqui — ele é reescrito
+# (ordenado e deduplicado) a cada coleta, e a união ressuscitava linhas
+# antigas de uma reconstrução com fuso errado.
+docs/dados/brasil_historico.jsonl merge=union

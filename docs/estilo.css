@@ -154,3 +154,9 @@ tbody tr:hover { background:var(--surface-0); }
 .mini { height:5px; border-radius:99px; background:var(--grid);
         overflow:hidden; min-width:64px; margin-left:auto; }
 .mini i { display:block; height:100%; background:var(--text-muted); }
+
+/* marca do patamar de 2022 sobre a barra de confronto */
+.pilha { position:relative; }
+.marca22 { position:absolute; top:-4px; bottom:-4px; width:2px;
+  background:var(--text-primary); transform:translateX(-1px);
+  box-shadow:0 0 0 1.5px var(--surface-1); border-radius:2px; }
