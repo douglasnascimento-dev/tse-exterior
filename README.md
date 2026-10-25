@@ -160,6 +160,32 @@ afastados por repulsão, com uma linha fina ligando cada bolha ao ponto real.
 
 Terminada a apuração, desligue os crons para não gastar minutos de Actions.
 
+### As curvas passadas
+
+A página do Brasil sobrepõe a apuração de hoje às de eleições anteriores, no
+eixo de **percentual de seções totalizadas** — que é o único comparável entre
+dias diferentes.
+
+- **2022**: o TSE publica o "Histórico de Totalização" nos dados abertos, com o
+  minuto a minuto dos dois turnos. `curvas_2022.py` extrai.
+- **1º turno de 2026**: esse histórico **não existe** — o TSE só o publica
+  tempos depois da eleição, e para 2026 ainda dá 404. `curva_1t_2026.py`
+  reconstrói cruzando duas fontes: o config de arquivo de urna, que traz a hora
+  de recebimento de cada uma das 499 mil seções, e o CSV de votação por seção.
+  O resultado final confere com o oficial (Lula 45,161% contra 45,16%), o que
+  valida o cruzamento. É a curva de *recebimento dos boletins*, não a da
+  totalização oficial — andam juntas, mas não são a mesma coisa.
+
+Como o 1º turno tinha 14 candidatos, a comparação com ele usa a porcentagem
+**só entre os dois finalistas**; os arquivos trazem as duas bases.
+
+### Coleta incremental
+
+Cidade com todas as urnas apuradas não muda mais, então a coleta seguinte não a
+relê — só confere o total esperado, que é uma requisição barata. Com 70 das 186
+cidades fechadas, a rodada caiu de ~4 min para ~2 min. `TSE_REVISAR_TUDO=1`
+força a varredura completa.
+
 ### O acompanhamento minuto a minuto
 
 O cron do GitHub Actions não desce de 5 minutos e costuma atrasar, então
@@ -223,7 +249,11 @@ leitura mais recente.
 | `coletor/base_2022.py` | extrai o 2º turno de 2022 no exterior (roda uma vez) |
 | `coletor/brasil.py` | lê a totalização agregada do Brasil, por UF |
 | `coletor/publicar.sh` | commita e empurra lidando com push concorrente |
-| `docs/brasil.html` | painel do Brasil, minuto a minuto, com 2022 |
+| `docs/brasil.html` | painel do Brasil, minuto a minuto, com curvas passadas |
+| `coletor/curvas_2022.py` | curvas de totalização de 2022 (roda uma vez) |
+| `coletor/curva_1t_2026.py` | reconstrói a curva do 1º turno de 2026 |
+| `docs/dados/curvas_2022.json` | curvas de 2022, por % apurado |
+| `docs/dados/curva_1t_2026.json` | curva do 1º turno de 2026 |
 | `docs/estilo.css` | estilos comuns às duas páginas |
 | `coletor/coordenadas_manuais.json` | correções de geocoding |
 | `docs/index.html` | dashboard (HTML/SVG, sem dependências) |

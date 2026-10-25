@@ -14,6 +14,9 @@ import bu
 # Downloads simultâneos. Modesto de propósito: o volume todo são ~2.700 seções
 # por turno e o cache evita rebaixar o que já veio.
 PARALELO = int(os.environ.get("TSE_PARALELO", "8"))
+# Cidade com todas as urnas apuradas não muda mais: relê só o que falta.
+# TSE_REVISAR_TUDO=1 força a varredura completa.
+REVISAR_TUDO = os.environ.get("TSE_REVISAR_TUDO") == "1"
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 URNAS = {}          # município -> boletins esperados, preenchido em main()
@@ -179,7 +182,17 @@ def main(caminho=None):
     if os.path.exists(arq_coords):
         coords = json.load(open(arq_coords, encoding="utf-8"))
 
-    cidades, falhas = [], []
+    # resultado da execução anterior: serve para pular o que já fechou
+    anteriores = {}
+    arq_resumo = os.path.join(SAIDA, "resumo.json")
+    if not REVISAR_TUDO and os.path.exists(arq_resumo):
+        try:
+            for c in json.load(open(arq_resumo, encoding="utf-8"))["cidades"]:
+                anteriores[c["codigo"]] = c
+        except Exception:
+            anteriores = {}
+
+    cidades, falhas, puladas = [], [], 0
     with ThreadPoolExecutor(max_workers=PARALELO) as pool:
         global URNAS
         URNAS = urnas_previstas("ele2026", cfg["turno2"]["eleicao"], uf,
@@ -187,6 +200,15 @@ def main(caminho=None):
         print(f"boletins esperados: {sum(URNAS.values())} "
               f"(em {len(URNAS)} cidades)", flush=True)
         for i, cd in enumerate(alvo, 1):
+            # já fechou na execução anterior e o total esperado não mudou?
+            feita = anteriores.get(cd)
+            if (feita and feita.get("metricas")
+                    and feita.get("secoes_apuradas_t2", 0) >= URNAS.get(cd, -1)
+                    and feita.get("secoes_previstas") == URNAS.get(cd)):
+                feita["pulada"] = True
+                cidades.append(feita)
+                puladas += 1
+                continue
             print(f"[{i}/{len(alvo)}] {nomes.get(cd, cd)}", flush=True)
             c = None
             for tentativa in (1, 2):                # uma segunda chance antes de desistir
@@ -294,6 +316,9 @@ def main(caminho=None):
                 f.write(json.dumps(r, ensure_ascii=False) + "\n")
 
     a = saida["agregado"]
+    if puladas:
+        print(f"{puladas} cidade(s) já com todas as urnas apuradas: não "
+              f"foram relidas", flush=True)
     if falhas:
         print(f"\nATENÇÃO: {len(falhas)} cidade(s) não coletada(s): "
               + ", ".join(f["nome"] for f in falhas), file=sys.stderr)
