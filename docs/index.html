@@ -397,7 +397,7 @@ const CAMPOS = {
                                 ? x.secoes_apuradas_t2 / x.secoes_previstas : 0 },
   a:       { rot: null,      val: (x, n) => x.metricas.candidatos[n[0]].share_t2 },
   b:       { rot: null,      val: (x, n) => x.metricas.candidatos[n[1]].share_t2 },
-  margem:  { rot: "Margem",  val: x => Math.abs(x.metricas.margem_t2) },
+  margem:  { rot: "Margem",  val: x => x.metricas.margem_t2 },
   votos:   { rot: "Válidos", val: x => x.metricas.validos_t2 },
 };
 
@@ -422,11 +422,71 @@ function ordena(itens, nums) {
   return copia;
 }
 
-function th(campo, rotulo, extra) {
+function th(campo, rotulo, extra, dica) {
   const ativo = ORD.campo === campo;
   return `<th data-ord="${campo}" class="ord${ativo ? " ativo" : ""}"
-    title="Ordenar por ${rotulo}">${extra || ""}${rotulo}` +
+    title="${dica ? dica + " · " : ""}Ordenar por ${rotulo}">${extra || ""}${rotulo}` +
     `<span class="seta">${ativo ? (ORD.desc ? "▾" : "▴") : ""}</span></th>`;
+}
+
+/* ---- quem cresceu mais rápido, por cidade (diferença em p.p.) ---- */
+const MIN_1T = 50;   // abaixo disso a taxa de crescimento vira ruído
+
+function graficoRitmo(d, itens, cores) {
+  const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
+  const [a, b] = nums;
+  const dados = itens.filter(x => x.metricas).map(x => {
+    const m = x.metricas, ca = m.candidatos[a], cb = m.candidatos[b];
+    if (ca.pct == null || cb.pct == null) return null;
+    if (ca.t1 < MIN_1T || cb.t1 < MIN_1T) return null;
+    return { nome: x.nome, codigo: x.codigo, iso2: x.iso2, cs: x.cs,
+             diff: ca.pct - cb.pct, pa: ca.pct, pb: cb.pct };
+  }).filter(Boolean);
+  if (dados.length < 2) return "";
+
+  const corte = dados.slice().sort((x, y) => Math.abs(y.diff) - Math.abs(x.diff))
+    .slice(0, 20);
+  corte.sort((x, y) => y.diff - x.diff);
+
+  const W = 760, rh = 26, m = { l: 190, r: 70 };
+  const H = corte.length * rh + 26;
+  const iw = W - m.l - m.r;
+  const max = Math.max(...corte.map(x => Math.abs(x.diff))) || 1;
+  const meio = m.l + iw / 2;
+  const esc = v => (v / max) * (iw / 2);
+
+  const barras = corte.map((x, i) => {
+    const y = i * rh + 18, w = Math.max(Math.abs(esc(x.diff)), 2);
+    const px = x.diff >= 0 ? meio : meio - w;
+    const cor = cores[x.diff >= 0 ? 0 : 1];
+    return `<text class="lbl" x="${m.l - 14}" y="${y + 12}" text-anchor="end">${x.nome}</text>
+      <rect x="${px.toFixed(1)}" y="${y + 2}" width="${w.toFixed(1)}" height="14"
+        rx="3" fill="${cor}" data-cidade="${x.codigo}"
+        data-tip="${encodeURIComponent(
+          `<b>${x.nome}</b><br>${d.candidatos[a]}: ${pf(x.pa)}<br>`
+          + `${d.candidatos[b]}: ${pf(x.pb)}<br>diferença <b>${
+            (x.diff > 0 ? "+" : "") + dec(x.diff, 2)} p.p.</b> para ${
+            d.candidatos[x.diff >= 0 ? a : b]}`)}"></rect>
+      <text class="lbl-strong" x="${(x.diff >= 0 ? px + w + 8 : px - 8).toFixed(1)}"
+        y="${y + 13}" text-anchor="${x.diff >= 0 ? "start" : "end"}"
+        >${(x.diff > 0 ? "+" : "") + dec(x.diff, 1)}</text>`;
+  }).join("");
+
+  const leg = `<div class="legend">
+    <span><span class="sw" style="background:${cores[0]}"></span>${d.candidatos[a]} cresceu mais rápido</span>
+    <span><span class="sw" style="background:${cores[1]}"></span>${d.candidatos[b]} cresceu mais rápido</span></div>`;
+
+  return `<div class="card"><h2>Quem acelerou mais, e onde</h2>
+    <p class="note">Diferença entre as taxas de crescimento de cada um, do 1º
+      para o 2º turno, em pontos percentuais.
+      ${dados.length > 20 ? `As 20 maiores de ${dados.length} ` : `${dados.length} `}
+      ${dados.length > 20 ? "diferenças" : "lugares"}.
+      Quem parte de uma base menor cresce mais fácil em proporção, então lugares
+      com menos de ${MIN_1T} votos para algum dos dois no 1º turno ficam de fora.</p>
+    ${leg}
+    <div class="scroll"><svg viewBox="0 0 ${W} ${H}" role="img">
+      <line class="gl" x1="${meio}" x2="${meio}" y1="10" y2="${H - 6}"></line>
+      ${barras}</svg></div></div>`;
 }
 
 function tabelaRanking(d, cores, recorte) {
@@ -457,8 +517,8 @@ function tabelaRanking(d, cores, recorte) {
       <td class="num ${li === 1 ? "forte" : ""}">${dec(pb)}%
         <span class="peq">${nf(m.candidatos[b].t2)}</span></td>
       <td class="num"><span style="color:${cores[li]};font-weight:650">
-        ${nf(Math.abs(m.margem_t2))}</span>
-        <span class="peq">${d.candidatos[nums[li]].split(" ")[0]}</span></td>
+        ${sf(m.margem_t2)}</span>
+        <span class="peq">era ${sf(m.margem_t1)}</span></td>
       <td class="num">${nf(m.validos_t2)}<span class="peq">${sf(m.delta_total)} vs 1T</span></td>
     </tr>`;
   }).join("");
@@ -475,14 +535,15 @@ function tabelaRanking(d, cores, recorte) {
       </div>`}
     </div>
     <p class="note">${itens.length} ${agrupado ? "países" : "cidades"}
-      com pelo menos uma urna apurada. Clique no cabeçalho para ordenar,
+      com pelo menos uma urna apurada. Margem positiva = ${d.candidatos[nums[0]]}
+      à frente. Clique no cabeçalho para ordenar,
       ${noPais ? "e numa linha para abrir a cidade" : "e numa linha para abrir"}.</p>
     <div class="scroll"><table><thead><tr>
       ${th("nome", noPais || MODO !== "pais" ? "Cidade" : "País")}
       ${th("urnas", "Urnas")}
       ${th("a", d.candidatos[nums[0]], `<span class="sw" style="background:${cores[0]}"></span>`)}
       ${th("b", d.candidatos[nums[1]], `<span class="sw" style="background:${cores[1]}"></span>`)}
-      ${th("margem", "Margem")}
+      ${th("margem", "Margem", "", `positiva = ${d.candidatos[nums[0]]} à frente`)}
       ${th("votos", "Válidos")}
     </tr></thead><tbody>${linhas}</tbody></table></div></div>`;
 }
@@ -754,6 +815,9 @@ function desenha() {
         seções. Os dois jeitos de medir podem apontar para lados diferentes.</p>
       ${blocosCrescimento(d, m, cores)}
       <div class="scroll">${barrasCrescimento(cresc)}</div></div>`
+    + (CIDADE === "__agg__" || CIDADE.startsWith("pais:") || CIDADE.startsWith("mapa:")
+        ? graficoRitmo(d, CIDADE === "__agg__" && MODO === "pais"
+            ? porPais(d) : doRecorte, cores) : "")
     + (CIDADE.startsWith("pais:") || CIDADE.startsWith("mapa:") || CIDADE === "__agg__"
         ? tabelaRanking(d, cores, doRecorte) : tabela);
 

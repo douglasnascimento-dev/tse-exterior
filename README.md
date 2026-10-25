@@ -24,7 +24,15 @@ tabela lista só as cidades daquele país e o gráfico de evolução some — o
 histórico acumulado é do exterior inteiro e descreveria outro conjunto de
 dados ali.
 
-A tabela é ordenável por qualquer coluna e traz a bandeira de cada país. As
+A tabela é ordenável por qualquer coluna e traz a bandeira de cada país. A
+margem vem com sinal — positiva quando o primeiro candidato está à frente — para
+que ordenar por ela separe os dois lados em vez de misturá-los.
+
+O gráfico "Quem acelerou mais, e onde" compara as **taxas** de crescimento de
+cada um, em pontos percentuais. Quem parte de uma base menor cresce mais fácil
+em proporção, então lugares com menos de 50 votos para algum dos dois no 1º
+turno ficam de fora: sem esse corte, Jacarta apareceria com +66 p.p. vindo de 8
+votos contra 19. As
 bandeiras são emoji: no Windows o Chrome não as desenha e mostra as duas
 letras do país, que continua legível.
 
