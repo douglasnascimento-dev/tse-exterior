@@ -69,6 +69,7 @@ def curva(turno):
         pontos.append({
             "pct": round(pct, 4),
             "hora": c(r, "DT_TOTALIZACAO").strip()[11:16],
+            "quando": c(r, "DT_TOTALIZACAO").strip(),
             "validos": int(validos),
             "p13": round(100 * l / validos, 3),
             "p22": round(100 * b / validos, 3),

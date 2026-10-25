@@ -162,9 +162,22 @@ Terminada a apuração, desligue os crons para não gastar minutos de Actions.
 
 ### As curvas passadas
 
-A página do Brasil sobrepõe a apuração de hoje às de eleições anteriores, no
-eixo de **percentual de seções totalizadas** — que é o único comparável entre
-dias diferentes.
+A página do Brasil sobrepõe a apuração de hoje às de eleições anteriores, com
+dois eixos à escolha:
+
+- **por horário** (padrão): horas desde o início de cada apuração. É a forma
+  conhecida das curvas de TV e portais — sobe no começo, despenca, achata.
+- **por % apurado**: percentual de seções totalizadas, o eixo rigorosamente
+  comparável entre eleições de durações diferentes.
+
+A diferença de formato entre os dois é grande e não é erro de dado: no 1º
+turno de 2026, entre 18h09 e 18h32 a apuração saltou de 14% para 36,6% das
+urnas. No eixo do tempo esses 23 minutos viram um degrau vertical; no eixo do
+apurado, um trecho largo e suave. É o mesmo dado.
+
+O diagnóstico escrito abaixo do gráfico compara sempre **no mesmo ponto de
+apuração**, mesmo quando o eixo mostra horário — comparar "mesma hora" entre
+eleições diferentes não diria nada.
 
 - **2022**: o TSE publica o "Histórico de Totalização" nos dados abertos, com o
   minuto a minuto dos dois turnos. `curvas_2022.py` extrai.

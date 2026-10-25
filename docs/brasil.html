@@ -66,6 +66,7 @@ function mostraTip(e, html) {
 }
 const escondeTip = () => tip.style.opacity = 0;
 
+let EIXO = 'tempo';   // 'tempo' = horas desde o início · 'pct' = urnas apuradas
 let DADOS = null, HIST = [], B22 = null, C22 = null, C1T = null, MARCHA = null;
 
 function share(bloco, n) {
@@ -260,6 +261,20 @@ function nivel1T(d, cores) {
   });
 }
 
+function minutos(pontos) {
+  /* minutos desde o primeiro instante da série — permite pôr eleições de
+     dias diferentes no mesmo eixo */
+  const t0 = pontos.find(p => p.quando) &&
+    new Date(pontos.find(p => p.quando).quando.replace(
+      /^(\d{2})\/(\d{2})\/(\d{4}) /, "$3-$2-$1T")).getTime();
+  return p => {
+    if (!p.quando || !t0) return null;
+    const t = new Date(p.quando.replace(
+      /^(\d{2})\/(\d{2})\/(\d{4}) /, "$3-$2-$1T")).getTime();
+    return (t - t0) / 60000;
+  };
+}
+
 function curvaComparada(d, cores, passada, cfg) {
   const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
   const [a, b] = nums;
@@ -276,14 +291,30 @@ function curvaComparada(d, cores, passada, cfg) {
     .filter(p => p.ya != null && p.x > 0);
   if (!ref.length) return "";
 
+  // eixo por tempo: cada série conta os minutos desde o seu próprio início,
+  // porque as eleições são de dias diferentes
+  if (EIXO === "tempo") {
+    const mv = minutos(MARCHA && MARCHA.pontos && MARCHA.pontos.length
+      ? MARCHA.pontos : []);
+    const mr = minutos(passada);
+    const refOrig = (passada || []);
+    ref.forEach((p, i) => { const v = mr(refOrig[i]); p.x = v == null ? p.x : v; });
+    if (MARCHA && MARCHA.pontos) {
+      const vivos = MARCHA.pontos.filter(q => q.pct > 0);
+      vivo.forEach((p, i) => { const v = mv(vivos[i]); p.x = v == null ? p.x : v; });
+    }
+  }
+
   const W = 760, H = 330, m = { t: 18, r: 92, b: 40, l: 48 };
   const iw = W - m.l - m.r, ih = H - m.t - m.b;
   const todos = [...ref, ...vivo];
+  const xMax = EIXO === "tempo"
+    ? Math.max(...todos.map(p => p.x), 60) : 100;
   let lo = Math.min(...todos.flatMap(p => [p.ya, p.yb]));
   let hi = Math.max(...todos.flatMap(p => [p.ya, p.yb]));
   const folga = Math.max(1.5, (hi - lo) * 0.12);
   lo = Math.max(0, lo - folga); hi = Math.min(100, hi + folga);
-  const X = v => m.l + (v / 100) * iw;
+  const X = v => m.l + (v / xMax) * iw;
   const Y = v => m.t + (hi - v) / (hi - lo) * ih;
 
   let eixo = "";
@@ -292,12 +323,22 @@ function curvaComparada(d, cores, passada, cfg) {
     eixo += `<line class="gl" x1="${m.l}" x2="${m.l + iw}" y1="${y}" y2="${y}"></line>
       <text class="ax" x="${m.l - 8}" y="${y + 4}" text-anchor="end">${dec(v)}%</text>`;
   }
-  [0, 25, 50, 75, 100].forEach(v => {
-    eixo += `<text class="ax" x="${X(v)}" y="${m.t + ih + 20}"
-      text-anchor="middle">${v}%</text>`;
-  });
-  eixo += `<text class="ax" x="${m.l + iw / 2}" y="${m.t + ih + 36}"
-    text-anchor="middle">seções totalizadas</text>`;
+  if (EIXO === "tempo") {
+    const passoH = xMax > 480 ? 120 : 60;
+    for (let v = 0; v <= xMax; v += passoH) {
+      eixo += `<text class="ax" x="${X(v)}" y="${m.t + ih + 20}"
+        text-anchor="middle">+${Math.round(v / 60)}h</text>`;
+    }
+    eixo += `<text class="ax" x="${m.l + iw / 2}" y="${m.t + ih + 36}"
+      text-anchor="middle">horas desde o início da apuração</text>`;
+  } else {
+    [0, 25, 50, 75, 100].forEach(v => {
+      eixo += `<text class="ax" x="${X(v)}" y="${m.t + ih + 20}"
+        text-anchor="middle">${v}%</text>`;
+    });
+    eixo += `<text class="ax" x="${m.l + iw / 2}" y="${m.t + ih + 36}"
+      text-anchor="middle">seções totalizadas</text>`;
+  }
 
   const traco = (pts, chave, cor, tracejado) => pts.length < 2 ? "" :
     `<path d="M${pts.map(p => `${X(p.x).toFixed(1)} ${Y(p[chave]).toFixed(1)}`)
@@ -329,12 +370,19 @@ function curvaComparada(d, cores, passada, cfg) {
     de ${cfg.rotulo} está aí para comparar assim que os primeiros votos saírem.</p>`;
   if (vivo.length) {
     const u = vivo[vivo.length - 1];
-    let maisProx = ref[0];
-    ref.forEach(p => {
-      if (Math.abs(p.x - u.x) < Math.abs(maisProx.x - u.x)) maisProx = p;
+    // a comparação é sempre no mesmo ponto de APURAÇÃO, mesmo quando o eixo
+    // mostra horário: comparar "mesma hora" entre eleições não diz nada
+    const pctAgora = (MARCHA && MARCHA.pontos && MARCHA.pontos.length)
+      ? MARCHA.pontos[MARCHA.pontos.length - 1].pct : u.x;
+    const refOrig = passada || [];
+    let maisProx = ref[0], iProx = 0;
+    refOrig.forEach((p, i) => {
+      if (Math.abs(p.pct - pctAgora) < Math.abs(refOrig[iProx].pct - pctAgora))
+        iProx = i;
     });
+    maisProx = ref[iProx] || ref[0];
     const dif = u.ya - maisProx.ya;
-    diag = `<p class="antes">Com <strong>${dec(u.x, 1)}%</strong> apurado,
+    diag = `<p class="antes">Com <strong>${dec(pctAgora, 1)}%</strong> apurado,
       ${d.candidatos[a]} tem <strong>${dec(u.ya)}%</strong>. No mesmo ponto de
       ${cfg.rotulo} ele tinha ${dec(maisProx.ya)}% —
       <strong>${(dif > 0 ? "+" : "") + dec(dif, 2)} p.p.</strong>.
@@ -347,8 +395,18 @@ function curvaComparada(d, cores, passada, cfg) {
     <span style="color:var(--text-muted)">— contínuo: hoje · ··· tracejado: ${cfg.rotulo}</span>
   </div>`;
 
-  return `<div class="card"><h2>${cfg.titulo}</h2>
-    <p class="note">${cfg.descricao}</p>
+  return `<div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center;
+                gap:12px;flex-wrap:wrap">
+      <h2 style="margin:0">${cfg.titulo}</h2>
+      <div class="seg" role="group" aria-label="Eixo horizontal">
+        <button data-eixo="tempo" aria-pressed="${EIXO === "tempo"}">por horário</button>
+        <button data-eixo="pct" aria-pressed="${EIXO === "pct"}">por % apurado</button>
+      </div>
+    </div>
+    <p class="note">${cfg.descricao} ${EIXO === "tempo"
+      ? "O eixo conta as horas desde o início de cada apuração."
+      : "O eixo é o percentual de urnas totalizadas, que é o comparável entre dias diferentes."}</p>
     ${leg}
     <div class="scroll"><svg viewBox="0 0 ${W} ${H}" role="img">
       ${eixo}${linhas}</svg></div>
@@ -455,6 +513,9 @@ function tabelaUF(d, cores) {
 }
 
 function ligaTips() {
+  document.querySelectorAll("[data-eixo]").forEach(el => {
+    el.addEventListener("click", () => { EIXO = el.dataset.eixo; desenha(); });
+  });
   document.querySelectorAll("[data-tip]").forEach(el => {
     el.addEventListener("mousemove", e =>
       mostraTip(e, decodeURIComponent(el.dataset.tip)));
