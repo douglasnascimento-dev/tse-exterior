@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-25T15:18:37+00:00",
+ "gerado_em": "2026-10-25T15:26:52+00:00",
  "fonte": "resultados.tse.jus.br — arquivo de urna (BU)",
  "uf": "zz",
  "turno1": {
@@ -591,30 +591,100 @@
    "codigo": "29335",
    "nome": "ATENAS",
    "secoes_previstas": 4,
-   "secoes_apuradas_t2": 0,
-   "secoes_comparaveis": 0,
+   "secoes_apuradas_t2": 2,
+   "secoes_comparaveis": 2,
    "t1": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "13": 196,
+    "22": 230,
+    "brancos": 8,
+    "nulos": 6,
+    "outros": 68,
+    "comparecimento": 508,
+    "aptos": 1211,
+    "total": 508
    },
    "t2": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
+    "13": 255,
+    "22": 311,
+    "brancos": 13,
+    "nulos": 2,
     "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "comparecimento": 581,
+    "aptos": 1211,
+    "total": 581
    },
-   "metricas": null,
-   "secoes": [],
+   "metricas": {
+    "candidatos": {
+     "13": {
+      "t1": 196,
+      "t2": 255,
+      "delta": 59,
+      "pct": 30.102040816326532,
+      "share_t1": 38.58267716535433,
+      "share_t2": 43.88984509466437
+     },
+     "22": {
+      "t1": 230,
+      "t2": 311,
+      "delta": 81,
+      "pct": 35.21739130434783,
+      "share_t1": 45.275590551181104,
+      "share_t2": 53.52839931153184
+     }
+    },
+    "diferenca_crescimento": -22,
+    "margem_t1": -34,
+    "margem_t2": -56,
+    "variacao_margem": -22,
+    "total_t1": 508,
+    "total_t2": 581,
+    "delta_total": 73,
+    "pct_total": 14.37007874015748,
+    "brancos_nulos_t1": 14,
+    "brancos_nulos_t2": 15
+   },
+   "secoes": [
+    {
+     "zona": "0001",
+     "secao": "1897",
+     "t1": {
+      "13": 109,
+      "22": 114,
+      "brancos": 2,
+      "nulos": 4,
+      "comparecimento": 257,
+      "aptos": 606
+     },
+     "t2": {
+      "13": 140,
+      "22": 155,
+      "brancos": 4,
+      "nulos": 0,
+      "comparecimento": 299,
+      "aptos": 606
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1898",
+     "t1": {
+      "13": 87,
+      "22": 116,
+      "brancos": 6,
+      "nulos": 2,
+      "comparecimento": 251,
+      "aptos": 605
+     },
+     "t2": {
+      "13": 115,
+      "22": 156,
+      "brancos": 9,
+      "nulos": 2,
+      "comparecimento": 282,
+      "aptos": 605
+     }
+    }
+   ],
    "lat": 37.9756,
    "lon": 23.7348
   },
@@ -3433,30 +3503,100 @@
    "codigo": "29785",
    "nome": "HELSINQUE",
    "secoes_previstas": 4,
-   "secoes_apuradas_t2": 0,
-   "secoes_comparaveis": 0,
+   "secoes_apuradas_t2": 2,
+   "secoes_comparaveis": 2,
    "t1": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "13": 475,
+    "22": 155,
+    "brancos": 14,
+    "nulos": 11,
+    "outros": 63,
+    "comparecimento": 718,
+    "aptos": 1278,
+    "total": 718
    },
    "t2": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
+    "13": 550,
+    "22": 185,
+    "brancos": 13,
+    "nulos": 8,
     "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "comparecimento": 756,
+    "aptos": 1278,
+    "total": 756
    },
-   "metricas": null,
-   "secoes": [],
+   "metricas": {
+    "candidatos": {
+     "13": {
+      "t1": 475,
+      "t2": 550,
+      "delta": 75,
+      "pct": 15.789473684210526,
+      "share_t1": 66.15598885793872,
+      "share_t2": 72.75132275132275
+     },
+     "22": {
+      "t1": 155,
+      "t2": 185,
+      "delta": 30,
+      "pct": 19.35483870967742,
+      "share_t1": 21.58774373259053,
+      "share_t2": 24.47089947089947
+     }
+    },
+    "diferenca_crescimento": 45,
+    "margem_t1": 320,
+    "margem_t2": 365,
+    "variacao_margem": 45,
+    "total_t1": 718,
+    "total_t2": 756,
+    "delta_total": 38,
+    "pct_total": 5.2924791086350975,
+    "brancos_nulos_t1": 25,
+    "brancos_nulos_t2": 21
+   },
+   "secoes": [
+    {
+     "zona": "0001",
+     "secao": "0381",
+     "t1": {
+      "13": 237,
+      "22": 87,
+      "brancos": 9,
+      "nulos": 5,
+      "comparecimento": 364,
+      "aptos": 641
+     },
+     "t2": {
+      "13": 269,
+      "22": 107,
+      "brancos": 4,
+      "nulos": 4,
+      "comparecimento": 384,
+      "aptos": 640
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0382",
+     "t1": {
+      "13": 238,
+      "22": 68,
+      "brancos": 5,
+      "nulos": 6,
+      "comparecimento": 354,
+      "aptos": 637
+     },
+     "t2": {
+      "13": 281,
+      "22": 78,
+      "brancos": 9,
+      "nulos": 4,
+      "comparecimento": 372,
+      "aptos": 638
+     }
+    }
+   ],
    "lat": 60.1666,
    "lon": 24.9435
   },
@@ -4694,30 +4834,80 @@
    "codigo": "30090",
    "nome": "MAPUTO",
    "secoes_previstas": 2,
-   "secoes_apuradas_t2": 0,
-   "secoes_comparaveis": 0,
+   "secoes_apuradas_t2": 1,
+   "secoes_comparaveis": 1,
    "t1": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "13": 89,
+    "22": 113,
+    "brancos": 2,
+    "nulos": 12,
+    "outros": 12,
+    "comparecimento": 228,
+    "aptos": 557,
+    "total": 228
    },
    "t2": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
+    "13": 108,
+    "22": 117,
+    "brancos": 1,
+    "nulos": 7,
     "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "comparecimento": 233,
+    "aptos": 556,
+    "total": 233
    },
-   "metricas": null,
-   "secoes": [],
+   "metricas": {
+    "candidatos": {
+     "13": {
+      "t1": 89,
+      "t2": 108,
+      "delta": 19,
+      "pct": 21.348314606741575,
+      "share_t1": 39.03508771929825,
+      "share_t2": 46.351931330472105
+     },
+     "22": {
+      "t1": 113,
+      "t2": 117,
+      "delta": 4,
+      "pct": 3.5398230088495577,
+      "share_t1": 49.56140350877193,
+      "share_t2": 50.21459227467811
+     }
+    },
+    "diferenca_crescimento": 15,
+    "margem_t1": -24,
+    "margem_t2": -9,
+    "variacao_margem": 15,
+    "total_t1": 228,
+    "total_t2": 233,
+    "delta_total": 5,
+    "pct_total": 2.192982456140351,
+    "brancos_nulos_t1": 14,
+    "brancos_nulos_t2": 8
+   },
+   "secoes": [
+    {
+     "zona": "0001",
+     "secao": "0207",
+     "t1": {
+      "13": 89,
+      "22": 113,
+      "brancos": 2,
+      "nulos": 12,
+      "comparecimento": 228,
+      "aptos": 557
+     },
+     "t2": {
+      "13": 108,
+      "22": 117,
+      "brancos": 1,
+      "nulos": 7,
+      "comparecimento": 233,
+      "aptos": 556
+     }
+    }
+   ],
    "lat": -25.9662,
    "lon": 32.5675
   },
@@ -6399,30 +6589,80 @@
    "codigo": "39322",
    "nome": "NICOSIA",
    "secoes_previstas": 1,
-   "secoes_apuradas_t2": 0,
-   "secoes_comparaveis": 0,
+   "secoes_apuradas_t2": 1,
+   "secoes_comparaveis": 1,
    "t1": {
-    "13": 0,
-    "22": 0,
+    "13": 24,
+    "22": 20,
     "brancos": 0,
     "nulos": 0,
-    "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "outros": 14,
+    "comparecimento": 58,
+    "aptos": 137,
+    "total": 58
    },
    "t2": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
+    "13": 29,
+    "22": 25,
+    "brancos": 1,
+    "nulos": 3,
     "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "comparecimento": 58,
+    "aptos": 137,
+    "total": 58
    },
-   "metricas": null,
-   "secoes": [],
+   "metricas": {
+    "candidatos": {
+     "13": {
+      "t1": 24,
+      "t2": 29,
+      "delta": 5,
+      "pct": 20.833333333333332,
+      "share_t1": 41.37931034482759,
+      "share_t2": 50.0
+     },
+     "22": {
+      "t1": 20,
+      "t2": 25,
+      "delta": 5,
+      "pct": 25.0,
+      "share_t1": 34.48275862068966,
+      "share_t2": 43.10344827586207
+     }
+    },
+    "diferenca_crescimento": 0,
+    "margem_t1": 4,
+    "margem_t2": 4,
+    "variacao_margem": 0,
+    "total_t1": 58,
+    "total_t2": 58,
+    "delta_total": 0,
+    "pct_total": 0.0,
+    "brancos_nulos_t1": 0,
+    "brancos_nulos_t2": 4
+   },
+   "secoes": [
+    {
+     "zona": "0001",
+     "secao": "0490",
+     "t1": {
+      "13": 24,
+      "22": 20,
+      "brancos": 0,
+      "nulos": 0,
+      "comparecimento": 58,
+      "aptos": 137
+     },
+     "t2": {
+      "13": 29,
+      "22": 25,
+      "brancos": 1,
+      "nulos": 3,
+      "comparecimento": 58,
+      "aptos": 137
+     }
+    }
+   ],
    "lat": 35.1747,
    "lon": 33.3639
   },
@@ -8524,30 +8764,80 @@
    "codigo": "99317",
    "nome": "TALIN",
    "secoes_previstas": 1,
-   "secoes_apuradas_t2": 0,
-   "secoes_comparaveis": 0,
+   "secoes_apuradas_t2": 1,
+   "secoes_comparaveis": 1,
    "t1": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "13": 142,
+    "22": 19,
+    "brancos": 3,
+    "nulos": 4,
+    "outros": 29,
+    "comparecimento": 197,
+    "aptos": 320,
+    "total": 197
    },
    "t2": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
+    "13": 160,
+    "22": 33,
+    "brancos": 1,
+    "nulos": 7,
     "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0
+    "comparecimento": 201,
+    "aptos": 318,
+    "total": 201
    },
-   "metricas": null,
-   "secoes": [],
+   "metricas": {
+    "candidatos": {
+     "13": {
+      "t1": 142,
+      "t2": 160,
+      "delta": 18,
+      "pct": 12.67605633802817,
+      "share_t1": 72.08121827411168,
+      "share_t2": 79.60199004975124
+     },
+     "22": {
+      "t1": 19,
+      "t2": 33,
+      "delta": 14,
+      "pct": 73.6842105263158,
+      "share_t1": 9.644670050761421,
+      "share_t2": 16.417910447761194
+     }
+    },
+    "diferenca_crescimento": 4,
+    "margem_t1": 123,
+    "margem_t2": 127,
+    "variacao_margem": 4,
+    "total_t1": 197,
+    "total_t2": 201,
+    "delta_total": 4,
+    "pct_total": 2.030456852791878,
+    "brancos_nulos_t1": 7,
+    "brancos_nulos_t2": 8
+   },
+   "secoes": [
+    {
+     "zona": "0001",
+     "secao": "1282",
+     "t1": {
+      "13": 142,
+      "22": 19,
+      "brancos": 3,
+      "nulos": 4,
+      "comparecimento": 197,
+      "aptos": 320
+     },
+     "t2": {
+      "13": 160,
+      "22": 33,
+      "brancos": 1,
+      "nulos": 7,
+      "comparecimento": 201,
+      "aptos": 318
+     }
+    }
+   ],
    "lat": 59.4372,
    "lon": 24.7573
   },
@@ -10244,56 +10534,56 @@
  ],
  "agregado": {
   "t1": {
-   "13": 12718,
-   "22": 28923,
-   "brancos": 1648,
-   "nulos": 1150,
-   "outros": 6059,
-   "comparecimento": 50498,
-   "aptos": 124302,
-   "total": 50498
+   "13": 13644,
+   "22": 29460,
+   "brancos": 1675,
+   "nulos": 1183,
+   "outros": 6245,
+   "comparecimento": 52207,
+   "aptos": 127805,
+   "total": 52207
   },
   "t2": {
-   "13": 16692,
-   "22": 34117,
-   "brancos": 1328,
-   "nulos": 1168,
+   "13": 17794,
+   "22": 34788,
+   "brancos": 1357,
+   "nulos": 1195,
    "outros": 0,
-   "comparecimento": 53305,
-   "aptos": 124317,
-   "total": 53305
+   "comparecimento": 55134,
+   "aptos": 127817,
+   "total": 55134
   },
   "metricas": {
    "candidatos": {
     "13": {
-     "t1": 12718,
-     "t2": 16692,
-     "delta": 3974,
-     "pct": 31.247051423179744,
-     "share_t1": 25.185155847756345,
-     "share_t2": 31.314135634555857
+     "t1": 13644,
+     "t2": 17794,
+     "delta": 4150,
+     "pct": 30.416300205218413,
+     "share_t1": 26.134426417913307,
+     "share_t2": 32.27409583922806
     },
     "22": {
-     "t1": 28923,
-     "t2": 34117,
-     "delta": 5194,
-     "pct": 17.958026484112988,
-     "share_t1": 57.2755356647788,
-     "share_t2": 64.00337679392177
+     "t1": 29460,
+     "t2": 34788,
+     "delta": 5328,
+     "pct": 18.08553971486762,
+     "share_t1": 56.42921447315494,
+     "share_t2": 63.09718141255849
     }
    },
-   "diferenca_crescimento": -1220,
-   "margem_t1": -16205,
-   "margem_t2": -17425,
-   "variacao_margem": -1220,
-   "total_t1": 50498,
-   "total_t2": 53305,
-   "delta_total": 2807,
-   "pct_total": 5.558635985583588,
-   "brancos_nulos_t1": 2798,
-   "brancos_nulos_t2": 2496
+   "diferenca_crescimento": -1178,
+   "margem_t1": -15816,
+   "margem_t2": -16994,
+   "variacao_margem": -1178,
+   "total_t1": 52207,
+   "total_t2": 55134,
+   "delta_total": 2927,
+   "pct_total": 5.606527860248626,
+   "brancos_nulos_t1": 2858,
+   "brancos_nulos_t2": 2552
   },
-  "secoes_apuradas_t2": 181,
+  "secoes_apuradas_t2": 188,
   "secoes_previstas": 2715
  }
 }
