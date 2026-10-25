@@ -21,6 +21,17 @@ Cobre as **186 cidades** do exterior, em 134 países. Traz:
 Clicar num país abre uma página só daquele recorte, com URL própria
 (`.../#mapa:Japan`) que pode ser compartilhada ou recarregada.
 
+## Duas páginas
+
+| Página | O quê | Fonte |
+|---|---|---|
+| `docs/index.html` | votação no exterior, cidade a cidade | boletins de urna, lidos um a um |
+| `docs/brasil.html` | apuração no Brasil, minuto a minuto | totalização agregada do TSE |
+
+O Brasil tem ~499 mil seções: ler boletim por boletim seria mais de um milhão
+de requisições. Lá a fonte é o feed de totalização que o TSE publica por UF e
+para o país, que já vem somado.
+
 ## Como funciona
 
 O site do TSE **não libera CORS**: uma requisição de navegador com header
@@ -115,7 +126,20 @@ afastados por repulsão, com uma linha fina ligando cada bolha ao ponto real.
    (o workflow commita os dados).
 4. O cron roda a cada 15 min; `workflow_dispatch` permite rodar na hora.
 
-Terminada a apuração, desligue o cron para não gastar minutos de Actions.
+Terminada a apuração, desligue os crons para não gastar minutos de Actions.
+
+### O acompanhamento minuto a minuto
+
+O cron do GitHub Actions não desce de 5 minutos e costuma atrasar, então
+`Acompanhar apuração no Brasil` não depende dele: é **um único job** que fica
+rodando até 5h40 e lê o feed de minuto em minuto por dentro, publicando a cada
+5 leituras. Dispare pelo botão *Run workflow* ou deixe o cron de domingo 17h
+(BRT) iniciar sozinho.
+
+Os dois workflows escrevem no mesmo repositório. Para o push concorrente não
+virar conflito, `.gitattributes` marca os `.jsonl` como `merge=union` (são
+append-only) e `coletor/publicar.sh` resolve `brasil.json` ficando com a
+leitura mais recente.
 
 ## Ressalvas
 
@@ -146,6 +170,10 @@ Terminada a apuração, desligue o cron para não gastar minutos de Actions.
 | `coletor/mapa_base.py` | gera os contornos dos países (roda uma vez) |
 | `coletor/mapear_paises.py` | liga cada cidade ao polígono do seu país |
 | `coletor/base_2022.py` | extrai o 2º turno de 2022 no exterior (roda uma vez) |
+| `coletor/brasil.py` | lê a totalização agregada do Brasil, por UF |
+| `coletor/publicar.sh` | commita e empurra lidando com push concorrente |
+| `docs/brasil.html` | painel do Brasil, minuto a minuto |
+| `docs/estilo.css` | estilos comuns às duas páginas |
 | `coletor/coordenadas_manuais.json` | correções de geocoding |
 | `docs/index.html` | dashboard (HTML/SVG, sem dependências) |
 | `docs/dados/resumo.json` | saída da coleta, lida pelo dashboard |

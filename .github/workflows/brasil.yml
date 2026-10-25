@@ -1,0 +1,59 @@
+name: Acompanhar apuração no Brasil
+
+# O Brasil tem ~499 mil seções: ler boletim por boletim é inviável. Aqui a
+# fonte é o feed de totalização agregada do TSE, que atualiza em segundos.
+# O cron do Actions não desce de 5 min (e atrasa), então um único job fica
+# rodando e lê de minuto em minuto por dentro.
+
+on:
+  workflow_dispatch:
+    inputs:
+      intervalo:
+        description: "Segundos entre leituras"
+        default: "60"
+      duracao:
+        description: "Duração total em minutos"
+        default: "340"
+  schedule:
+    - cron: "0 20 * * 0"      # 17h BRT de domingo, quando a apuração começa
+
+permissions:
+  contents: write
+
+concurrency:
+  group: brasil
+  cancel-in-progress: false
+
+jobs:
+  acompanhar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Configurar git
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Ler e publicar em ciclo
+        env:
+          PYTHONPATH: coletor
+          INTERVALO: ${{ github.event.inputs.intervalo || '60' }}
+          DURACAO:   ${{ github.event.inputs.duracao   || '340' }}
+        run: |
+          fim=$(( $(date +%s) + DURACAO * 60 ))
+          i=0
+          while [ "$(date +%s)" -lt "$fim" ]; do
+            inicio=$(date +%s)
+            python3 coletor/brasil.py || true
+            i=$(( i + 1 ))
+            # publica a cada 5 leituras: um commit por minuto seria ruído
+            [ $(( i % 5 )) -eq 0 ] && ./coletor/publicar.sh
+            espera=$(( INTERVALO - ( $(date +%s) - inicio ) ))
+            [ "$espera" -gt 0 ] && sleep "$espera"
+          done
+          ./coletor/publicar.sh

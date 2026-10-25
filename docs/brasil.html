@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brasil — apuração minuto a minuto</title>
+<link rel="stylesheet" href="estilo.css">
+<style>
+  .mini { height:7px; border-radius:99px; background:var(--grid);
+          overflow:hidden; min-width:70px; }
+  .mini i { display:block; height:100%; background:var(--text-muted); }
+  .links { display:flex; gap:10px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Apuração no Brasil · 2º turno de 2026</h1>
+    <div class="toolbar links">
+      <a href="./"><button>↪ votação no exterior</button></a>
+      <button id="tema" title="Alternar tema">◐</button>
+    </div>
+  </header>
+
+  <div class="hero">
+    <p class="nome" id="nome">carregando…</p>
+    <p class="ctx" id="sub"></p>
+    <div class="barra"><i id="prog" style="width:0"></i></div>
+  </div>
+
+  <div id="conteudo"></div>
+
+  <footer>
+    Fonte: totalização agregada de
+    <a href="https://resultados.tse.jus.br" rel="noreferrer">resultados.tse.jus.br</a>.
+    O Brasil tem ~499 mil seções, então aqui não se lê boletim por boletim como
+    no exterior — vem o agregado oficial, relido a cada minuto.
+    <span id="ger"></span>
+  </footer>
+</div>
+<div class="tip" id="tip" role="tooltip"></div>
+
+<script>
+const $ = s => document.querySelector(s);
+const tip = $("#tip");
+const nf = n => (n ?? 0).toLocaleString("pt-BR");
+const sf = n => (n > 0 ? "+" : "") + nf(n);
+const dec = (v, c = 1) => v == null ? "—" : v.toFixed(c).replace(".", ",");
+const pp = n => (n > 0 ? "+" : "") + dec(n, 2) + " p.p.";
+
+$("#tema").onclick = () => {
+  const cur = document.documentElement.getAttribute("data-theme");
+  const dark = cur ? cur === "dark"
+    : matchMedia("(prefers-color-scheme: dark)").matches;
+  document.documentElement.setAttribute("data-theme", dark ? "light" : "dark");
+  if (DADOS) desenha();
+};
+
+function mostraTip(e, html) {
+  tip.innerHTML = html; tip.style.opacity = 1;
+  const r = tip.getBoundingClientRect();
+  let x = e.clientX + 14, y = e.clientY - r.height / 2;
+  if (x + r.width > innerWidth - 8) x = e.clientX - r.width - 14;
+  tip.style.left = Math.max(8, x) + "px";
+  tip.style.top = Math.min(innerHeight - r.height - 8, Math.max(8, y)) + "px";
+}
+const escondeTip = () => tip.style.opacity = 0;
+
+let DADOS = null, HIST = [];
+
+function share(bloco, n) {
+  return bloco && bloco.validos ? 100 * (bloco.votos[n] || 0) / bloco.validos : null;
+}
+
+/* ---- evolução minuto a minuto ---- */
+function evolucao(d, cores) {
+  const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
+  const pts = HIST.filter(h => nums.every(n => h[`p${n}`] != null));
+  if (pts.length < 2) {
+    return `<div class="card"><h2>Minuto a minuto</h2>
+      <p class="note">${pts.length ? "Uma leitura até agora" : "Nada apurado ainda"}.
+      A curva aparece a partir da segunda leitura — o robô lê o feed do TSE a
+      cada minuto enquanto a apuração corre.</p></div>`;
+  }
+  const W = 760, H = 320, m = { t: 16, r: 92, b: 36, l: 46 };
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const ts = pts.map(h => new Date(h.gerado_em).getTime());
+  const t0 = Math.min(...ts), tN = Math.max(...ts);
+  const vals = pts.flatMap(h => nums.map(n => h[`p${n}`]));
+  let lo = Math.min(...vals), hi = Math.max(...vals);
+  const folga = Math.max(1.5, (hi - lo) * 0.2);
+  lo = Math.max(0, lo - folga); hi = Math.min(100, hi + folga);
+  const X = t => m.l + (tN === t0 ? iw : (t - t0) / (tN - t0) * iw);
+  const Y = v => m.t + (hi - v) / (hi - lo) * ih;
+
+  let eixo = "";
+  for (let i = 0; i <= 4; i++) {
+    const v = lo + (hi - lo) * i / 4, y = Y(v);
+    eixo += `<line class="gl" x1="${m.l}" x2="${m.l + iw}" y1="${y}" y2="${y}"></line>
+      <text class="ax" x="${m.l - 8}" y="${y + 4}" text-anchor="end">${dec(v)}%</text>`;
+  }
+  const hora = t => new Date(t).toLocaleTimeString("pt-BR",
+    { hour: "2-digit", minute: "2-digit" });
+  eixo += `<text class="ax" x="${m.l}" y="${m.t + ih + 21}">${hora(t0)}</text>
+    <text class="ax" x="${m.l + iw}" y="${m.t + ih + 21}" text-anchor="end">${hora(tN)}</text>`;
+
+  let linhas = "";
+  nums.forEach((n, i) => {
+    const dd = pts.map((h, k) => `${X(ts[k]).toFixed(1)} ${Y(h[`p${n}`]).toFixed(1)}`);
+    const ult = pts[pts.length - 1];
+    linhas += `<path d="M${dd.join("L")}" fill="none" stroke="${cores[i]}"
+        stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path>
+      <circle cx="${X(tN)}" cy="${Y(ult[`p${n}`])}" r="4" fill="${cores[i]}"
+        stroke="var(--surface-1)" stroke-width="2"></circle>
+      <text class="lbl-strong" x="${m.l + iw + 10}" y="${Y(ult[`p${n}`]) + 4}"
+        fill="${cores[i]}">${dec(ult[`p${n}`])}%</text>`;
+  });
+
+  const faixa = iw / Math.max(1, pts.length - 1);
+  const alvos = pts.map((h, k) => `<rect x="${(X(ts[k]) - faixa / 2).toFixed(1)}"
+      y="${m.t}" width="${Math.max(faixa, 3).toFixed(1)}" height="${ih}"
+      fill="transparent" data-tip="${encodeURIComponent(
+        `<b>${hora(ts[k])}</b> · ${dec(h.pct, 2)}% apurado<br>`
+        + nums.map(n => `${d.candidatos[n]}: <b>${dec(h[`p${n}`])}%</b>`).join("<br>")
+        + `<br><span style="opacity:.7">${nf(h.validos)} votos válidos</span>`)}"></rect>`
+  ).join("");
+
+  const leg = nums.map((n, i) =>
+    `<span><span class="sw" style="background:${cores[i]}"></span>${d.candidatos[n]}</span>`
+  ).join("");
+
+  return `<div class="card"><h2>Minuto a minuto</h2>
+    <p class="note">Porcentagem sobre votos válidos a cada leitura.
+      ${pts.length} leituras, de ${hora(t0)} a ${hora(tN)}.</p>
+    <div class="legend">${leg}</div>
+    <div class="scroll"><svg viewBox="0 0 ${W} ${H}" role="img">
+      ${eixo}${linhas}${alvos}</svg></div></div>`;
+}
+
+function desenha() {
+  const d = DADOS, nums = Object.keys(d.candidatos).sort((a, b) => a - b);
+  const css = getComputedStyle(document.documentElement);
+  const cores = [css.getPropertyValue("--series-1").trim(),
+                 css.getPropertyValue("--series-2").trim()];
+  const b2 = d.turno2.br, b1 = d.turno1.br;
+
+  $("#ger").textContent = " · lido em "
+    + new Date(d.gerado_em).toLocaleString("pt-BR");
+
+  if (!b2) {
+    $("#nome").textContent = "sem dados";
+    $("#sub").textContent = "o feed do TSE ainda não respondeu";
+    return;
+  }
+  $("#nome").textContent = dec(b2.pct_secoes, 2) + "% apurado";
+  $("#sub").innerHTML = `<strong>${nf(b2.secoes_totalizadas)}</strong> de `
+    + `${nf(b2.secoes_totais)} seções totalizadas`
+    + (b2.atualizado ? ` · TSE atualizou às ${b2.atualizado.split(" ")[1] || ""}` : "");
+  $("#prog").style.width = Math.max(0.4, b2.pct_secoes) + "%";
+
+  if (!b2.validos) {
+    $("#conteudo").innerHTML = `<div class="card"><div class="empty">
+      A apuração ainda não começou. As urnas no Brasil fecham às 17h de Brasília
+      e esta página se atualiza sozinha a partir daí.</div></div>`
+      + comparaTurno1(d, cores, true);
+    return;
+  }
+
+  const p2 = nums.map(n => share(b2, n));
+  const resto = Math.max(0, 100 - p2[0] - p2[1]);
+  const lado = (i, dir) => `<div class="lado ${dir}">
+      <div class="nm"><span class="sw" style="background:${cores[i]}"></span>${d.candidatos[nums[i]]}</div>
+      <div class="pc" style="color:${cores[i]}">${dec(p2[i])}%</div>
+      <div class="qn">${nf(b2.votos[nums[i]])} votos</div></div>`;
+
+  const confronto = `<div class="card"><h2>Como está agora</h2>
+    <p class="note">Sobre votos válidos, com ${dec(b2.pct_secoes, 2)}% das seções
+      totalizadas.</p>
+    <div class="confronto">${lado(0, "esq")}${lado(1, "dir")}</div>
+    <div class="pilha">
+      <i style="width:${p2[0]}%;background:${cores[0]}"></i>
+      <i style="width:${p2[1]}%;background:${cores[1]}"></i>
+      ${resto > 0.05 ? `<i style="width:${resto}%;background:var(--neutral)"></i>` : ""}
+    </div>
+    <p class="antes">${nf(b2.validos)} votos válidos ·
+      ${nf(b2.brancos)} brancos · ${nf(b2.nulos)} nulos ·
+      ${nf(b2.total)} de comparecimento</p></div>`;
+
+  const tiles = `<div class="tiles">
+    <div class="tile"><div class="k">Vantagem de ${
+      d.candidatos[nums[p2[0] >= p2[1] ? 0 : 1]]}</div>
+      <div class="v" style="color:${cores[p2[0] >= p2[1] ? 0 : 1]}">${
+        nf(Math.abs(b2.votos[nums[0]] - b2.votos[nums[1]]))}</div>
+      <div class="n">${dec(Math.abs(p2[0] - p2[1]), 2)} pontos percentuais</div></div>
+    <div class="tile"><div class="k">Votos válidos</div>
+      <div class="v">${nf(b2.validos)}</div>
+      <div class="n">exclui brancos e nulos</div></div>
+    <div class="tile"><div class="k">Seções totalizadas</div>
+      <div class="v">${dec(b2.pct_secoes, 2)}%</div>
+      <div class="n">${nf(b2.secoes_totalizadas)} de ${nf(b2.secoes_totais)}</div></div>
+  </div>`;
+
+  $("#conteudo").innerHTML = tiles + confronto + evolucao(d, cores)
+    + comparaTurno1(d, cores) + tabelaUF(d, cores);
+  ligaTips();
+}
+
+function comparaTurno1(d, cores, soTexto) {
+  const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
+  const b1 = d.turno1.br, b2 = d.turno2.br;
+  if (!b1 || !b1.validos) return "";
+  const p1 = nums.map(n => share(b1, n));
+  const temT2 = b2 && b2.validos;
+  const p2 = temT2 ? nums.map(n => share(b2, n)) : null;
+
+  const faixa = (rot, nota, p) => `<div class="ano">
+      <div class="rot">${rot}<span class="peq">${nota}</span></div>
+      <div class="pilha">
+        <i style="width:${p[0]}%;background:${cores[0]}"></i>
+        <i style="width:${p[1]}%;background:${cores[1]}"></i>
+        <i style="width:${Math.max(0, 100 - p[0] - p[1])}%;background:var(--neutral)"></i>
+      </div>
+      <div class="vals">
+        <span style="color:${cores[0]}"><b>${dec(p[0])}%</b></span>
+        <span style="color:${cores[1]}" class="dirx"><b>${dec(p[1])}%</b></span>
+      </div></div>`;
+
+  return `<div class="card"><h2>Contra o 1º turno</h2>
+    <p class="note">Sobre votos válidos, Brasil inteiro. No 1º turno havia 14
+      candidatos, por isso os dois não somam 100% ali.</p>
+    ${faixa("1º turno", " · 4 de outubro, resultado final", p1)}
+    ${temT2 ? faixa("2º turno", ` · parcial, ${dec(b2.pct_secoes, 2)}% apurado`, p2) : ""}
+    ${temT2 ? `<p class="antes" style="margin-top:12px">
+      ${nums.map((n, i) => `<strong>${d.candidatos[n]}</strong> ${pp(p2[i] - p1[i])}`)
+        .join(" · ")} em relação ao 1º turno.</p>` : ""}
+  </div>`;
+}
+
+function tabelaUF(d, cores) {
+  const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
+  const idx1 = Object.fromEntries((d.turno1.ufs || []).map(u => [u.uf, u]));
+  const ufs = (d.turno2.ufs || []).filter(u => u.validos)
+    .sort((a, b) => b.validos - a.validos);
+  if (!ufs.length) return "";
+  const linhas = ufs.map(u => {
+    const p = nums.map(n => share(u, n));
+    const u1 = idx1[u.uf];
+    const p1 = u1 && u1.validos ? nums.map(n => share(u1, n)) : null;
+    const lider = p[0] >= p[1] ? 0 : 1;
+    return `<tr>
+      <td>${u.uf === "zz" ? "Exterior" : u.uf.toUpperCase()}</td>
+      <td><div class="mini"><i style="width:${u.pct_secoes}%"></i></div>
+        <span class="peq">${dec(u.pct_secoes, 1)}%</span></td>
+      <td>${dec(p[0])}%<span class="peq">${p1 ? dec(p1[0]) + "% no 1T" : ""}</span></td>
+      <td>${dec(p[1])}%<span class="peq">${p1 ? dec(p1[1]) + "% no 1T" : ""}</span></td>
+      <td style="color:${cores[lider]};font-weight:600">${d.candidatos[nums[lider]].split(" ")[0]}</td>
+      <td>${nf(u.validos)}</td></tr>`;
+  }).join("");
+  return `<div class="card"><h2>Por estado</h2>
+    <p class="note">${ufs.length} unidades com apuração iniciada, da maior para a
+      menor em votos válidos.</p>
+    <div class="scroll"><table><thead><tr>
+      <th>UF</th><th>Apurado</th>
+      <th><span class="sw" style="background:${cores[0]}"></span>${d.candidatos[nums[0]]}</th>
+      <th><span class="sw" style="background:${cores[1]}"></span>${d.candidatos[nums[1]]}</th>
+      <th>Lidera</th><th>Válidos</th>
+    </tr></thead><tbody>${linhas}</tbody></table></div></div>`;
+}
+
+function ligaTips() {
+  document.querySelectorAll("[data-tip]").forEach(el => {
+    el.addEventListener("mousemove", e =>
+      mostraTip(e, decodeURIComponent(el.dataset.tip)));
+    el.addEventListener("mouseleave", escondeTip);
+  });
+}
+
+function carrega() {
+  return Promise.all([
+    fetch("dados/brasil.json", { cache: "no-store" })
+      .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+      .catch(e => { e.semDados = true; throw e; }),
+    fetch("dados/brasil_historico.jsonl", { cache: "no-store" })
+      .then(r => r.ok ? r.text() : "").catch(() => ""),
+  ]).then(([d, hist]) => {
+    DADOS = d;
+    HIST = hist.split("\n").filter(l => l.trim())
+      .map(l => { try { return JSON.parse(l); } catch { return null; } })
+      .filter(Boolean)
+      .sort((a, b) => a.gerado_em.localeCompare(b.gerado_em));
+    desenha();
+  }).catch(e => {
+    const semDados = e.semDados === true;
+    $("#nome").textContent = semDados ? "sem dados" : "erro ao desenhar";
+    $("#conteudo").innerHTML = `<div class="card"><div class="empty">` + (semDados
+      ? `Rode <code>python3 coletor/brasil.py</code> para gerar
+         <code>docs/dados/brasil.json</code>. (${e.message})`
+      : `<strong>${e.message}</strong><pre style="white-space:pre-wrap;
+         font-size:11.5px">${(e.stack || "").slice(0, 800)}</pre>`) + `</div></div>`;
+  });
+}
+
+carrega();
+// enquanto a apuração corre, recarrega sozinho
+setInterval(carrega, 60000);
+</script>
+</body>
+</html>
