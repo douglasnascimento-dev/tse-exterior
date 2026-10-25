@@ -137,3 +137,20 @@
   .pais.apurado { cursor:pointer; stroke:var(--surface-1); stroke-width:.6; }
   .pais.apurado:hover { stroke:var(--text-primary); stroke-width:1.2; }
   @media (max-width:560px) { .tile .v { font-size:23px; } h1 { font-size:18px; } }
+
+/* ---- tabela de ranking: ordenável, com bandeira e barra de progresso ---- */
+th.ord { cursor:pointer; user-select:none; white-space:nowrap; }
+th.ord:hover { color:var(--text-primary); }
+th.ord.ativo { color:var(--text-primary); font-weight:650; }
+th .seta { display:inline-block; width:11px; text-align:left; opacity:.7; }
+td.ent { display:flex; align-items:baseline; gap:8px; }
+td.ent .txt { min-width:0; }
+.bnd { font-size:16px; line-height:1; width:20px; flex:0 0 20px;
+       display:inline-block; }
+td.num { text-align:right; white-space:nowrap; }
+td.num.forte { font-weight:650; color:var(--text-primary); }
+tbody tr { cursor:pointer; }
+tbody tr:hover { background:var(--surface-0); }
+.mini { height:5px; border-radius:99px; background:var(--grid);
+        overflow:hidden; min-width:64px; margin-left:auto; }
+.mini i { display:block; height:100%; background:var(--text-muted); }

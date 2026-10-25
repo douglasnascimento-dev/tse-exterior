@@ -1,6 +1,7 @@
 {
  "29173": {
   "fonte": "nominatim",
+  "iso2": "np",
   "lat": 27.7083,
   "lon": 85.3206,
   "match": "Catmandu, काठमाडौं जिल्ला, बागमती प्रदेश, Nepal",
@@ -11,6 +12,7 @@
  },
  "29254": {
   "fonte": "nominatim",
+  "iso2": "ci",
   "lat": 5.3204,
   "lon": -4.0161,
   "match": "Abidjã, Abidjan, Costa do Marfim",
@@ -21,6 +23,7 @@
  },
  "29262": {
   "fonte": "nominatim",
+  "iso2": "ae",
   "lat": 24.4538,
   "lon": 54.3774,
   "match": "Abu Dhabi, أبوظبي, أبو ظبي, Emirados Árabes Unidos",
@@ -31,6 +34,7 @@
  },
  "29270": {
   "fonte": "nominatim",
+  "iso2": "gh",
   "lat": 5.5571,
   "lon": -0.2012,
   "match": "Acra, Korle-Klottey Municipal District, Grande Acra, Gana",
@@ -41,6 +45,7 @@
  },
  "29289": {
   "fonte": "nominatim",
+  "iso2": "jo",
   "lat": 31.9516,
   "lon": 35.924,
   "match": "Amã, ناحية عمان, لواء قصبة عمان, Amã, 11110, Jordânia",
@@ -51,6 +56,7 @@
  },
  "29297": {
   "fonte": "nominatim",
+  "iso2": "tr",
   "lat": 39.9208,
   "lon": 32.854,
   "match": "Ancara, Çankaya, Ankara, İç Anadolu Bölgesi, 06420, Turquia",
@@ -61,6 +67,7 @@
  },
  "29300": {
   "fonte": "nominatim",
+  "iso2": "dz",
   "lat": 36.7729,
   "lon": 3.0588,
   "match": "Argel, Daïra Sidi M'Hamed, Argel, 16000, Argélia",
@@ -72,6 +79,7 @@
  "29319": {
   "consulta": "Artigas, Uruguay",
   "fonte": "manual",
+  "iso2": "uy",
   "lat": -30.6171,
   "lon": -56.9373,
   "match": "Artigas, Uruguai",
@@ -82,6 +90,7 @@
  },
  "29327": {
   "fonte": "nominatim",
+  "iso2": "py",
   "lat": -25.28,
   "lon": -57.6344,
   "match": "Assunção, Distrito Capital, Región Oriental, 001013, Paraguai",
@@ -92,6 +101,7 @@
  },
  "29335": {
   "fonte": "nominatim",
+  "iso2": "gr",
   "lat": 37.9756,
   "lon": 23.7348,
   "match": "Atenas, Δήμος Αθηναίων, Περιφερειακή Ενότητα Κεντρικού Τομέα Αθηνών, Περιφέρεια Αττικής, Αποκεντρωμένη Διοίκηση Αττικής, 105 57, Grécia",
@@ -102,6 +112,7 @@
  },
  "29343": {
   "fonte": "nominatim",
+  "iso2": "th",
   "lat": 13.7525,
   "lon": 100.4935,
   "match": "Banguecoque, Tailândia",
@@ -112,6 +123,7 @@
  },
  "29351": {
   "fonte": "nominatim",
+  "iso2": "es",
   "lat": 41.3826,
   "lon": 2.1771,
   "match": "Barcelona, Barcelonès, Barcelona, Catalunha, Espanha",
@@ -122,6 +134,7 @@
  },
  "29360": {
   "fonte": "nominatim",
+  "iso2": "lb",
   "lat": 33.8892,
   "lon": 35.5026,
   "match": "Beirute, البسطة التحتا, باشورة, Beirute, Líbano",
@@ -132,6 +145,7 @@
  },
  "29378": {
   "fonte": "nominatim",
+  "iso2": "rs",
   "lat": 44.8153,
   "lon": 20.4457,
   "match": "Belgrado, Cidade de Belgrado, Централна Србија, Sérvia",
@@ -142,6 +156,7 @@
  },
  "29386": {
   "fonte": "nominatim",
+  "iso2": "de",
   "lat": 52.5174,
   "lon": 13.3951,
   "match": "Berlim, Alemanha",
@@ -152,6 +167,7 @@
  },
  "29394": {
   "fonte": "nominatim",
+  "iso2": "gw",
   "lat": 11.8613,
   "lon": -15.5831,
   "match": "Bissau, Bissau (setor autónomo), 1021, Guiné-Bissau",
@@ -162,6 +178,7 @@
  },
  "29408": {
   "fonte": "nominatim",
+  "iso2": "co",
   "lat": 4.6534,
   "lon": -74.0836,
   "match": "Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, Colômbia",
@@ -172,6 +189,7 @@
  },
  "29416": {
   "fonte": "nominatim",
+  "iso2": "us",
   "lat": 42.3588,
   "lon": -71.0578,
   "match": "Boston, Suffolk County, Massachusetts, Estados Unidos da América",
@@ -182,6 +200,7 @@
  },
  "29424": {
   "fonte": "nominatim",
+  "iso2": "bb",
   "lat": 13.0978,
   "lon": -59.6184,
   "match": "Bridgetown, Saint Michael, Barbados",
@@ -192,6 +211,7 @@
  },
  "29432": {
   "fonte": "nominatim",
+  "iso2": "be",
   "lat": 50.8467,
   "lon": 4.3525,
   "match": "Bruxelas, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, Bélgica",
@@ -202,6 +222,7 @@
  },
  "29440": {
   "fonte": "nominatim",
+  "iso2": "ro",
   "lat": 44.4361,
   "lon": 26.1027,
   "match": "Bucareste, Roménia",
@@ -212,6 +233,7 @@
  },
  "29459": {
   "fonte": "nominatim",
+  "iso2": "hu",
   "lat": 47.4979,
   "lon": 19.0402,
   "match": "Budapeste, Budapest, Hungria",
@@ -222,6 +244,7 @@
  },
  "29467": {
   "fonte": "nominatim",
+  "iso2": "ar",
   "lat": -34.6096,
   "lon": -58.3888,
   "match": "Buenos Aires, Comuna 1, Ciudad Autónoma de Buenos Aires, Argentina",
@@ -233,6 +256,7 @@
  "29475": {
   "consulta": "Cayenne, Guyane française",
   "fonte": "manual",
+  "iso2": "gf",
   "lat": 4.9372,
   "lon": -52.3259,
   "match": "Caiena, Cayenne, Guiana Francesa, 97300, França",
@@ -243,6 +267,7 @@
  },
  "29483": {
   "fonte": "nominatim",
+  "iso2": "eg",
   "lat": 30.0444,
   "lon": 31.2357,
   "match": "Cairo, Egito",
@@ -253,6 +278,7 @@
  },
  "29491": {
   "fonte": "nominatim",
+  "iso2": "au",
   "lat": -35.2976,
   "lon": 149.1013,
   "match": "Camberra, District of Canberra Central, Território da Capital Australiana, 2600, Austrália",
@@ -263,6 +289,7 @@
  },
  "29505": {
   "fonte": "nominatim",
+  "iso2": "ve",
   "lat": 10.5061,
   "lon": -66.9146,
   "match": "Caracas, Parroquia Catedral, Municipio Libertador, Distrito Metropolitano de Caracas, Distrito Capital, Venezuela",
@@ -273,6 +300,7 @@
  },
  "29513": {
   "fonte": "nominatim",
+  "iso2": "us",
   "lat": 41.8756,
   "lon": -87.6244,
   "match": "Chicago, South Chicago Township, Cook County, Illinois, Estados Unidos da América",
@@ -284,6 +312,7 @@
  "29521": {
   "consulta": "Chuy, Rocha, Uruguay",
   "fonte": "manual",
+  "iso2": "uy",
   "lat": -33.6938,
   "lon": -53.4561,
   "match": "Chuy, Rocha, 27100, Uruguai",
@@ -294,6 +323,7 @@
  },
  "29530": {
   "fonte": "nominatim",
+  "iso2": "za",
   "lat": -33.9288,
   "lon": 18.4172,
   "match": "Cidade do Cabo, City of Cape Town, Cabo Ocidental, 8001, África do Sul",
@@ -304,6 +334,7 @@
  },
  "29548": {
   "fonte": "nominatim",
+  "iso2": "sg",
   "lat": 1.3571,
   "lon": 103.8195,
   "match": "Singapura",
@@ -314,6 +345,7 @@
  },
  "29556": {
   "fonte": "nominatim",
+  "iso2": "py",
   "lat": -25.5169,
   "lon": -54.6169,
   "match": "Cidade do Leste, Alto Paraná, Región Oriental, Paraguai",
@@ -324,6 +356,7 @@
  },
  "29564": {
   "fonte": "nominatim",
+  "iso2": "ve",
   "lat": 8.3224,
   "lon": -62.6897,
   "match": "Cidade Guayana, Parroquia Cachamay, Municipio Caroní, Bolívar, Venezuela",
@@ -334,6 +367,7 @@
  },
  "29572": {
   "fonte": "nominatim",
+  "iso2": "bo",
   "lat": -17.4012,
   "lon": -66.1676,
   "match": "Cochabamba, Juan De La Rosa, Molle, Cochabamba, Cercado, Cochabamba, Bolívia",
@@ -345,6 +379,7 @@
  "29580": {
   "consulta": "Concepción, Paraguay",
   "fonte": "manual",
+  "iso2": "py",
   "lat": -23.1775,
   "lon": -57.1675,
   "match": "Concepción, Región Oriental, Paraguai",
@@ -355,6 +390,7 @@
  },
  "29599": {
   "fonte": "nominatim",
+  "iso2": "dk",
   "lat": 55.6867,
   "lon": 12.5701,
   "match": "Copenhaga, Comuna de Copenhaga, Região da Capital, 1357, Dinamarca",
@@ -366,6 +402,7 @@
  "29602": {
   "consulta": "Córdoba, Argentina",
   "fonte": "manual",
+  "iso2": "ar",
   "lat": -31.4167,
   "lon": -64.1834,
   "match": "Córdova, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Córdova, X5000, Argentina",
@@ -376,6 +413,7 @@
  },
  "29610": {
   "fonte": "nominatim",
+  "iso2": "sn",
   "lat": 14.6934,
   "lon": -17.4479,
   "match": "Dacar, Dakar, Senegal",
@@ -386,6 +424,7 @@
  },
  "29629": {
   "fonte": "nominatim",
+  "iso2": "bd",
   "lat": 23.7644,
   "lon": 90.389,
   "match": "Daca, ঢাকা মহানগর, ঢাকা জেলা, Daca, 1215, Bangladeche",
@@ -396,6 +435,7 @@
  },
  "29637": {
   "fonte": "nominatim",
+  "iso2": "sy",
   "lat": 33.5131,
   "lon": 36.3096,
   "match": "Damasco, بلدية دمشق القديمة, ناحية دمشق, منطقة دمشق, محافظة دمشق, Síria",
@@ -406,6 +446,7 @@
  },
  "29645": {
   "fonte": "nominatim",
+  "iso2": "tl",
   "lat": -8.5537,
   "lon": 125.5784,
   "match": "Díli, Vera Cruz, Díli, Timor-Leste",
@@ -416,6 +457,7 @@
  },
  "29653": {
   "fonte": "nominatim",
+  "iso2": "qa",
   "lat": 25.3109,
   "lon": 51.5082,
   "match": "Doha, Catar",
@@ -426,6 +468,7 @@
  },
  "29661": {
   "fonte": "nominatim",
+  "iso2": "ie",
   "lat": 53.3494,
   "lon": -6.2606,
   "match": "Dublin, County Dublin, Leinster, Irlanda",
@@ -436,6 +479,7 @@
  },
  "29670": {
   "fonte": "nominatim",
+  "iso2": "py",
   "lat": -27.3376,
   "lon": -55.8669,
   "match": "Encarnación, Itapúa, Región Oriental, 070101, Paraguai",
@@ -446,6 +490,7 @@
  },
  "29688": {
   "fonte": "nominatim",
+  "iso2": "se",
   "lat": 59.3251,
   "lon": 18.0711,
   "match": "Estocolmo, Stockholms kommun, Stockholms län, 111 29, Suécia",
@@ -456,6 +501,7 @@
  },
  "29696": {
   "fonte": "nominatim",
+  "iso2": "de",
   "lat": 50.1106,
   "lon": 8.6821,
   "match": "Frankfurt sobre o Meno, Hesse, Alemanha",
@@ -466,6 +512,7 @@
  },
  "29700": {
   "fonte": "nominatim",
+  "iso2": "fr",
   "lat": 46.2018,
   "lon": 6.1466,
   "match": "Genebra, Suíça",
@@ -477,6 +524,7 @@
  "29718": {
   "consulta": "Georgetown, Guyana",
   "fonte": "manual",
+  "iso2": "gy",
   "lat": 6.8033,
   "lon": -58.1455,
   "match": "City of Georgetown, Demerara-Mahaica, Guiana",
@@ -487,6 +535,7 @@
  },
  "29742": {
   "fonte": "nominatim",
+  "iso2": "jp",
   "lat": 34.711,
   "lon": 137.7259,
   "match": "浜松市, Prefeitura de Shizuoka, Japão",
@@ -497,6 +546,7 @@
  },
  "29750": {
   "fonte": "nominatim",
+  "iso2": "vn",
   "lat": 21.0283,
   "lon": 105.854,
   "match": "Hanói, Vietname",
@@ -507,6 +557,7 @@
  },
  "29769": {
   "fonte": "nominatim",
+  "iso2": "zw",
   "lat": -17.8567,
   "lon": 31.0602,
   "match": "Harare, Zimbabué",
@@ -517,6 +568,7 @@
  },
  "29777": {
   "fonte": "nominatim",
+  "iso2": "cu",
   "lat": 23.1353,
   "lon": -82.359,
   "match": "Havana, La Habana, 10000, Cuba",
@@ -528,6 +580,7 @@
  "29785": {
   "consulta": "Helsinki, Finland",
   "fonte": "manual",
+  "iso2": "fi",
   "lat": 60.1666,
   "lon": 24.9435,
   "match": "Helsínquia, Helsingin seutukunta, Uusimaa, Manner-Suomi, Finlândia",
@@ -538,6 +591,7 @@
  },
  "29793": {
   "fonte": "nominatim",
+  "iso2": "hk",
   "lat": 22.3492,
   "lon": 114.1858,
   "match": "Hong Kong, China",
@@ -548,6 +602,7 @@
  },
  "29807": {
   "fonte": "nominatim",
+  "iso2": "us",
   "lat": 29.7589,
   "lon": -95.3677,
   "match": "Houston, Condado de Harris, Texas, Estados Unidos da América",
@@ -558,6 +613,7 @@
  },
  "29815": {
   "fonte": "nominatim",
+  "iso2": "cm",
   "lat": 3.869,
   "lon": 11.5213,
   "match": "Iaundé, Mfoundi, Centro, Camarões",
@@ -568,6 +624,7 @@
  },
  "29823": {
   "fonte": "nominatim",
+  "iso2": "pe",
   "lat": -3.7494,
   "lon": -73.2444,
   "match": "Iquitos, Maynas, Loreto, 16002, Peru",
@@ -578,6 +635,7 @@
  },
  "29831": {
   "fonte": "nominatim",
+  "iso2": "pk",
   "lat": 33.6938,
   "lon": 73.0652,
   "match": "Islamabad, زون 1, وفاقی دارالحکومت اسلام آباد, 44000, Paquistão",
@@ -588,6 +646,7 @@
  },
  "29840": {
   "fonte": "nominatim",
+  "iso2": "id",
   "lat": -6.1754,
   "lon": 106.8272,
   "match": "Jacarta, Indonésia",
@@ -598,6 +657,7 @@
  },
  "29858": {
   "fonte": "nominatim",
+  "iso2": "ua",
   "lat": 50.45,
   "lon": 30.5241,
   "match": "Kiev, Ucrânia",
@@ -608,6 +668,7 @@
  },
  "29874": {
   "fonte": "nominatim",
+  "iso2": "cd",
   "lat": -4.3197,
   "lon": 15.3424,
   "match": "Kinshasa, República Democrática do Congo",
@@ -618,6 +679,7 @@
  },
  "29882": {
   "fonte": "nominatim",
+  "iso2": "kw",
   "lat": 29.2734,
   "lon": 47.4979,
   "match": "Kuwait",
@@ -628,6 +690,7 @@
  },
  "29890": {
   "fonte": "nominatim",
+  "iso2": "my",
   "lat": 3.1517,
   "lon": 101.6942,
   "match": "Kuala Lumpur, Malásia",
@@ -638,6 +701,7 @@
  },
  "29904": {
   "fonte": "nominatim",
+  "iso2": "fj",
   "lat": -16.4955,
   "lon": -68.1336,
   "match": "La Paz, Provincia Pedro Domingo Murillo, La Paz, Bolívia",
@@ -649,6 +713,7 @@
  "29912": {
   "consulta": "Lagos, Nigeria",
   "fonte": "manual",
+  "iso2": "ng",
   "lat": 6.4551,
   "lon": 3.3942,
   "match": "Lagos, Lagos Island, Lagos, 100242, Nigéria",
@@ -659,6 +724,7 @@
  },
  "29939": {
   "fonte": "nominatim",
+  "iso2": "ga",
   "lat": 0.4087,
   "lon": 9.4419,
   "match": "Libreville, Estuário, Gabão",
@@ -669,6 +735,7 @@
  },
  "29947": {
   "fonte": "nominatim",
+  "iso2": "pe",
   "lat": -12.046,
   "lon": -77.0306,
   "match": "Lima, Lima Metropolitana, Lima, 15001, Peru",
@@ -679,6 +746,7 @@
  },
  "29955": {
   "fonte": "nominatim",
+  "iso2": "pt",
   "lat": 38.7078,
   "lon": -9.1366,
   "match": "Lisboa, Portugal",
@@ -689,6 +757,7 @@
  },
  "29963": {
   "fonte": "nominatim",
+  "iso2": "tg",
   "lat": 6.1304,
   "lon": 1.2158,
   "match": "Lomé, Maritime (região), Togo",
@@ -699,6 +768,7 @@
  },
  "29971": {
   "fonte": "nominatim",
+  "iso2": "gb",
   "lat": 51.5074,
   "lon": -0.1278,
   "match": "Grande Londres, Inglaterra, Reino Unido",
@@ -709,6 +779,7 @@
  },
  "29980": {
   "fonte": "nominatim",
+  "iso2": "us",
   "lat": 34.0537,
   "lon": -118.2428,
   "match": "Los Angeles, Los Angeles County, Califórnia, Estados Unidos da América",
@@ -719,6 +790,7 @@
  },
  "29998": {
   "fonte": "nominatim",
+  "iso2": "ao",
   "lat": -8.8273,
   "lon": 13.244,
   "match": "Luanda, Município de Luanda, Luanda, Angola",
@@ -730,6 +802,7 @@
  "30066": {
   "consulta": "Madrid, Spain",
   "fonte": "manual",
+  "iso2": "es",
   "lat": 40.4168,
   "lon": -3.7035,
   "match": "Madrid, Comunidade de Madrid, Espanha",
@@ -740,6 +813,7 @@
  },
  "30074": {
   "fonte": "nominatim",
+  "iso2": "ni",
   "lat": 12.1547,
   "lon": -86.2737,
   "match": "Manágua, Managua, 10000 (código maestro), Nicarágua",
@@ -750,6 +824,7 @@
  },
  "30082": {
   "fonte": "nominatim",
+  "iso2": "ph",
   "lat": 14.5904,
   "lon": 120.9804,
   "match": "Manila, Capital District, Metro Manila, Filipinas",
@@ -760,6 +835,7 @@
  },
  "30090": {
   "fonte": "nominatim",
+  "iso2": "mz",
   "lat": -25.9662,
   "lon": 32.5675,
   "match": "Cidade de Maputo, Zona Sul, Moçambique",
@@ -771,6 +847,7 @@
  "30104": {
   "consulta": "Ciudad de México, Mexico",
   "fonte": "manual",
+  "iso2": "mx",
   "lat": 19.3208,
   "lon": -99.1515,
   "match": "Cidade do México, México",
@@ -781,6 +858,7 @@
  },
  "30112": {
   "fonte": "nominatim",
+  "iso2": "us",
   "lat": 25.7742,
   "lon": -80.1936,
   "match": "Miami, Condado de Miami-Dade, Flórida, Estados Unidos da América",
@@ -791,6 +869,7 @@
  },
  "30120": {
   "fonte": "nominatim",
+  "iso2": "it",
   "lat": 45.4642,
   "lon": 9.1896,
   "match": "Milão, Rodano, Milão, Lombardia, Itália",
@@ -801,6 +880,7 @@
  },
  "30147": {
   "fonte": "nominatim",
+  "iso2": "uy",
   "lat": -34.9059,
   "lon": -56.1913,
   "match": "Montevidéu, Montevideo, Uruguai",
@@ -811,6 +891,7 @@
  },
  "30155": {
   "fonte": "nominatim",
+  "iso2": "ca",
   "lat": 45.5032,
   "lon": -73.5698,
   "match": "Montreal, Agglomération de Montréal, Montréal (région administrative), Quebec, Canadá",
@@ -821,6 +902,7 @@
  },
  "30163": {
   "fonte": "nominatim",
+  "iso2": "ru",
   "lat": 55.7505,
   "lon": 37.6175,
   "match": "Moscou, Moscovo, Distrito Federal Central, Rússia",
@@ -831,6 +913,7 @@
  },
  "30171": {
   "fonte": "nominatim",
+  "iso2": "in",
   "lat": 19.055,
   "lon": 72.8692,
   "match": "Mumbai, Mumbai Suburban District, Maharashtra, 400051, Índia",
@@ -841,6 +924,7 @@
  },
  "30180": {
   "fonte": "nominatim",
+  "iso2": "de",
   "lat": 48.1371,
   "lon": 11.5754,
   "match": "Munique, Baviera, Alemanha",
@@ -851,6 +935,7 @@
  },
  "30198": {
   "fonte": "nominatim",
+  "iso2": "jp",
   "lat": 35.1851,
   "lon": 136.8998,
   "match": "Nagoia, Prefeitura de Aichi, Japão",
@@ -861,6 +946,7 @@
  },
  "30201": {
   "fonte": "nominatim",
+  "iso2": "ke",
   "lat": -1.3024,
   "lon": 36.8289,
   "match": "Nairóbi, Nairobi, Quénia",
@@ -871,6 +957,7 @@
  },
  "30210": {
   "fonte": "nominatim",
+  "iso2": "in",
   "lat": 28.6139,
   "lon": 77.209,
   "match": "Nova Deli, New Delhi, Deli, Índia",
@@ -881,6 +968,7 @@
  },
  "30228": {
   "fonte": "nominatim",
+  "iso2": "us",
   "lat": 40.7127,
   "lon": -74.006,
   "match": "Nova Iorque, Estados Unidos da América",
@@ -891,6 +979,7 @@
  },
  "30244": {
   "fonte": "nominatim",
+  "iso2": "no",
   "lat": 59.9133,
   "lon": 10.739,
   "match": "Oslo, Noruega",
@@ -901,6 +990,7 @@
  },
  "30252": {
   "fonte": "nominatim",
+  "iso2": "ca",
   "lat": 45.4209,
   "lon": -75.6901,
   "match": "Ottawa, Eastern Ontario, Ontário, Canadá",
@@ -912,6 +1002,7 @@
  "30260": {
   "consulta": "Panama City, Panama",
   "fonte": "manual",
+  "iso2": "pa",
   "lat": 8.9714,
   "lon": -79.5342,
   "match": "Panamá, Calidonia, Distrito de Panamá, Provincia de Panamá, 0843, Panamá",
@@ -922,6 +1013,7 @@
  },
  "30279": {
   "fonte": "nominatim",
+  "iso2": "sr",
   "lat": 5.8242,
   "lon": -55.1663,
   "match": "Centrum, Paramaribo, Suriname",
@@ -932,6 +1024,7 @@
  },
  "30287": {
   "fonte": "nominatim",
+  "iso2": "fr",
   "lat": 48.8589,
   "lon": 2.32,
   "match": "Paris, Ilha de França, França metropolitana, França",
@@ -942,6 +1035,7 @@
  },
  "30295": {
   "fonte": "nominatim",
+  "iso2": "br",
   "lat": -29.7137,
   "lon": -57.0861,
   "match": "Municipio de Paso de los Libres, Departamento Paso de los Libres, Corrientes, Argentina",
@@ -952,6 +1046,7 @@
  },
  "30309": {
   "fonte": "nominatim",
+  "iso2": "py",
   "lat": -22.5498,
   "lon": -55.7384,
   "match": "Pedro Juan Caballero, Amambay, Región Oriental, Paraguai",
@@ -962,6 +1057,7 @@
  },
  "30317": {
   "fonte": "nominatim",
+  "iso2": "cn",
   "lat": 39.9057,
   "lon": 116.3913,
   "match": "Pequim, China",
@@ -972,6 +1068,7 @@
  },
  "30325": {
   "fonte": "nominatim",
+  "iso2": "tt",
   "lat": 10.6573,
   "lon": -61.518,
   "match": "Porto Espanha, Trinidad e Tobago",
@@ -982,6 +1079,7 @@
  },
  "30333": {
   "fonte": "nominatim",
+  "iso2": "ht",
   "lat": 18.5473,
   "lon": -72.3396,
   "match": "Porto Príncipe, Département de l'Ouest, Haiti",
@@ -992,6 +1090,7 @@
  },
  "30341": {
   "fonte": "nominatim",
+  "iso2": "pt",
   "lat": 41.1502,
   "lon": -8.6103,
   "match": "Porto, Portugal",
@@ -1002,6 +1101,7 @@
  },
  "30350": {
   "fonte": "nominatim",
+  "iso2": "cz",
   "lat": 50.0875,
   "lon": 14.4213,
   "match": "Praga, Chéquia",
@@ -1013,6 +1113,7 @@
  "30368": {
   "consulta": "Praia, Cabo Verde",
   "fonte": "manual",
+  "iso2": "cv",
   "lat": 14.9163,
   "lon": -23.5095,
   "match": "Praia, Platô, Praia, 7600, Cabo Verde",
@@ -1023,6 +1124,7 @@
  },
  "30376": {
   "fonte": "nominatim",
+  "iso2": "za",
   "lat": -25.7459,
   "lon": 28.1879,
   "match": "Pretória, City of Tshwane Metropolitan Municipality, Gautengue, 0142, África do Sul",
@@ -1033,6 +1135,7 @@
  },
  "30392": {
   "fonte": "nominatim",
+  "iso2": "ec",
   "lat": -0.2202,
   "lon": -78.5123,
   "match": "Quito, Distrito Metropolitano de Quito, Pichincha, 170130, Equador",
@@ -1043,6 +1146,7 @@
  },
  "30406": {
   "fonte": "nominatim",
+  "iso2": "ma",
   "lat": 34.0218,
   "lon": -6.8409,
   "match": "Rabat, باشوية الرباط, Préfecture de Rabat عمالة الرباط, Rabat-Salé-Kénitra ⵔⴱⴰⵟ-ⵙⵍⴰ-ⵇⵏⵉⵟⵔⴰ الرباط-سلا-القنيطرة, Marrocos",
@@ -1053,6 +1157,7 @@
  },
  "30414": {
   "fonte": "nominatim",
+  "iso2": "ps",
   "lat": 31.9031,
   "lon": 35.1952,
   "match": "Ramalá, Área A, Cisjordânia, الأراضي الفلسطينية",
@@ -1063,6 +1168,7 @@
  },
  "30422": {
   "fonte": "nominatim",
+  "iso2": "sa",
   "lat": 24.6389,
   "lon": 46.716,
   "match": "Riade, محافظة الرياض, Riade, 12643, Arábia Saudita",
@@ -1074,6 +1180,7 @@
  "30430": {
   "consulta": "Rio Branco, Cerro Largo, Uruguay",
   "fonte": "manual",
+  "iso2": "uy",
   "lat": -32.5887,
   "lon": -53.3781,
   "match": "Río Branco, Cerro Largo, 37100, Uruguai",
@@ -1084,6 +1191,7 @@
  },
  "30449": {
   "fonte": "nominatim",
+  "iso2": "it",
   "lat": 41.8933,
   "lon": 12.4829,
   "match": "Roma, Roma Capitale, Lácio, Itália",
@@ -1094,6 +1202,7 @@
  },
  "30457": {
   "fonte": "nominatim",
+  "iso2": "nl",
   "lat": 52.3731,
   "lon": 4.8925,
   "match": "Amesterdão, Amsterdão, Noord-Holland, Países Baixos",
@@ -1104,6 +1213,7 @@
  },
  "30465": {
   "fonte": "nominatim",
+  "iso2": "py",
   "lat": -24.0617,
   "lon": -54.3056,
   "match": "Salto do Guairá, Canindeyú, Región Oriental, Paraguai",
@@ -1114,6 +1224,7 @@
  },
  "30473": {
   "fonte": "nominatim",
+  "iso2": "bo",
   "lat": -17.7834,
   "lon": -63.1821,
   "match": "Santa Cruz de la Sierra, Provincia Andrés Ibáñez, Santa Cruz, Bolívia",
@@ -1125,6 +1236,7 @@
  "30481": {
   "consulta": "Santiago, Chile",
   "fonte": "manual",
+  "iso2": "cl",
   "lat": -33.4377,
   "lon": -70.6511,
   "match": "Santiago, Provincia de Santiago, Região Metropolitana de Santiago, 8320000, Chile",
@@ -1136,6 +1248,7 @@
  "30490": {
   "consulta": "Santo Domingo, Dominican Republic",
   "fonte": "manual",
+  "iso2": "do",
   "lat": 18.4714,
   "lon": -69.8918,
   "match": "São Domingos, Distrito Nacional, 03201, República Dominicana",
@@ -1146,6 +1259,7 @@
  },
  "30503": {
   "fonte": "nominatim",
+  "iso2": "us",
   "lat": 37.7879,
   "lon": -122.4075,
   "match": "São Francisco, Califórnia, Estados Unidos da América",
@@ -1157,6 +1271,7 @@
  "30511": {
   "consulta": "San José, Costa Rica",
   "fonte": "manual",
+  "iso2": "cr",
   "lat": 9.9327,
   "lon": -84.0797,
   "match": "San José, Costa Rica",
@@ -1167,6 +1282,7 @@
  },
  "30520": {
   "fonte": "nominatim",
+  "iso2": "sv",
   "lat": 13.6976,
   "lon": -89.1912,
   "match": "São Salvador, San Salvador Centro, San Salvador, El Salvador",
@@ -1177,6 +1293,7 @@
  },
  "30538": {
   "fonte": "nominatim",
+  "iso2": "kr",
   "lat": 37.5667,
   "lon": 126.9783,
   "match": "Seul, Coreia do Sul",
@@ -1187,6 +1304,7 @@
  },
  "30546": {
   "fonte": "nominatim",
+  "iso2": "bg",
   "lat": 42.6977,
   "lon": 23.3217,
   "match": "Sófia, Средец, Столична, София-град, Bulgária",
@@ -1197,6 +1315,7 @@
  },
  "30562": {
   "fonte": "nominatim",
+  "iso2": "au",
   "lat": -33.8698,
   "lon": 151.2083,
   "match": "Sydney, Nova Gales do Sul, Austrália",
@@ -1207,6 +1326,7 @@
  },
  "30570": {
   "fonte": "nominatim",
+  "iso2": "tw",
   "lat": 25.0375,
   "lon": 121.5637,
   "match": "Taipé, Taiwan",
@@ -1217,6 +1337,7 @@
  },
  "30597": {
   "fonte": "nominatim",
+  "iso2": "ir",
   "lat": 35.6893,
   "lon": 51.3896,
   "match": "Teerão, بخش مرکزی شهرستان تهران, شهرستان تهران, Teerão, Irã",
@@ -1227,6 +1348,7 @@
  },
  "30600": {
   "fonte": "nominatim",
+  "iso2": "hn",
   "lat": 14.1058,
   "lon": -87.2047,
   "match": "Tegucigalpa, Distrito Central, Francisco Morazán, Honduras",
@@ -1237,6 +1359,7 @@
  },
  "30619": {
   "fonte": "nominatim",
+  "iso2": "il",
   "lat": 32.0853,
   "lon": 34.7818,
   "match": "Tel Aviv, נפת תל אביב, Distrito de Tel-Aviv, Israel",
@@ -1247,6 +1370,7 @@
  },
  "30627": {
   "fonte": "nominatim",
+  "iso2": "jp",
   "lat": 35.6769,
   "lon": 139.7639,
   "match": "Tóquio, Japão",
@@ -1257,6 +1381,7 @@
  },
  "30635": {
   "fonte": "nominatim",
+  "iso2": "ca",
   "lat": 43.6535,
   "lon": -79.3839,
   "match": "Toronto, Ontário, Canadá",
@@ -1268,6 +1393,7 @@
  "30651": {
   "consulta": "Guangzhou, Guangdong, China",
   "fonte": "manual",
+  "iso2": "cn",
   "lat": 23.1288,
   "lon": 113.259,
   "match": "Cantão, Província de Cantão, China",
@@ -1278,6 +1404,7 @@
  },
  "30669": {
   "fonte": "nominatim",
+  "iso2": "bw",
   "lat": -24.6581,
   "lon": 25.9088,
   "match": "Gaborone, Botsuana",
@@ -1289,6 +1416,7 @@
  "30686": {
   "consulta": "Tripoli, Libya",
   "fonte": "manual",
+  "iso2": "ly",
   "lat": 32.8967,
   "lon": 13.1778,
   "match": "Trípoli, Líbia",
@@ -1299,6 +1427,7 @@
  },
  "30708": {
   "fonte": "nominatim",
+  "iso2": "tn",
   "lat": 36.8002,
   "lon": 10.1858,
   "match": "Tunes, Túnis (província), Tunísia",
@@ -1309,6 +1438,7 @@
  },
  "30740": {
   "fonte": "nominatim",
+  "iso2": "pl",
   "lat": 52.232,
   "lon": 21.0067,
   "match": "Varsóvia, Voivodia da Mazóvia, Polónia",
@@ -1319,6 +1449,7 @@
  },
  "30767": {
   "fonte": "nominatim",
+  "iso2": "at",
   "lat": 48.2084,
   "lon": 16.3725,
   "match": "Viena, Áustria",
@@ -1329,6 +1460,7 @@
  },
  "30783": {
   "fonte": "nominatim",
+  "iso2": "us",
   "lat": 38.8951,
   "lon": -77.0364,
   "match": "Washington, District of Columbia, Estados Unidos da América",
@@ -1339,6 +1471,7 @@
  },
  "30805": {
   "fonte": "nominatim",
+  "iso2": "nz",
   "lat": -41.2888,
   "lon": 174.7772,
   "match": "Wellington, Wellington City, Wellington, 6011, Nova Zelândia",
@@ -1349,6 +1482,7 @@
  },
  "30821": {
   "fonte": "nominatim",
+  "iso2": "na",
   "lat": -22.5336,
   "lon": 17.0455,
   "match": "Windhoek, Khomas, Namíbia",
@@ -1359,6 +1493,7 @@
  },
  "30848": {
   "fonte": "nominatim",
+  "iso2": "cn",
   "lat": 31.2313,
   "lon": 121.47,
   "match": "Xangai, China",
@@ -1369,6 +1504,7 @@
  },
  "30864": {
   "fonte": "nominatim",
+  "iso2": "ch",
   "lat": 47.3744,
   "lon": 8.541,
   "match": "Zurique, Bezirk Zürich, Zurique, Suíça",
@@ -1379,6 +1515,7 @@
  },
  "30902": {
   "fonte": "nominatim",
+  "iso2": "us",
   "lat": 41.7662,
   "lon": -72.6733,
   "match": "Hartford, Capitol Planning Region, Connecticut, Estados Unidos da América",
@@ -1390,6 +1527,7 @@
  "30929": {
   "consulta": "Colombo, Sri Lanka",
   "fonte": "manual",
+  "iso2": "lk",
   "lat": 6.9389,
   "lon": 79.8542,
   "match": "Colombo, Colombo District, Western Province, Seri-Lanca",
@@ -1401,6 +1539,7 @@
  "30961": {
   "consulta": "Faro, Portugal",
   "fonte": "manual",
+  "iso2": "pt",
   "lat": 37.0163,
   "lon": -7.9352,
   "match": "Faro, Portugal",
@@ -1411,6 +1550,7 @@
  },
  "30988": {
   "fonte": "nominatim",
+  "iso2": "ba",
   "lat": 43.8571,
   "lon": 18.4126,
   "match": "Sarajevo, Mjesna zajednica Trg oslobođenja-Centar, Općina Centar, Grad Sarajevo, Kanton Sarajevo, Federação da Bósnia e Herzegovina, 71000, Bósnia e Herzegovina",
@@ -1421,6 +1561,7 @@
  },
  "38881": {
   "fonte": "nominatim",
+  "iso2": "bz",
   "lat": 17.2502,
   "lon": -88.77,
   "match": "Belmopan, Cayo, Belize",
@@ -1431,6 +1572,7 @@
  },
  "38903": {
   "fonte": "nominatim",
+  "iso2": "gn",
   "lat": 9.5171,
   "lon": -13.6998,
   "match": "Conacri, Guiné",
@@ -1441,6 +1583,7 @@
  },
  "38920": {
   "fonte": "nominatim",
+  "iso2": "bj",
   "lat": 6.3677,
   "lon": 2.4253,
   "match": "Cotonou, Litoral, Benim",
@@ -1451,6 +1594,7 @@
  },
  "38962": {
   "fonte": "nominatim",
+  "iso2": "tz",
   "lat": -6.8161,
   "lon": 39.2804,
   "match": "Dar es Salaam, Coastal Zone, Tanzânia",
@@ -1461,6 +1605,7 @@
  },
  "38989": {
   "fonte": "nominatim",
+  "iso2": "am",
   "lat": 40.1777,
   "lon": 44.5126,
   "match": "Erevan, Arménia",
@@ -1471,6 +1616,7 @@
  },
  "39004": {
   "fonte": "nominatim",
+  "iso2": "ar",
   "lat": -34.597,
   "lon": -68.7305,
   "match": "Mendoza, Argentina",
@@ -1481,6 +1627,7 @@
  },
  "39020": {
   "fonte": "nominatim",
+  "iso2": "hr",
   "lat": 45.8131,
   "lon": 15.9773,
   "match": "Zagreb, Croácia",
@@ -1491,6 +1638,7 @@
  },
  "39063": {
   "fonte": "nominatim",
+  "iso2": "ca",
   "lat": 49.2609,
   "lon": -123.114,
   "match": "Vancouver, Metro Vancouver Regional District, Colúmbia Britânica, Canadá",
@@ -1501,6 +1649,7 @@
  },
  "39080": {
   "fonte": "nominatim",
+  "iso2": "us",
   "lat": 33.7545,
   "lon": -84.3898,
   "match": "Atlanta, Fulton County, Geórgia, Estados Unidos da América",
@@ -1511,6 +1660,7 @@
  },
  "39102": {
   "fonte": "nominatim",
+  "iso2": "om",
   "lat": 23.6124,
   "lon": 58.5938,
   "match": "Mascate, ولاية مسقط, Mascate, Omã",
@@ -1521,6 +1671,7 @@
  },
  "39128": {
   "fonte": "nominatim",
+  "iso2": "az",
   "lat": 40.3756,
   "lon": 49.8328,
   "match": "Baku, Azerbaijão",
@@ -1531,6 +1682,7 @@
  },
  "39160": {
   "fonte": "nominatim",
+  "iso2": "si",
   "lat": 46.05,
   "lon": 14.5069,
   "match": "Liubliana, Ljubljana, Upravna Enota Ljubljana, 1000, Eslovénia",
@@ -1541,6 +1693,7 @@
  },
  "39187": {
   "fonte": "nominatim",
+  "iso2": "cd",
   "lat": -4.2694,
   "lon": 15.2712,
   "match": "Brazavile, Brazzaville (département), República do Congo",
@@ -1551,6 +1704,7 @@
  },
  "39209": {
   "fonte": "nominatim",
+  "iso2": "sk",
   "lat": 48.1435,
   "lon": 17.1083,
   "match": "Bratislava, Bratislavský kraj, Eslováquia",
@@ -1561,6 +1715,7 @@
  },
  "39225": {
   "fonte": "nominatim",
+  "iso2": "st",
   "lat": 0.3389,
   "lon": 6.7313,
   "match": "São Tomé, Água Grande, São Tomé e Príncipe",
@@ -1571,6 +1726,7 @@
  },
  "39241": {
   "fonte": "nominatim",
+  "iso2": "kz",
   "lat": 51.116,
   "lon": 71.4677,
   "match": "Astana, Cazaquistão",
@@ -1581,6 +1737,7 @@
  },
  "39263": {
   "fonte": "nominatim",
+  "iso2": "gq",
   "lat": 3.7419,
   "lon": 8.7741,
   "match": "Malabo, Distrito de Malabo, Bioko Norte, Região Insular, Guiné Equatorial",
@@ -1591,6 +1748,7 @@
  },
  "39284": {
   "fonte": "nominatim",
+  "iso2": "bf",
   "lat": 12.3682,
   "lon": -1.5271,
   "match": "Ouagadougou, Kadiogo, Região Centro, Burquina Faso",
@@ -1601,6 +1759,7 @@
  },
  "39306": {
   "fonte": "nominatim",
+  "iso2": "tr",
   "lat": 41.0064,
   "lon": 28.9759,
   "match": "Istambul, Fatih, İstanbul, Marmara Bölgesi, 34122, Turquia",
@@ -1611,6 +1770,7 @@
  },
  "39322": {
   "fonte": "nominatim",
+  "iso2": "cy",
   "lat": 35.1747,
   "lon": 33.3639,
   "match": "Nicósia, Δήμος Λευκωσίας, Nicósia, Chipre, 1107, Chipre",
@@ -1622,6 +1782,7 @@
  "98000": {
   "consulta": "Guatemala City, Guatemala",
   "fonte": "manual",
+  "iso2": "gt",
   "lat": 14.6416,
   "lon": -90.5133,
   "match": "Cidade da Guatemala, Zona 2, Departamento de Guatemala, Guatemala",
@@ -1632,6 +1793,7 @@
  },
  "99104": {
   "fonte": "nominatim",
+  "iso2": "ge",
   "lat": 41.6935,
   "lon": 44.8014,
   "match": "Tiblíssi, Geórgia",
@@ -1642,6 +1804,7 @@
  },
  "99139": {
   "fonte": "nominatim",
+  "iso2": "al",
   "lat": 41.3281,
   "lon": 19.8184,
   "match": "Tirana, Bashkia Tiranë, Tirana (prefeitura), 1001-1028, Albânia",
@@ -1653,6 +1816,7 @@
  "99147": {
   "consulta": "St John's, Antigua and Barbuda",
   "fonte": "manual",
+  "iso2": "ag",
   "lat": 17.1185,
   "lon": -61.8449,
   "match": "São João, Saint John, Antígua, Antígua e Barbuda",
@@ -1663,6 +1827,7 @@
  },
  "99155": {
   "fonte": "nominatim",
+  "iso2": "br",
   "lat": -25.6336,
   "lon": -54.5829,
   "match": "Puerto Iguazú, Porto Iguaçu, Departamento Iguazú, Misiones, Argentina",
@@ -1673,6 +1838,7 @@
  },
  "99171": {
   "fonte": "nominatim",
+  "iso2": "iq",
   "lat": 33.3062,
   "lon": 44.3872,
   "match": "Bagdade, بلدية المنطقة الخضراء, قضاء الزوراء, Bagdá (província), Iraque",
@@ -1683,6 +1849,7 @@
  },
  "99180": {
   "fonte": "nominatim",
+  "iso2": "bs",
   "lat": 25.0782,
   "lon": -77.3383,
   "match": "Nassau, New Providence, Bahamas",
@@ -1693,6 +1860,7 @@
  },
  "99198": {
   "fonte": "nominatim",
+  "iso2": "ng",
   "lat": 9.0643,
   "lon": 7.4893,
   "match": "Abuja, Municipal Area Council, Território da Capital Federal, 223140, Nigéria",
@@ -1703,6 +1871,7 @@
  },
  "99210": {
   "fonte": "nominatim",
+  "iso2": "br",
   "lat": -11.0185,
   "lon": -68.7538,
   "match": "Cobija, Provincia Nicolás Suárez, Pando, Bolívia",
@@ -1713,6 +1882,7 @@
  },
  "99236": {
   "fonte": "nominatim",
+  "iso2": "bo",
   "lat": -19.0044,
   "lon": -57.7157,
   "match": "Puerto Quijarro, Germán Busch, Santa Cruz, Bolívia",
@@ -1724,6 +1894,7 @@
  "99244": {
   "consulta": "Rivera, Uruguay",
   "fonte": "manual",
+  "iso2": "uy",
   "lat": -30.9001,
   "lon": -55.5408,
   "match": "Rivera, 40000, Uruguai",
@@ -1734,6 +1905,7 @@
  },
  "99279": {
   "fonte": "nominatim",
+  "iso2": "ve",
   "lat": 4.5959,
   "lon": -61.1106,
   "match": "Santa Elena de Uairén, Parroquia Gran Sabana, Municipio Gran Sabana, Bolívar, Venezuela",
@@ -1744,6 +1916,7 @@
  },
  "99287": {
   "fonte": "nominatim",
+  "iso2": "zm",
   "lat": -15.4163,
   "lon": 28.2818,
   "match": "Lusaca, Lusaka District, Lusaca (província), 10101, Zâmbia",
@@ -1754,6 +1927,7 @@
  },
  "99295": {
   "fonte": "nominatim",
+  "iso2": "kp",
   "lat": 39.0197,
   "lon": 125.7526,
   "match": "Pyongyang, Coreia do Norte",
@@ -1764,6 +1938,7 @@
  },
  "99317": {
   "fonte": "nominatim",
+  "iso2": "ee",
   "lat": 59.4372,
   "lon": 24.7573,
   "match": "Tallinn, Harju maakond, Estónia",
@@ -1774,6 +1949,7 @@
  },
  "99325": {
   "fonte": "nominatim",
+  "iso2": "et",
   "lat": 9.0,
   "lon": 38.75,
   "match": "Adis Abeba, Etiópia",
@@ -1785,6 +1961,7 @@
  "99333": {
   "consulta": "Saint-Georges, Guyane française",
   "fonte": "manual",
+  "iso2": "gf",
   "lat": 3.8909,
   "lon": -51.8014,
   "match": "São Jorge, Saint-Georges, Guiana Francesa, 97313, França",
@@ -1795,6 +1972,7 @@
  },
  "99341": {
   "fonte": "nominatim",
+  "iso2": "mw",
   "lat": -13.9875,
   "lon": 33.7681,
   "match": "Lilôngué, Lilongwe, Região Central, Malawi",
@@ -1805,6 +1983,7 @@
  },
  "99350": {
   "fonte": "nominatim",
+  "iso2": "ml",
   "lat": 12.6133,
   "lon": -7.985,
   "match": "Bamako, Bamaco, Cercle de Kati, Koulikoro, Mali",
@@ -1815,6 +1994,7 @@
  },
  "99376": {
   "fonte": "nominatim",
+  "iso2": "mm",
   "lat": 16.7967,
   "lon": 96.161,
   "match": "Rangum, ရန်ကုန်တိုင်းဒေသကြီး, Birmânia",
@@ -1826,6 +2006,7 @@
  "99384": {
   "consulta": "Castries, Saint Lucia",
   "fonte": "manual",
+  "iso2": "lc",
   "lat": 14.0096,
   "lon": -60.9902,
   "match": "Castries, LC04 101, Santa Lúcia",
@@ -1836,6 +2017,7 @@
  },
  "99430": {
   "fonte": "nominatim",
+  "iso2": "jm",
   "lat": 17.9712,
   "lon": -76.7928,
   "match": "Kingston, Surrey County, Jamaica",
@@ -1847,6 +2029,7 @@
  "99473": {
   "consulta": "Manama, Bahrain",
   "fonte": "manual",
+  "iso2": "bh",
   "lat": 26.2235,
   "lon": 50.5822,
   "match": "Manama, Capital, 308, Bahrein",
@@ -1857,6 +2040,7 @@
  },
  "99490": {
   "fonte": "nominatim",
+  "iso2": "us",
   "lat": 28.5421,
   "lon": -81.379,
   "match": "Orlando, Condado de Orange, Flórida, Estados Unidos da América",
@@ -1867,6 +2051,7 @@
  },
  "99503": {
   "fonte": "nominatim",
+  "iso2": "gb",
   "lat": 55.9533,
   "lon": -3.1884,
   "match": "Edimburgo, Escócia, Reino Unido",
@@ -1877,6 +2062,7 @@
  },
  "99511": {
   "fonte": "nominatim",
+  "iso2": "fr",
   "lat": 43.2964,
   "lon": 5.3778,
   "match": "Marselha, Marseille, Bouches-du-Rhône, Provença-Alpes-Costa Azul, França metropolitana, França",

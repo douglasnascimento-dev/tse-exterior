@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-25T17:21:23+00:00",
+ "gerado_em": "2026-10-25T17:35:43+00:00",
  "fonte": "resultados.tse.jus.br — arquivo de urna (BU)",
  "uf": "zz",
  "turno1": {
@@ -49,7 +49,8 @@
    "lat": 5.3204,
    "lon": -4.0161,
    "pais": "Costa do Marfim",
-   "pais_mapa": "Côte d'Ivoire"
+   "pais_mapa": "Côte d'Ivoire",
+   "iso2": "ci"
   },
   {
    "codigo": "29262",
@@ -220,7 +221,8 @@
    "lat": 24.4538,
    "lon": 54.3774,
    "pais": "Emirados Árabes Unidos",
-   "pais_mapa": "United Arab Emirates"
+   "pais_mapa": "United Arab Emirates",
+   "iso2": "ae"
   },
   {
    "codigo": "99198",
@@ -256,7 +258,8 @@
    "lat": 9.0643,
    "lon": 7.4893,
    "pais": "Nigéria",
-   "pais_mapa": "Nigeria"
+   "pais_mapa": "Nigeria",
+   "iso2": "ng"
   },
   {
    "codigo": "29270",
@@ -292,7 +295,8 @@
    "lat": 5.5571,
    "lon": -0.2012,
    "pais": "Gana",
-   "pais_mapa": "Ghana"
+   "pais_mapa": "Ghana",
+   "iso2": "gh"
   },
   {
    "codigo": "99325",
@@ -328,7 +332,8 @@
    "lat": 9.0,
    "lon": 38.75,
    "pais": "Etiópia",
-   "pais_mapa": "Ethiopia"
+   "pais_mapa": "Ethiopia",
+   "iso2": "et"
   },
   {
    "codigo": "30457",
@@ -739,7 +744,8 @@
    "lat": 52.3731,
    "lon": 4.8925,
    "pais": "Países Baixos",
-   "pais_mapa": "Netherlands"
+   "pais_mapa": "Netherlands",
+   "iso2": "nl"
   },
   {
    "codigo": "29289",
@@ -850,7 +856,8 @@
    "lat": 31.9516,
    "lon": 35.924,
    "pais": "Jordânia",
-   "pais_mapa": "Jordan"
+   "pais_mapa": "Jordan",
+   "iso2": "jo"
   },
   {
    "codigo": "29297",
@@ -886,7 +893,8 @@
    "lat": 39.9208,
    "lon": 32.854,
    "pais": "Turquia",
-   "pais_mapa": "Turkey"
+   "pais_mapa": "Turkey",
+   "iso2": "tr"
   },
   {
    "codigo": "29300",
@@ -922,7 +930,8 @@
    "lat": 36.7729,
    "lon": 3.0588,
    "pais": "Argélia",
-   "pais_mapa": "Algeria"
+   "pais_mapa": "Algeria",
+   "iso2": "dz"
   },
   {
    "codigo": "29319",
@@ -958,7 +967,8 @@
    "lat": -30.6171,
    "lon": -56.9373,
    "pais": "Uruguai",
-   "pais_mapa": "Uruguay"
+   "pais_mapa": "Uruguay",
+   "iso2": "uy"
   },
   {
    "codigo": "29327",
@@ -994,7 +1004,8 @@
    "lat": -25.28,
    "lon": -57.6344,
    "pais": "Paraguai",
-   "pais_mapa": "Paraguay"
+   "pais_mapa": "Paraguay",
+   "iso2": "py"
   },
   {
    "codigo": "39241",
@@ -1030,7 +1041,8 @@
    "lat": 51.116,
    "lon": 71.4677,
    "pais": "Cazaquistão",
-   "pais_mapa": "Kazakhstan"
+   "pais_mapa": "Kazakhstan",
+   "iso2": "kz"
   },
   {
    "codigo": "29335",
@@ -1141,7 +1153,8 @@
    "lat": 37.9756,
    "lon": 23.7348,
    "pais": "Grécia",
-   "pais_mapa": "Greece"
+   "pais_mapa": "Greece",
+   "iso2": "gr"
   },
   {
    "codigo": "39080",
@@ -1177,7 +1190,8 @@
    "lat": 33.7545,
    "lon": -84.3898,
    "pais": "Estados Unidos da América",
-   "pais_mapa": "United States of America"
+   "pais_mapa": "United States of America",
+   "iso2": "us"
   },
   {
    "codigo": "99171",
@@ -1213,7 +1227,8 @@
    "lat": 33.3062,
    "lon": 44.3872,
    "pais": "Iraque",
-   "pais_mapa": "Iraq"
+   "pais_mapa": "Iraq",
+   "iso2": "iq"
   },
   {
    "codigo": "39128",
@@ -1249,7 +1264,8 @@
    "lat": 40.3756,
    "lon": 49.8328,
    "pais": "Azerbaijão",
-   "pais_mapa": "Azerbaijan"
+   "pais_mapa": "Azerbaijan",
+   "iso2": "az"
   },
   {
    "codigo": "99350",
@@ -1285,7 +1301,8 @@
    "lat": 12.6133,
    "lon": -7.985,
    "pais": "Mali",
-   "pais_mapa": "Mali"
+   "pais_mapa": "Mali",
+   "iso2": "ml"
   },
   {
    "codigo": "29343",
@@ -1376,7 +1393,8 @@
    "lat": 13.7525,
    "lon": 100.4935,
    "pais": "Tailândia",
-   "pais_mapa": "Thailand"
+   "pais_mapa": "Thailand",
+   "iso2": "th"
   },
   {
    "codigo": "29351",
@@ -1887,7 +1905,8 @@
    "lat": 41.3826,
    "lon": 2.1771,
    "pais": "Espanha",
-   "pais_mapa": "Spain"
+   "pais_mapa": "Spain",
+   "iso2": "es"
   },
   {
    "codigo": "99473",
@@ -1923,7 +1942,8 @@
    "lat": 26.2235,
    "lon": 50.5822,
    "pais": "Bahrein",
-   "pais_mapa": null
+   "pais_mapa": null,
+   "iso2": "bh"
   },
   {
    "codigo": "29360",
@@ -2254,7 +2274,8 @@
    "lat": 33.8892,
    "lon": 35.5026,
    "pais": "Líbano",
-   "pais_mapa": "Lebanon"
+   "pais_mapa": "Lebanon",
+   "iso2": "lb"
   },
   {
    "codigo": "29378",
@@ -2345,7 +2366,8 @@
    "lat": 44.8153,
    "lon": 20.4457,
    "pais": "Sérvia",
-   "pais_mapa": "Serbia"
+   "pais_mapa": "Serbia",
+   "iso2": "rs"
   },
   {
    "codigo": "38881",
@@ -2381,73 +2403,354 @@
    "lat": 17.2502,
    "lon": -88.77,
    "pais": "Belize",
-   "pais_mapa": "Belize"
+   "pais_mapa": "Belize",
+   "iso2": "bz"
   },
   {
    "codigo": "29386",
    "nome": "BERLIM",
    "secoes_previstas": 20,
    "secoes_listadas": 42,
-   "secoes_apuradas_t2": 6,
-   "secoes_comparaveis": 6,
+   "secoes_apuradas_t2": 20,
+   "secoes_comparaveis": 20,
    "t1": {
-    "13": 1436,
-    "22": 333,
-    "brancos": 24,
-    "nulos": 34,
-    "outros": 152,
-    "comparecimento": 1979,
-    "aptos": 4647,
-    "total": 1979,
-    "validos": 1921
+    "13": 6504,
+    "22": 925,
+    "brancos": 68,
+    "nulos": 116,
+    "outros": 591,
+    "comparecimento": 8204,
+    "aptos": 15066,
+    "total": 8204,
+    "validos": 8020
    },
    "t2": {
-    "13": 1771,
-    "22": 406,
-    "brancos": 20,
-    "nulos": 27,
+    "13": 7452,
+    "22": 1125,
+    "brancos": 60,
+    "nulos": 102,
     "outros": 0,
-    "comparecimento": 2224,
-    "aptos": 4646,
-    "total": 2224,
-    "validos": 2177
+    "comparecimento": 8739,
+    "aptos": 15068,
+    "total": 8739,
+    "validos": 8577
    },
    "metricas": {
     "candidatos": {
      "13": {
-      "t1": 1436,
-      "t2": 1771,
-      "delta": 335,
-      "pct": 23.328690807799443,
-      "share_t1": 74.75273295158772,
-      "share_t2": 81.35048231511254
+      "t1": 6504,
+      "t2": 7452,
+      "delta": 948,
+      "pct": 14.575645756457565,
+      "share_t1": 81.09725685785536,
+      "share_t2": 86.88352570828961
      },
      "22": {
-      "t1": 333,
-      "t2": 406,
-      "delta": 73,
-      "pct": 21.92192192192192,
-      "share_t1": 17.334721499219157,
-      "share_t2": 18.64951768488746
+      "t1": 925,
+      "t2": 1125,
+      "delta": 200,
+      "pct": 21.62162162162162,
+      "share_t1": 11.53366583541147,
+      "share_t2": 13.116474291710388
      }
     },
-    "diferenca_crescimento": 262,
-    "margem_t1": 1103,
-    "margem_t2": 1365,
-    "variacao_margem": 262,
-    "total_t1": 1979,
-    "total_t2": 2224,
-    "delta_total": 245,
-    "pct_total": 12.379989893885801,
-    "validos_t1": 1921,
-    "validos_t2": 2177,
-    "delta_validos": 256,
-    "aptos_t2": 4646,
-    "comparecimento_t2": 2224,
-    "brancos_nulos_t1": 58,
-    "brancos_nulos_t2": 47
+    "diferenca_crescimento": 748,
+    "margem_t1": 5579,
+    "margem_t2": 6327,
+    "variacao_margem": 748,
+    "total_t1": 8204,
+    "total_t2": 8739,
+    "delta_total": 535,
+    "pct_total": 6.521209166260361,
+    "validos_t1": 8020,
+    "validos_t2": 8577,
+    "delta_validos": 557,
+    "aptos_t2": 15068,
+    "comparecimento_t2": 8739,
+    "brancos_nulos_t1": 184,
+    "brancos_nulos_t2": 162
    },
    "secoes": [
+    {
+     "zona": "0001",
+     "secao": "1362",
+     "t1": {
+      "13": 451,
+      "22": 54,
+      "brancos": 4,
+      "nulos": 7,
+      "comparecimento": 550,
+      "aptos": 782
+     },
+     "t2": {
+      "13": 502,
+      "22": 64,
+      "brancos": 5,
+      "nulos": 8,
+      "comparecimento": 579,
+      "aptos": 787
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1709",
+     "t1": {
+      "13": 427,
+      "22": 65,
+      "brancos": 2,
+      "nulos": 6,
+      "comparecimento": 539,
+      "aptos": 793
+     },
+     "t2": {
+      "13": 467,
+      "22": 73,
+      "brancos": 4,
+      "nulos": 7,
+      "comparecimento": 551,
+      "aptos": 794
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1710",
+     "t1": {
+      "13": 364,
+      "22": 31,
+      "brancos": 5,
+      "nulos": 4,
+      "comparecimento": 440,
+      "aptos": 790
+     },
+     "t2": {
+      "13": 402,
+      "22": 38,
+      "brancos": 6,
+      "nulos": 9,
+      "comparecimento": 455,
+      "aptos": 790
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1711",
+     "t1": {
+      "13": 421,
+      "22": 60,
+      "brancos": 3,
+      "nulos": 9,
+      "comparecimento": 525,
+      "aptos": 787
+     },
+     "t2": {
+      "13": 469,
+      "22": 58,
+      "brancos": 2,
+      "nulos": 6,
+      "comparecimento": 535,
+      "aptos": 788
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1712",
+     "t1": {
+      "13": 422,
+      "22": 39,
+      "brancos": 2,
+      "nulos": 11,
+      "comparecimento": 508,
+      "aptos": 790
+     },
+     "t2": {
+      "13": 463,
+      "22": 45,
+      "brancos": 5,
+      "nulos": 6,
+      "comparecimento": 519,
+      "aptos": 790
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1713",
+     "t1": {
+      "13": 395,
+      "22": 38,
+      "brancos": 2,
+      "nulos": 3,
+      "comparecimento": 472,
+      "aptos": 787
+     },
+     "t2": {
+      "13": 461,
+      "22": 44,
+      "brancos": 1,
+      "nulos": 4,
+      "comparecimento": 510,
+      "aptos": 787
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1714",
+     "t1": {
+      "13": 469,
+      "22": 38,
+      "brancos": 2,
+      "nulos": 7,
+      "comparecimento": 552,
+      "aptos": 787
+     },
+     "t2": {
+      "13": 502,
+      "22": 45,
+      "brancos": 3,
+      "nulos": 8,
+      "comparecimento": 558,
+      "aptos": 786
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1715",
+     "t1": {
+      "13": 393,
+      "22": 44,
+      "brancos": 6,
+      "nulos": 3,
+      "comparecimento": 474,
+      "aptos": 788
+     },
+     "t2": {
+      "13": 443,
+      "22": 64,
+      "brancos": 3,
+      "nulos": 3,
+      "comparecimento": 513,
+      "aptos": 787
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1716",
+     "t1": {
+      "13": 367,
+      "22": 53,
+      "brancos": 5,
+      "nulos": 10,
+      "comparecimento": 468,
+      "aptos": 793
+     },
+     "t2": {
+      "13": 411,
+      "22": 66,
+      "brancos": 2,
+      "nulos": 5,
+      "comparecimento": 484,
+      "aptos": 794
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1717",
+     "t1": {
+      "13": 286,
+      "22": 35,
+      "brancos": 1,
+      "nulos": 7,
+      "comparecimento": 357,
+      "aptos": 724
+     },
+     "t2": {
+      "13": 330,
+      "22": 36,
+      "brancos": 1,
+      "nulos": 6,
+      "comparecimento": 373,
+      "aptos": 725
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1718",
+     "t1": {
+      "13": 267,
+      "22": 36,
+      "brancos": 1,
+      "nulos": 4,
+      "comparecimento": 339,
+      "aptos": 733
+     },
+     "t2": {
+      "13": 336,
+      "22": 46,
+      "brancos": 2,
+      "nulos": 2,
+      "comparecimento": 386,
+      "aptos": 733
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1719",
+     "t1": {
+      "13": 357,
+      "22": 48,
+      "brancos": 5,
+      "nulos": 6,
+      "comparecimento": 447,
+      "aptos": 785
+     },
+     "t2": {
+      "13": 389,
+      "22": 70,
+      "brancos": 3,
+      "nulos": 4,
+      "comparecimento": 466,
+      "aptos": 783
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1720",
+     "t1": {
+      "13": 227,
+      "22": 25,
+      "brancos": 4,
+      "nulos": 4,
+      "comparecimento": 281,
+      "aptos": 552
+     },
+     "t2": {
+      "13": 267,
+      "22": 32,
+      "brancos": 3,
+      "nulos": 3,
+      "comparecimento": 305,
+      "aptos": 550
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "1721",
+     "t1": {
+      "13": 222,
+      "22": 26,
+      "brancos": 2,
+      "nulos": 1,
+      "comparecimento": 273,
+      "aptos": 528
+     },
+     "t2": {
+      "13": 239,
+      "22": 38,
+      "brancos": 0,
+      "nulos": 4,
+      "comparecimento": 281,
+      "aptos": 528
+     }
+    },
     {
      "zona": "0001",
      "secao": "1723",
@@ -2572,7 +2875,8 @@
    "lat": 52.5174,
    "lon": 13.3951,
    "pais": "Alemanha",
-   "pais_mapa": "Germany"
+   "pais_mapa": "Germany",
+   "iso2": "de"
   },
   {
    "codigo": "29394",
@@ -2608,7 +2912,8 @@
    "lat": 11.8613,
    "lon": -15.5831,
    "pais": "Guiné-Bissau",
-   "pais_mapa": "Guinea-Bissau"
+   "pais_mapa": "Guinea-Bissau",
+   "iso2": "gw"
   },
   {
    "codigo": "29408",
@@ -2644,7 +2949,8 @@
    "lat": 4.6534,
    "lon": -74.0836,
    "pais": "Colômbia",
-   "pais_mapa": "Colombia"
+   "pais_mapa": "Colombia",
+   "iso2": "co"
   },
   {
    "codigo": "29416",
@@ -2680,7 +2986,8 @@
    "lat": 42.3588,
    "lon": -71.0578,
    "pais": "Estados Unidos da América",
-   "pais_mapa": "United States of America"
+   "pais_mapa": "United States of America",
+   "iso2": "us"
   },
   {
    "codigo": "39209",
@@ -2771,7 +3078,8 @@
    "lat": 48.1435,
    "lon": 17.1083,
    "pais": "Eslováquia",
-   "pais_mapa": "Slovakia"
+   "pais_mapa": "Slovakia",
+   "iso2": "sk"
   },
   {
    "codigo": "39187",
@@ -2807,7 +3115,8 @@
    "lat": -4.2694,
    "lon": 15.2712,
    "pais": "República do Congo",
-   "pais_mapa": "Dem. Rep. Congo"
+   "pais_mapa": "Dem. Rep. Congo",
+   "iso2": "cd"
   },
   {
    "codigo": "29424",
@@ -2843,7 +3152,8 @@
    "lat": 13.0978,
    "lon": -59.6184,
    "pais": "Barbados",
-   "pais_mapa": null
+   "pais_mapa": null,
+   "iso2": "bb"
   },
   {
    "codigo": "29432",
@@ -3194,7 +3504,8 @@
    "lat": 50.8467,
    "lon": 4.3525,
    "pais": "Bélgica",
-   "pais_mapa": "Belgium"
+   "pais_mapa": "Belgium",
+   "iso2": "be"
   },
   {
    "codigo": "29440",
@@ -3230,7 +3541,8 @@
    "lat": 44.4361,
    "lon": 26.1027,
    "pais": "Roménia",
-   "pais_mapa": "Romania"
+   "pais_mapa": "Romania",
+   "iso2": "ro"
   },
   {
    "codigo": "29459",
@@ -3341,7 +3653,8 @@
    "lat": 47.4979,
    "lon": 19.0402,
    "pais": "Hungria",
-   "pais_mapa": "Hungary"
+   "pais_mapa": "Hungary",
+   "iso2": "hu"
   },
   {
    "codigo": "29467",
@@ -3377,7 +3690,8 @@
    "lat": -34.6096,
    "lon": -58.3888,
    "pais": "Argentina",
-   "pais_mapa": "Argentina"
+   "pais_mapa": "Argentina",
+   "iso2": "ar"
   },
   {
    "codigo": "29475",
@@ -3413,7 +3727,8 @@
    "lat": 4.9372,
    "lon": -52.3259,
    "pais": "Guiana Francesa",
-   "pais_mapa": "France"
+   "pais_mapa": "France",
+   "iso2": "gf"
   },
   {
    "codigo": "29483",
@@ -3504,7 +3819,8 @@
    "lat": 30.0444,
    "lon": 31.2357,
    "pais": "Egito",
-   "pais_mapa": "Egypt"
+   "pais_mapa": "Egypt",
+   "iso2": "eg"
   },
   {
    "codigo": "29491",
@@ -3775,7 +4091,8 @@
    "lat": -35.2976,
    "lon": 149.1013,
    "pais": "Austrália",
-   "pais_mapa": "Australia"
+   "pais_mapa": "Australia",
+   "iso2": "au"
   },
   {
    "codigo": "30651",
@@ -3866,7 +4183,8 @@
    "lat": 23.1288,
    "lon": 113.259,
    "pais": "China",
-   "pais_mapa": "China"
+   "pais_mapa": "China",
+   "iso2": "cn"
   },
   {
    "codigo": "29505",
@@ -3902,7 +4220,8 @@
    "lat": 10.5061,
    "lon": -66.9146,
    "pais": "Venezuela",
-   "pais_mapa": "Venezuela"
+   "pais_mapa": "Venezuela",
+   "iso2": "ve"
   },
   {
    "codigo": "99384",
@@ -3938,7 +4257,8 @@
    "lat": 14.0096,
    "lon": -60.9902,
    "pais": "Santa Lúcia",
-   "pais_mapa": null
+   "pais_mapa": null,
+   "iso2": "lc"
   },
   {
    "codigo": "29513",
@@ -3974,7 +4294,8 @@
    "lat": 41.8756,
    "lon": -87.6244,
    "pais": "Estados Unidos da América",
-   "pais_mapa": "United States of America"
+   "pais_mapa": "United States of America",
+   "iso2": "us"
   },
   {
    "codigo": "29521",
@@ -4010,7 +4331,8 @@
    "lat": -33.6938,
    "lon": -53.4561,
    "pais": "Uruguai",
-   "pais_mapa": "Uruguay"
+   "pais_mapa": "Uruguay",
+   "iso2": "uy"
   },
   {
    "codigo": "29530",
@@ -4101,7 +4423,8 @@
    "lat": -33.9288,
    "lon": 18.4172,
    "pais": "África do Sul",
-   "pais_mapa": "South Africa"
+   "pais_mapa": "South Africa",
+   "iso2": "za"
   },
   {
    "codigo": "29556",
@@ -4137,7 +4460,8 @@
    "lat": -25.5169,
    "lon": -54.6169,
    "pais": "Paraguai",
-   "pais_mapa": "Paraguay"
+   "pais_mapa": "Paraguay",
+   "iso2": "py"
   },
   {
    "codigo": "29564",
@@ -4173,7 +4497,8 @@
    "lat": 8.3224,
    "lon": -62.6897,
    "pais": "Venezuela",
-   "pais_mapa": "Venezuela"
+   "pais_mapa": "Venezuela",
+   "iso2": "ve"
   },
   {
    "codigo": "99210",
@@ -4209,7 +4534,8 @@
    "lat": -11.0185,
    "lon": -68.7538,
    "pais": "Bolívia",
-   "pais_mapa": "Brazil"
+   "pais_mapa": "Brazil",
+   "iso2": "br"
   },
   {
    "codigo": "29572",
@@ -4245,7 +4571,8 @@
    "lat": -17.4012,
    "lon": -66.1676,
    "pais": "Bolívia",
-   "pais_mapa": "Bolivia"
+   "pais_mapa": "Bolivia",
+   "iso2": "bo"
   },
   {
    "codigo": "30929",
@@ -4281,7 +4608,8 @@
    "lat": 6.9389,
    "lon": 79.8542,
    "pais": "Seri-Lanca",
-   "pais_mapa": "Sri Lanka"
+   "pais_mapa": "Sri Lanka",
+   "iso2": "lk"
   },
   {
    "codigo": "38903",
@@ -4317,7 +4645,8 @@
    "lat": 9.5171,
    "lon": -13.6998,
    "pais": "Guiné",
-   "pais_mapa": "Guinea"
+   "pais_mapa": "Guinea",
+   "iso2": "gn"
   },
   {
    "codigo": "29580",
@@ -4353,7 +4682,8 @@
    "lat": -23.1775,
    "lon": -57.1675,
    "pais": "Paraguai",
-   "pais_mapa": "Paraguay"
+   "pais_mapa": "Paraguay",
+   "iso2": "py"
   },
   {
    "codigo": "29599",
@@ -4504,7 +4834,8 @@
    "lat": 55.6867,
    "lon": 12.5701,
    "pais": "Dinamarca",
-   "pais_mapa": "Denmark"
+   "pais_mapa": "Denmark",
+   "iso2": "dk"
   },
   {
    "codigo": "38920",
@@ -4540,7 +4871,8 @@
    "lat": 6.3677,
    "lon": 2.4253,
    "pais": "Benim",
-   "pais_mapa": "Benin"
+   "pais_mapa": "Benin",
+   "iso2": "bj"
   },
   {
    "codigo": "29602",
@@ -4576,7 +4908,8 @@
    "lat": -31.4167,
    "lon": -64.1834,
    "pais": "Argentina",
-   "pais_mapa": "Argentina"
+   "pais_mapa": "Argentina",
+   "iso2": "ar"
   },
   {
    "codigo": "29610",
@@ -4612,7 +4945,8 @@
    "lat": 14.6934,
    "lon": -17.4479,
    "pais": "Senegal",
-   "pais_mapa": "Senegal"
+   "pais_mapa": "Senegal",
+   "iso2": "sn"
   },
   {
    "codigo": "29629",
@@ -4648,7 +4982,8 @@
    "lat": 23.7644,
    "lon": 90.389,
    "pais": "Bangladeche",
-   "pais_mapa": "Bangladesh"
+   "pais_mapa": "Bangladesh",
+   "iso2": "bd"
   },
   {
    "codigo": "29637",
@@ -4739,7 +5074,8 @@
    "lat": 33.5131,
    "lon": 36.3096,
    "pais": "Síria",
-   "pais_mapa": "Syria"
+   "pais_mapa": "Syria",
+   "iso2": "sy"
   },
   {
    "codigo": "38962",
@@ -4775,7 +5111,8 @@
    "lat": -6.8161,
    "lon": 39.2804,
    "pais": "Tanzânia",
-   "pais_mapa": "Tanzania"
+   "pais_mapa": "Tanzania",
+   "iso2": "tz"
   },
   {
    "codigo": "29653",
@@ -4866,7 +5203,8 @@
    "lat": 25.3109,
    "lon": 51.5082,
    "pais": "Catar",
-   "pais_mapa": "Qatar"
+   "pais_mapa": "Qatar",
+   "iso2": "qa"
   },
   {
    "codigo": "29661",
@@ -4902,7 +5240,8 @@
    "lat": 53.3494,
    "lon": -6.2606,
    "pais": "Irlanda",
-   "pais_mapa": "Ireland"
+   "pais_mapa": "Ireland",
+   "iso2": "ie"
   },
   {
    "codigo": "29645",
@@ -4938,7 +5277,8 @@
    "lat": -8.5537,
    "lon": 125.5784,
    "pais": "Timor-Leste",
-   "pais_mapa": "Timor-Leste"
+   "pais_mapa": "Timor-Leste",
+   "iso2": "tl"
   },
   {
    "codigo": "99503",
@@ -4974,7 +5314,8 @@
    "lat": 55.9533,
    "lon": -3.1884,
    "pais": "Reino Unido",
-   "pais_mapa": "United Kingdom"
+   "pais_mapa": "United Kingdom",
+   "iso2": "gb"
   },
   {
    "codigo": "29670",
@@ -5010,7 +5351,8 @@
    "lat": -27.3376,
    "lon": -55.8669,
    "pais": "Paraguai",
-   "pais_mapa": "Paraguay"
+   "pais_mapa": "Paraguay",
+   "iso2": "py"
   },
   {
    "codigo": "29688",
@@ -5221,7 +5563,8 @@
    "lat": 59.3251,
    "lon": 18.0711,
    "pais": "Suécia",
-   "pais_mapa": "Sweden"
+   "pais_mapa": "Sweden",
+   "iso2": "se"
   },
   {
    "codigo": "30961",
@@ -5257,7 +5600,8 @@
    "lat": 37.0163,
    "lon": -7.9352,
    "pais": "Portugal",
-   "pais_mapa": "Portugal"
+   "pais_mapa": "Portugal",
+   "iso2": "pt"
   },
   {
    "codigo": "29696",
@@ -5748,7 +6092,8 @@
    "lat": 50.1106,
    "lon": 8.6821,
    "pais": "Alemanha",
-   "pais_mapa": "Germany"
+   "pais_mapa": "Germany",
+   "iso2": "de"
   },
   {
    "codigo": "30669",
@@ -5784,7 +6129,8 @@
    "lat": -24.6581,
    "lon": 25.9088,
    "pais": "Botsuana",
-   "pais_mapa": "Botswana"
+   "pais_mapa": "Botswana",
+   "iso2": "bw"
   },
   {
    "codigo": "29700",
@@ -6155,7 +6501,8 @@
    "lat": 46.2018,
    "lon": 6.1466,
    "pais": "Suíça",
-   "pais_mapa": "France"
+   "pais_mapa": "France",
+   "iso2": "fr"
   },
   {
    "codigo": "29718",
@@ -6191,7 +6538,8 @@
    "lat": 6.8033,
    "lon": -58.1455,
    "pais": "Guiana",
-   "pais_mapa": "Guyana"
+   "pais_mapa": "Guyana",
+   "iso2": "gy"
   },
   {
    "codigo": "98000",
@@ -6227,7 +6575,8 @@
    "lat": 14.6416,
    "lon": -90.5133,
    "pais": "Guatemala",
-   "pais_mapa": "Guatemala"
+   "pais_mapa": "Guatemala",
+   "iso2": "gt"
   },
   {
    "codigo": "29742",
@@ -6658,7 +7007,8 @@
    "lat": 34.711,
    "lon": 137.7259,
    "pais": "Japão",
-   "pais_mapa": "Japan"
+   "pais_mapa": "Japan",
+   "iso2": "jp"
   },
   {
    "codigo": "29750",
@@ -6694,7 +7044,8 @@
    "lat": 21.0283,
    "lon": 105.854,
    "pais": "Vietname",
-   "pais_mapa": "Vietnam"
+   "pais_mapa": "Vietnam",
+   "iso2": "vn"
   },
   {
    "codigo": "29769",
@@ -6730,7 +7081,8 @@
    "lat": -17.8567,
    "lon": 31.0602,
    "pais": "Zimbabué",
-   "pais_mapa": "Zimbabwe"
+   "pais_mapa": "Zimbabwe",
+   "iso2": "zw"
   },
   {
    "codigo": "30902",
@@ -6766,7 +7118,8 @@
    "lat": 41.7662,
    "lon": -72.6733,
    "pais": "Estados Unidos da América",
-   "pais_mapa": "United States of America"
+   "pais_mapa": "United States of America",
+   "iso2": "us"
   },
   {
    "codigo": "29777",
@@ -6802,7 +7155,8 @@
    "lat": 23.1353,
    "lon": -82.359,
    "pais": "Cuba",
-   "pais_mapa": "Cuba"
+   "pais_mapa": "Cuba",
+   "iso2": "cu"
   },
   {
    "codigo": "29785",
@@ -6913,7 +7267,8 @@
    "lat": 60.1666,
    "lon": 24.9435,
    "pais": "Finlândia",
-   "pais_mapa": "Finland"
+   "pais_mapa": "Finland",
+   "iso2": "fi"
   },
   {
    "codigo": "29793",
@@ -7004,7 +7359,8 @@
    "lat": 22.3492,
    "lon": 114.1858,
    "pais": "China (Hong Kong)",
-   "pais_mapa": "China"
+   "pais_mapa": "China",
+   "iso2": "hk"
   },
   {
    "codigo": "29807",
@@ -7040,7 +7396,8 @@
    "lat": 29.7589,
    "lon": -95.3677,
    "pais": "Estados Unidos da América",
-   "pais_mapa": "United States of America"
+   "pais_mapa": "United States of America",
+   "iso2": "us"
   },
   {
    "codigo": "29815",
@@ -7076,7 +7433,8 @@
    "lat": 3.869,
    "lon": 11.5213,
    "pais": "Camarões",
-   "pais_mapa": "Cameroon"
+   "pais_mapa": "Cameroon",
+   "iso2": "cm"
   },
   {
    "codigo": "38989",
@@ -7112,7 +7470,8 @@
    "lat": 40.1777,
    "lon": 44.5126,
    "pais": "Arménia",
-   "pais_mapa": "Armenia"
+   "pais_mapa": "Armenia",
+   "iso2": "am"
   },
   {
    "codigo": "29823",
@@ -7148,7 +7507,8 @@
    "lat": -3.7494,
    "lon": -73.2444,
    "pais": "Peru",
-   "pais_mapa": "Peru"
+   "pais_mapa": "Peru",
+   "iso2": "pe"
   },
   {
    "codigo": "29831",
@@ -7184,7 +7544,8 @@
    "lat": 33.6938,
    "lon": 73.0652,
    "pais": "Paquistão",
-   "pais_mapa": "Pakistan"
+   "pais_mapa": "Pakistan",
+   "iso2": "pk"
   },
   {
    "codigo": "39306",
@@ -7275,7 +7636,8 @@
    "lat": 41.0064,
    "lon": 28.9759,
    "pais": "Turquia",
-   "pais_mapa": "Turkey"
+   "pais_mapa": "Turkey",
+   "iso2": "tr"
   },
   {
    "codigo": "29840",
@@ -7366,7 +7728,8 @@
    "lat": -6.1754,
    "lon": 106.8272,
    "pais": "Indonésia",
-   "pais_mapa": "Indonesia"
+   "pais_mapa": "Indonesia",
+   "iso2": "id"
   },
   {
    "codigo": "29173",
@@ -7402,7 +7765,8 @@
    "lat": 27.7083,
    "lon": 85.3206,
    "pais": "Nepal",
-   "pais_mapa": "Nepal"
+   "pais_mapa": "Nepal",
+   "iso2": "np"
   },
   {
    "codigo": "29858",
@@ -7438,7 +7802,8 @@
    "lat": 50.45,
    "lon": 30.5241,
    "pais": "Ucrânia",
-   "pais_mapa": "Ukraine"
+   "pais_mapa": "Ukraine",
+   "iso2": "ua"
   },
   {
    "codigo": "99430",
@@ -7474,7 +7839,8 @@
    "lat": 17.9712,
    "lon": -76.7928,
    "pais": "Jamaica",
-   "pais_mapa": "Jamaica"
+   "pais_mapa": "Jamaica",
+   "iso2": "jm"
   },
   {
    "codigo": "29874",
@@ -7510,7 +7876,8 @@
    "lat": -4.3197,
    "lon": 15.3424,
    "pais": "República Democrática do Congo",
-   "pais_mapa": "Dem. Rep. Congo"
+   "pais_mapa": "Dem. Rep. Congo",
+   "iso2": "cd"
   },
   {
    "codigo": "29882",
@@ -7601,7 +7968,8 @@
    "lat": 29.2734,
    "lon": 47.4979,
    "pais": "Kuwait",
-   "pais_mapa": "Kuwait"
+   "pais_mapa": "Kuwait",
+   "iso2": "kw"
   },
   {
    "codigo": "29890",
@@ -7692,7 +8060,8 @@
    "lat": 3.1517,
    "lon": 101.6942,
    "pais": "Malásia",
-   "pais_mapa": "Malaysia"
+   "pais_mapa": "Malaysia",
+   "iso2": "my"
   },
   {
    "codigo": "29904",
@@ -7728,7 +8097,8 @@
    "lat": -16.4955,
    "lon": -68.1336,
    "pais": "Bolívia",
-   "pais_mapa": "Fiji"
+   "pais_mapa": "Fiji",
+   "iso2": "fj"
   },
   {
    "codigo": "29912",
@@ -7764,7 +8134,8 @@
    "lat": 6.4551,
    "lon": 3.3942,
    "pais": "Nigéria",
-   "pais_mapa": "Nigeria"
+   "pais_mapa": "Nigeria",
+   "iso2": "ng"
   },
   {
    "codigo": "29939",
@@ -7800,7 +8171,8 @@
    "lat": 0.4087,
    "lon": 9.4419,
    "pais": "Gabão",
-   "pais_mapa": "Gabon"
+   "pais_mapa": "Gabon",
+   "iso2": "ga"
   },
   {
    "codigo": "99341",
@@ -7836,7 +8208,8 @@
    "lat": -13.9875,
    "lon": 33.7681,
    "pais": "Malawi",
-   "pais_mapa": "Malawi"
+   "pais_mapa": "Malawi",
+   "iso2": "mw"
   },
   {
    "codigo": "29947",
@@ -7872,43 +8245,100 @@
    "lat": -12.046,
    "lon": -77.0306,
    "pais": "Peru",
-   "pais_mapa": "Peru"
+   "pais_mapa": "Peru",
+   "iso2": "pe"
   },
   {
    "codigo": "29955",
    "nome": "LISBOA",
    "secoes_previstas": 103,
    "secoes_listadas": 209,
-   "secoes_apuradas_t2": 0,
-   "secoes_comparaveis": 0,
+   "secoes_apuradas_t2": 1,
+   "secoes_comparaveis": 1,
    "t1": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
+    "13": 280,
+    "22": 118,
+    "brancos": 2,
     "nulos": 0,
-    "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0,
-    "validos": 0
+    "outros": 28,
+    "comparecimento": 428,
+    "aptos": 791,
+    "total": 428,
+    "validos": 426
    },
    "t2": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
+    "13": 328,
+    "22": 136,
+    "brancos": 5,
+    "nulos": 6,
     "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0,
-    "validos": 0
+    "comparecimento": 475,
+    "aptos": 792,
+    "total": 475,
+    "validos": 464
    },
-   "metricas": null,
-   "secoes": [],
+   "metricas": {
+    "candidatos": {
+     "13": {
+      "t1": 280,
+      "t2": 328,
+      "delta": 48,
+      "pct": 17.142857142857142,
+      "share_t1": 65.72769953051643,
+      "share_t2": 70.6896551724138
+     },
+     "22": {
+      "t1": 118,
+      "t2": 136,
+      "delta": 18,
+      "pct": 15.254237288135593,
+      "share_t1": 27.699530516431924,
+      "share_t2": 29.310344827586206
+     }
+    },
+    "diferenca_crescimento": 30,
+    "margem_t1": 162,
+    "margem_t2": 192,
+    "variacao_margem": 30,
+    "total_t1": 428,
+    "total_t2": 475,
+    "delta_total": 47,
+    "pct_total": 10.981308411214954,
+    "validos_t1": 426,
+    "validos_t2": 464,
+    "delta_validos": 38,
+    "aptos_t2": 792,
+    "comparecimento_t2": 475,
+    "brancos_nulos_t1": 2,
+    "brancos_nulos_t2": 11
+   },
+   "secoes": [
+    {
+     "zona": "0001",
+     "secao": "3827",
+     "t1": {
+      "13": 280,
+      "22": 118,
+      "brancos": 2,
+      "nulos": 0,
+      "comparecimento": 428,
+      "aptos": 791
+     },
+     "t2": {
+      "13": 328,
+      "22": 136,
+      "brancos": 5,
+      "nulos": 6,
+      "comparecimento": 475,
+      "aptos": 792
+     }
+    }
+   ],
    "lat": 38.7078,
    "lon": -9.1366,
    "pais": "Portugal",
-   "pais_mapa": "Portugal"
+   "pais_mapa": "Portugal",
+   "iso2": "pt"
   },
   {
    "codigo": "39160",
@@ -7999,7 +8429,8 @@
    "lat": 46.05,
    "lon": 14.5069,
    "pais": "Eslovénia",
-   "pais_mapa": "Slovenia"
+   "pais_mapa": "Slovenia",
+   "iso2": "si"
   },
   {
    "codigo": "29963",
@@ -8035,7 +8466,8 @@
    "lat": 6.1304,
    "lon": 1.2158,
    "pais": "Togo",
-   "pais_mapa": "Togo"
+   "pais_mapa": "Togo",
+   "iso2": "tg"
   },
   {
    "codigo": "29971",
@@ -8071,7 +8503,8 @@
    "lat": 51.5074,
    "lon": -0.1278,
    "pais": "Reino Unido",
-   "pais_mapa": "United Kingdom"
+   "pais_mapa": "United Kingdom",
+   "iso2": "gb"
   },
   {
    "codigo": "29980",
@@ -8107,7 +8540,8 @@
    "lat": 34.0537,
    "lon": -118.2428,
    "pais": "Estados Unidos da América",
-   "pais_mapa": "United States of America"
+   "pais_mapa": "United States of America",
+   "iso2": "us"
   },
   {
    "codigo": "29998",
@@ -8198,7 +8632,8 @@
    "lat": -8.8273,
    "lon": 13.244,
    "pais": "Angola",
-   "pais_mapa": "Angola"
+   "pais_mapa": "Angola",
+   "iso2": "ao"
   },
   {
    "codigo": "99287",
@@ -8234,7 +8669,8 @@
    "lat": -15.4163,
    "lon": 28.2818,
    "pais": "Zâmbia",
-   "pais_mapa": "Zambia"
+   "pais_mapa": "Zambia",
+   "iso2": "zm"
   },
   {
    "codigo": "30066",
@@ -8905,7 +9341,8 @@
    "lat": 40.4168,
    "lon": -3.7035,
    "pais": "Espanha",
-   "pais_mapa": "Spain"
+   "pais_mapa": "Spain",
+   "iso2": "es"
   },
   {
    "codigo": "39263",
@@ -8941,7 +9378,8 @@
    "lat": 3.7419,
    "lon": 8.7741,
    "pais": "Guiné Equatorial",
-   "pais_mapa": "Eq. Guinea"
+   "pais_mapa": "Eq. Guinea",
+   "iso2": "gq"
   },
   {
    "codigo": "30082",
@@ -9032,7 +9470,8 @@
    "lat": 14.5904,
    "lon": 120.9804,
    "pais": "Filipinas",
-   "pais_mapa": "Philippines"
+   "pais_mapa": "Philippines",
+   "iso2": "ph"
   },
   {
    "codigo": "30074",
@@ -9068,7 +9507,8 @@
    "lat": 12.1547,
    "lon": -86.2737,
    "pais": "Nicarágua",
-   "pais_mapa": "Nicaragua"
+   "pais_mapa": "Nicaragua",
+   "iso2": "ni"
   },
   {
    "codigo": "30090",
@@ -9159,7 +9599,8 @@
    "lat": -25.9662,
    "lon": 32.5675,
    "pais": "Moçambique",
-   "pais_mapa": "Mozambique"
+   "pais_mapa": "Mozambique",
+   "iso2": "mz"
   },
   {
    "codigo": "99511",
@@ -9310,7 +9751,8 @@
    "lat": 43.2964,
    "lon": 5.3778,
    "pais": "França",
-   "pais_mapa": "France"
+   "pais_mapa": "France",
+   "iso2": "fr"
   },
   {
    "codigo": "39102",
@@ -9346,7 +9788,8 @@
    "lat": 23.6124,
    "lon": 58.5938,
    "pais": "Omã",
-   "pais_mapa": "Oman"
+   "pais_mapa": "Oman",
+   "iso2": "om"
   },
   {
    "codigo": "39004",
@@ -9382,7 +9825,8 @@
    "lat": -34.597,
    "lon": -68.7305,
    "pais": "Argentina",
-   "pais_mapa": "Argentina"
+   "pais_mapa": "Argentina",
+   "iso2": "ar"
   },
   {
    "codigo": "30104",
@@ -9418,7 +9862,8 @@
    "lat": 19.3208,
    "lon": -99.1515,
    "pais": "México",
-   "pais_mapa": "Mexico"
+   "pais_mapa": "Mexico",
+   "iso2": "mx"
   },
   {
    "codigo": "30112",
@@ -9454,7 +9899,8 @@
    "lat": 25.7742,
    "lon": -80.1936,
    "pais": "Estados Unidos da América",
-   "pais_mapa": "United States of America"
+   "pais_mapa": "United States of America",
+   "iso2": "us"
   },
   {
    "codigo": "30120",
@@ -9490,7 +9936,8 @@
    "lat": 45.4642,
    "lon": 9.1896,
    "pais": "Itália",
-   "pais_mapa": "Italy"
+   "pais_mapa": "Italy",
+   "iso2": "it"
   },
   {
    "codigo": "30147",
@@ -9526,7 +9973,8 @@
    "lat": -34.9059,
    "lon": -56.1913,
    "pais": "Uruguai",
-   "pais_mapa": "Uruguay"
+   "pais_mapa": "Uruguay",
+   "iso2": "uy"
   },
   {
    "codigo": "30155",
@@ -9562,7 +10010,8 @@
    "lat": 45.5032,
    "lon": -73.5698,
    "pais": "Canadá",
-   "pais_mapa": "Canada"
+   "pais_mapa": "Canada",
+   "iso2": "ca"
   },
   {
    "codigo": "30163",
@@ -9598,7 +10047,8 @@
    "lat": 55.7505,
    "lon": 37.6175,
    "pais": "Rússia",
-   "pais_mapa": "Russia"
+   "pais_mapa": "Russia",
+   "iso2": "ru"
   },
   {
    "codigo": "30171",
@@ -9634,7 +10084,8 @@
    "lat": 19.055,
    "lon": 72.8692,
    "pais": "Índia",
-   "pais_mapa": "India"
+   "pais_mapa": "India",
+   "iso2": "in"
   },
   {
    "codigo": "30180",
@@ -9670,7 +10121,8 @@
    "lat": 48.1371,
    "lon": 11.5754,
    "pais": "Alemanha",
-   "pais_mapa": "Germany"
+   "pais_mapa": "Germany",
+   "iso2": "de"
   },
   {
    "codigo": "30198",
@@ -10901,7 +11353,8 @@
    "lat": 35.1851,
    "lon": 136.8998,
    "pais": "Japão",
-   "pais_mapa": "Japan"
+   "pais_mapa": "Japan",
+   "iso2": "jp"
   },
   {
    "codigo": "30201",
@@ -10992,7 +11445,8 @@
    "lat": -1.3024,
    "lon": 36.8289,
    "pais": "Quénia",
-   "pais_mapa": "Kenya"
+   "pais_mapa": "Kenya",
+   "iso2": "ke"
   },
   {
    "codigo": "99180",
@@ -11028,7 +11482,8 @@
    "lat": 25.0782,
    "lon": -77.3383,
    "pais": "Bahamas",
-   "pais_mapa": "Bahamas"
+   "pais_mapa": "Bahamas",
+   "iso2": "bs"
   },
   {
    "codigo": "39322",
@@ -11119,7 +11574,8 @@
    "lat": 35.1747,
    "lon": 33.3639,
    "pais": "Chipre",
-   "pais_mapa": "N. Cyprus"
+   "pais_mapa": "N. Cyprus",
+   "iso2": "cy"
   },
   {
    "codigo": "30210",
@@ -11210,7 +11666,8 @@
    "lat": 28.6139,
    "lon": 77.209,
    "pais": "Índia",
-   "pais_mapa": "India"
+   "pais_mapa": "India",
+   "iso2": "in"
   },
   {
    "codigo": "30228",
@@ -11246,7 +11703,8 @@
    "lat": 40.7127,
    "lon": -74.006,
    "pais": "Estados Unidos da América",
-   "pais_mapa": "United States of America"
+   "pais_mapa": "United States of America",
+   "iso2": "us"
   },
   {
    "codigo": "99490",
@@ -11282,7 +11740,8 @@
    "lat": 28.5421,
    "lon": -81.379,
    "pais": "Estados Unidos da América",
-   "pais_mapa": "United States of America"
+   "pais_mapa": "United States of America",
+   "iso2": "us"
   },
   {
    "codigo": "30244",
@@ -11413,7 +11872,8 @@
    "lat": 59.9133,
    "lon": 10.739,
    "pais": "Noruega",
-   "pais_mapa": "Norway"
+   "pais_mapa": "Norway",
+   "iso2": "no"
   },
   {
    "codigo": "30252",
@@ -11449,7 +11909,8 @@
    "lat": 45.4209,
    "lon": -75.6901,
    "pais": "Canadá",
-   "pais_mapa": "Canada"
+   "pais_mapa": "Canada",
+   "iso2": "ca"
   },
   {
    "codigo": "30260",
@@ -11485,7 +11946,8 @@
    "lat": 8.9714,
    "lon": -79.5342,
    "pais": "Panamá",
-   "pais_mapa": "Panama"
+   "pais_mapa": "Panama",
+   "iso2": "pa"
   },
   {
    "codigo": "30279",
@@ -11521,7 +11983,8 @@
    "lat": 5.8242,
    "lon": -55.1663,
    "pais": "Suriname",
-   "pais_mapa": "Suriname"
+   "pais_mapa": "Suriname",
+   "iso2": "sr"
   },
   {
    "codigo": "30287",
@@ -12272,7 +12735,8 @@
    "lat": 48.8589,
    "lon": 2.32,
    "pais": "França",
-   "pais_mapa": "France"
+   "pais_mapa": "France",
+   "iso2": "fr"
   },
   {
    "codigo": "30295",
@@ -12308,7 +12772,8 @@
    "lat": -29.7137,
    "lon": -57.0861,
    "pais": "Argentina",
-   "pais_mapa": "Brazil"
+   "pais_mapa": "Brazil",
+   "iso2": "br"
   },
   {
    "codigo": "30309",
@@ -12344,7 +12809,8 @@
    "lat": -22.5498,
    "lon": -55.7384,
    "pais": "Paraguai",
-   "pais_mapa": "Paraguay"
+   "pais_mapa": "Paraguay",
+   "iso2": "py"
   },
   {
    "codigo": "30317",
@@ -12435,7 +12901,8 @@
    "lat": 39.9057,
    "lon": 116.3913,
    "pais": "China",
-   "pais_mapa": "China"
+   "pais_mapa": "China",
+   "iso2": "cn"
   },
   {
    "codigo": "30325",
@@ -12471,7 +12938,8 @@
    "lat": 10.6573,
    "lon": -61.518,
    "pais": "Trinidad e Tobago",
-   "pais_mapa": "Trinidad and Tobago"
+   "pais_mapa": "Trinidad and Tobago",
+   "iso2": "tt"
   },
   {
    "codigo": "30341",
@@ -12507,7 +12975,8 @@
    "lat": 41.1502,
    "lon": -8.6103,
    "pais": "Portugal",
-   "pais_mapa": "Portugal"
+   "pais_mapa": "Portugal",
+   "iso2": "pt"
   },
   {
    "codigo": "30333",
@@ -12543,7 +13012,8 @@
    "lat": 18.5473,
    "lon": -72.3396,
    "pais": "Haiti",
-   "pais_mapa": "Haiti"
+   "pais_mapa": "Haiti",
+   "iso2": "ht"
   },
   {
    "codigo": "30350",
@@ -12634,7 +13104,8 @@
    "lat": 50.0875,
    "lon": 14.4213,
    "pais": "Chéquia",
-   "pais_mapa": "Czechia"
+   "pais_mapa": "Czechia",
+   "iso2": "cz"
   },
   {
    "codigo": "30368",
@@ -12670,7 +13141,8 @@
    "lat": 14.9163,
    "lon": -23.5095,
    "pais": "Cabo Verde",
-   "pais_mapa": null
+   "pais_mapa": null,
+   "iso2": "cv"
   },
   {
    "codigo": "30376",
@@ -12761,7 +13233,8 @@
    "lat": -25.7459,
    "lon": 28.1879,
    "pais": "África do Sul",
-   "pais_mapa": "South Africa"
+   "pais_mapa": "South Africa",
+   "iso2": "za"
   },
   {
    "codigo": "99155",
@@ -12797,7 +13270,8 @@
    "lat": -25.6336,
    "lon": -54.5829,
    "pais": "Argentina",
-   "pais_mapa": "Brazil"
+   "pais_mapa": "Brazil",
+   "iso2": "br"
   },
   {
    "codigo": "99236",
@@ -12833,7 +13307,8 @@
    "lat": -19.0044,
    "lon": -57.7157,
    "pais": "Bolívia",
-   "pais_mapa": "Bolivia"
+   "pais_mapa": "Bolivia",
+   "iso2": "bo"
   },
   {
    "codigo": "99295",
@@ -12869,7 +13344,8 @@
    "lat": 39.0197,
    "lon": 125.7526,
    "pais": "Coreia do Norte",
-   "pais_mapa": "North Korea"
+   "pais_mapa": "North Korea",
+   "iso2": "kp"
   },
   {
    "codigo": "30392",
@@ -12905,7 +13381,8 @@
    "lat": -0.2202,
    "lon": -78.5123,
    "pais": "Equador",
-   "pais_mapa": "Ecuador"
+   "pais_mapa": "Ecuador",
+   "iso2": "ec"
   },
   {
    "codigo": "30406",
@@ -12941,7 +13418,8 @@
    "lat": 34.0218,
    "lon": -6.8409,
    "pais": "Marrocos",
-   "pais_mapa": "Morocco"
+   "pais_mapa": "Morocco",
+   "iso2": "ma"
   },
   {
    "codigo": "30414",
@@ -13072,7 +13550,8 @@
    "lat": 31.9031,
    "lon": 35.1952,
    "pais": "Palestina",
-   "pais_mapa": "Palestine"
+   "pais_mapa": "Palestine",
+   "iso2": "ps"
   },
   {
    "codigo": "30422",
@@ -13163,7 +13642,8 @@
    "lat": 24.6389,
    "lon": 46.716,
    "pais": "Arábia Saudita",
-   "pais_mapa": "Saudi Arabia"
+   "pais_mapa": "Saudi Arabia",
+   "iso2": "sa"
   },
   {
    "codigo": "30430",
@@ -13199,7 +13679,8 @@
    "lat": -32.5887,
    "lon": -53.3781,
    "pais": "Uruguai",
-   "pais_mapa": "Uruguay"
+   "pais_mapa": "Uruguay",
+   "iso2": "uy"
   },
   {
    "codigo": "99244",
@@ -13235,43 +13716,520 @@
    "lat": -30.9001,
    "lon": -55.5408,
    "pais": "Uruguai",
-   "pais_mapa": "Uruguay"
+   "pais_mapa": "Uruguay",
+   "iso2": "uy"
   },
   {
    "codigo": "30449",
    "nome": "ROMA",
    "secoes_previstas": 22,
    "secoes_listadas": 57,
-   "secoes_apuradas_t2": 0,
-   "secoes_comparaveis": 0,
+   "secoes_apuradas_t2": 22,
+   "secoes_comparaveis": 22,
    "t1": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0,
-    "validos": 0
+    "13": 2555,
+    "22": 1478,
+    "brancos": 82,
+    "nulos": 100,
+    "outros": 401,
+    "comparecimento": 4616,
+    "aptos": 14153,
+    "total": 4616,
+    "validos": 4434
    },
    "t2": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
+    "13": 3198,
+    "22": 1738,
+    "brancos": 49,
+    "nulos": 62,
     "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0,
-    "validos": 0
+    "comparecimento": 5047,
+    "aptos": 14159,
+    "total": 5047,
+    "validos": 4936
    },
-   "metricas": null,
-   "secoes": [],
+   "metricas": {
+    "candidatos": {
+     "13": {
+      "t1": 2555,
+      "t2": 3198,
+      "delta": 643,
+      "pct": 25.16634050880626,
+      "share_t1": 57.622913847541724,
+      "share_t2": 64.78930307941653
+     },
+     "22": {
+      "t1": 1478,
+      "t2": 1738,
+      "delta": 260,
+      "pct": 17.591339648173207,
+      "share_t1": 33.333333333333336,
+      "share_t2": 35.210696920583466
+     }
+    },
+    "diferenca_crescimento": 383,
+    "margem_t1": 1077,
+    "margem_t2": 1460,
+    "variacao_margem": 383,
+    "total_t1": 4616,
+    "total_t2": 5047,
+    "delta_total": 431,
+    "pct_total": 9.337088388214905,
+    "validos_t1": 4434,
+    "validos_t2": 4936,
+    "delta_validos": 502,
+    "aptos_t2": 14159,
+    "comparecimento_t2": 5047,
+    "brancos_nulos_t1": 182,
+    "brancos_nulos_t2": 111
+   },
+   "secoes": [
+    {
+     "zona": "0001",
+     "secao": "0834",
+     "t1": {
+      "13": 146,
+      "22": 84,
+      "brancos": 2,
+      "nulos": 4,
+      "comparecimento": 262,
+      "aptos": 616
+     },
+     "t2": {
+      "13": 168,
+      "22": 104,
+      "brancos": 0,
+      "nulos": 6,
+      "comparecimento": 278,
+      "aptos": 616
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0835",
+     "t1": {
+      "13": 95,
+      "22": 49,
+      "brancos": 2,
+      "nulos": 1,
+      "comparecimento": 159,
+      "aptos": 591
+     },
+     "t2": {
+      "13": 130,
+      "22": 56,
+      "brancos": 3,
+      "nulos": 2,
+      "comparecimento": 191,
+      "aptos": 591
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0836",
+     "t1": {
+      "13": 117,
+      "22": 76,
+      "brancos": 4,
+      "nulos": 3,
+      "comparecimento": 214,
+      "aptos": 609
+     },
+     "t2": {
+      "13": 133,
+      "22": 93,
+      "brancos": 5,
+      "nulos": 5,
+      "comparecimento": 236,
+      "aptos": 609
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0837",
+     "t1": {
+      "13": 93,
+      "22": 64,
+      "brancos": 7,
+      "nulos": 4,
+      "comparecimento": 180,
+      "aptos": 615
+     },
+     "t2": {
+      "13": 113,
+      "22": 76,
+      "brancos": 3,
+      "nulos": 2,
+      "comparecimento": 194,
+      "aptos": 615
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0851",
+     "t1": {
+      "13": 95,
+      "22": 64,
+      "brancos": 1,
+      "nulos": 3,
+      "comparecimento": 175,
+      "aptos": 618
+     },
+     "t2": {
+      "13": 118,
+      "22": 68,
+      "brancos": 1,
+      "nulos": 3,
+      "comparecimento": 190,
+      "aptos": 618
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0852",
+     "t1": {
+      "13": 78,
+      "22": 40,
+      "brancos": 3,
+      "nulos": 3,
+      "comparecimento": 138,
+      "aptos": 608
+     },
+     "t2": {
+      "13": 96,
+      "22": 43,
+      "brancos": 3,
+      "nulos": 0,
+      "comparecimento": 142,
+      "aptos": 609
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0853",
+     "t1": {
+      "13": 69,
+      "22": 49,
+      "brancos": 4,
+      "nulos": 6,
+      "comparecimento": 134,
+      "aptos": 607
+     },
+     "t2": {
+      "13": 95,
+      "22": 54,
+      "brancos": 1,
+      "nulos": 2,
+      "comparecimento": 152,
+      "aptos": 607
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0854",
+     "t1": {
+      "13": 249,
+      "22": 149,
+      "brancos": 2,
+      "nulos": 7,
+      "comparecimento": 438,
+      "aptos": 780
+     },
+     "t2": {
+      "13": 290,
+      "22": 163,
+      "brancos": 3,
+      "nulos": 0,
+      "comparecimento": 456,
+      "aptos": 780
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0857",
+     "t1": {
+      "13": 86,
+      "22": 53,
+      "brancos": 4,
+      "nulos": 2,
+      "comparecimento": 158,
+      "aptos": 611
+     },
+     "t2": {
+      "13": 106,
+      "22": 65,
+      "brancos": 1,
+      "nulos": 0,
+      "comparecimento": 172,
+      "aptos": 611
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0861",
+     "t1": {
+      "13": 119,
+      "22": 61,
+      "brancos": 7,
+      "nulos": 7,
+      "comparecimento": 225,
+      "aptos": 613
+     },
+     "t2": {
+      "13": 166,
+      "22": 90,
+      "brancos": 4,
+      "nulos": 3,
+      "comparecimento": 263,
+      "aptos": 615
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0865",
+     "t1": {
+      "13": 75,
+      "22": 42,
+      "brancos": 1,
+      "nulos": 4,
+      "comparecimento": 136,
+      "aptos": 600
+     },
+     "t2": {
+      "13": 111,
+      "22": 50,
+      "brancos": 2,
+      "nulos": 4,
+      "comparecimento": 167,
+      "aptos": 600
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0866",
+     "t1": {
+      "13": 128,
+      "22": 66,
+      "brancos": 6,
+      "nulos": 3,
+      "comparecimento": 228,
+      "aptos": 780
+     },
+     "t2": {
+      "13": 173,
+      "22": 79,
+      "brancos": 2,
+      "nulos": 1,
+      "comparecimento": 255,
+      "aptos": 781
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0870",
+     "t1": {
+      "13": 112,
+      "22": 80,
+      "brancos": 5,
+      "nulos": 5,
+      "comparecimento": 226,
+      "aptos": 619
+     },
+     "t2": {
+      "13": 152,
+      "22": 101,
+      "brancos": 2,
+      "nulos": 4,
+      "comparecimento": 259,
+      "aptos": 619
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0872",
+     "t1": {
+      "13": 95,
+      "22": 31,
+      "brancos": 2,
+      "nulos": 4,
+      "comparecimento": 144,
+      "aptos": 792
+     },
+     "t2": {
+      "13": 119,
+      "22": 42,
+      "brancos": 0,
+      "nulos": 2,
+      "comparecimento": 163,
+      "aptos": 792
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0875",
+     "t1": {
+      "13": 167,
+      "22": 102,
+      "brancos": 3,
+      "nulos": 5,
+      "comparecimento": 307,
+      "aptos": 618
+     },
+     "t2": {
+      "13": 182,
+      "22": 116,
+      "brancos": 5,
+      "nulos": 4,
+      "comparecimento": 307,
+      "aptos": 618
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0877",
+     "t1": {
+      "13": 154,
+      "22": 86,
+      "brancos": 3,
+      "nulos": 7,
+      "comparecimento": 276,
+      "aptos": 773
+     },
+     "t2": {
+      "13": 199,
+      "22": 98,
+      "brancos": 1,
+      "nulos": 6,
+      "comparecimento": 304,
+      "aptos": 773
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0878",
+     "t1": {
+      "13": 159,
+      "22": 89,
+      "brancos": 5,
+      "nulos": 8,
+      "comparecimento": 290,
+      "aptos": 617
+     },
+     "t2": {
+      "13": 199,
+      "22": 101,
+      "brancos": 3,
+      "nulos": 4,
+      "comparecimento": 307,
+      "aptos": 617
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0879",
+     "t1": {
+      "13": 130,
+      "22": 48,
+      "brancos": 4,
+      "nulos": 4,
+      "comparecimento": 198,
+      "aptos": 655
+     },
+     "t2": {
+      "13": 158,
+      "22": 59,
+      "brancos": 1,
+      "nulos": 3,
+      "comparecimento": 221,
+      "aptos": 655
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0880",
+     "t1": {
+      "13": 104,
+      "22": 56,
+      "brancos": 4,
+      "nulos": 3,
+      "comparecimento": 179,
+      "aptos": 730
+     },
+     "t2": {
+      "13": 135,
+      "22": 57,
+      "brancos": 2,
+      "nulos": 2,
+      "comparecimento": 196,
+      "aptos": 730
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0882",
+     "t1": {
+      "13": 139,
+      "22": 104,
+      "brancos": 5,
+      "nulos": 11,
+      "comparecimento": 285,
+      "aptos": 727
+     },
+     "t2": {
+      "13": 160,
+      "22": 117,
+      "brancos": 5,
+      "nulos": 7,
+      "comparecimento": 289,
+      "aptos": 728
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0887",
+     "t1": {
+      "13": 104,
+      "22": 60,
+      "brancos": 4,
+      "nulos": 5,
+      "comparecimento": 190,
+      "aptos": 753
+     },
+     "t2": {
+      "13": 140,
+      "22": 74,
+      "brancos": 1,
+      "nulos": 2,
+      "comparecimento": 217,
+      "aptos": 754
+     }
+    },
+    {
+     "zona": "0001",
+     "secao": "0888",
+     "t1": {
+      "13": 41,
+      "22": 25,
+      "brancos": 4,
+      "nulos": 1,
+      "comparecimento": 74,
+      "aptos": 221
+     },
+     "t2": {
+      "13": 55,
+      "22": 32,
+      "brancos": 1,
+      "nulos": 0,
+      "comparecimento": 88,
+      "aptos": 221
+     }
+    }
+   ],
    "lat": 41.8933,
    "lon": 12.4829,
    "pais": "Itália",
-   "pais_mapa": "Italy"
+   "pais_mapa": "Italy",
+   "iso2": "it"
   },
   {
    "codigo": "99147",
@@ -13307,7 +14265,8 @@
    "lat": 17.1185,
    "lon": -61.8449,
    "pais": "Antígua e Barbuda",
-   "pais_mapa": null
+   "pais_mapa": null,
+   "iso2": "ag"
   },
   {
    "codigo": "30465",
@@ -13343,7 +14302,8 @@
    "lat": -24.0617,
    "lon": -54.3056,
    "pais": "Paraguai",
-   "pais_mapa": "Paraguay"
+   "pais_mapa": "Paraguay",
+   "iso2": "py"
   },
   {
    "codigo": "30473",
@@ -13379,7 +14339,8 @@
    "lat": -17.7834,
    "lon": -63.1821,
    "pais": "Bolívia",
-   "pais_mapa": "Bolivia"
+   "pais_mapa": "Bolivia",
+   "iso2": "bo"
   },
   {
    "codigo": "99279",
@@ -13415,7 +14376,8 @@
    "lat": 4.5959,
    "lon": -61.1106,
    "pais": "Venezuela",
-   "pais_mapa": "Venezuela"
+   "pais_mapa": "Venezuela",
+   "iso2": "ve"
   },
   {
    "codigo": "30481",
@@ -13451,7 +14413,8 @@
    "lat": -33.4377,
    "lon": -70.6511,
    "pais": "Chile",
-   "pais_mapa": "Chile"
+   "pais_mapa": "Chile",
+   "iso2": "cl"
   },
   {
    "codigo": "30988",
@@ -13487,7 +14450,8 @@
    "lat": 43.8571,
    "lon": 18.4126,
    "pais": "Bósnia e Herzegovina",
-   "pais_mapa": "Bosnia and Herz."
+   "pais_mapa": "Bosnia and Herz.",
+   "iso2": "ba"
   },
   {
    "codigo": "30538",
@@ -13578,7 +14542,8 @@
    "lat": 37.5667,
    "lon": 126.9783,
    "pais": "Coreia do Sul",
-   "pais_mapa": "South Korea"
+   "pais_mapa": "South Korea",
+   "iso2": "kr"
   },
   {
    "codigo": "29548",
@@ -13689,7 +14654,8 @@
    "lat": 1.3571,
    "lon": 103.8195,
    "pais": "Singapura",
-   "pais_mapa": null
+   "pais_mapa": null,
+   "iso2": "sg"
   },
   {
    "codigo": "99333",
@@ -13725,7 +14691,8 @@
    "lat": 3.8909,
    "lon": -51.8014,
    "pais": "Guiana Francesa",
-   "pais_mapa": "France"
+   "pais_mapa": "France",
+   "iso2": "gf"
   },
   {
    "codigo": "30562",
@@ -14176,7 +15143,8 @@
    "lat": -33.8698,
    "lon": 151.2083,
    "pais": "Austrália",
-   "pais_mapa": "Australia"
+   "pais_mapa": "Australia",
+   "iso2": "au"
   },
   {
    "codigo": "30490",
@@ -14212,7 +15180,8 @@
    "lat": 18.4714,
    "lon": -69.8918,
    "pais": "República Dominicana",
-   "pais_mapa": "Dominican Rep."
+   "pais_mapa": "Dominican Rep.",
+   "iso2": "do"
   },
   {
    "codigo": "30503",
@@ -14248,7 +15217,8 @@
    "lat": 37.7879,
    "lon": -122.4075,
    "pais": "Estados Unidos da América",
-   "pais_mapa": "United States of America"
+   "pais_mapa": "United States of America",
+   "iso2": "us"
   },
   {
    "codigo": "30511",
@@ -14284,7 +15254,8 @@
    "lat": 9.9327,
    "lon": -84.0797,
    "pais": "Costa Rica",
-   "pais_mapa": "Costa Rica"
+   "pais_mapa": "Costa Rica",
+   "iso2": "cr"
   },
   {
    "codigo": "30520",
@@ -14320,7 +15291,8 @@
    "lat": 13.6976,
    "lon": -89.1912,
    "pais": "El Salvador",
-   "pais_mapa": "El Salvador"
+   "pais_mapa": "El Salvador",
+   "iso2": "sv"
   },
   {
    "codigo": "39225",
@@ -14356,7 +15328,8 @@
    "lat": 0.3389,
    "lon": 6.7313,
    "pais": "São Tomé e Príncipe",
-   "pais_mapa": null
+   "pais_mapa": null,
+   "iso2": "st"
   },
   {
    "codigo": "30546",
@@ -14392,7 +15365,8 @@
    "lat": 42.6977,
    "lon": 23.3217,
    "pais": "Bulgária",
-   "pais_mapa": "Bulgaria"
+   "pais_mapa": "Bulgaria",
+   "iso2": "bg"
   },
   {
    "codigo": "30570",
@@ -14483,7 +15457,8 @@
    "lat": 25.0375,
    "lon": 121.5637,
    "pais": "Taiwan",
-   "pais_mapa": "Taiwan"
+   "pais_mapa": "Taiwan",
+   "iso2": "tw"
   },
   {
    "codigo": "99317",
@@ -14574,7 +15549,8 @@
    "lat": 59.4372,
    "lon": 24.7573,
    "pais": "Estónia",
-   "pais_mapa": "Estonia"
+   "pais_mapa": "Estonia",
+   "iso2": "ee"
   },
   {
    "codigo": "99104",
@@ -14610,7 +15586,8 @@
    "lat": 41.6935,
    "lon": 44.8014,
    "pais": "Geórgia",
-   "pais_mapa": "Georgia"
+   "pais_mapa": "Georgia",
+   "iso2": "ge"
   },
   {
    "codigo": "30597",
@@ -14646,7 +15623,8 @@
    "lat": 35.6893,
    "lon": 51.3896,
    "pais": "Irã",
-   "pais_mapa": "Iran"
+   "pais_mapa": "Iran",
+   "iso2": "ir"
   },
   {
    "codigo": "30600",
@@ -14682,7 +15660,8 @@
    "lat": 14.1058,
    "lon": -87.2047,
    "pais": "Honduras",
-   "pais_mapa": "Honduras"
+   "pais_mapa": "Honduras",
+   "iso2": "hn"
   },
   {
    "codigo": "30619",
@@ -14853,7 +15832,8 @@
    "lat": 32.0853,
    "lon": 34.7818,
    "pais": "Israel",
-   "pais_mapa": "Israel"
+   "pais_mapa": "Israel",
+   "iso2": "il"
   },
   {
    "codigo": "99139",
@@ -14889,7 +15869,8 @@
    "lat": 41.3281,
    "lon": 19.8184,
    "pais": "Albânia",
-   "pais_mapa": "Albania"
+   "pais_mapa": "Albania",
+   "iso2": "al"
   },
   {
    "codigo": "30635",
@@ -14925,7 +15906,8 @@
    "lat": 43.6535,
    "lon": -79.3839,
    "pais": "Canadá",
-   "pais_mapa": "Canada"
+   "pais_mapa": "Canada",
+   "iso2": "ca"
   },
   {
    "codigo": "30686",
@@ -14961,7 +15943,8 @@
    "lat": 32.8967,
    "lon": 13.1778,
    "pais": "Líbia",
-   "pais_mapa": "Libya"
+   "pais_mapa": "Libya",
+   "iso2": "ly"
   },
   {
    "codigo": "30708",
@@ -14997,7 +15980,8 @@
    "lat": 36.8002,
    "lon": 10.1858,
    "pais": "Tunísia",
-   "pais_mapa": "Tunisia"
+   "pais_mapa": "Tunisia",
+   "iso2": "tn"
   },
   {
    "codigo": "30627",
@@ -15928,7 +16912,8 @@
    "lat": 35.6769,
    "lon": 139.7639,
    "pais": "Japão",
-   "pais_mapa": "Japan"
+   "pais_mapa": "Japan",
+   "iso2": "jp"
   },
   {
    "codigo": "39284",
@@ -15964,7 +16949,8 @@
    "lat": 12.3682,
    "lon": -1.5271,
    "pais": "Burquina Faso",
-   "pais_mapa": "Burkina Faso"
+   "pais_mapa": "Burkina Faso",
+   "iso2": "bf"
   },
   {
    "codigo": "39063",
@@ -16000,7 +16986,8 @@
    "lat": 49.2609,
    "lon": -123.114,
    "pais": "Canadá",
-   "pais_mapa": "Canada"
+   "pais_mapa": "Canada",
+   "iso2": "ca"
   },
   {
    "codigo": "30740",
@@ -16091,7 +17078,8 @@
    "lat": 52.232,
    "lon": 21.0067,
    "pais": "Polónia",
-   "pais_mapa": "Poland"
+   "pais_mapa": "Poland",
+   "iso2": "pl"
   },
   {
    "codigo": "30767",
@@ -16262,7 +17250,8 @@
    "lat": 48.2084,
    "lon": 16.3725,
    "pais": "Áustria",
-   "pais_mapa": "Austria"
+   "pais_mapa": "Austria",
+   "iso2": "at"
   },
   {
    "codigo": "30783",
@@ -16298,7 +17287,8 @@
    "lat": 38.8951,
    "lon": -77.0364,
    "pais": "Estados Unidos da América",
-   "pais_mapa": "United States of America"
+   "pais_mapa": "United States of America",
+   "iso2": "us"
   },
   {
    "codigo": "30805",
@@ -16469,7 +17459,8 @@
    "lat": -41.2888,
    "lon": 174.7772,
    "pais": "Nova Zelândia",
-   "pais_mapa": "New Zealand"
+   "pais_mapa": "New Zealand",
+   "iso2": "nz"
   },
   {
    "codigo": "30821",
@@ -16505,7 +17496,8 @@
    "lat": -22.5336,
    "lon": 17.0455,
    "pais": "Namíbia",
-   "pais_mapa": "Namibia"
+   "pais_mapa": "Namibia",
+   "iso2": "na"
   },
   {
    "codigo": "30848",
@@ -16596,7 +17588,8 @@
    "lat": 31.2313,
    "lon": 121.47,
    "pais": "China",
-   "pais_mapa": "China"
+   "pais_mapa": "China",
+   "iso2": "cn"
   },
   {
    "codigo": "99376",
@@ -16632,7 +17625,8 @@
    "lat": 16.7967,
    "lon": 96.161,
    "pais": "Birmânia",
-   "pais_mapa": "Myanmar"
+   "pais_mapa": "Myanmar",
+   "iso2": "mm"
   },
   {
    "codigo": "39020",
@@ -16723,7 +17717,8 @@
    "lat": 45.8131,
    "lon": 15.9773,
    "pais": "Croácia",
-   "pais_mapa": "Croatia"
+   "pais_mapa": "Croatia",
+   "iso2": "hr"
   },
   {
    "codigo": "30864",
@@ -17174,69 +18169,70 @@
    "lat": 47.3744,
    "lon": 8.541,
    "pais": "Suíça",
-   "pais_mapa": "Switzerland"
+   "pais_mapa": "Switzerland",
+   "iso2": "ch"
   }
  ],
  "falhas": [],
  "agregado": {
   "t1": {
-   "13": 56475,
-   "22": 47259,
-   "brancos": 2727,
-   "nulos": 2111,
-   "outros": 12006,
-   "comparecimento": 120578,
-   "aptos": 297255,
-   "total": 120578,
-   "validos": 115740
+   "13": 64378,
+   "22": 49447,
+   "brancos": 2855,
+   "nulos": 2293,
+   "outros": 12874,
+   "comparecimento": 131847,
+   "aptos": 322618,
+   "total": 131847,
+   "validos": 126699
   },
   "t2": {
-   "13": 70600,
-   "22": 56253,
-   "brancos": 2191,
-   "nulos": 2194,
+   "13": 79807,
+   "22": 58846,
+   "brancos": 2285,
+   "nulos": 2337,
    "outros": 0,
-   "comparecimento": 131238,
-   "aptos": 297287,
-   "total": 131238,
-   "validos": 126853
+   "comparecimento": 143275,
+   "aptos": 322660,
+   "total": 143275,
+   "validos": 138653
   },
   "metricas": {
    "candidatos": {
     "13": {
-     "t1": 56475,
-     "t2": 70600,
-     "delta": 14125,
-     "pct": 25.011066843736167,
-     "share_t1": 48.79471228615863,
-     "share_t2": 55.65497071413368
+     "t1": 64378,
+     "t2": 79807,
+     "delta": 15429,
+     "pct": 23.966261766441953,
+     "share_t1": 50.81176647013788,
+     "share_t2": 57.55879786228931
     },
     "22": {
-     "t1": 47259,
-     "t2": 56253,
-     "delta": 8994,
-     "pct": 19.031295626229923,
-     "share_t1": 40.83203732503888,
-     "share_t2": 44.34502928586632
+     "t1": 49447,
+     "t2": 58846,
+     "delta": 9399,
+     "pct": 19.008231035249864,
+     "share_t1": 39.027143071373885,
+     "share_t2": 42.44120213771069
     }
    },
-   "diferenca_crescimento": 5131,
-   "margem_t1": 9216,
-   "margem_t2": 14347,
-   "variacao_margem": 5131,
-   "total_t1": 120578,
-   "total_t2": 131238,
-   "delta_total": 10660,
-   "pct_total": 8.840750385642488,
-   "validos_t1": 115740,
-   "validos_t2": 126853,
-   "delta_validos": 11113,
-   "aptos_t2": 297287,
-   "comparecimento_t2": 131238,
-   "brancos_nulos_t1": 4838,
-   "brancos_nulos_t2": 4385
+   "diferenca_crescimento": 6030,
+   "margem_t1": 14931,
+   "margem_t2": 20961,
+   "variacao_margem": 6030,
+   "total_t1": 131847,
+   "total_t2": 143275,
+   "delta_total": 11428,
+   "pct_total": 8.667622319810082,
+   "validos_t1": 126699,
+   "validos_t2": 138653,
+   "delta_validos": 11954,
+   "aptos_t2": 322660,
+   "comparecimento_t2": 143275,
+   "brancos_nulos_t1": 5148,
+   "brancos_nulos_t2": 4622
   },
-  "secoes_apuradas_t2": 420,
+  "secoes_apuradas_t2": 457,
   "secoes_previstas": 1351
  }
 }

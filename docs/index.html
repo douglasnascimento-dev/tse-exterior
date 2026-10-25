@@ -146,6 +146,30 @@ function caminhoPais(geom) {
   }).map(anel).join("");
 }
 
+function geometriaPais(geom) {
+  /* Área projetada e centro do maior anel — países minúsculos no mapa
+     (Líbano, Catar, Palestina) precisam de um ponto para serem vistos. */
+  const polis = geom.type === "Polygon" ? [geom.coordinates] : geom.coordinates;
+  let area = 0, melhor = null, maiorA = 0;
+  polis.forEach(poly => {
+    const anel = poly[0];
+    const xs = anel.map(pt => pt[0]);
+    if (Math.max(...xs) - Math.min(...xs) > 180) return;   // cruza a emenda
+    let s2 = 0, cx = 0, cy = 0;
+    for (let i = 0; i < anel.length; i++) {
+      const [x1, y1] = [projX(anel[i][0]), projY(anel[i][1])];
+      const j = (i + 1) % anel.length;
+      const [x2, y2] = [projX(anel[j][0]), projY(anel[j][1])];
+      s2 += x1 * y2 - x2 * y1;
+      cx += x1; cy += y1;
+    }
+    const a = Math.abs(s2) / 2;
+    area += a;
+    if (a > maiorA) { maiorA = a; melhor = [cx / anel.length, cy / anel.length]; }
+  });
+  return { area, centro: melhor };
+}
+
 function desenhaMapa(d, cores) {
   if (!MUNDO) return "";
   const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
@@ -186,6 +210,21 @@ function desenhaMapa(d, cores) {
       data-tip="${encodeURIComponent(resumoDe(titulo, g))}"></path>`;
   }).join("");
 
+  // países pintados pequenos demais para enxergar ganham também um ponto
+  const marcas = MUNDO.features.map(f => {
+    const g = agreg[f.properties.nome];
+    if (!g || !g.metricas) return "";
+    const { area, centro } = geometriaPais(f.geometry);
+    if (!centro || area > 60) return "";
+    const m = g.metricas, [a, b] = nums;
+    const lider = m.candidatos[a].t2 >= m.candidatos[b].t2 ? 0 : 1;
+    const titulo = [...new Set(g.cs.map(c => c.pais))].join(" · ");
+    return `<circle class="cidade" cx="${centro[0].toFixed(1)}"
+      cy="${centro[1].toFixed(1)}" r="4.5" fill="${cores[lider]}"
+      data-cidade="mapa:${f.properties.nome}"
+      data-tip="${encodeURIComponent(resumoDe(titulo, g))}"></circle>`;
+  }).join("");
+
   const pontos = soltas.map(c => {
     const m = c.metricas, [a, b] = nums;
     const lider = m.candidatos[a].t2 >= m.candidatos[b].t2 ? 0 : 1;
@@ -206,11 +245,11 @@ function desenhaMapa(d, cores) {
   return `<div class="card">
     <h2>Onde a apuração já chegou</h2>
     <p class="note">País pintado com a cor de quem lidera ali, somando todas as
-      suas cidades. Clique para abrir. Países pequenos demais para o mapa
-      aparecem como ponto${soltas.length ? ` (${soltas.length} hoje)` : ""}.</p>
+      suas cidades. Clique para abrir. Países pequenos demais para
+      enxergar na escala do mundo aparecem também como ponto.</p>
     <div class="legend">${leg}</div>
     <div class="scroll"><svg viewBox="0 0 ${MAPA_W} ${MAPA_H}" role="img"
-      aria-label="Mapa-múndi dos países com apuração">${paises}${pontos}</svg></div>
+      aria-label="Mapa-múndi dos países com apuração">${paises}${marcas}${pontos}</svg></div>
   </div>`;
 }
 
@@ -352,46 +391,99 @@ function somaCidades(lista, nums) {
            metricas: t2.total ? calcMetricas(t1, t2, nums) : null, secoes: [] };
 }
 
-function tabelaRanking(d, cores) {
+const CAMPOS = {
+  nome:    { rot: "Nome",    val: x => x.nome, texto: true },
+  urnas:   { rot: "Urnas",   val: x => x.secoes_previstas
+                                ? x.secoes_apuradas_t2 / x.secoes_previstas : 0 },
+  a:       { rot: null,      val: (x, n) => x.metricas.candidatos[n[0]].share_t2 },
+  b:       { rot: null,      val: (x, n) => x.metricas.candidatos[n[1]].share_t2 },
+  margem:  { rot: "Margem",  val: x => Math.abs(x.metricas.margem_t2) },
+  votos:   { rot: "Válidos", val: x => x.metricas.validos_t2 },
+};
+
+function bandeira(x) {
+  // países com várias cidades usam a bandeira da primeira; sem iso2, nada
+  const iso = x.iso2 || (x.cs && x.cs[0] && x.cs[0].iso2)
+    || (DADOS.cidades.find(c => (c.pais || "—") === x.nome) || {}).iso2;
+  if (!iso || iso.length !== 2) return `<span class="bnd"></span>`;
+  const emoji = [...iso.toUpperCase()]
+    .map(ch => String.fromCodePoint(0x1F1E6 + ch.charCodeAt(0) - 65)).join("");
+  return `<span class="bnd" title="${iso.toUpperCase()}">${emoji}</span>`;
+}
+
+function ordena(itens, nums) {
+  const c = CAMPOS[ORD.campo] || CAMPOS.votos;
+  const copia = itens.slice();
+  copia.sort((x, y) => {
+    const vx = c.val(x, nums), vy = c.val(y, nums);
+    const r = c.texto ? String(vx).localeCompare(String(vy), "pt") : vx - vy;
+    return ORD.desc ? -r : r;
+  });
+  return copia;
+}
+
+function th(campo, rotulo, extra) {
+  const ativo = ORD.campo === campo;
+  return `<th data-ord="${campo}" class="ord${ativo ? " ativo" : ""}"
+    title="Ordenar por ${rotulo}">${extra || ""}${rotulo}` +
+    `<span class="seta">${ativo ? (ORD.desc ? "▾" : "▴") : ""}</span></th>`;
+}
+
+function tabelaRanking(d, cores, recorte) {
   const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
-  const base = MODO === "pais" ? porPais(d) : d.cidades;
-  const itens = base.filter(x => x.metricas)
-    .sort((a, b) => b.metricas.total_t2 - a.metricas.total_t2);
+  const noPais = CIDADE !== "__agg__";
+  // dentro de um país, agrupar por país não faz sentido: lista as cidades dele
+  const base = noPais ? recorte : (MODO === "pais" ? porPais(d) : d.cidades);
+  const itens = ordena(base.filter(x => x.metricas), nums);
   if (!itens.length) return "";
+  const agrupado = !noPais && MODO === "pais";
 
   const linhas = itens.map(x => {
     const m = x.metricas, [a, b] = nums;
-    const lider = m.candidatos[a].t2 >= m.candidatos[b].t2 ? a : b;
-    const sub = MODO === "pais"
+    const li = m.candidatos[a].t2 >= m.candidatos[b].t2 ? 0 : 1;
+    const pa = m.candidatos[a].share_t2, pb = m.candidatos[b].share_t2;
+    const prog = x.secoes_previstas
+      ? 100 * x.secoes_apuradas_t2 / x.secoes_previstas : 0;
+    const sub = agrupado
       ? `${x.ncidades} cidade${x.ncidades > 1 ? "s" : ""}`
       : (x.pais || "");
-    return `<tr data-cidade="${x.codigo}" style="cursor:pointer">
-      <td>${x.nome}<span class="peq">${sub}</span></td>
-      <td>${nf(x.secoes_apuradas_t2)}<span class="peq">de ${nf(x.secoes_previstas)}</span></td>
-      <td>${nf(m.candidatos[a].t2)}<span class="peq">${dec(m.candidatos[a].share_t2)}%</span></td>
-      <td>${nf(m.candidatos[b].t2)}<span class="peq">${dec(m.candidatos[b].share_t2)}%</span></td>
-      <td><span style="color:${cores[nums.indexOf(lider)]};font-weight:600">
-        ${sf(m.margem_t2)}</span><span class="peq">era ${sf(m.margem_t1)}</span></td>
-      <td>${nf(m.total_t2)}<span class="peq">${sf(m.delta_total)} vs 1T</span></td></tr>`;
+    return `<tr data-cidade="${x.codigo}">
+      <td class="ent">${bandeira(x)}<span class="txt">${x.nome}
+        <span class="peq">${sub}</span></span></td>
+      <td class="num"><div class="mini"><i style="width:${prog}%"></i></div>
+        <span class="peq">${nf(x.secoes_apuradas_t2)} de ${nf(x.secoes_previstas)}</span></td>
+      <td class="num ${li === 0 ? "forte" : ""}">${dec(pa)}%
+        <span class="peq">${nf(m.candidatos[a].t2)}</span></td>
+      <td class="num ${li === 1 ? "forte" : ""}">${dec(pb)}%
+        <span class="peq">${nf(m.candidatos[b].t2)}</span></td>
+      <td class="num"><span style="color:${cores[li]};font-weight:650">
+        ${nf(Math.abs(m.margem_t2))}</span>
+        <span class="peq">${d.candidatos[nums[li]].split(" ")[0]}</span></td>
+      <td class="num">${nf(m.validos_t2)}<span class="peq">${sf(m.delta_total)} vs 1T</span></td>
+    </tr>`;
   }).join("");
 
-  const titulo = MODO === "pais" ? "Países com apuração" : "Cidades com apuração";
+  const titulo = noPais ? "Cidades deste recorte"
+    : agrupado ? "Países com apuração" : "Cidades com apuração";
   return `<div class="card">
     <div style="display:flex;justify-content:space-between;align-items:center;
                 gap:12px;flex-wrap:wrap;margin-bottom:4px">
       <h2 style="margin:0">${titulo}</h2>
-      <div class="seg" role="group" aria-label="Agrupar por">
-        <button data-modo="cidade" aria-pressed="${MODO !== "pais"}">Cidades</button>
-        <button data-modo="pais" aria-pressed="${MODO === "pais"}">Países</button>
-      </div>
+      ${noPais ? "" : `<div class="seg" role="group" aria-label="Agrupar por">
+        <button data-modo="cidade" aria-pressed="${!agrupado}">Cidades</button>
+        <button data-modo="pais" aria-pressed="${agrupado}">Países</button>
+      </div>`}
     </div>
-    <p class="note">${itens.length} ${MODO === "pais" ? "países" : "cidades"}
-      com pelo menos uma seção apurada. Clique numa linha para abrir.</p>
+    <p class="note">${itens.length} ${agrupado ? "países" : "cidades"}
+      com pelo menos uma urna apurada. Clique no cabeçalho para ordenar,
+      ${noPais ? "e numa linha para abrir a cidade" : "e numa linha para abrir"}.</p>
     <div class="scroll"><table><thead><tr>
-      <th>${MODO === "pais" ? "País" : "Cidade"}</th><th>Urnas</th>
-      <th><span class="sw" style="background:${cores[0]}"></span>${d.candidatos[nums[0]]}</th>
-      <th><span class="sw" style="background:${cores[1]}"></span>${d.candidatos[nums[1]]}</th>
-      <th>Margem</th><th>Total 2T</th>
+      ${th("nome", noPais || MODO !== "pais" ? "Cidade" : "País")}
+      ${th("urnas", "Urnas")}
+      ${th("a", d.candidatos[nums[0]], `<span class="sw" style="background:${cores[0]}"></span>`)}
+      ${th("b", d.candidatos[nums[1]], `<span class="sw" style="background:${cores[1]}"></span>`)}
+      ${th("margem", "Margem")}
+      ${th("votos", "Válidos")}
     </tr></thead><tbody>${linhas}</tbody></table></div></div>`;
 }
 
@@ -420,7 +512,7 @@ function porPais(d) {
   const grupos = {};
   d.cidades.forEach(c => (grupos[c.pais || "—"] ||= []).push(c));
   return Object.entries(grupos).map(([pais, cs]) => ({
-    codigo: "pais:" + pais, nome: pais, ncidades: cs.length,
+    codigo: "pais:" + pais, nome: pais, ncidades: cs.length, cs,
     ...somaCidades(cs, nums),
   }));
 }
@@ -501,6 +593,7 @@ function linhaTempo(hist, d, cores) {
       ${eixo}${linhas}${alvos}</svg></div></div>`;
 }
 
+let ORD = { campo: 'votos', desc: true };
 let DADOS = null, CIDADE = null, MUNDO = null, HIST = [], BASE22 = null,
     MODO = 'cidade';
 
@@ -648,9 +741,11 @@ function desenha() {
       <td>${nf(c.t1.comparecimento)}</td><td>${nf(c.t2.comparecimento)}</td>
     </tr></tfoot></table></div></div>` : "";
 
+  // o histórico acumulado é do exterior inteiro; num recorte de país ou
+  // cidade ele descreveria outro conjunto de dados e enganaria
+  const evolucao = CIDADE === "__agg__" ? linhaTempo(HIST, d, cores) : "";
   $("#conteudo").innerHTML = tiles + confronto(d, m, cores)
-    + compara2022(d, doRecorte, m, cores)
-    + linhaTempo(HIST, d, cores) + `
+    + compara2022(d, doRecorte, m, cores) + evolucao + `
     <div class="card"><h2>Votos por turno</h2>
       <p class="note">Mesmo eixo para os dois turnos; apenas seções comparáveis.</p>
       ${legenda}<div class="scroll">${barrasAgrupadas(grupos, series)}</div></div>
@@ -660,7 +755,7 @@ function desenha() {
       ${blocosCrescimento(d, m, cores)}
       <div class="scroll">${barrasCrescimento(cresc)}</div></div>`
     + (CIDADE.startsWith("pais:") || CIDADE.startsWith("mapa:") || CIDADE === "__agg__"
-        ? tabelaRanking(d, cores) : tabela);
+        ? tabelaRanking(d, cores, doRecorte) : tabela);
 
   ligaCliques();
   aplicaHash(false);
@@ -675,6 +770,14 @@ function ligaCliques() {
   });
   const volta = $("#volta");
   if (volta) volta.style.display = CIDADE === "__agg__" ? "none" : "";
+  document.querySelectorAll("[data-ord]").forEach(el => {
+    el.addEventListener("click", () => {
+      const campo = el.dataset.ord;
+      if (ORD.campo === campo) ORD.desc = !ORD.desc;
+      else ORD = { campo, desc: campo !== "nome" };
+      desenha();
+    });
+  });
   document.querySelectorAll("[data-modo]").forEach(el => {
     el.addEventListener("click", () => { MODO = el.dataset.modo; desenha(); });
   });

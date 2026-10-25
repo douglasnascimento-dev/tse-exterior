@@ -19,7 +19,14 @@ Cobre as **186 cidades** do exterior, em 134 países. Traz:
 - **detalhamento por seção** ao abrir uma cidade.
 
 Clicar num país abre uma página só daquele recorte, com URL própria
-(`.../#mapa:Japan`) que pode ser compartilhada ou recarregada.
+(`.../#mapa:Japan`) que pode ser compartilhada ou recarregada. Nesse recorte a
+tabela lista só as cidades daquele país e o gráfico de evolução some — o
+histórico acumulado é do exterior inteiro e descreveria outro conjunto de
+dados ali.
+
+A tabela é ordenável por qualquer coluna e traz a bandeira de cada país. As
+bandeiras são emoji: no Windows o Chrome não as desenha e mostra as duas
+letras do país, que continua legível.
 
 ## Duas páginas
 
@@ -180,6 +187,7 @@ leitura mais recente.
 | `coletor/geocodificar.py` | geocodifica as cidades (roda uma vez) |
 | `coletor/mapa_base.py` | gera os contornos dos países (roda uma vez) |
 | `coletor/mapear_paises.py` | liga cada cidade ao polígono do seu país |
+| `coletor/codigos_iso.py` | atribui o código ISO de cada país, para a bandeira |
 | `coletor/base_2022.py` | extrai o 2º turno de 2022 no exterior (roda uma vez) |
 | `coletor/brasil.py` | lê a totalização agregada do Brasil, por UF |
 | `coletor/publicar.sh` | commita e empurra lidando com push concorrente |

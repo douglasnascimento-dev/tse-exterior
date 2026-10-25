@@ -56,7 +56,7 @@ def main():
         else:
             continue
         feicoes.append({"type": "Feature",
-                        "properties": {"nome": nome},
+                        "properties": {"nome": nome, "num": g.get("id", "")},
                         "geometry": {"type": g["type"], "coordinates": coords}})
 
     gj = {"type": "FeatureCollection", "features": feicoes}

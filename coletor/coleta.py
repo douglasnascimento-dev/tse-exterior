@@ -219,6 +219,7 @@ def main(caminho=None):
                 c["lat"], c["lon"] = p["lat"], p["lon"]
             c["pais"] = p.get("pais", "—")
             c["pais_mapa"] = p.get("pais_mapa")
+            c["iso2"] = p.get("iso2")
             cidades.append(c)
 
     # agregado de todas as cidades coletadas
