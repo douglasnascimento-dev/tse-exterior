@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-25T17:35:43+00:00",
+ "gerado_em": "2026-10-25T17:41:11+00:00",
  "fonte": "resultados.tse.jus.br — arquivo de urna (BU)",
  "uf": "zz",
  "turno1": {
@@ -3512,32 +3512,87 @@
    "nome": "BUCARESTE",
    "secoes_previstas": 1,
    "secoes_listadas": 1,
-   "secoes_apuradas_t2": 0,
-   "secoes_comparaveis": 0,
+   "secoes_apuradas_t2": 1,
+   "secoes_comparaveis": 1,
    "t1": {
-    "13": 0,
-    "22": 0,
+    "13": 31,
+    "22": 22,
     "brancos": 0,
     "nulos": 0,
-    "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0,
-    "validos": 0
+    "outros": 9,
+    "comparecimento": 62,
+    "aptos": 130,
+    "total": 62,
+    "validos": 62
    },
    "t2": {
-    "13": 0,
-    "22": 0,
+    "13": 40,
+    "22": 25,
     "brancos": 0,
-    "nulos": 0,
+    "nulos": 1,
     "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0,
-    "validos": 0
+    "comparecimento": 66,
+    "aptos": 130,
+    "total": 66,
+    "validos": 65
    },
-   "metricas": null,
-   "secoes": [],
+   "metricas": {
+    "candidatos": {
+     "13": {
+      "t1": 31,
+      "t2": 40,
+      "delta": 9,
+      "pct": 29.032258064516128,
+      "share_t1": 50.0,
+      "share_t2": 61.53846153846154
+     },
+     "22": {
+      "t1": 22,
+      "t2": 25,
+      "delta": 3,
+      "pct": 13.636363636363637,
+      "share_t1": 35.483870967741936,
+      "share_t2": 38.46153846153846
+     }
+    },
+    "diferenca_crescimento": 6,
+    "margem_t1": 9,
+    "margem_t2": 15,
+    "variacao_margem": 6,
+    "total_t1": 62,
+    "total_t2": 66,
+    "delta_total": 4,
+    "pct_total": 6.451612903225806,
+    "validos_t1": 62,
+    "validos_t2": 65,
+    "delta_validos": 3,
+    "aptos_t2": 130,
+    "comparecimento_t2": 66,
+    "brancos_nulos_t1": 0,
+    "brancos_nulos_t2": 1
+   },
+   "secoes": [
+    {
+     "zona": "0001",
+     "secao": "0715",
+     "t1": {
+      "13": 31,
+      "22": 22,
+      "brancos": 0,
+      "nulos": 0,
+      "comparecimento": 62,
+      "aptos": 130
+     },
+     "t2": {
+      "13": 40,
+      "22": 25,
+      "brancos": 0,
+      "nulos": 1,
+      "comparecimento": 66,
+      "aptos": 130
+     }
+    }
+   ],
    "lat": 44.4361,
    "lon": 26.1027,
    "pais": "Roménia",
@@ -13389,32 +13444,87 @@
    "nome": "RABAT",
    "secoes_previstas": 1,
    "secoes_listadas": 1,
-   "secoes_apuradas_t2": 0,
-   "secoes_comparaveis": 0,
+   "secoes_apuradas_t2": 1,
+   "secoes_comparaveis": 1,
    "t1": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0,
-    "validos": 0
+    "13": 30,
+    "22": 6,
+    "brancos": 3,
+    "nulos": 2,
+    "outros": 6,
+    "comparecimento": 47,
+    "aptos": 117,
+    "total": 47,
+    "validos": 42
    },
    "t2": {
-    "13": 0,
-    "22": 0,
-    "brancos": 0,
-    "nulos": 0,
+    "13": 31,
+    "22": 6,
+    "brancos": 3,
+    "nulos": 1,
     "outros": 0,
-    "comparecimento": 0,
-    "aptos": 0,
-    "total": 0,
-    "validos": 0
+    "comparecimento": 41,
+    "aptos": 117,
+    "total": 41,
+    "validos": 37
    },
-   "metricas": null,
-   "secoes": [],
+   "metricas": {
+    "candidatos": {
+     "13": {
+      "t1": 30,
+      "t2": 31,
+      "delta": 1,
+      "pct": 3.3333333333333335,
+      "share_t1": 71.42857142857143,
+      "share_t2": 83.78378378378379
+     },
+     "22": {
+      "t1": 6,
+      "t2": 6,
+      "delta": 0,
+      "pct": 0.0,
+      "share_t1": 14.285714285714286,
+      "share_t2": 16.216216216216218
+     }
+    },
+    "diferenca_crescimento": 1,
+    "margem_t1": 24,
+    "margem_t2": 25,
+    "variacao_margem": 1,
+    "total_t1": 47,
+    "total_t2": 41,
+    "delta_total": -6,
+    "pct_total": -12.76595744680851,
+    "validos_t1": 42,
+    "validos_t2": 37,
+    "delta_validos": -5,
+    "aptos_t2": 117,
+    "comparecimento_t2": 41,
+    "brancos_nulos_t1": 5,
+    "brancos_nulos_t2": 4
+   },
+   "secoes": [
+    {
+     "zona": "0001",
+     "secao": "0379",
+     "t1": {
+      "13": 30,
+      "22": 6,
+      "brancos": 3,
+      "nulos": 2,
+      "comparecimento": 47,
+      "aptos": 117
+     },
+     "t2": {
+      "13": 31,
+      "22": 6,
+      "brancos": 3,
+      "nulos": 1,
+      "comparecimento": 41,
+      "aptos": 117
+     }
+    }
+   ],
    "lat": 34.0218,
    "lon": -6.8409,
    "pais": "Marrocos",
@@ -18176,63 +18286,63 @@
  "falhas": [],
  "agregado": {
   "t1": {
-   "13": 64378,
-   "22": 49447,
-   "brancos": 2855,
-   "nulos": 2293,
-   "outros": 12874,
-   "comparecimento": 131847,
-   "aptos": 322618,
-   "total": 131847,
-   "validos": 126699
+   "13": 64439,
+   "22": 49475,
+   "brancos": 2858,
+   "nulos": 2295,
+   "outros": 12889,
+   "comparecimento": 131956,
+   "aptos": 322865,
+   "total": 131956,
+   "validos": 126803
   },
   "t2": {
-   "13": 79807,
-   "22": 58846,
-   "brancos": 2285,
-   "nulos": 2337,
+   "13": 79878,
+   "22": 58877,
+   "brancos": 2288,
+   "nulos": 2339,
    "outros": 0,
-   "comparecimento": 143275,
-   "aptos": 322660,
-   "total": 143275,
-   "validos": 138653
+   "comparecimento": 143382,
+   "aptos": 322907,
+   "total": 143382,
+   "validos": 138755
   },
   "metricas": {
    "candidatos": {
     "13": {
-     "t1": 64378,
-     "t2": 79807,
-     "delta": 15429,
-     "pct": 23.966261766441953,
-     "share_t1": 50.81176647013788,
-     "share_t2": 57.55879786228931
+     "t1": 64439,
+     "t2": 79878,
+     "delta": 15439,
+     "pct": 23.959093095796025,
+     "share_t1": 50.81819830761102,
+     "share_t2": 57.567655219631725
     },
     "22": {
-     "t1": 49447,
-     "t2": 58846,
-     "delta": 9399,
-     "pct": 19.008231035249864,
-     "share_t1": 39.027143071373885,
-     "share_t2": 42.44120213771069
+     "t1": 49475,
+     "t2": 58877,
+     "delta": 9402,
+     "pct": 19.00353713996968,
+     "share_t1": 39.017215681017014,
+     "share_t2": 42.432344780368275
     }
    },
-   "diferenca_crescimento": 6030,
-   "margem_t1": 14931,
-   "margem_t2": 20961,
-   "variacao_margem": 6030,
-   "total_t1": 131847,
-   "total_t2": 143275,
-   "delta_total": 11428,
-   "pct_total": 8.667622319810082,
-   "validos_t1": 126699,
-   "validos_t2": 138653,
-   "delta_validos": 11954,
-   "aptos_t2": 322660,
-   "comparecimento_t2": 143275,
-   "brancos_nulos_t1": 5148,
-   "brancos_nulos_t2": 4622
+   "diferenca_crescimento": 6037,
+   "margem_t1": 14964,
+   "margem_t2": 21001,
+   "variacao_margem": 6037,
+   "total_t1": 131956,
+   "total_t2": 143382,
+   "delta_total": 11426,
+   "pct_total": 8.658946921701173,
+   "validos_t1": 126803,
+   "validos_t2": 138755,
+   "delta_validos": 11952,
+   "aptos_t2": 322907,
+   "comparecimento_t2": 143382,
+   "brancos_nulos_t1": 5153,
+   "brancos_nulos_t2": 4627
   },
-  "secoes_apuradas_t2": 457,
+  "secoes_apuradas_t2": 459,
   "secoes_previstas": 1351
  }
 }
