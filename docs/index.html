@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exterior — 1º × 2º turno</title>
+<style>
+  :root {
+    color-scheme: light;
+    --surface-0:#f6f6f4; --surface-1:#fcfcfb; --border:#e2e1dc;
+    --text-primary:#0b0b0b; --text-secondary:#52514e; --text-muted:#7a7873;
+    --series-1:#2a78d6; --series-2:#eb6834; --neutral:#9b9892;
+    --grid:#e8e7e2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --surface-0:#111110; --surface-1:#1a1a19; --border:#33322e;
+      --text-primary:#f0efec; --text-secondary:#c3c2b7; --text-muted:#8e8c84;
+      --series-1:#3987e5; --series-2:#d95926; --neutral:#6f6d67;
+      --grid:#2a2926;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --surface-0:#111110; --surface-1:#1a1a19; --border:#33322e;
+    --text-primary:#f0efec; --text-secondary:#c3c2b7; --text-muted:#8e8c84;
+    --series-1:#3987e5; --series-2:#d95926; --neutral:#6f6d67;
+    --grid:#2a2926;
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; background:var(--surface-0); color:var(--text-primary);
+    font:15px/1.5 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap { max-width:1060px; margin:0 auto; padding:28px 16px 64px; }
+  header { display:flex; flex-wrap:wrap; gap:12px; align-items:flex-start;
+           justify-content:space-between; margin-bottom:6px; }
+  h1 { font-size:21px; margin:0; letter-spacing:-.01em; }
+  .sub { color:var(--text-secondary); font-size:13px; margin:2px 0 0; }
+  .toolbar { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  select, button {
+    font:inherit; font-size:13px; padding:6px 10px; border-radius:7px;
+    border:1px solid var(--border); background:var(--surface-1);
+    color:var(--text-primary); cursor:pointer;
+  }
+  .badge { display:inline-flex; align-items:center; gap:6px; font-size:12px;
+    color:var(--text-secondary); border:1px solid var(--border);
+    background:var(--surface-1); padding:5px 10px; border-radius:999px; }
+  .dot { width:7px; height:7px; border-radius:50%; background:var(--series-1); }
+  .tiles { display:grid; gap:12px; margin:22px 0 8px;
+    grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); }
+  .tile { background:var(--surface-1); border:1px solid var(--border);
+    border-radius:11px; padding:14px 16px; }
+  .tile .k { font-size:12px; color:var(--text-secondary); margin-bottom:6px; }
+  .tile .v { font-size:27px; font-weight:600; letter-spacing:-.02em;
+             font-variant-numeric:tabular-nums; }
+  .tile .n { font-size:12px; color:var(--text-muted); margin-top:3px; }
+  .card { background:var(--surface-1); border:1px solid var(--border);
+    border-radius:11px; padding:18px 18px 10px; margin-top:14px; }
+  .card h2 { font-size:14px; margin:0 0 2px; }
+  .card p.note { font-size:12px; color:var(--text-secondary); margin:0 0 14px; }
+  .legend { display:flex; gap:16px; flex-wrap:wrap; font-size:12.5px;
+    color:var(--text-secondary); margin:0 0 10px; }
+  .sw { width:10px; height:10px; border-radius:3px;
+    display:inline-block; margin-right:6px; vertical-align:-1px; }
+  .scroll { overflow-x:auto; overflow-y:hidden; margin:0 -4px; padding:0 4px; }
+  svg { display:block; width:100%; height:auto; overflow:visible; min-width:560px; }
+  .ax { fill:var(--text-muted); font-size:11px; }
+  .lbl { fill:var(--text-secondary); font-size:11.5px;
+         font-variant-numeric:tabular-nums; }
+  .lbl-strong { fill:var(--text-primary); font-size:12px; font-weight:600;
+                font-variant-numeric:tabular-nums; }
+  .gl { stroke:var(--grid); stroke-width:1; }
+  table { width:100%; border-collapse:collapse; font-size:13px;
+          font-variant-numeric:tabular-nums; min-width:560px; }
+  th, td { text-align:right; padding:7px 8px; border-bottom:1px solid var(--border); }
+  th:first-child, td:first-child { text-align:left; }
+  thead th { color:var(--text-secondary); font-weight:500; font-size:12px; }
+  tfoot td { font-weight:600; border-top:1px solid var(--border); border-bottom:0; }
+  td.delta { color:var(--text-primary); font-weight:600; }
+  .tip { position:fixed; pointer-events:none; z-index:9; opacity:0;
+    transition:opacity .09s; background:var(--surface-1); color:var(--text-primary);
+    border:1px solid var(--border); border-radius:8px; padding:7px 10px;
+    font-size:12.5px; box-shadow:0 4px 14px rgba(0,0,0,.14); max-width:260px; }
+  .tip b { font-variant-numeric:tabular-nums; }
+  footer { margin-top:26px; font-size:12px; color:var(--text-muted); }
+  footer a { color:var(--text-secondary); }
+  .empty { padding:26px 0; color:var(--text-secondary); font-size:14px; }
+  @media (max-width:560px) { .tile .v { font-size:23px; } h1 { font-size:18px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Votação no exterior — 1º × 2º turno de 2026</h1>
+      <p class="sub" id="sub">carregando…</p>
+    </div>
+    <div class="toolbar">
+      <select id="cidade" aria-label="Cidade"></select>
+      <button id="tema" title="Alternar tema">◐</button>
+    </div>
+  </header>
+
+  <div id="status"></div>
+  <div id="conteudo"></div>
+
+  <footer>
+    Fonte: boletins de urna de <a href="https://resultados.tse.jus.br"
+    rel="noreferrer">resultados.tse.jus.br</a>, lidos direto do arquivo de urna
+    assinado. Atualizado por GitHub Actions.
+    <span id="ger"></span>
+  </footer>
+</div>
+<div class="tip" id="tip" role="tooltip"></div>
+
+<script>
+const $ = s => document.querySelector(s);
+const tip = $("#tip");
+const nf = n => (n ?? 0).toLocaleString("pt-BR");
+const sf = n => (n > 0 ? "+" : "") + nf(n);
+const pf = p => p == null ? "—" : (p > 0 ? "+" : "") + p.toFixed(2) + "%";
+
+$("#tema").onclick = () => {
+  const cur = document.documentElement.getAttribute("data-theme");
+  const dark = cur ? cur === "dark"
+    : matchMedia("(prefers-color-scheme: dark)").matches;
+  document.documentElement.setAttribute("data-theme", dark ? "light" : "dark");
+  if (DADOS) desenha();
+};
+
+function mostraTip(e, html) {
+  tip.innerHTML = html;
+  tip.style.opacity = 1;
+  const r = tip.getBoundingClientRect();
+  let x = e.clientX + 14, y = e.clientY - r.height / 2;
+  if (x + r.width > innerWidth - 8) x = e.clientX - r.width - 14;
+  tip.style.left = Math.max(8, x) + "px";
+  tip.style.top = Math.min(innerHeight - r.height - 8, Math.max(8, y)) + "px";
+}
+const escondeTip = () => tip.style.opacity = 0;
+
+/* ---- gráfico de barras agrupadas: turno no eixo, cor = candidato ---- */
+function barrasAgrupadas(dados, series) {
+  const W = 760, H = 300, m = { t: 14, r: 16, b: 34, l: 48 };
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const max = Math.max(...dados.flatMap(d => series.map(s => d[s.chave]))) || 1;
+  const esc = v => ih - (v / (max * 1.12)) * ih;
+
+  const gw = iw / dados.length;
+  const bw = Math.min(62, (gw - 26) / series.length);
+  const ticks = 4;
+  let g = "";
+  for (let i = 0; i <= ticks; i++) {
+    const v = max * 1.12 * i / ticks, y = esc(v);
+    g += `<line class="gl" x1="0" x2="${iw}" y1="${y}" y2="${y}"></line>
+          <text class="ax" x="-9" y="${y + 4}" text-anchor="end">${nf(Math.round(v))}</text>`;
+  }
+  let b = "";
+  dados.forEach((d, gi) => {
+    const cx = gi * gw + gw / 2;
+    const base = cx - (series.length * bw + (series.length - 1) * 2) / 2;
+    series.forEach((s, si) => {
+      const v = d[s.chave], x = base + si * (bw + 2), y = esc(v);
+      const h = Math.max(ih - y, 2);
+      b += `<rect x="${x}" y="${y}" width="${bw}" height="${h}" rx="4"
+               fill="${s.cor}" data-tip="${encodeURIComponent(
+                 `<b>${s.nome}</b><br>${d.rotulo}: <b>${nf(v)}</b> votos`)}"></rect>
+            <text class="lbl-strong" x="${x + bw / 2}" y="${y - 7}"
+               text-anchor="middle">${nf(v)}</text>`;
+    });
+    b += `<text class="ax" x="${cx}" y="${ih + 22}" text-anchor="middle">${d.rotulo}</text>`;
+  });
+  return `<svg viewBox="0 0 ${W} ${H}" role="img">
+      <g transform="translate(${m.l},${m.t})">${g}
+        <line class="gl" x1="0" x2="${iw}" y1="${ih}" y2="${ih}"></line>${b}</g>
+    </svg>`;
+}
+
+/* ---- barras horizontais de crescimento (Δ votos) ---- */
+function barrasCrescimento(itens) {
+  const W = 760, rh = 42, m = { l: 150, r: 70 };
+  const H = itens.length * rh + 10;
+  const max = Math.max(...itens.map(i => Math.abs(i.valor))) || 1;
+  const iw = W - m.l - m.r;
+  let s = "";
+  itens.forEach((it, i) => {
+    const y = i * rh + 8, w = Math.max(Math.abs(it.valor) / max * iw, 2);
+    s += `<text class="lbl" x="${m.l - 12}" y="${y + 17}" text-anchor="end">${it.nome}</text>
+      <rect x="${m.l}" y="${y + 4}" width="${w}" height="18" rx="4" fill="${it.cor}"
+        data-tip="${encodeURIComponent(
+          `<b>${it.nome}</b><br>${sf(it.valor)} votos · ${pf(it.pct)}`)}"></rect>
+      <text class="lbl-strong" x="${m.l + w + 9}" y="${y + 18}">${sf(it.valor)}</text>
+      <text class="ax" x="${m.l + w + 9}" y="${y + 31}">${pf(it.pct)}</text>`;
+  });
+  return `<svg viewBox="0 0 ${W} ${H}" role="img">${s}</svg>`;
+}
+
+let DADOS = null, CIDADE = null;
+
+function desenha() {
+  const d = DADOS, nums = Object.keys(d.candidatos).sort((a, b) => a - b);
+  const css = getComputedStyle(document.documentElement);
+  const cor = n => css.getPropertyValue(n).trim();
+  const cores = [cor("--series-1"), cor("--series-2")];
+  const nomes = nums.map(n => d.candidatos[n]);
+
+  const c = CIDADE === "__agg__"
+    ? { nome: "Todas as cidades coletadas", ...d.agregado,
+        secoes_previstas: d.agregado.secoes_previstas,
+        secoes_apuradas_t2: d.agregado.secoes_apuradas_t2, secoes: [] }
+    : d.cidades.find(x => x.codigo === CIDADE);
+
+  $("#sub").textContent = `${c.nome} · ${c.secoes_apuradas_t2} de `
+    + `${c.secoes_previstas} seções com boletim de urna no 2º turno`;
+  $("#ger").textContent = " · gerado em "
+    + new Date(d.gerado_em).toLocaleString("pt-BR");
+
+  if (!c.metricas) {
+    $("#status").innerHTML = `<div class="card"><div class="empty">
+      Nenhuma seção desta cidade foi apurada no 2º turno ainda.
+      O painel se atualiza sozinho quando os boletins chegarem.</div></div>`;
+    $("#conteudo").innerHTML = "";
+    return;
+  }
+  $("#status").innerHTML = "";
+  const m = c.metricas;
+
+  const tiles = `<div class="tiles">
+    <div class="tile"><div class="k">Margem no 2º turno</div>
+      <div class="v">${sf(m.margem_t2)}</div>
+      <div class="n">era ${sf(m.margem_t1)} no 1º turno</div></div>
+    <div class="tile"><div class="k">Variação da margem</div>
+      <div class="v">${sf(m.variacao_margem)}</div>
+      <div class="n">diferença no crescimento dos dois</div></div>
+    <div class="tile"><div class="k">Total de votos (2º turno)</div>
+      <div class="v">${nf(m.total_t2)}</div>
+      <div class="n">${sf(m.delta_total)} vs 1º turno · ${pf(m.pct_total)}</div></div>
+    <div class="tile"><div class="k">Brancos + nulos</div>
+      <div class="v">${nf(m.brancos_nulos_t2)}</div>
+      <div class="n">era ${nf(m.brancos_nulos_t1)} no 1º turno</div></div>
+  </div>`;
+
+  const series = nums.map((n, i) => ({ chave: n, nome: d.candidatos[n], cor: cores[i] }));
+  const legenda = `<div class="legend">` + series.map(s =>
+    `<span><span class="sw" style="background:${s.cor}"></span>${s.nome}</span>`
+  ).join("") + `</div>`;
+
+  const grupos = [
+    { rotulo: "1º turno", ...Object.fromEntries(nums.map(n => [n, m.candidatos[n].t1])) },
+    { rotulo: "2º turno", ...Object.fromEntries(nums.map(n => [n, m.candidatos[n].t2])) },
+  ];
+
+  const cresc = nums.map((n, i) => ({
+    nome: d.candidatos[n], valor: m.candidatos[n].delta,
+    pct: m.candidatos[n].pct, cor: cores[i],
+  }));
+
+  const linhas = (c.secoes || []).filter(s => s.t1 && s.t2).map(s => {
+    const a = nums[0], b = nums[1];
+    return `<tr>
+      <td>${s.secao}</td>
+      <td>${nf(s.t1[a])}</td><td>${nf(s.t2[a])}</td>
+      <td class="delta">${sf(s.t2[a] - s.t1[a])}</td>
+      <td>${nf(s.t1[b])}</td><td>${nf(s.t2[b])}</td>
+      <td class="delta">${sf(s.t2[b] - s.t1[b])}</td>
+      <td>${nf(s.t1.comparecimento)}</td><td>${nf(s.t2.comparecimento)}</td></tr>`;
+  }).join("");
+
+  const tabela = linhas ? `<div class="card">
+    <h2>Por seção</h2>
+    <p class="note">Só as seções com boletim nos dois turnos — comparação 1:1.</p>
+    <div class="scroll"><table><thead>
+      <tr><th rowspan="2">Seção</th>
+          <th colspan="3"><span class="sw" style="background:${cores[0]}"></span>${nomes[0]}</th>
+          <th colspan="3"><span class="sw" style="background:${cores[1]}"></span>${nomes[1]}</th>
+          <th colspan="2">Comparecimento</th></tr>
+      <tr><th>1T</th><th>2T</th><th>Δ</th><th>1T</th><th>2T</th><th>Δ</th>
+          <th>1T</th><th>2T</th></tr>
+    </thead><tbody>${linhas}</tbody>
+    <tfoot><tr><td>Total</td>
+      <td>${nf(m.candidatos[nums[0]].t1)}</td><td>${nf(m.candidatos[nums[0]].t2)}</td>
+      <td class="delta">${sf(m.candidatos[nums[0]].delta)}</td>
+      <td>${nf(m.candidatos[nums[1]].t1)}</td><td>${nf(m.candidatos[nums[1]].t2)}</td>
+      <td class="delta">${sf(m.candidatos[nums[1]].delta)}</td>
+      <td>${nf(c.t1.comparecimento)}</td><td>${nf(c.t2.comparecimento)}</td>
+    </tr></tfoot></table></div></div>` : "";
+
+  $("#conteudo").innerHTML = tiles + `
+    <div class="card"><h2>Votos por turno</h2>
+      <p class="note">Mesmo eixo para os dois turnos; apenas seções comparáveis.</p>
+      ${legenda}<div class="scroll">${barrasAgrupadas(grupos, series)}</div></div>
+    <div class="card"><h2>Crescimento de cada um</h2>
+      <p class="note">Diferença no crescimento:
+        <strong>${sf(m.diferenca_crescimento)}</strong> votos a favor de
+        ${m.diferenca_crescimento > 0 ? nomes[0]
+          : m.diferenca_crescimento < 0 ? nomes[1] : "ninguém"}.</p>
+      <div class="scroll">${barrasCrescimento(cresc)}</div></div>` + tabela;
+
+  document.querySelectorAll("[data-tip]").forEach(el => {
+    el.style.cursor = "crosshair";
+    el.addEventListener("mousemove", e =>
+      mostraTip(e, decodeURIComponent(el.dataset.tip)));
+    el.addEventListener("mouseleave", escondeTip);
+  });
+}
+
+fetch("dados/resumo.json", { cache: "no-store" })
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(d => {
+    DADOS = d;
+    const sel = $("#cidade");
+    d.cidades.forEach(c => sel.add(new Option(c.nome, c.codigo)));
+    if (d.cidades.length > 1) sel.add(new Option("— Todas —", "__agg__"));
+    sel.style.display = d.cidades.length > 1 ? "" : "none";
+    CIDADE = d.cidades[0]?.codigo ?? "__agg__";
+    sel.value = CIDADE;
+    sel.onchange = () => { CIDADE = sel.value; desenha(); };
+    desenha();
+  })
+  .catch(e => {
+    $("#sub").textContent = "não foi possível carregar dados/resumo.json";
+    $("#status").innerHTML = `<div class="card"><div class="empty">
+      Rode <code>python3 coletor/coleta.py</code> (ou aguarde o GitHub Actions)
+      para gerar <code>docs/dados/resumo.json</code>. (${e.message})</div></div>`;
+  });
+</script>
+</body>
+</html>
