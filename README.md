@@ -169,12 +169,19 @@ dias diferentes.
 - **2022**: o TSE publica o "Histórico de Totalização" nos dados abertos, com o
   minuto a minuto dos dois turnos. `curvas_2022.py` extrai.
 - **1º turno de 2026**: esse histórico **não existe** — o TSE só o publica
-  tempos depois da eleição, e para 2026 ainda dá 404. `curva_1t_2026.py`
-  reconstrói cruzando duas fontes: o config de arquivo de urna, que traz a hora
-  de recebimento de cada uma das 499 mil seções, e o CSV de votação por seção.
-  O resultado final confere com o oficial (Lula 45,161% contra 45,16%), o que
-  valida o cruzamento. É a curva de *recebimento dos boletins*, não a da
-  totalização oficial — andam juntas, mas não são a mesma coisa.
+  tempos depois da eleição, e para 2026 ainda dá 404. O painel mostra o
+  resultado final do 1º turno como **nível** de referência, não como curva.
+  `curva_1t_2026.py` verifica se já foi publicado; quando for, a curva real
+  entra no lugar do nível sozinha.
+
+  > Tentei reconstruí-la pelo campo `ha` do config de arquivo de urna, que
+  > parece ser a hora de recebimento de cada seção. **Não é**: para quase toda
+  > UF ele carimba o lote inteiro no mesmo instante — São Paulo tem 103.656
+  > seções dentro de 3 minutos, Roraima 1.519 no mesmo minuto, Minas aparece às
+  > 12h52 do dia seguinte. Só o exterior, onde os boletins chegam um a um, tem
+  > horas reais. A curva saía na ordem "UF por UF", que não é a ordem da
+  > apuração. Conferir o total final não detectou o erro, porque soma não
+  > depende de ordem — validei o cruzamento, não a cronologia.
 
 Como o 1º turno tinha 14 candidatos, a comparação com ele usa a porcentagem
 **só entre os dois finalistas**; os arquivos trazem as duas bases.

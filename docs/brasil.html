@@ -142,11 +142,7 @@ function curvasPassadas(d, cores) {
       titulo: "A curva do 2º turno de 2022",
       descricao: "Para comparar com a de hoje assim que a apuração começar.",
       rotulo: "2022", adversario: "Jair Bolsonaro (2022)", chave: "p" })
-    + curvaComparada(d, cores, C1T && C1T.pontos, {
-      titulo: "A curva do 1º turno de 2026",
-      descricao: `Reconstruída a partir da hora de recebimento de cada boletim.
-        Só entre os dois que foram ao 2º turno.`,
-      rotulo: "1º turno", adversario: "Flávio Bolsonaro (1º turno)", chave: "d" });
+    + nivel1T(d, cores);
 }
 
 function desenha() {
@@ -221,15 +217,7 @@ function desenha() {
       rotulo: "2022", adversario: "Jair Bolsonaro (2022)", chave: "p",
       nota: "Sobre votos válidos, nos dois casos.",
     })
-    + curvaComparada(d, cores, C1T && C1T.pontos, {
-      titulo: "Contra a curva do 1º turno de 2026",
-      descricao: `A mesma eleição, três semanas antes. Como o 1º turno tinha 14
-        candidatos, aqui a porcentagem é calculada só entre os dois que foram
-        ao 2º turno — do contrário não seria comparável.`,
-      rotulo: "1º turno", adversario: "Flávio Bolsonaro (1º turno)", chave: "d",
-      nota: "A curva do 1º turno foi reconstruída a partir da hora de "
-            + "recebimento de cada boletim; o resultado final confere com o oficial.",
-    });
+    + nivel1T(d, cores);
 
   $("#conteudo").innerHTML = tiles + confronto + evolucao(d, cores) + curvas
     + comparaTurno1(d, cores) + compara2022(d, cores) + tabelaUF(d, cores);
@@ -238,6 +226,40 @@ function desenha() {
 
 /* ---- 2º turno de 2022 contra o de agora, no Brasil ---- */
 /* ---- curva de hoje contra a de uma eleição passada, no eixo do apurado ---- */
+/* ---- 1º turno de 2026: nível final, porque a curva não existe ---- */
+function nivel1T(d, cores) {
+  const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
+  const [a, b] = nums;
+  // se o TSE já tiver publicado o histórico de 2026, usa a curva de verdade
+  if (C1T && C1T.pontos && C1T.pontos.length > 2) {
+    return curvaComparada(d, cores, C1T.pontos, {
+      titulo: "Contra a curva do 1º turno de 2026",
+      descricao: `A mesma eleição, três semanas antes. Como o 1º turno tinha 14
+        candidatos, a porcentagem é só entre os dois que foram ao 2º turno.`,
+      rotulo: "1º turno", adversario: "Flávio Bolsonaro (1º turno)", chave: "d",
+    });
+  }
+  const b1 = d.turno1.br;
+  if (!b1 || !b1.validos) return "";
+  // só entre os dois finalistas: o 1º turno tinha 14 candidatos
+  const dois = (b1.votos[a] || 0) + (b1.votos[b] || 0);
+  if (!dois) return "";
+  const n1 = [100 * b1.votos[a] / dois, 100 * b1.votos[b] / dois];
+  // uma "curva" plana de dois pontos desenha o nível ao longo do eixo
+  const plano = [{ pct: 0, d13: n1[0], d22: n1[1] },
+                 { pct: 100, d13: n1[0], d22: n1[1] }];
+  return curvaComparada(d, cores, plano, {
+    titulo: "Contra o 1º turno de 2026",
+    descricao: `A mesma eleição, três semanas antes — mas como <strong>nível</strong>,
+      não como curva: o TSE só publica o histórico minuto a minuto semanas
+      depois, e o de 2026 ainda não saiu. Como o 1º turno tinha 14 candidatos,
+      a porcentagem aqui é só entre os dois que foram ao 2º turno.`,
+    rotulo: "1º turno", adversario: "Flávio Bolsonaro (1º turno)", chave: "d",
+    nota: "A linha tracejada é o resultado fechado do 1º turno, constante ao "
+          + "longo do eixo — não o caminho que ele percorreu.",
+  });
+}
+
 function curvaComparada(d, cores, passada, cfg) {
   const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
   const [a, b] = nums;
