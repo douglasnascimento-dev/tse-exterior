@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-25T23:02:24+00:00",
+ "gerado_em": "2026-10-25T23:07:24+00:00",
  "fonte": "resultados.tse.jus.br — totalização agregada",
  "candidatos": {
   "13": "Lula (PT)",
@@ -9,422 +9,422 @@
   "eleicao": 6258,
   "br": {
    "uf": "br",
-   "atualizado": "25/10/2026 20:01:03",
+   "atualizado": "25/10/2026 20:06:14",
    "finalizado": false,
    "votos": {
-    "22": 14515921,
-    "13": 14245886
+    "22": 17568240,
+    "13": 17256909
    },
-   "validos": 28761807,
-   "brancos": 304769,
-   "nulos": 580770,
-   "total": 29647346,
+   "validos": 34825149,
+   "brancos": 372575,
+   "nulos": 704909,
+   "total": 35902633,
    "secoes_totais": 499248,
-   "secoes_totalizadas": 116164,
-   "pct_secoes": 23.267794763,
+   "secoes_totalizadas": 140899,
+   "pct_secoes": 28.222246258,
    "eleitorado": 158745502,
-   "eleitorado_totalizado": 36781623,
-   "comparecimento": 29647346
+   "eleitorado_totalizado": 44498701,
+   "comparecimento": 35902633
   },
   "ufs": [
    {
     "uf": "ac",
-    "atualizado": "25/10/2026 18:01:43",
+    "atualizado": "25/10/2026 18:06:26",
     "finalizado": false,
     "votos": {
-     "22": 182341,
-     "13": 94438
+     "22": 197891,
+     "13": 102703
     },
-    "validos": 276779,
-    "brancos": 3238,
-    "nulos": 10637,
-    "total": 290654,
+    "validos": 300594,
+    "brancos": 3531,
+    "nulos": 11583,
+    "total": 315708,
     "secoes_totais": 2270,
-    "secoes_totalizadas": 1438,
-    "pct_secoes": 63.348017621,
+    "secoes_totalizadas": 1561,
+    "pct_secoes": 68.766519824,
     "eleitorado": 613715,
-    "eleitorado_totalizado": 391313,
-    "comparecimento": 290654
+    "eleitorado_totalizado": 426546,
+    "comparecimento": 315708
    },
    {
     "uf": "al",
-    "atualizado": "25/10/2026 20:01:38",
+    "atualizado": "25/10/2026 20:06:36",
     "finalizado": false,
     "votos": {
-     "22": 272783,
-     "13": 481600
+     "22": 319991,
+     "13": 569260
     },
-    "validos": 754383,
-    "brancos": 6267,
-    "nulos": 15051,
-    "total": 775701,
+    "validos": 889251,
+    "brancos": 7467,
+    "nulos": 17817,
+    "total": 914535,
     "secoes_totais": 7101,
-    "secoes_totalizadas": 2906,
-    "pct_secoes": 40.923813547,
+    "secoes_totalizadas": 3413,
+    "pct_secoes": 48.063653007,
     "eleitorado": 2442081,
-    "eleitorado_totalizado": 978400,
-    "comparecimento": 775701
+    "eleitorado_totalizado": 1153434,
+    "comparecimento": 914535
    },
    {
     "uf": "am",
-    "atualizado": "25/10/2026 19:01:03",
+    "atualizado": "25/10/2026 19:06:43",
     "finalizado": false,
     "votos": {
-     "22": 735832,
-     "13": 754359
+     "22": 773818,
+     "13": 816642
     },
-    "validos": 1490191,
-    "brancos": 14121,
-    "nulos": 35947,
-    "total": 1540259,
+    "validos": 1590460,
+    "brancos": 14905,
+    "nulos": 38495,
+    "total": 1643860,
     "secoes_totais": 8157,
-    "secoes_totalizadas": 5465,
-    "pct_secoes": 66.997670712,
+    "secoes_totalizadas": 5864,
+    "pct_secoes": 71.889174942,
     "eleitorado": 2798661,
-    "eleitorado_totalizado": 1925554,
-    "comparecimento": 1540259
+    "eleitorado_totalizado": 2060924,
+    "comparecimento": 1643860
    },
    {
     "uf": "ap",
-    "atualizado": "25/10/2026 20:01:42",
+    "atualizado": "25/10/2026 20:06:29",
     "finalizado": false,
     "votos": {
-     "22": 46752,
-     "13": 62498
+     "22": 70862,
+     "13": 89239
     },
-    "validos": 109250,
-    "brancos": 712,
-    "nulos": 1135,
-    "total": 111097,
+    "validos": 160101,
+    "brancos": 1120,
+    "nulos": 1748,
+    "total": 162969,
     "secoes_totais": 1914,
-    "secoes_totalizadas": 567,
-    "pct_secoes": 29.623824451,
+    "secoes_totalizadas": 790,
+    "pct_secoes": 41.274817137,
     "eleitorado": 576910,
-    "eleitorado_totalizado": 159556,
-    "comparecimento": 111097
+    "eleitorado_totalizado": 228238,
+    "comparecimento": 162969
    },
    {
     "uf": "ba",
-    "atualizado": "25/10/2026 20:01:01",
+    "atualizado": "25/10/2026 20:06:13",
     "finalizado": false,
     "votos": {
-     "22": 196123,
-     "13": 475399
+     "22": 274104,
+     "13": 652172
     },
-    "validos": 671522,
-    "brancos": 7086,
-    "nulos": 18749,
-    "total": 697357,
+    "validos": 926276,
+    "brancos": 9739,
+    "nulos": 25573,
+    "total": 961588,
     "secoes_totais": 35476,
-    "secoes_totalizadas": 2611,
-    "pct_secoes": 7.359905288,
+    "secoes_totalizadas": 3599,
+    "pct_secoes": 10.144886684,
     "eleitorado": 11312891,
-    "eleitorado_totalizado": 846228,
-    "comparecimento": 697357
+    "eleitorado_totalizado": 1165815,
+    "comparecimento": 961588
    },
    {
     "uf": "ce",
-    "atualizado": "25/10/2026 20:01:43",
+    "atualizado": "25/10/2026 20:06:41",
     "finalizado": false,
     "votos": {
-     "22": 269363,
-     "13": 489744
+     "22": 399675,
+     "13": 739368
     },
-    "validos": 759107,
-    "brancos": 7312,
-    "nulos": 14775,
-    "total": 781194,
+    "validos": 1139043,
+    "brancos": 10808,
+    "nulos": 22100,
+    "total": 1171951,
     "secoes_totais": 23765,
-    "secoes_totalizadas": 2921,
-    "pct_secoes": 12.291184515,
+    "secoes_totalizadas": 4374,
+    "pct_secoes": 18.405217757,
     "eleitorado": 6996521,
-    "eleitorado_totalizado": 896669,
-    "comparecimento": 781194
+    "eleitorado_totalizado": 1348029,
+    "comparecimento": 1171951
    },
    {
     "uf": "df",
-    "atualizado": "25/10/2026 20:01:43",
+    "atualizado": "25/10/2026 20:06:22",
     "finalizado": false,
     "votos": {
-     "22": 882826,
-     "13": 741211
+     "22": 908042,
+     "13": 763062
     },
-    "validos": 1624037,
-    "brancos": 20144,
-    "nulos": 37038,
-    "total": 1681219,
+    "validos": 1671104,
+    "brancos": 20724,
+    "nulos": 38127,
+    "total": 1729955,
     "secoes_totais": 6969,
-    "secoes_totalizadas": 6254,
-    "pct_secoes": 89.740278376,
+    "secoes_totalizadas": 6441,
+    "pct_secoes": 92.423590185,
     "eleitorado": 2258995,
-    "eleitorado_totalizado": 2032635,
-    "comparecimento": 1681219
+    "eleitorado_totalizado": 2091766,
+    "comparecimento": 1729955
    },
    {
     "uf": "es",
-    "atualizado": "25/10/2026 20:01:43",
+    "atualizado": "25/10/2026 20:06:43",
     "finalizado": false,
     "votos": {
-     "22": 670756,
-     "13": 507792
+     "22": 880850,
+     "13": 671139
     },
-    "validos": 1178548,
-    "brancos": 16510,
-    "nulos": 40195,
-    "total": 1235253,
+    "validos": 1551989,
+    "brancos": 21881,
+    "nulos": 52963,
+    "total": 1626833,
     "secoes_totais": 9844,
-    "secoes_totalizadas": 5103,
-    "pct_secoes": 51.838683462,
+    "secoes_totalizadas": 6672,
+    "pct_secoes": 67.77732629,
     "eleitorado": 2991515,
-    "eleitorado_totalizado": 1533503,
-    "comparecimento": 1235253
+    "eleitorado_totalizado": 2018379,
+    "comparecimento": 1626833
    },
    {
     "uf": "go",
-    "atualizado": "25/10/2026 20:01:43",
+    "atualizado": "25/10/2026 20:06:42",
     "finalizado": false,
     "votos": {
-     "22": 315015,
-     "13": 188253
+     "22": 481499,
+     "13": 297377
     },
-    "validos": 503268,
-    "brancos": 5444,
-    "nulos": 9204,
-    "total": 517916,
+    "validos": 778876,
+    "brancos": 8466,
+    "nulos": 14515,
+    "total": 801857,
     "secoes_totais": 15686,
-    "secoes_totalizadas": 1993,
-    "pct_secoes": 12.705597348,
+    "secoes_totalizadas": 3124,
+    "pct_secoes": 19.915848527,
     "eleitorado": 5080385,
-    "eleitorado_totalizado": 647449,
-    "comparecimento": 517916
+    "eleitorado_totalizado": 1003389,
+    "comparecimento": 801857
    },
    {
     "uf": "ma",
-    "atualizado": "25/10/2026 20:01:43",
+    "atualizado": "25/10/2026 20:06:43",
     "finalizado": false,
     "votos": {
-     "22": 561721,
-     "13": 1094329
+     "22": 666494,
+     "13": 1318494
     },
-    "validos": 1656050,
-    "brancos": 13496,
-    "nulos": 24237,
-    "total": 1693783,
+    "validos": 1984988,
+    "brancos": 15867,
+    "nulos": 28755,
+    "total": 2029610,
     "secoes_totais": 18093,
-    "secoes_totalizadas": 7117,
-    "pct_secoes": 39.335654673,
+    "secoes_totalizadas": 8588,
+    "pct_secoes": 47.465870779,
     "eleitorado": 5183049,
-    "eleitorado_totalizado": 2093883,
-    "comparecimento": 1693783
+    "eleitorado_totalizado": 2518538,
+    "comparecimento": 2029610
    },
    {
     "uf": "mg",
-    "atualizado": "25/10/2026 20:01:03",
+    "atualizado": "25/10/2026 20:06:11",
     "finalizado": false,
     "votos": {
-     "22": 1214096,
-     "13": 1214103
+     "22": 1485924,
+     "13": 1493406
     },
-    "validos": 2428199,
-    "brancos": 30479,
-    "nulos": 55470,
-    "total": 2514148,
+    "validos": 2979330,
+    "brancos": 37823,
+    "nulos": 68155,
+    "total": 3085308,
     "secoes_totais": 52062,
-    "secoes_totalizadas": 9187,
-    "pct_secoes": 17.646267911,
+    "secoes_totalizadas": 11481,
+    "pct_secoes": 22.052552726,
     "eleitorado": 16372144,
-    "eleitorado_totalizado": 3175590,
-    "comparecimento": 2514148
+    "eleitorado_totalizado": 3896057,
+    "comparecimento": 3085308
    },
    {
     "uf": "ms",
-    "atualizado": "25/10/2026 19:01:41",
+    "atualizado": "25/10/2026 19:06:43",
     "finalizado": false,
     "votos": {
-     "22": 676346,
-     "13": 437172
+     "22": 768973,
+     "13": 501789
     },
-    "validos": 1113518,
-    "brancos": 10786,
-    "nulos": 16396,
-    "total": 1140700,
+    "validos": 1270762,
+    "brancos": 12393,
+    "nulos": 18904,
+    "total": 1302059,
     "secoes_totais": 7106,
-    "secoes_totalizadas": 5038,
-    "pct_secoes": 70.897832817,
+    "secoes_totalizadas": 5746,
+    "pct_secoes": 80.861244019,
     "eleitorado": 2024437,
-    "eleitorado_totalizado": 1443754,
-    "comparecimento": 1140700
+    "eleitorado_totalizado": 1648552,
+    "comparecimento": 1302059
    },
    {
     "uf": "mt",
-    "atualizado": "25/10/2026 19:01:43",
+    "atualizado": "25/10/2026 19:06:42",
     "finalizado": false,
     "votos": {
-     "22": 613366,
-     "13": 333433
+     "22": 692308,
+     "13": 367513
     },
-    "validos": 946799,
-    "brancos": 7206,
-    "nulos": 12095,
-    "total": 966100,
+    "validos": 1059821,
+    "brancos": 8061,
+    "nulos": 13435,
+    "total": 1081317,
     "secoes_totais": 8287,
-    "secoes_totalizadas": 3760,
-    "pct_secoes": 45.37226982,
+    "secoes_totalizadas": 4226,
+    "pct_secoes": 50.995535176,
     "eleitorado": 2637879,
-    "eleitorado_totalizado": 1209671,
-    "comparecimento": 966100
+    "eleitorado_totalizado": 1356811,
+    "comparecimento": 1081317
    },
    {
     "uf": "pa",
-    "atualizado": "25/10/2026 20:01:42",
+    "atualizado": "25/10/2026 20:06:44",
     "finalizado": false,
     "votos": {
-     "22": 1185046,
-     "13": 1431019
+     "22": 1342693,
+     "13": 1605467
     },
-    "validos": 2616065,
-    "brancos": 20800,
-    "nulos": 35351,
-    "total": 2672216,
+    "validos": 2948160,
+    "brancos": 23240,
+    "nulos": 39468,
+    "total": 3010868,
     "secoes_totais": 20827,
-    "secoes_totalizadas": 10651,
-    "pct_secoes": 51.140346665,
+    "secoes_totalizadas": 12107,
+    "pct_secoes": 58.131271907,
     "eleitorado": 6262063,
-    "eleitorado_totalizado": 3335692,
-    "comparecimento": 2672216
+    "eleitorado_totalizado": 3763647,
+    "comparecimento": 3010868
    },
    {
     "uf": "pb",
-    "atualizado": "25/10/2026 20:01:01",
+    "atualizado": "25/10/2026 20:06:11",
     "finalizado": false,
     "votos": {
-     "22": 637252,
-     "13": 1362030
+     "22": 683166,
+     "13": 1452394
     },
-    "validos": 1999282,
-    "brancos": 19750,
-    "nulos": 45148,
-    "total": 2064180,
+    "validos": 2135560,
+    "brancos": 21152,
+    "nulos": 48175,
+    "total": 2204887,
     "secoes_totais": 10712,
-    "secoes_totalizadas": 8109,
-    "pct_secoes": 75.700149365,
+    "secoes_totalizadas": 8668,
+    "pct_secoes": 80.918595967,
     "eleitorado": 3248434,
-    "eleitorado_totalizado": 2444099,
-    "comparecimento": 2064180
+    "eleitorado_totalizado": 2610600,
+    "comparecimento": 2204887
    },
    {
     "uf": "pe",
-    "atualizado": "25/10/2026 20:01:42",
+    "atualizado": "25/10/2026 20:06:12",
     "finalizado": false,
     "votos": {
-     "22": 168867,
-     "13": 466010
+     "22": 238084,
+     "13": 641358
     },
-    "validos": 634877,
-    "brancos": 5772,
-    "nulos": 12941,
-    "total": 653590,
+    "validos": 879442,
+    "brancos": 8131,
+    "nulos": 17918,
+    "total": 905491,
     "secoes_totais": 21418,
-    "secoes_totalizadas": 2367,
-    "pct_secoes": 11.05145205,
+    "secoes_totalizadas": 3270,
+    "pct_secoes": 15.267531982,
     "eleitorado": 7223227,
-    "eleitorado_totalizado": 774873,
-    "comparecimento": 653590
+    "eleitorado_totalizado": 1071286,
+    "comparecimento": 905491
    },
    {
     "uf": "pi",
-    "atualizado": "25/10/2026 20:01:32",
+    "atualizado": "25/10/2026 20:06:32",
     "finalizado": false,
     "votos": {
-     "22": 29074,
-     "13": 100861
+     "22": 32001,
+     "13": 110431
     },
-    "validos": 129935,
-    "brancos": 898,
-    "nulos": 2484,
-    "total": 133317,
+    "validos": 142432,
+    "brancos": 986,
+    "nulos": 2762,
+    "total": 146180,
     "secoes_totais": 10225,
-    "secoes_totalizadas": 633,
-    "pct_secoes": 6.190709046,
+    "secoes_totalizadas": 695,
+    "pct_secoes": 6.797066015,
     "eleitorado": 2704695,
-    "eleitorado_totalizado": 163796,
-    "comparecimento": 133317
+    "eleitorado_totalizado": 179118,
+    "comparecimento": 146180
    },
    {
     "uf": "pr",
-    "atualizado": "25/10/2026 20:01:03",
+    "atualizado": "25/10/2026 20:06:14",
     "finalizado": false,
     "votos": {
-     "22": 2593441,
-     "13": 1553412
+     "22": 2993580,
+     "13": 1791807
     },
-    "validos": 4146853,
-    "brancos": 49091,
-    "nulos": 72740,
-    "total": 4268684,
+    "validos": 4785387,
+    "brancos": 56719,
+    "nulos": 83524,
+    "total": 4925630,
     "secoes_totais": 27142,
-    "secoes_totalizadas": 16407,
-    "pct_secoes": 60.448751013,
+    "secoes_totalizadas": 18945,
+    "pct_secoes": 69.799572618,
     "eleitorado": 8613628,
-    "eleitorado_totalizado": 5205008,
-    "comparecimento": 4268684
+    "eleitorado_totalizado": 6009085,
+    "comparecimento": 4925630
    },
    {
     "uf": "rj",
-    "atualizado": "25/10/2026 20:01:33",
+    "atualizado": "25/10/2026 20:06:31",
     "finalizado": false,
     "votos": {
-     "22": 45227,
-     "13": 36098
+     "22": 64386,
+     "13": 52599
     },
-    "validos": 81325,
-    "brancos": 962,
-    "nulos": 1987,
-    "total": 84274,
+    "validos": 116985,
+    "brancos": 1372,
+    "nulos": 2898,
+    "total": 121255,
     "secoes_totais": 37675,
-    "secoes_totalizadas": 325,
-    "pct_secoes": 0.862641009,
+    "secoes_totalizadas": 458,
+    "pct_secoes": 1.215660252,
     "eleitorado": 12857526,
-    "eleitorado_totalizado": 109838,
-    "comparecimento": 84274
+    "eleitorado_totalizado": 158021,
+    "comparecimento": 121255
    },
    {
     "uf": "rn",
-    "atualizado": "25/10/2026 20:01:42",
+    "atualizado": "25/10/2026 20:06:43",
     "finalizado": false,
     "votos": {
-     "22": 223971,
-     "13": 472368
+     "22": 264632,
+     "13": 556592
     },
-    "validos": 696339,
-    "brancos": 6412,
-    "nulos": 20457,
-    "total": 723208,
+    "validos": 821224,
+    "brancos": 7676,
+    "nulos": 24359,
+    "total": 853259,
     "secoes_totais": 8115,
-    "secoes_totalizadas": 2652,
-    "pct_secoes": 32.680221811,
+    "secoes_totalizadas": 3135,
+    "pct_secoes": 38.632162662,
     "eleitorado": 2659867,
-    "eleitorado_totalizado": 862411,
-    "comparecimento": 723208
+    "eleitorado_totalizado": 1017132,
+    "comparecimento": 853259
    },
    {
     "uf": "ro",
-    "atualizado": "25/10/2026 19:01:35",
+    "atualizado": "25/10/2026 19:06:26",
     "finalizado": false,
     "votos": {
-     "22": 295408,
-     "13": 153300
+     "22": 317284,
+     "13": 160189
     },
-    "validos": 448708,
-    "brancos": 3924,
-    "nulos": 5709,
-    "total": 458341,
+    "validos": 477473,
+    "brancos": 4134,
+    "nulos": 5993,
+    "total": 487600,
     "secoes_totais": 4698,
-    "secoes_totalizadas": 2131,
-    "pct_secoes": 45.359727544,
+    "secoes_totalizadas": 2275,
+    "pct_secoes": 48.424861643,
     "eleitorado": 1265926,
-    "eleitorado_totalizado": 585017,
-    "comparecimento": 458341
+    "eleitorado_totalizado": 622723,
+    "comparecimento": 487600
    },
    {
     "uf": "rr",
@@ -447,98 +447,98 @@
    },
    {
     "uf": "rs",
-    "atualizado": "25/10/2026 20:01:43",
+    "atualizado": "25/10/2026 20:06:43",
     "finalizado": false,
     "votos": {
-     "22": 1205979,
-     "13": 780259
+     "22": 1463268,
+     "13": 969997
     },
-    "validos": 1986238,
-    "brancos": 25580,
-    "nulos": 29761,
-    "total": 2041579,
+    "validos": 2433265,
+    "brancos": 31556,
+    "nulos": 36642,
+    "total": 2501463,
     "secoes_totais": 27547,
-    "secoes_totalizadas": 8083,
-    "pct_secoes": 29.342578139,
+    "secoes_totalizadas": 9900,
+    "pct_secoes": 35.938577704,
     "eleitorado": 8522318,
-    "eleitorado_totalizado": 2503945,
-    "comparecimento": 2041579
+    "eleitorado_totalizado": 3070308,
+    "comparecimento": 2501463
    },
    {
     "uf": "sc",
-    "atualizado": "25/10/2026 20:01:43",
+    "atualizado": "25/10/2026 20:06:43",
     "finalizado": false,
     "votos": {
-     "22": 663427,
-     "13": 364908
+     "22": 874703,
+     "13": 453363
     },
-    "validos": 1028335,
-    "brancos": 10436,
-    "nulos": 16593,
-    "total": 1055364,
+    "validos": 1328066,
+    "brancos": 13638,
+    "nulos": 21534,
+    "total": 1363238,
     "secoes_totais": 17326,
-    "secoes_totalizadas": 3819,
-    "pct_secoes": 22.042017777,
+    "secoes_totalizadas": 4928,
+    "pct_secoes": 28.442802724,
     "eleitorado": 5734687,
-    "eleitorado_totalizado": 1271553,
-    "comparecimento": 1055364
+    "eleitorado_totalizado": 1641442,
+    "comparecimento": 1363238
    },
    {
     "uf": "se",
-    "atualizado": "25/10/2026 20:01:31",
+    "atualizado": "25/10/2026 20:04:47",
     "finalizado": false,
     "votos": {
-     "22": 11512,
-     "13": 26538
+     "22": 12352,
+     "13": 29013
     },
-    "validos": 38050,
-    "brancos": 320,
-    "nulos": 901,
-    "total": 39271,
+    "validos": 41365,
+    "brancos": 351,
+    "nulos": 993,
+    "total": 42709,
     "secoes_totais": 5923,
-    "secoes_totalizadas": 159,
-    "pct_secoes": 2.684450447,
+    "secoes_totalizadas": 176,
+    "pct_secoes": 2.971467162,
     "eleitorado": 1740093,
-    "eleitorado_totalizado": 46108,
-    "comparecimento": 39271
+    "eleitorado_totalizado": 50244,
+    "comparecimento": 42709
    },
    {
     "uf": "sp",
-    "atualizado": "25/10/2026 20:01:43",
+    "atualizado": "25/10/2026 20:06:11",
     "finalizado": false,
     "votos": {
-     "22": 626697,
-     "13": 399758
+     "22": 958689,
+     "13": 634080
     },
-    "validos": 1026455,
-    "brancos": 14587,
-    "nulos": 24640,
-    "total": 1065682,
+    "validos": 1592769,
+    "brancos": 23017,
+    "nulos": 38915,
+    "total": 1654701,
     "secoes_totais": 103656,
-    "secoes_totalizadas": 4281,
-    "pct_secoes": 4.130006946,
+    "secoes_totalizadas": 6601,
+    "pct_secoes": 6.368179363,
     "eleitorado": 34123591,
-    "eleitorado_totalizado": 1328163,
-    "comparecimento": 1065682
+    "eleitorado_totalizado": 2060660,
+    "comparecimento": 1654701
    },
    {
     "uf": "to",
-    "atualizado": "25/10/2026 20:01:36",
+    "atualizado": "25/10/2026 20:06:22",
     "finalizado": false,
     "votos": {
-     "22": 388167,
-     "13": 375321
+     "22": 405712,
+     "13": 386239
     },
-    "validos": 763488,
-    "brancos": 6692,
-    "nulos": 29948,
-    "total": 800128,
+    "validos": 791951,
+    "brancos": 6972,
+    "nulos": 30959,
+    "total": 829882,
     "secoes_totais": 4384,
-    "secoes_totalizadas": 3684,
-    "pct_secoes": 84.032846715,
+    "secoes_totalizadas": 3812,
+    "pct_secoes": 86.952554745,
     "eleitorado": 1182041,
-    "eleitorado_totalizado": 991683,
-    "comparecimento": 800128
+    "eleitorado_totalizado": 1028205,
+    "comparecimento": 829882
    },
    {
     "uf": "zz",
