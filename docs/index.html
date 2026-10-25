@@ -117,6 +117,13 @@
   .pilha { display:flex; gap:2px; height:16px; margin:4px 0 9px; }
   .pilha i { display:block; border-radius:3px; }
   .antes { font-size:12.5px; color:var(--text-secondary); }
+  .ano { margin:14px 0; }
+  .ano .rot { font-size:13px; font-weight:650; margin-bottom:6px; }
+  .ano .rot .peq { font-weight:400; color:var(--text-muted); font-size:11.5px;
+                   display:inline; }
+  .ano .vals { display:flex; justify-content:space-between; font-size:13px;
+               margin-top:5px; font-variant-numeric:tabular-nums; }
+  .ano .vals .dirx { text-align:right; }
   .dupla { display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
            margin-top:4px; }
   .bloco { border:1px solid var(--border); border-radius:9px; padding:13px 15px; }
@@ -143,6 +150,7 @@
   <header>
     <h1>Votação no exterior · 1º × 2º turno de 2026</h1>
     <div class="toolbar">
+      <button id="volta" style="display:none" title="Ver todo o exterior">↩ todo o exterior</button>
       <select id="cidade" aria-label="Recorte"></select>
       <button id="tema" title="Alternar tema">◐</button>
     </div>
@@ -174,6 +182,14 @@ const nf = n => (n ?? 0).toLocaleString("pt-BR");
 const sf = n => (n > 0 ? "+" : "") + nf(n);
 const dec = (v, c = 1) => v.toFixed(c).replace(".", ",");
 const pf = p => p == null ? "—" : (p > 0 ? "+" : "") + dec(p, 2) + "%";
+
+$("#volta").onclick = () => {
+  CIDADE = "__agg__";
+  const sel = $("#cidade"); if (sel) sel.value = CIDADE;
+  aplicaHash(true);
+  desenha();
+  scrollTo({ top: 0, behavior: "smooth" });
+};
 
 $("#tema").onclick = () => {
   const cur = document.documentElement.getAttribute("data-theme");
@@ -374,6 +390,63 @@ function blocosCrescimento(d, m, cores) {
   </div>`;
 }
 
+/* ---- 2º turno de 2022 contra o de 2026, no recorte atual ---- */
+function compara2022(d, cidades, m, cores) {
+  if (!BASE22) return "";
+  const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
+  const [a, b] = nums;
+  // só as cidades que já apuraram em 2026: somar 2022 inteiro contra um 2026
+  // parcial compararia conjuntos diferentes de cidades.
+  const apuradas = cidades.filter(c => c.metricas);
+  const comBase = apuradas.filter(c => BASE22[c.codigo]);
+  if (!comBase.length) {
+    return `<div class="card"><h2>Contra o 2º turno de 2022</h2>
+      <p class="note">${cidades.length === 1 ? "Esta cidade não existia"
+        : "Nenhuma destas cidades existia"} como seção eleitoral no 2º turno
+        de 2022, então não há com o que comparar.</p></div>`;
+  }
+  const t = { [a]: 0, [b]: 0, validos: 0, total: 0, secoes: 0 };
+  comBase.forEach(c => {
+    const x = BASE22[c.codigo];
+    t[a] += x[a]; t[b] += x[b];
+    t.validos += x.validos; t.total += x.total; t.secoes += x.secoes;
+  });
+  const p22a = 100 * t[a] / t.validos, p22b = 100 * t[b] / t.validos;
+  const p26a = m.candidatos[a].share_t2, p26b = m.candidatos[b].share_t2;
+  const faltam = apuradas.length - comBase.length;
+
+  const linha = (rot, nota, pa, pb, qa, qb) => `
+    <div class="ano">
+      <div class="rot">${rot}<span class="peq">${nota}</span></div>
+      <div class="pilha">
+        <i style="width:${pa}%;background:${cores[0]}"></i>
+        <i style="width:${pb}%;background:${cores[1]}"></i>
+      </div>
+      <div class="vals">
+        <span style="color:${cores[0]}"><b>${dec(pa)}%</b> ${qa}</span>
+        <span style="color:${cores[1]}" class="dirx">${qb} <b>${dec(pb)}%</b></span>
+      </div>
+    </div>`;
+
+  const sw = p26a - p22a;   // variação de Lula em pontos percentuais
+  return `<div class="card"><h2>Contra o 2º turno de 2022</h2>
+    <p class="note">Porcentagem sobre votos válidos, nas
+      <strong>${nf(comBase.length)} cidade${comBase.length > 1 ? "s" : ""}</strong>
+      que já apuraram em 2026 e existiam em 2022${
+        faltam ? ` · ${faltam} sem histórico de 2022, fora dos dois lados` : ""}.
+      Os dois lados cobrem as mesmas cidades.</p>
+    ${linha("2022", " · resultado final · Lula × Jair Bolsonaro",
+            p22a, p22b, "Lula", "Jair Bolsonaro")}
+    ${linha("2026", ` · parcial, ${dec(100 * m.secoes_ap / m.secoes_prev)}% das seções · Lula × Flávio Bolsonaro`,
+            p26a, p26b, d.candidatos[a].split(" ")[0], d.candidatos[b].split(" ")[0])}
+    <p class="antes" style="margin-top:12px"><strong>Lula
+      ${sw >= 0 ? "subiu" : "caiu"} ${dec(Math.abs(sw), 2)} pontos percentuais</strong>
+      em relação a 2022 neste recorte. Atenção: 2022 é o resultado fechado e
+      2026 ainda é parcial, e o candidato do PL mudou — a comparação indica
+      tendência, não equivalência.</p>
+  </div>`;
+}
+
 function confronto(d, m, cores) {
   const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
   const [a, b] = nums;
@@ -566,7 +639,16 @@ function linhaTempo(hist, d, cores) {
       ${eixo}${linhas}${alvos}</svg></div></div>`;
 }
 
-let DADOS = null, CIDADE = null, MUNDO = null, HIST = [], MODO = 'cidade';
+let DADOS = null, CIDADE = null, MUNDO = null, HIST = [], BASE22 = null,
+    MODO = 'cidade';
+
+function aplicaHash(push) {
+  const alvo = CIDADE === "__agg__" ? "" : "#" + encodeURIComponent(CIDADE);
+  if (location.hash !== alvo) {
+    if (push) history.pushState(null, "", alvo || location.pathname);
+    else history.replaceState(null, "", alvo || location.pathname);
+  }
+}
 
 function desenha() {
   const d = DADOS, nums = Object.keys(d.candidatos).sort((a, b) => a - b);
@@ -575,8 +657,9 @@ function desenha() {
   const cores = [cor("--series-1"), cor("--series-2")];
   const nomes = nums.map(n => d.candidatos[n]);
 
-  let c, contexto;
+  let c, contexto, doRecorte;
   if (CIDADE === "__agg__") {
+    doRecorte = d.cidades;
     c = { nome: "Todo o exterior", ...somaCidades(d.cidades, nums) };
     const paises = new Set(d.cidades.filter(x => x.secoes_apuradas_t2).map(x => x.pais));
     contexto = `${d.cidades.filter(x => x.secoes_apuradas_t2).length} de `
@@ -586,6 +669,7 @@ function desenha() {
     // mais de um país "político" (a França do mapa inclui a Guiana Francesa)
     const alvo = CIDADE.slice(5);
     const cs = d.cidades.filter(x => x.pais_mapa === alvo);
+    doRecorte = cs;
     const nomes_ = [...new Set(cs.map(x => x.pais))];
     c = { nome: nomes_.join(" · "), ...somaCidades(cs, nums) };
     contexto = `${cs.length} cidade${cs.length > 1 ? "s" : ""}: `
@@ -593,11 +677,13 @@ function desenha() {
   } else if (CIDADE.startsWith("pais:")) {
     const pais = CIDADE.slice(5);
     const cs = d.cidades.filter(x => (x.pais || "—") === pais);
+    doRecorte = cs;
     c = { nome: pais, ...somaCidades(cs, nums) };
     contexto = `${cs.length} cidade${cs.length > 1 ? "s" : ""}: `
       + cs.map(x => x.nome).join(" · ");
   } else {
     c = d.cidades.find(x => x.codigo === CIDADE);
+    doRecorte = [c];
     contexto = c.pais || "";
   }
 
@@ -631,6 +717,8 @@ function desenha() {
   }
   $("#status").innerHTML = "";
   const m = c.metricas;
+  m.secoes_ap = c.secoes_apuradas_t2;
+  m.secoes_prev = c.secoes_previstas;
 
   const lidera = m.margem_t2 >= 0 ? nums[0] : nums[1];
   const vant2 = Math.abs(m.margem_t2), vant1 = Math.abs(m.margem_t1);
@@ -697,6 +785,7 @@ function desenha() {
     </tr></tfoot></table></div></div>` : "";
 
   $("#conteudo").innerHTML = tiles + confronto(d, m, cores)
+    + compara2022(d, doRecorte, m, cores)
     + linhaTempo(HIST, d, cores) + `
     <div class="card"><h2>Votos por turno</h2>
       <p class="note">Mesmo eixo para os dois turnos; apenas seções comparáveis.</p>
@@ -710,6 +799,7 @@ function desenha() {
         ? tabelaRanking(d, cores) : tabela);
 
   ligaCliques();
+  aplicaHash(false);
 }
 
 function ligaCliques() {
@@ -719,12 +809,15 @@ function ligaCliques() {
       mostraTip(e, decodeURIComponent(el.dataset.tip)));
     el.addEventListener("mouseleave", escondeTip);
   });
+  const volta = $("#volta");
+  if (volta) volta.style.display = CIDADE === "__agg__" ? "none" : "";
   document.querySelectorAll("[data-modo]").forEach(el => {
     el.addEventListener("click", () => { MODO = el.dataset.modo; desenha(); });
   });
   document.querySelectorAll("[data-cidade]").forEach(el => {
     el.addEventListener("click", () => {
       CIDADE = el.dataset.cidade;
+      aplicaHash(true);
       const sel = $("#cidade");
       sel.value = CIDADE;
       if (sel.value !== CIDADE) sel.selectedIndex = -1;   // recorte só do mapa
@@ -742,9 +835,11 @@ Promise.all([
   fetch("dados/mundo.json").then(r => r.ok ? r.json() : null).catch(() => null),
   fetch("dados/historico.jsonl", { cache: "no-store" })
     .then(r => r.ok ? r.text() : "").catch(() => ""),
+  fetch("dados/turno2_2022.json").then(r => r.ok ? r.json() : null)
+    .catch(() => null),
 ])
-  .then(([d, mundo, hist]) => {
-    DADOS = d; MUNDO = mundo;
+  .then(([d, mundo, hist, base22]) => {
+    DADOS = d; MUNDO = mundo; BASE22 = base22;
     HIST = hist.split("\n").filter(l => l.trim())
       .map(l => { try { return JSON.parse(l); } catch { return null; } })
       .filter(Boolean)
@@ -768,7 +863,15 @@ Promise.all([
     sel.style.display = varias ? "" : "none";
     CIDADE = varias ? "__agg__" : d.cidades[0].codigo;
     sel.value = CIDADE;
-    sel.onchange = () => { CIDADE = sel.value; desenha(); };
+    sel.onchange = () => { CIDADE = sel.value; aplicaHash(true); desenha(); };
+    addEventListener("popstate", () => {
+      CIDADE = location.hash ? decodeURIComponent(location.hash.slice(1)) : "__agg__";
+      const s2 = $("#cidade"); s2.value = CIDADE;
+      if (s2.value !== CIDADE) s2.selectedIndex = -1;
+      desenha();
+    });
+    const doHash = location.hash ? decodeURIComponent(location.hash.slice(1)) : "";
+    if (doHash) CIDADE = doHash;
     desenha();
   })
   .catch(e => {

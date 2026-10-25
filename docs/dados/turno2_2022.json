@@ -1,0 +1,1402 @@
+{
+ "29173": {
+  "13": 2,
+  "22": 13,
+  "brancos": 0,
+  "nome": "KATMANDU",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 15,
+  "validos": 15
+ },
+ "29254": {
+  "13": 26,
+  "22": 15,
+  "brancos": 2,
+  "nome": "ABIDJÃ",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 43,
+  "validos": 41
+ },
+ "29262": {
+  "13": 404,
+  "22": 593,
+  "brancos": 26,
+  "nome": "ABU DHABI",
+  "nulos": 27,
+  "secoes": 4,
+  "total": 1050,
+  "validos": 997
+ },
+ "29270": {
+  "13": 14,
+  "22": 4,
+  "brancos": 0,
+  "nome": "ACCRA",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 18,
+  "validos": 18
+ },
+ "29289": {
+  "13": 407,
+  "22": 125,
+  "brancos": 33,
+  "nome": "AMÃ",
+  "nulos": 21,
+  "secoes": 2,
+  "total": 586,
+  "validos": 532
+ },
+ "29297": {
+  "13": 20,
+  "22": 8,
+  "brancos": 0,
+  "nome": "ANCARA",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 28,
+  "validos": 28
+ },
+ "29319": {
+  "13": 125,
+  "22": 292,
+  "brancos": 6,
+  "nome": "ARTIGAS",
+  "nulos": 5,
+  "secoes": 1,
+  "total": 428,
+  "validos": 417
+ },
+ "29327": {
+  "13": 317,
+  "22": 920,
+  "brancos": 32,
+  "nome": "ASSUNÇÃO",
+  "nulos": 20,
+  "secoes": 3,
+  "total": 1289,
+  "validos": 1237
+ },
+ "29335": {
+  "13": 193,
+  "22": 242,
+  "brancos": 15,
+  "nome": "ATENAS",
+  "nulos": 8,
+  "secoes": 2,
+  "total": 458,
+  "validos": 435
+ },
+ "29343": {
+  "13": 47,
+  "22": 50,
+  "brancos": 3,
+  "nome": "BANGKOK",
+  "nulos": 3,
+  "secoes": 1,
+  "total": 103,
+  "validos": 97
+ },
+ "29351": {
+  "13": 3246,
+  "22": 1053,
+  "brancos": 75,
+  "nome": "BARCELONA",
+  "nulos": 91,
+  "secoes": 14,
+  "total": 4465,
+  "validos": 4299
+ },
+ "29360": {
+  "13": 1591,
+  "22": 1099,
+  "brancos": 76,
+  "nome": "BEIRUTE",
+  "nulos": 59,
+  "secoes": 9,
+  "total": 2825,
+  "validos": 2690
+ },
+ "29378": {
+  "13": 36,
+  "22": 12,
+  "brancos": 0,
+  "nome": "BELGRADO",
+  "nulos": 2,
+  "secoes": 1,
+  "total": 50,
+  "validos": 48
+ },
+ "29386": {
+  "13": 6206,
+  "22": 1011,
+  "brancos": 68,
+  "nome": "BERLIM",
+  "nulos": 122,
+  "secoes": 17,
+  "total": 7407,
+  "validos": 7217
+ },
+ "29394": {
+  "13": 20,
+  "22": 25,
+  "brancos": 0,
+  "nome": "BISSAU",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 45,
+  "validos": 45
+ },
+ "29408": {
+  "13": 380,
+  "22": 293,
+  "brancos": 31,
+  "nome": "BOGOTÁ",
+  "nulos": 11,
+  "secoes": 2,
+  "total": 715,
+  "validos": 673
+ },
+ "29416": {
+  "13": 3508,
+  "22": 10960,
+  "brancos": 175,
+  "nome": "BOSTON",
+  "nulos": 174,
+  "secoes": 51,
+  "total": 14817,
+  "validos": 14468
+ },
+ "29432": {
+  "13": 2115,
+  "22": 1444,
+  "brancos": 58,
+  "nome": "BRUXELAS",
+  "nulos": 72,
+  "secoes": 9,
+  "total": 3689,
+  "validos": 3559
+ },
+ "29440": {
+  "13": 38,
+  "22": 19,
+  "brancos": 0,
+  "nome": "BUCARESTE",
+  "nulos": 3,
+  "secoes": 1,
+  "total": 60,
+  "validos": 57
+ },
+ "29459": {
+  "13": 481,
+  "22": 83,
+  "brancos": 8,
+  "nome": "BUDAPESTE",
+  "nulos": 7,
+  "secoes": 2,
+  "total": 579,
+  "validos": 564
+ },
+ "29467": {
+  "13": 4373,
+  "22": 2240,
+  "brancos": 78,
+  "nome": "BUENOS AIRES",
+  "nulos": 79,
+  "secoes": 15,
+  "total": 6770,
+  "validos": 6613
+ },
+ "29475": {
+  "13": 598,
+  "22": 722,
+  "brancos": 33,
+  "nome": "CAIENA",
+  "nulos": 26,
+  "secoes": 5,
+  "total": 1379,
+  "validos": 1320
+ },
+ "29483": {
+  "13": 46,
+  "22": 23,
+  "brancos": 2,
+  "nome": "CAIRO",
+  "nulos": 2,
+  "secoes": 1,
+  "total": 73,
+  "validos": 69
+ },
+ "29491": {
+  "13": 1264,
+  "22": 709,
+  "brancos": 44,
+  "nome": "CAMBERRA",
+  "nulos": 71,
+  "secoes": 7,
+  "total": 2088,
+  "validos": 1973
+ },
+ "29505": {
+  "13": 0,
+  "22": 6,
+  "brancos": 0,
+  "nome": "CARACAS",
+  "nulos": 0,
+  "secoes": 2,
+  "total": 6,
+  "validos": 6
+ },
+ "29513": {
+  "13": 1586,
+  "22": 1251,
+  "brancos": 54,
+  "nome": "CHICAGO",
+  "nulos": 60,
+  "secoes": 14,
+  "total": 2951,
+  "validos": 2837
+ },
+ "29530": {
+  "13": 100,
+  "22": 62,
+  "brancos": 1,
+  "nome": "CIDADE DO CABO",
+  "nulos": 8,
+  "secoes": 1,
+  "total": 171,
+  "validos": 162
+ },
+ "29548": {
+  "13": 230,
+  "22": 131,
+  "brancos": 15,
+  "nome": "SINGAPURA",
+  "nulos": 26,
+  "secoes": 2,
+  "total": 402,
+  "validos": 361
+ },
+ "29556": {
+  "13": 238,
+  "22": 2719,
+  "brancos": 25,
+  "nome": "CIUDAD DEL ESTE",
+  "nulos": 24,
+  "secoes": 7,
+  "total": 3006,
+  "validos": 2957
+ },
+ "29564": {
+  "13": 0,
+  "22": 0,
+  "brancos": 0,
+  "nome": "CIUDAD GUAYANA",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 0,
+  "validos": 0
+ },
+ "29572": {
+  "13": 101,
+  "22": 169,
+  "brancos": 2,
+  "nome": "COCHABAMBA",
+  "nulos": 2,
+  "secoes": 1,
+  "total": 274,
+  "validos": 270
+ },
+ "29580": {
+  "13": 3,
+  "22": 32,
+  "brancos": 0,
+  "nome": "CONCEPCIÓN",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 35,
+  "validos": 35
+ },
+ "29599": {
+  "13": 1047,
+  "22": 198,
+  "brancos": 29,
+  "nome": "COPENHAGUE",
+  "nulos": 32,
+  "secoes": 4,
+  "total": 1306,
+  "validos": 1245
+ },
+ "29602": {
+  "13": 180,
+  "22": 161,
+  "brancos": 6,
+  "nome": "CÓRDOBA",
+  "nulos": 8,
+  "secoes": 2,
+  "total": 355,
+  "validos": 341
+ },
+ "29610": {
+  "13": 39,
+  "22": 28,
+  "brancos": 0,
+  "nome": "DACAR",
+  "nulos": 1,
+  "secoes": 1,
+  "total": 68,
+  "validos": 67
+ },
+ "29645": {
+  "13": 22,
+  "22": 37,
+  "brancos": 3,
+  "nome": "DÍLI",
+  "nulos": 1,
+  "secoes": 1,
+  "total": 63,
+  "validos": 59
+ },
+ "29653": {
+  "13": 151,
+  "22": 221,
+  "brancos": 5,
+  "nome": "DOHA",
+  "nulos": 6,
+  "secoes": 1,
+  "total": 383,
+  "validos": 372
+ },
+ "29661": {
+  "13": 6023,
+  "22": 1339,
+  "brancos": 52,
+  "nome": "DUBLIN",
+  "nulos": 78,
+  "secoes": 16,
+  "total": 7492,
+  "validos": 7362
+ },
+ "29670": {
+  "13": 16,
+  "22": 121,
+  "brancos": 2,
+  "nome": "ENCARNACIÓN",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 139,
+  "validos": 137
+ },
+ "29688": {
+  "13": 1785,
+  "22": 542,
+  "brancos": 64,
+  "nome": "ESTOCOLMO",
+  "nulos": 41,
+  "secoes": 6,
+  "total": 2432,
+  "validos": 2327
+ },
+ "29696": {
+  "13": 3647,
+  "22": 1453,
+  "brancos": 70,
+  "nome": "FRANKFURT",
+  "nulos": 98,
+  "secoes": 18,
+  "total": 5268,
+  "validos": 5100
+ },
+ "29700": {
+  "13": 2320,
+  "22": 2279,
+  "brancos": 95,
+  "nome": "GENEBRA",
+  "nulos": 86,
+  "secoes": 14,
+  "total": 4780,
+  "validos": 4599
+ },
+ "29718": {
+  "13": 8,
+  "22": 58,
+  "brancos": 1,
+  "nome": "GEORGETOWN",
+  "nulos": 1,
+  "secoes": 1,
+  "total": 68,
+  "validos": 66
+ },
+ "29742": {
+  "13": 841,
+  "22": 4916,
+  "brancos": 224,
+  "nome": "HAMAMATSU",
+  "nulos": 177,
+  "secoes": 16,
+  "total": 6158,
+  "validos": 5757
+ },
+ "29750": {
+  "13": 13,
+  "22": 6,
+  "brancos": 0,
+  "nome": "HANÓI",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 19,
+  "validos": 19
+ },
+ "29777": {
+  "13": 32,
+  "22": 0,
+  "brancos": 0,
+  "nome": "HAVANA",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 32,
+  "validos": 32
+ },
+ "29785": {
+  "13": 444,
+  "22": 163,
+  "brancos": 18,
+  "nome": "HELSINQUE",
+  "nulos": 9,
+  "secoes": 2,
+  "total": 634,
+  "validos": 607
+ },
+ "29793": {
+  "13": 80,
+  "22": 95,
+  "brancos": 11,
+  "nome": "HONG KONG",
+  "nulos": 8,
+  "secoes": 1,
+  "total": 194,
+  "validos": 175
+ },
+ "29807": {
+  "13": 1458,
+  "22": 2748,
+  "brancos": 95,
+  "nome": "HOUSTON",
+  "nulos": 112,
+  "secoes": 21,
+  "total": 4413,
+  "validos": 4206
+ },
+ "29840": {
+  "13": 15,
+  "22": 32,
+  "brancos": 0,
+  "nome": "JACARTA",
+  "nulos": 1,
+  "secoes": 1,
+  "total": 48,
+  "validos": 47
+ },
+ "29874": {
+  "13": 1,
+  "22": 9,
+  "brancos": 0,
+  "nome": "KINSHASA",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 10,
+  "validos": 10
+ },
+ "29882": {
+  "13": 10,
+  "22": 29,
+  "brancos": 0,
+  "nome": "KUAITE",
+  "nulos": 5,
+  "secoes": 1,
+  "total": 44,
+  "validos": 39
+ },
+ "29890": {
+  "13": 32,
+  "22": 26,
+  "brancos": 0,
+  "nome": "KUALA LUMPUR",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 58,
+  "validos": 58
+ },
+ "29904": {
+  "13": 74,
+  "22": 126,
+  "brancos": 5,
+  "nome": "LA PAZ",
+  "nulos": 8,
+  "secoes": 1,
+  "total": 213,
+  "validos": 200
+ },
+ "29912": {
+  "13": 21,
+  "22": 4,
+  "brancos": 0,
+  "nome": "LAGOS",
+  "nulos": 1,
+  "secoes": 1,
+  "total": 26,
+  "validos": 25
+ },
+ "29947": {
+  "13": 314,
+  "22": 430,
+  "brancos": 17,
+  "nome": "LIMA",
+  "nulos": 10,
+  "secoes": 2,
+  "total": 771,
+  "validos": 744
+ },
+ "29955": {
+  "13": 12872,
+  "22": 7085,
+  "brancos": 262,
+  "nome": "LISBOA",
+  "nulos": 286,
+  "secoes": 58,
+  "total": 20505,
+  "validos": 19957
+ },
+ "29971": {
+  "13": 9064,
+  "22": 6004,
+  "brancos": 179,
+  "nome": "LONDRES",
+  "nulos": 212,
+  "secoes": 44,
+  "total": 15459,
+  "validos": 15068
+ },
+ "29980": {
+  "13": 1955,
+  "22": 2014,
+  "brancos": 76,
+  "nome": "LOS ANGELES",
+  "nulos": 88,
+  "secoes": 18,
+  "total": 4133,
+  "validos": 3969
+ },
+ "29998": {
+  "13": 124,
+  "22": 99,
+  "brancos": 2,
+  "nome": "LUANDA",
+  "nulos": 5,
+  "secoes": 1,
+  "total": 230,
+  "validos": 223
+ },
+ "30066": {
+  "13": 3078,
+  "22": 2410,
+  "brancos": 121,
+  "nome": "MADRI",
+  "nulos": 160,
+  "secoes": 26,
+  "total": 5769,
+  "validos": 5488
+ },
+ "30074": {
+  "13": 34,
+  "22": 38,
+  "brancos": 1,
+  "nome": "MANÁGUA",
+  "nulos": 4,
+  "secoes": 1,
+  "total": 77,
+  "validos": 72
+ },
+ "30082": {
+  "13": 22,
+  "22": 34,
+  "brancos": 0,
+  "nome": "MANILA",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 56,
+  "validos": 56
+ },
+ "30090": {
+  "13": 140,
+  "22": 166,
+  "brancos": 7,
+  "nome": "MAPUTO",
+  "nulos": 13,
+  "secoes": 1,
+  "total": 326,
+  "validos": 306
+ },
+ "30104": {
+  "13": 633,
+  "22": 696,
+  "brancos": 18,
+  "nome": "MEXICO",
+  "nulos": 38,
+  "secoes": 6,
+  "total": 1385,
+  "validos": 1329
+ },
+ "30112": {
+  "13": 3058,
+  "22": 13187,
+  "brancos": 228,
+  "nome": "MIAMI",
+  "nulos": 259,
+  "secoes": 56,
+  "total": 16732,
+  "validos": 16245
+ },
+ "30120": {
+  "13": 3371,
+  "22": 3044,
+  "brancos": 111,
+  "nome": "MILÃO",
+  "nulos": 113,
+  "secoes": 31,
+  "total": 6639,
+  "validos": 6415
+ },
+ "30147": {
+  "13": 745,
+  "22": 540,
+  "brancos": 73,
+  "nome": "MONTEVIDÉU",
+  "nulos": 42,
+  "secoes": 4,
+  "total": 1400,
+  "validos": 1285
+ },
+ "30155": {
+  "13": 3871,
+  "22": 1741,
+  "brancos": 102,
+  "nome": "MONTREAL",
+  "nulos": 182,
+  "secoes": 13,
+  "total": 5896,
+  "validos": 5612
+ },
+ "30163": {
+  "13": 46,
+  "22": 23,
+  "brancos": 0,
+  "nome": "MOSCOU",
+  "nulos": 1,
+  "secoes": 1,
+  "total": 70,
+  "validos": 69
+ },
+ "30171": {
+  "13": 11,
+  "22": 4,
+  "brancos": 0,
+  "nome": "MUMBAI",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 15,
+  "validos": 15
+ },
+ "30180": {
+  "13": 3534,
+  "22": 1559,
+  "brancos": 85,
+  "nome": "MUNIQUE",
+  "nulos": 112,
+  "secoes": 17,
+  "total": 5290,
+  "validos": 5093
+ },
+ "30198": {
+  "13": 2117,
+  "22": 12704,
+  "brancos": 564,
+  "nome": "NAGÓIA",
+  "nulos": 423,
+  "secoes": 48,
+  "total": 15808,
+  "validos": 14821
+ },
+ "30201": {
+  "13": 35,
+  "22": 25,
+  "brancos": 0,
+  "nome": "NAIRÓBI",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 60,
+  "validos": 60
+ },
+ "30210": {
+  "13": 23,
+  "22": 14,
+  "brancos": 1,
+  "nome": "NOVA DELHI",
+  "nulos": 1,
+  "secoes": 1,
+  "total": 39,
+  "validos": 37
+ },
+ "30228": {
+  "13": 5331,
+  "22": 6068,
+  "brancos": 191,
+  "nome": "NOVA YORK",
+  "nulos": 203,
+  "secoes": 39,
+  "total": 11793,
+  "validos": 11399
+ },
+ "30244": {
+  "13": 628,
+  "22": 197,
+  "brancos": 16,
+  "nome": "OSLO",
+  "nulos": 21,
+  "secoes": 3,
+  "total": 862,
+  "validos": 825
+ },
+ "30252": {
+  "13": 680,
+  "22": 381,
+  "brancos": 46,
+  "nome": "OTTAWA",
+  "nulos": 46,
+  "secoes": 3,
+  "total": 1153,
+  "validos": 1061
+ },
+ "30260": {
+  "13": 252,
+  "22": 392,
+  "brancos": 15,
+  "nome": "PANAMA",
+  "nulos": 15,
+  "secoes": 2,
+  "total": 674,
+  "validos": 644
+ },
+ "30279": {
+  "13": 131,
+  "22": 354,
+  "brancos": 7,
+  "nome": "PARAMARIBO",
+  "nulos": 10,
+  "secoes": 2,
+  "total": 502,
+  "validos": 485
+ },
+ "30287": {
+  "13": 7885,
+  "22": 1622,
+  "brancos": 90,
+  "nome": "PARIS",
+  "nulos": 99,
+  "secoes": 29,
+  "total": 9696,
+  "validos": 9507
+ },
+ "30309": {
+  "13": 98,
+  "22": 260,
+  "brancos": 11,
+  "nome": "PEDRO JUAN CABALLERO",
+  "nulos": 8,
+  "secoes": 1,
+  "total": 377,
+  "validos": 358
+ },
+ "30317": {
+  "13": 47,
+  "22": 23,
+  "brancos": 2,
+  "nome": "PEQUIM",
+  "nulos": 3,
+  "secoes": 1,
+  "total": 75,
+  "validos": 70
+ },
+ "30325": {
+  "13": 16,
+  "22": 15,
+  "brancos": 1,
+  "nome": "PORT OF SPAIN",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 32,
+  "validos": 31
+ },
+ "30333": {
+  "13": 2,
+  "22": 3,
+  "brancos": 0,
+  "nome": "PORTO PRÍNCIPE",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 5,
+  "validos": 5
+ },
+ "30341": {
+  "13": 9450,
+  "22": 5134,
+  "brancos": 301,
+  "nome": "PORTO",
+  "nulos": 239,
+  "secoes": 39,
+  "total": 15124,
+  "validos": 14584
+ },
+ "30350": {
+  "13": 286,
+  "22": 73,
+  "brancos": 12,
+  "nome": "PRAGA",
+  "nulos": 17,
+  "secoes": 1,
+  "total": 388,
+  "validos": 359
+ },
+ "30368": {
+  "13": 40,
+  "22": 22,
+  "brancos": 4,
+  "nome": "PRAIA",
+  "nulos": 1,
+  "secoes": 1,
+  "total": 67,
+  "validos": 62
+ },
+ "30376": {
+  "13": 83,
+  "22": 207,
+  "brancos": 10,
+  "nome": "PRETÓRIA",
+  "nulos": 4,
+  "secoes": 1,
+  "total": 304,
+  "validos": 290
+ },
+ "30392": {
+  "13": 115,
+  "22": 255,
+  "brancos": 10,
+  "nome": "QUITO",
+  "nulos": 13,
+  "secoes": 2,
+  "total": 393,
+  "validos": 370
+ },
+ "30406": {
+  "13": 38,
+  "22": 8,
+  "brancos": 0,
+  "nome": "RABAT",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 46,
+  "validos": 46
+ },
+ "30414": {
+  "13": 584,
+  "22": 61,
+  "brancos": 9,
+  "nome": "RAMALLAH",
+  "nulos": 22,
+  "secoes": 2,
+  "total": 676,
+  "validos": 645
+ },
+ "30422": {
+  "13": 38,
+  "22": 18,
+  "brancos": 0,
+  "nome": "RIADE",
+  "nulos": 2,
+  "secoes": 1,
+  "total": 58,
+  "validos": 56
+ },
+ "30430": {
+  "13": 13,
+  "22": 9,
+  "brancos": 1,
+  "nome": "RIO BRANCO",
+  "nulos": 2,
+  "secoes": 1,
+  "total": 25,
+  "validos": 22
+ },
+ "30449": {
+  "13": 2449,
+  "22": 1648,
+  "brancos": 100,
+  "nome": "ROMA",
+  "nulos": 81,
+  "secoes": 20,
+  "total": 4278,
+  "validos": 4097
+ },
+ "30457": {
+  "13": 4511,
+  "22": 1242,
+  "brancos": 80,
+  "nome": "AMSTERDÃ",
+  "nulos": 118,
+  "secoes": 13,
+  "total": 5951,
+  "validos": 5753
+ },
+ "30465": {
+  "13": 29,
+  "22": 549,
+  "brancos": 4,
+  "nome": "SALTO DEL GUAIRÁ",
+  "nulos": 6,
+  "secoes": 1,
+  "total": 588,
+  "validos": 578
+ },
+ "30473": {
+  "13": 138,
+  "22": 870,
+  "brancos": 6,
+  "nome": "SANTA CRUZ DE LA SIERRA",
+  "nulos": 8,
+  "secoes": 4,
+  "total": 1022,
+  "validos": 1008
+ },
+ "30481": {
+  "13": 905,
+  "22": 922,
+  "brancos": 55,
+  "nome": "SANTIAGO",
+  "nulos": 48,
+  "secoes": 5,
+  "total": 1930,
+  "validos": 1827
+ },
+ "30490": {
+  "13": 80,
+  "22": 138,
+  "brancos": 4,
+  "nome": "SÃO DOMINGOS",
+  "nulos": 4,
+  "secoes": 1,
+  "total": 226,
+  "validos": 218
+ },
+ "30503": {
+  "13": 2447,
+  "22": 1568,
+  "brancos": 66,
+  "nome": "SÃO FRANCISCO",
+  "nulos": 84,
+  "secoes": 17,
+  "total": 4165,
+  "validos": 4015
+ },
+ "30511": {
+  "13": 166,
+  "22": 200,
+  "brancos": 7,
+  "nome": "SÃO JOSÉ",
+  "nulos": 13,
+  "secoes": 1,
+  "total": 386,
+  "validos": 366
+ },
+ "30520": {
+  "13": 27,
+  "22": 44,
+  "brancos": 0,
+  "nome": "SÃO SALVADOR",
+  "nulos": 1,
+  "secoes": 1,
+  "total": 72,
+  "validos": 71
+ },
+ "30538": {
+  "13": 126,
+  "22": 70,
+  "brancos": 9,
+  "nome": "SEUL",
+  "nulos": 8,
+  "secoes": 1,
+  "total": 213,
+  "validos": 196
+ },
+ "30546": {
+  "13": 24,
+  "22": 7,
+  "brancos": 0,
+  "nome": "SÓFIA",
+  "nulos": 3,
+  "secoes": 1,
+  "total": 34,
+  "validos": 31
+ },
+ "30562": {
+  "13": 3057,
+  "22": 1863,
+  "brancos": 97,
+  "nome": "SYDNEY",
+  "nulos": 146,
+  "secoes": 15,
+  "total": 5163,
+  "validos": 4920
+ },
+ "30570": {
+  "13": 101,
+  "22": 132,
+  "brancos": 7,
+  "nome": "TAIPÉ",
+  "nulos": 5,
+  "secoes": 1,
+  "total": 245,
+  "validos": 233
+ },
+ "30597": {
+  "13": 8,
+  "22": 9,
+  "brancos": 0,
+  "nome": "TEERÃ",
+  "nulos": 1,
+  "secoes": 1,
+  "total": 18,
+  "validos": 17
+ },
+ "30600": {
+  "13": 29,
+  "22": 47,
+  "brancos": 2,
+  "nome": "TEGUCIGALPA",
+  "nulos": 1,
+  "secoes": 1,
+  "total": 79,
+  "validos": 76
+ },
+ "30619": {
+  "13": 353,
+  "22": 405,
+  "brancos": 33,
+  "nome": "TEL AVIV",
+  "nulos": 23,
+  "secoes": 4,
+  "total": 814,
+  "validos": 758
+ },
+ "30627": {
+  "13": 2454,
+  "22": 10020,
+  "brancos": 618,
+  "nome": "TÓQUIO",
+  "nulos": 401,
+  "secoes": 40,
+  "total": 13493,
+  "validos": 12474
+ },
+ "30635": {
+  "13": 5188,
+  "22": 4111,
+  "brancos": 166,
+  "nome": "TORONTO",
+  "nulos": 239,
+  "secoes": 23,
+  "total": 9704,
+  "validos": 9299
+ },
+ "30651": {
+  "13": 27,
+  "22": 61,
+  "brancos": 1,
+  "nome": "CANTÃO",
+  "nulos": 3,
+  "secoes": 1,
+  "total": 92,
+  "validos": 88
+ },
+ "30708": {
+  "13": 8,
+  "22": 4,
+  "brancos": 0,
+  "nome": "TUNIS",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 12,
+  "validos": 12
+ },
+ "30740": {
+  "13": 212,
+  "22": 68,
+  "brancos": 3,
+  "nome": "VARSÓVIA",
+  "nulos": 5,
+  "secoes": 1,
+  "total": 288,
+  "validos": 280
+ },
+ "30767": {
+  "13": 960,
+  "22": 379,
+  "brancos": 33,
+  "nome": "VIENA",
+  "nulos": 35,
+  "secoes": 4,
+  "total": 1407,
+  "validos": 1339
+ },
+ "30783": {
+  "13": 2552,
+  "22": 2494,
+  "brancos": 98,
+  "nome": "WASHINGTON",
+  "nulos": 84,
+  "secoes": 20,
+  "total": 5228,
+  "validos": 5046
+ },
+ "30805": {
+  "13": 389,
+  "22": 164,
+  "brancos": 7,
+  "nome": "WELLINGTON",
+  "nulos": 9,
+  "secoes": 4,
+  "total": 569,
+  "validos": 553
+ },
+ "30821": {
+  "13": 4,
+  "22": 31,
+  "brancos": 0,
+  "nome": "WINDHOEK",
+  "nulos": 1,
+  "secoes": 1,
+  "total": 36,
+  "validos": 35
+ },
+ "30848": {
+  "13": 125,
+  "22": 62,
+  "brancos": 3,
+  "nome": "XANGAI",
+  "nulos": 4,
+  "secoes": 1,
+  "total": 194,
+  "validos": 187
+ },
+ "30864": {
+  "13": 3189,
+  "22": 2762,
+  "brancos": 125,
+  "nome": "ZURIQUE",
+  "nulos": 149,
+  "secoes": 19,
+  "total": 6225,
+  "validos": 5951
+ },
+ "30902": {
+  "13": 525,
+  "22": 933,
+  "brancos": 23,
+  "nome": "HARTFORD",
+  "nulos": 21,
+  "secoes": 6,
+  "total": 1502,
+  "validos": 1458
+ },
+ "30961": {
+  "13": 934,
+  "22": 862,
+  "brancos": 34,
+  "nome": "FARO",
+  "nulos": 42,
+  "secoes": 7,
+  "total": 1872,
+  "validos": 1796
+ },
+ "38962": {
+  "13": 6,
+  "22": 2,
+  "brancos": 0,
+  "nome": "DAR ES SALAAM",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 8,
+  "validos": 8
+ },
+ "39004": {
+  "13": 56,
+  "22": 88,
+  "brancos": 2,
+  "nome": "MENDOZA",
+  "nulos": 4,
+  "secoes": 1,
+  "total": 150,
+  "validos": 144
+ },
+ "39020": {
+  "13": 26,
+  "22": 15,
+  "brancos": 0,
+  "nome": "ZAGREB",
+  "nulos": 1,
+  "secoes": 1,
+  "total": 42,
+  "validos": 41
+ },
+ "39063": {
+  "13": 3442,
+  "22": 1980,
+  "brancos": 117,
+  "nome": "VANCOUVER",
+  "nulos": 181,
+  "secoes": 14,
+  "total": 5720,
+  "validos": 5422
+ },
+ "39080": {
+  "13": 1180,
+  "22": 3373,
+  "brancos": 76,
+  "nome": "ATLANTA",
+  "nulos": 66,
+  "secoes": 18,
+  "total": 4695,
+  "validos": 4553
+ },
+ "39102": {
+  "13": 14,
+  "22": 32,
+  "brancos": 0,
+  "nome": "MASCATE",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 46,
+  "validos": 46
+ },
+ "39160": {
+  "13": 52,
+  "22": 21,
+  "brancos": 2,
+  "nome": "LIUBLIANA",
+  "nulos": 4,
+  "secoes": 1,
+  "total": 79,
+  "validos": 73
+ },
+ "39209": {
+  "13": 43,
+  "22": 19,
+  "brancos": 4,
+  "nome": "BRATISLAVA",
+  "nulos": 6,
+  "secoes": 1,
+  "total": 72,
+  "validos": 62
+ },
+ "39306": {
+  "13": 76,
+  "22": 44,
+  "brancos": 1,
+  "nome": "ISTAMBUL",
+  "nulos": 1,
+  "secoes": 1,
+  "total": 122,
+  "validos": 120
+ },
+ "39322": {
+  "13": 15,
+  "22": 9,
+  "brancos": 1,
+  "nome": "NICOSIA",
+  "nulos": 4,
+  "secoes": 1,
+  "total": 29,
+  "validos": 24
+ },
+ "98000": {
+  "13": 35,
+  "22": 108,
+  "brancos": 0,
+  "nome": "GUATEMALA",
+  "nulos": 2,
+  "secoes": 1,
+  "total": 145,
+  "validos": 143
+ },
+ "99155": {
+  "13": 5,
+  "22": 0,
+  "brancos": 0,
+  "nome": "PUERTO IGUAZÚ",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 5,
+  "validos": 5
+ },
+ "99180": {
+  "13": 9,
+  "22": 14,
+  "brancos": 0,
+  "nome": "NASSAU",
+  "nulos": 2,
+  "secoes": 1,
+  "total": 25,
+  "validos": 23
+ },
+ "99287": {
+  "13": 13,
+  "22": 1,
+  "brancos": 0,
+  "nome": "LUSACA",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 14,
+  "validos": 14
+ },
+ "99317": {
+  "13": 156,
+  "22": 23,
+  "brancos": 1,
+  "nome": "TALIN",
+  "nulos": 11,
+  "secoes": 1,
+  "total": 191,
+  "validos": 179
+ },
+ "99430": {
+  "13": 11,
+  "22": 10,
+  "brancos": 0,
+  "nome": "KINGSTON-JAMAICA",
+  "nulos": 0,
+  "secoes": 1,
+  "total": 21,
+  "validos": 21
+ },
+ "99473": {
+  "13": 11,
+  "22": 25,
+  "brancos": 0,
+  "nome": "BAREIN",
+  "nulos": 4,
+  "secoes": 1,
+  "total": 40,
+  "validos": 36
+ }
+}

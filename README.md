@@ -14,7 +14,12 @@ Cobre as **186 cidades** do exterior, em 134 países. Traz:
 - para cada recorte: votos nos dois turnos, crescimento individual (absoluto e
   percentual), diferença entre os crescimentos, margem e sua variação, total de
   votos e seu crescimento;
+- **comparação com o 2º turno de 2022** (Lula × Jair Bolsonaro), restrita às
+  mesmas cidades dos dois lados;
 - **detalhamento por seção** ao abrir uma cidade.
+
+Clicar num país abre uma página só daquele recorte, com URL própria
+(`.../#mapa:Japan`) que pode ser compartilhada ou recarregada.
 
 ## Como funciona
 
@@ -124,6 +129,10 @@ Terminada a apuração, desligue o cron para não gastar minutos de Actions.
   total de seções previstas sem ninguém notar.
 - O gráfico de evolução depende do histórico acumulado: com uma única leitura
   ele não aparece. A cadência é a do cron (15 min), não minuto a minuto.
+- A comparação com 2022 usa só as cidades que já apuraram em 2026 **e**
+  existiam em 2022, nos dois lados — somar 2022 inteiro contra um 2026 parcial
+  compararia conjuntos diferentes. Ainda assim 2022 é resultado fechado e 2026
+  é parcial, e o candidato do PL mudou: é tendência, não equivalência.
 
 ## Arquivos
 
@@ -136,11 +145,13 @@ Terminada a apuração, desligue o cron para não gastar minutos de Actions.
 | `coletor/geocodificar.py` | geocodifica as cidades (roda uma vez) |
 | `coletor/mapa_base.py` | gera os contornos dos países (roda uma vez) |
 | `coletor/mapear_paises.py` | liga cada cidade ao polígono do seu país |
+| `coletor/base_2022.py` | extrai o 2º turno de 2022 no exterior (roda uma vez) |
 | `coletor/coordenadas_manuais.json` | correções de geocoding |
 | `docs/index.html` | dashboard (HTML/SVG, sem dependências) |
 | `docs/dados/resumo.json` | saída da coleta, lida pelo dashboard |
 | `docs/dados/coordenadas.json` | lat/lon das 186 cidades |
 | `docs/dados/mundo.json` | contornos dos países para o mapa |
+| `docs/dados/turno2_2022.json` | 2º turno de 2022 por cidade, para comparação |
 | `docs/dados/historico.jsonl` | uma linha por execução — alimenta o gráfico de evolução |
 
 Dados: [resultados.tse.jus.br](https://resultados.tse.jus.br) e
