@@ -13,10 +13,14 @@ import json
 import os
 import sys
 from concurrent.futures import ThreadPoolExecutor
+from zoneinfo import ZoneInfo
 
 import bu
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# o TSE carimba em horário de Brasília; sem dizer isso, um container em UTC
+# trataria 11:41 de Brasília como 11:41 UTC e a série sairia 3h deslocada
+BRASILIA = ZoneInfo("America/Sao_Paulo")
 SAIDA = os.path.join(RAIZ, "docs", "dados", "historico.jsonl")
 PASSO = 10          # minutos entre pontos da série
 
@@ -31,8 +35,9 @@ def hora_de_recebimento(args):
         return None
     h = aux["hashes"][0]
     try:
-        return datetime.datetime.strptime(f"{h['dr']} {h['hr']}",
-                                          "%d/%m/%Y %H:%M:%S")
+        q = datetime.datetime.strptime(f"{h['dr']} {h['hr']}",
+                                       "%d/%m/%Y %H:%M:%S")
+        return q.replace(tzinfo=BRASILIA)
     except Exception:
         return None
 
@@ -111,9 +116,23 @@ def main():
             linhas.append(linha)
         t += datetime.timedelta(minutes=PASSO)
 
+    # preserva as leituras ao vivo que vieram DEPOIS do último ponto
+    # reconstruído; as anteriores são substituídas pela reconstrução, que é
+    # mais densa e tem todos os campos
+    corte = linhas[-1]["gerado_em"]
+    vivas = []
+    if os.path.exists(SAIDA):
+        for l in open(SAIDA, encoding="utf-8"):
+            if not l.strip():
+                continue
+            r = json.loads(l)
+            if r.get("origem") != "reconstruido" and r["gerado_em"] > corte:
+                vivas.append(r)
+    todas = linhas + sorted(vivas, key=lambda r: r["gerado_em"])
     with open(SAIDA, "w", encoding="utf-8") as f:
-        for r in linhas:
+        for r in todas:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
+    print(f"  + {len(vivas)} leituras ao vivo posteriores mantidas")
     u = linhas[-1]
     print(f"{len(linhas)} pontos, de {linhas[0]['gerado_em'][11:16]} a "
           f"{u['gerado_em'][11:16]} UTC")

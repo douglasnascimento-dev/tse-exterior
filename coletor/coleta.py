@@ -280,8 +280,18 @@ def main(caminho=None):
     igual = anterior and all(anterior.get(k) == v
                              for k, v in linha.items() if k != "gerado_em")
     if not igual:
-        with open(arq_hist, "a", encoding="utf-8") as f:
-            f.write(json.dumps(linha, ensure_ascii=False) + "\n")
+        linhas = linhas if os.path.exists(arq_hist) else []
+        registros = [json.loads(l) for l in linhas if l.strip()] + [linha]
+        # o merge=union do git pode reintroduzir linhas de outro push fora de
+        # ordem; normalizar na escrita mantém o arquivo sempre consistente
+        por_hora = {}
+        for r in registros:
+            antes = por_hora.get(r["gerado_em"])
+            if antes is None or len(r) >= len(antes):
+                por_hora[r["gerado_em"]] = r
+        with open(arq_hist, "w", encoding="utf-8") as f:
+            for r in sorted(por_hora.values(), key=lambda x: x["gerado_em"]):
+                f.write(json.dumps(r, ensure_ascii=False) + "\n")
 
     a = saida["agregado"]
     if falhas:

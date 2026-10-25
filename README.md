@@ -181,6 +181,13 @@ leitura mais recente.
   ele não aparece. A cadência é a do cron (15 min), não minuto a minuto.
 - "Ritmo ao longo do dia" só começa nas 50 urnas apuradas: com meia dúzia, a
   taxa de crescimento oscila 80 pontos e achata o resto do gráfico.
+- Os horários do TSE vêm em **horário de Brasília**. Dizer isso ao parser é
+  obrigatório: num runner em UTC, uma hora naive de Brasília vira UTC e a série
+  inteira sai 3h deslocada — foi o que aconteceu na primeira reconstrução, e o
+  gráfico mostrava a virada às 11h quando ela foi às 14h11.
+- `historico.jsonl` é normalizado (ordenado e sem repetições) a cada escrita, e
+  o painel também deduplica na leitura: o `merge=union` do git resolve o push
+  concorrente sem conflito, mas pode deixar as linhas fora de ordem.
 - O trecho inicial da série é **reconstruído** por `reconstruir_historico.py`,
   que remonta o estado da apuração a partir da hora em que o TSE recebeu cada
   boletim (campo `hr` do `aux.json`, horário de Brasília — a hora gravada

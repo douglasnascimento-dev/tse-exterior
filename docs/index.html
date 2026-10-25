@@ -965,9 +965,15 @@ Promise.all([
 ])
   .then(([d, mundo, hist, base22]) => {
     DADOS = d; MUNDO = mundo; BASE22 = base22;
-    HIST = hist.split("\n").filter(l => l.trim())
-      .map(l => { try { return JSON.parse(l); } catch { return null; } })
-      .filter(Boolean)
+    // deduplica por horário: o merge=union do git pode repetir linhas
+    const porHora = new Map();
+    hist.split("\n").filter(l => l.trim()).forEach(l => {
+      let r; try { r = JSON.parse(l); } catch { return; }
+      const antes = porHora.get(r.gerado_em);
+      if (!antes || Object.keys(r).length >= Object.keys(antes).length)
+        porHora.set(r.gerado_em, r);
+    });
+    HIST = [...porHora.values()]
       .sort((a, b) => a.gerado_em.localeCompare(b.gerado_em));
 
     const sel = $("#cidade");
