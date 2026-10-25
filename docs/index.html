@@ -330,6 +330,28 @@ function compara2022(d, cidades, m, cores) {
     </div>`;
 
   const sw = p26a - p22a;   // variação de Lula em pontos percentuais
+
+  // no agregado, o total de 2022 do exterior inteiro serve de referência —
+  // é outro conjunto de cidades, então vai separado e rotulado como tal
+  let geral = "";
+  if (CIDADE === "__agg__") {
+    const t = { [a]: 0, [b]: 0, validos: 0 };
+    let n = 0;
+    Object.values(BASE22).forEach(x => {
+      t[a] += x[a]; t[b] += x[b]; t.validos += x.validos; n += 1;
+    });
+    const ga = 100 * t[a] / t.validos, gb = 100 * t[b] / t.validos;
+    geral = `<div style="margin-top:16px;padding-top:14px;
+        border-top:1px solid var(--border)">
+      ${linha("2022, exterior inteiro",
+              ` · referência · ${nf(n)} cidades, resultado final`,
+              ga, gb, "Lula", "Jair Bolsonaro")}
+      <p class="antes">Este é o total fechado de 2022 em todo o exterior, não o
+        recorte acima: cobre ${nf(n)} cidades contra as ${nf(comBase.length)}
+        já apuradas agora. Serve de referência do patamar, não de comparação
+        direta.</p></div>`;
+  }
+
   return `<div class="card"><h2>Contra o 2º turno de 2022</h2>
     <p class="note">Porcentagem sobre votos válidos, nas
       <strong>${nf(comBase.length)} cidade${comBase.length > 1 ? "s" : ""}</strong>
@@ -345,6 +367,7 @@ function compara2022(d, cidades, m, cores) {
       em relação a 2022 neste recorte. Atenção: 2022 é o resultado fechado e
       2026 ainda é parcial, e o candidato do PL mudou — a comparação indica
       tendência, não equivalência.</p>
+    ${geral}
   </div>`;
 }
 

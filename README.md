@@ -15,7 +15,8 @@ Cobre as **186 cidades** do exterior, em 134 países. Traz:
   percentual), diferença entre os crescimentos, margem e sua variação, total de
   votos e seu crescimento;
 - **comparação com o 2º turno de 2022** (Lula × Jair Bolsonaro), restrita às
-  mesmas cidades dos dois lados;
+  mesmas cidades dos dois lados, mais o total fechado do exterior inteiro
+  daquele ano como referência de patamar;
 - **detalhamento por seção** ao abrir uma cidade.
 
 Clicar num país abre uma página só daquele recorte, com URL própria
@@ -214,14 +215,15 @@ leitura mais recente.
 | `coletor/base_2022.py` | extrai o 2º turno de 2022 no exterior (roda uma vez) |
 | `coletor/brasil.py` | lê a totalização agregada do Brasil, por UF |
 | `coletor/publicar.sh` | commita e empurra lidando com push concorrente |
-| `docs/brasil.html` | painel do Brasil, minuto a minuto |
+| `docs/brasil.html` | painel do Brasil, minuto a minuto, com 2022 |
 | `docs/estilo.css` | estilos comuns às duas páginas |
 | `coletor/coordenadas_manuais.json` | correções de geocoding |
 | `docs/index.html` | dashboard (HTML/SVG, sem dependências) |
 | `docs/dados/resumo.json` | saída da coleta, lida pelo dashboard |
 | `docs/dados/coordenadas.json` | lat/lon das 186 cidades |
 | `docs/dados/mundo.json` | contornos dos países para o mapa |
-| `docs/dados/turno2_2022.json` | 2º turno de 2022 por cidade, para comparação |
+| `docs/dados/turno2_2022.json` | 2º turno de 2022 por cidade do exterior |
+| `docs/dados/brasil_2022.json` | 2º turno de 2022 no Brasil e por UF |
 | `docs/dados/historico.jsonl` | uma linha por execução — alimenta o gráfico de evolução |
 
 Dados: [resultados.tse.jus.br](https://resultados.tse.jus.br) e

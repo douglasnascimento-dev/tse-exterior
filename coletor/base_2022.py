@@ -16,6 +16,7 @@ URL = ("https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/"
        "votacao_secao_2022_BR.zip")
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SAIDA = os.path.join(RAIZ, "docs", "dados", "turno2_2022.json")
+SAIDA_BR = os.path.join(RAIZ, "docs", "dados", "brasil_2022.json")
 CACHE = os.path.join(RAIZ, ".cache", "votacao_secao_2022_BR.zip")
 
 # números de urna em 2022 (mesmos de 2026, outros nomes no 22)
@@ -31,29 +32,52 @@ def baixa():
     return CACHE
 
 
+def novo():
+    return {LULA: 0, BOLSONARO: 0, "brancos": 0, "nulos": 0}
+
+
+def soma(acc, votavel, qt):
+    if votavel in NOMES:
+        acc[NOMES[votavel]] += qt
+    elif votavel == "VOTO BRANCO":
+        acc["brancos"] += qt
+    elif votavel == "VOTO NULO":
+        acc["nulos"] += qt
+
+
+def fecha(acc, extra=None):
+    validos = acc[LULA] + acc[BOLSONARO]
+    out = {LULA: acc[LULA], BOLSONARO: acc[BOLSONARO],
+           "brancos": acc["brancos"], "nulos": acc["nulos"],
+           "validos": validos,
+           "total": validos + acc["brancos"] + acc["nulos"]}
+    out.update(extra or {})
+    return out
+
+
 def main():
     caminho = baixa()
     cidades = {}
+    ufs, brasil = {}, novo()
     with zipfile.ZipFile(caminho) as z:
         nome = [n for n in z.namelist() if n.endswith(".csv")][0]
         with z.open(nome) as bruto:
             texto = io.TextIOWrapper(bruto, encoding="latin-1", newline="")
             for r in csv.DictReader(texto, delimiter=";"):
-                if r["SG_UF"] != "ZZ" or r["NR_TURNO"] != "2":
+                if r["NR_TURNO"] != "2":
+                    continue
+                qt = int(r["QT_VOTOS"])
+                soma(brasil, r["NM_VOTAVEL"], qt)
+                soma(ufs.setdefault(r["SG_UF"].lower(), novo()),
+                     r["NM_VOTAVEL"], qt)
+                if r["SG_UF"] != "ZZ":
                     continue
                 cd = r["CD_MUNICIPIO"]
                 c = cidades.setdefault(cd, {
                     "nome": r["NM_MUNICIPIO"], LULA: 0, BOLSONARO: 0,
                     "brancos": 0, "nulos": 0, "secoes": set()})
                 c["secoes"].add((r["NR_ZONA"], r["NR_SECAO"]))
-                qt = int(r["QT_VOTOS"])
-                v = r["NM_VOTAVEL"]
-                if v in NOMES:
-                    c[NOMES[v]] += qt
-                elif v == "VOTO BRANCO":
-                    c["brancos"] += qt
-                elif v == "VOTO NULO":
-                    c["nulos"] += qt
+                soma(c, r["NM_VOTAVEL"], qt)
 
     saida = {}
     for cd, c in cidades.items():
@@ -71,8 +95,17 @@ def main():
               ensure_ascii=False, indent=1, sort_keys=True)
     tl = sum(c[LULA] for c in saida.values())
     tb = sum(c[BOLSONARO] for c in saida.values())
-    print(f"{len(saida)} cidades · Lula {tl} ({100*tl/(tl+tb):.2f}%) · "
+    print(f"exterior: {len(saida)} cidades · Lula {tl} ({100*tl/(tl+tb):.2f}%) · "
           f"Bolsonaro {tb} ({100*tb/(tl+tb):.2f}%) sobre válidos")
+
+    nacional = {"br": fecha(brasil),
+                "ufs": {u: fecha(a) for u, a in sorted(ufs.items())}}
+    json.dump(nacional, open(SAIDA_BR, "w", encoding="utf-8"),
+              ensure_ascii=False, indent=1, sort_keys=True)
+    b = nacional["br"]
+    print(f"Brasil: Lula {b[LULA]} ({100*b[LULA]/b['validos']:.2f}%) · "
+          f"Bolsonaro {b[BOLSONARO]} ({100*b[BOLSONARO]/b['validos']:.2f}%) "
+          f"sobre {b['validos']} válidos · {len(nacional['ufs'])} UFs")
 
 
 if __name__ == "__main__":

@@ -66,7 +66,7 @@ function mostraTip(e, html) {
 }
 const escondeTip = () => tip.style.opacity = 0;
 
-let DADOS = null, HIST = [];
+let DADOS = null, HIST = [], B22 = null;
 
 function share(bloco, n) {
   return bloco && bloco.validos ? 100 * (bloco.votos[n] || 0) / bloco.validos : null;
@@ -162,7 +162,7 @@ function desenha() {
     $("#conteudo").innerHTML = `<div class="card"><div class="empty">
       A apuração ainda não começou. As urnas no Brasil fecham às 17h de Brasília
       e esta página se atualiza sozinha a partir daí.</div></div>`
-      + comparaTurno1(d, cores, true);
+      + comparaTurno1(d, cores, true) + compara2022(d, cores);
     return;
   }
 
@@ -201,8 +201,42 @@ function desenha() {
   </div>`;
 
   $("#conteudo").innerHTML = tiles + confronto + evolucao(d, cores)
-    + comparaTurno1(d, cores) + tabelaUF(d, cores);
+    + comparaTurno1(d, cores) + compara2022(d, cores) + tabelaUF(d, cores);
   ligaTips();
+}
+
+/* ---- 2º turno de 2022 contra o de agora, no Brasil ---- */
+function compara2022(d, cores) {
+  if (!B22 || !B22.br) return "";
+  const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
+  const [a, b] = nums;
+  const v22 = B22.br;
+  const p22 = [100 * v22[a] / v22.validos, 100 * v22[b] / v22.validos];
+  const b2 = d.turno2.br;
+  const tem = b2 && b2.validos;
+  const p26 = tem ? nums.map(n => share(b2, n)) : null;
+
+  const faixa = (rot, nota, p) => `<div class="ano">
+      <div class="rot">${rot}<span class="peq">${nota}</span></div>
+      <div class="pilha">
+        <i style="width:${p[0]}%;background:${cores[0]}"></i>
+        <i style="width:${p[1]}%;background:${cores[1]}"></i>
+      </div>
+      <div class="vals">
+        <span style="color:${cores[0]}"><b>${dec(p[0])}%</b></span>
+        <span style="color:${cores[1]}" class="dirx"><b>${dec(p[1])}%</b></span>
+      </div></div>`;
+
+  return `<div class="card"><h2>Contra o 2º turno de 2022</h2>
+    <p class="note">Sobre votos válidos, Brasil inteiro. Em 2022 o adversário
+      era Jair Bolsonaro; agora é Flávio Bolsonaro — a comparação indica
+      tendência, não equivalência.</p>
+    ${faixa("2022", ` · resultado final · ${nf(v22.validos)} votos válidos`, p22)}
+    ${tem ? faixa("2026", ` · parcial, ${dec(b2.pct_secoes, 2)}% apurado`, p26) : ""}
+    ${tem ? `<p class="antes" style="margin-top:12px">
+      ${nums.map((n, i) => `<strong>${d.candidatos[n]}</strong> ${pp(p26[i] - p22[i])}`)
+        .join(" · ")} em relação a 2022.</p>` : ""}
+  </div>`;
 }
 
 function comparaTurno1(d, cores, soTexto) {
@@ -247,6 +281,9 @@ function tabelaUF(d, cores) {
     const u1 = idx1[u.uf];
     const p1 = u1 && u1.validos ? nums.map(n => share(u1, n)) : null;
     const lider = p[0] >= p[1] ? 0 : 1;
+    const u22 = B22 && B22.ufs ? B22.ufs[u.uf] : null;
+    const sw = u22 && u22.validos
+      ? p[0] - 100 * u22[nums[0]] / u22.validos : null;
     return `<tr>
       <td>${u.uf === "zz" ? "Exterior" : u.uf.toUpperCase()}</td>
       <td><div class="mini"><i style="width:${u.pct_secoes}%"></i></div>
@@ -254,6 +291,7 @@ function tabelaUF(d, cores) {
       <td>${dec(p[0])}%<span class="peq">${p1 ? dec(p1[0]) + "% no 1T" : ""}</span></td>
       <td>${dec(p[1])}%<span class="peq">${p1 ? dec(p1[1]) + "% no 1T" : ""}</span></td>
       <td style="color:${cores[lider]};font-weight:600">${d.candidatos[nums[lider]].split(" ")[0]}</td>
+      <td>${sw == null ? "—" : pp(sw)}</td>
       <td>${nf(u.validos)}</td></tr>`;
   }).join("");
   return `<div class="card"><h2>Por estado</h2>
@@ -263,7 +301,7 @@ function tabelaUF(d, cores) {
       <th>UF</th><th>Apurado</th>
       <th><span class="sw" style="background:${cores[0]}"></span>${d.candidatos[nums[0]]}</th>
       <th><span class="sw" style="background:${cores[1]}"></span>${d.candidatos[nums[1]]}</th>
-      <th>Lidera</th><th>Válidos</th>
+      <th>Lidera</th><th title="Variação de ${d.candidatos[nums[0]]} ante 2022">vs 2022</th><th>Válidos</th>
     </tr></thead><tbody>${linhas}</tbody></table></div></div>`;
 }
 
@@ -282,8 +320,10 @@ function carrega() {
       .catch(e => { e.semDados = true; throw e; }),
     fetch("dados/brasil_historico.jsonl", { cache: "no-store" })
       .then(r => r.ok ? r.text() : "").catch(() => ""),
-  ]).then(([d, hist]) => {
-    DADOS = d;
+    fetch("dados/brasil_2022.json").then(r => r.ok ? r.json() : null)
+      .catch(() => null),
+  ]).then(([d, hist, b22]) => {
+    DADOS = d; B22 = b22;
     HIST = hist.split("\n").filter(l => l.trim())
       .map(l => { try { return JSON.parse(l); } catch { return null; } })
       .filter(Boolean)
