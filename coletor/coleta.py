@@ -262,10 +262,15 @@ def main(caminho=None):
         m = saida["agregado"]["metricas"]
         linha.update(total_t1=m["total_t1"], total_t2=m["total_t2"],
                      margem_t2=m["margem_t2"])
+        linha["validos_t1"] = m["validos_t1"]
+        linha["validos_t2"] = m["validos_t2"]
         for k, v in m["candidatos"].items():
+            linha[f"v{k}_t1"] = v["t1"]
             linha[f"v{k}_t2"] = v["t2"]
             linha[f"p{k}_t2"] = round(v["share_t2"], 3) if v["share_t2"] is not None else None
             linha[f"p{k}_t1"] = round(v["share_t1"], 3) if v["share_t1"] is not None else None
+            # taxa de crescimento: é o que o gráfico de ritmo consome
+            linha[f"g{k}"] = round(v["pct"], 3) if v["pct"] is not None else None
     arq_hist = os.path.join(SAIDA, "historico.jsonl")
     anterior = None
     if os.path.exists(arq_hist):

@@ -579,6 +579,99 @@ function porPais(d) {
 }
 
 /* ---- evolução ao longo da apuração: % de cada um, 2º turno x 1º turno ---- */
+/* ---- como a taxa de crescimento de cada um mudou ao longo do dia ---- */
+function linhaRitmo(hist, d, cores) {
+  const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
+  const [a, b] = nums;
+  // com meia dúzia de urnas a taxa oscila 80 pontos e achata o resto do dia
+  const MIN_URNAS = 50;
+  const pts = hist.filter(h => nums.every(n => h[`g${n}`] != null)
+    && (h.secoes || 0) >= MIN_URNAS);
+  if (pts.length < 2) {
+    return `<div class="card"><h2>Ritmo ao longo do dia</h2>
+      <p class="note">A curva começa quando houver ao menos ${MIN_URNAS} urnas
+      apuradas — antes disso a taxa de crescimento oscila demais para dizer
+      alguma coisa.</p></div>`;
+  }
+  const W = 760, H = 320, m = { t: 18, r: 96, b: 36, l: 50 };
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const ts = pts.map(h => new Date(h.gerado_em).getTime());
+  const t0 = Math.min(...ts), tN = Math.max(...ts);
+  const vals = pts.flatMap(h => nums.map(n => h[`g${n}`]));
+  let lo = Math.min(...vals), hi = Math.max(...vals);
+  const folga = Math.max(1, (hi - lo) * 0.18);
+  lo -= folga; hi += folga;
+  const X = t => m.l + (tN === t0 ? iw : (t - t0) / (tN - t0) * iw);
+  const Y = v => m.t + (hi - v) / (hi - lo) * ih;
+
+  let eixo = "";
+  for (let i = 0; i <= 4; i++) {
+    const v = lo + (hi - lo) * i / 4, y = Y(v);
+    eixo += `<line class="gl" x1="${m.l}" x2="${m.l + iw}" y1="${y}" y2="${y}"></line>
+      <text class="ax" x="${m.l - 8}" y="${y + 4}" text-anchor="end">${
+        (v > 0 ? "+" : "") + dec(v, 0)}%</text>`;
+  }
+  const hora = t => new Date(t).toLocaleTimeString("pt-BR",
+    { hour: "2-digit", minute: "2-digit" });
+  eixo += `<text class="ax" x="${m.l}" y="${m.t + ih + 21}">${hora(t0)}</text>
+    <text class="ax" x="${m.l + iw}" y="${m.t + ih + 21}" text-anchor="end">${hora(tN)}</text>`;
+
+  // a área entre as curvas é a diferença: pintada de quem está por cima
+  const faixas = [];
+  for (let i = 0; i < pts.length - 1; i++) {
+    const lidera = pts[i][`g${a}`] >= pts[i][`g${b}`] ? 0 : 1;
+    faixas.push(`<path d="M${X(ts[i])} ${Y(pts[i][`g${a}`])}
+      L${X(ts[i + 1])} ${Y(pts[i + 1][`g${a}`])}
+      L${X(ts[i + 1])} ${Y(pts[i + 1][`g${b}`])}
+      L${X(ts[i])} ${Y(pts[i][`g${b}`])}Z"
+      fill="${cores[lidera]}" fill-opacity=".14"></path>`);
+  }
+
+  let linhas = "";
+  nums.forEach((n, i) => {
+    const dd = pts.map((h, k) => `${X(ts[k]).toFixed(1)} ${Y(h[`g${n}`]).toFixed(1)}`);
+    const ult = pts[pts.length - 1];
+    linhas += `<path d="M${dd.join("L")}" fill="none" stroke="${cores[i]}"
+        stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path>
+      <circle cx="${X(tN)}" cy="${Y(ult[`g${n}`])}" r="4" fill="${cores[i]}"
+        stroke="var(--surface-1)" stroke-width="2"></circle>
+      <text class="lbl-strong" x="${m.l + iw + 10}" y="${Y(ult[`g${n}`]) + 4}"
+        fill="${cores[i]}">${pf(ult[`g${n}`])}</text>`;
+  });
+
+  const faixaX = iw / Math.max(1, pts.length - 1);
+  const alvos = pts.map((h, k) => {
+    const dif = h[`g${a}`] - h[`g${b}`];
+    return `<rect x="${(X(ts[k]) - faixaX / 2).toFixed(1)}" y="${m.t}"
+      width="${Math.max(faixaX, 3).toFixed(1)}" height="${ih}" fill="transparent"
+      data-tip="${encodeURIComponent(
+        `<b>${hora(ts[k])}</b> · ${nf(h.secoes)} urnas<br>`
+        + nums.map(n => `${d.candidatos[n]}: <b>${pf(h[`g${n}`])}</b>`).join("<br>")
+        + `<br>diferença <b>${(dif > 0 ? "+" : "") + dec(dif, 2)} p.p.</b> para ${
+          d.candidatos[dif >= 0 ? a : b]}`)}"></rect>`;
+  }).join("");
+
+  const ult = pts[pts.length - 1];
+  const dif = ult[`g${a}`] - ult[`g${b}`];
+  const leg = nums.map((n, i) =>
+    `<span><span class="sw" style="background:${cores[i]}"></span>${d.candidatos[n]}</span>`
+  ).join("");
+
+  return `<div class="card"><h2>Ritmo ao longo do dia</h2>
+    <p class="note">Quanto cada um cresceu em relação ao que tinha no 1º turno,
+      recalculado a cada leitura conforme novas urnas entram. A faixa entre as
+      curvas é a diferença: agora <strong>${(dif > 0 ? "+" : "") + dec(dif, 2)}
+      p.p.</strong> para ${d.candidatos[dif >= 0 ? a : b]}. Começa nas
+      ${MIN_URNAS} urnas apuradas: antes disso a taxa oscila demais.</p>
+    <div class="legend">${leg}</div>
+    <div class="scroll"><svg viewBox="0 0 ${W} ${H}" role="img">
+      ${eixo}${faixas.join("")}${linhas}${alvos}</svg></div>
+    ${pts.some(h => h.origem === "reconstruido") ? `<p class="antes">
+      O trecho inicial foi reconstruído a partir da hora em que o TSE recebeu
+      cada boletim, porque o painel só começou a registrar leituras no meio do
+      dia.</p>` : ""}</div>`;
+}
+
 function linhaTempo(hist, d, cores) {
   const nums = Object.keys(d.candidatos).sort((a, b) => a - b);
   const pts = hist.filter(h => nums.every(n => h[`p${n}_t2`] != null));
@@ -804,7 +897,8 @@ function desenha() {
 
   // o histórico acumulado é do exterior inteiro; num recorte de país ou
   // cidade ele descreveria outro conjunto de dados e enganaria
-  const evolucao = CIDADE === "__agg__" ? linhaTempo(HIST, d, cores) : "";
+  const evolucao = CIDADE === "__agg__"
+    ? linhaTempo(HIST, d, cores) + linhaRitmo(HIST, d, cores) : "";
   $("#conteudo").innerHTML = tiles + confronto(d, m, cores)
     + compara2022(d, doRecorte, m, cores) + evolucao + `
     <div class="card"><h2>Votos por turno</h2>

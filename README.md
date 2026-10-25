@@ -179,6 +179,13 @@ leitura mais recente.
   total de seções previstas sem ninguém notar.
 - O gráfico de evolução depende do histórico acumulado: com uma única leitura
   ele não aparece. A cadência é a do cron (15 min), não minuto a minuto.
+- "Ritmo ao longo do dia" só começa nas 50 urnas apuradas: com meia dúzia, a
+  taxa de crescimento oscila 80 pontos e achata o resto do gráfico.
+- O trecho inicial da série é **reconstruído** por `reconstruir_historico.py`,
+  que remonta o estado da apuração a partir da hora em que o TSE recebeu cada
+  boletim (campo `hr` do `aux.json`, horário de Brasília — a hora gravada
+  dentro do boletim é a local da urna e não serve para uma linha do tempo
+  global). Essas linhas vêm marcadas com `origem: "reconstruido"`.
 - A comparação com 2022 usa só as cidades que já apuraram em 2026 **e**
   existiam em 2022, nos dois lados — somar 2022 inteiro contra um 2026 parcial
   compararia conjuntos diferentes. Ainda assim 2022 é resultado fechado e 2026
@@ -196,6 +203,7 @@ leitura mais recente.
 | `coletor/mapa_base.py` | gera os contornos dos países (roda uma vez) |
 | `coletor/mapear_paises.py` | liga cada cidade ao polígono do seu país |
 | `coletor/codigos_iso.py` | atribui o código ISO de cada país, para a bandeira |
+| `coletor/reconstruir_historico.py` | refaz a série do dia a partir dos boletins |
 | `coletor/base_2022.py` | extrai o 2º turno de 2022 no exterior (roda uma vez) |
 | `coletor/brasil.py` | lê a totalização agregada do Brasil, por UF |
 | `coletor/publicar.sh` | commita e empurra lidando com push concorrente |
