@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-26T01:37:27+00:00",
+ "gerado_em": "2026-10-26T01:42:27+00:00",
  "fonte": "resultados.tse.jus.br — totalização agregada",
  "candidatos": {
   "13": "Lula (PT)",
@@ -9,22 +9,22 @@
   "eleicao": 6258,
   "br": {
    "uf": "br",
-   "atualizado": "25/10/2026 22:36:57",
+   "atualizado": "25/10/2026 22:38:27",
    "finalizado": false,
    "votos": {
-    "22": 59825216,
-    "13": 64254353
+    "22": 59825488,
+    "13": 64255124
    },
-   "validos": 124079569,
-   "brancos": 1430469,
-   "nulos": 2723255,
-   "total": 128233293,
+   "validos": 124080612,
+   "brancos": 1430475,
+   "nulos": 2723281,
+   "total": 128234368,
    "secoes_totais": 499248,
-   "secoes_totalizadas": 499236,
-   "pct_secoes": 99.997596385,
+   "secoes_totalizadas": 499241,
+   "pct_secoes": 99.998597891,
    "eleitorado": 158745502,
-   "eleitorado_totalizado": 158742118,
-   "comparecimento": 128233293
+   "eleitorado_totalizado": 158743414,
+   "comparecimento": 128234368
   },
   "ufs": [
    {
@@ -219,22 +219,22 @@
    },
    {
     "uf": "mg",
-    "atualizado": "25/10/2026 22:34:12",
+    "atualizado": "25/10/2026 22:38:27",
     "finalizado": false,
     "votos": {
-     "22": 6240971,
-     "13": 6349398
+     "22": 6241400,
+     "13": 6350579
     },
-    "validos": 12590369,
-    "brancos": 164114,
-    "nulos": 287125,
-    "total": 13041608,
+    "validos": 12591979,
+    "brancos": 164129,
+    "nulos": 287164,
+    "total": 13043272,
     "secoes_totais": 52062,
-    "secoes_totalizadas": 52050,
-    "pct_secoes": 99.976950559,
+    "secoes_totalizadas": 52058,
+    "pct_secoes": 99.992316853,
     "eleitorado": 16372144,
-    "eleitorado_totalizado": 16368913,
-    "comparecimento": 13041608
+    "eleitorado_totalizado": 16370929,
+    "comparecimento": 13043272
    },
    {
     "uf": "ms",
