@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-26T02:22:27+00:00",
+ "gerado_em": "2026-10-26T02:27:26+00:00",
  "fonte": "resultados.tse.jus.br — totalização agregada",
  "candidatos": {
   "13": "Lula (PT)",
@@ -9,22 +9,22 @@
   "eleicao": 6258,
   "br": {
    "uf": "br",
-   "atualizado": "25/10/2026 23:08:43",
+   "atualizado": "25/10/2026 23:21:51",
    "finalizado": false,
    "votos": {
-    "22": 59826002,
-    "13": 64255969
+    "22": 59826041,
+    "13": 64256232
    },
-   "validos": 124081971,
-   "brancos": 1430493,
-   "nulos": 2723298,
-   "total": 128235762,
+   "validos": 124082273,
+   "brancos": 1430496,
+   "nulos": 2723305,
+   "total": 128236074,
    "secoes_totais": 499248,
-   "secoes_totalizadas": 499247,
-   "pct_secoes": 99.999799699,
+   "secoes_totalizadas": 499248,
+   "pct_secoes": 100,
    "eleitorado": 158745502,
-   "eleitorado_totalizado": 158745163,
-   "comparecimento": 128235762
+   "eleitorado_totalizado": 158745502,
+   "comparecimento": 128236074
   },
   "ufs": [
    {
@@ -105,22 +105,22 @@
    },
    {
     "uf": "ba",
-    "atualizado": "25/10/2026 21:54:28",
+    "atualizado": "25/10/2026 23:21:51",
     "finalizado": false,
     "votos": {
-     "22": 2608722,
-     "13": 6484995
+     "22": 2608761,
+     "13": 6485258
     },
-    "validos": 9093717,
-    "brancos": 92718,
-    "nulos": 235300,
-    "total": 9421735,
+    "validos": 9094019,
+    "brancos": 92721,
+    "nulos": 235307,
+    "total": 9422047,
     "secoes_totais": 35476,
-    "secoes_totalizadas": 35475,
-    "pct_secoes": 99.997181193,
+    "secoes_totalizadas": 35476,
+    "pct_secoes": 100,
     "eleitorado": 11312891,
-    "eleitorado_totalizado": 11312552,
-    "comparecimento": 9421735
+    "eleitorado_totalizado": 11312891,
+    "comparecimento": 9422047
    },
    {
     "uf": "ce",
@@ -181,8 +181,8 @@
    },
    {
     "uf": "go",
-    "atualizado": "25/10/2026 21:33:20",
-    "finalizado": false,
+    "atualizado": "25/10/2026 23:26:38",
+    "finalizado": true,
     "votos": {
      "22": 2345334,
      "13": 1585555
