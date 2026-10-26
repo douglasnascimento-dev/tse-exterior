@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-26T01:47:27+00:00",
+ "gerado_em": "2026-10-26T01:52:27+00:00",
  "fonte": "resultados.tse.jus.br — totalização agregada",
  "candidatos": {
   "13": "Lula (PT)",
@@ -67,22 +67,22 @@
    },
    {
     "uf": "am",
-    "atualizado": "25/10/2026 20:49:31",
+    "atualizado": "25/10/2026 21:08:57",
     "finalizado": false,
     "votos": {
-     "22": 975226,
-     "13": 1145639
+     "22": 975245,
+     "13": 1145783
     },
-    "validos": 2120865,
+    "validos": 2121028,
     "brancos": 18324,
-    "nulos": 52704,
-    "total": 2191893,
+    "nulos": 52707,
+    "total": 2192059,
     "secoes_totais": 8157,
-    "secoes_totalizadas": 8156,
-    "pct_secoes": 99.987740591,
+    "secoes_totalizadas": 8157,
+    "pct_secoes": 100,
     "eleitorado": 2798661,
-    "eleitorado_totalizado": 2798478,
-    "comparecimento": 2191893
+    "eleitorado_totalizado": 2798661,
+    "comparecimento": 2192059
    },
    {
     "uf": "ap",
