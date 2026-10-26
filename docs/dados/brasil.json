@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-26T02:27:26+00:00",
+ "gerado_em": "2026-10-26T02:32:27+00:00",
  "fonte": "resultados.tse.jus.br — totalização agregada",
  "candidatos": {
   "13": "Lula (PT)",
@@ -9,8 +9,8 @@
   "eleicao": 6258,
   "br": {
    "uf": "br",
-   "atualizado": "25/10/2026 23:21:51",
-   "finalizado": false,
+   "atualizado": "25/10/2026 23:26:38",
+   "finalizado": true,
    "votos": {
     "22": 59826041,
     "13": 64256232
@@ -29,8 +29,8 @@
   "ufs": [
    {
     "uf": "ac",
-    "atualizado": "25/10/2026 19:18:03",
-    "finalizado": false,
+    "atualizado": "25/10/2026 21:26:38",
+    "finalizado": true,
     "votos": {
      "22": 287715,
      "13": 144513
@@ -48,8 +48,8 @@
    },
    {
     "uf": "al",
-    "atualizado": "25/10/2026 21:27:22",
-    "finalizado": false,
+    "atualizado": "25/10/2026 23:26:38",
+    "finalizado": true,
     "votos": {
      "22": 744140,
      "13": 1152621
@@ -67,8 +67,8 @@
    },
    {
     "uf": "am",
-    "atualizado": "25/10/2026 21:08:57",
-    "finalizado": false,
+    "atualizado": "25/10/2026 22:26:38",
+    "finalizado": true,
     "votos": {
      "22": 975245,
      "13": 1145783
@@ -86,8 +86,8 @@
    },
    {
     "uf": "ap",
-    "atualizado": "25/10/2026 21:10:37",
-    "finalizado": false,
+    "atualizado": "25/10/2026 23:26:38",
+    "finalizado": true,
     "votos": {
      "22": 198674,
      "13": 222968
@@ -105,8 +105,8 @@
    },
    {
     "uf": "ba",
-    "atualizado": "25/10/2026 23:21:51",
-    "finalizado": false,
+    "atualizado": "25/10/2026 23:26:38",
+    "finalizado": true,
     "votos": {
      "22": 2608761,
      "13": 6485258
@@ -124,8 +124,8 @@
    },
    {
     "uf": "ce",
-    "atualizado": "25/10/2026 21:45:50",
-    "finalizado": false,
+    "atualizado": "25/10/2026 23:26:38",
+    "finalizado": true,
     "votos": {
      "22": 1819478,
      "13": 4036124
@@ -143,8 +143,8 @@
    },
    {
     "uf": "df",
-    "atualizado": "25/10/2026 21:23:12",
-    "finalizado": false,
+    "atualizado": "25/10/2026 23:26:38",
+    "finalizado": true,
     "votos": {
      "22": 979542,
      "13": 825224
@@ -162,8 +162,8 @@
    },
    {
     "uf": "es",
-    "atualizado": "25/10/2026 21:31:20",
-    "finalizado": false,
+    "atualizado": "25/10/2026 23:26:38",
+    "finalizado": true,
     "votos": {
      "22": 1294504,
      "13": 1001965
@@ -200,8 +200,8 @@
    },
    {
     "uf": "ma",
-    "atualizado": "25/10/2026 22:45:18",
-    "finalizado": false,
+    "atualizado": "25/10/2026 23:26:38",
+    "finalizado": true,
     "votos": {
      "22": 1229971,
      "13": 2808231
@@ -219,8 +219,8 @@
    },
    {
     "uf": "mg",
-    "atualizado": "25/10/2026 23:08:43",
-    "finalizado": false,
+    "atualizado": "25/10/2026 23:26:38",
+    "finalizado": true,
     "votos": {
      "22": 6241786,
      "13": 6351099
@@ -238,8 +238,8 @@
    },
    {
     "uf": "ms",
-    "atualizado": "25/10/2026 20:29:52",
-    "finalizado": false,
+    "atualizado": "25/10/2026 22:26:38",
+    "finalizado": true,
     "votos": {
      "22": 927892,
      "13": 628973
@@ -257,8 +257,8 @@
    },
    {
     "uf": "mt",
-    "atualizado": "25/10/2026 20:50:37",
-    "finalizado": false,
+    "atualizado": "25/10/2026 22:26:38",
+    "finalizado": true,
     "votos": {
      "22": 1351099,
      "13": 694167
@@ -276,8 +276,8 @@
    },
    {
     "uf": "pa",
-    "atualizado": "25/10/2026 22:24:37",
-    "finalizado": false,
+    "atualizado": "25/10/2026 23:26:38",
+    "finalizado": true,
     "votos": {
      "22": 2199940,
      "13": 2690449
@@ -295,8 +295,8 @@
    },
    {
     "uf": "pb",
-    "atualizado": "25/10/2026 21:59:57",
-    "finalizado": false,
+    "atualizado": "25/10/2026 23:26:38",
+    "finalizado": true,
     "votos": {
      "22": 865210,
      "13": 1794059
@@ -314,8 +314,8 @@
    },
    {
     "uf": "pe",
-    "atualizado": "25/10/2026 21:58:03",
-    "finalizado": false,
+    "atualizado": "25/10/2026 23:26:38",
+    "finalizado": true,
     "votos": {
      "22": 1832554,
      "13": 4117513
@@ -333,8 +333,8 @@
    },
    {
     "uf": "pi",
-    "atualizado": "25/10/2026 21:25:00",
-    "finalizado": false,
+    "atualizado": "25/10/2026 23:26:38",
+    "finalizado": true,
     "votos": {
      "22": 525859,
      "13": 1653989
@@ -352,8 +352,8 @@
    },
    {
     "uf": "pr",
-    "atualizado": "25/10/2026 21:21:20",
-    "finalizado": false,
+    "atualizado": "25/10/2026 23:26:38",
+    "finalizado": true,
     "votos": {
      "22": 4291444,
      "13": 2566504
@@ -371,8 +371,8 @@
    },
    {
     "uf": "rj",
-    "atualizado": "25/10/2026 22:18:59",
-    "finalizado": false,
+    "atualizado": "25/10/2026 23:26:38",
+    "finalizado": true,
     "votos": {
      "22": 5169033,
      "13": 4565393
@@ -390,8 +390,8 @@
    },
    {
     "uf": "rn",
-    "atualizado": "25/10/2026 21:19:43",
-    "finalizado": false,
+    "atualizado": "25/10/2026 23:26:38",
+    "finalizado": true,
     "votos": {
      "22": 737409,
      "13": 1413596
@@ -409,8 +409,8 @@
    },
    {
     "uf": "ro",
-    "atualizado": "25/10/2026 20:09:56",
-    "finalizado": false,
+    "atualizado": "25/10/2026 22:26:38",
+    "finalizado": true,
     "votos": {
      "22": 674382,
      "13": 294446
@@ -447,8 +447,8 @@
    },
    {
     "uf": "rs",
-    "atualizado": "25/10/2026 21:32:27",
-    "finalizado": false,
+    "atualizado": "25/10/2026 23:26:38",
+    "finalizado": true,
     "votos": {
      "22": 3874378,
      "13": 2824552
@@ -466,8 +466,8 @@
    },
    {
     "uf": "sc",
-    "atualizado": "25/10/2026 21:07:51",
-    "finalizado": false,
+    "atualizado": "25/10/2026 23:26:38",
+    "finalizado": true,
     "votos": {
      "22": 3220071,
      "13": 1418314
@@ -485,8 +485,8 @@
    },
    {
     "uf": "se",
-    "atualizado": "25/10/2026 21:32:35",
-    "finalizado": false,
+    "atualizado": "25/10/2026 23:26:38",
+    "finalizado": true,
     "votos": {
      "22": 433354,
      "13": 989041
@@ -504,8 +504,8 @@
    },
    {
     "uf": "sp",
-    "atualizado": "25/10/2026 21:48:00",
-    "finalizado": false,
+    "atualizado": "25/10/2026 23:26:38",
+    "finalizado": true,
     "votos": {
      "22": 14139178,
      "13": 12119274
@@ -523,8 +523,8 @@
    },
    {
     "uf": "to",
-    "atualizado": "25/10/2026 21:30:35",
-    "finalizado": false,
+    "atualizado": "25/10/2026 23:26:38",
+    "finalizado": true,
     "votos": {
      "22": 467916,
      "13": 442962
@@ -542,8 +542,8 @@
    },
    {
     "uf": "zz",
-    "atualizado": "25/10/2026 21:55:36",
-    "finalizado": false,
+    "atualizado": "25/10/2026 23:26:38",
+    "finalizado": true,
     "votos": {
      "22": 171497,
      "13": 200154
