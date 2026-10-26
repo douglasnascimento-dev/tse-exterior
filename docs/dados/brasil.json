@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-26T01:27:27+00:00",
+ "gerado_em": "2026-10-26T01:32:27+00:00",
  "fonte": "resultados.tse.jus.br — totalização agregada",
  "candidatos": {
   "13": "Lula (PT)",
@@ -9,22 +9,22 @@
   "eleicao": 6258,
   "br": {
    "uf": "br",
-   "atualizado": "25/10/2026 22:25:37",
+   "atualizado": "25/10/2026 22:31:37",
    "finalizado": false,
    "votos": {
-    "22": 59824250,
-    "13": 64252284
+    "22": 59824712,
+    "13": 64253212
    },
-   "validos": 124076534,
-   "brancos": 1430438,
-   "nulos": 2723197,
-   "total": 128230169,
+   "validos": 124077924,
+   "brancos": 1430448,
+   "nulos": 2723220,
+   "total": 128231592,
    "secoes_totais": 499248,
-   "secoes_totalizadas": 499223,
-   "pct_secoes": 99.994992469,
+   "secoes_totalizadas": 499228,
+   "pct_secoes": 99.995993975,
    "eleitorado": 158745502,
-   "eleitorado_totalizado": 158738191,
-   "comparecimento": 128230169
+   "eleitorado_totalizado": 158739990,
+   "comparecimento": 128231592
   },
   "ufs": [
    {
@@ -200,41 +200,41 @@
    },
    {
     "uf": "ma",
-    "atualizado": "25/10/2026 22:15:32",
+    "atualizado": "25/10/2026 22:29:48",
     "finalizado": false,
     "votos": {
-     "22": 1229770,
-     "13": 2807760
+     "22": 1229843,
+     "13": 2807906
     },
-    "validos": 4037530,
+    "validos": 4037749,
     "brancos": 30849,
-    "nulos": 58707,
-    "total": 4127086,
+    "nulos": 58710,
+    "total": 4127308,
     "secoes_totais": 18093,
-    "secoes_totalizadas": 18090,
-    "pct_secoes": 99.983419002,
+    "secoes_totalizadas": 18091,
+    "pct_secoes": 99.988946001,
     "eleitorado": 5183049,
-    "eleitorado_totalizado": 5182255,
-    "comparecimento": 4127086
+    "eleitorado_totalizado": 5182515,
+    "comparecimento": 4127308
    },
    {
     "uf": "mg",
-    "atualizado": "25/10/2026 22:25:37",
+    "atualizado": "25/10/2026 22:30:37",
     "finalizado": false,
     "votos": {
-     "22": 6240235,
-     "13": 6347885
+     "22": 6240427,
+     "13": 6348279
     },
-    "validos": 12588120,
-    "brancos": 164092,
-    "nulos": 287083,
-    "total": 13039295,
+    "validos": 12588706,
+    "brancos": 164094,
+    "nulos": 287095,
+    "total": 13039895,
     "secoes_totais": 52062,
-    "secoes_totalizadas": 52041,
-    "pct_secoes": 99.959663478,
+    "secoes_totalizadas": 52043,
+    "pct_secoes": 99.963505052,
     "eleitorado": 16372144,
-    "eleitorado_totalizado": 16365966,
-    "comparecimento": 13039295
+    "eleitorado_totalizado": 16366735,
+    "comparecimento": 13039895
    },
    {
     "uf": "ms",
