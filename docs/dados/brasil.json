@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-26T04:02:27+00:00",
+ "gerado_em": "2026-11-01T23:29:51+00:00",
  "fonte": "resultados.tse.jus.br — totalização agregada",
  "candidatos": {
   "13": "Lula (PT)",
@@ -428,8 +428,8 @@
    },
    {
     "uf": "rr",
-    "atualizado": "25/10/2026 20:12:18",
-    "finalizado": false,
+    "atualizado": "25/10/2026 22:26:38",
+    "finalizado": true,
     "votos": {
      "22": 219675,
      "13": 83505
